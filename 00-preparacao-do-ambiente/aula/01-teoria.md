@@ -20,6 +20,7 @@ Ao final desta aula, você será capaz de:
 **Nenhum.** Este é o primeiro capítulo do curso. Você está começando do zero absoluto.
 
 Tudo que você precisa é:
+
 - Um computador (Windows, Mac ou Linux)
 - Vontade de aprender
 - Disposição para errar (errar faz parte!)
@@ -31,6 +32,7 @@ Tudo que você precisa é:
 Gabriel, antes de construir qualquer coisa, precisamos preparar as ferramentas. Pense assim: um engenheiro mecânico não começa a projetar uma peça sem antes ter o CAD instalado, a prancheta organizada e os instrumentos de medição calibrados.
 
 Na programação é igual. Este capítulo vai:
+
 - Configurar seu ambiente de desenvolvimento
 - Garantir que tudo funcione corretamente
 - Te dar a base para entender **o que está acontecendo** quando você escreve código
@@ -63,7 +65,7 @@ Um programa de computador é exatamente isso: uma **sequência de instruções**
 Programadores traduzem problemas do mundo real em instruções que o computador entende. Por exemplo:
 
 | Problema Real | Instrução para o Computador |
-|---------------|------------------------------|
+| --- | --- |
 | "Some dois números" | `const resultado = numero1 + numero2` |
 | "Se o usuário clicar, faça algo" | `if (clicou) { facaAlgo() }` |
 | "Repita isso 10 vezes" | `for (let i = 0; i < 10; i++) { ... }` |
@@ -71,6 +73,7 @@ Programadores traduzem problemas do mundo real em instruções que o computador 
 ### Por Que Aprender a Programar?
 
 No seu caso específico, Gabriel, você quer:
+
 1. **Entender código** para direcionar melhor as IAs/LLMs nos seus projetos
 2. **Ter autonomia** para fazer pequenas modificações sem depender 100% das ferramentas
 3. **Comunicar-se melhor** com desenvolvedores e ferramentas de desenvolvimento
@@ -88,6 +91,7 @@ Em 2012, a Microsoft criou o TypeScript para resolver problemas do JavaScript. M
 **JavaScript** foi criado em 1995, em apenas 10 dias, para adicionar interatividade a páginas web. Ninguém imaginava que ele se tornaria a linguagem mais usada do mundo. Ele foi projetado para scripts simples, tipo "quando o usuário clicar aqui, mude a cor daquilo".
 
 O problema? JavaScript cresceu. Hoje ele roda em:
+
 - Navegadores (sites, aplicações web)
 - Servidores (Node.js)
 - Aplicativos mobile (React Native)
@@ -115,11 +119,13 @@ TypeScript  →  [Compilador]  →  JavaScript  →  [Navegador/Node]  →  Exec
 Imagine que você está escrevendo um manual técnico em português que será traduzido para chinês. Você tem duas opções:
 
 **Opção 1: Tradutor Relaxado (JavaScript)**
+
 - Você escreve: "Aperte o botão azul"
 - O tradutor traduz direto, sem perguntar
 - Problema: e se não existir botão azul? O manual vai para a China com erro
 
 **Opção 2: Tradutor Rigoroso (TypeScript)**
+
 - Você escreve: "Aperte o botão azul"
 - O tradutor pergunta: "Qual botão azul? Me mostre a lista de botões que existem"
 - Você é obrigado a especificar: "O botão de código B-003, que é azul"
@@ -173,6 +179,7 @@ somar(5, 3);      // OK! Retorna 8
 ```
 
 O TypeScript:
+
 1. **Avisa erros antes de executar** (em tempo de compilação)
 2. **Documenta o código** (você vê o que cada função espera)
 3. **Habilita autocompletar inteligente** (o editor sabe sugerir)
@@ -184,7 +191,7 @@ O TypeScript:
 ### Tabela Comparativa
 
 | Aspecto | JavaScript | TypeScript |
-|---------|------------|------------|
+| --- | --- | --- |
 | **Tipos** | Dinâmico (pode mudar) | Estático (definido antes) |
 | **Erros** | Aparecem ao executar | Aparecem ao compilar |
 | **Extensão do arquivo** | `.js` | `.ts` |
@@ -197,6 +204,7 @@ O TypeScript:
 ### O Que "Tipos" Significam?
 
 **Tipo** é a categoria de um dado. Por exemplo:
+
 - `5` é um **número** (number)
 - `"Gabriel"` é um **texto** (string)
 - `true` é um **booleano** (boolean - verdadeiro ou falso)
@@ -252,6 +260,7 @@ O compilador do TypeScript se chama **tsc** (TypeScript Compiler). Ele:
 ### Exemplo Prático
 
 **Você escreve (saudacao.ts):**
+
 ```typescript
 function saudacao(nome: string): string {
     return "Olá, " + nome + "!";
@@ -262,6 +271,7 @@ console.log(mensagem);
 ```
 
 **O compilador gera (saudacao.js):**
+
 ```javascript
 function saudacao(nome) {
     return "Olá, " + nome + "!";
@@ -294,6 +304,7 @@ TypeScript é o gabarito. JavaScript é o desenho final.
 5. **Compilação** transforma TypeScript em JavaScript puro
 
 6. **Vantagens do TypeScript**:
+
    - Erros detectados cedo
    - Código auto-documentado
    - Melhor autocompletar
