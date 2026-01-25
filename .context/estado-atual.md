@@ -9,23 +9,22 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 00 - Preparação do Ambiente |
-| **Fase atual** | Conteúdo criado, aguardando estudo do aluno |
+| **Fase atual** | Exercícios em andamento |
 | **Último capítulo concluído** | - |
-| **Próximo passo** | Aluno estudar a aula e fazer exercícios |
+| **Próximo passo** | Aluno resolver os 10 exercícios da lista |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2025-01-12
-- **Atividade:** Criação do Capítulo 00
+- **Data:** 2025-01-25
+- **Atividade:** Verificação dos exemplos práticos + liberação para exercícios
 - **O que foi feito:**
-  - Criada estrutura de pastas do capítulo
-  - Criados 4 arquivos de aula (teoria, sintaxe, exemplos, mini-projeto)
-  - Criada lista de exercícios (10 + bônus)
-  - Criada prova com gabarito
-  - Criados extras (erros-comuns, recursos)
-  - Criado README do capítulo
+  - Aluno estudou toda a aula (teoria, sintaxe, exemplos, mini-projeto)
+  - Aluno fez os exemplos práticos da aula em `exercicios/03.exemplos-exercicios/`
+  - Verificados 5 arquivos: hello.ts, variaveis.ts, contador.ts, cronometro.ts, mini-projeto.ts
+  - Aluno demonstrou compreensão de console.log, variáveis tipadas, inferência de tipos
+  - Liberado para iniciar a lista de exercícios
 
 ---
 
@@ -47,8 +46,9 @@
 
 ## Pendências
 
-- [ ] Aluno estudar o conteúdo da aula
-- [ ] Aluno fazer os exercícios
+- [x] Aluno estudar o conteúdo da aula
+- [x] Aluno fazer exemplos práticos da aula
+- [ ] Aluno fazer os exercícios (lista.md - 10 exercícios)
 - [ ] Corrigir exercícios quando entregues
 - [ ] Aluno fazer a prova
 - [ ] Corrigir prova e dar nota
@@ -82,7 +82,8 @@ Quando o aluno retornar, verificar:
 |------|-----------|---------|
 | 2025-01-12 | Estruturação inicial do curso | ~1h |
 | 2025-01-12 | Criação do Capítulo 00 completo | ~30min |
+| 2025-01-25 | Verificação de exemplos + liberação para exercícios | ~10min |
 
 ---
 
-*Última atualização: 2025-01-12*
+*Última atualização: 2025-01-25*

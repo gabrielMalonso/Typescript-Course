@@ -28,6 +28,31 @@
 
 ---
 
+### 2025-01-25 - Primeira Entrega do Aluno
+
+**Trabalho verificado:**
+- Aluno estudou toda a aula do cap. 00 por conta própria
+- Fez os exemplos práticos em pasta separada (03.exemplos-exercicios)
+- Criou 5 arquivos: hello.ts, variaveis.ts, contador.ts, cronometro.ts, mini-projeto.ts
+
+**Pontos positivos observados:**
+- Testou quebra de tipos (comentou linhas para ver erros) - mostra curiosidade
+- Usou `\n` para espaçamento no mini-projeto (iniciativa própria, não estava na aula)
+- Organizou código com comentários (header, footer)
+- Adicionou variáveis extras além do pedido (curso, capitulo)
+- Escreveu resumo do que aprendeu no arquivo variaveis.ts
+
+**Estilo de aprendizado:**
+- Faz mais do que o mínimo pedido
+- Experimenta por conta própria
+- Documenta o que aprende
+
+**Próximo passo:**
+- Liberado para lista de exercícios (10 + bônus)
+- Observar desempenho para ajustar dificuldade do cap. 01
+
+---
+
 ## Ideias para Adaptar o Curso
 
 *Anotações de ajustes que podem ser feitos conforme o progresso*
@@ -85,7 +110,9 @@
 
 ## Lembretes para Próximas Sessões
 
-- [ ] Verificar se aluno quer iniciar capítulo 00
+- [x] Verificar se aluno quer iniciar capítulo 00
+- [ ] Corrigir exercícios quando aluno entregar
+- [ ] Observar padrões de erro nos exercícios
 - [ ] Perguntar preferência de horário/frequência de estudo
 - [ ] Observar estilo de comunicação preferido
 
@@ -102,4 +129,4 @@
 
 ---
 
-*Última atualização: 2025-01-12*
+*Última atualização: 2025-01-25*
