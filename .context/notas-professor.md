@@ -53,6 +53,33 @@
 
 ---
 
+### 2026-02-01 - Correção dos Exercícios do Cap. 00
+
+**Desempenho geral:** Bom. Todos os 10 arquivos compilam. Conceitos centrais foram absorvidos.
+
+**Pontos fortes confirmados:**
+- Continua fazendo mais do que o mínimo pedido (ex06 com if/else, ex02 com variável tipada)
+- Documenta o que faz (transcrições do terminal em quase todos os exercícios)
+- Curiosidade ativa: descobriu sozinho que Node.js v24 roda .ts direto
+- Reflexões escritas demonstram compreensão real, não apenas cópia
+
+**Pontos de atenção identificados:**
+- **Inconsistência com ponto e vírgula**: alterna entre usar e não usar. Precisa escolher uma convenção e manter
+- **Atenção ao enunciado**: em 3+ exercícios a saída ficou diferente do formato pedido. Não é erro conceitual, mas mostra leitura superficial dos requisitos
+- **Confusão erro de compilação vs estilo**: no ex06, identificou falta de `;` como "erro" quando é apenas convenção. Importante distinguir o que o compilador rejeita vs o que é boa prática
+- **Nomes de variáveis**: tendência a abreviar (msg, dt, nExercicios no ex10). Reforçar nomes descritivos
+
+**Para a prova:**
+- Incluir pelo menos uma questão sobre a diferença entre erro de compilação e questão de estilo
+- Observar se o padrão de "saída diferente do esperado" se repete
+
+**Para o Cap. 01:**
+- Reforçar concatenação com `+` vs vírgula no console.log
+- Introduzir template literals como alternativa moderna
+- Exercícios sobre convenções de nomes de variáveis
+
+---
+
 ## Ideias para Adaptar o Curso
 
 *Anotações de ajustes que podem ser feitos conforme o progresso*
@@ -69,7 +96,9 @@
 
 | Conceito | Motivo | Ação Sugerida |
 |----------|--------|---------------|
-| - | - | - |
+| Ponto e vírgula (convenção) | Uso inconsistente nos exercícios | Reforçar no cap. 01 |
+| Diferença console.log com `,` vs `+` | Usa `,` sem saber a diferença de formatação | Explicar no cap. 01 |
+| Erro de compilação vs estilo | Confundiu `;` ausente com erro no ex06 | Questão na prova do cap. 00 |
 
 ---
 
@@ -111,8 +140,8 @@
 ## Lembretes para Próximas Sessões
 
 - [x] Verificar se aluno quer iniciar capítulo 00
-- [ ] Corrigir exercícios quando aluno entregar
-- [ ] Observar padrões de erro nos exercícios
+- [x] Corrigir exercícios quando aluno entregar
+- [x] Observar padrões de erro nos exercícios
 - [ ] Perguntar preferência de horário/frequência de estudo
 - [ ] Observar estilo de comunicação preferido
 
@@ -129,4 +158,4 @@
 
 ---
 
-*Última atualização: 2025-01-25*
+*Última atualização: 2026-02-01*

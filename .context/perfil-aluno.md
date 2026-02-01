@@ -38,12 +38,11 @@
 
 ## Pontos Fortes (Observados)
 
-- [ ] Raciocínio lógico (aguardando observar)
-- [ ] Persistência (aguardando observar)
-- [ ] Atenção a detalhes (aguardando observar)
-- [ ] Capacidade de abstração (aguardando observar)
-
-*Será atualizado após os primeiros exercícios*
+- [x] Raciocínio lógico - Demonstrado nos cálculos e na lógica do if/else (ex05, ex06)
+- [x] Persistência - Completou todos os 10 exercícios
+- [ ] Atenção a detalhes - Parcial: código funciona mas saídas divergem do formato pedido
+- [x] Capacidade de abstração - Boa reflexão sobre inferência de tipos e compilação
+- [x] Curiosidade/Iniciativa - Vai além do pedido, experimenta por conta própria
 
 ---
 
@@ -53,7 +52,9 @@
 
 | Área | Observação | Frequência |
 |------|------------|------------|
-| - | - | - |
+| Convenções de código | Uso inconsistente de ponto e vírgula | 3+ exercícios |
+| Leitura de enunciado | Saída diferente do formato pedido | 3 exercícios |
+| Nomenclatura | Nomes de variáveis abreviados | 1 exercício (ex10) |
 
 ---
 
@@ -71,7 +72,7 @@
 
 *Lista de tópicos que o aluno demonstrou dificuldade*
 
-- (nenhum identificado ainda)
+- Diferença entre erro de compilação e convenção de estilo
 
 ---
 
@@ -79,7 +80,11 @@
 
 *Lista de tópicos que o aluno dominou rapidamente*
 
-- (nenhum identificado ainda)
+- console.log e saída no terminal
+- Variáveis tipadas (string, number, boolean)
+- Inferência de tipos
+- Compilação TypeScript -> JavaScript
+- Correção de erros de tipo
 
 ---
 
@@ -101,4 +106,4 @@
 
 ---
 
-*Última atualização: 2025-01-12*
+*Última atualização: 2026-02-01*
