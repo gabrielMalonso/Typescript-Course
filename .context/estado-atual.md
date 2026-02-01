@@ -9,22 +9,22 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 00 - Preparação do Ambiente |
-| **Fase atual** | Exercícios em andamento |
+| **Fase atual** | Exercícios corrigidos - Prova pendente |
 | **Último capítulo concluído** | - |
-| **Próximo passo** | Aluno resolver os 10 exercícios da lista |
+| **Próximo passo** | Aluno fazer a prova do Capítulo 00 |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2025-01-25
-- **Atividade:** Verificação dos exemplos práticos + liberação para exercícios
+- **Data:** 2026-02-01
+- **Atividade:** Correção dos exercícios do Capítulo 00
 - **O que foi feito:**
-  - Aluno estudou toda a aula (teoria, sintaxe, exemplos, mini-projeto)
-  - Aluno fez os exemplos práticos da aula em `exercicios/03.exemplos-exercicios/`
-  - Verificados 5 arquivos: hello.ts, variaveis.ts, contador.ts, cronometro.ts, mini-projeto.ts
-  - Aluno demonstrou compreensão de console.log, variáveis tipadas, inferência de tipos
-  - Liberado para iniciar a lista de exercícios
+  - Aluno entregou os 10 exercícios da lista
+  - Todos os 10 arquivos compilam sem erros
+  - Correção escrita em `exercicios/correcoes.md`
+  - 8 exercícios totalmente corretos, 2 com ressalvas menores, 1 parcialmente correto
+  - Exercícios aprovados - aluno liberado para prova
 
 ---
 
@@ -48,8 +48,8 @@
 
 - [x] Aluno estudar o conteúdo da aula
 - [x] Aluno fazer exemplos práticos da aula
-- [ ] Aluno fazer os exercícios (lista.md - 10 exercícios)
-- [ ] Corrigir exercícios quando entregues
+- [x] Aluno fazer os exercícios (lista.md - 10 exercícios)
+- [x] Corrigir exercícios quando entregues
 - [ ] Aluno fazer a prova
 - [ ] Corrigir prova e dar nota
 
@@ -70,7 +70,7 @@ Quando o aluno retornar, verificar:
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Não |
-| Prova pendente | Não |
+| Prova pendente | Sim |
 | Projeto em andamento | Não |
 | Dúvida não resolvida | Não |
 
@@ -83,7 +83,8 @@ Quando o aluno retornar, verificar:
 | 2025-01-12 | Estruturação inicial do curso | ~1h |
 | 2025-01-12 | Criação do Capítulo 00 completo | ~30min |
 | 2025-01-25 | Verificação de exemplos + liberação para exercícios | ~10min |
+| 2026-02-01 | Correção dos 10 exercícios do cap. 00 | ~15min |
 
 ---
 
-*Última atualização: 2025-01-25*
+*Última atualização: 2026-02-01*

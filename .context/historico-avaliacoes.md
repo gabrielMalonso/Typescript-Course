@@ -91,7 +91,7 @@
 
 | Data | Capítulo | Exercícios | Acertos | Taxa | Erros Principais |
 |------|----------|------------|---------|------|------------------|
-| - | - | - | - | - | - |
+| 2026-02-01 | 00 | 10 | 8 corretos, 2 com ressalvas, 1 parcial | ~85% | Inconsistência com ponto e vírgula; saída divergente do esperado; confusão sobre o que é erro de compilação vs estilo |
 
 ---
 
@@ -124,4 +124,4 @@
 
 ---
 
-*Última atualização: 2025-01-12*
+*Última atualização: 2026-02-01*
