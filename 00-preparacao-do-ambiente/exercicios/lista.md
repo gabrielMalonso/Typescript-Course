@@ -363,19 +363,19 @@ Tire um screenshot do Playground funcionando e salve como `bonus-playground.png`
 
 Antes de considerar o capítulo completo, verifique:
 
-- [ ] Exercício 1.1 - Versões anotadas no arquivo
-- [ ] Exercício 1.2 - "Olá, meu nome é..." funcionando
-- [ ] Exercício 1.3 - Compilação entendida, comentário adicionado
-- [ ] Exercício 2.1 - Watch mode testado
-- [ ] Exercício 2.2 - Área do círculo calculada corretamente
-- [ ] Exercício 2.3 - 3 erros encontrados e corrigidos
-- [ ] Exercício 2.4 - Ficha técnica exibida
-- [ ] Exercício 3.1 - Inferência de tipos descoberta
-- [ ] Exercício 3.2 - Erros comuns explicados
-- [ ] Exercício 3.3 - Estrutura de pastas criada
-- [ ] Todos os arquivos .ts compilam sem erros
-- [ ] Todos os arquivos .js executam corretamente
-- [ ] Dúvidas anotadas no DIARIO.md
+- [x] Exercício 1.1 - Versões anotadas no arquivo
+- [x] Exercício 1.2 - "Olá, meu nome é..." funcionando
+- [x] Exercício 1.3 - Compilação entendida, comentário adicionado
+- [x] Exercício 2.1 - Watch mode testado
+- [x] Exercício 2.2 - Área do círculo calculada corretamente
+- [x] Exercício 2.3 - 3 erros encontrados e corrigidos
+- [x] Exercício 2.4 - Ficha técnica exibida
+- [x] Exercício 3.1 - Inferência de tipos descoberta
+- [x] Exercício 3.2 - Erros comuns explicados
+- [x] Exercício 3.3 - Estrutura de pastas criada
+- [x] Todos os arquivos .ts compilam sem erros
+- [x] Todos os arquivos .js executam corretamente
+- [x] Dúvidas anotadas no DIARIO.md
 
 ---
 

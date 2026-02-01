@@ -46,7 +46,26 @@ Este é seu espaço pessoal para anotar:
 
 ## Entradas do Diário
 
-<!-- Suas anotações começam aqui -->
+```markdown
+### [01/02/2026] - Capítulo 00: preparação do ambiente
+
+**O que estudei hoje:**
+Estudamos os conceitos fundamentais para preparação do ambiente. Começamos a aprender a respeito da sintaxe e da declaração de variáveis. 
+
+**O que achei fácil:**
+- Essa parte inicial foi toda bem tranquila para mim, não tive problemas, principalmente porque eu já tenho alguma base da parte da programação. Mas foi bem legal entender as diferenças principais entre o TypeScript e o JavaScript e a parte prática, né, como fazer, começar a declarar uma variável e vê-la sendo apresentada no console, enfim.
+
+**O que achei difícil:**
+- Eu ainda não achei nada difícil. A única coisa que eu não compreendi 100% ainda foi a parte final do último exercício. Você fala a respeito de interface. Acredito que vamos estudar posteriormente essa parte, então está tranquilo. 
+
+**Dúvidas que ficaram:**
+- Não ficaram dúvidas. 
+
+**Insights/Conexões:**
+- ...
+
+**Nota pessoal (1-5):** ⭐⭐⭐⭐⭐
+```
 
 ---
 
