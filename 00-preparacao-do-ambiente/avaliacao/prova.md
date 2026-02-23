@@ -19,7 +19,7 @@ b) É um superset do JavaScript que adiciona tipagem estática e precisa ser com
 c) É uma versão mais antiga do JavaScript usada em sistemas legados
 d) Funciona apenas no servidor e não pode ser usado em aplicações web
 
-**Resposta:** [ ]
+**Resposta:** [b]
 
 ---
 
@@ -32,7 +32,7 @@ b) `tsc app.ts` → `node app.js`
 c) `node app.js` → `tsc app.ts`
 d) `tsc app.js` → `node app.ts`
 
-**Resposta:** [ ]
+**Resposta:** [b]
 
 ---
 
@@ -40,13 +40,13 @@ d) `tsc app.js` → `node app.ts`
 
 **Marque (V) para verdadeiro ou (F) para falso em cada afirmação:**
 
-( ) O comando `tsc --watch` recompila automaticamente o arquivo TypeScript sempre que ele é salvo.
+(V) O comando `tsc --watch` recompila automaticamente o arquivo TypeScript sempre que ele é salvo.
 
-( ) O Node.js é necessário para executar arquivos JavaScript gerados pelo compilador TypeScript.
+(V) O Node.js é necessário para executar arquivos JavaScript gerados pelo compilador TypeScript.
 
-( ) Arquivos TypeScript têm a extensão `.js` e arquivos JavaScript têm a extensão `.ts`.
+(F) Arquivos TypeScript têm a extensão `.js` e arquivos JavaScript têm a extensão `.ts`.
 
-( ) O TypeScript detecta erros de tipo durante a compilação, antes do código ser executado.
+(V) O TypeScript detecta erros de tipo durante a compilação, antes do código ser executado.
 
 ---
 
@@ -77,20 +77,21 @@ console.log(nome + " tem " + idade + " anos");
 ```
 
 **a) Este código irá compilar com sucesso? Justifique sua resposta. (0,5 ponto)**
+Não irá compilar. A idade foi declarada como number, mas foi atribuída a ela um valor do tipo string. 
 
-_______________________________________________________________________________
-
-_______________________________________________________________________________
 
 **b) Se houver erro, identifique a linha problemática e explique o que está errado. (0,5 ponto)**
-
-_______________________________________________________________________________
-
-_______________________________________________________________________________
+A linha problemática é a linha 2. O erro é que a variável idade foi declarada como number, mas foi atribuída a ela um valor do tipo string.
 
 **c) Escreva a correção necessária para que o código funcione corretamente. (0,5 ponto)**
 
-_______________________________________________________________________________
+``` typescript
+let nome: string = "Gabriel";
+let idade: number = "25";
+let ativo: boolean = true;
+
+console.log(nome + " tem " + idade + " anos");
+```
 
 ---
 
@@ -107,15 +108,12 @@ _______________________________________________________________________________
 **Escreva o código completo abaixo:**
 
 ```typescript
-// Seu código aqui:
+let produto : string = "Caderno";
+let preco : number = 15.90;
+let quantidade : number = 3;
+let total : number = preco * quantidade;
 
-
-
-
-
-
-
-
+console.log("O total de " + quantidade + " " + produto + "(s) é R$ " + total);
 ```
 
 ---
