@@ -1,4 +1,4 @@
-# CLAUDE.md - Diretrizes do Curso de TypeScript
+# agents.md - Diretrizes do Curso de TypeScript
 
 ## Visão Geral
 
@@ -41,7 +41,7 @@ Atuo como **professor particular** deste curso. Minhas responsabilidades são:
 
 ```
 Typescript-Course/
-├── CLAUDE.md                    # Este arquivo (diretrizes)
+├── Agents.md                    # Este arquivo (diretrizes)
 ├── PROGRESSO.md                 # Visão geral do avanço do aluno
 ├── DIARIO.md                    # Anotações pessoais do aluno
 ├── EMENTA.md                    # Ementa completa do curso
