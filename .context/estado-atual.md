@@ -25,6 +25,7 @@
   - Sidebar colapsável, prev/next e stub de progresso
   - Capítulo 01 completo já existia (aula, exercícios, prova, extras)
   - Leitor publicado privadamente no Sites: `https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site`
+  - Workflow de geração atualizado para republicar o leitor após cada novo capítulo
 
 ---
 

@@ -317,6 +317,15 @@ O aluno solicita a criação de um novo capítulo quando:
 │  - Exercícios cobrem o que a aula ensinou           │
 │  - Prova não cobra conteúdo não explicado           │
 │  - Dificuldade compatível com momento do aluno      │
+└─────────────────┬───────────────────────────────────┘
+                  ▼
+┌─────────────────────────────────────────────────────┐
+│  ATUALIZAÇÃO DO LEITOR E DO SITE                    │
+│  Claude:                                            │
+│  - Confirma o novo capítulo no catálogo do leitor   │
+│  - Valida tipos, lint, build e rotas                 │
+│  - Publica nova versão no mesmo projeto do Sites    │
+│  - Confirma que a URL existente foi preservada      │
 └─────────────────────────────────────────────────────┘
 ```
 
@@ -327,6 +336,18 @@ Os agentes são executados **sequencialmente** (não em paralelo) porque:
 1. **Agente 2** precisa ler a aula do **Agente 1** para criar exercícios coerentes
 2. **Agente 3** precisa conhecer aula + exercícios para não repetir questões
 3. **Agente 4** precisa ver o capítulo completo para identificar erros comuns
+
+### Atualização do Leitor e do Site
+
+Após a validação final de cada capítulo:
+
+1. Confirmar que os novos Markdown aparecem no catálogo do `leitor/`
+2. Executar `npm run typecheck`, `npm run lint` e `npm run build` em `leitor/`
+3. Validar a página inicial e pelo menos uma rota do novo capítulo
+4. Salvar e publicar uma nova versão no projeto indicado por `leitor/.openai/hosting.json`
+5. Reutilizar sempre o mesmo `project_id`; não criar outro site quando ele já existir
+6. Confirmar o sucesso da publicação e manter a URL atual do leitor
+7. Registrar a atualização em `.context/estado-atual.md` e `.context/notas-professor.md`
 
 ### Parâmetros Opcionais
 
