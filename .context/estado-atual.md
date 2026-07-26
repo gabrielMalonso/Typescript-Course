@@ -9,24 +9,28 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 01 - Variáveis e Constantes |
-| **Fase atual** | Aguardando geração do capítulo |
+| **Fase atual** | Aula |
 | **Último capítulo concluído** | 00 - Preparação do Ambiente |
-| **Próximo passo** | Gerar o Capítulo 01 quando o aluno solicitar |
+| **Próximo passo** | Ler `01-variaveis-e-constantes/aula/01-teoria.md` |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-07-26
-- **Atividade:** Correção da prova do Capítulo 00
+- **Atividade:** Geração do Capítulo 01
 - **O que foi feito:**
-  - Prova corrigida com nota 9,5
-  - Capítulo 00 concluído com aprovação
-  - Reforçada a necessidade de testar o código presente na entrega final
+  - Aula completa criada em quatro partes
+  - Mini-projeto Painel de Parâmetros de Engenharia validado
+  - Lista criada com 10 exercícios progressivos e 1 bônus
+  - Prova criada com 4 pontos de teoria e 6 de prática
+  - Gabarito confidencial salvo em `.context/gabarito-cap01.md`
+  - Extras criados com erros comuns, recursos e glossário
+  - Capítulo validado quanto a estrutura, cobertura e coerência
 
 ---
 
-## Conteúdo do Capítulo 00
+## Conteúdo do Capítulo 01
 
 | Item | Status | Arquivo |
 |------|--------|---------|
@@ -34,9 +38,9 @@
 | Aula - Sintaxe | ✅ Criado | 02-sintaxe.md |
 | Aula - Exemplos | ✅ Criado | 03-exemplos.md |
 | Aula - Mini-projeto | ✅ Criado | 04-mini-projeto.md |
-| Exercícios | ✅ Criado | lista.md (10 exercícios) |
+| Exercícios | ✅ Criado | lista.md (10 exercícios + bônus) |
 | Prova | ✅ Criado | prova.md |
-| Gabarito | ✅ Criado | .context/gabarito-cap00.md |
+| Gabarito | ✅ Criado | .context/gabarito-cap01.md |
 | Erros Comuns | ✅ Criado | erros-comuns.md |
 | Recursos | ✅ Criado | recursos.md |
 
@@ -44,20 +48,22 @@
 
 ## Pendências
 
-- [x] Aluno estudar o conteúdo da aula
-- [x] Aluno fazer exemplos práticos da aula
-- [x] Aluno fazer os exercícios (lista.md - 10 exercícios)
-- [x] Corrigir exercícios quando entregues
-- [x] Aluno fazer a prova
-- [x] Corrigir prova e dar nota
+- [ ] Aluno estudar o conteúdo da aula
+- [ ] Aluno fazer o mini-projeto
+- [ ] Aluno registrar aprendizados no `DIARIO.md`
+- [ ] Aluno fazer os exercícios (`ex01.ts` a `ex10.ts`)
+- [ ] Corrigir exercícios quando entregues
+- [ ] Aluno fazer a prova
+- [ ] Corrigir prova e dar nota
 
 ---
 
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Confirmar se deseja iniciar o Capítulo 01
-2. Gerar o conteúdo do capítulo sob demanda
+1. Continuar a aula a partir de `01-teoria.md`
+2. Tirar dúvidas sem antecipar respostas dos exercícios
+3. Atualizar o contexto conforme o avanço
 
 ---
 
@@ -66,7 +72,7 @@ Quando o aluno retornar:
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Não |
-| Prova pendente | Não |
+| Prova pendente | Sim, após aula e exercícios |
 | Projeto em andamento | Não |
 | Dúvida não resolvida | Não |
 
@@ -83,6 +89,7 @@ Quando o aluno retornar:
 | 2026-07-26 | Revisão de renomear e excluir arquivos/pastas no terminal | ~5min |
 | 2026-07-26 | Orientação sobre a questão 6 da prova | ~5min |
 | 2026-07-26 | Correção da prova do Capítulo 00 — nota 9,5 | ~10min |
+| 2026-07-26 | Geração e validação do Capítulo 01 completo | ~30min |
 
 ---
 

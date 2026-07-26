@@ -6,6 +6,27 @@
 
 ## Observações Gerais
 
+### 2026-07-26 - Geração do Capítulo 01
+
+**Material criado:**
+- Aula completa sobre `let`, `const`, `var`, nomenclatura, inferência, anotação e escopo
+- Mini-projeto com contexto de engenharia
+- 10 exercícios progressivos e 1 bônus
+- Prova equilibrada em 40% teoria e 60% prática
+- Guia de erros comuns, recursos e glossário
+
+**Adaptações realizadas:**
+- Reforço de nomes descritivos em `camelCase`
+- Separação explícita entre erro de compilação, problema de saída e estilo
+- Comparação entre vírgula e `+` no `console.log`
+- Conferência do código salvo contra a versão realmente testada
+- Template literals apenas como prévia, sem antecipar o Capítulo 02
+
+**Próximo ponto de observação:**
+- Verificar se o aluno escolhe `const` por padrão e usa `let` apenas quando há reatribuição
+- Observar precisão na reprodução das saídas
+- Avaliar compreensão prática de escopo de bloco
+
 ### 2026-07-26 - Dúvida sobre a Questão 6 da Prova
 
 **Observação:**
