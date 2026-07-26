@@ -8,10 +8,10 @@
 
 | Métrica | Valor |
 |---------|-------|
-| **Total de provas** | 0 |
-| **Média geral** | - |
-| **Maior nota** | - |
-| **Menor nota** | - |
+| **Total de provas** | 1 |
+| **Média geral** | 9,5 |
+| **Maior nota** | 9,5 |
+| **Menor nota** | 9,5 |
 | **Provas com nota < 7** | 0 |
 
 ---
@@ -22,14 +22,14 @@
 
 | Capítulo | Data | Nota | Principais Erros | Observações |
 |----------|------|------|------------------|-------------|
-| 00 | - | - | - | - |
+| 00 | 2026-07-26 | 9,5 | Código copiado na Q6 não compilava | Aprovado; arquivos `.ts` de apoio compilam |
 | 01 | - | - | - | - |
 | 02 | - | - | - | - |
 | 03 | - | - | - | - |
 | 04 | - | - | - | - |
 | 05 | - | - | - | - |
 
-**Média do Módulo 1:** -
+**Média do Módulo 1:** 9,5
 
 ---
 
@@ -112,7 +112,7 @@
 
 | Tipo | Descrição | Frequência | Capítulos | Status |
 |------|-----------|------------|-----------|--------|
-| - | - | - | - | - |
+| Validação da entrega | Código testado estava correto, mas a versão copiada na resposta continha erros | 1 | 00 | Reforçar |
 
 ---
 
@@ -120,8 +120,8 @@
 
 | Conceito | Primeira Nota | Última Nota | Tendência |
 |----------|---------------|-------------|-----------|
-| - | - | - | - |
+| Preparação do ambiente e tipos básicos | 9,5 | 9,5 | Base sólida |
 
 ---
 
-*Última atualização: 2026-02-01*
+*Última atualização: 2026-07-26*

@@ -6,6 +6,23 @@
 
 ## Observações Gerais
 
+### 2026-07-26 - Dúvida sobre a Questão 6 da Prova
+
+**Observação:**
+- O aluno criou uma função `total(preco, quantidade)` para efetuar o cálculo
+- A solução funciona, mas não atende literalmente ao requisito de armazenar o resultado em uma variável `total` tipada
+- Reforçar a distinção entre função e variável e a leitura literal dos requisitos
+
+### 2026-07-26 - Prova do Capítulo 00
+
+**Resultado:** 9,5/10 — aprovado.
+
+**Observações:**
+- Excelente domínio dos conceitos teóricos e dos erros de tipo
+- O arquivo `caderno.ts` estava correto, mas a versão copiada para a resposta da Q6 continha uma chave extra e chamava a variável `total` como função
+- O aluno respondeu conforme o gabarito na Q7; esclarecer que ausência de `;` não era um erro real de compilação
+- Capítulo 00 concluído e aluno liberado para o Capítulo 01
+
 ### 2025-01-12 - Sessão Inicial
 
 **Impressões do aluno:**

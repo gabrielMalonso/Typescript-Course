@@ -8,20 +8,21 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Capítulo atual** | 00 - Preparação do Ambiente |
-| **Fase atual** | Exercícios corrigidos - Prova pendente |
-| **Último capítulo concluído** | - |
-| **Próximo passo** | Aluno fazer a prova do Capítulo 00 |
+| **Capítulo atual** | 01 - Variáveis e Constantes |
+| **Fase atual** | Aguardando geração do capítulo |
+| **Último capítulo concluído** | 00 - Preparação do Ambiente |
+| **Próximo passo** | Gerar o Capítulo 01 quando o aluno solicitar |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-07-26
-- **Atividade:** Revisão rápida de comandos do terminal
+- **Atividade:** Correção da prova do Capítulo 00
 - **O que foi feito:**
-  - Revisados os comandos `mv`, `rm` e `rmdir`
-  - Reforçado o cuidado necessário ao usar `rm -r`
+  - Prova corrigida com nota 9,5
+  - Capítulo 00 concluído com aprovação
+  - Reforçada a necessidade de testar o código presente na entrega final
 
 ---
 
@@ -47,18 +48,16 @@
 - [x] Aluno fazer exemplos práticos da aula
 - [x] Aluno fazer os exercícios (lista.md - 10 exercícios)
 - [x] Corrigir exercícios quando entregues
-- [ ] Aluno fazer a prova
-- [ ] Corrigir prova e dar nota
+- [x] Aluno fazer a prova
+- [x] Corrigir prova e dar nota
 
 ---
 
 ## Próxima Sessão
 
-Quando o aluno retornar, verificar:
-1. Se já leu a aula
-2. Se tem dúvidas sobre o conteúdo
-3. Se fez os exercícios para correção
-4. Se está pronto para a prova
+Quando o aluno retornar:
+1. Confirmar se deseja iniciar o Capítulo 01
+2. Gerar o conteúdo do capítulo sob demanda
 
 ---
 
@@ -67,7 +66,7 @@ Quando o aluno retornar, verificar:
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Não |
-| Prova pendente | Sim |
+| Prova pendente | Não |
 | Projeto em andamento | Não |
 | Dúvida não resolvida | Não |
 
@@ -82,6 +81,8 @@ Quando o aluno retornar, verificar:
 | 2025-01-25 | Verificação de exemplos + liberação para exercícios | ~10min |
 | 2026-02-01 | Correção dos 10 exercícios do cap. 00 | ~15min |
 | 2026-07-26 | Revisão de renomear e excluir arquivos/pastas no terminal | ~5min |
+| 2026-07-26 | Orientação sobre a questão 6 da prova | ~5min |
+| 2026-07-26 | Correção da prova do Capítulo 00 — nota 9,5 | ~10min |
 
 ---
 
