@@ -202,6 +202,7 @@ Celular na mesma rede: URL Network do Vite.
 - [x] Corrigir exercícios quando aluno entregar
 - [x] Observar padrões de erro nos exercícios
 - [x] Publicar o leitor de aulas no Sites
+- [x] Integrar atualização do leitor e do Sites ao workflow de novos capítulos
 - [ ] Perguntar preferência de horário/frequência de estudo
 - [ ] Observar estilo de comunicação preferido
 
