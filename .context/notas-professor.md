@@ -99,6 +99,7 @@
 | Ponto e vírgula (convenção) | Uso inconsistente nos exercícios | Reforçar no cap. 01 |
 | Diferença console.log com `,` vs `+` | Usa `,` sem saber a diferença de formatação | Explicar no cap. 01 |
 | Erro de compilação vs estilo | Confundiu `;` ausente com erro no ex06 | Questão na prova do cap. 00 |
+| Comandos de arquivos no terminal | Pediu revisão de `mv`, `rm` e `rmdir` | Reforçar segurança antes de exclusões recursivas |
 
 ---
 
@@ -158,4 +159,4 @@
 
 ---
 
-*Última atualização: 2026-02-01*
+*Última atualização: 2026-07-26*
