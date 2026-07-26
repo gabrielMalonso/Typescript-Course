@@ -73,6 +73,7 @@
 *Lista de tópicos que o aluno demonstrou dificuldade*
 
 - Diferença entre erro de compilação e convenção de estilo
+- Conferência entre o código testado e a versão copiada para a entrega
 
 ---
 
@@ -85,6 +86,7 @@
 - Inferência de tipos
 - Compilação TypeScript -> JavaScript
 - Correção de erros de tipo
+- Fluxo de compilação e execução de TypeScript
 
 ---
 
@@ -106,4 +108,4 @@
 
 ---
 
-*Última atualização: 2026-02-01*
+*Última atualização: 2026-07-26*
