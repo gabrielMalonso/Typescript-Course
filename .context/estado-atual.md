@@ -18,15 +18,12 @@
 ## Sessão Atual
 
 - **Data:** 2026-07-26
-- **Atividade:** Geração do Capítulo 01
+- **Atividade:** Criação do leitor de aulas (`leitor/`) + Capítulo 01 disponível para estudo
 - **O que foi feito:**
-  - Aula completa criada em quatro partes
-  - Mini-projeto Painel de Parâmetros de Engenharia validado
-  - Lista criada com 10 exercícios progressivos e 1 bônus
-  - Prova criada com 4 pontos de teoria e 6 de prática
-  - Gabarito confidencial salvo em `.context/gabarito-cap01.md`
-  - Extras criados com erros comuns, recursos e glossário
-  - Capítulo validado quanto a estrutura, cobertura e coerência
+  - App React + Vite em `leitor/` com home, índice estilo explorador e página de leitura
+  - Catálogo automático dos Markdown dos capítulos (18 arquivos nos caps. 00 e 01)
+  - Sidebar colapsável, prev/next e stub de progresso
+  - Capítulo 01 completo já existia (aula, exercícios, prova, extras)
 
 ---
 
@@ -90,6 +87,7 @@ Quando o aluno retornar:
 | 2026-07-26 | Orientação sobre a questão 6 da prova | ~5min |
 | 2026-07-26 | Correção da prova do Capítulo 00 — nota 9,5 | ~10min |
 | 2026-07-26 | Geração e validação do Capítulo 01 completo | ~30min |
+| 2026-07-26 | Criação do leitor de aulas (React + Vite) | ~45min |
 
 ---
 

@@ -1,0 +1,12 @@
+[
+  {
+    "chapterId": "00-preparacao-do-ambiente",
+    "label": "Cap. 00 — Preparação do Ambiente",
+    "status": "concluido"
+  },
+  {
+    "chapterId": "01-variaveis-e-constantes",
+    "label": "Cap. 01 — Variáveis e Constantes",
+    "status": "em_andamento"
+  }
+]
