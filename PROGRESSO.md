@@ -26,7 +26,7 @@
 | Cap | Título | Aula | Exercícios | Prova | Status |
 |-----|--------|------|------------|-------|--------|
 | 00 | Preparação do Ambiente | ✓ | ✓ | ★ 9,5 | Concluído |
-| 01 | Variáveis e Constantes | - | - | - | Pendente |
+| 01 | Variáveis e Constantes | Disponível | - | - | Em estudo |
 | 02 | Tipos Primitivos | - | - | - | Pendente |
 | 03 | Operadores | - | - | - | Pendente |
 | 04 | Estruturas Condicionais | - | - | - | Pendente |
@@ -109,6 +109,7 @@
 | Símbolo | Significado |
 |---------|-------------|
 | - | Não realizado |
+| Disponível | Material criado, estudo ainda não concluído |
 | ✓ | Concluído |
 | ★ | Nota 9-10 |
 | ● | Nota 7-8 |
