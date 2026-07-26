@@ -2,6 +2,12 @@
 
 App React + Vite para ler as aulas do curso em Markdown com tipografia confortável e índice estilo explorador.
 
+## Versão hospedada
+
+O leitor está publicado com acesso privado em:
+
+<https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site>
+
 ## Como usar
 
 ```bash

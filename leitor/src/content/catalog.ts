@@ -1,10 +1,19 @@
 import type { CatalogDocument, TreeNode } from './types'
 
-const rawModules = import.meta.glob('@course/**/*.md', {
-  query: '?raw',
-  import: 'default',
-  eager: true,
-}) as Record<string, string>
+const rawModules = import.meta.glob(
+  [
+    '@course/[0-9][0-9]-*/README.md',
+    '@course/[0-9][0-9]-*/aula/*.md',
+    '@course/[0-9][0-9]-*/extras/*.md',
+    '@course/[0-9][0-9]-*/exercicios/lista.md',
+    '@course/[0-9][0-9]-*/avaliacao/prova.md',
+  ],
+  {
+    query: '?raw',
+    import: 'default',
+    eager: true,
+  },
+) as Record<string, string>
 
 const EXCLUDED_NAME_PATTERNS = [
   /(^|\/)\.context\//,

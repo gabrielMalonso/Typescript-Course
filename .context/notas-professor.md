@@ -201,7 +201,7 @@ Celular na mesma rede: URL Network do Vite.
 - [x] Verificar se aluno quer iniciar capítulo 00
 - [x] Corrigir exercícios quando aluno entregar
 - [x] Observar padrões de erro nos exercícios
-- [ ] Publicar o leitor de aulas no Sites após confirmação do aluno
+- [x] Publicar o leitor de aulas no Sites
 - [ ] Perguntar preferência de horário/frequência de estudo
 - [ ] Observar estilo de comunicação preferido
 
