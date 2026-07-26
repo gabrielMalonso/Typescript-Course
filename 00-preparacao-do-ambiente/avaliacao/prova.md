@@ -19,7 +19,7 @@ b) É um superset do JavaScript que adiciona tipagem estática e precisa ser com
 c) É uma versão mais antiga do JavaScript usada em sistemas legados
 d) Funciona apenas no servidor e não pode ser usado em aplicações web
 
-**Resposta:** [b]
+**Resposta:** ______
 
 ---
 
@@ -32,7 +32,7 @@ b) `tsc app.ts` → `node app.js`
 c) `node app.js` → `tsc app.ts`
 d) `tsc app.js` → `node app.ts`
 
-**Resposta:** [b]
+**Resposta:** ______
 
 ---
 
@@ -40,13 +40,13 @@ d) `tsc app.js` → `node app.ts`
 
 **Marque (V) para verdadeiro ou (F) para falso em cada afirmação:**
 
-(V) O comando `tsc --watch` recompila automaticamente o arquivo TypeScript sempre que ele é salvo.
+(  ) O comando `tsc --watch` recompila automaticamente o arquivo TypeScript sempre que ele é salvo.
 
-(V) O Node.js é necessário para executar arquivos JavaScript gerados pelo compilador TypeScript.
+(  ) O Node.js é necessário para executar arquivos JavaScript gerados pelo compilador TypeScript.
 
-(F) Arquivos TypeScript têm a extensão `.js` e arquivos JavaScript têm a extensão `.ts`.
+(  ) Arquivos TypeScript têm a extensão `.js` e arquivos JavaScript têm a extensão `.ts`.
 
-(V) O TypeScript detecta erros de tipo durante a compilação, antes do código ser executado.
+(  ) O TypeScript detecta erros de tipo durante a compilação, antes do código ser executado.
 
 ---
 
@@ -77,20 +77,26 @@ console.log(nome + " tem " + idade + " anos");
 ```
 
 **a) Este código irá compilar com sucesso? Justifique sua resposta. (0,5 ponto)**
-Não irá compilar. A idade foi declarada como number, mas foi atribuída a ela um valor do tipo string. 
+
+_______________________________________________________________________________
+
+_______________________________________________________________________________
 
 
 **b) Se houver erro, identifique a linha problemática e explique o que está errado. (0,5 ponto)**
-A linha problemática é a linha 2. O erro é que a variável idade foi declarada como number, mas foi atribuída a ela um valor do tipo string.
+
+_______________________________________________________________________________
+
+_______________________________________________________________________________
 
 **c) Escreva a correção necessária para que o código funcione corretamente. (0,5 ponto)**
 
-``` typescript
-let nome: string = "Gabriel";
-let idade: number = "25";
-let ativo: boolean = true;
+```typescript
+// Escreva a correção aqui:
 
-console.log(nome + " tem " + idade + " anos");
+
+
+
 ```
 
 ---
@@ -108,12 +114,12 @@ console.log(nome + " tem " + idade + " anos");
 **Escreva o código completo abaixo:**
 
 ```typescript
-let produto : string = "Caderno";
-let preco : number = 15.90;
-let quantidade : number = 3;
-let total : number = preco * quantidade;
+// Escreva seu código aqui:
 
-console.log("O total de " + quantidade + " " + produto + "(s) é R$ " + total);
+
+
+
+
 ```
 
 ---

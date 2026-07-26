@@ -254,6 +254,25 @@ npm init -y
 
 # Inicializar TypeScript (cria tsconfig.json)
 tsc --init
+
+# Renomear arquivo ou pasta
+mv nome-antigo nome-novo
+
+# Deletar um arquivo
+rm arquivo.txt
+
+# Deletar uma pasta vazia
+rmdir nome-da-pasta
+
+# Deletar uma pasta com todo o conteúdo
+rm -r nome-da-pasta
+
+Para pedir confirmação antes de cada exclusão:
+
+rm -i arquivo.txt
+rm -ri nome-da-pasta
+
+Cuidado: rm não envia para a Lixeira; a exclusão normalmente é permanente. Evite rm -rf até ter certeza absoluta do caminho.
 ```
 
 Por enquanto, não se preocupe com `package.json` e `tsconfig.json`. Vamos usar a forma mais simples: um arquivo solto, compilado diretamente.

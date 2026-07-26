@@ -17,14 +17,11 @@
 
 ## Sessão Atual
 
-- **Data:** 2026-02-01
-- **Atividade:** Correção dos exercícios do Capítulo 00
+- **Data:** 2026-07-26
+- **Atividade:** Revisão rápida de comandos do terminal
 - **O que foi feito:**
-  - Aluno entregou os 10 exercícios da lista
-  - Todos os 10 arquivos compilam sem erros
-  - Correção escrita em `exercicios/correcoes.md`
-  - 8 exercícios totalmente corretos, 2 com ressalvas menores, 1 parcialmente correto
-  - Exercícios aprovados - aluno liberado para prova
+  - Revisados os comandos `mv`, `rm` e `rmdir`
+  - Reforçado o cuidado necessário ao usar `rm -r`
 
 ---
 
@@ -84,7 +81,8 @@ Quando o aluno retornar, verificar:
 | 2025-01-12 | Criação do Capítulo 00 completo | ~30min |
 | 2025-01-25 | Verificação de exemplos + liberação para exercícios | ~10min |
 | 2026-02-01 | Correção dos 10 exercícios do cap. 00 | ~15min |
+| 2026-07-26 | Revisão de renomear e excluir arquivos/pastas no terminal | ~5min |
 
 ---
 
-*Última atualização: 2026-02-01*
+*Última atualização: 2026-07-26*
