@@ -6,6 +6,26 @@
 
 ## Observações Gerais
 
+### 2026-07-26 - Leitor de Aulas
+
+**O que foi criado:**
+- Pasta `leitor/` com React + Vite + TypeScript
+- Home com índice estilo explorador do VS Code
+- Página `/ler/...` com Markdown tipografado, highlight e prev/next
+- Catálogo via `import.meta.glob` — novos capítulos `NN-*` entram sozinhos
+- Exclusões: `.context/`, gabaritos, `correcoes.md`, `resultado.md`
+- Progresso manual em `leitor/src/content/progress.json`
+
+**Como o aluno usa:**
+```bash
+cd leitor && npm install && npm run dev
+```
+Celular na mesma rede: URL Network do Vite.
+
+**Atualização:** dark mode (preferência + localStorage) e leitura desktop com coluna centralizada; índice sempre colapsável.
+
+**Próximo passo pedagógico:** continuar Cap. 01 pela aula (teoria → sintaxe → exemplos → mini-projeto), agora podendo ler no leitor.
+
 ### 2026-07-26 - Geração do Capítulo 01
 
 **Material criado:**
