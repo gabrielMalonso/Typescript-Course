@@ -24,6 +24,7 @@
   - Catálogo automático dos Markdown dos capítulos (18 arquivos nos caps. 00 e 01)
   - Sidebar colapsável, prev/next e stub de progresso
   - Capítulo 01 completo já existia (aula, exercícios, prova, extras)
+  - Hospedagem no Sites avaliada como viável; publicação aguarda confirmação
 
 ---
 
@@ -52,6 +53,7 @@
 - [ ] Corrigir exercícios quando entregues
 - [ ] Aluno fazer a prova
 - [ ] Corrigir prova e dar nota
+- [ ] Publicar `leitor/` no Sites, se confirmado pelo aluno
 
 ---
 
