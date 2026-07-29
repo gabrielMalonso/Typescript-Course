@@ -9,23 +9,27 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 01 - Variáveis e Constantes |
-| **Fase atual** | Aula |
+| **Fase atual** | Exercícios — dúvida no exercício 2.4 |
 | **Último capítulo concluído** | 00 - Preparação do Ambiente |
-| **Próximo passo** | Ler `01-variaveis-e-constantes/aula/01-teoria.md` |
+| **Próximo passo** | Registrar no `ex07.ts` cinco análises como textos e exibir a confirmação |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-07-26
-- **Atividade:** Criação do leitor de aulas (`leitor/`) + Capítulo 01 disponível para estudo
+- **Data:** 2026-07-29
+- **Atividade:** Dúvida de interpretação do exercício 1.3
 - **O que foi feito:**
-  - App React + Vite em `leitor/` com home, índice estilo explorador e página de leitura
-  - Catálogo automático dos Markdown dos capítulos (18 arquivos nos caps. 00 e 01)
-  - Sidebar colapsável, prev/next e stub de progresso
-  - Capítulo 01 completo já existia (aula, exercícios, prova, extras)
-  - Leitor publicado privadamente no Sites: `https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site`
-  - Workflow de geração atualizado para republicar o leitor após cada novo capítulo
+  - Aluno criou os identificadores recebidos e depois copiou seus valores para novos identificadores
+  - A dificuldade não foi declaração ou `console.log`, mas entender que a tabela mostrava nomes externos a serem adaptados, não variáveis obrigatórias
+  - Reforçada a diferença entre nome do dado em outro sistema e identificador escolhido no código
+  - Aluno confirmou a compreensão e irá corrigir o arquivo
+  - Nova versão usa diretamente quatro constantes e elimina as variáveis intermediárias
+  - Restam dois ajustes literais: `dataDaVisita` e “Quantidade de visitantes”
+  - No exercício 2.4, surgiu dúvida sobre por que as respostas devem ser armazenadas em constantes `string`
+  - Esclarecido que os trechos são analisados isoladamente e que o arquivo contém textos com classificação e justificativa, não a execução dos trechos
+  - Esclarecido que “classificação” deve ser exatamente uma das três categorias fornecidas, não apenas “compila” ou “não compila”
+  - Aluno confirmou que compreendeu o formato da classificação
 
 ---
 
@@ -48,7 +52,7 @@
 ## Pendências
 
 - [ ] Aluno estudar o conteúdo da aula
-- [ ] Aluno fazer o mini-projeto
+- [x] Aluno ajustar e concluir o mini-projeto
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [ ] Aluno fazer os exercícios (`ex01.ts` a `ex10.ts`)
 - [ ] Corrigir exercícios quando entregues
@@ -61,9 +65,9 @@
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Continuar a aula a partir de `01-teoria.md`
-2. Tirar dúvidas sem antecipar respostas dos exercícios
-3. Atualizar o contexto conforme o avanço
+1. Conferir a nova versão do exercício 1.3
+2. Continuar a lista de exercícios
+3. Observar a interpretação literal de requisitos
 
 ---
 
@@ -91,7 +95,9 @@ Quando o aluno retornar:
 | 2026-07-26 | Correção da prova do Capítulo 00 — nota 9,5 | ~10min |
 | 2026-07-26 | Geração e validação do Capítulo 01 completo | ~30min |
 | 2026-07-26 | Criação do leitor de aulas (React + Vite) | ~45min |
+| 2026-07-28 | Revisão do mini-projeto do Capítulo 01 | ~10min |
+| 2026-07-29 | Dúvida de interpretação do exercício 1.3 | ~5min |
 
 ---
 
-*Última atualização: 2026-07-26*
+*Última atualização: 2026-07-29*

@@ -6,6 +6,48 @@
 
 ## Observações Gerais
 
+### 2026-07-29 - Interpretação do Exercício 2.4
+
+**Dúvida:** o aluno entendeu que deveria classificar os trechos, mas não viu propósito em registrar as respostas como constantes `string`.
+
+**Esclarecimento:** cada trecho deve ser considerado isoladamente; o `ex07.ts` armazena cinco respostas textuais no formato “classificação + justificativa” e executa apenas a mensagem de confirmação.
+
+**Dúvida complementar:** “classificação” foi inicialmente entendida como apenas “compila ou não compila”; reforçadas as três categorias exigidas pelo enunciado.
+
+**Retorno do aluno:** compreensão confirmada.
+
+**Observação pedagógica:** o mecanismo de resposta é artificial e mistura análise conceitual com prática de declaração. Em versões futuras, explicar explicitamente que os trechos não devem ser copiados para o arquivo e fornecer um molde vazio de resposta.
+
+### 2026-07-29 - Interpretação do Exercício 1.3
+
+**Observação:** o aluno domina declaração, tipos e `console.log`, mas interpretou os nomes recebidos de outro sistema como variáveis que deveriam ser declaradas antes da versão em `camelCase`.
+
+**Ponto a reforçar:** em tabelas de requisitos, distinguir dado de entrada, valor e nome interno sugerido. Neste exercício, os nomes externos eram exemplos a substituir diretamente, e todos os quatro valores fixos deveriam ser declarados com `const`.
+
+**Ajuste pedagógico:** formular exercícios semelhantes com uma coluna explícita “não use este nome no código” ou mostrar uma seta, por exemplo `nome_cliente → nomeCliente`.
+
+**Retorno do aluno:** compreensão confirmada; fará a correção do exercício.
+
+**Revisão da correção:** a estrutura conceitual ficou correta, com quatro constantes diretas e nomes descritivos. Restam apenas a conversão literal `data_da_visita` → `dataDaVisita` e a reprodução exata de “Quantidade de visitantes” na saída.
+
+### 2026-07-28 - Revisão do Mini-Projeto do Capítulo 01
+
+**Resultado:** compila e executa, mas precisa de um pequeno ajuste antes dos exercícios.
+
+**Pontos positivos:**
+- Escolha correta de `const` para dados que não mudam
+- Tipos válidos, nomes em `camelCase` e ponto e vírgula consistentes
+- Saída organizada e próxima do objetivo
+
+**Pontos a reforçar:**
+- O objetivo não era somente reproduzir a saída: `temperaturaAtual` deveria começar em `22` e ser reatribuída para `28`; o status deveria seguir o mesmo processo
+- O bloco da unidade `mm` era necessário para praticar escopo, não apenas para organizar visualmente o código
+- Conferir capitalização exata da saída solicitada
+
+**Próximo passo:** aluno ajustar o próprio arquivo; depois, liberar os exercícios.
+
+**Feedback do aluno:** ele fez o exercício de forma autônoma, sem consultar a resolução apresentada abaixo. O enunciado pareceu pedir apenas a reprodução da saída final; portanto, a solução é coerente com a interpretação possível e não deve ser tratada como falha conceitual. Em materiais futuros, explicitar nos requisitos obrigatórios quais mudanças de estado e conceitos devem aparecer no código, sem depender apenas do passo a passo.
+
 ### 2026-07-26 - Leitor de Aulas
 
 **O que foi criado:**
@@ -177,7 +219,7 @@ Celular na mesma rede: URL Network do Vite.
 
 | Data | Feedback | Ação Tomada |
 |------|----------|-------------|
-| - | - | - |
+| 2026-07-28 | O mini-projeto pareceu pedir apenas a saída final, sem deixar clara a obrigatoriedade da reatribuição | Registrar mudanças de estado e conceitos obrigatórios diretamente nos requisitos dos próximos projetos |
 
 ---
 
