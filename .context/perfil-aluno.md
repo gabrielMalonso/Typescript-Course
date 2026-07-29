@@ -55,6 +55,7 @@
 | Convenções de código | Uso inconsistente de ponto e vírgula | 3+ exercícios |
 | Leitura de enunciado | Saída diferente do formato pedido | 3 exercícios |
 | Nomenclatura | Nomes de variáveis abreviados | 1 exercício (ex10) |
+| Clareza do enunciado | Resolveu o mini-projeto sem consultar a solução e interpretou o quadro de saída como requisito principal | 1 mini-projeto (cap. 01) |
 
 ---
 
