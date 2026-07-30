@@ -10,7 +10,7 @@ console.log("Portão inicial:", portao);
 
 {
     const setorDoTerminal:string = "B";
-    console.log ("Setor do Terminal:", setorDoTerminal);
+    console.log ("Setor do terminal:", setorDoTerminal);
 }
 
 const observacaoDeEstilo:string = "Omitir um ponto e vírgula em uma das declarações normalmente não é uma questão; não seria um problema pra compilação, porque o compilador entende a falta e adiciona no código JavaScript final.";

@@ -24,3 +24,4 @@ console.log ("Aluna:", nomeAluno);
     const turnoAtual = "Noite";
     console.log("Turno:", turnoAtual);
 }
+const problema4:string = "No trecho original, o identificador do nome do aluno é inválido para camelCase.";
