@@ -6,6 +6,20 @@
 
 ## Observações Gerais
 
+### 2026-07-30 - Correção dos Exercícios do Capítulo 01
+
+**Resultado:** os dez exercícios e o bônus compilam e executam. O aluno domina os conceitos práticos centrais do capítulo.
+
+**Pontos fortes:** boa escolha entre `let` e `const`, tipos coerentes, inferência, reatribuição e escopo de bloco.
+
+**Pontos a reforçar:**
+- Comparar a saída literalmente com o modelo; houve divergências em valores, rótulos ou capitalização
+- Cumprir partes não executáveis do enunciado; faltaram diagnósticos no `ex09.ts` e exemplos no `ex10.ts`
+- Corrigir a noção de escopo de função: nomes internos não ficam acessíveis fora dela
+- Usar `const` também para `operadorAtual` no `ex08.ts` e `embarqueLiberado` no bônus
+
+**Próximo passo:** revisar os arquivos conforme `exercicios/correcoes.md` e fazer uma conferência rápida antes da prova.
+
 ### 2026-07-29 - Interpretação do Exercício 2.4
 
 **Dúvida:** o aluno entendeu que deveria classificar os trechos, mas não viu propósito em registrar as respostas como constantes `string`.

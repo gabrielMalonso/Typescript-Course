@@ -26,7 +26,7 @@
 | Cap | Título | Aula | Exercícios | Prova | Status |
 |-----|--------|------|------------|-------|--------|
 | 00 | Preparação do Ambiente | ✓ | ✓ | ★ 9,5 | Concluído |
-| 01 | Variáveis e Constantes | Disponível | - | - | Em estudo |
+| 01 | Variáveis e Constantes | ✓ | Corrigidos | - | Ajustes pendentes |
 | 02 | Tipos Primitivos | - | - | - | Pendente |
 | 03 | Operadores | - | - | - | Pendente |
 | 04 | Estruturas Condicionais | - | - | - | Pendente |
@@ -97,7 +97,7 @@
 ## Estatísticas
 
 - **Capítulos concluídos:** 1/31
-- **Exercícios realizados:** 10
+- **Exercícios realizados:** 20 + 1 bônus
 - **Provas realizadas:** 1
 - **Média geral:** 9,5
 - **Projetos entregues:** 0/4
@@ -117,4 +117,4 @@
 
 ---
 
-*Última atualização: Julho/2026*
+*Última atualização: 30/07/2026*

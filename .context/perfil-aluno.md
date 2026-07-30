@@ -43,6 +43,7 @@
 - [ ] Atenção a detalhes - Parcial: código funciona mas saídas divergem do formato pedido
 - [x] Capacidade de abstração - Boa reflexão sobre inferência de tipos e compilação
 - [x] Curiosidade/Iniciativa - Vai além do pedido, experimenta por conta própria
+- [x] Mutabilidade e escopo de bloco - Aplica reatribuição e limites de bloco corretamente
 
 ---
 
@@ -56,6 +57,8 @@
 | Leitura de enunciado | Saída diferente do formato pedido | 3 exercícios |
 | Nomenclatura | Nomes de variáveis abreviados | 1 exercício (ex10) |
 | Clareza do enunciado | Resolveu o mini-projeto sem consultar a solução e interpretou o quadro de saída como requisito principal | 1 mini-projeto (cap. 01) |
+| Cumprimento integral | Partes textuais não executáveis foram omitidas nos exercícios 3.2 e 3.3 | 2 exercícios (cap. 01) |
+| Formatação exata | Rótulos ou valores divergiram da saída esperada | Recorrente no cap. 01 |
 
 ---
 
@@ -65,7 +68,9 @@
 
 | Tipo de Erro | Exemplo | Capítulo | Corrigido? |
 |--------------|---------|----------|------------|
-| - | - | - | - |
+| Saída divergente | Rótulos, capitalização ou conteúdo diferentes do modelo | 01 | Pendente |
+| Requisito omitido | Diagnósticos ou exemplos pedidos não foram registrados | 01 | Pendente |
+| Conceito invertido | Nome interno de função descrito como acessível externamente | 01 | Pendente |
 
 ---
 
@@ -75,6 +80,8 @@
 
 - Diferença entre erro de compilação e convenção de estilo
 - Conferência entre o código testado e a versão copiada para a entrega
+- Escopo de função: nomes internos não ficam disponíveis externamente
+- Leitura integral de requisitos que não afetam a saída
 
 ---
 
@@ -88,6 +95,9 @@
 - Compilação TypeScript -> JavaScript
 - Correção de erros de tipo
 - Fluxo de compilação e execução de TypeScript
+- Escolha entre `let` e `const`
+- Inferência e anotação explícita
+- Reatribuição e escopo de bloco
 
 ---
 
@@ -109,4 +119,4 @@
 
 ---
 
-*Última atualização: 2026-07-26*
+*Última atualização: 2026-07-30*
