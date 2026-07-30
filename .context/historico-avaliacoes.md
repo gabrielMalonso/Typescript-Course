@@ -92,7 +92,7 @@
 | Data | Capítulo | Exercícios | Acertos | Taxa | Erros Principais |
 |------|----------|------------|---------|------|------------------|
 | 2026-02-01 | 00 | 10 | 8 corretos, 2 com ressalvas, 1 parcial | ~85% | Inconsistência com ponto e vírgula; saída divergente do esperado; confusão sobre o que é erro de compilação vs estilo |
-| 2026-07-30 | 01 | 10 + bônus | 7 com ajustes, 3 parciais; bônus parcial | Qualitativa | Saída divergente; requisitos textuais incompletos; conceito de escopo de função invertido |
+| 2026-07-30 | 01 | 10 + bônus | Aprovados após revisão | 100% após ajustes | Saída, requisitos textuais e escopo de função corrigidos |
 
 ---
 

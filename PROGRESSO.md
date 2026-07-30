@@ -26,7 +26,7 @@
 | Cap | Título | Aula | Exercícios | Prova | Status |
 |-----|--------|------|------------|-------|--------|
 | 00 | Preparação do Ambiente | ✓ | ✓ | ★ 9,5 | Concluído |
-| 01 | Variáveis e Constantes | ✓ | Corrigidos | - | Ajustes pendentes |
+| 01 | Variáveis e Constantes | ✓ | ✓ | Liberada | Pronto para prova |
 | 02 | Tipos Primitivos | - | - | - | Pendente |
 | 03 | Operadores | - | - | - | Pendente |
 | 04 | Estruturas Condicionais | - | - | - | Pendente |

@@ -150,3 +150,11 @@ Limpeza opcional: no comentário final do `ex01.ts`, atualizar `Ano de Publicaç
 - `operadorAtual` descreve qual operador está ativo, mas não significa que o identificador será reatribuído nesta execução. Como o exercício diz para usar `const` nos valores que não mudam e Rafael permanece o mesmo dentro do bloco, a declaração deve usar `const`. Se uma futura versão realmente reatribuir o operador, nesse momento ela passará a usar `let`.
 - No `ex09.ts`, o novo diagnóstico repetiu `problema3`, causando erro de compilação. Renomeie-o para `problema4` e registre que o hífen torna `nome-aluno` um identificador sintaticamente inválido.
 - No bônus, não é para trocar o setor `B`. A única mudança é a capitalização do rótulo: `Terminal` → `terminal`.
+
+---
+
+## Resultado final — 2026-07-30
+
+**Exercícios aprovados.**
+
+Os dez exercícios e o bônus foram revisados, compilam sem erros e atendem aos requisitos. O aluno está liberado para a prova do Capítulo 01.
