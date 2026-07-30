@@ -6,6 +6,20 @@
 
 ## Observações Gerais
 
+### 2026-07-30 - Exercícios do Capítulo 01 Aprovados
+
+**Resultado final:** os dez exercícios e o bônus compilam, produzem as saídas esperadas e atendem aos requisitos após revisão.
+
+**Evolução observada:** o aluno corrigiu as divergências de saída, completou os diagnósticos, consolidou escopo de função e discutiu com propriedade a relação entre significado do domínio e mutabilidade no código.
+
+**Próximo passo:** prova do Capítulo 01 liberada.
+
+### 2026-07-30 - Conferência Final Após Novos Ajustes
+
+**Resultado:** todos os onze arquivos compilam e as saídas executáveis são exatas. `ex08.ts` e o bônus foram corrigidos.
+
+**Única pendência:** a linha 27 do `ex09.ts` ainda contém a formulação antiga, “inválido para camelCase”. A alteração sobre o hífen possivelmente não foi salva no editor.
+
 ### 2026-07-30 - Nova Conferência do Exercício 9
 
 **Resultado:** o arquivo voltou a compilar, contém quatro constantes de diagnóstico e produz a saída exata.

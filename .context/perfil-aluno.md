@@ -68,9 +68,9 @@
 
 | Tipo de Erro | Exemplo | Capítulo | Corrigido? |
 |--------------|---------|----------|------------|
-| Saída divergente | Rótulos, capitalização ou conteúdo diferentes do modelo | 01 | Pendente |
-| Requisito omitido | Diagnósticos ou exemplos pedidos não foram registrados | 01 | Pendente |
-| Conceito invertido | Nome interno de função descrito como acessível externamente | 01 | Pendente |
+| Saída divergente | Rótulos, capitalização ou conteúdo diferentes do modelo | 01 | Sim |
+| Requisito omitido | Diagnósticos ou exemplos pedidos não foram registrados | 01 | Sim |
+| Conceito invertido | Nome interno de função descrito como acessível externamente | 01 | Sim |
 
 ---
 
