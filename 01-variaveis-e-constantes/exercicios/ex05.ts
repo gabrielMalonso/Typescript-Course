@@ -5,4 +5,4 @@ const idade: number = 4;
 console.log("=== FICHA DO ANIMAL ===");
 console.log("Nome:", nome);
 console.log("Espécie: " + especie);
-console.log("Idade:", idade);
+console.log("Idade:", idade,"anos");

@@ -7,7 +7,7 @@ console.log("Evento:", nomeDoEvento);
     const nomeDaSala: string = "Laboratório 2";
 
     console.log("Sala:", nomeDaSala);
-    console.log("Total de Participantes:", totalDeParticipantes);
+    console.log("Participantes iniciais:", totalDeParticipantes);
 
     totalDeParticipantes = 44;
     console.log("Participantes no bloco:", totalDeParticipantes);

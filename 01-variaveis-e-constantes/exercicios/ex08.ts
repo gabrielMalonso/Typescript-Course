@@ -2,7 +2,7 @@ const nomeLoja:string = "Papelaria Horizonte";
 const numeroDoCaixa = 3;
 
 console.log("Loja: " + nomeLoja);
-console.log("Número do Caixa: " + numeroDoCaixa);
+console.log("Caixa: " + numeroDoCaixa);
 
 {
     let operadorAtual:string = "Rafael"; 

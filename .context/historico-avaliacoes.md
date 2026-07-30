@@ -92,6 +92,7 @@
 | Data | Capítulo | Exercícios | Acertos | Taxa | Erros Principais |
 |------|----------|------------|---------|------|------------------|
 | 2026-02-01 | 00 | 10 | 8 corretos, 2 com ressalvas, 1 parcial | ~85% | Inconsistência com ponto e vírgula; saída divergente do esperado; confusão sobre o que é erro de compilação vs estilo |
+| 2026-07-30 | 01 | 10 + bônus | 7 com ajustes, 3 parciais; bônus parcial | Qualitativa | Saída divergente; requisitos textuais incompletos; conceito de escopo de função invertido |
 
 ---
 
@@ -113,6 +114,8 @@
 | Tipo | Descrição | Frequência | Capítulos | Status |
 |------|-----------|------------|-----------|--------|
 | Validação da entrega | Código testado estava correto, mas a versão copiada na resposta continha erros | 1 | 00 | Reforçar |
+| Fidelidade ao enunciado | Código funciona, mas rótulos, valores ou partes não executáveis divergem do pedido | Recorrente | 00, 01 | Reforçar |
+| Escopo de função | Explicação afirmou que nomes internos ficam disponíveis fora da função | 1 | 01 | Revisar |
 
 ---
 
@@ -124,4 +127,4 @@
 
 ---
 
-*Última atualização: 2026-07-26*
+*Última atualização: 2026-07-30*

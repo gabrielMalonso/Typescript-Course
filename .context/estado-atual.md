@@ -9,27 +9,24 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 01 - Variáveis e Constantes |
-| **Fase atual** | Exercícios — dúvida no exercício 2.4 |
+| **Fase atual** | Exercícios corrigidos — ajustes pendentes |
 | **Último capítulo concluído** | 00 - Preparação do Ambiente |
-| **Próximo passo** | Registrar no `ex07.ts` cinco análises como textos e exibir a confirmação |
+| **Próximo passo** | Aluno aplicar os ajustes descritos em `exercicios/correcoes.md` |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-07-29
-- **Atividade:** Dúvida de interpretação do exercício 1.3
+- **Data:** 2026-07-30
+- **Atividade:** Correção dos exercícios do Capítulo 01
 - **O que foi feito:**
-  - Aluno criou os identificadores recebidos e depois copiou seus valores para novos identificadores
-  - A dificuldade não foi declaração ou `console.log`, mas entender que a tabela mostrava nomes externos a serem adaptados, não variáveis obrigatórias
-  - Reforçada a diferença entre nome do dado em outro sistema e identificador escolhido no código
-  - Aluno confirmou a compreensão e irá corrigir o arquivo
-  - Nova versão usa diretamente quatro constantes e elimina as variáveis intermediárias
-  - Restam dois ajustes literais: `dataDaVisita` e “Quantidade de visitantes”
-  - No exercício 2.4, surgiu dúvida sobre por que as respostas devem ser armazenadas em constantes `string`
-  - Esclarecido que os trechos são analisados isoladamente e que o arquivo contém textos com classificação e justificativa, não a execução dos trechos
-  - Esclarecido que “classificação” deve ser exatamente uma das três categorias fornecidas, não apenas “compila” ou “não compila”
-  - Aluno confirmou que compreendeu o formato da classificação
+  - Corrigidos `ex01.ts` a `ex10.ts` e o bônus
+  - Todos os 11 arquivos compilam e executam sem erros
+  - Conceitos de `let`, `const`, tipos, inferência, reatribuição e bloco estão bem compreendidos
+  - Identificadas divergências recorrentes entre a saída pedida e a saída executada
+  - `ex09.ts` não contém os diagnósticos textuais exigidos
+  - `ex10.ts` inverte o conceito de escopo de função e não inclui exemplos nas explicações
+  - Feedback registrado em `exercicios/correcoes.md`
 
 ---
 
@@ -51,11 +48,12 @@
 
 ## Pendências
 
-- [ ] Aluno estudar o conteúdo da aula
+- [x] Aluno estudar o conteúdo da aula
 - [x] Aluno ajustar e concluir o mini-projeto
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
-- [ ] Aluno fazer os exercícios (`ex01.ts` a `ex10.ts`)
-- [ ] Corrigir exercícios quando entregues
+- [x] Aluno fazer os exercícios (`ex01.ts` a `ex10.ts`)
+- [x] Corrigir exercícios quando entregues
+- [ ] Aluno aplicar os ajustes da correção
 - [ ] Aluno fazer a prova
 - [ ] Corrigir prova e dar nota
 - [x] Publicar `leitor/` no Sites
@@ -65,9 +63,9 @@
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Conferir a nova versão do exercício 1.3
-2. Continuar a lista de exercícios
-3. Observar a interpretação literal de requisitos
+1. Conferir os ajustes nos exercícios
+2. Reforçar escopo de função
+3. Liberar a prova do Capítulo 01 se as correções estiverem adequadas
 
 ---
 
@@ -75,7 +73,7 @@ Quando o aluno retornar:
 
 | Flag | Status |
 |------|--------|
-| Revisão pendente | Não |
+| Revisão pendente | Sim, ajustes dos exercícios |
 | Prova pendente | Sim, após aula e exercícios |
 | Projeto em andamento | Não |
 | Dúvida não resolvida | Não |
@@ -97,7 +95,8 @@ Quando o aluno retornar:
 | 2026-07-26 | Criação do leitor de aulas (React + Vite) | ~45min |
 | 2026-07-28 | Revisão do mini-projeto do Capítulo 01 | ~10min |
 | 2026-07-29 | Dúvida de interpretação do exercício 1.3 | ~5min |
+| 2026-07-30 | Correção dos exercícios do Capítulo 01 | ~20min |
 
 ---
 
-*Última atualização: 2026-07-29*
+*Última atualização: 2026-07-30*

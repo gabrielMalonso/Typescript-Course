@@ -1,10 +1,10 @@
-let numSala:number = 12;
+let numeroDaSala:number = 12;
 
-console.log("Sala inicial:", numSala);
+console.log("Sala inicial:", numeroDaSala);
 
-numSala = 18;
+numeroDaSala = 18;
 
-console.log("Sala atual:", numSala);
+console.log("Sala atual:", numeroDaSala);
 
 /*
 Output do terminal:
