@@ -5,7 +5,7 @@ console.log("Loja: " + nomeLoja);
 console.log("Caixa: " + numeroDoCaixa);
 
 {
-    let operadorAtual:string = "Rafael"; 
+    const operadorAtual:string = "Rafael"; 
     console.log("Operador: " + operadorAtual);
 }
 

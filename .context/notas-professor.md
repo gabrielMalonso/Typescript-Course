@@ -6,6 +6,28 @@
 
 ## Observações Gerais
 
+### 2026-07-30 - Nova Conferência do Exercício 9
+
+**Resultado:** o arquivo voltou a compilar, contém quatro constantes de diagnóstico e produz a saída exata.
+
+**Ajuste restante:** o quarto texto diz apenas que `nome-aluno` é inválido para `camelCase`; registrar que o hífen torna o identificador sintaticamente inválido.
+
+### 2026-07-30 - Dúvidas sobre `operadorAtual` e Saída do Bônus
+
+**Exercício 8:** o aluno associou a palavra “atual” à possibilidade de mudança futura. O raciocínio de domínio é válido, mas a escolha entre `const` e `let` deve refletir a existência de reatribuição no código atual; o exercício também exige `const` para valores que não mudam.
+
+**Exercício 9:** o quarto diagnóstico foi adicionado como uma segunda declaração `problema3`, causando TS2451. Deve ser `problema4`, explicando que o hífen torna o identificador inválido sintaticamente.
+
+**Bônus:** o aluno interpretou a orientação como troca de setor. Esclarecido que `B` permanece igual e que o ajuste é somente `Terminal` → `terminal` para corresponder à saída esperada.
+
+### 2026-07-30 - Conferência das Correções do Capítulo 01
+
+**Resultado:** as correções dos exercícios 1 a 7 e 10 foram validadas; todos os onze arquivos compilam e executam.
+
+**Pendências finais:** usar `const` no operador do `ex08.ts`, registrar o quarto diagnóstico no `ex09.ts` e corrigir a capitalização de “terminal” no bônus.
+
+**Próximo passo:** conferência curta desses três pontos e liberação da prova.
+
 ### 2026-07-30 - Correção dos Exercícios do Capítulo 01
 
 **Resultado:** os dez exercícios e o bônus compilam e executam. O aluno domina os conceitos práticos centrais do capítulo.

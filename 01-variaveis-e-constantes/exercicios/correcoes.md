@@ -131,3 +131,22 @@ A observação sobre ponto e vírgula está correta.
 
 Corrija os pontos indicados nos arquivos e me avise. Depois de uma conferência rápida, você estará pronto para a prova do Capítulo 01.
 
+---
+
+## Conferência após a primeira revisão — 2026-07-30
+
+As correções dos exercícios 1 a 7 e 10 foram validadas. Todos os arquivos continuam compilando.
+
+Restam três ajustes:
+
+1. No `ex08.ts`, trocar `let operadorAtual` por `const operadorAtual`, pois o valor não muda.
+2. No `ex09.ts`, acrescentar uma quarta constante `string` diagnosticando o identificador inválido `nome-aluno`.
+3. No `bonus.ts`, trocar `"Setor do Terminal:"` por `"Setor do terminal:"`.
+
+Limpeza opcional: no comentário final do `ex01.ts`, atualizar `Ano de Publicação: 1937` para `Ano: 1937`, de modo que a transcrição corresponda à saída atual.
+
+### Esclarecimentos da segunda revisão
+
+- `operadorAtual` descreve qual operador está ativo, mas não significa que o identificador será reatribuído nesta execução. Como o exercício diz para usar `const` nos valores que não mudam e Rafael permanece o mesmo dentro do bloco, a declaração deve usar `const`. Se uma futura versão realmente reatribuir o operador, nesse momento ela passará a usar `let`.
+- No `ex09.ts`, o novo diagnóstico repetiu `problema3`, causando erro de compilação. Renomeie-o para `problema4` e registre que o hífen torna `nome-aluno` um identificador sintaticamente inválido.
+- No bônus, não é para trocar o setor `B`. A única mudança é a capitalização do rótulo: `Terminal` → `terminal`.
