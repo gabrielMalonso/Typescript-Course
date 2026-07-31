@@ -1,0 +1,1 @@
+console.log("Versão 2 - Compilação automática");
