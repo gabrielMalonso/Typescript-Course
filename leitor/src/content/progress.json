@@ -7,6 +7,11 @@
   {
     "chapterId": "01-variaveis-e-constantes",
     "label": "Cap. 01 — Variáveis e Constantes",
+    "status": "concluido"
+  },
+  {
+    "chapterId": "02-tipos-primitivos",
+    "label": "Cap. 02 — Tipos Primitivos",
     "status": "em_andamento"
   }
 ]

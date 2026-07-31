@@ -9,27 +9,26 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 02 - Tipos Primitivos |
-| **Fase atual** | Aguardando geração do capítulo |
+| **Fase atual** | Aula disponível |
 | **Último capítulo concluído** | 01 - Variáveis e Constantes |
-| **Próximo passo** | Gerar o Capítulo 02 quando solicitado pelo aluno |
+| **Próximo passo** | Aluno iniciar `02-tipos-primitivos/aula/01-teoria.md` |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-07-31
-- **Atividade:** Correção da prova do Capítulo 01
+- **Atividade:** Geração do Capítulo 02
 - **O que foi feito:**
-  - Corrigidas as sete questões conforme o gabarito e a rubrica
-  - Confirmado que os três arquivos TypeScript da parte prática compilam
-  - Registrada a nota 8,5/10 em `avaliacao/resultado.md`
-  - Capítulo 01 concluído e avanço ao Capítulo 02 liberado
-  - Esclarecido que a marcação da questão 3 veio da interpretação de “verifica”, não de uma dificuldade com inferência
-  - Aluno confirmou satisfação com o progresso e o encerramento do capítulo
+  - Criados os quatro arquivos de aula do Capítulo 02
+  - Criados 10 exercícios progressivos e 1 bônus
+  - Criadas a prova de 10 pontos e a rubrica confidencial
+  - Criados o guia de erros comuns, recursos e glossário
+  - Capítulo integrado ao catálogo e ao progresso do leitor
 
 ---
 
-## Conteúdo do Capítulo 01
+## Conteúdo do Capítulo 02
 
 | Item | Status | Arquivo |
 |------|--------|---------|
@@ -39,7 +38,7 @@
 | Aula - Mini-projeto | ✅ Criado | 04-mini-projeto.md |
 | Exercícios | ✅ Criado | lista.md (10 exercícios + bônus) |
 | Prova | ✅ Criado | prova.md |
-| Gabarito | ✅ Criado | .context/gabarito-cap01.md |
+| Gabarito | ✅ Criado | .context/gabarito-cap02.md |
 | Erros Comuns | ✅ Criado | erros-comuns.md |
 | Recursos | ✅ Criado | recursos.md |
 
@@ -47,23 +46,23 @@
 
 ## Pendências
 
-- [x] Aluno estudar o conteúdo da aula
-- [x] Aluno ajustar e concluir o mini-projeto
+- [ ] Aluno estudar o conteúdo da aula
+- [ ] Aluno fazer e concluir o mini-projeto
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
-- [x] Aluno fazer os exercícios (`ex01.ts` a `ex10.ts`)
-- [x] Corrigir exercícios quando entregues
-- [x] Aluno aplicar os ajustes da correção
-- [x] Aluno fazer a prova
-- [x] Corrigir prova e dar nota
-- [x] Publicar `leitor/` no Sites
+- [ ] Aluno fazer os exercícios (`ex01.ts` a `ex10.ts`)
+- [ ] Corrigir exercícios quando entregues
+- [ ] Aluno aplicar eventuais ajustes da correção
+- [ ] Aluno fazer a prova
+- [ ] Corrigir prova e dar nota
+- [ ] Publicar a versão atualizada do `leitor/` no Sites
 
 ---
 
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Gerar o Capítulo 02 — Tipos Primitivos, se solicitado
-2. Iniciar o estudo pela aula de teoria
+1. Iniciar `02-tipos-primitivos/aula/01-teoria.md`
+2. Seguir a aula na ordem até o mini-projeto
 
 ---
 
@@ -97,6 +96,7 @@ Quando o aluno retornar:
 | 2026-07-30 | Conferência das correções — três ajustes restantes | ~5min |
 | 2026-07-30 | Validação final dos exercícios e liberação da prova | ~5min |
 | 2026-07-31 | Correção da prova do Capítulo 01 — nota 8,5 | ~15min |
+| 2026-07-31 | Geração e validação do Capítulo 02 completo | ~35min |
 
 ---
 
