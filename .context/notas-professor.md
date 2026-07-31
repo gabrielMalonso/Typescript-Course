@@ -6,6 +6,10 @@
 
 ## Observações Gerais
 
+### 2026-07-31 - Encerramento do Capítulo 01
+
+O aluno confirmou que está satisfeito com o progresso. Capítulo encerrado sem revisão obrigatória; próximo passo será gerar o Capítulo 02 quando solicitado.
+
 ### 2026-07-31 - Discussão da Questão 3 da Prova
 
 **Esclarecimento:** o aluno marcou o item como falso porque interpretou “verifica atribuições posteriores” como “aceita atribuições posteriores incompatíveis”. Seu raciocínio sobre inferência estava correto: o TypeScript mantém o tipo inferido e rejeita uma `string` atribuída posteriormente a um nome inferido como `number`.
