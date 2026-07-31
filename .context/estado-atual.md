@@ -25,6 +25,7 @@
   - Registrada a nota 8,5/10 em `avaliacao/resultado.md`
   - Capítulo 01 concluído e avanço ao Capítulo 02 liberado
   - Esclarecido que a marcação da questão 3 veio da interpretação de “verifica”, não de uma dificuldade com inferência
+  - Aluno confirmou satisfação com o progresso e o encerramento do capítulo
 
 ---
 
