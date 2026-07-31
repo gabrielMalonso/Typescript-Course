@@ -6,6 +6,24 @@
 
 ## Observações Gerais
 
+### 2026-07-31 - Discussão da Questão 3 da Prova
+
+**Esclarecimento:** o aluno marcou o item como falso porque interpretou “verifica atribuições posteriores” como “aceita atribuições posteriores incompatíveis”. Seu raciocínio sobre inferência estava correto: o TypeScript mantém o tipo inferido e rejeita uma `string` atribuída posteriormente a um nome inferido como `number`.
+
+**Observação pedagógica:** em próximos enunciados, preferir “continua validando o tipo das atribuições posteriores” para reduzir a ambiguidade. Não tratar este caso como dificuldade conceitual.
+
+**Feedback do aluno:** está satisfeito com o aprendizado e reconhece que as demais diferenças da prova foram deslizes de atenção.
+
+### 2026-07-31 - Prova do Capítulo 01
+
+**Resultado:** 8,5/10 — aprovado. Os três arquivos TypeScript da parte prática compilam sem erros.
+
+**Pontos fortes:** boa aplicação de `let`, `const`, reatribuição e escopos; correção completa da análise de escopo na questão 5.
+
+**Pontos a reforçar:** a alternativa sobre `var`, coerência entre a marcação V/F e a justificativa, e conferência literal de valores, capitalização e exigências de inferência.
+
+**Próximo passo:** Capítulo 01 concluído; aluno liberado para solicitar o Capítulo 02 — Tipos Primitivos.
+
 ### 2026-07-30 - Exercícios do Capítulo 01 Aprovados
 
 **Resultado final:** os dez exercícios e o bônus compilam, produzem as saídas esperadas e atendem aos requisitos após revisão.
@@ -311,4 +329,4 @@ Celular na mesma rede: URL Network do Vite.
 
 ---
 
-*Última atualização: 2026-07-26*
+*Última atualização: 2026-07-31*
