@@ -25,6 +25,7 @@
   - Criadas a prova de 10 pontos e a rubrica confidencial
   - Criados o guia de erros comuns, recursos e glossário
   - Capítulo integrado ao catálogo e ao progresso do leitor
+  - Leitor validado e versão 2 publicada no mesmo projeto e URL
 
 ---
 
@@ -54,7 +55,7 @@
 - [ ] Aluno aplicar eventuais ajustes da correção
 - [ ] Aluno fazer a prova
 - [ ] Corrigir prova e dar nota
-- [ ] Publicar a versão atualizada do `leitor/` no Sites
+- [x] Publicar a versão atualizada do `leitor/` no Sites
 
 ---
 

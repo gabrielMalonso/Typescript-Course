@@ -14,6 +14,8 @@
 
 **Escopo:** operações matemáticas permanecem introdutórias; `bigint` e `symbol` aparecem somente para reconhecimento; unions, condicionais, funções, arrays e objetos não são cobrados.
 
+**Leitor:** tipos, lint e build validados; home e rota da teoria responderam com HTTP 200. Versão 2 publicada no projeto existente, preservando a URL. O navegador integrado não estava disponível para inspeção visual nesta sessão.
+
 **Próximo passo:** aluno iniciar a teoria do Capítulo 02.
 
 ### 2026-07-31 - Encerramento do Capítulo 01
