@@ -8,10 +8,10 @@
 
 | Métrica | Valor |
 |---------|-------|
-| **Total de provas** | 1 |
-| **Média geral** | 9,5 |
+| **Total de provas** | 2 |
+| **Média geral** | 9,0 |
 | **Maior nota** | 9,5 |
-| **Menor nota** | 9,5 |
+| **Menor nota** | 8,5 |
 | **Provas com nota < 7** | 0 |
 
 ---
@@ -23,13 +23,13 @@
 | Capítulo | Data | Nota | Principais Erros | Observações |
 |----------|------|------|------------------|-------------|
 | 00 | 2026-07-26 | 9,5 | Código copiado na Q6 não compilava | Aprovado; arquivos `.ts` de apoio compilam |
-| 01 | - | - | - | - |
+| 01 | 2026-07-31 | 8,5 | Alternativa sobre `var`; V/F sobre inferência; diferenças literais na saída e em requisito de inferência | Aprovado; os três arquivos `.ts` compilam |
 | 02 | - | - | - | - |
 | 03 | - | - | - | - |
 | 04 | - | - | - | - |
 | 05 | - | - | - | - |
 
-**Média do Módulo 1:** 9,5
+**Média do Módulo 1:** 9,0
 
 ---
 
@@ -115,7 +115,8 @@
 |------|-----------|------------|-----------|--------|
 | Validação da entrega | Código testado estava correto, mas a versão copiada na resposta continha erros | 1 | 00 | Reforçar |
 | Fidelidade ao enunciado | Código funciona, mas rótulos, valores ou partes não executáveis divergem do pedido | Recorrente | 00, 01 | Reforçar |
-| Escopo de função | Explicação afirmou que nomes internos ficam disponíveis fora da função | 1 | 01 | Revisar |
+| Escopo de função | Explicação afirmou que nomes internos ficam disponíveis fora da função | 1 | 01 | Corrigido na prova |
+| Coerência entre resposta e justificativa | Classificação V/F contrariou a explicação conceitualmente correta | 1 | 01 | Reforçar |
 
 ---
 
@@ -124,7 +125,8 @@
 | Conceito | Primeira Nota | Última Nota | Tendência |
 |----------|---------------|-------------|-----------|
 | Preparação do ambiente e tipos básicos | 9,5 | 9,5 | Base sólida |
+| Variáveis, constantes, inferência e escopos | 8,5 | 8,5 | Bom domínio; reforçar precisão literal |
 
 ---
 
-*Última atualização: 2026-07-30*
+*Última atualização: 2026-07-31*

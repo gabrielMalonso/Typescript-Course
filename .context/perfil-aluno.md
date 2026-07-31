@@ -44,6 +44,7 @@
 - [x] Capacidade de abstração - Boa reflexão sobre inferência de tipos e compilação
 - [x] Curiosidade/Iniciativa - Vai além do pedido, experimenta por conta própria
 - [x] Mutabilidade e escopo de bloco - Aplica reatribuição e limites de bloco corretamente
+- [x] Escopo de função - Explicou corretamente que nomes internos não ficam disponíveis fora da função na prova do cap. 01
 
 ---
 
@@ -59,6 +60,7 @@
 | Clareza do enunciado | Resolveu o mini-projeto sem consultar a solução e interpretou o quadro de saída como requisito principal | 1 mini-projeto (cap. 01) |
 | Cumprimento integral | Partes textuais não executáveis foram omitidas nos exercícios 3.2 e 3.3 | 2 exercícios (cap. 01) |
 | Formatação exata | Rótulos ou valores divergiram da saída esperada | Recorrente no cap. 01 |
+| Leitura literal de requisitos | Anotação explícita usada onde a inferência era obrigatória | 1 prova (cap. 01) |
 
 ---
 
@@ -68,9 +70,10 @@
 
 | Tipo de Erro | Exemplo | Capítulo | Corrigido? |
 |--------------|---------|----------|------------|
-| Saída divergente | Rótulos, capitalização ou conteúdo diferentes do modelo | 01 | Sim |
+| Saída divergente | Rótulos, capitalização ou conteúdo diferentes do modelo | 01 | Recorrente |
 | Requisito omitido | Diagnósticos ou exemplos pedidos não foram registrados | 01 | Sim |
 | Conceito invertido | Nome interno de função descrito como acessível externamente | 01 | Sim |
+| Classificação V/F inconsistente | Interpretou “verifica atribuições” como “aceita atribuições”; o modelo mental sobre rejeição de tipos incompatíveis estava correto | 01 | Esclarecido |
 
 ---
 
@@ -80,8 +83,8 @@
 
 - Diferença entre erro de compilação e convenção de estilo
 - Conferência entre o código testado e a versão copiada para a entrega
-- Escopo de função: nomes internos não ficam disponíveis externamente
 - Leitura integral de requisitos que não afetam a saída
+- Distinguir “verificar uma atribuição” de “aceitar uma atribuição” na linguagem dos enunciados
 
 ---
 
@@ -98,6 +101,7 @@
 - Escolha entre `let` e `const`
 - Inferência e anotação explícita
 - Reatribuição e escopo de bloco
+- Escopo de função
 
 ---
 
@@ -116,7 +120,8 @@
 - Aluno participou ativamente da criação da estrutura do curso
 - Demonstrou organização e visão de longo prazo
 - Pesquisou cursos antes de iniciar (proativo)
+- Após a prova do Capítulo 01, relatou satisfação com o próprio aprendizado e reconheceu os deslizes de atenção na entrega
 
 ---
 
-*Última atualização: 2026-07-30*
+*Última atualização: 2026-07-31*

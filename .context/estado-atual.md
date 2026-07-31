@@ -8,22 +8,23 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Capítulo atual** | 01 - Variáveis e Constantes |
-| **Fase atual** | Exercícios concluídos — prova liberada |
-| **Último capítulo concluído** | 00 - Preparação do Ambiente |
-| **Próximo passo** | Aluno realizar a prova em `avaliacao/prova.md` |
+| **Capítulo atual** | 02 - Tipos Primitivos |
+| **Fase atual** | Aguardando geração do capítulo |
+| **Último capítulo concluído** | 01 - Variáveis e Constantes |
+| **Próximo passo** | Gerar o Capítulo 02 quando solicitado pelo aluno |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-07-30
-- **Atividade:** Conferência das correções dos exercícios
+- **Data:** 2026-07-31
+- **Atividade:** Correção da prova do Capítulo 01
 - **O que foi feito:**
-  - Confirmada a correção final do quarto diagnóstico no `ex09.ts`
-  - Todos os 11 arquivos compilam e todas as saídas executáveis correspondem ao enunciado
-  - Todos os requisitos dos dez exercícios e do bônus foram validados
-  - Exercícios aprovados e prova do Capítulo 01 liberada
+  - Corrigidas as sete questões conforme o gabarito e a rubrica
+  - Confirmado que os três arquivos TypeScript da parte prática compilam
+  - Registrada a nota 8,5/10 em `avaliacao/resultado.md`
+  - Capítulo 01 concluído e avanço ao Capítulo 02 liberado
+  - Esclarecido que a marcação da questão 3 veio da interpretação de “verifica”, não de uma dificuldade com inferência
 
 ---
 
@@ -51,8 +52,8 @@
 - [x] Aluno fazer os exercícios (`ex01.ts` a `ex10.ts`)
 - [x] Corrigir exercícios quando entregues
 - [x] Aluno aplicar os ajustes da correção
-- [ ] Aluno fazer a prova
-- [ ] Corrigir prova e dar nota
+- [x] Aluno fazer a prova
+- [x] Corrigir prova e dar nota
 - [x] Publicar `leitor/` no Sites
 
 ---
@@ -60,8 +61,8 @@
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Aluno realizar a prova em `avaliacao/prova.md`
-2. Corrigir a prova e registrar a nota
+1. Gerar o Capítulo 02 — Tipos Primitivos, se solicitado
+2. Iniciar o estudo pela aula de teoria
 
 ---
 
@@ -70,7 +71,7 @@ Quando o aluno retornar:
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Não |
-| Prova pendente | Sim, liberada |
+| Prova pendente | Não |
 | Projeto em andamento | Não |
 | Dúvida não resolvida | Não |
 
@@ -94,7 +95,8 @@ Quando o aluno retornar:
 | 2026-07-30 | Correção dos exercícios do Capítulo 01 | ~20min |
 | 2026-07-30 | Conferência das correções — três ajustes restantes | ~5min |
 | 2026-07-30 | Validação final dos exercícios e liberação da prova | ~5min |
+| 2026-07-31 | Correção da prova do Capítulo 01 — nota 8,5 | ~15min |
 
 ---
 
-*Última atualização: 2026-07-30*
+*Última atualização: 2026-07-31*
