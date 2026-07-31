@@ -6,6 +6,16 @@
 
 ## Observações Gerais
 
+### 2026-07-31 - Geração do Capítulo 02
+
+**Material criado:** aula completa sobre tipos primitivos, mini-projeto, 10 exercícios e bônus, prova com rubrica, erros comuns e recursos oficiais.
+
+**Adaptações pedagógicas:** requisitos obrigatórios do mini-projeto aparecem antes do passo a passo; validação de tipo foi formulada como análise que aceita ou rejeita; exercícios mantêm conferências separadas de implementação e saída.
+
+**Escopo:** operações matemáticas permanecem introdutórias; `bigint` e `symbol` aparecem somente para reconhecimento; unions, condicionais, funções, arrays e objetos não são cobrados.
+
+**Próximo passo:** aluno iniciar a teoria do Capítulo 02.
+
 ### 2026-07-31 - Encerramento do Capítulo 01
 
 O aluno confirmou que está satisfeito com o progresso. Capítulo encerrado sem revisão obrigatória; próximo passo será gerar o Capítulo 02 quando solicitado.
