@@ -6,6 +6,10 @@
 
 ## Observações Gerais
 
+### 2026-08-01 - Nomenclatura dos Arquivos de Exercícios
+
+A pedido do aluno, os arquivos do Capítulo 02 agora refletem diretamente o número exibido na lista: `ex11.ts` corresponde ao exercício 1.1, `ex21.ts` ao 2.1 e assim por diante. O padrão reduz o esforço para relacionar enunciado e solução e deve ser reutilizado nos próximos capítulos com listas divididas em níveis.
+
 ### 2026-08-01 - Conferência Final do Mini-Projeto do Capítulo 02
 
 O aluno aplicou voluntariamente parte das sugestões. Os dois arquivos compilam em modo estrito e executam corretamente; nenhuma pendência conceitual ou funcional permanece.

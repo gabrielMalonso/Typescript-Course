@@ -56,7 +56,7 @@ AULA → MINI-PROJETO → EXERCÍCIOS → CORREÇÃO → PROVA
 1. Leia os quatro arquivos da aula na ordem.
 2. Faça o mini-projeto usando primeiro apenas os requisitos obrigatórios.
 3. Registre suas observações no `DIARIO.md`.
-4. Resolva `ex01.ts` até `ex10.ts` dentro de `exercicios/solucoes/`.
+4. Resolva os exercícios dentro de `exercicios/solucoes/`, usando nomes que acompanham a numeração da lista (`ex11.ts` para 1.1, `ex21.ts` para 2.1 etc.).
 5. Peça a correção antes de iniciar a prova.
 
 ## Pré-requisitos

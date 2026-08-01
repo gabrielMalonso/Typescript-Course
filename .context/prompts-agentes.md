@@ -287,7 +287,7 @@ Criar o arquivo `lista.md` com exercícios progressivos.
 
 ## Instruções Gerais
 - Resolva os exercícios na ordem apresentada
-- Crie um arquivo separado para cada exercício: `ex01.ts`, `ex02.ts`, etc.
+- Crie um arquivo separado para cada exercício, com o nível e o número no nome: o exercício 1.1 usa `ex11.ts`, o 2.1 usa `ex21.ts` etc.
 - Execute cada arquivo para verificar se funciona
 - Não consulte as soluções antes de tentar
 
@@ -383,7 +383,7 @@ Caso 3: entrada → saída esperada (caso de borda)
 ---
 
 ## Checklist de Entrega
-- [ ] Todos os arquivos criados (ex01.ts até exXX.ts)
+- [ ] Todos os arquivos criados com nomes correspondentes à numeração dos exercícios (`ex11.ts` para 1.1, `ex21.ts` para 2.1 etc.)
 - [ ] Todos os exercícios executam sem erros
 - [ ] Testei com os exemplos fornecidos
 ```
