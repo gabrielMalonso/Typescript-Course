@@ -3,7 +3,7 @@
 ## Instruções Gerais
 
 - Resolva os exercícios na ordem apresentada.
-- Crie um arquivo separado para cada exercício: `ex01.ts`, `ex02.ts`, ..., `ex10.ts`.
+- Crie um arquivo separado para cada exercício. O nome acompanha sua numeração: o exercício 1.1 usa `ex11.ts`, o 2.1 usa `ex21.ts` e assim por diante.
 - Use somente os recursos estudados até aqui: declarações, atribuição simples, `number`, `string`, `boolean`, `null`, `undefined`, operações matemáticas básicas, concatenação, template literals e `console.log`.
 - Não use condicionais, funções, arrays, objetos ou union types.
 - Use nomes descritivos em `camelCase`.
@@ -20,7 +20,7 @@
 
 ### Exercício 1.1: Leituras Numéricas
 
-**Arquivo:** `ex01.ts`
+**Arquivo:** `ex11.ts`
 
 **Objetivo:** Praticar `number` com inteiro, decimal e notação científica.
 
@@ -46,7 +46,7 @@ Frequência: 2500 Hz
 
 ### Exercício 1.2: Identificação por Concatenação
 
-**Arquivo:** `ex02.ts`
+**Arquivo:** `ex12.ts`
 
 **Objetivo:** Praticar `string` e concatenação com `+`.
 
@@ -76,7 +76,7 @@ Equipamento: Atlas - X20 - Série 84
 
 ### Exercício 1.3: Estado e Ausências
 
-**Arquivo:** `ex03.ts`
+**Arquivo:** `ex13.ts`
 
 **Objetivo:** Diferenciar `boolean`, `null` e `undefined` de strings com nomes parecidos.
 
@@ -114,7 +114,7 @@ Número do certificado: undefined
 
 ### Exercício 2.1: Validar Não Significa Aceitar
 
-**Arquivo:** `ex04.ts`
+**Arquivo:** `ex21.ts`
 
 **Objetivo:** Explicar como a inferência orienta a validação de atribuições posteriores.
 
@@ -150,7 +150,7 @@ let setorAtual = "Montagem";
 setorAtual = false;
 ```
 
-No `ex04.ts`, crie uma constante `string` para cada trecho. Em cada texto, registre:
+No `ex21.ts`, crie uma constante `string` para cada trecho. Em cada texto, registre:
 
 1. o tipo inferido na primeira linha;
 2. se a atribuição posterior é aceita ou rejeitada pelo TypeScript;
@@ -168,7 +168,7 @@ Análise de validação registrada.
 
 ### Exercício 2.2: Conversão de Comprimento
 
-**Arquivo:** `ex05.ts`
+**Arquivo:** `ex22.ts`
 
 **Objetivo:** Praticar multiplicação, divisão e template literals com valores numéricos.
 
@@ -195,7 +195,7 @@ Metade do comprimento: 1.875 m
 
 ### Exercício 2.3: Ficha de uma Peça
 
-**Arquivo:** `ex06.ts`
+**Arquivo:** `ex23.ts`
 
 **Objetivo:** Combinar strings, números, booleano, concatenação e template literals.
 
@@ -229,7 +229,7 @@ Aprovada: true
 
 ### Exercício 2.4: Compilação, Resultado ou Estilo?
 
-**Arquivo:** `ex07.ts`
+**Arquivo:** `ex24.ts`
 
 **Objetivo:** Diferenciar erro de compilação, saída incorreta e problema de estilo.
 
@@ -264,7 +264,7 @@ const resultado = l * a
 console.log(`Área: ${resultado} cm²`)
 ```
 
-No `ex07.ts`, crie três constantes do tipo `string`, uma para cada análise. Use cada classificação exatamente uma vez:
+No `ex24.ts`, crie três constantes do tipo `string`, uma para cada análise. Use cada classificação exatamente uma vez:
 
 - `erro de compilação`;
 - `compila, mas produz saída incorreta`;
@@ -288,7 +288,7 @@ Diagnóstico dos três trechos registrado.
 
 ### Exercício 3.1: Reconhecimento de Tipos Especiais
 
-**Arquivo:** `ex08.ts`
+**Arquivo:** `ex31.ts`
 
 **Objetivo:** Reconhecer `bigint` e `symbol` sem usá-los em operações.
 
@@ -303,7 +303,7 @@ const identificadorInterno: symbol = Symbol("sensor");
 
 **Enunciado:**
 
-No `ex08.ts`, declare quatro constantes do tipo `string` contendo respostas curtas para:
+No `ex31.ts`, declare quatro constantes do tipo `string` contendo respostas curtas para:
 
 1. qual tipo aparece no primeiro trecho;
 2. qual detalhe visual identifica seu literal;
@@ -328,7 +328,7 @@ Reconhecimento de bigint e symbol registrado.
 
 ### Exercício 3.2: Relatório de Consumo Elétrico
 
-**Arquivo:** `ex09.ts`
+**Arquivo:** `ex32.ts`
 
 **Objetivo:** Integrar operações com `number`, strings, booleano, `null` e `undefined`.
 
@@ -371,7 +371,7 @@ Protocolo externo: undefined
 
 ### Exercício 3.3: Painel de Calibração
 
-**Arquivo:** `ex10.ts`
+**Arquivo:** `ex33.ts`
 
 **Objetivo:** Construir uma saída completa seguindo requisitos literais de implementação e formatação.
 
@@ -454,7 +454,7 @@ Experimento: Teste de tração | Força: 12500 N | Concluído: false
 
 ## Checklist de Entrega
 
-- [ ] Criei `ex01.ts` até `ex10.ts` na pasta `exercicios/solucoes/`.
+- [ ] Criei `ex11.ts`, `ex12.ts`, `ex13.ts`, `ex21.ts`, `ex22.ts`, `ex23.ts`, `ex24.ts`, `ex31.ts`, `ex32.ts` e `ex33.ts` na pasta `exercicios/solucoes/`.
 - [ ] Compilei e executei todos os arquivos práticos.
 - [ ] Registrei as análises pedidas nos exercícios 2.1, 2.4 e 3.1.
 - [ ] Comparei cada saída esperada caractere por caractere.

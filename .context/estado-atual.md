@@ -48,7 +48,7 @@
 - [x] Aluno estudar o conteúdo da aula
 - [x] Aluno fazer e concluir o mini-projeto
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
-- [ ] Aluno fazer os exercícios (`ex01.ts` a `ex10.ts`)
+- [ ] Aluno fazer os exercícios (`ex11.ts` a `ex33.ts`, conforme nível e número)
 - [ ] Corrigir exercícios quando entregues
 - [ ] Aluno aplicar eventuais ajustes da correção
 - [ ] Aluno fazer a prova
@@ -101,6 +101,7 @@ Quando o aluno retornar:
 | 2026-08-01 | Correção do desafio rápido e do mini-projeto do Capítulo 02 | ~10min |
 | 2026-08-01 | Recalibração dos critérios: domínio conceitual acima de detalhes cosméticos | ~5min |
 | 2026-08-01 | Conferência final do desafio rápido e mini-projeto | ~5min |
+| 2026-08-01 | Nomes dos arquivos da lista alinhados à numeração dos exercícios | ~5min |
 
 ---
 
