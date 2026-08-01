@@ -9,23 +9,21 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 02 - Tipos Primitivos |
-| **Fase atual** | Aula disponível |
+| **Fase atual** | Lista de exercícios liberada |
 | **Último capítulo concluído** | 01 - Variáveis e Constantes |
-| **Próximo passo** | Aluno iniciar `02-tipos-primitivos/aula/01-teoria.md` |
+| **Próximo passo** | Iniciar `02-tipos-primitivos/exercicios/lista.md` |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-07-31
-- **Atividade:** Geração do Capítulo 02
+- **Data:** 2026-08-01
+- **Atividade:** Conferência final do desafio rápido e do mini-projeto do Capítulo 02
 - **O que foi feito:**
-  - Criados os quatro arquivos de aula do Capítulo 02
-  - Criados 10 exercícios progressivos e 1 bônus
-  - Criadas a prova de 10 pontos e a rubrica confidencial
-  - Criados o guia de erros comuns, recursos e glossário
-  - Capítulo integrado ao catálogo e ao progresso do leitor
-  - Leitor validado e versão 2 publicada no mesmo projeto e URL
+  - Alterações voluntárias do aluno conferidas
+  - Ambos os arquivos compilam em modo estrito e executam corretamente
+  - Confirmados inferência, tipos primitivos, cálculos derivados e template literals
+  - Lista de exercícios permanece liberada
 
 ---
 
@@ -47,8 +45,8 @@
 
 ## Pendências
 
-- [ ] Aluno estudar o conteúdo da aula
-- [ ] Aluno fazer e concluir o mini-projeto
+- [x] Aluno estudar o conteúdo da aula
+- [x] Aluno fazer e concluir o mini-projeto
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [ ] Aluno fazer os exercícios (`ex01.ts` a `ex10.ts`)
 - [ ] Corrigir exercícios quando entregues
@@ -62,8 +60,8 @@
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Iniciar `02-tipos-primitivos/aula/01-teoria.md`
-2. Seguir a aula na ordem até o mini-projeto
+1. Iniciar `02-tipos-primitivos/exercicios/lista.md`
+2. Resolver os exercícios em `exercicios/solucoes/`
 
 ---
 
@@ -98,7 +96,12 @@ Quando o aluno retornar:
 | 2026-07-30 | Validação final dos exercícios e liberação da prova | ~5min |
 | 2026-07-31 | Correção da prova do Capítulo 01 — nota 8,5 | ~15min |
 | 2026-07-31 | Geração e validação do Capítulo 02 completo | ~35min |
+| 2026-07-31 | Retomada da ementa e dos próximos passos | ~5min |
+| 2026-08-01 | Explicação do TS6200 no mini-projeto | ~5min |
+| 2026-08-01 | Correção do desafio rápido e do mini-projeto do Capítulo 02 | ~10min |
+| 2026-08-01 | Recalibração dos critérios: domínio conceitual acima de detalhes cosméticos | ~5min |
+| 2026-08-01 | Conferência final do desafio rápido e mini-projeto | ~5min |
 
 ---
 
-*Última atualização: 2026-07-31*
+*Última atualização: 2026-08-01*
