@@ -27,7 +27,7 @@
 |-----|--------|------|------------|-------|--------|
 | 00 | Preparação do Ambiente | ✓ | ✓ | ★ 9,5 | Concluído |
 | 01 | Variáveis e Constantes | ✓ | ✓ | ● 8,5 | Concluído |
-| 02 | Tipos Primitivos | Disponível | - | - | Em estudo |
+| 02 | Tipos Primitivos | ✓ | - | - | Em estudo |
 | 03 | Operadores | - | - | - | Pendente |
 | 04 | Estruturas Condicionais | - | - | - | Pendente |
 | 05 | Estruturas de Repetição | - | - | - | Pendente |
@@ -118,4 +118,4 @@
 
 ---
 
-*Última atualização: 31/07/2026*
+*Última atualização: 01/08/2026*

@@ -6,6 +6,44 @@
 
 ## Observações Gerais
 
+### 2026-08-01 - Conferência Final do Mini-Projeto do Capítulo 02
+
+O aluno aplicou voluntariamente parte das sugestões. Os dois arquivos compilam em modo estrito e executam corretamente; nenhuma pendência conceitual ou funcional permanece.
+
+**Diretriz confirmada com o aluno:** buscar equilíbrio na correção. Priorizar conceitos, raciocínio e funcionamento; mencionar literalidade apenas quando ela tiver valor pedagógico real, sem consumir tempo com acabamento irrelevante nesta fase.
+
+### 2026-08-01 - Recalibração dos Critérios de Correção
+
+O aluno observou corretamente que unidade omitida na exibição, linha vazia para legibilidade e pequenas diferenças no símbolo/espaçamento de grau não demonstram falha nos conceitos estudados. A correção anterior foi excessivamente literal.
+
+**Critério daqui em diante:** separar claramente erros conceituais ou funcionais de sugestões cosméticas. Detalhes de apresentação só impedirão aprovação quando a própria formatação for o conceito avaliado ou afetar o funcionamento do programa.
+
+**Resultado revisado:** desafio rápido e mini-projeto aprovados; lista de exercícios liberada. A anotação explícita em `numeroDoEnsaio` e o cabeçalho com aspas podem ser mencionados como desvios do mecanismo solicitado, mas o uso correto desses mecanismos no restante do arquivo já demonstra compreensão suficiente.
+
+### 2026-08-01 - Correção do Desafio Rápido e Mini-Projeto do Capítulo 02
+
+**Resultado:** ambos os arquivos compilam em modo estrito. O aluno aplicou corretamente tipos primitivos, cálculos derivados e template literals, além de concluir os três desafios de expansão.
+
+**Pendências:** incluir `kg` no desafio rápido; usar inferência em `numeroDoEnsaio`; usar template literal no cabeçalho; reproduzir ` °C` com espaço e o símbolo correto; remover o `}` excedente do resumo; retirar a linha vazia anterior ao cabeçalho para que o bloco obrigatório comece exatamente como solicitado.
+
+**Próximo passo:** aluno corrige os próprios arquivos e solicita conferência curta antes da lista de exercícios.
+
+### 2026-08-01 - Conflito entre `.ts` e `.js` no Mini-Projeto
+
+O aluno encontrou TS6200 após compilar `boletim-ensaio.ts`. O código compila; o diagnóstico ocorre porque, sem um `tsconfig.json` na raiz, o serviço de linguagem do VS Code pode analisar o TypeScript e o JavaScript gerado lado a lado como scripts no mesmo escopo global, duplicando as declarações.
+
+**Observação pedagógica:** distinguir erro da compilação executada de diagnóstico do projeto implícito do editor. O aluno seguirá agora para a conferência autônoma do checklist do mini-projeto.
+
+**Esclarecimento complementar:** existem vários pares `.ts`/`.js` no curso, mas eles não geram diagnóstico enquanto o serviço do editor não inclui os dois no mesmo projeto. Neste caso, o `.js` gerado foi incluído junto do `.ts`, provavelmente por estar aberto no VS Code; a situação não é específica dos tipos usados no boletim.
+
+**Validação:** após o reinício do servidor não remover o diagnóstico do editor, `tsc --noEmit 02-tipos-primitivos/exercicios/boletim-ensaio.ts` terminou com código 0. O aluno pode prosseguir com segurança; uma organização definitiva dos arquivos compilados será tratada separadamente, sem misturá-la ao objetivo atual do exercício.
+
+### 2026-07-31 - Retomada da Ementa
+
+O aluno solicitou uma visão geral, adequada para ouvir, do percurso do curso, do ponto atual e dos próximos passos. O progresso permanece inalterado: capítulos 00 e 01 concluídos; Capítulo 02 disponível para início.
+
+**Próximo passo:** começar `02-tipos-primitivos/aula/01-teoria.md` e seguir os quatro arquivos da aula na ordem.
+
 ### 2026-07-31 - Geração do Capítulo 02
 
 **Material criado:** aula completa sobre tipos primitivos, mini-projeto, 10 exercícios e bônus, prova com rubrica, erros comuns e recursos oficiais.

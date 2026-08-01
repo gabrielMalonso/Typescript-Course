@@ -93,6 +93,7 @@
 |------|----------|------------|---------|------|------------------|
 | 2026-02-01 | 00 | 10 | 8 corretos, 2 com ressalvas, 1 parcial | ~85% | Inconsistência com ponto e vírgula; saída divergente do esperado; confusão sobre o que é erro de compilação vs estilo |
 | 2026-07-30 | 01 | 10 + bônus | Aprovados após revisão | 100% após ajustes | Saída, requisitos textuais e escopo de função corrigidos |
+| 2026-08-01 | 02 | Desafio rápido + mini-projeto | Aprovados | Domínio conceitual demonstrado | Tipos, cálculos e template literals corretos; diferenças cosméticas não impedem avanço |
 
 ---
 
@@ -114,7 +115,7 @@
 | Tipo | Descrição | Frequência | Capítulos | Status |
 |------|-----------|------------|-----------|--------|
 | Validação da entrega | Código testado estava correto, mas a versão copiada na resposta continha erros | 1 | 00 | Reforçar |
-| Fidelidade ao enunciado | Código funciona, mas rótulos, valores ou partes não executáveis divergem do pedido | Recorrente | 00, 01 | Reforçar |
+| Fidelidade ao enunciado | Código funciona, mas rótulos, valores, unidades ou partes não executáveis divergem do pedido | Recorrente | 00, 01, 02 | Reforçar |
 | Escopo de função | Explicação afirmou que nomes internos ficam disponíveis fora da função | 1 | 01 | Corrigido na prova |
 | Coerência entre resposta e justificativa | Classificação V/F contrariou a explicação conceitualmente correta | 1 | 01 | Reforçar |
 
@@ -129,4 +130,4 @@
 
 ---
 
-*Última atualização: 2026-07-31*
+*Última atualização: 2026-08-01*

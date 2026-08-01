@@ -102,6 +102,8 @@
 - Inferência e anotação explícita
 - Reatribuição e escopo de bloco
 - Escopo de função
+- Tipos primitivos `number`, `string`, `boolean`, `null` e `undefined`
+- Cálculos derivados e uso de template literals
 
 ---
 
@@ -112,6 +114,7 @@
 - Analogias com mundo real: (aguardando feedback)
 - Exemplos de código: (aguardando feedback)
 - Diagramas/visuais: (aguardando feedback)
+- Correções: priorizar domínio conceitual e comportamento do programa; tratar detalhes cosméticos de saída como observações opcionais, salvo quando formatação for o objetivo explícito do exercício
 
 ---
 
@@ -124,4 +127,4 @@
 
 ---
 
-*Última atualização: 2026-07-31*
+*Última atualização: 2026-08-01*
