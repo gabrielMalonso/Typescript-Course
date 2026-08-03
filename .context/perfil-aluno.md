@@ -34,6 +34,8 @@
 | **Profundidade** | Quer entender o "porquê", não só o "como" |
 | **Analogias** | Bem-vindas (formação em engenharia ajuda) |
 
+**Ajuste de ritmo em 2026-08-03:** aluno está confortável com a base e prefere acelerar quando temas próximos puderem ser integrados, compensando com 30–50% mais exercícios e variedade.
+
 ---
 
 ## Pontos Fortes (Observados)
@@ -61,6 +63,8 @@
 | Cumprimento integral | Partes textuais não executáveis foram omitidas nos exercícios 3.2 e 3.3 | 2 exercícios (cap. 01) |
 | Formatação exata | Rótulos ou valores divergiram da saída esperada | Recorrente no cap. 01 |
 | Leitura literal de requisitos | Anotação explícita usada onde a inferência era obrigatória | 1 prova (cap. 01) |
+| Leitura literal de requisitos | Anotação explícita usada novamente onde a inferência era obrigatória | 1 exercício (cap. 02) |
+| Classificação de diagnóstico | Chamou incompatibilidade de tipo na declaração de erro de cálculo | 1 exercício (cap. 02) |
 
 ---
 
@@ -102,6 +106,11 @@
 - Inferência e anotação explícita
 - Reatribuição e escopo de bloco
 - Escopo de função
+- Tipos primitivos `number`, `string`, `boolean`, `null` e `undefined`
+- Cálculos derivados e uso de template literals
+- Distinção entre atribuições posteriores compatíveis e incompatíveis
+- Diferença semântica entre `null` e `undefined`
+- Integração de tipos primitivos, cálculos e formação de saídas
 
 ---
 
@@ -112,6 +121,7 @@
 - Analogias com mundo real: (aguardando feedback)
 - Exemplos de código: (aguardando feedback)
 - Diagramas/visuais: (aguardando feedback)
+- Correções: priorizar domínio conceitual e comportamento do programa; tratar detalhes cosméticos de saída como observações opcionais, salvo quando formatação for o objetivo explícito do exercício
 
 ---
 
@@ -121,7 +131,9 @@
 - Demonstrou organização e visão de longo prazo
 - Pesquisou cursos antes de iniciar (proativo)
 - Após a prova do Capítulo 01, relatou satisfação com o próprio aprendizado e reconheceu os deslizes de atenção na entrega
+- Obteve 9,0 na prova do Capítulo 02, com desempenho prático forte; precisa conferir cálculos teóricos e todas as linhas da saída antes da entrega
+- Após a prova do Capítulo 02, relatou satisfação e reconheceu espontaneamente os erros de atenção
 
 ---
 
-*Última atualização: 2026-07-31*
+*Última atualização: 2026-08-03*

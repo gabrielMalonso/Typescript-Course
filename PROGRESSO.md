@@ -9,12 +9,12 @@
 ## Visão Geral
 
 ```
-[███                                               ] 6%
+[█████                                             ] 9%
 ```
 
 | Módulo | Status | Progresso |
 |--------|--------|-----------|
-| 1 - Fundamentos Absolutos | Em andamento | 2/6 capítulos |
+| 1 - Fundamentos Absolutos | Em andamento | 3/5 capítulos |
 | 2 - Estruturas de Dados e Funções | Bloqueado | 0/8 capítulos |
 | 3 - TypeScript Intermediário | Bloqueado | 0/10 capítulos |
 | 4 - TypeScript Avançado | Bloqueado | 0/9 capítulos |
@@ -27,10 +27,9 @@
 |-----|--------|------|------------|-------|--------|
 | 00 | Preparação do Ambiente | ✓ | ✓ | ★ 9,5 | Concluído |
 | 01 | Variáveis e Constantes | ✓ | ✓ | ● 8,5 | Concluído |
-| 02 | Tipos Primitivos | Disponível | - | - | Em estudo |
-| 03 | Operadores | - | - | - | Pendente |
-| 04 | Estruturas Condicionais | - | - | - | Pendente |
-| 05 | Estruturas de Repetição | - | - | - | Pendente |
+| 02 | Tipos Primitivos | ✓ | ✓ | ★ 9,0 | Concluído |
+| 03 | Operadores e Estruturas Condicionais | Disponível | - | - | Em estudo |
+| 04 | Estruturas de Repetição | - | - | - | Pendente |
 | P1 | Projeto: Calculadora | - | - | - | Pendente |
 
 ---
@@ -39,14 +38,14 @@
 
 | Cap | Título | Aula | Exercícios | Prova | Status |
 |-----|--------|------|------------|-------|--------|
-| 06 | Arrays: Fundamentos | - | - | - | Bloqueado |
-| 07 | Arrays: Métodos Avançados | - | - | - | Bloqueado |
-| 08 | Tuples | - | - | - | Bloqueado |
-| 09 | Funções: Fundamentos | - | - | - | Bloqueado |
-| 10 | Funções: Conceitos Avançados | - | - | - | Bloqueado |
-| 11 | Objetos | - | - | - | Bloqueado |
-| 12 | Type Alias, Union e Intersection | - | - | - | Bloqueado |
-| 13 | Enums | - | - | - | Bloqueado |
+| 05 | Arrays: Fundamentos | - | - | - | Bloqueado |
+| 06 | Arrays: Métodos Avançados | - | - | - | Bloqueado |
+| 07 | Tuples | - | - | - | Bloqueado |
+| 08 | Funções: Fundamentos | - | - | - | Bloqueado |
+| 09 | Funções: Conceitos Avançados | - | - | - | Bloqueado |
+| 10 | Objetos | - | - | - | Bloqueado |
+| 11 | Type Alias, Union e Intersection | - | - | - | Bloqueado |
+| 12 | Enums | - | - | - | Bloqueado |
 | P2 | Projeto: Gerenciador de Contatos | - | - | - | Bloqueado |
 
 ---
@@ -55,16 +54,16 @@
 
 | Cap | Título | Aula | Exercícios | Prova | Status |
 |-----|--------|------|------------|-------|--------|
-| 14 | Interfaces: Fundamentos | - | - | - | Bloqueado |
-| 15 | Interfaces: Recursos Avançados | - | - | - | Bloqueado |
-| 16 | Classes: Fundamentos | - | - | - | Bloqueado |
-| 17 | Classes: Encapsulamento | - | - | - | Bloqueado |
-| 18 | Classes: Herança e Polimorfismo | - | - | - | Bloqueado |
-| 19 | Narrowing: Refinamento de Tipos | - | - | - | Bloqueado |
-| 20 | Type Assertions e Predicates | - | - | - | Bloqueado |
-| 21 | Tipando o DOM | - | - | - | Bloqueado |
-| 22 | Generics: Introdução | - | - | - | Bloqueado |
-| 23 | Generics: Avançado | - | - | - | Bloqueado |
+| 13 | Interfaces: Fundamentos | - | - | - | Bloqueado |
+| 14 | Interfaces: Recursos Avançados | - | - | - | Bloqueado |
+| 15 | Classes: Fundamentos | - | - | - | Bloqueado |
+| 16 | Classes: Encapsulamento | - | - | - | Bloqueado |
+| 17 | Classes: Herança e Polimorfismo | - | - | - | Bloqueado |
+| 18 | Narrowing: Refinamento de Tipos | - | - | - | Bloqueado |
+| 19 | Type Assertions e Predicates | - | - | - | Bloqueado |
+| 20 | Tipando o DOM | - | - | - | Bloqueado |
+| 21 | Generics: Introdução | - | - | - | Bloqueado |
+| 22 | Generics: Avançado | - | - | - | Bloqueado |
 | P3 | Projeto: Sistema de Biblioteca | - | - | - | Bloqueado |
 
 ---
@@ -73,15 +72,15 @@
 
 | Cap | Título | Aula | Exercícios | Prova | Status |
 |-----|--------|------|------------|-------|--------|
-| 24 | Configuração do Compilador | - | - | - | Bloqueado |
-| 25 | Módulos e Organização | - | - | - | Bloqueado |
-| 26 | Declaration Files e Tipagem Externa | - | - | - | Bloqueado |
-| 27 | Tratamento de Erros | - | - | - | Bloqueado |
-| 28 | Function Overloading | - | - | - | Bloqueado |
-| 29 | Utility Types | - | - | - | Bloqueado |
-| 30 | Tipos Avançados | - | - | - | Bloqueado |
-| 31 | Decorators | - | - | - | Bloqueado |
-| 32 | Boas Práticas e Padrões | - | - | - | Bloqueado |
+| 23 | Configuração do Compilador | - | - | - | Bloqueado |
+| 24 | Módulos e Organização | - | - | - | Bloqueado |
+| 25 | Declaration Files e Tipagem Externa | - | - | - | Bloqueado |
+| 26 | Tratamento de Erros | - | - | - | Bloqueado |
+| 27 | Function Overloading | - | - | - | Bloqueado |
+| 28 | Utility Types | - | - | - | Bloqueado |
+| 29 | Tipos Avançados | - | - | - | Bloqueado |
+| 30 | Decorators | - | - | - | Bloqueado |
+| 31 | Boas Práticas e Padrões | - | - | - | Bloqueado |
 | PF | Projeto Final: Gestão Financeira | - | - | - | Bloqueado |
 
 ---
@@ -92,14 +91,15 @@
 |------|----------|------|------|------------|
 | 26/07/2026 | 00 - Preparação do Ambiente | Prova | 9,5 | Aprovado |
 | 31/07/2026 | 01 - Variáveis e Constantes | Prova | 8,5 | Aprovado |
+| 03/08/2026 | 02 - Tipos Primitivos | Prova | 9,0 | Aprovado |
 
 ---
 
 ## Estatísticas
 
-- **Capítulos concluídos:** 2/31
-- **Exercícios realizados:** 20 + 1 bônus
-- **Provas realizadas:** 2
+- **Capítulos concluídos:** 3/32
+- **Exercícios realizados:** 30 + 2 bônus
+- **Provas realizadas:** 3
 - **Média geral:** 9,0
 - **Projetos entregues:** 0/4
 
@@ -118,4 +118,4 @@
 
 ---
 
-*Última atualização: 31/07/2026*
+*Última atualização: 03/08/2026*

@@ -6,6 +6,86 @@
 
 ## Observações Gerais
 
+### 2026-08-03 - Correção da Lista de Exercícios do Capítulo 02
+
+Os dez exercícios e o bônus compilam em modo estrito. O aluno demonstrou domínio dos tipos primitivos e dos cálculos, com cinco exercícios obrigatórios aprovados diretamente.
+
+**Ajustes antes da avaliação:** incluir `Série` no exercício 1.2; corrigir `camelCase` e ponto e vírgula no 2.1; usar a inferência exigida no 2.3; corrigir a classificação conceitual do trecho A no 2.4; reconhecer o sufixo minúsculo `n` no 3.1. O bônus diverge apenas no rótulo da força.
+
+**Próximo passo:** conferência curta das correções e, se aprovadas, liberação da avaliação.
+
+**Primeira revisão:** exercícios 2.1 e 3.1 e bônus corrigidos. Restam a saída exata do 1.2, a remoção das duas anotações explícitas restantes no 2.3 e a formulação/classificação literal do 2.4.
+
+**Revisão do exercício 2.4:** o aluno classificou corretamente o trecho A como erro de compilação e compreendeu a incompatibilidade entre `number` e `string`. A expressão “depois da declaração” é apenas uma imprecisão temporal, pois o valor aparece no inicializador da própria declaração. Exercício aprovado; não cobrar reprodução literal das classificações quando o conceito está inequívoco.
+
+**Resultado final:** exercício 2.3 corrigido integralmente. O `:` adicional em `Série: 84` no exercício 1.2 é cosmético e, conforme o critério pedagógico combinado, não impede o avanço. Lista aprovada e avaliação liberada.
+
+### 2026-08-03 - Prova do Capítulo 02
+
+**Resultado:** 9,0/10 — aprovado. Os três arquivos práticos compilam em modo estrito. O aluno demonstrou domínio sólido de tipos primitivos, inferência, validação, cálculos, concatenação e template literals.
+
+**Descontos:** questão 1 marcada como `c` em vez de `a`, embora o tipo `number` tenha sido reconhecido; na questão 7, faltou a linha da bancada e houve duas divergências textuais.
+
+**Próximo passo:** Capítulo 02 concluído; aluno liberado para solicitar o Capítulo 03 — Operadores.
+
+**Feedback do aluno:** relatou satisfação com o resultado e reconheceu que os descontos vieram de erros de atenção. Manter a distinção entre domínio conceitual e conferência final nas próximas correções.
+
+**Avanço:** aluno confirmou que deseja seguir no curso. Próximos capítulos apresentados: 03 — Operadores e 04 — Estruturas Condicionais. Aguardar solicitação de geração do Capítulo 03.
+
+**Proposta do aluno:** unir Operadores e Estruturas Condicionais em um único capítulo para acelerar o curso. A combinação é pedagogicamente coerente porque comparações e operadores lógicos ganham aplicação imediata em `if`, ternário e `switch`; aguardar confirmação antes de alterar a ementa.
+
+### 2026-08-03 - Criação do Capítulo 03 Integrado
+
+**Decisão confirmada:** Operadores e Estruturas Condicionais foram unidos em `03-operadores-e-condicionais`. Os capítulos futuros foram renumerados, e a ementa agora possui 32 capítulos, de 00 a 31.
+
+**Ritmo:** o aluno se sente confortável e solicitou avanço mais rápido. A lista foi ampliada de 10 para 14 exercícios obrigatórios, mais bônus, cobrindo aritmética, precedência, atribuição, comparações, lógica, `if`, faixas, ternário, `switch`, truthy/falsy e `??`.
+
+**Validação:** exemplos completos, mini-projeto e gabarito passaram por verificação estrita e execução. Leitor aprovado em typecheck, lint e build; home, README e teoria do Capítulo 03 responderam com HTTP 200.
+
+**Próximo passo:** publicar o leitor e iniciar `aula/01-teoria.md`.
+
+### 2026-08-01 - Nomenclatura dos Arquivos de Exercícios
+
+A pedido do aluno, os arquivos do Capítulo 02 agora refletem diretamente o número exibido na lista: `ex11.ts` corresponde ao exercício 1.1, `ex21.ts` ao 2.1 e assim por diante. O padrão reduz o esforço para relacionar enunciado e solução e deve ser reutilizado nos próximos capítulos com listas divididas em níveis.
+
+### 2026-08-01 - Conferência Final do Mini-Projeto do Capítulo 02
+
+O aluno aplicou voluntariamente parte das sugestões. Os dois arquivos compilam em modo estrito e executam corretamente; nenhuma pendência conceitual ou funcional permanece.
+
+**Diretriz confirmada com o aluno:** buscar equilíbrio na correção. Priorizar conceitos, raciocínio e funcionamento; mencionar literalidade apenas quando ela tiver valor pedagógico real, sem consumir tempo com acabamento irrelevante nesta fase.
+
+### 2026-08-01 - Recalibração dos Critérios de Correção
+
+O aluno observou corretamente que unidade omitida na exibição, linha vazia para legibilidade e pequenas diferenças no símbolo/espaçamento de grau não demonstram falha nos conceitos estudados. A correção anterior foi excessivamente literal.
+
+**Critério daqui em diante:** separar claramente erros conceituais ou funcionais de sugestões cosméticas. Detalhes de apresentação só impedirão aprovação quando a própria formatação for o conceito avaliado ou afetar o funcionamento do programa.
+
+**Resultado revisado:** desafio rápido e mini-projeto aprovados; lista de exercícios liberada. A anotação explícita em `numeroDoEnsaio` e o cabeçalho com aspas podem ser mencionados como desvios do mecanismo solicitado, mas o uso correto desses mecanismos no restante do arquivo já demonstra compreensão suficiente.
+
+### 2026-08-01 - Correção do Desafio Rápido e Mini-Projeto do Capítulo 02
+
+**Resultado:** ambos os arquivos compilam em modo estrito. O aluno aplicou corretamente tipos primitivos, cálculos derivados e template literals, além de concluir os três desafios de expansão.
+
+**Pendências:** incluir `kg` no desafio rápido; usar inferência em `numeroDoEnsaio`; usar template literal no cabeçalho; reproduzir ` °C` com espaço e o símbolo correto; remover o `}` excedente do resumo; retirar a linha vazia anterior ao cabeçalho para que o bloco obrigatório comece exatamente como solicitado.
+
+**Próximo passo:** aluno corrige os próprios arquivos e solicita conferência curta antes da lista de exercícios.
+
+### 2026-08-01 - Conflito entre `.ts` e `.js` no Mini-Projeto
+
+O aluno encontrou TS6200 após compilar `boletim-ensaio.ts`. O código compila; o diagnóstico ocorre porque, sem um `tsconfig.json` na raiz, o serviço de linguagem do VS Code pode analisar o TypeScript e o JavaScript gerado lado a lado como scripts no mesmo escopo global, duplicando as declarações.
+
+**Observação pedagógica:** distinguir erro da compilação executada de diagnóstico do projeto implícito do editor. O aluno seguirá agora para a conferência autônoma do checklist do mini-projeto.
+
+**Esclarecimento complementar:** existem vários pares `.ts`/`.js` no curso, mas eles não geram diagnóstico enquanto o serviço do editor não inclui os dois no mesmo projeto. Neste caso, o `.js` gerado foi incluído junto do `.ts`, provavelmente por estar aberto no VS Code; a situação não é específica dos tipos usados no boletim.
+
+**Validação:** após o reinício do servidor não remover o diagnóstico do editor, `tsc --noEmit 02-tipos-primitivos/exercicios/boletim-ensaio.ts` terminou com código 0. O aluno pode prosseguir com segurança; uma organização definitiva dos arquivos compilados será tratada separadamente, sem misturá-la ao objetivo atual do exercício.
+
+### 2026-07-31 - Retomada da Ementa
+
+O aluno solicitou uma visão geral, adequada para ouvir, do percurso do curso, do ponto atual e dos próximos passos. O progresso permanece inalterado: capítulos 00 e 01 concluídos; Capítulo 02 disponível para início.
+
+**Próximo passo:** começar `02-tipos-primitivos/aula/01-teoria.md` e seguir os quatro arquivos da aula na ordem.
+
 ### 2026-07-31 - Geração do Capítulo 02
 
 **Material criado:** aula completa sobre tipos primitivos, mini-projeto, 10 exercícios e bônus, prova com rubrica, erros comuns e recursos oficiais.
@@ -13,6 +93,8 @@
 **Adaptações pedagógicas:** requisitos obrigatórios do mini-projeto aparecem antes do passo a passo; validação de tipo foi formulada como análise que aceita ou rejeita; exercícios mantêm conferências separadas de implementação e saída.
 
 **Escopo:** operações matemáticas permanecem introdutórias; `bigint` e `symbol` aparecem somente para reconhecimento; unions, condicionais, funções, arrays e objetos não são cobrados.
+
+**Leitor:** tipos, lint e build validados; home e rota da teoria responderam com HTTP 200. Versão 2 publicada no projeto existente, preservando a URL. O navegador integrado não estava disponível para inspeção visual nesta sessão.
 
 **Próximo passo:** aluno iniciar a teoria do Capítulo 02.
 
@@ -343,4 +425,4 @@ Celular na mesma rede: URL Network do Vite.
 
 ---
 
-*Última atualização: 2026-07-31*
+*Última atualização: 2026-08-03*

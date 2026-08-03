@@ -10,13 +10,13 @@
 
 | Módulo | Tema | Capítulos | Projeto |
 |--------|------|-----------|---------|
-| 1 | Fundamentos Absolutos | 00-05 | Calculadora de Terminal |
-| 2 | Estruturas de Dados e Funções | 06-12 | Gerenciador de Contatos |
+| 1 | Fundamentos Absolutos | 00-04 | Calculadora de Terminal |
+| 2 | Estruturas de Dados e Funções | 05-12 | Gerenciador de Contatos |
 | 3 | TypeScript Intermediário | 13-22 | Sistema de Biblioteca |
-| 4 | TypeScript Avançado | 23-30 | Sistema de Gestão Financeira |
+| 4 | TypeScript Avançado | 23-31 | Sistema de Gestão Financeira |
 | Bônus | Integrações | B1-B3 | - |
 
-**Total: 31 capítulos + 3 bônus + 4 projetos**
+**Total: 32 capítulos + 3 bônus + 4 projetos**
 
 ---
 
@@ -53,7 +53,7 @@
 - Diferença entre null e undefined
 - Menção: `bigint` e `symbol` (tipos especiais)
 
-### Capítulo 03 - Operadores
+### Capítulo 03 - Operadores e Estruturas Condicionais
 - Operadores aritméticos (`+`, `-`, `*`, `/`, `%`, `**`)
 - Precedência de operadores
 - Operadores de atribuição (`=`, `+=`, `-=`, `*=`, `/=`)
@@ -63,7 +63,6 @@
 - Operador nullish coalescing (`??`)
 - Operador de encadeamento opcional (`?.`)
 
-### Capítulo 04 - Estruturas Condicionais
 - A estrutura `if`
 - `if` / `else`
 - `if` / `else if` / `else`
@@ -73,7 +72,7 @@
 - Truthy e Falsy values
 - Boas práticas em condicionais
 
-### Capítulo 05 - Estruturas de Repetição
+### Capítulo 04 - Estruturas de Repetição
 - O loop `while`
 - O loop `do...while`
 - O loop `for` tradicional
@@ -98,7 +97,7 @@
 ## MÓDULO 2: Estruturas de Dados e Funções
 *Organizando dados e criando blocos reutilizáveis*
 
-### Capítulo 06 - Arrays: Fundamentos
+### Capítulo 05 - Arrays: Fundamentos
 - O que são arrays (listas ordenadas)
 - Criando arrays tipados
 - Sintaxe: `string[]` vs `Array<string>`
@@ -108,7 +107,7 @@
 - Métodos básicos: `push`, `pop`, `shift`, `unshift`
 - Arrays multidimensionais (menção)
 
-### Capítulo 07 - Arrays: Métodos Avançados
+### Capítulo 06 - Arrays: Métodos Avançados
 - Iterando com `forEach`
 - Transformando com `map`
 - Filtrando com `filter`
@@ -118,7 +117,7 @@
 - Encadeamento de métodos
 - Spread operator com arrays (`...`)
 
-### Capítulo 08 - Tuples
+### Capítulo 07 - Tuples
 - O que são tuples (arrays de tamanho fixo)
 - Diferença entre array e tuple
 - Criando e tipando tuples
@@ -128,7 +127,7 @@
 - Casos de uso: coordenadas, retorno múltiplo
 - Destructuring em tuples
 
-### Capítulo 09 - Funções: Fundamentos
+### Capítulo 08 - Funções: Fundamentos
 - O que são funções
 - Declaração de função (function declaration)
 - Expressão de função (function expression)
@@ -138,7 +137,7 @@
 - Tipagem de retorno
 - Funções que não retornam: `void`
 
-### Capítulo 10 - Funções: Conceitos Avançados
+### Capítulo 09 - Funções: Conceitos Avançados
 - Parâmetros opcionais (`?`)
 - Parâmetros com valor default
 - Rest parameters (`...args`)
@@ -148,7 +147,7 @@
 - IIFE (Immediately Invoked Function Expression)
 - Closures (introdução)
 
-### Capítulo 11 - Objetos
+### Capítulo 10 - Objetos
 - O que são objetos
 - Criando objetos literais
 - Propriedades e métodos
@@ -159,7 +158,7 @@
 - Spread operator com objetos
 - Destructuring de objetos
 
-### Capítulo 12 - Type Alias, Union e Intersection
+### Capítulo 11 - Type Alias, Union e Intersection
 - Criando tipos customizados com `type`
 - Reutilizando tipos
 - Union types (`|`): aceitar múltiplos tipos
@@ -169,7 +168,7 @@
 - Discriminated unions (introdução)
 - Type alias vs interface (prévia)
 
-### Capítulo 13 - Enums
+### Capítulo 12 - Enums
 - O que são enums
 - Enums numéricos
 - Enums de string
@@ -196,7 +195,7 @@
 ## MÓDULO 3: TypeScript Intermediário
 *Interfaces, Classes e Sistema de Tipos*
 
-### Capítulo 14 - Interfaces: Fundamentos
+### Capítulo 13 - Interfaces: Fundamentos
 - O que são interfaces
 - Definindo estrutura de objetos
 - Propriedades obrigatórias e opcionais
@@ -204,7 +203,7 @@
 - Interface vs Type Alias: quando usar cada
 - Convenções de nomenclatura
 
-### Capítulo 15 - Interfaces: Recursos Avançados
+### Capítulo 14 - Interfaces: Recursos Avançados
 - Herança de interfaces (`extends`)
 - Múltipla herança de interfaces
 - Index signatures (`[key: string]: type`)
@@ -212,7 +211,7 @@
 - Hybrid types (objeto + função)
 - Declaration merging
 
-### Capítulo 16 - Classes: Fundamentos
+### Capítulo 15 - Classes: Fundamentos
 - O que são classes
 - Definindo propriedades
 - O constructor
@@ -221,7 +220,7 @@
 - Instanciando objetos com `new`
 - Propriedades readonly em classes
 
-### Capítulo 17 - Classes: Encapsulamento
+### Capítulo 16 - Classes: Encapsulamento
 - Modificadores de acesso: `public`
 - Modificadores de acesso: `private`
 - Modificadores de acesso: `protected`
@@ -230,7 +229,7 @@
 - Parameter properties (atalho no constructor)
 - Validação em setters
 
-### Capítulo 18 - Classes: Herança e Polimorfismo
+### Capítulo 17 - Classes: Herança e Polimorfismo
 - Herança com `extends`
 - O `super()` no constructor
 - Sobrescrita de métodos (override)
@@ -240,7 +239,7 @@
 - Polimorfismo na prática
 - Implementando interfaces (`implements`)
 
-### Capítulo 19 - Narrowing: Refinamento de Tipos
+### Capítulo 18 - Narrowing: Refinamento de Tipos
 - O que é narrowing
 - Type guard com `typeof`
 - Type guard com `instanceof`
@@ -250,7 +249,7 @@
 - Discriminated unions
 - Exhaustiveness checking com `never`
 
-### Capítulo 20 - Type Assertions e Predicates
+### Capítulo 19 - Type Assertions e Predicates
 - Type assertions com `as`
 - Assertion para `unknown`
 - `as const` (const assertions)
@@ -260,7 +259,7 @@
 - Criando custom type guards
 - Quando usar (e quando evitar) assertions
 
-### Capítulo 21 - Tipando o DOM
+### Capítulo 20 - Tipando o DOM
 - Tipos de elementos HTML
 - `HTMLElement` vs tipos específicos
 - Selecionando elementos: `querySelector`
@@ -270,7 +269,7 @@
 - Manipulação segura do DOM
 - Lidando com `null` (elemento não encontrado)
 
-### Capítulo 22 - Generics: Introdução
+### Capítulo 21 - Generics: Introdução
 - O problema que Generics resolve
 - Funções genéricas
 - Convenções de nomenclatura (`T`, `U`, `K`, `V`)
@@ -280,7 +279,7 @@
 - Generics em interfaces
 - Generics em classes
 
-### Capítulo 23 - Generics: Avançado
+### Capítulo 22 - Generics: Avançado
 - Constraints com `extends`
 - O operador `keyof`
 - Usando `keyof` com generics
@@ -307,7 +306,7 @@
 ## MÓDULO 4: TypeScript Avançado
 *Configuração, Módulos e Padrões Profissionais*
 
-### Capítulo 24 - Configuração do Compilador
+### Capítulo 23 - Configuração do Compilador
 - O arquivo `tsconfig.json`
 - Opções de compilação principais
 - `target` e `module`
@@ -318,7 +317,7 @@
 - Include, exclude e files
 - Diferentes configs para dev/prod
 
-### Capítulo 25 - Módulos e Organização
+### Capítulo 24 - Módulos e Organização
 - O que são módulos
 - `export` e `import`
 - Named exports vs default export
@@ -328,7 +327,7 @@
 - Organização de arquivos e pastas
 - Barrel files (index.ts)
 
-### Capítulo 26 - Declaration Files e Tipagem Externa
+### Capítulo 25 - Declaration Files e Tipagem Externa
 - O que são declaration files (`.d.ts`)
 - O repositório DefinitelyTyped
 - Instalando tipos: `@types/`
@@ -337,7 +336,7 @@
 - Triple-slash directives
 - Tipando módulos JavaScript existentes
 
-### Capítulo 27 - Tratamento de Erros
+### Capítulo 26 - Tratamento de Erros
 - `try` / `catch` / `finally`
 - O tipo `unknown` em catch (TS 4.4+)
 - Criando classes de erro customizadas
@@ -347,7 +346,7 @@
 - Boas práticas em tratamento de erros
 - Patterns: Result type
 
-### Capítulo 28 - Function Overloading
+### Capítulo 27 - Function Overloading
 - O que é sobrecarga de funções
 - Sintaxe de overload signatures
 - Implementation signature
@@ -357,7 +356,7 @@
 - Overloading em métodos de classe
 - Limitações do overloading em TS
 
-### Capítulo 29 - Utility Types
+### Capítulo 28 - Utility Types
 - `Partial<T>` - todas propriedades opcionais
 - `Required<T>` - todas propriedades obrigatórias
 - `Readonly<T>` - todas propriedades readonly
@@ -369,7 +368,7 @@
 - `Exclude` e `Extract`
 - `NonNullable<T>`
 
-### Capítulo 30 - Tipos Avançados
+### Capítulo 29 - Tipos Avançados
 - Conditional types (`T extends U ? X : Y`)
 - O keyword `infer`
 - Mapped types
@@ -378,7 +377,7 @@
 - Criando utility types customizados
 - Type-level programming (conceitos)
 
-### Capítulo 31 - Decorators
+### Capítulo 30 - Decorators
 - O que são decorators
 - Habilitando decorators no tsconfig
 - Class decorators
@@ -389,7 +388,7 @@
 - Ordem de execução dos decorators
 - Casos de uso: logging, validação, medição
 
-### Capítulo 32 - Boas Práticas e Padrões
+### Capítulo 31 - Boas Práticas e Padrões
 - Programação defensiva
 - Imutabilidade (readonly, Object.freeze)
 - Princípios SOLID (visão geral)
@@ -489,11 +488,11 @@ Considerando ~1 hora de estudo por dia:
 
 | Módulo | Capítulos | Estimativa |
 |--------|-----------|------------|
-| 1 | 6 + projeto | ~2 semanas |
+| 1 | 5 + projeto | ~2 semanas |
 | 2 | 8 + projeto | ~3 semanas |
 | 3 | 10 + projeto | ~4 semanas |
 | 4 | 9 + projeto | ~4 semanas |
-| **Total** | **33 + 4 projetos** | **~13 semanas** |
+| **Total** | **32 + 4 projetos** | **~13 semanas** |
 
 *Estimativa flexível - o ritmo será adaptado conforme seu progresso.*
 
@@ -509,4 +508,4 @@ Considerando ~1 hora de estudo por dia:
 
 ---
 
-*Última atualização: Janeiro/2025*
+*Última atualização: Agosto/2026*
