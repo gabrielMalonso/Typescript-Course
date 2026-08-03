@@ -28,6 +28,22 @@ Os dez exercícios e o bônus compilam em modo estrito. O aluno demonstrou domí
 
 **Próximo passo:** Capítulo 02 concluído; aluno liberado para solicitar o Capítulo 03 — Operadores.
 
+**Feedback do aluno:** relatou satisfação com o resultado e reconheceu que os descontos vieram de erros de atenção. Manter a distinção entre domínio conceitual e conferência final nas próximas correções.
+
+**Avanço:** aluno confirmou que deseja seguir no curso. Próximos capítulos apresentados: 03 — Operadores e 04 — Estruturas Condicionais. Aguardar solicitação de geração do Capítulo 03.
+
+**Proposta do aluno:** unir Operadores e Estruturas Condicionais em um único capítulo para acelerar o curso. A combinação é pedagogicamente coerente porque comparações e operadores lógicos ganham aplicação imediata em `if`, ternário e `switch`; aguardar confirmação antes de alterar a ementa.
+
+### 2026-08-03 - Criação do Capítulo 03 Integrado
+
+**Decisão confirmada:** Operadores e Estruturas Condicionais foram unidos em `03-operadores-e-condicionais`. Os capítulos futuros foram renumerados, e a ementa agora possui 32 capítulos, de 00 a 31.
+
+**Ritmo:** o aluno se sente confortável e solicitou avanço mais rápido. A lista foi ampliada de 10 para 14 exercícios obrigatórios, mais bônus, cobrindo aritmética, precedência, atribuição, comparações, lógica, `if`, faixas, ternário, `switch`, truthy/falsy e `??`.
+
+**Validação:** exemplos completos, mini-projeto e gabarito passaram por verificação estrita e execução. Leitor aprovado em typecheck, lint e build; home, README e teoria do Capítulo 03 responderam com HTTP 200.
+
+**Próximo passo:** publicar o leitor e iniciar `aula/01-teoria.md`.
+
 ### 2026-08-01 - Nomenclatura dos Arquivos de Exercícios
 
 A pedido do aluno, os arquivos do Capítulo 02 agora refletem diretamente o número exibido na lista: `ex11.ts` corresponde ao exercício 1.1, `ex21.ts` ao 2.1 e assim por diante. O padrão reduz o esforço para relacionar enunciado e solução e deve ser reutilizado nos próximos capítulos com listas divididas em níveis.

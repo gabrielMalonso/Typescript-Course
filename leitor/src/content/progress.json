@@ -12,6 +12,11 @@
   {
     "chapterId": "02-tipos-primitivos",
     "label": "Cap. 02 — Tipos Primitivos",
+    "status": "concluido"
+  },
+  {
+    "chapterId": "03-operadores-e-condicionais",
+    "label": "Cap. 03 — Operadores e Condicionais",
     "status": "em_andamento"
   }
 ]

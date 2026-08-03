@@ -8,26 +8,27 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Capítulo atual** | 02 - Tipos Primitivos |
-| **Fase atual** | Capítulo concluído |
+| **Capítulo atual** | 03 - Operadores e Estruturas Condicionais |
+| **Fase atual** | Aula disponível para início |
 | **Último capítulo concluído** | 02 - Tipos Primitivos |
-| **Próximo passo** | Solicitar a criação do Capítulo 03 — Operadores |
+| **Próximo passo** | Ler `03-operadores-e-condicionais/aula/01-teoria.md` |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-08-03
-- **Atividade:** Correção da prova do Capítulo 02
+- **Atividade:** Criação do Capítulo 03 integrado
 - **O que foi feito:**
-  - Respostas teóricas corrigidas pela rubrica
-  - Três arquivos práticos compilados em modo estrito e executados
-  - Prova avaliada com nota 9,0/10
-  - Capítulo 02 concluído; aluno liberado para o Capítulo 03
+  - Antigos capítulos de Operadores e Condicionais fundidos
+  - Ementa futura renumerada e total atualizado para 32 capítulos
+  - Aula, mini-projeto, 14 exercícios, bônus, prova, gabarito e extras criados
+  - Exemplos completos, mini-projeto e gabarito validados em modo estrito
+  - Leitor aprovado em tipos, lint e build; home e rotas do capítulo respondem com HTTP 200
 
 ---
 
-## Conteúdo do Capítulo 02
+## Conteúdo do Capítulo 03
 
 | Item | Status | Arquivo |
 |------|--------|---------|
@@ -35,9 +36,9 @@
 | Aula - Sintaxe | ✅ Criado | 02-sintaxe.md |
 | Aula - Exemplos | ✅ Criado | 03-exemplos.md |
 | Aula - Mini-projeto | ✅ Criado | 04-mini-projeto.md |
-| Exercícios | ✅ Criado | lista.md (10 exercícios + bônus) |
+| Exercícios | ✅ Criado | lista.md (14 exercícios + bônus) |
 | Prova | ✅ Criado | prova.md |
-| Gabarito | ✅ Criado | .context/gabarito-cap02.md |
+| Gabarito | ✅ Criado | .context/gabarito-cap03.md |
 | Erros Comuns | ✅ Criado | erros-comuns.md |
 | Recursos | ✅ Criado | recursos.md |
 
@@ -45,23 +46,23 @@
 
 ## Pendências
 
-- [x] Aluno estudar o conteúdo da aula
-- [x] Aluno fazer e concluir o mini-projeto
+- [ ] Aluno estudar o conteúdo da aula
+- [ ] Aluno fazer e concluir o mini-projeto
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
-- [x] Aluno fazer os exercícios (`ex11.ts` a `ex33.ts`, conforme nível e número)
-- [x] Corrigir exercícios quando entregues
-- [x] Aluno aplicar eventuais ajustes da correção
-- [x] Aluno fazer a prova
-- [x] Corrigir prova e dar nota
-- [x] Publicar a versão atualizada do `leitor/` no Sites
+- [ ] Aluno fazer os 14 exercícios e o bônus opcional
+- [ ] Corrigir exercícios quando entregues
+- [ ] Aluno aplicar eventuais ajustes da correção
+- [ ] Aluno fazer a prova
+- [ ] Corrigir prova e dar nota
+- [ ] Publicar a versão atualizada do `leitor/` no Sites
 
 ---
 
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Aluno solicitar a criação do Capítulo 03 — Operadores
-2. Gerar, validar e publicar o novo capítulo conforme o fluxo do curso
+1. Iniciar `03-operadores-e-condicionais/aula/01-teoria.md`
+2. Seguir os quatro arquivos da aula na ordem
 
 ---
 
@@ -104,6 +105,7 @@ Quando o aluno retornar:
 | 2026-08-01 | Nomes dos arquivos da lista alinhados à numeração dos exercícios | ~5min |
 | 2026-08-03 | Correção da lista de exercícios do Capítulo 02 | ~15min |
 | 2026-08-03 | Correção da prova do Capítulo 02 — nota 9,0 | ~15min |
+| 2026-08-03 | Fusão da ementa e criação do Capítulo 03 integrado | ~45min |
 
 ---
 
