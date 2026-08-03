@@ -34,6 +34,8 @@
 | **Profundidade** | Quer entender o "porquê", não só o "como" |
 | **Analogias** | Bem-vindas (formação em engenharia ajuda) |
 
+**Ajuste de ritmo em 2026-08-03:** aluno está confortável com a base e prefere acelerar quando temas próximos puderem ser integrados, compensando com 30–50% mais exercícios e variedade.
+
 ---
 
 ## Pontos Fortes (Observados)
@@ -130,6 +132,7 @@
 - Pesquisou cursos antes de iniciar (proativo)
 - Após a prova do Capítulo 01, relatou satisfação com o próprio aprendizado e reconheceu os deslizes de atenção na entrega
 - Obteve 9,0 na prova do Capítulo 02, com desempenho prático forte; precisa conferir cálculos teóricos e todas as linhas da saída antes da entrega
+- Após a prova do Capítulo 02, relatou satisfação e reconheceu espontaneamente os erros de atenção
 
 ---
 
