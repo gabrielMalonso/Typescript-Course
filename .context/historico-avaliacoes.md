@@ -94,6 +94,7 @@
 | 2026-02-01 | 00 | 10 | 8 corretos, 2 com ressalvas, 1 parcial | ~85% | Inconsistência com ponto e vírgula; saída divergente do esperado; confusão sobre o que é erro de compilação vs estilo |
 | 2026-07-30 | 01 | 10 + bônus | Aprovados após revisão | 100% após ajustes | Saída, requisitos textuais e escopo de função corrigidos |
 | 2026-08-01 | 02 | Desafio rápido + mini-projeto | Aprovados | Domínio conceitual demonstrado | Tipos, cálculos e template literals corretos; diferenças cosméticas não impedem avanço |
+| 2026-08-03 | 02 | 10 + bônus | Aprovados após revisão | 100% após ajustes conceituais | Inferência, classificação de erro e sufixo de `bigint` corrigidos; diferença cosmética no 1.2 não impede avanço |
 
 ---
 
@@ -130,4 +131,4 @@
 
 ---
 
-*Última atualização: 2026-08-01*
+*Última atualização: 2026-08-03*

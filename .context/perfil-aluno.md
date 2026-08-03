@@ -61,6 +61,8 @@
 | Cumprimento integral | Partes textuais não executáveis foram omitidas nos exercícios 3.2 e 3.3 | 2 exercícios (cap. 01) |
 | Formatação exata | Rótulos ou valores divergiram da saída esperada | Recorrente no cap. 01 |
 | Leitura literal de requisitos | Anotação explícita usada onde a inferência era obrigatória | 1 prova (cap. 01) |
+| Leitura literal de requisitos | Anotação explícita usada novamente onde a inferência era obrigatória | 1 exercício (cap. 02) |
+| Classificação de diagnóstico | Chamou incompatibilidade de tipo na declaração de erro de cálculo | 1 exercício (cap. 02) |
 
 ---
 
@@ -104,6 +106,7 @@
 - Escopo de função
 - Tipos primitivos `number`, `string`, `boolean`, `null` e `undefined`
 - Cálculos derivados e uso de template literals
+- Distinção entre atribuições posteriores compatíveis e incompatíveis
 
 ---
 
@@ -127,4 +130,4 @@
 
 ---
 
-*Última atualização: 2026-08-01*
+*Última atualização: 2026-08-03*
