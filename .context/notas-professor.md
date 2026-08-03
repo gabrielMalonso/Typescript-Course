@@ -20,6 +20,14 @@ Os dez exercícios e o bônus compilam em modo estrito. O aluno demonstrou domí
 
 **Resultado final:** exercício 2.3 corrigido integralmente. O `:` adicional em `Série: 84` no exercício 1.2 é cosmético e, conforme o critério pedagógico combinado, não impede o avanço. Lista aprovada e avaliação liberada.
 
+### 2026-08-03 - Prova do Capítulo 02
+
+**Resultado:** 9,0/10 — aprovado. Os três arquivos práticos compilam em modo estrito. O aluno demonstrou domínio sólido de tipos primitivos, inferência, validação, cálculos, concatenação e template literals.
+
+**Descontos:** questão 1 marcada como `c` em vez de `a`, embora o tipo `number` tenha sido reconhecido; na questão 7, faltou a linha da bancada e houve duas divergências textuais.
+
+**Próximo passo:** Capítulo 02 concluído; aluno liberado para solicitar o Capítulo 03 — Operadores.
+
 ### 2026-08-01 - Nomenclatura dos Arquivos de Exercícios
 
 A pedido do aluno, os arquivos do Capítulo 02 agora refletem diretamente o número exibido na lista: `ex11.ts` corresponde ao exercício 1.1, `ex21.ts` ao 2.1 e assim por diante. O padrão reduz o esforço para relacionar enunciado e solução e deve ser reutilizado nos próximos capítulos com listas divididas em níveis.

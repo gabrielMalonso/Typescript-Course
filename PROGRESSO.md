@@ -9,12 +9,12 @@
 ## Visão Geral
 
 ```
-[███                                               ] 6%
+[█████                                             ] 10%
 ```
 
 | Módulo | Status | Progresso |
 |--------|--------|-----------|
-| 1 - Fundamentos Absolutos | Em andamento | 2/6 capítulos |
+| 1 - Fundamentos Absolutos | Em andamento | 3/6 capítulos |
 | 2 - Estruturas de Dados e Funções | Bloqueado | 0/8 capítulos |
 | 3 - TypeScript Intermediário | Bloqueado | 0/10 capítulos |
 | 4 - TypeScript Avançado | Bloqueado | 0/9 capítulos |
@@ -27,7 +27,7 @@
 |-----|--------|------|------------|-------|--------|
 | 00 | Preparação do Ambiente | ✓ | ✓ | ★ 9,5 | Concluído |
 | 01 | Variáveis e Constantes | ✓ | ✓ | ● 8,5 | Concluído |
-| 02 | Tipos Primitivos | ✓ | ✓ | Disponível | Em estudo |
+| 02 | Tipos Primitivos | ✓ | ✓ | ★ 9,0 | Concluído |
 | 03 | Operadores | - | - | - | Pendente |
 | 04 | Estruturas Condicionais | - | - | - | Pendente |
 | 05 | Estruturas de Repetição | - | - | - | Pendente |
@@ -92,14 +92,15 @@
 |------|----------|------|------|------------|
 | 26/07/2026 | 00 - Preparação do Ambiente | Prova | 9,5 | Aprovado |
 | 31/07/2026 | 01 - Variáveis e Constantes | Prova | 8,5 | Aprovado |
+| 03/08/2026 | 02 - Tipos Primitivos | Prova | 9,0 | Aprovado |
 
 ---
 
 ## Estatísticas
 
-- **Capítulos concluídos:** 2/31
+- **Capítulos concluídos:** 3/31
 - **Exercícios realizados:** 30 + 2 bônus
-- **Provas realizadas:** 2
+- **Provas realizadas:** 3
 - **Média geral:** 9,0
 - **Projetos entregues:** 0/4
 
