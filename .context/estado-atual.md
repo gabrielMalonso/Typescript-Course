@@ -25,6 +25,7 @@
   - Aula, mini-projeto, 14 exercícios, bônus, prova, gabarito e extras criados
   - Exemplos completos, mini-projeto e gabarito validados em modo estrito
   - Leitor aprovado em tipos, lint e build; home e rotas do capítulo respondem com HTTP 200
+  - Versão 3 publicada no projeto existente, preservando a URL do leitor
 
 ---
 
@@ -54,7 +55,7 @@
 - [ ] Aluno aplicar eventuais ajustes da correção
 - [ ] Aluno fazer a prova
 - [ ] Corrigir prova e dar nota
-- [ ] Publicar a versão atualizada do `leitor/` no Sites
+- [x] Publicar a versão atualizada do `leitor/` no Sites
 
 ---
 
