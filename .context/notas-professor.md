@@ -42,7 +42,9 @@ Os dez exercícios e o bônus compilam em modo estrito. O aluno demonstrou domí
 
 **Validação:** exemplos completos, mini-projeto e gabarito passaram por verificação estrita e execução. Leitor aprovado em typecheck, lint e build; home, README e teoria do Capítulo 03 responderam com HTTP 200.
 
-**Próximo passo:** publicar o leitor e iniciar `aula/01-teoria.md`.
+**Publicação:** versão 3 publicada no projeto existente do Sites, preservando `https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site`.
+
+**Próximo passo:** iniciar `aula/01-teoria.md`.
 
 ### 2026-08-01 - Nomenclatura dos Arquivos de Exercícios
 
