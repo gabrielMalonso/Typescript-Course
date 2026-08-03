@@ -107,6 +107,8 @@
 - Tipos primitivos `number`, `string`, `boolean`, `null` e `undefined`
 - Cálculos derivados e uso de template literals
 - Distinção entre atribuições posteriores compatíveis e incompatíveis
+- Diferença semântica entre `null` e `undefined`
+- Integração de tipos primitivos, cálculos e formação de saídas
 
 ---
 
@@ -127,6 +129,7 @@
 - Demonstrou organização e visão de longo prazo
 - Pesquisou cursos antes de iniciar (proativo)
 - Após a prova do Capítulo 01, relatou satisfação com o próprio aprendizado e reconheceu os deslizes de atenção na entrega
+- Obteve 9,0 na prova do Capítulo 02, com desempenho prático forte; precisa conferir cálculos teóricos e todas as linhas da saída antes da entrega
 
 ---
 

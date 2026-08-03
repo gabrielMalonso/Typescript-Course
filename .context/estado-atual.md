@@ -9,24 +9,21 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 02 - Tipos Primitivos |
-| **Fase atual** | Avaliação liberada |
-| **Último capítulo concluído** | 01 - Variáveis e Constantes |
-| **Próximo passo** | Resolver `02-tipos-primitivos/avaliacao/prova.md` |
+| **Fase atual** | Capítulo concluído |
+| **Último capítulo concluído** | 02 - Tipos Primitivos |
+| **Próximo passo** | Solicitar a criação do Capítulo 03 — Operadores |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-08-03
-- **Atividade:** Correção da lista de exercícios do Capítulo 02
+- **Atividade:** Correção da prova do Capítulo 02
 - **O que foi feito:**
-  - Dez exercícios e bônus conferidos; todos compilam em modo estrito
-  - Cinco exercícios obrigatórios aprovados diretamente
-  - Exercícios 2.1 e 3.1 e bônus corrigidos na primeira revisão
-  - Exercício 2.4 aprovado após esclarecimento conceitual
-  - Exercício 2.3 corrigido integralmente
-  - Diferença cosmética restante no exercício 1.2 não impede o avanço
-  - Lista aprovada e avaliação liberada
+  - Respostas teóricas corrigidas pela rubrica
+  - Três arquivos práticos compilados em modo estrito e executados
+  - Prova avaliada com nota 9,0/10
+  - Capítulo 02 concluído; aluno liberado para o Capítulo 03
 
 ---
 
@@ -54,8 +51,8 @@
 - [x] Aluno fazer os exercícios (`ex11.ts` a `ex33.ts`, conforme nível e número)
 - [x] Corrigir exercícios quando entregues
 - [x] Aluno aplicar eventuais ajustes da correção
-- [ ] Aluno fazer a prova
-- [ ] Corrigir prova e dar nota
+- [x] Aluno fazer a prova
+- [x] Corrigir prova e dar nota
 - [x] Publicar a versão atualizada do `leitor/` no Sites
 
 ---
@@ -63,8 +60,8 @@
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Aluno resolver `02-tipos-primitivos/avaliacao/prova.md`
-2. Corrigir a prova e registrar a nota
+1. Aluno solicitar a criação do Capítulo 03 — Operadores
+2. Gerar, validar e publicar o novo capítulo conforme o fluxo do curso
 
 ---
 
@@ -73,7 +70,7 @@ Quando o aluno retornar:
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Não |
-| Prova pendente | Sim — avaliação liberada |
+| Prova pendente | Não |
 | Projeto em andamento | Não |
 | Dúvida não resolvida | Não |
 
@@ -106,6 +103,7 @@ Quando o aluno retornar:
 | 2026-08-01 | Conferência final do desafio rápido e mini-projeto | ~5min |
 | 2026-08-01 | Nomes dos arquivos da lista alinhados à numeração dos exercícios | ~5min |
 | 2026-08-03 | Correção da lista de exercícios do Capítulo 02 | ~15min |
+| 2026-08-03 | Correção da prova do Capítulo 02 — nota 9,0 | ~15min |
 
 ---
 
