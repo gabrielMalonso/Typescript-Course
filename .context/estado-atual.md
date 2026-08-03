@@ -9,21 +9,24 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 02 - Tipos Primitivos |
-| **Fase atual** | Lista de exercícios liberada |
+| **Fase atual** | Avaliação liberada |
 | **Último capítulo concluído** | 01 - Variáveis e Constantes |
-| **Próximo passo** | Iniciar `02-tipos-primitivos/exercicios/lista.md` |
+| **Próximo passo** | Resolver `02-tipos-primitivos/avaliacao/prova.md` |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-08-01
-- **Atividade:** Conferência final do desafio rápido e do mini-projeto do Capítulo 02
+- **Data:** 2026-08-03
+- **Atividade:** Correção da lista de exercícios do Capítulo 02
 - **O que foi feito:**
-  - Alterações voluntárias do aluno conferidas
-  - Ambos os arquivos compilam em modo estrito e executam corretamente
-  - Confirmados inferência, tipos primitivos, cálculos derivados e template literals
-  - Lista de exercícios permanece liberada
+  - Dez exercícios e bônus conferidos; todos compilam em modo estrito
+  - Cinco exercícios obrigatórios aprovados diretamente
+  - Exercícios 2.1 e 3.1 e bônus corrigidos na primeira revisão
+  - Exercício 2.4 aprovado após esclarecimento conceitual
+  - Exercício 2.3 corrigido integralmente
+  - Diferença cosmética restante no exercício 1.2 não impede o avanço
+  - Lista aprovada e avaliação liberada
 
 ---
 
@@ -48,9 +51,9 @@
 - [x] Aluno estudar o conteúdo da aula
 - [x] Aluno fazer e concluir o mini-projeto
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
-- [ ] Aluno fazer os exercícios (`ex11.ts` a `ex33.ts`, conforme nível e número)
-- [ ] Corrigir exercícios quando entregues
-- [ ] Aluno aplicar eventuais ajustes da correção
+- [x] Aluno fazer os exercícios (`ex11.ts` a `ex33.ts`, conforme nível e número)
+- [x] Corrigir exercícios quando entregues
+- [x] Aluno aplicar eventuais ajustes da correção
 - [ ] Aluno fazer a prova
 - [ ] Corrigir prova e dar nota
 - [x] Publicar a versão atualizada do `leitor/` no Sites
@@ -60,8 +63,8 @@
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Iniciar `02-tipos-primitivos/exercicios/lista.md`
-2. Resolver os exercícios em `exercicios/solucoes/`
+1. Aluno resolver `02-tipos-primitivos/avaliacao/prova.md`
+2. Corrigir a prova e registrar a nota
 
 ---
 
@@ -70,7 +73,7 @@ Quando o aluno retornar:
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Não |
-| Prova pendente | Não |
+| Prova pendente | Sim — avaliação liberada |
 | Projeto em andamento | Não |
 | Dúvida não resolvida | Não |
 
@@ -102,7 +105,8 @@ Quando o aluno retornar:
 | 2026-08-01 | Recalibração dos critérios: domínio conceitual acima de detalhes cosméticos | ~5min |
 | 2026-08-01 | Conferência final do desafio rápido e mini-projeto | ~5min |
 | 2026-08-01 | Nomes dos arquivos da lista alinhados à numeração dos exercícios | ~5min |
+| 2026-08-03 | Correção da lista de exercícios do Capítulo 02 | ~15min |
 
 ---
 
-*Última atualização: 2026-08-01*
+*Última atualização: 2026-08-03*

@@ -6,6 +6,20 @@
 
 ## Observações Gerais
 
+### 2026-08-03 - Correção da Lista de Exercícios do Capítulo 02
+
+Os dez exercícios e o bônus compilam em modo estrito. O aluno demonstrou domínio dos tipos primitivos e dos cálculos, com cinco exercícios obrigatórios aprovados diretamente.
+
+**Ajustes antes da avaliação:** incluir `Série` no exercício 1.2; corrigir `camelCase` e ponto e vírgula no 2.1; usar a inferência exigida no 2.3; corrigir a classificação conceitual do trecho A no 2.4; reconhecer o sufixo minúsculo `n` no 3.1. O bônus diverge apenas no rótulo da força.
+
+**Próximo passo:** conferência curta das correções e, se aprovadas, liberação da avaliação.
+
+**Primeira revisão:** exercícios 2.1 e 3.1 e bônus corrigidos. Restam a saída exata do 1.2, a remoção das duas anotações explícitas restantes no 2.3 e a formulação/classificação literal do 2.4.
+
+**Revisão do exercício 2.4:** o aluno classificou corretamente o trecho A como erro de compilação e compreendeu a incompatibilidade entre `number` e `string`. A expressão “depois da declaração” é apenas uma imprecisão temporal, pois o valor aparece no inicializador da própria declaração. Exercício aprovado; não cobrar reprodução literal das classificações quando o conceito está inequívoco.
+
+**Resultado final:** exercício 2.3 corrigido integralmente. O `:` adicional em `Série: 84` no exercício 1.2 é cosmético e, conforme o critério pedagógico combinado, não impede o avanço. Lista aprovada e avaliação liberada.
+
 ### 2026-08-01 - Nomenclatura dos Arquivos de Exercícios
 
 A pedido do aluno, os arquivos do Capítulo 02 agora refletem diretamente o número exibido na lista: `ex11.ts` corresponde ao exercício 1.1, `ex21.ts` ao 2.1 e assim por diante. O padrão reduz o esforço para relacionar enunciado e solução e deve ser reutilizado nos próximos capítulos com listas divididas em níveis.
@@ -387,4 +401,4 @@ Celular na mesma rede: URL Network do Vite.
 
 ---
 
-*Última atualização: 2026-07-31*
+*Última atualização: 2026-08-03*
