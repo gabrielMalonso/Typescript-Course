@@ -6,6 +6,14 @@
 
 ## Observações Gerais
 
+### 2026-08-05 - Revisão do Desafio Rápido e Mini-Projeto do Capítulo 03
+
+Os dois arquivos compilam em modo estrito. O aluno aplicou corretamente aritmética, comparações inclusivas, condições compostas, negação, `if / else if / else`, ternário e `??`; a lógica dos caminhos alternativos do painel também está correta.
+
+**Ajustes pendentes:** no desafio rápido, incluir `:` em `Margem:` e corrigir o comentário da margem de `1` para `18`. No painel, incluir a linha `Estado`, corrigir o rótulo para `Faixa de pressão` e a unidade para `bar`.
+
+**Próximo passo:** conferir esses cinco detalhes e liberar a lista de exercícios.
+
 ### 2026-08-03 - Correção da Lista de Exercícios do Capítulo 02
 
 Os dez exercícios e o bônus compilam em modo estrito. O aluno demonstrou domínio dos tipos primitivos e dos cálculos, com cinco exercícios obrigatórios aprovados diretamente.

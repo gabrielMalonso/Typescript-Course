@@ -9,27 +9,20 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 03 - Operadores e Estruturas Condicionais |
-| **Fase atual** | Aula disponível para início |
+| **Fase atual** | Revisão do desafio rápido e mini-projeto |
 | **Último capítulo concluído** | 02 - Tipos Primitivos |
-| **Próximo passo** | Ler `03-operadores-e-condicionais/aula/01-teoria.md` |
+| **Próximo passo** | Corrigir cinco detalhes apontados e iniciar a lista de exercícios |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-08-03
-- **Atividade:** Criação do Capítulo 03 integrado
+- **Data:** 2026-08-05
+- **Atividade:** Revisão do desafio rápido e mini-projeto do Capítulo 03
 - **O que foi feito:**
-  - Antigos capítulos de Operadores e Condicionais fundidos
-  - Ementa futura renumerada e total atualizado para 32 capítulos
-  - Aula, mini-projeto, 14 exercícios, bônus, prova, gabarito e extras criados
-  - Exemplos completos, mini-projeto e gabarito validados em modo estrito
-  - Leitor aprovado em tipos, lint e build; home e rotas do capítulo respondem com HTTP 200
-  - Versão 3 publicada no projeto existente, preservando a URL do leitor
-  - Escape do operador `||` corrigido nas três tabelas Markdown afetadas
-  - Correções publicadas na versão 4, preservando a URL do leitor
-  - Índice configurado para iniciar recolhido e abrir somente o caminho da aula ativa
-  - Navegação revisada publicada na versão 5, preservando a URL do leitor
+  - Os dois arquivos compilam em modo estrito e a lógica está correta
+  - Desafio rápido precisa do `:` em `Margem:` e da correção do comentário da margem para `18`
+  - Painel precisa exibir `Estado`, corrigir `Faixa de pressão` e usar `bar` na unidade
 
 ---
 
@@ -51,8 +44,8 @@
 
 ## Pendências
 
-- [ ] Aluno estudar o conteúdo da aula
-- [ ] Aluno fazer e concluir o mini-projeto
+- [x] Aluno estudar o conteúdo da aula
+- [ ] Aluno concluir os ajustes do desafio rápido e mini-projeto
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [ ] Aluno fazer os 14 exercícios e o bônus opcional
 - [ ] Corrigir exercícios quando entregues
@@ -66,8 +59,8 @@
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Iniciar `03-operadores-e-condicionais/aula/01-teoria.md`
-2. Seguir os quatro arquivos da aula na ordem
+1. Conferir os cinco ajustes indicados nos dois arquivos
+2. Se estiverem corretos, iniciar `03-operadores-e-condicionais/exercicios/lista.md`
 
 ---
 
@@ -75,7 +68,7 @@ Quando o aluno retornar:
 
 | Flag | Status |
 |------|--------|
-| Revisão pendente | Não |
+| Revisão pendente | Sim — desafio rápido e mini-projeto |
 | Prova pendente | Não |
 | Projeto em andamento | Não |
 | Dúvida não resolvida | Não |
@@ -113,6 +106,7 @@ Quando o aluno retornar:
 | 2026-08-03 | Fusão da ementa e criação do Capítulo 03 integrado | ~45min |
 | 2026-08-05 | Correção da renderização de `||` nas tabelas do Capítulo 03 | ~10min |
 | 2026-08-05 | Ajuste do estado inicial do índice e da sidebar do leitor | ~15min |
+| 2026-08-05 | Revisão do desafio rápido e mini-projeto do Capítulo 03 | ~10min |
 
 ---
 
