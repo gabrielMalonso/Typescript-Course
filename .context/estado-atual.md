@@ -28,6 +28,8 @@
   - Versão 3 publicada no projeto existente, preservando a URL do leitor
   - Escape do operador `||` corrigido nas três tabelas Markdown afetadas
   - Correções publicadas na versão 4, preservando a URL do leitor
+  - Índice configurado para iniciar recolhido e abrir somente o caminho da aula ativa
+  - Navegação revisada publicada na versão 5, preservando a URL do leitor
 
 ---
 
@@ -110,6 +112,7 @@ Quando o aluno retornar:
 | 2026-08-03 | Correção da prova do Capítulo 02 — nota 9,0 | ~15min |
 | 2026-08-03 | Fusão da ementa e criação do Capítulo 03 integrado | ~45min |
 | 2026-08-05 | Correção da renderização de `||` nas tabelas do Capítulo 03 | ~10min |
+| 2026-08-05 | Ajuste do estado inicial do índice e da sidebar do leitor | ~15min |
 
 ---
 
