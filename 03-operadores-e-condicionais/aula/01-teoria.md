@@ -112,7 +112,7 @@ Operadores lógicos combinam ou invertem condições:
 | Operador | Significado | Resultado verdadeiro quando... |
 |---|---|---|
 | `&&` | E | as duas condições são verdadeiras |
-| `||` | OU | pelo menos uma condição é verdadeira |
+| `\|\|` | OU | pelo menos uma condição é verdadeira |
 | `!` | NÃO | a condição original é falsa |
 
 ```typescript
