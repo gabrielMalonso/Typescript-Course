@@ -46,7 +46,7 @@ export function Home() {
       <div className="home-grid">
         <section id="indice" className="home-index">
           <TreeShell title="Índice do curso">
-            <FileTree nodes={fileTree} defaultExpandedIds={fileTree.map((n) => n.id)} />
+            <FileTree nodes={fileTree} />
           </TreeShell>
         </section>
         <ProgressSummary />
