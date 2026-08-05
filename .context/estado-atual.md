@@ -27,6 +27,7 @@
   - Leitor aprovado em tipos, lint e build; home e rotas do capítulo respondem com HTTP 200
   - Versão 3 publicada no projeto existente, preservando a URL do leitor
   - Escape do operador `||` corrigido nas três tabelas Markdown afetadas
+  - Correções publicadas na versão 4, preservando a URL do leitor
 
 ---
 
