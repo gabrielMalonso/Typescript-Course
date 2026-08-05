@@ -5,7 +5,6 @@ import type { TreeNode } from '../content/types'
 type FileTreeProps = {
   nodes: TreeNode[]
   activeSlug?: string
-  defaultExpandedIds?: string[]
   onNavigate?: () => void
 }
 
@@ -35,20 +34,18 @@ function TreeItem({
   node,
   activeSlug,
   depth,
-  forcedOpen,
   onNavigate,
 }: {
   node: TreeNode
   activeSlug?: string
   depth: number
-  forcedOpen: boolean
   onNavigate?: () => void
 }) {
   const containsActive = node.type === 'folder' && folderContainsSlug(node, activeSlug)
-  const [open, setOpen] = useState(forcedOpen || containsActive || depth < 1)
+  const [open, setOpen] = useState(containsActive)
 
   useEffect(() => {
-    if (containsActive) setOpen(true)
+    setOpen(containsActive)
   }, [containsActive, activeSlug])
 
   if (node.type === 'file') {
@@ -89,7 +86,6 @@ function TreeItem({
               node={child}
               activeSlug={activeSlug}
               depth={depth + 1}
-              forcedOpen={false}
               onNavigate={onNavigate}
             />
           ))}
@@ -102,7 +98,6 @@ function TreeItem({
 export function FileTree({
   nodes,
   activeSlug,
-  defaultExpandedIds = [],
   onNavigate,
 }: FileTreeProps) {
   return (
@@ -113,7 +108,6 @@ export function FileTree({
           node={node}
           activeSlug={activeSlug}
           depth={0}
-          forcedOpen={defaultExpandedIds.includes(node.id)}
           onNavigate={onNavigate}
         />
       ))}
