@@ -214,7 +214,7 @@ if (temperatura > 90) {
 | Produzir um cálculo | operador aritmético |
 | Atualizar uma variável | atribuição composta |
 | Comparar dois valores | `===`, `!==`, `<`, `>`, `<=`, `>=` |
-| Combinar condições | `&&`, `||`, `!` |
+| Combinar condições | `&&`, `\|\|`, `!` |
 | Executar algo quando verdadeiro | `if` |
 | Escolher entre dois caminhos | `if/else` |
 | Classificar faixas | `if/else if/else` |

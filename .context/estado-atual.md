@@ -26,6 +26,7 @@
   - Exemplos completos, mini-projeto e gabarito validados em modo estrito
   - Leitor aprovado em tipos, lint e build; home e rotas do capítulo respondem com HTTP 200
   - Versão 3 publicada no projeto existente, preservando a URL do leitor
+  - Escape do operador `||` corrigido nas três tabelas Markdown afetadas
 
 ---
 
@@ -107,7 +108,8 @@ Quando o aluno retornar:
 | 2026-08-03 | Correção da lista de exercícios do Capítulo 02 | ~15min |
 | 2026-08-03 | Correção da prova do Capítulo 02 — nota 9,0 | ~15min |
 | 2026-08-03 | Fusão da ementa e criação do Capítulo 03 integrado | ~45min |
+| 2026-08-05 | Correção da renderização de `||` nas tabelas do Capítulo 03 | ~10min |
 
 ---
 
-*Última atualização: 2026-08-03*
+*Última atualização: 2026-08-05*

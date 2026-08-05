@@ -21,7 +21,7 @@
 
 ## Tabela lógica rápida
 
-| A | B | `A && B` | `A || B` |
+| A | B | `A && B` | `A \|\| B` |
 |---|---|---|---|
 | `true` | `true` | `true` | `true` |
 | `true` | `false` | `false` | `true` |

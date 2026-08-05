@@ -386,6 +386,7 @@ Celular na mesma rede: URL Network do Vite.
 | Data | Feedback | Ação Tomada |
 |------|----------|-------------|
 | 2026-07-28 | O mini-projeto pareceu pedir apenas a saída final, sem deixar clara a obrigatoriedade da reatribuição | Registrar mudanças de estado e conceitos obrigatórios diretamente nos requisitos dos próximos projetos |
+| 2026-08-05 | O operador `||` não aparecia corretamente em uma tabela do leitor | Escapar pipes dentro de tabelas Markdown; três ocorrências do Capítulo 03 foram corrigidas |
 
 ---
 
@@ -427,4 +428,4 @@ Celular na mesma rede: URL Network do Vite.
 
 ---
 
-*Última atualização: 2026-08-03*
+*Última atualização: 2026-08-05*
