@@ -94,7 +94,7 @@
 | 2026-07-30 | 01 | 10 + bônus | Aprovados após revisão | 100% após ajustes | Saída, requisitos textuais e escopo de função corrigidos |
 | 2026-08-01 | 02 | Desafio rápido + mini-projeto | Aprovados | Domínio conceitual demonstrado | Tipos, cálculos e template literals corretos; diferenças cosméticas não impedem avanço |
 | 2026-08-03 | 02 | 10 + bônus | Aprovados após revisão | 100% após ajustes conceituais | Inferência, classificação de erro e sufixo de `bigint` corrigidos; diferença cosmética no 1.2 não impede avanço |
-| 2026-08-05 | 03 | Desafio rápido + mini-projeto | Lógica aprovada; revisão curta pendente | Domínio conceitual demonstrado | Uma linha obrigatória ausente, três diferenças de texto e um comentário numérico incorreto |
+| 2026-08-06 | 03 | Desafio rápido + mini-projeto | Aprovados | Domínio conceitual demonstrado | Linha funcional de estado incluída; diferenças cosméticas não impedem avanço |
 
 ---
 
@@ -132,4 +132,4 @@
 
 ---
 
-*Última atualização: 2026-08-05*
+*Última atualização: 2026-08-06*

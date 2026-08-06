@@ -39,7 +39,8 @@ const observacaoExibida = observacaoDoOperador ?? "Sem observação";
 
 console.log(`=== PAINEL DA BOMBA ${codigoDaBomba} ===`);
 console.log(`Vazão média: ${vazaoMedia} L/min`);
-console.log(`Faixa depressão: ${faixaDePressao} Bar`);
+console.log(`Faixa de pressão: ${faixaDePressao} bar`);
+console.log(`Estado: ${estadoDaBomba}`);
 console.log(`Ação: ${acaoRecomendada}`);
 console.log(`Sensor: ${estadoDoSensor}`);
 

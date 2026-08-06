@@ -6,6 +6,12 @@
 
 ## Observações Gerais
 
+### 2026-08-06 - Conferência Final do Mini-Projeto do Capítulo 03
+
+Os arquivos TypeScript compilam em modo estrito e executam com a lógica e as linhas funcionais completas. O mini-projeto e o desafio rápido estão aprovados; aluno liberado para a lista.
+
+**Calibração reforçada pelo aluno:** ausência de comportamento ou conteúdo funcional deve gerar pendência; capitalização, pontuação, rótulos equivalentes e outras diferenças cosméticas devem ser apenas observações opcionais, salvo quando a formatação for o objetivo explícito.
+
 ### 2026-08-05 - Revisão do Desafio Rápido e Mini-Projeto do Capítulo 03
 
 Os dois arquivos compilam em modo estrito. O aluno aplicou corretamente aritmética, comparações inclusivas, condições compostas, negação, `if / else if / else`, ternário e `??`; a lógica dos caminhos alternativos do painel também está correta.

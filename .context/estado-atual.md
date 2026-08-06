@@ -9,20 +9,21 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 03 - Operadores e Estruturas Condicionais |
-| **Fase atual** | Revisão do desafio rápido e mini-projeto |
+| **Fase atual** | Lista de exercícios |
 | **Último capítulo concluído** | 02 - Tipos Primitivos |
-| **Próximo passo** | Corrigir cinco detalhes apontados e iniciar a lista de exercícios |
+| **Próximo passo** | Resolver os 14 exercícios de `exercicios/lista.md` |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-08-05
-- **Atividade:** Revisão do desafio rápido e mini-projeto do Capítulo 03
+- **Data:** 2026-08-06
+- **Atividade:** Conferência final do desafio rápido e mini-projeto do Capítulo 03
 - **O que foi feito:**
-  - Os dois arquivos compilam em modo estrito e a lógica está correta
-  - Desafio rápido precisa do `:` em `Margem:` e da correção do comentário da margem para `18`
-  - Painel precisa exibir `Estado`, corrigir `Faixa de pressão` e usar `bar` na unidade
+  - Os dois arquivos compilam em modo estrito e executam corretamente
+  - A linha funcional de estado foi incluída no painel
+  - Diferenças meramente cosméticas foram retiradas do critério de bloqueio
+  - Desafio rápido e mini-projeto aprovados; lista de exercícios liberada
 
 ---
 
@@ -45,7 +46,7 @@
 ## Pendências
 
 - [x] Aluno estudar o conteúdo da aula
-- [ ] Aluno concluir os ajustes do desafio rápido e mini-projeto
+- [x] Aluno concluir os ajustes do desafio rápido e mini-projeto
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [ ] Aluno fazer os 14 exercícios e o bônus opcional
 - [ ] Corrigir exercícios quando entregues
@@ -59,8 +60,8 @@
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Conferir os cinco ajustes indicados nos dois arquivos
-2. Se estiverem corretos, iniciar `03-operadores-e-condicionais/exercicios/lista.md`
+1. Continuar a lista em `03-operadores-e-condicionais/exercicios/lista.md`
+2. Corrigir os exercícios quando forem entregues
 
 ---
 
@@ -68,7 +69,7 @@ Quando o aluno retornar:
 
 | Flag | Status |
 |------|--------|
-| Revisão pendente | Sim — desafio rápido e mini-projeto |
+| Revisão pendente | Não |
 | Prova pendente | Não |
 | Projeto em andamento | Não |
 | Dúvida não resolvida | Não |
@@ -107,7 +108,8 @@ Quando o aluno retornar:
 | 2026-08-05 | Correção da renderização de `||` nas tabelas do Capítulo 03 | ~10min |
 | 2026-08-05 | Ajuste do estado inicial do índice e da sidebar do leitor | ~15min |
 | 2026-08-05 | Revisão do desafio rápido e mini-projeto do Capítulo 03 | ~10min |
+| 2026-08-06 | Conferência final e liberação da lista do Capítulo 03 | ~5min |
 
 ---
 
-*Última atualização: 2026-08-05*
+*Última atualização: 2026-08-06*
