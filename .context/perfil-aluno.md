@@ -122,6 +122,7 @@
 - Exemplos de código: (aguardando feedback)
 - Diagramas/visuais: (aguardando feedback)
 - Correções: priorizar domínio conceitual e comportamento do programa; tratar detalhes cosméticos de saída como observações opcionais, salvo quando formatação for o objetivo explícito do exercício
+- Feedback reforçado em 2026-08-06: não transformar capitalização, pontuação ou rótulos equivalentes em pendências para avançar
 
 ---
 
@@ -136,4 +137,4 @@
 
 ---
 
-*Última atualização: 2026-08-03*
+*Última atualização: 2026-08-06*
