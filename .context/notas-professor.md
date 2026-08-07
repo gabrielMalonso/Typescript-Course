@@ -6,6 +6,30 @@
 
 ## Observações Gerais
 
+### 2026-08-07 - Correção da Lista do Capítulo 03
+
+Dos 14 exercícios obrigatórios, 12 arquivos estavam presentes. Todos os arquivos existentes compilam em modo estrito e executam sem erros; nove foram aprovados. `ex23.ts` e `ex25.ts` estão ausentes.
+
+**Ajustes relevantes:** no 3.3, usar limites exclusivos conforme “acima de”; no 3.4, reconhecer que `??` preserva zero; no 3.5, usar o `if/else` para definir `mensagemDePartida`, como mecanismo funcional pedido.
+
+**Revisão do 3.2:** o aluno observou corretamente que o enunciado não exige explicitamente que `pressaoDentroDaFaixa` seja booleano nem que o texto final seja armazenado em outra constante. Como a solução aplica as comparações inclusivas, `&&` e o ternário corretamente, o exercício foi aprovado; a separação entre condição e texto fica apenas como sugestão de modelagem.
+
+**Conferência dos ajustes:** exercícios 3.3, 3.4 e 3.5 corrigidos e validados em compilação estrita e execução. Naquele momento, os 12 exercícios presentes e o bônus estavam aprovados; restavam somente `ex23.ts` e `ex25.ts`.
+
+**Conclusão da lista:** `ex23.ts` e `ex25.ts` foram entregues, compilam em modo estrito e produzem as saídas esperadas. O aluno demonstrou uso correto de condições compostas, negação, `if/else`, `switch`, `break` e `default`. Os 14 obrigatórios e o bônus estão aprovados; prova liberada.
+
+Diferenças cosméticas de capitalização, grafia, pontuação e unidades não foram convertidas em pendências. O bônus permanece aprovado.
+
+### 2026-08-07 - Discussão do Bônus do Capítulo 03
+
+O aluno pediu avaliação do raciocínio usado no simulador de frete, especialmente na exibição da modalidade. O `if/else` usado está logicamente correto e mantém a saída coerente com `entregaExpressa`; calcular antes uma constante com ternário seria apenas uma melhoria de separação entre decisão e exibição.
+
+**Ponto funcional pendente:** falta implementar a condicional exigida pelo enunciado para impedir que o prazo fique menor que `1`. Com os valores fornecidos a saída continua correta, mas a regra não está protegida para outros dados.
+
+**Raciocínio do aluno:** observou corretamente que, com os prazos permitidos (`3`, `4`, `6` e `8`) e redução máxima de um dia, o resultado mínimo possível é `2`; portanto, a proteção nunca será acionada no domínio atual. A condicional continua necessária apenas por ser um mecanismo explicitamente solicitado e para tornar a regra resistente a futuras mudanças nos dados.
+
+**Ajuste concluído:** o aluno adicionou a proteção depois da redução do prazo, na posição lógica correta. O arquivo passou na compilação estrita; bônus aprovado.
+
 ### 2026-08-06 - Conferência Final do Mini-Projeto do Capítulo 03
 
 Os arquivos TypeScript compilam em modo estrito e executam com a lógica e as linhas funcionais completas. O mini-projeto e o desafio rápido estão aprovados; aluno liberado para a lista.

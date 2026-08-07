@@ -28,7 +28,7 @@
 | 00 | Preparação do Ambiente | ✓ | ✓ | ★ 9,5 | Concluído |
 | 01 | Variáveis e Constantes | ✓ | ✓ | ● 8,5 | Concluído |
 | 02 | Tipos Primitivos | ✓ | ✓ | ★ 9,0 | Concluído |
-| 03 | Operadores e Estruturas Condicionais | Disponível | - | - | Em estudo |
+| 03 | Operadores e Estruturas Condicionais | ✓ | ✓ | Disponível | Em estudo |
 | 04 | Estruturas de Repetição | - | - | - | Pendente |
 | P1 | Projeto: Calculadora | - | - | - | Pendente |
 
@@ -98,7 +98,7 @@
 ## Estatísticas
 
 - **Capítulos concluídos:** 3/32
-- **Exercícios realizados:** 30 + 2 bônus
+- **Exercícios realizados:** 44 + 3 bônus
 - **Provas realizadas:** 3
 - **Média geral:** 9,0
 - **Projetos entregues:** 0/4
@@ -118,4 +118,4 @@
 
 ---
 
-*Última atualização: 03/08/2026*
+*Última atualização: 07/08/2026*
