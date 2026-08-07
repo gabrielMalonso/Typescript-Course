@@ -111,6 +111,9 @@
 - Distinção entre atribuições posteriores compatíveis e incompatíveis
 - Diferença semântica entre `null` e `undefined`
 - Integração de tipos primitivos, cálculos e formação de saídas
+- Operadores aritméticos, precedência, atribuições compostas e condições básicas
+- Combinação de condições com `&&`, `||` e `!`
+- Estruturas condicionais `if/else`, ternário e `switch`
 
 ---
 
@@ -134,7 +137,8 @@
 - Após a prova do Capítulo 01, relatou satisfação com o próprio aprendizado e reconheceu os deslizes de atenção na entrega
 - Obteve 9,0 na prova do Capítulo 02, com desempenho prático forte; precisa conferir cálculos teóricos e todas as linhas da saída antes da entrega
 - Após a prova do Capítulo 02, relatou satisfação e reconheceu espontaneamente os erros de atenção
+- No bônus do Capítulo 03, identificou corretamente que a proteção de prazo mínimo era redundante para os dados atuais, demonstrando análise do domínio além da saída fornecida
 
 ---
 
-*Última atualização: 2026-08-06*
+*Última atualização: 2026-08-07*
