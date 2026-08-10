@@ -8,59 +8,62 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Capítulo atual** | 03 - Operadores e Estruturas Condicionais |
-| **Fase atual** | Prova liberada |
-| **Último capítulo concluído** | 02 - Tipos Primitivos |
-| **Próximo passo** | Resolver `avaliacao/prova.md` |
+| **Capítulo atual** | 04 - Estruturas de Repetição |
+| **Fase atual** | Aula disponível |
+| **Último capítulo concluído** | 03 - Operadores e Estruturas Condicionais |
+| **Próximo passo** | Iniciar `04-estruturas-de-repeticao/README.md` e `aula/01-teoria.md` |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-08-07
-- **Atividade:** Correção da lista de exercícios do Capítulo 03
+- **Data:** 2026-08-10
+- **Atividade:** Criação do Capítulo 04 — Estruturas de Repetição
 - **O que foi feito:**
-  - `ex23.ts` e `ex25.ts` foram conferidos, compilados e executados
-  - Os 14 exercícios obrigatórios e o bônus estão aprovados
-  - Lista concluída; prova do Capítulo 03 liberada
+  - Aula completa, 12 exercícios, bônus, prova, gabarito e extras criados
+  - Exemplos e soluções de referência compilados e executados
+  - Catálogo, typecheck, lint, build, página inicial e rota da teoria validados
+  - Painel do leitor atualizado: Capítulo 03 concluído e Capítulo 04 em andamento
+  - Publicação no projeto existente aguardando confirmação
 
 ---
 
-## Conteúdo do Capítulo 03
+## Conteúdo do Capítulo 04
 
 | Item | Status | Arquivo |
 |------|--------|---------|
-| Aula - Teoria | ✅ Criado | 01-teoria.md |
-| Aula - Sintaxe | ✅ Criado | 02-sintaxe.md |
-| Aula - Exemplos | ✅ Criado | 03-exemplos.md |
-| Aula - Mini-projeto | ✅ Criado | 04-mini-projeto.md |
-| Exercícios | ✅ Criado | lista.md (14 exercícios + bônus) |
+| Aula - Teoria | ✅ Criado | `aula/01-teoria.md` |
+| Aula - Sintaxe | ✅ Criado | `aula/02-sintaxe.md` |
+| Aula - Exemplos | ✅ Criado | `aula/03-exemplos.md` |
+| Aula - Mini-projeto | ✅ Criado | `aula/04-mini-projeto.md` |
+| Exercícios | ✅ Criado | `exercicios/lista.md` (12 exercícios + bônus) |
 | Prova | ✅ Criado | prova.md |
-| Gabarito | ✅ Criado | .context/gabarito-cap03.md |
-| Erros Comuns | ✅ Criado | erros-comuns.md |
-| Recursos | ✅ Criado | recursos.md |
+| Gabarito | ✅ Criado | `.context/gabarito-cap04.md` |
+| Erros Comuns | ✅ Criado | `extras/erros-comuns.md` |
+| Recursos | ✅ Criado | `extras/recursos.md` |
 
 ---
 
 ## Pendências
 
-- [x] Aluno estudar o conteúdo da aula
-- [x] Aluno concluir os ajustes do desafio rápido e mini-projeto
+- [ ] Aluno estudar o conteúdo da aula
+- [ ] Aluno concluir o desafio rápido e o mini-projeto
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
-- [x] Aluno concluir os 14 exercícios e o bônus opcional
-- [x] Corrigir exercícios quando entregues
-- [x] Aluno aplicar eventuais ajustes da correção
+- [ ] Aluno concluir os 12 exercícios e o bônus opcional
+- [ ] Corrigir exercícios quando entregues
+- [ ] Aluno aplicar eventuais ajustes da correção
 - [ ] Aluno fazer a prova
 - [ ] Corrigir prova e dar nota
-- [x] Publicar a versão atualizada do `leitor/` no Sites
+- [ ] Publicar a versão atualizada do `leitor/` no Sites
 
 ---
 
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Aluno resolver `03-operadores-e-condicionais/avaliacao/prova.md`
-2. Corrigir a prova e registrar a nota
+1. Iniciar `04-estruturas-de-repeticao/README.md`
+2. Seguir os quatro arquivos de `aula/` na ordem
+3. Após a prova, realizar o Projeto 1 antes do Capítulo 05
 
 ---
 
@@ -69,7 +72,7 @@ Quando o aluno retornar:
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Não |
-| Prova pendente | Sim |
+| Prova pendente | Não |
 | Projeto em andamento | Não |
 | Dúvida não resolvida | Não |
 
@@ -111,7 +114,11 @@ Quando o aluno retornar:
 | 2026-08-07 | Discussão e ajuste do exercício bônus do Capítulo 03 | ~10min |
 | 2026-08-07 | Correção da lista de exercícios do Capítulo 03 | ~15min |
 | 2026-08-07 | Conferência final da lista e liberação da prova do Capítulo 03 | ~5min |
+| 2026-08-10 | Correção da prova do Capítulo 03 — nota 8,7 | ~15min |
+| 2026-08-10 | Apresentação dos próximos capítulos | ~5min |
+| 2026-08-10 | Ajuste da variedade dos contextos didáticos | ~5min |
+| 2026-08-10 | Criação e validação do Capítulo 04 | ~35min |
 
 ---
 
-*Última atualização: 2026-08-07*
+*Última atualização: 2026-08-10*

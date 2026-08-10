@@ -17,6 +17,11 @@
   {
     "chapterId": "03-operadores-e-condicionais",
     "label": "Cap. 03 — Operadores e Condicionais",
+    "status": "concluido"
+  },
+  {
+    "chapterId": "04-estruturas-de-repeticao",
+    "label": "Cap. 04 — Estruturas de Repetição",
     "status": "em_andamento"
   }
 ]

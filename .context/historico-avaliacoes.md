@@ -8,8 +8,8 @@
 
 | Métrica | Valor |
 |---------|-------|
-| **Total de provas** | 3 |
-| **Média geral** | 9,0 |
+| **Total de provas** | 4 |
+| **Média geral** | 8,9 |
 | **Maior nota** | 9,5 |
 | **Menor nota** | 8,5 |
 | **Provas com nota < 7** | 0 |
@@ -25,10 +25,10 @@
 | 00 | 2026-07-26 | 9,5 | Código copiado na Q6 não compilava | Aprovado; arquivos `.ts` de apoio compilam |
 | 01 | 2026-07-31 | 8,5 | Alternativa sobre `var`; V/F sobre inferência; diferenças literais na saída e em requisito de inferência | Aprovado; os três arquivos `.ts` compilam |
 | 02 | 2026-08-03 | 9,0 | Alternativa sobre notação científica; uma linha omitida e dois rótulos divergentes na Q7 | Aprovado; os três arquivos práticos compilam |
-| 03 | - | - | - | - |
+| 03 | 2026-08-10 | 8,7 | Explicação de precedência omitida; atribuição original não identificada; faixa intermediária invertida | Aprovado; Questão 7 completa |
 | 04 | - | - | - | - |
 
-**Média do Módulo 1:** 9,0
+**Média do Módulo 1:** 8,9
 
 ---
 
@@ -130,7 +130,8 @@
 | Preparação do ambiente e tipos básicos | 9,5 | 9,5 | Base sólida |
 | Variáveis, constantes, inferência e escopos | 8,5 | 8,5 | Bom domínio; reforçar precisão literal |
 | Tipos primitivos | 9,0 | 9,0 | Domínio sólido; reforçar conferência da saída |
+| Operadores e estruturas condicionais | 8,7 | 8,7 | Bom domínio; reforçar testes de limites e caminhos alternativos |
 
 ---
 
-*Última atualização: 2026-08-07*
+*Última atualização: 2026-08-10*

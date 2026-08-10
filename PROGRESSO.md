@@ -9,12 +9,12 @@
 ## Visão Geral
 
 ```
-[█████                                             ] 9%
+[██████                                            ] 13%
 ```
 
 | Módulo | Status | Progresso |
 |--------|--------|-----------|
-| 1 - Fundamentos Absolutos | Em andamento | 3/5 capítulos |
+| 1 - Fundamentos Absolutos | Em andamento | 4/5 capítulos |
 | 2 - Estruturas de Dados e Funções | Bloqueado | 0/8 capítulos |
 | 3 - TypeScript Intermediário | Bloqueado | 0/10 capítulos |
 | 4 - TypeScript Avançado | Bloqueado | 0/9 capítulos |
@@ -28,8 +28,8 @@
 | 00 | Preparação do Ambiente | ✓ | ✓ | ★ 9,5 | Concluído |
 | 01 | Variáveis e Constantes | ✓ | ✓ | ● 8,5 | Concluído |
 | 02 | Tipos Primitivos | ✓ | ✓ | ★ 9,0 | Concluído |
-| 03 | Operadores e Estruturas Condicionais | ✓ | ✓ | Disponível | Em estudo |
-| 04 | Estruturas de Repetição | - | - | - | Pendente |
+| 03 | Operadores e Estruturas Condicionais | ✓ | ✓ | ● 8,7 | Concluído |
+| 04 | Estruturas de Repetição | Disponível | - | - | Em estudo |
 | P1 | Projeto: Calculadora | - | - | - | Pendente |
 
 ---
@@ -92,15 +92,16 @@
 | 26/07/2026 | 00 - Preparação do Ambiente | Prova | 9,5 | Aprovado |
 | 31/07/2026 | 01 - Variáveis e Constantes | Prova | 8,5 | Aprovado |
 | 03/08/2026 | 02 - Tipos Primitivos | Prova | 9,0 | Aprovado |
+| 10/08/2026 | 03 - Operadores e Estruturas Condicionais | Prova | 8,7 | Aprovado |
 
 ---
 
 ## Estatísticas
 
-- **Capítulos concluídos:** 3/32
+- **Capítulos concluídos:** 4/32
 - **Exercícios realizados:** 44 + 3 bônus
-- **Provas realizadas:** 3
-- **Média geral:** 9,0
+- **Provas realizadas:** 4
+- **Média geral:** 8,9
 - **Projetos entregues:** 0/4
 
 ---
@@ -118,4 +119,4 @@
 
 ---
 
-*Última atualização: 07/08/2026*
+*Última atualização: 10/08/2026*

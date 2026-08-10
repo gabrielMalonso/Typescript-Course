@@ -32,7 +32,7 @@
 | **Abordagem** | Híbrida (teoria + prática imediata) |
 | **Ritmo** | Diário, gradual |
 | **Profundidade** | Quer entender o "porquê", não só o "como" |
-| **Analogias** | Bem-vindas (formação em engenharia ajuda) |
+| **Analogias** | Bem-vindas, com contextos variados e adequados ao conceito |
 
 **Ajuste de ritmo em 2026-08-03:** aluno está confortável com a base e prefere acelerar quando temas próximos puderem ser integrados, compensando com 30–50% mais exercícios e variedade.
 
@@ -65,6 +65,8 @@
 | Leitura literal de requisitos | Anotação explícita usada onde a inferência era obrigatória | 1 prova (cap. 01) |
 | Leitura literal de requisitos | Anotação explícita usada novamente onde a inferência era obrigatória | 1 exercício (cap. 02) |
 | Classificação de diagnóstico | Chamou incompatibilidade de tipo na declaração de erro de cálculo | 1 exercício (cap. 02) |
+| Teste de limites condicionais | Inverteu `>= 6` para `<= 6`, tornando o ramo intermediário inalcançável para o valor testado | 1 prova (cap. 03) |
+| Organização da entrega | Respostas escritas no enunciado e arquivo prático solicitado ausente | 2 provas (caps. 02 e 03) |
 
 ---
 
@@ -89,6 +91,8 @@
 - Conferência entre o código testado e a versão copiada para a entrega
 - Leitura integral de requisitos que não afetam a saída
 - Distinguir “verificar uma atribuição” de “aceitar uma atribuição” na linguagem dos enunciados
+- Testar pelo menos um valor de cada faixa e conferir a saída realmente executada
+- Preservar o arquivo de enunciado e entregar todos os arquivos solicitados
 
 ---
 
@@ -114,6 +118,8 @@
 - Operadores aritméticos, precedência, atribuições compostas e condições básicas
 - Combinação de condições com `&&`, `||` e `!`
 - Estruturas condicionais `if/else`, ternário e `switch`
+- Integração de várias condições de segurança em uma decisão única
+- Reconhecimento de atribuições encadeadas e de sua avaliação da direita para a esquerda
 
 ---
 
@@ -121,8 +127,8 @@
 
 *Como o aluno prefere que as coisas sejam explicadas*
 
-- Analogias com mundo real: (aguardando feedback)
-- Exemplos de código: (aguardando feedback)
+- Analogias com mundo real: prefere variedade, sem privilegiar ou excluir previamente um contexto
+- Exemplos de código: variar entre cotidiano, software, jogos, negócios, criatividade e outros temas conforme o conceito
 - Diagramas/visuais: (aguardando feedback)
 - Correções: priorizar domínio conceitual e comportamento do programa; tratar detalhes cosméticos de saída como observações opcionais, salvo quando formatação for o objetivo explícito do exercício
 - Feedback reforçado em 2026-08-06: não transformar capitalização, pontuação ou rótulos equivalentes em pendências para avançar
@@ -138,7 +144,8 @@
 - Obteve 9,0 na prova do Capítulo 02, com desempenho prático forte; precisa conferir cálculos teóricos e todas as linhas da saída antes da entrega
 - Após a prova do Capítulo 02, relatou satisfação e reconheceu espontaneamente os erros de atenção
 - No bônus do Capítulo 03, identificou corretamente que a proteção de prazo mínimo era redundante para os dados atuais, demonstrando análise do domínio além da saída fornecida
+- Após a prova do Capítulo 03, compreendeu que `a = b = valor` é uma atribuição encadeada, embora não conhecesse previamente essa possibilidade
 
 ---
 
-*Última atualização: 2026-08-07*
+*Última atualização: 2026-08-10*
