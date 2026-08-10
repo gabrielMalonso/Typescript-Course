@@ -98,7 +98,7 @@ Estrutura obrigatória:
 
 ## Introdução
 [Contextualização do tema - por que isso é importante?]
-[Use analogias do mundo real, preferencialmente de engenharia/física]
+[Escolha analogias que facilitem o conceito e varie os contextos entre cotidiano, software, jogos, negócios, criatividade e outros temas]
 
 ## [Conceito 1]
 ### O que é?
@@ -241,7 +241,7 @@ Estrutura obrigatória:
 
 1. **Tom**: Conversacional mas profissional. Como um tutor particular.
 2. **Linguagem**: Português brasileiro, termos técnicos em inglês quando necessário.
-3. **Analogias**: Use comparações com o mundo real (física, engenharia, dia a dia).
+3. **Analogias**: Escolha o contexto que melhor esclareça cada conceito e varie os temas ao longo do material.
 4. **Código**: Sempre comentado. Explique o "porquê", não só o "o quê".
 5. **Progressão**: Do simples ao complexo dentro de cada arquivo.
 6. **Extensão**: Seja completo mas não prolixo. Qualidade > quantidade.

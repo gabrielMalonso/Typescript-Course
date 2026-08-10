@@ -6,6 +6,44 @@
 
 ## Observações Gerais
 
+### 2026-08-10 - Criação do Capítulo 04
+
+**Material criado:** aula completa sobre `while`, `do...while`, `for`, `break`, `continue`, loops aninhados, loops infinitos e escolha da estrutura; 12 exercícios e bônus; prova 40% teórica e 60% prática; gabarito interno; erros comuns e recursos.
+
+**Adaptações:** contextos variados sem tema privilegiado; testes alternativos incorporados à aula, ao mini-projeto e aos exercícios para reforçar limites e caminhos diferentes; entrega da prova descreve explicitamente todos os arquivos exigidos.
+
+**Mini-projeto:** Planejador de Sessões de Estudo, com loops aninhados, pausa por `continue`, meta por `break` e comunicação do término entre os dois loops.
+
+**Projeto 1:** ementa atualizada para incluir repetição de operações até o comando de saída, consolidando o Capítulo 04 antes de Arrays.
+
+**Validação:** soluções de referência e mini-projeto compilados em modo estrito e executados com as saídas previstas. Leitor aprovado em typecheck, lint e build; página inicial e rota da teoria responderam com HTTP 200. Publicação no projeto existente aguarda confirmação.
+
+**Próximo passo:** aluno iniciar o README e a teoria do Capítulo 04.
+
+### 2026-08-10 - Próximos Capítulos
+
+Após concluir o Capítulo 03, o aluno pediu a sequência imediata do curso. Próximos capítulos confirmados: 04 — Estruturas de Repetição e 05 — Arrays: Fundamentos, com o Projeto 1 — Calculadora de Terminal entre eles.
+
+**Decisão pedagógica proposta pelo aluno:** manter Estruturas de Repetição como capítulo separado e concluir o Projeto 1 antes de iniciar Arrays. A sequência é coerente; ao preparar o projeto, considerar incluir repetição de operações e comando de saída para que ele consolide também o conteúdo do Capítulo 04, pois os requisitos atuais mencionam apenas conceitos anteriores.
+
+### 2026-08-10 - Variedade nos Contextos Didáticos
+
+O aluno relatou cansaço com a repetição do mesmo contexto temático. As diretrizes foram ajustadas para buscar variedade e permitir que o criador escolha, em cada caso, o exemplo que melhor esclareça o conceito, sem privilegiar nem excluir previamente qualquer área.
+
+### 2026-08-10 - Prova do Capítulo 03
+
+**Resultado:** 8,7/10 — aprovado. O aluno demonstrou domínio de operadores aritméticos, comparações, lógica, truthy/falsy, `??`, `if/else`, ternário e `switch`. A Questão 7 integrou corretamente todas as regras e compilou em modo estrito.
+
+**Descontos:** faltou explicar a precedência na Questão 1; na Questão 5, corrigiu `=` para `<=`, mas não identificou explicitamente que o operador original realizava atribuição; na Questão 6, usou `<= 6` em vez de `>= 6`, classificando `6.8` como `NORMAL`.
+
+**Entrega:** respostas registradas novamente em `prova.md`, apesar da orientação anterior, e ausência de `questao05.ts`. Não houve desconto adicional por organização, mas reforçar preservação do enunciado e conferência de todos os arquivos pedidos.
+
+**Próximo passo:** Capítulo 03 concluído; aluno liberado para solicitar o Capítulo 04 — Estruturas de Repetição.
+
+**Esclarecimento da Questão 5:** o aluno explicou que reconheceu como provável intenção do autor o operador `<=`, pois uma segunda atribuição não faria sentido para a regra. Esse raciocínio de correção está certo; o desconto permanece porque a pergunta também pedia diagnosticar o comportamento do código existente, no qual o segundo `=` é efetivamente uma tentativa de atribuição encadeada e ainda tenta reatribuir uma constante.
+
+O aluno confirmou que ainda não conhecia a possibilidade de duas atribuições na mesma expressão. Conceito esclarecido: a avaliação ocorre da direita para a esquerda; não tratar como padrão recorrente de erro.
+
 ### 2026-08-07 - Correção da Lista do Capítulo 03
 
 Dos 14 exercícios obrigatórios, 12 arquivos estavam presentes. Todos os arquivos existentes compilam em modo estrito e executam sem erros; nove foram aprovados. `ex23.ts` e `ex25.ts` estão ausentes.
@@ -388,8 +426,8 @@ Celular na mesma rede: URL Network do Vite.
 
 *Anotações de ajustes que podem ser feitos conforme o progresso*
 
-- [ ] Se engenharia mecânica aparecer, usar analogias de física/mecânica
-- [ ] Observar se prefere exemplos mais matemáticos ou mais do dia a dia
+- [x] Variar exemplos sem privilegiar nem excluir previamente um contexto
+- [ ] Observar quais contextos variados geram maior engajamento
 - [ ] Ajustar quantidade de exercícios baseado no desempenho inicial
 
 ---

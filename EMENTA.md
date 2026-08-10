@@ -85,12 +85,13 @@
 ### Projeto 1: Calculadora de Terminal
 > **Objetivo:** Criar uma calculadora que recebe dois números e uma operação, retornando o resultado.
 >
-> **Conceitos aplicados:** variáveis, tipos primitivos, operadores, condicionais
+> **Conceitos aplicados:** variáveis, tipos primitivos, operadores, condicionais e estruturas de repetição
 >
 > **Requisitos:**
 > - Suportar operações: soma, subtração, multiplicação, divisão, potência
 > - Validar divisão por zero
 > - Exibir mensagem de erro para operação inválida
+> - Repetir operações até que o usuário escolha encerrar
 
 ---
 

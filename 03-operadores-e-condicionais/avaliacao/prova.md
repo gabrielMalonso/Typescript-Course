@@ -30,17 +30,23 @@ const resto = resultadoB % 6;
 ```
 
 Informe os valores das três constantes e explique por que `resultadoA` e `resultadoB` são diferentes.
+Respostas:
+ResultadoA = 18
+ResultadoB = 50
+Resto = 2
 
 ### Questão 2: Comparação e atribuição (1 ponto)
 
 Classifique cada operador como **atribuição**, **comparação estrita de igualdade**, **comparação estrita de diferença** ou **comparação relacional**:
 
-1. `=`
-2. `===`
-3. `!==`
-4. `>=`
+1. `=` - atribuição
+2. `===` - comparação estrita de igualdade
+3. `!==` - comparação estrita de diferença
+4. `>=` - comparação relacional
 
 Depois explique por que preferimos `===` a `==`.
+
+RESPOSTA: O operador `===` faz a comparação restrita de igualdade. Já o operador `==`, Pode converter tipos antes da comparação, ou seja, ele não alerta sobre comparações entre tipos incompatíveis, como string e number, por exemplo. No TypeScript, o operador `===` faz essa distinção muito bem, por isso é preferível sempre usar essa comparação restrita de igualdade.
 
 ### Questão 3: Lógica e prioridade (1 ponto)
 
@@ -55,15 +61,16 @@ const resultado = sensorAtivo && (temperaturaSegura || modoManual);
 ```
 
 Qual é o valor de `resultado`? Explique a avaliação de dentro para fora.
+RESPOSTA: resultado = true. Observamos primeiramente os itens dentro dos parênteses com as constantes temperaturaSegura || (ou) modoManual. No caso, o modoManual = true, portanto todo esse termo retorna true. Ao analisar sensorAtivo && esse termo dentro dos parênteses que analisamos antes, ambos são true, então o resultado retorna true.
 
 ### Questão 4: Verdadeiro ou falso (1 ponto)
 
 Marque **V** ou **F** e justifique as falsas.
 
-1. ( ) O valor `0` é falsy em uma condição.
-2. ( ) A string `"false"` é falsy porque seu texto diz “false”.
-3. ( ) `??` usa o valor alternativo quando a esquerda é `null` ou `undefined`.
-4. ( ) Em uma cadeia `if / else if / else`, todos os blocos verdadeiros são executados.
+1. (V) O valor `0` é falsy em uma condição.
+2. (F) A string `"false"` é falsy porque seu texto diz “false”. - JUSTIFICATIVA: A string "false" é considerada truthy. Já o valor `false` é considerado como falsy.
+3. (V) `??` usa o valor alternativo quando a esquerda é `null` ou `undefined`.
+4. (F) Em uma cadeia `if / else if / else`, todos os blocos verdadeiros são executados. - JUSTIFICATIVA: Apenas o primeiro bloco verdadeiro será executado, os demais serão pulados.
 
 ---
 
@@ -87,9 +94,25 @@ if (dentroDoLimite) {
 
 Responda:
 
-a) Qual é o problema da terceira linha?  
-b) Por que igualdade estrita também não representaria toda a regra?  
+a) Qual é o problema da terceira linha? RESPOSTA: O problema é que, provavelmente, o dev esqueceu de o operador `<`. O correto seria: 
+```typescript
+const dentroDoLimite = cargaAtual <= cargaLimite;
+```
+
+b) Por que igualdade estrita também não representaria toda a regra? RESPOSTA: A igualdade estrita não representaria a regra porque o desenvolvedor desse código deseja adicionar a carga limite como o limite, ou seja, a carga atual deverá ser menor ou igual à carga limite. Por essa razão, a igualdade estrita não faria sentido.
 c) Entregue o código completo corrigido usando o operador relacional adequado.
+
+```typescript
+const cargaAtual = 80;
+const cargaLimite = 100;
+const dentroDoLimite = cargaAtual <= cargaLimite;
+
+if (dentroDoLimite) {
+  console.log("Carga aprovada.");
+} else {
+  console.log("Carga rejeitada.");
+}
+```
 
 **Saída esperada:**
 
