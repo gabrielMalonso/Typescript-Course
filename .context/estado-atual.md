@@ -24,7 +24,7 @@
   - Cópia usa diretamente o Markdown original da página atual e informa sucesso ou falha
   - Layout responsivo mantém apenas o ícone do botão em telas pequenas
   - Typecheck, lint e build do leitor validados
-  - Publicação da versão 8 no projeto existente preparada, preservando a URL e o acesso privado
+  - Versão 8 publicada no projeto existente, preservando a URL e o acesso privado
 
 ---
 

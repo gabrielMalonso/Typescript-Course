@@ -14,7 +14,7 @@
 
 **Validação:** leitor aprovado em typecheck, lint e build. Permanecem apenas os dois avisos antigos de Fast Refresh, sem impacto no build.
 
-**Publicação:** versão 8 preparada para publicação no projeto existente, preservando a URL e o acesso privado.
+**Publicação:** versão 8 publicada no projeto existente, preservando `https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site` e o acesso privado.
 
 ### 2026-08-12 - Prévia do Capítulo 05
 
