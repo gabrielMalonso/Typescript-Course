@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { getDocument, getNeighbors } from '../content/catalog'
+import { CopyMarkdownButton } from '../components/CopyMarkdownButton'
 import { MarkdownView } from '../components/MarkdownView'
 import { Sidebar } from '../components/Sidebar'
 import { ThemeToggle } from '../components/ThemeToggle'
@@ -64,6 +65,7 @@ export function Reader() {
           <span>{doc.fileName}</span>
         </div>
         <div className="toolbar-spacer" />
+        <CopyMarkdownButton content={doc.content} />
         <ThemeToggle />
       </header>
 

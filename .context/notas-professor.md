@@ -6,6 +6,16 @@
 
 ## Observações Gerais
 
+### 2026-08-12 - Cópia Global do Markdown no Leitor
+
+**Funcionalidade:** todas as páginas de conteúdo do leitor agora exibem na barra superior um botão que copia integralmente o Markdown original usado na renderização, sem tentar reconstruir o texto a partir do HTML.
+
+**Experiência:** o botão confirma o sucesso por dois segundos, informa falha de acesso à área de transferência, possui rótulos acessíveis e vira um controle compacto por ícone em telas pequenas.
+
+**Validação:** leitor aprovado em typecheck, lint e build. Permanecem apenas os dois avisos antigos de Fast Refresh, sem impacto no build.
+
+**Publicação:** versão 8 preparada para publicação no projeto existente, preservando a URL e o acesso privado.
+
 ### 2026-08-12 - Prévia do Capítulo 05
 
 **Motivação:** o aluno pediu uma introdução a estruturas de dados antes de concluir a prática do Capítulo 04. O Capítulo 05 foi disponibilizado antecipadamente sem alterar a progressão formal do curso.

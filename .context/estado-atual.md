@@ -18,13 +18,13 @@
 ## Sessão Atual
 
 - **Data:** 2026-08-12
-- **Atividade:** Criação antecipada do Capítulo 05 — Arrays: Fundamentos
+- **Atividade:** Botão global para copiar o Markdown no leitor
 - **O que foi feito:**
-  - Aula introdutória independente de loops, desafio rápido e mini-projeto criados
-  - 11 exercícios, bônus condicionado ao Capítulo 04, prova bloqueada, gabarito e extras criados
-  - Capítulo 04 mantido como etapa ativa; Capítulo 05 registrado apenas como prévia disponível
-  - Catálogo, 97 blocos TypeScript, typecheck, lint, build e rotas do leitor validados
-  - Versão 7 publicada no projeto existente, preservando a URL e o acesso privado
+  - Botão `Copiar Markdown` adicionado à barra fixa de todas as páginas de conteúdo
+  - Cópia usa diretamente o Markdown original da página atual e informa sucesso ou falha
+  - Layout responsivo mantém apenas o ícone do botão em telas pequenas
+  - Typecheck, lint e build do leitor validados
+  - Publicação da versão 8 no projeto existente preparada, preservando a URL e o acesso privado
 
 ---
 
@@ -121,6 +121,7 @@ Quando o aluno retornar:
 | 2026-08-10 | Ajuste da variedade dos contextos didáticos | ~5min |
 | 2026-08-10 | Criação e validação do Capítulo 04 | ~35min |
 | 2026-08-12 | Criação antecipada do Capítulo 05 como introdução a arrays | ~40min |
+| 2026-08-12 | Botão global para copiar o Markdown no leitor | ~10min |
 
 ---
 
