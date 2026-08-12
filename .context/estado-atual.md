@@ -11,20 +11,18 @@
 | **Capítulo atual** | 04 - Estruturas de Repetição |
 | **Fase atual** | Aula disponível |
 | **Último capítulo concluído** | 03 - Operadores e Estruturas Condicionais |
-| **Próximo passo** | Iniciar `04-estruturas-de-repeticao/README.md` e `aula/01-teoria.md` |
+| **Próximo passo** | Concluir a prática do Capítulo 04; Capítulo 05 disponível como introdução opcional |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-08-10
-- **Atividade:** Criação do Capítulo 04 — Estruturas de Repetição
+- **Data:** 2026-08-12
+- **Atividade:** Criação antecipada do Capítulo 05 — Arrays: Fundamentos
 - **O que foi feito:**
-  - Aula completa, 12 exercícios, bônus, prova, gabarito e extras criados
-  - Exemplos e soluções de referência compilados e executados
-  - Catálogo, typecheck, lint, build, página inicial e rota da teoria validados
-  - Painel do leitor atualizado: Capítulo 03 concluído e Capítulo 04 em andamento
-  - Publicação no projeto existente aguardando confirmação
+  - Aula introdutória independente de loops, desafio rápido e mini-projeto criados
+  - 11 exercícios, bônus condicionado ao Capítulo 04, prova bloqueada, gabarito e extras criados
+  - Capítulo 04 mantido como etapa ativa; Capítulo 05 registrado apenas como prévia disponível
 
 ---
 
@@ -54,16 +52,18 @@
 - [ ] Aluno aplicar eventuais ajustes da correção
 - [ ] Aluno fazer a prova
 - [ ] Corrigir prova e dar nota
-- [ ] Publicar a versão atualizada do `leitor/` no Sites
+- [x] Publicar a versão atualizada do `leitor/` no Sites
+- [ ] Validar e publicar o Capítulo 05 no leitor
 
 ---
 
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Iniciar `04-estruturas-de-repeticao/README.md`
-2. Seguir os quatro arquivos de `aula/` na ordem
-3. Após a prova, realizar o Projeto 1 antes do Capítulo 05
+1. Retomar e concluir a parte prática do Capítulo 04
+2. Para a introdução de hoje, seguir `05-arrays-fundamentos/README.md` e os quatro arquivos de aula
+3. Não fazer ainda o bônus nem a prova do Capítulo 05
+4. Após a prova do Capítulo 04, realizar o Projeto 1 antes de liberar formalmente o Capítulo 05
 
 ---
 
@@ -73,7 +73,7 @@ Quando o aluno retornar:
 |------|--------|
 | Revisão pendente | Não |
 | Prova pendente | Não |
-| Projeto em andamento | Não |
+| Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não |
 
 ---
@@ -118,7 +118,8 @@ Quando o aluno retornar:
 | 2026-08-10 | Apresentação dos próximos capítulos | ~5min |
 | 2026-08-10 | Ajuste da variedade dos contextos didáticos | ~5min |
 | 2026-08-10 | Criação e validação do Capítulo 04 | ~35min |
+| 2026-08-12 | Criação antecipada do Capítulo 05 como introdução a arrays | ~40min |
 
 ---
 
-*Última atualização: 2026-08-10*
+*Última atualização: 2026-08-12*

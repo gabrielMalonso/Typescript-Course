@@ -6,6 +6,16 @@
 
 ## Observações Gerais
 
+### 2026-08-12 - Prévia do Capítulo 05
+
+**Motivação:** o aluno pediu uma introdução a estruturas de dados antes de concluir a prática do Capítulo 04. O Capítulo 05 foi disponibilizado antecipadamente sem alterar a progressão formal do curso.
+
+**Adaptação pedagógica:** a aula principal, o desafio rápido, o mini-projeto e os 11 exercícios obrigatórios não dependem de loops. O único exercício com `for` é bônus e está explicitamente condicionado à conclusão da prática do Capítulo 04. A prova foi preparada, mas permanece bloqueada até Capítulo 04, Projeto 1 e liberação do professor.
+
+**Conteúdo:** arrays tipados, índices zero-based, `length`, leitura e alteração, `push`, `pop`, `shift`, `unshift`, retornos em arrays vazios, referência compartilhada e menção inicial a arrays multidimensionais. Métodos do Capítulo 06 não foram antecipados.
+
+**Próximo passo:** usar o roteiro curto dos extras para a introdução de hoje e depois retomar a prática do Capítulo 04.
+
 ### 2026-08-10 - Criação do Capítulo 04
 
 **Material criado:** aula completa sobre `while`, `do...while`, `for`, `break`, `continue`, loops aninhados, loops infinitos e escolha da estrutura; 12 exercícios e bônus; prova 40% teórica e 60% prática; gabarito interno; erros comuns e recursos.
@@ -16,7 +26,9 @@
 
 **Projeto 1:** ementa atualizada para incluir repetição de operações até o comando de saída, consolidando o Capítulo 04 antes de Arrays.
 
-**Validação:** soluções de referência e mini-projeto compilados em modo estrito e executados com as saídas previstas. Leitor aprovado em typecheck, lint e build; página inicial e rota da teoria responderam com HTTP 200. Publicação no projeto existente aguarda confirmação.
+**Validação:** soluções de referência e mini-projeto compilados em modo estrito e executados com as saídas previstas. Leitor aprovado em typecheck, lint e build; página inicial e rota da teoria responderam com HTTP 200.
+
+**Publicação:** versão 6 publicada com sucesso no projeto existente, preservando `https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site` e o acesso privado atual.
 
 **Próximo passo:** aluno iniciar o README e a teoria do Capítulo 04.
 
