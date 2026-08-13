@@ -8,8 +8,8 @@
 
 | Métrica | Valor |
 |---------|-------|
-| **Total de provas** | 4 |
-| **Média geral** | 8,9 |
+| **Total de provas** | 5 |
+| **Média geral** | 9,0 |
 | **Maior nota** | 9,5 |
 | **Menor nota** | 8,5 |
 | **Provas com nota < 7** | 0 |
@@ -26,9 +26,9 @@
 | 01 | 2026-07-31 | 8,5 | Alternativa sobre `var`; V/F sobre inferência; diferenças literais na saída e em requisito de inferência | Aprovado; os três arquivos `.ts` compilam |
 | 02 | 2026-08-03 | 9,0 | Alternativa sobre notação científica; uma linha omitida e dois rótulos divergentes na Q7 | Aprovado; os três arquivos práticos compilam |
 | 03 | 2026-08-10 | 8,7 | Explicação de precedência omitida; atribuição original não identificada; faixa intermediária invertida | Aprovado; Questão 7 completa |
-| 04 | - | - | - | - |
+| 04 | 2026-08-13 | 9,4 | Explicações de `continue` e `break` omitidas na Q1 | Aprovado; parte prática completa e validada em modo estrito |
 
-**Média do Módulo 1:** 8,9
+**Média do Módulo 1:** 9,0
 
 ---
 
@@ -133,7 +133,7 @@
 | Variáveis, constantes, inferência e escopos | 8,5 | 8,5 | Bom domínio; reforçar precisão literal |
 | Tipos primitivos | 9,0 | 9,0 | Domínio sólido; reforçar conferência da saída |
 | Operadores e estruturas condicionais | 8,7 | 8,7 | Bom domínio; reforçar testes de limites e caminhos alternativos |
-| Estruturas de repetição | Lista concluída | 12/12 + bônus aprovados | Domínio sólido de loops, contadores, `break` e `continue` |
+| Estruturas de repetição | 9,4 | 9,4 | Domínio sólido; parte prática integralmente correta |
 
 ---
 
