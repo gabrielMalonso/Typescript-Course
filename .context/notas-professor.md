@@ -6,6 +6,14 @@
 
 ## Observações Gerais
 
+### 2026-08-13 - Botão de Cópia Somente com Ícone
+
+**Ajuste visual:** o texto visível do botão global de copiar Markdown foi removido em todas as larguras. O controle agora é quadrado e exibe somente o ícone, preservando tooltip, rótulo para leitores de tela e confirmação por check após a cópia.
+
+**Validação:** leitor aprovado em typecheck, lint e build; permanecem apenas os dois avisos antigos de Fast Refresh, sem impacto no build.
+
+**Publicação:** versão 9 preparada para publicação no projeto existente, mantendo a URL e o acesso privado.
+
 ### 2026-08-12 - Cópia Global do Markdown no Leitor
 
 **Funcionalidade:** todas as páginas de conteúdo do leitor agora exibem na barra superior um botão que copia integralmente o Markdown original usado na renderização, sem tentar reconstruir o texto a partir do HTML.
