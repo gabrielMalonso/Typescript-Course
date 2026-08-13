@@ -120,6 +120,8 @@
 - Estruturas condicionais `if/else`, ternário e `switch`
 - Integração de várias condições de segurança em uma decisão única
 - Reconhecimento de atribuições encadeadas e de sua avaliação da direita para a esquerda
+- Loops aninhados, `continue`, contador e encerramento coordenado com `break`
+- Distinção entre mensagem condicional de sucesso e resumo final do processamento
 
 ---
 

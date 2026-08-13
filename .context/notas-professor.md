@@ -476,6 +476,12 @@ Celular na mesma rede: URL Network do Vite.
 | Diferença console.log com `,` vs `+` | Usa `,` sem saber a diferença de formatação | Explicar no cap. 01 |
 | Erro de compilação vs estilo | Confundiu `;` ausente com erro no ex06 | Questão na prova do cap. 00 |
 | Comandos de arquivos no terminal | Pediu revisão de `mv`, `rm` e `rmdir` | Reforçar segurança antes de exclusões recursivas |
+| Verificar estado após a mudança | No mini-projeto do cap. 04, testou a meta antes de incrementar e imprimiu valores finais fixos | Reforçar contador, estado derivado e testes com configuração alternativa |
+| Ordem entre mutação e verificação | Ainda havia dúvida se a meta deveria ser testada antes do incremento | Usar rastreamento manual: contar a sessão e então testar o novo total |
+| Separar encerramento e resumo | Mensagens finais ficaram dentro do caso em que a meta foi atingida | Comparar execução normal com meta inalcançável e manter o resumo após os loops |
+| Resultado negativo também é resultado | Aluno entendeu corretamente a persistência de `false`, mas associou todo o resumo apenas ao sucesso | Diferenciar mensagem de sucesso de relatório final (`total` e booleano) |
+| Direção da comparação `>=` | Interpretou que usar `>=` faria qualquer meta eventualmente resultar em `true`, mesmo após esgotar os loops | Reforçar operando esquerdo/direito e término por `break` versus término natural |
+| Premissas do domínio | Espera coerentemente que semanas/sessões acompanhem o aumento da meta em um sistema real | Explicitar quando testes quebram uma premissa de propósito para validar comportamento defensivo |
 
 ---
 
@@ -539,4 +545,4 @@ Celular na mesma rede: URL Network do Vite.
 
 ---
 
-*Última atualização: 2026-08-05*
+*Última atualização: 2026-08-13*
