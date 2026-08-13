@@ -17,14 +17,13 @@
 
 ## Sessão Atual
 
-- **Data:** 2026-08-12
-- **Atividade:** Botão global para copiar o Markdown no leitor
+- **Data:** 2026-08-13
+- **Atividade:** Simplificação visual do botão de copiar Markdown
 - **O que foi feito:**
-  - Botão `Copiar Markdown` adicionado à barra fixa de todas as páginas de conteúdo
-  - Cópia usa diretamente o Markdown original da página atual e informa sucesso ou falha
-  - Layout responsivo mantém apenas o ícone do botão em telas pequenas
+  - Texto visível removido; o botão exibe apenas o ícone de copiar em todas as telas
+  - Rótulo acessível, tooltip e confirmação visual continuam preservados
   - Typecheck, lint e build do leitor validados
-  - Versão 8 publicada no projeto existente, preservando a URL e o acesso privado
+  - Publicação da versão 9 no projeto existente preparada, preservando a URL e o acesso privado
 
 ---
 
@@ -122,7 +121,8 @@ Quando o aluno retornar:
 | 2026-08-10 | Criação e validação do Capítulo 04 | ~35min |
 | 2026-08-12 | Criação antecipada do Capítulo 05 como introdução a arrays | ~40min |
 | 2026-08-12 | Botão global para copiar o Markdown no leitor | ~10min |
+| 2026-08-13 | Simplificação do botão de copiar para somente ícone | ~5min |
 
 ---
 
-*Última atualização: 2026-08-12*
+*Última atualização: 2026-08-13*
