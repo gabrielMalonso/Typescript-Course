@@ -9,26 +9,30 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 04 - Estruturas de Repetição |
-| **Fase atual** | Mini-projeto concluído; prática do capítulo em andamento |
+| **Fase atual** | Lista de exercícios concluída; prova liberada |
 | **Último capítulo concluído** | 03 - Operadores e Estruturas Condicionais |
-| **Próximo passo** | Concluir o desafio rápido e iniciar a lista de exercícios do Capítulo 04 |
+| **Próximo passo** | Aluno realizar a prova do Capítulo 04 |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-08-13
-- **Atividade:** Revisão do mini-projeto Planejador de Sessões de Estudo
+- **Atividade:** Correção da lista de exercícios do Capítulo 04
 - **O que foi feito:**
-  - Implementação comparada com os requisitos e a saída obrigatória
-  - Compilação isolada e execução da configuração original validadas
-  - Identificados ajustes pendentes na verificação da meta, na interrupção do loop externo e nas mensagens finais
-  - Aluno orientado a verificar a meta imediatamente após incrementar o contador, sem entrega da solução pronta
-  - Nova versão conferida: ordem incremento/verificação corrigida; falta garantir o resumo final quando a meta for inalcançável
-  - Esclarecida a distinção entre mensagem condicional de sucesso e resumo obrigatório do resultado
-  - Reforçada a direção de `sessoesPlanejadas >= metaDeSessoes` e que o código após o loop executa tanto após `break` quanto após esgotamento natural
-  - Alinhada a diferença entre a regra de domínio esperada (capacidade acompanha a meta) e o teste didático de configuração inviável
-  - Versão final do mini-projeto aprovada nos quatro cenários de teste e na compilação TypeScript
+  - Os 12 exercícios obrigatórios e o bônus foram comparados com os enunciados
+  - Todos os 13 arquivos compilaram em modo estrito e executaram sem erros
+  - 11 dos 12 exercícios obrigatórios foram aprovados
+  - `ex22.ts` precisa exibir todas as verificações de `1` a `7` e usar `codigoProcurado` na comparação
+  - Aluno esclareceu que interpretou corretamente as linhas exibidas como a saída completa; após notar o título “Final da saída esperada”, compreendeu que eram apenas as últimas linhas
+  - O bônus precisa usar `numeroDeSetores` como limite do loop externo
+  - A ausência de `%` no `ex14.ts` foi registrada como diferença opcional de apresentação
+  - Feedback detalhado salvo em `exercicios/correcoes.md`
+  - Nova versão do `ex22.ts` validada: agora exibe as verificações de `1` a `7`, mas ainda compara com o literal `7`
+  - Bônus reconferido e ainda usa `numeroDeLugares` como limite do loop externo
+  - Ajustes finais validados: `ex22.ts` usa `codigoProcurado` e o bônus usa `numeroDeSetores`
+  - Os 12 exercícios obrigatórios e o bônus foram recompilados e executados com sucesso
+  - Lista encerrada e prova do Capítulo 04 liberada
 
 ---
 
@@ -54,9 +58,9 @@
 - [ ] Aluno concluir o desafio rápido
 - [x] Aluno concluir e validar o mini-projeto
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
-- [ ] Aluno concluir os 12 exercícios e o bônus opcional
-- [ ] Corrigir exercícios quando entregues
-- [ ] Aluno aplicar eventuais ajustes da correção
+- [x] Aluno entregar os 12 exercícios e o bônus opcional
+- [x] Realizar a primeira correção dos exercícios
+- [x] Aluno aplicar eventuais ajustes da correção
 - [ ] Aluno fazer a prova
 - [ ] Corrigir prova e dar nota
 - [x] Publicar a versão atualizada do `leitor/` no Sites
@@ -67,10 +71,10 @@
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Retomar e concluir a parte prática do Capítulo 04
-2. Para a introdução de hoje, seguir `05-arrays-fundamentos/README.md` e os quatro arquivos de aula
-3. Não fazer ainda o bônus nem a prova do Capítulo 05
-4. Após a prova do Capítulo 04, realizar o Projeto 1 antes de liberar formalmente o Capítulo 05
+1. Aluno realizar a prova do Capítulo 04
+2. Corrigir a prova e registrar a nota
+3. Após a prova do Capítulo 04, realizar o Projeto 1 antes de liberar formalmente o Capítulo 05
+4. Não fazer ainda o bônus nem a prova do Capítulo 05
 
 ---
 
@@ -79,7 +83,7 @@ Quando o aluno retornar:
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Não |
-| Prova pendente | Não |
+| Prova pendente | Sim; liberada para realização |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não |
 
@@ -135,6 +139,10 @@ Quando o aluno retornar:
 | 2026-08-13 | Explicação da comparação `>=` e das duas formas de término do loop | ~5min |
 | 2026-08-13 | Discussão sobre capacidade do cronograma versus meta configurada | ~5min |
 | 2026-08-13 | Validação final do mini-projeto do Capítulo 04 | ~5min |
+| 2026-08-13 | Primeira correção da lista de exercícios do Capítulo 04 | ~15min |
+| 2026-08-13 | Esclarecimento sobre a saída parcial do exercício 2.2 | ~5min |
+| 2026-08-13 | Conferência do primeiro ajuste no exercício 2.2 | ~5min |
+| 2026-08-13 | Conferência final e liberação da prova do Capítulo 04 | ~5min |
 
 ---
 

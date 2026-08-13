@@ -29,7 +29,7 @@
 | 01 | Variáveis e Constantes | ✓ | ✓ | ● 8,5 | Concluído |
 | 02 | Tipos Primitivos | ✓ | ✓ | ★ 9,0 | Concluído |
 | 03 | Operadores e Estruturas Condicionais | ✓ | ✓ | ● 8,7 | Concluído |
-| 04 | Estruturas de Repetição | ✓ | Mini-projeto ✓ | - | Em estudo |
+| 04 | Estruturas de Repetição | ✓ | ✓ | Liberada | Em estudo |
 | P1 | Projeto: Calculadora | - | - | - | Pendente |
 
 ---
@@ -99,7 +99,7 @@
 ## Estatísticas
 
 - **Capítulos concluídos:** 4/32
-- **Exercícios realizados:** 44 + 3 bônus
+- **Exercícios realizados:** 56 + 4 bônus
 - **Provas realizadas:** 4
 - **Média geral:** 8,9
 - **Projetos entregues:** 0/4

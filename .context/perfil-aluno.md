@@ -122,6 +122,8 @@
 - Reconhecimento de atribuições encadeadas e de sua avaliação da direita para a esquerda
 - Loops aninhados, `continue`, contador e encerramento coordenado com `break`
 - Distinção entre mensagem condicional de sucesso e resumo final do processamento
+- Escolha e aplicação de `while`, `do...while` e `for`
+- Interrupção por meta ou limite e uso de `continue` para exceções
 
 ---
 
@@ -147,7 +149,8 @@
 - Após a prova do Capítulo 02, relatou satisfação e reconheceu espontaneamente os erros de atenção
 - No bônus do Capítulo 03, identificou corretamente que a proteção de prazo mínimo era redundante para os dados atuais, demonstrando análise do domínio além da saída fornecida
 - Após a prova do Capítulo 03, compreendeu que `a = b = valor` é uma atribuição encadeada, embora não conhecesse previamente essa possibilidade
+- Na lista do Capítulo 04, resolveu corretamente 11 dos 12 exercícios obrigatórios na primeira revisão; precisa reforçar a execução de ações exigidas em todas as iterações antes de testar a condição de parada
 
 ---
 
-*Última atualização: 2026-08-10*
+*Última atualização: 2026-08-13*
