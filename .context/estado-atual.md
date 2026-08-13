@@ -23,7 +23,7 @@
   - Texto visível removido; o botão exibe apenas o ícone de copiar em todas as telas
   - Rótulo acessível, tooltip e confirmação visual continuam preservados
   - Typecheck, lint e build do leitor validados
-  - Publicação da versão 9 no projeto existente preparada, preservando a URL e o acesso privado
+  - Versão 9 publicada no projeto existente, preservando a URL e o acesso privado
 
 ---
 

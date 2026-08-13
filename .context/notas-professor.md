@@ -12,7 +12,7 @@
 
 **Validação:** leitor aprovado em typecheck, lint e build; permanecem apenas os dois avisos antigos de Fast Refresh, sem impacto no build.
 
-**Publicação:** versão 9 preparada para publicação no projeto existente, mantendo a URL e o acesso privado.
+**Publicação:** versão 9 publicada no projeto existente, mantendo `https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site` e o acesso privado.
 
 ### 2026-08-12 - Cópia Global do Markdown no Leitor
 
