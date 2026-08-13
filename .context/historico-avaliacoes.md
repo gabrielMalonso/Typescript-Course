@@ -97,6 +97,7 @@
 | 2026-08-06 | 03 | Desafio rápido + mini-projeto | Aprovados | Domínio conceitual demonstrado | Linha funcional de estado incluída; diferenças cosméticas não impedem avanço |
 | 2026-08-07 | 03 | 14 obrigatórios + bônus | Aprovados após revisão | 100% após ajustes | Limites exclusivos, `??` com zero e mensagem de partida corrigidos; `ex23.ts` e `ex25.ts` concluídos |
 | 2026-08-13 | 04 | Mini-projeto | Aprovado após revisão | Domínio conceitual demonstrado | `continue`, contador, loops aninhados e encerramento coordenado validados nos quatro cenários propostos |
+| 2026-08-13 | 04 | 12 obrigatórios + bônus | Aprovados após revisão | 100% após ajustes | `ex22.ts` passou a mostrar todas as verificações e usar a constante da busca; limite externo do bônus corrigido; `%` ausente no 1.4 é cosmético |
 
 ---
 
@@ -132,6 +133,7 @@
 | Variáveis, constantes, inferência e escopos | 8,5 | 8,5 | Bom domínio; reforçar precisão literal |
 | Tipos primitivos | 9,0 | 9,0 | Domínio sólido; reforçar conferência da saída |
 | Operadores e estruturas condicionais | 8,7 | 8,7 | Bom domínio; reforçar testes de limites e caminhos alternativos |
+| Estruturas de repetição | Lista concluída | 12/12 + bônus aprovados | Domínio sólido de loops, contadores, `break` e `continue` |
 
 ---
 

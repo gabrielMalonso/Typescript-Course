@@ -6,6 +6,24 @@
 
 ## Observações Gerais
 
+### 2026-08-13 - Primeira Correção da Lista do Capítulo 04
+
+**Resultado:** todos os 12 exercícios obrigatórios e o bônus foram entregues, compilam em modo estrito e executam. Onze obrigatórios foram aprovados na primeira revisão.
+
+**Pendência funcional:** no `ex22.ts`, a mensagem de verificação foi colocada dentro do ramo de sucesso, então os códigos de `1` a `6` não aparecem. Reforçar que ações exigidas “em cada iteração” devem ocorrer antes da condição que pode encerrar o loop.
+
+**Bônus:** o aluno coordenou corretamente os dois `break`s com uma variável booleana, mas usou `numeroDeLugares` como limite do loop externo. O limite de convites mascara o erro com os dados atuais; testar mentalmente sem a parada antecipada revela o setor inexistente.
+
+**Calibração:** a falta do símbolo `%` no exercício 1.4 e pequenas diferenças de capitalização/pontuação foram mantidas como observações opcionais, conforme o critério pedagógico combinado.
+
+**Próximo passo:** conferir `ex22.ts` e bônus; se corrigidos, encerrar a lista e liberar a prova.
+
+**Esclarecimento do exercício 2.2:** o aluno não mostrou as verificações de `1` a `6` porque leu o bloco apresentado como a saída completa. Ao perceber que o subtítulo dizia “Final da saída esperada”, compreendeu imediatamente que o trecho exibia apenas as últimas linhas. Não registrar como dificuldade conceitual com iterações; em exercícios futuros, considerar mostrar a saída completa ou destacar ainda mais quando o exemplo for parcial.
+
+**Primeiro ajuste conferido:** o `ex22.ts` passou a exibir corretamente todas as verificações de `1` a `7`. Resta trocar o literal `7` na condição por `codigoProcurado`, pois o teste alternativo com outro código ainda falharia. O bônus ainda contém o limite anterior no loop externo.
+
+**Conclusão:** os dois ajustes finais foram aplicados corretamente. Todos os 12 exercícios obrigatórios e o bônus compilam em modo estrito e executam com o comportamento esperado. Lista encerrada; prova do Capítulo 04 liberada. A ausência do símbolo `%` no exercício 1.4 permanece somente como observação cosmética.
+
 ### 2026-08-13 - Botão de Cópia Somente com Ícone
 
 **Ajuste visual:** o texto visível do botão global de copiar Markdown foi removido em todas as larguras. O controle agora é quadrado e exibe somente o ícone, preservando tooltip, rótulo para leitores de tela e confirmação por check após a cópia.
