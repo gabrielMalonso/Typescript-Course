@@ -29,7 +29,7 @@
 | 01 | Variáveis e Constantes | ✓ | ✓ | ● 8,5 | Concluído |
 | 02 | Tipos Primitivos | ✓ | ✓ | ★ 9,0 | Concluído |
 | 03 | Operadores e Estruturas Condicionais | ✓ | ✓ | ● 8,7 | Concluído |
-| 04 | Estruturas de Repetição | Disponível | - | - | Em estudo |
+| 04 | Estruturas de Repetição | ✓ | Mini-projeto ✓ | - | Em estudo |
 | P1 | Projeto: Calculadora | - | - | - | Pendente |
 
 ---
@@ -119,4 +119,4 @@
 
 ---
 
-*Última atualização: 12/08/2026*
+*Última atualização: 13/08/2026*

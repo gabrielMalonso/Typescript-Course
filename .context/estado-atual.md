@@ -9,21 +9,26 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 04 - Estruturas de Repetição |
-| **Fase atual** | Aula disponível |
+| **Fase atual** | Mini-projeto concluído; prática do capítulo em andamento |
 | **Último capítulo concluído** | 03 - Operadores e Estruturas Condicionais |
-| **Próximo passo** | Concluir a prática do Capítulo 04; Capítulo 05 disponível como introdução opcional |
+| **Próximo passo** | Concluir o desafio rápido e iniciar a lista de exercícios do Capítulo 04 |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-08-13
-- **Atividade:** Simplificação visual do botão de copiar Markdown
+- **Atividade:** Revisão do mini-projeto Planejador de Sessões de Estudo
 - **O que foi feito:**
-  - Texto visível removido; o botão exibe apenas o ícone de copiar em todas as telas
-  - Rótulo acessível, tooltip e confirmação visual continuam preservados
-  - Typecheck, lint e build do leitor validados
-  - Versão 9 publicada no projeto existente, preservando a URL e o acesso privado
+  - Implementação comparada com os requisitos e a saída obrigatória
+  - Compilação isolada e execução da configuração original validadas
+  - Identificados ajustes pendentes na verificação da meta, na interrupção do loop externo e nas mensagens finais
+  - Aluno orientado a verificar a meta imediatamente após incrementar o contador, sem entrega da solução pronta
+  - Nova versão conferida: ordem incremento/verificação corrigida; falta garantir o resumo final quando a meta for inalcançável
+  - Esclarecida a distinção entre mensagem condicional de sucesso e resumo obrigatório do resultado
+  - Reforçada a direção de `sessoesPlanejadas >= metaDeSessoes` e que o código após o loop executa tanto após `break` quanto após esgotamento natural
+  - Alinhada a diferença entre a regra de domínio esperada (capacidade acompanha a meta) e o teste didático de configuração inviável
+  - Versão final do mini-projeto aprovada nos quatro cenários de teste e na compilação TypeScript
 
 ---
 
@@ -46,7 +51,8 @@
 ## Pendências
 
 - [ ] Aluno estudar o conteúdo da aula
-- [ ] Aluno concluir o desafio rápido e o mini-projeto
+- [ ] Aluno concluir o desafio rápido
+- [x] Aluno concluir e validar o mini-projeto
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [ ] Aluno concluir os 12 exercícios e o bônus opcional
 - [ ] Corrigir exercícios quando entregues
@@ -122,6 +128,13 @@ Quando o aluno retornar:
 | 2026-08-12 | Criação antecipada do Capítulo 05 como introdução a arrays | ~40min |
 | 2026-08-12 | Botão global para copiar o Markdown no leitor | ~10min |
 | 2026-08-13 | Simplificação do botão de copiar para somente ícone | ~5min |
+| 2026-08-13 | Revisão do mini-projeto do Capítulo 04 | ~10min |
+| 2026-08-13 | Orientação sobre contador e momento de verificar a meta | ~5min |
+| 2026-08-13 | Conferência da nova versão e explicação de `>=` e resumo fora dos loops | ~5min |
+| 2026-08-13 | Esclarecimento sobre meta inalcançável e resumo final | ~5min |
+| 2026-08-13 | Explicação da comparação `>=` e das duas formas de término do loop | ~5min |
+| 2026-08-13 | Discussão sobre capacidade do cronograma versus meta configurada | ~5min |
+| 2026-08-13 | Validação final do mini-projeto do Capítulo 04 | ~5min |
 
 ---
 
