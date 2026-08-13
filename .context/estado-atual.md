@@ -8,31 +8,25 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Capítulo atual** | 04 - Estruturas de Repetição |
-| **Fase atual** | Lista de exercícios concluída; prova liberada |
-| **Último capítulo concluído** | 03 - Operadores e Estruturas Condicionais |
-| **Próximo passo** | Aluno realizar a prova do Capítulo 04 |
+| **Capítulo atual** | Projeto 1 - Calculadora |
+| **Fase atual** | Capítulo 04 concluído; Projeto 1 pendente |
+| **Último capítulo concluído** | 04 - Estruturas de Repetição |
+| **Próximo passo** | Preparar e iniciar o Projeto 1 antes da liberação formal do Capítulo 05 |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-08-13
-- **Atividade:** Correção da lista de exercícios do Capítulo 04
+- **Atividade:** Correção da prova do Capítulo 04
 - **O que foi feito:**
-  - Os 12 exercícios obrigatórios e o bônus foram comparados com os enunciados
-  - Todos os 13 arquivos compilaram em modo estrito e executaram sem erros
-  - 11 dos 12 exercícios obrigatórios foram aprovados
-  - `ex22.ts` precisa exibir todas as verificações de `1` a `7` e usar `codigoProcurado` na comparação
-  - Aluno esclareceu que interpretou corretamente as linhas exibidas como a saída completa; após notar o título “Final da saída esperada”, compreendeu que eram apenas as últimas linhas
-  - O bônus precisa usar `numeroDeSetores` como limite do loop externo
-  - A ausência de `%` no `ex14.ts` foi registrada como diferença opcional de apresentação
-  - Feedback detalhado salvo em `exercicios/correcoes.md`
-  - Nova versão do `ex22.ts` validada: agora exibe as verificações de `1` a `7`, mas ainda compara com o literal `7`
-  - Bônus reconferido e ainda usa `numeroDeLugares` como limite do loop externo
-  - Ajustes finais validados: `ex22.ts` usa `codigoProcurado` e o bônus usa `numeroDeSetores`
-  - Os 12 exercícios obrigatórios e o bônus foram recompilados e executados com sucesso
-  - Lista encerrada e prova do Capítulo 04 liberada
+  - Respostas teóricas corrigidas conforme a rubrica do capítulo
+  - Os três arquivos práticos compilaram isoladamente em modo estrito e executaram corretamente
+  - Parte prática recebeu pontuação integral: 6,0/6,0
+  - Único desconto: ausência das explicações separadas de `continue` e `break` na questão 1
+  - Nota final: 9,4/10 — aprovado
+  - Resultado detalhado salvo em `avaliacao/resultado.md`
+  - Capítulo 04 concluído; próximo passo formal é o Projeto 1
 
 ---
 
@@ -54,15 +48,15 @@
 
 ## Pendências
 
-- [ ] Aluno estudar o conteúdo da aula
-- [ ] Aluno concluir o desafio rápido
+- [x] Aluno estudar o conteúdo da aula
+- [x] Aluno concluir e validar o desafio rápido
 - [x] Aluno concluir e validar o mini-projeto
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [x] Aluno entregar os 12 exercícios e o bônus opcional
 - [x] Realizar a primeira correção dos exercícios
 - [x] Aluno aplicar eventuais ajustes da correção
-- [ ] Aluno fazer a prova
-- [ ] Corrigir prova e dar nota
+- [x] Aluno fazer a prova
+- [x] Corrigir prova e dar nota
 - [x] Publicar a versão atualizada do `leitor/` no Sites
 - [x] Validar e publicar o Capítulo 05 no leitor
 
@@ -71,9 +65,9 @@
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Aluno realizar a prova do Capítulo 04
-2. Corrigir a prova e registrar a nota
-3. Após a prova do Capítulo 04, realizar o Projeto 1 antes de liberar formalmente o Capítulo 05
+1. Preparar e iniciar o Projeto 1 — Calculadora
+2. Concluir e avaliar o Projeto 1
+3. Liberar formalmente o Capítulo 05 após o projeto
 4. Não fazer ainda o bônus nem a prova do Capítulo 05
 
 ---
@@ -83,7 +77,7 @@ Quando o aluno retornar:
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Não |
-| Prova pendente | Sim; liberada para realização |
+| Prova pendente | Não; aprovado com 9,4 |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não |
 
@@ -143,6 +137,7 @@ Quando o aluno retornar:
 | 2026-08-13 | Esclarecimento sobre a saída parcial do exercício 2.2 | ~5min |
 | 2026-08-13 | Conferência do primeiro ajuste no exercício 2.2 | ~5min |
 | 2026-08-13 | Conferência final e liberação da prova do Capítulo 04 | ~5min |
+| 2026-08-13 | Correção da prova do Capítulo 04 — nota 9,4 | ~15min |
 
 ---
 

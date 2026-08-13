@@ -6,6 +6,18 @@
 
 ## Observações Gerais
 
+### 2026-08-13 - Prova do Capítulo 04
+
+**Resultado:** 9,4/10 — aprovado. Os três arquivos práticos compilaram isoladamente em modo estrito, executaram sem erros e receberam pontuação integral.
+
+**Único desconto:** na Questão 1, o aluno previu corretamente a saída e a quantidade de execuções, mas omitiu as explicações separadas dos efeitos de `continue` e `break`.
+
+**Observação:** na Questão 3, escreveu “estrutura do `while`” ao justificar o item sobre `do...while`, mas descreveu inequivocamente o comportamento correto; considerado deslize de nomenclatura, sem desconto. A ausência do acento em `Numero somado` na Questão 6 também foi tratada como cosmética.
+
+**Próximo passo:** Capítulo 04 concluído. Preparar e realizar o Projeto 1 — Calculadora antes de liberar formalmente o Capítulo 05.
+
+**Fechamento da prática:** o desafio rápido também foi recompilado em modo estrito e executado; ignora corretamente os múltiplos de `3` e obtém soma `37`. A diferença no texto final é apenas cosmética.
+
 ### 2026-08-13 - Primeira Correção da Lista do Capítulo 04
 
 **Resultado:** todos os 12 exercícios obrigatórios e o bônus foram entregues, compilam em modo estrito e executam. Onze obrigatórios foram aprovados na primeira revisão.
