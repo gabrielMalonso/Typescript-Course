@@ -60,7 +60,7 @@
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [x] Publicar a extensão no projeto existente do Sites, preservando a URL privada
 - [x] Publicar o ajuste visual dos controles no projeto existente do Sites
-- [ ] Publicar o ajuste da navegação móvel no projeto existente do Sites
+- [x] Publicar o ajuste da navegação móvel no projeto existente do Sites
 
 ---
 

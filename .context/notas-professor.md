@@ -12,6 +12,8 @@
 
 **Validação:** layout conferido na rota do mini-projeto com larguras de 390 px e 320 px; cartões permaneceram alinhados, sem sobreposição. Leitor aprovado em typecheck, lint e build, com apenas os avisos antigos sem impacto.
 
+**Publicação:** versão 12 publicada no projeto privado existente, mantendo `https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site`. A versão publicada foi reconferida em 320 px.
+
 ### 2026-08-14 - Controles Compactos do Leitor
 
 **Interface:** botão de copiar Markdown e alternador de tema passaram a ter o mesmo tamanho e raio circular. O texto visível “Claro/Escuro” foi removido, mantendo `aria-label` e `title` dinâmicos para acessibilidade.
