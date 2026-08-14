@@ -6,6 +6,22 @@
 
 ## Observações Gerais
 
+### 2026-08-14 - Primeira Correção da Lista do Capítulo 05
+
+**Resultado:** os 11 exercícios fundamentais e o bônus foram entregues. Todos compilam isoladamente em modo estrito e executam sem erros; seis foram aprovados e seis precisam de ajustes.
+
+**Ponto conceitual principal:** no `ex13.ts`, o aluno usou `length - 1` ao guardar a quantidade, confundindo quantidade de elementos com último índice. No `ex11.ts`, atribuiu a rejeição de uma `string` ao uso de `const`, quando a causa é o tipo `number[]`.
+
+**Requisitos incompletos:** corrigir o comentário do `ex21.ts`; adicionar a explicação do `ex23.ts`; completar comentários e chamadas de exibição no `ex31.ts`; explicar os dois índices no `ex33.ts`.
+
+**Próximo passo:** conferir os seis ajustes, encerrar a lista fundamental e então criar a ampliação de arrays + loops combinada com o aluno.
+
+### 2026-08-14 - Sequência para Arrays + Loops
+
+**Decisão:** o aluno fará primeiro os 11 exercícios fundamentais do Capítulo 05 no formato atual. Em seguida, o próprio capítulo será ampliado com uma aula curta combinando arrays e loops, exercícios obrigatórios de integração e uma questão correspondente na prova.
+
+**Organização:** não criar um Capítulo 5B. Manter `forEach`, `map`, `filter` e os demais métodos avançados reservados ao Capítulo 06.
+
 ### 2026-08-13 - Prova do Capítulo 04
 
 **Resultado:** 9,4/10 — aprovado. Os três arquivos práticos compilaram isoladamente em modo estrito, executaram sem erros e receberam pontuação integral.
