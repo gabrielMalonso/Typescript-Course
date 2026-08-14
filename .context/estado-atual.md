@@ -59,7 +59,7 @@
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [x] Publicar a extensão no projeto existente do Sites, preservando a URL privada
-- [ ] Publicar o ajuste visual dos controles no projeto existente do Sites
+- [x] Publicar o ajuste visual dos controles no projeto existente do Sites
 
 ---
 

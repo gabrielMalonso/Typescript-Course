@@ -14,6 +14,8 @@
 
 **Validação:** leitor aprovado em typecheck, lint e build. Permanecem apenas os avisos antigos de Fast Refresh e tamanho de chunk, sem impedir o build.
 
+**Publicação:** versão 11 publicada no projeto privado existente, preservando `https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site`. Conferência final realizada na versão publicada em viewport de celular.
+
 ### 2026-08-14 - Extensão Arrays + Loops
 
 **Material criado:** `aula/05-arrays-e-loops.md` com `for` por índice, `for...of`, posição humana, acumuladores, `continue`, `break`, loops aninhados e cuidado ao alterar o tamanho durante o percurso.
