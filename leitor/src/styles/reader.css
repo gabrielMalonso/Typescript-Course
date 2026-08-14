@@ -128,11 +128,13 @@ html[data-theme='dark'] .btn.primary {
   background: var(--bg-elevated);
 }
 
-.copy-markdown-btn {
+.copy-markdown-btn,
+.theme-toggle {
   flex-shrink: 0;
   width: 2.7rem;
   height: 2.7rem;
   padding: 0;
+  border-radius: 50%;
 }
 
 .copy-markdown-label {
@@ -162,13 +164,15 @@ html[data-theme='dark'] .copy-markdown-btn.is-error {
   color: #ef8d80;
 }
 
-.theme-toggle {
-  flex-shrink: 0;
-  padding: 0.55rem 0.9rem;
+.theme-toggle-icon {
+  font-size: 1.05rem;
+  line-height: 1;
 }
 
-.theme-toggle-label {
-  font-size: 0.85rem;
+.toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .toolbar-spacer {
@@ -832,10 +836,6 @@ html[data-theme='dark'] .sidebar-backdrop {
   .home-page {
     width: min(100%, calc(100% - 1.25rem));
     padding-top: 0.75rem;
-  }
-
-  .theme-toggle-label {
-    display: none;
   }
 
   .reader-stage {
