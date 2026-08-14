@@ -199,7 +199,7 @@ for (let linha = 0; linha < setores.length; linha++) {
 }
 ```
 
-O limite do loop interno é `setores[linha].length`, e não `setores[0].length`. Assim, cada linha pode ter uma quantidade diferente de elementos.
+O limite do loop interno é `setores[linha].length`, e não `setores[0].length`. Assim, cada linha pode ter uma quantidade diferente de elementos. `setores[linha].length` é o tamanho daquela linha específica. 
 
 ```text
 loop externo: escolhe a linha
