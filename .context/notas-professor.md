@@ -18,7 +18,7 @@
 
 **Validação:** 25 blocos TypeScript verificados; exercícios fundamentais recompilados em modo estrito; leitor aprovado em typecheck, lint e build. Página inicial e rotas da nova aula e da nova lista responderam com HTTP 200. Permanecem apenas os dois avisos antigos de Fast Refresh e o aviso de tamanho de chunk, sem impedir o build.
 
-**Publicação:** atualização local concluída; publicação no projeto existente aguarda confirmação explícita do aluno.
+**Publicação:** versão 10 publicada no projeto privado existente, preservando `https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site`.
 
 **Próximo passo:** aluno ler a nova aula e entregar os quatro exercícios de integração.
 
