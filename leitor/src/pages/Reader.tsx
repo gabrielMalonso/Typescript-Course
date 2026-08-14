@@ -65,8 +65,10 @@ export function Reader() {
           <span>{doc.fileName}</span>
         </div>
         <div className="toolbar-spacer" />
-        <CopyMarkdownButton content={doc.content} />
-        <ThemeToggle />
+        <div className="toolbar-actions">
+          <CopyMarkdownButton content={doc.content} />
+          <ThemeToggle />
+        </div>
       </header>
 
       <div className="reader-stage">

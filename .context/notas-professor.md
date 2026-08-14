@@ -6,6 +6,14 @@
 
 ## Observações Gerais
 
+### 2026-08-14 - Controles Compactos do Leitor
+
+**Interface:** botão de copiar Markdown e alternador de tema passaram a ter o mesmo tamanho e raio circular. O texto visível “Claro/Escuro” foi removido, mantendo `aria-label` e `title` dinâmicos para acessibilidade.
+
+**Layout:** os controles foram agrupados lado a lado com espaçamento de `0.5rem`. A apresentação foi validada em desktop e celular, com alternância funcional entre os temas.
+
+**Validação:** leitor aprovado em typecheck, lint e build. Permanecem apenas os avisos antigos de Fast Refresh e tamanho de chunk, sem impedir o build.
+
 ### 2026-08-14 - Extensão Arrays + Loops
 
 **Material criado:** `aula/05-arrays-e-loops.md` com `for` por índice, `for...of`, posição humana, acumuladores, `continue`, `break`, loops aninhados e cuidado ao alterar o tamanho durante o percurso.

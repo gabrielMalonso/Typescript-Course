@@ -18,13 +18,12 @@
 ## Sessão Atual
 
 - **Data:** 2026-08-14
-- **Atividade:** Encerramento da lista fundamental e criação da extensão Arrays + Loops
+- **Atividade:** Ajuste dos controles do leitor
 - **O que foi feito:**
-  - Os ajustes da lista fundamental foram conferidos; os 11 exercícios e o bônus estão aprovados
-  - Criada `aula/05-arrays-e-loops.md` com `for`, `for...of`, controle e loops aninhados
-  - Criada `exercicios/lista-arrays-e-loops.md` com quatro exercícios progressivos
-  - Prova e gabarito atualizados com a Questão 8, preservando o total de 10 pontos
-  - README, ementa, extras e catálogo do leitor atualizados
+  - Botões de copiar Markdown e alternar tema padronizados em 43,2 px e raio circular
+  - Texto visível do botão de tema removido; rótulo acessível preservado
+  - Controles agrupados lado a lado com espaçamento consistente
+  - Layout validado em desktop e celular, nos temas claro e escuro
 
 ---
 
@@ -60,6 +59,7 @@
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [x] Publicar a extensão no projeto existente do Sites, preservando a URL privada
+- [ ] Publicar o ajuste visual dos controles no projeto existente do Sites
 
 ---
 
