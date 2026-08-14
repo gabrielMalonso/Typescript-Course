@@ -154,6 +154,7 @@
 - Na lista do Capítulo 04, resolveu corretamente 11 dos 12 exercícios obrigatórios na primeira revisão; precisa reforçar a execução de ações exigidas em todas as iterações antes de testar a condição de parada
 - Obteve 9,4 na prova do Capítulo 04, com pontuação integral na prática; o único desconto veio de duas explicações teóricas solicitadas e omitidas
 - Na primeira lista de arrays, demonstrou domínio das operações básicas; precisa reforçar a diferença entre `length` e último índice e separar o efeito de `const` da tipagem dos elementos
+- Corrigiu prontamente `length` versus último índice e completou os requisitos da lista de arrays; o entendimento sobre incompatibilidade de tipos já estava presente na explicação original
 
 ---
 

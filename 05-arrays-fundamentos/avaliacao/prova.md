@@ -10,7 +10,7 @@
 
 ## Informações
 
-- **Duração sugerida:** 60–75 minutos
+- **Duração sugerida:** 75–90 minutos
 - **Consulta:** não permitida, exceto à documentação oficial
 - **Pontuação:** 10 pontos
 - **Aprovação:** mínimo 7 pontos
@@ -19,8 +19,9 @@
 ## Orientações
 
 - Use somente os conteúdos estudados até este capítulo.
-- Não use loops nem métodos do Capítulo 06.
-- Nas questões práticas, use apenas acesso por índice, `length`, `push`, `pop`, `shift` e `unshift`, além dos fundamentos anteriores.
+- Use loops somente na Questão 8.
+- Não use métodos do Capítulo 06, como `forEach`, `map`, `filter`, `find` ou `reduce`.
+- Nas Questões 5–7, use apenas acesso por índice, `length`, `push`, `pop`, `shift` e `unshift`, além dos fundamentos anteriores.
 - Use tipos precisos, nomes descritivos em `camelCase` e ponto e vírgula.
 - Compile, execute e teste exatamente a versão entregue.
 - Diferenças apenas cosméticas na forma como o terminal exibe arrays não são erro; os valores e a ordem devem estar corretos.
@@ -36,8 +37,9 @@ Cada parte possui um destino específico:
 | `questao05.ts` | Somente o código completo da questão 5 |
 | `questao06.ts` | Somente o código completo da questão 6 |
 | `questao07.ts` | Somente o código completo da questão 7 |
+| `questao08.ts` | Somente o código completo da questão 8 |
 
-Os quatro arquivos devem ficar em `05-arrays-fundamentos/avaliacao/`. Código copiado apenas para `resposta.md` não substitui o arquivo `.ts` solicitado.
+Os cinco arquivos devem ficar em `05-arrays-fundamentos/avaliacao/`. Código copiado apenas para `resposta.md` não substitui o arquivo `.ts` solicitado.
 
 ---
 
@@ -120,7 +122,7 @@ Responda:
 
 ## Parte 2 — Prática (6 pontos)
 
-### Questão 5: Registro temporário (1,5 ponto)
+### Questão 5: Registro temporário (1 ponto)
 
 Crie `questao05.ts`.
 
@@ -144,7 +146,7 @@ Retirada extra: undefined
 Quantidade final: 0
 ```
 
-### Questão 6: Etapas de uma entrega (2 pontos)
+### Questão 6: Etapas de uma entrega (1,5 ponto)
 
 Crie `questao06.ts` com este estado inicial:
 
@@ -175,7 +177,7 @@ Primeira restante: briefing
 Quantidade final: 3
 ```
 
-### Questão 7: Painel compartilhado de incidentes (2,5 pontos)
+### Questão 7: Painel compartilhado de incidentes (1,5 ponto)
 
 Crie `questao07.ts` com:
 
@@ -210,14 +212,45 @@ Quantidade final: 3
 
 Em um comentário final, explique por que os dois arrays exibem o mesmo conteúdo. Não crie uma cópia independente e não use recursos ainda não apresentados.
 
+### Questão 8: Percorrendo registros (2 pontos)
+
+Crie `questao08.ts` com:
+
+```typescript
+const registros: number[] = [12, 0, 18, 25, 0, 15];
+```
+
+Considere `0` como um registro sem medição. Use um único `for` tradicional para:
+
+1. começar no índice `0` e percorrer o array usando `registros.length`;
+2. ignorar os valores iguais a `0` com `continue`;
+3. para cada valor válido, exibir sua posição original no array em formato humano e seu valor;
+4. somar os valores válidos em `totalValido`;
+5. contar os valores válidos em `quantidadeValida`.
+
+Crie os dois acumuladores antes do loop, ambos começando em `0`. Depois do loop, exiba o total e a quantidade. Não altere o array.
+
+**Saída conceitual esperada:**
+
+```text
+Registro 1: 12
+Registro 3: 18
+Registro 4: 25
+Registro 6: 15
+Total válido: 70
+Quantidade válida: 4
+```
+
+Em um comentário final, explique por que `indice + 1` é usado somente no rótulo, enquanto o acesso ao elemento continua usando `registros[indice]`.
+
 ---
 
 ## Checklist de entrega
 
 - [ ] Não alterei `prova.md`.
 - [ ] Respondi integralmente às questões 1–4 em `resposta.md`.
-- [ ] Criei separadamente `questao05.ts`, `questao06.ts` e `questao07.ts`.
-- [ ] Não usei loops nem métodos do Capítulo 06.
-- [ ] Compilei e executei os três arquivos `.ts` entregues.
+- [ ] Criei separadamente `questao05.ts`, `questao06.ts`, `questao07.ts` e `questao08.ts`.
+- [ ] Usei loop somente na Questão 8 e não usei métodos do Capítulo 06.
+- [ ] Compilei e executei os quatro arquivos `.ts` entregues.
 - [ ] Conferi valores, ordem, retornos e quantidades finais.
 - [ ] Verifiquei que a versão entregue é a mesma que foi testada.

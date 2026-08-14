@@ -4,7 +4,7 @@
 
 Construir uma fila simples que registra atividades de estudo, recebe prioridades, corrige um item e remove atividades das duas extremidades.
 
-O projeto foi desenhado para ser feito antes de você concluir a prática de loops. Não use `for`, `while` nem métodos do Capítulo 06: o foco é acompanhar diretamente as mudanças do array.
+Este mini-projeto isola as operações fundamentais do array. Não use `for`, `while` nem métodos do Capítulo 06 nesta primeira versão: o foco é acompanhar diretamente cada mudança de estado.
 
 ## Conceitos aplicados
 
@@ -252,4 +252,4 @@ As duas variáveis devem mostrar `"Fundamentos"`, `"Sintaxe"` e `"Exemplos"`, e 
 
 ## Expansão opcional
 
-Depois de concluir a prática do Capítulo 04, exiba os itens restantes com um `for`. Essa expansão é uma conexão entre os capítulos, não um requisito para finalizar este mini-projeto.
+Depois de concluir esta versão, siga para `05-arrays-e-loops.md`. A lista de integração aplica percursos sem alterar os requisitos deste mini-projeto.

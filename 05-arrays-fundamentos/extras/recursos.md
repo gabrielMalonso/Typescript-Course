@@ -61,10 +61,12 @@ Explique em voz alta, com suas palavras:
 
 Se alguma resposta não vier com clareza, volte somente à seção correspondente em `extras/erros-comuns.md`.
 
-## O que deixar para depois
+## Extensão: arrays + loops
 
-- Não faça ainda o bônus com `for`.
-- Não antecipe métodos de transformação, busca ou filtragem do Capítulo 06.
-- Não realize a prova do Capítulo 05 antes da liberação.
+Depois de concluir os fundamentos:
 
-Depois desta introdução, retome a parte prática do Capítulo 04. Ela continua sendo necessária para consolidar loops e preservar a sequência formal do curso.
+1. leia `aula/05-arrays-e-loops.md`;
+2. faça `exercicios/lista-arrays-e-loops.md`;
+3. use a documentação de loops do Capítulo 04 apenas para revisar `for`, `continue`, `break` ou loops aninhados;
+4. não antecipe métodos de transformação, busca ou filtragem do Capítulo 06;
+5. não realize a prova do Capítulo 05 antes da liberação.

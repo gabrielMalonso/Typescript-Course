@@ -5,7 +5,7 @@ const rawModules = import.meta.glob(
     '@course/[0-9][0-9]-*/README.md',
     '@course/[0-9][0-9]-*/aula/*.md',
     '@course/[0-9][0-9]-*/extras/*.md',
-    '@course/[0-9][0-9]-*/exercicios/lista.md',
+    '@course/[0-9][0-9]-*/exercicios/lista*.md',
     '@course/[0-9][0-9]-*/avaliacao/prova.md',
   ],
   {
@@ -44,7 +44,7 @@ function shouldInclude(modulePath: string): boolean {
   if (/^README\.md$/i.test(rest)) return true
   if (rest.startsWith('aula/') && rest.endsWith('.md')) return true
   if (rest.startsWith('extras/') && rest.endsWith('.md')) return true
-  if (rest === 'exercicios/lista.md') return true
+  if (/^exercicios\/lista[^/]*\.md$/i.test(rest)) return true
   if (rest === 'avaliacao/prova.md') return true
 
   return false

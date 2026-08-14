@@ -98,7 +98,7 @@
 | 2026-08-07 | 03 | 14 obrigatórios + bônus | Aprovados após revisão | 100% após ajustes | Limites exclusivos, `??` com zero e mensagem de partida corrigidos; `ex23.ts` e `ex25.ts` concluídos |
 | 2026-08-13 | 04 | Mini-projeto | Aprovado após revisão | Domínio conceitual demonstrado | `continue`, contador, loops aninhados e encerramento coordenado validados nos quatro cenários propostos |
 | 2026-08-13 | 04 | 12 obrigatórios + bônus | Aprovados após revisão | 100% após ajustes | `ex22.ts` passou a mostrar todas as verificações e usar a constante da busca; limite externo do bônus corrigido; `%` ausente no 1.4 é cosmético |
-| 2026-08-14 | 05 | 11 obrigatórios + bônus | 6 aprovados, 6 com ajustes | Primeira revisão | Confusão entre `length` e último índice no 1.3; justificativa de tipo e respostas textuais incompletas; todos compilam e executam |
+| 2026-08-14 | 05 | 11 obrigatórios + bônus | Aprovados após revisão | 100% após ajustes | `length` corrigido no 1.3; requisitos textuais completados; entendimento de tipo do 1.1 confirmado; todos compilam e executam |
 
 ---
 
@@ -135,7 +135,7 @@
 | Tipos primitivos | 9,0 | 9,0 | Domínio sólido; reforçar conferência da saída |
 | Operadores e estruturas condicionais | 8,7 | 8,7 | Bom domínio; reforçar testes de limites e caminhos alternativos |
 | Estruturas de repetição | 9,4 | 9,4 | Domínio sólido; parte prática integralmente correta |
-| Arrays: fundamentos | Primeira revisão | Primeira revisão | Operações corretas; reforçar `length` versus último índice e completar justificativas |
+| Arrays: fundamentos | Lista qualitativa | Aprovado após revisão | Operações, índices, `length`, referência e array bidimensional consolidados |
 
 ---
 
