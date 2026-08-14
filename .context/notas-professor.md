@@ -6,6 +6,12 @@
 
 ## Observações Gerais
 
+### 2026-08-14 - Navegação Lateral no Celular
+
+**Interface:** os cartões “Anterior” e “Próximo” deixaram de empilhar em telas menores e agora permanecem em duas colunas iguais. O espaçamento e o padding foram reduzidos apenas no mobile, e nomes longos receberam quebra segura.
+
+**Validação:** layout conferido na rota do mini-projeto com larguras de 390 px e 320 px; cartões permaneceram alinhados, sem sobreposição. Leitor aprovado em typecheck, lint e build, com apenas os avisos antigos sem impacto.
+
 ### 2026-08-14 - Controles Compactos do Leitor
 
 **Interface:** botão de copiar Markdown e alternador de tema passaram a ter o mesmo tamanho e raio circular. O texto visível “Claro/Escuro” foi removido, mantendo `aria-label` e `title` dinâmicos para acessibilidade.

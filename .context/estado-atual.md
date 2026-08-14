@@ -18,12 +18,12 @@
 ## Sessão Atual
 
 - **Data:** 2026-08-14
-- **Atividade:** Ajuste dos controles do leitor
+- **Atividade:** Ajuste da navegação entre aulas no celular
 - **O que foi feito:**
-  - Botões de copiar Markdown e alternar tema padronizados em 43,2 px e raio circular
-  - Texto visível do botão de tema removido; rótulo acessível preservado
-  - Controles agrupados lado a lado com espaçamento consistente
-  - Layout validado em desktop e celular, nos temas claro e escuro
+  - Cartões “Anterior” e “Próximo” mantidos lado a lado também em telas estreitas
+  - Colunas móveis equilibradas com `minmax(0, 1fr)` e espaçamento reduzido
+  - Nomes longos podem quebrar linha sem ampliar ou sobrepor os cartões
+  - Layout validado nas larguras de 390 px e 320 px
 
 ---
 
@@ -60,6 +60,7 @@
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [x] Publicar a extensão no projeto existente do Sites, preservando a URL privada
 - [x] Publicar o ajuste visual dos controles no projeto existente do Sites
+- [ ] Publicar o ajuste da navegação móvel no projeto existente do Sites
 
 ---
 
