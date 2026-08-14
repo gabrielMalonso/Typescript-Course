@@ -154,13 +154,13 @@ console.log(original === outroNome); // true
 
 **Correção:** neste capítulo, reconheça a referência compartilhada e preveja seu efeito. As formas convenientes de criar cópias de arrays de tamanho variável serão estudadas mais adiante.
 
-## 9. Usar loops ou métodos avançados antes de consolidar o básico
+## 9. Usar o recurso errado para a etapa do capítulo
 
 **Sintoma:** a solução funciona, mas esconde justamente o acesso por índice, as mudanças de estado ou os retornos que o exercício quer praticar.
 
-**Diagnóstico:** métodos de capítulos futuros e loops acrescentam conceitos antes de o modelo mental do array estar firme. Como a prática do Capítulo 04 ainda está pendente, isso também mistura duas dificuldades.
+**Diagnóstico:** a lista fundamental isola índices, `length` e mutações; a lista de integração pratica `for` e `for...of`. Métodos do Capítulo 06 podem esconder justamente o mecanismo que o exercício quer tornar visível.
 
-**Correção:** nos exercícios fundamentais, use apenas índices, `length`, `push`, `pop`, `shift` e `unshift`. Deixe o bônus com `for` para depois da prática do Capítulo 04.
+**Correção:** respeite o recurso pedido em cada etapa. Nos exercícios fundamentais, use operações diretas. Na integração, use os loops indicados. Deixe `forEach`, `map`, `filter`, `find` e `reduce` para o Capítulo 06.
 
 ## Checklist rápido de diagnóstico
 
@@ -172,4 +172,3 @@ console.log(original === outroNome); // true
 - [ ] Recalculei os índices após `shift` ou `unshift`?
 - [ ] Duas variáveis apontam para o mesmo array?
 - [ ] Resolvi com os recursos permitidos neste capítulo?
-

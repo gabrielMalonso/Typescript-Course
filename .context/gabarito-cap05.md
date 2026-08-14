@@ -79,7 +79,7 @@ Somente um array foi criado. `fluxoDaTela = fluxoPrincipal` copia a referência;
 
 ## Parte 2 — Prática (6 pontos)
 
-### Questão 5: Registro temporário (1,5 ponto)
+### Questão 5: Registro temporário (1 ponto)
 
 Solução compilável:
 
@@ -103,14 +103,14 @@ console.log(`Quantidade final: ${codigos.length}`);
 
 | Critério | Pontos |
 |---|---:|
-| Array vazio com tipo `string[]` explícito | 0,20 |
-| Inclusões e tamanhos retornados corretos | 0,30 |
-| Remoções das extremidades na ordem correta | 0,30 |
-| `retiradaExtra` inferida corretamente e igual a `undefined` | 0,25 |
-| Saída completa, array final e `length` | 0,20 |
-| Código compila e executa | 0,25 |
+| Array vazio com tipo `string[]` explícito | 0,10 |
+| Inclusões e tamanhos retornados corretos | 0,20 |
+| Remoções das extremidades na ordem correta | 0,20 |
+| `retiradaExtra` inferida corretamente e igual a `undefined` | 0,15 |
+| Saída completa, array final e `length` | 0,15 |
+| Código compila e executa | 0,20 |
 
-### Questão 6: Etapas de uma entrega (2 pontos)
+### Questão 6: Etapas de uma entrega (1,5 ponto)
 
 Solução compilável:
 
@@ -141,15 +141,15 @@ console.log(`Quantidade final: ${entrega.length}`);
 
 | Critério | Pontos |
 |---|---:|
-| Estado inicial e tipo corretos | 0,15 |
-| Cinco mutações corretas e na ordem exigida | 0,60 |
-| Previsões de estado completas e corretas | 0,35 |
-| Retornos de `pop` e `shift` guardados corretamente | 0,25 |
-| Primeiro, último e `length` lidos corretamente | 0,25 |
-| Saída final completa e correta | 0,15 |
-| Código compila e executa | 0,25 |
+| Estado inicial e tipo corretos | 0,10 |
+| Cinco mutações corretas e na ordem exigida | 0,45 |
+| Previsões de estado completas e corretas | 0,25 |
+| Retornos de `pop` e `shift` guardados corretamente | 0,20 |
+| Primeiro, último e `length` lidos corretamente | 0,20 |
+| Saída final completa e correta | 0,10 |
+| Código compila e executa | 0,20 |
 
-### Questão 7: Painel compartilhado de incidentes (2,5 pontos)
+### Questão 7: Painel compartilhado de incidentes (1,5 ponto)
 
 Solução compilável:
 
@@ -181,15 +181,52 @@ console.log(`Quantidade final: ${filaPrincipal.length}`);
 
 | Critério | Pontos |
 |---|---:|
-| Estado inicial tipado e referência compartilhada | 0,30 |
-| `unshift` e primeiro tamanho retornado | 0,25 |
-| Alteração por índice e `shift` pelo outro nome | 0,35 |
-| `push` e segundo tamanho retornado | 0,25 |
-| Comparação de referência resulta em `true` | 0,25 |
-| Primeiro, último e `length` finais corretos | 0,30 |
-| Dois arrays e demais saídas completos | 0,25 |
-| Explicação da referência compartilhada | 0,20 |
-| Código compila e executa | 0,35 |
+| Estado inicial tipado e referência compartilhada | 0,15 |
+| `unshift` e primeiro tamanho retornado | 0,15 |
+| Alteração por índice e `shift` pelo outro nome | 0,20 |
+| `push` e segundo tamanho retornado | 0,15 |
+| Comparação de referência resulta em `true` | 0,15 |
+| Primeiro, último e `length` finais corretos | 0,20 |
+| Dois arrays e demais saídas completos | 0,15 |
+| Explicação da referência compartilhada | 0,10 |
+| Código compila e executa | 0,25 |
+
+### Questão 8: Percorrendo registros (2 pontos)
+
+Solução compilável:
+
+```typescript
+const registros: number[] = [12, 0, 18, 25, 0, 15];
+let totalValido = 0;
+let quantidadeValida = 0;
+
+for (let indice = 0; indice < registros.length; indice++) {
+  if (registros[indice] === 0) {
+    continue;
+  }
+
+  console.log(`Registro ${indice + 1}: ${registros[indice]}`);
+  totalValido += registros[indice];
+  quantidadeValida++;
+}
+
+console.log(`Total válido: ${totalValido}`);
+console.log(`Quantidade válida: ${quantidadeValida}`);
+
+// indice + 1 converte o índice zero-based em posição humana apenas no rótulo.
+// O acesso usa registros[indice] porque indice continua representando a posição real no array.
+```
+
+| Critério | Pontos |
+|---|---:|
+| Array inicial com tipo e valores corretos | 0,15 |
+| `for` começa em `0`, usa `< registros.length` e incrementa o índice | 0,35 |
+| Acesso ao elemento usa `registros[indice]` | 0,20 |
+| Valores iguais a `0` são ignorados com `continue` | 0,30 |
+| Posições humanas e valores válidos são exibidos corretamente | 0,25 |
+| Total e quantidade são acumulados corretamente | 0,35 |
+| Saídas finais e explicação sobre índice estão completas | 0,20 |
+| Código compila e executa | 0,20 |
 
 ## Resumo
 
@@ -199,4 +236,4 @@ console.log(`Quantidade final: ${filaPrincipal.length}`);
 | Prática | 6,0 |
 | **Total** | **10,0** |
 
-Aplicar crédito parcial por conceitos corretos. Diferenças cosméticas não devem dominar a avaliação, salvo quando ocultarem valores, ordem, retornos, estado final ou um requisito funcional. Confirmar os quatro arquivos obrigatórios antes de considerar a entrega completa.
+Aplicar crédito parcial por conceitos corretos. Diferenças cosméticas não devem dominar a avaliação, salvo quando ocultarem valores, ordem, retornos, estado final ou um requisito funcional. Confirmar os cinco arquivos obrigatórios antes de considerar a entrega completa.

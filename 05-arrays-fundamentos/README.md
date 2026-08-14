@@ -13,7 +13,10 @@ Ao concluir este capítulo, você será capaz de:
 - adicionar e remover elementos no início ou no fim;
 - prever como cada operação transforma um array;
 - reconhecer quando duas variáveis apontam para o mesmo array;
-- identificar, sem aprofundamento, um array multidimensional.
+- identificar um array multidimensional;
+- percorrer arrays com `for` e `for...of`;
+- combinar percursos com acumuladores, condicionais, `continue` e `break`;
+- percorrer arrays bidimensionais com loops aninhados.
 
 ## Modelo mental
 
@@ -29,11 +32,15 @@ posição     primeira      segunda       terceira
 
 O primeiro índice é `0`. Em um array com três elementos, o último índice é `2`, isto é, `length - 1`.
 
-## Por que este capítulo pode ser estudado agora?
+## Organização do capítulo
 
-Você ainda concluirá a parte prática do Capítulo 04. Mesmo assim, esta introdução foi preparada para não depender do domínio de loops: todos os exemplos principais acessam posições diretamente e usam apenas arrays básicos, variáveis, tipos e condicionais já conhecidos.
+O conteúdo foi dividido em duas etapas. A primeira consolida o modelo mental de arrays sem depender de repetição. A segunda combina arrays com os loops aprendidos no Capítulo 04.
 
-Loops aparecerão somente como uma conexão opcional. Estudar este capítulo agora não substitui a prática pendente do Capítulo 04 nem altera a ordem das avaliações.
+```text
+FUNDAMENTOS DO ARRAY → ARRAYS + LOOPS → PROVA
+```
+
+Essa ordem permite entender primeiro índices, `length` e mutações; depois, usar esses conceitos para percorrer listas completas.
 
 ## Conteúdo
 
@@ -45,12 +52,14 @@ Loops aparecerão somente como uma conexão opcional. Estudar este capítulo ago
 | [02-sintaxe.md](aula/02-sintaxe.md) | Tipagem, acesso, alteração e operações básicas |
 | [03-exemplos.md](aula/03-exemplos.md) | Exemplos progressivos sem depender de loops |
 | [04-mini-projeto.md](aula/04-mini-projeto.md) | Organizador de fila de estudos |
+| [05-arrays-e-loops.md](aula/05-arrays-e-loops.md) | Percursos, acumuladores e arrays bidimensionais |
 
 ### Exercícios
 
 | Arquivo | Descrição |
 |---------|-----------|
 | [lista.md](exercicios/lista.md) | Exercícios progressivos do capítulo |
+| [lista-arrays-e-loops.md](exercicios/lista-arrays-e-loops.md) | Integração de arrays com estruturas de repetição |
 | [solucoes/](exercicios/solucoes/) | Pasta para suas soluções |
 
 ### Avaliação
@@ -68,28 +77,28 @@ Loops aparecerão somente como uma conexão opcional. Estudar este capítulo ago
 | [erros-comuns.md](extras/erros-comuns.md) | Armadilhas frequentes e como diagnosticá-las |
 | [recursos.md](extras/recursos.md) | Documentação e roteiro de revisão |
 
-## Fluxo sugerido para hoje
+## Fluxo de estudo
 
 ```text
-TEORIA → SINTAXE → EXEMPLOS → DESAFIO RÁPIDO → MINI-PROJETO
+ETAPA 1
+TEORIA → SINTAXE → EXEMPLOS → MINI-PROJETO → LISTA FUNDAMENTAL
+
+ETAPA 2
+ARRAYS + LOOPS → LISTA DE INTEGRAÇÃO → PROVA
 ```
 
-1. Leia os quatro arquivos da aula na ordem.
-2. Execute e altere os exemplos pequenos.
-3. Faça o desafio rápido sem consultar a resposta.
-4. Monte o mini-projeto primeiro pelos requisitos e só depois compare com o código completo.
-5. Retorne à parte prática do Capítulo 04 antes de seguir para as avaliações formais.
+Se você já concluiu a lista fundamental, prossiga diretamente para `aula/05-arrays-e-loops.md` e depois faça os quatro exercícios da lista de integração.
 
 ## Pré-requisitos
 
-- Capítulos 00 a 03 concluídos.
+- Capítulos 00 a 04 concluídos.
 - Saber declarar variáveis e constantes.
 - Conhecer os tipos `string`, `number` e `boolean`.
 - Saber ler uma expressão e acompanhar mudanças de estado.
-- Loops não são necessários para a parte principal desta aula.
+- Saber usar `for`, loops aninhados, `continue`, `break` e acumuladores.
 
 ## Depois deste capítulo
 
-O Capítulo 06 mostrará métodos que percorrem, transformam, filtram e buscam dados. Aqui o foco é anterior a isso: entender a estrutura, suas posições e suas operações fundamentais.
+O Capítulo 06 mostrará métodos que percorrem, transformam, filtram e buscam dados, como `forEach`, `map`, `filter` e `find`. Aqui o foco continua sendo o percurso explícito, em que cada índice, valor e mudança de estado pode ser acompanhado.
 
-*Tempo estimado para esta introdução: 3–5 horas de estudo e prática.*
+*Tempo estimado para o capítulo completo: 5–7 horas de estudo e prática.*

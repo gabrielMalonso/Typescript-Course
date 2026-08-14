@@ -6,6 +6,22 @@
 
 ## Observações Gerais
 
+### 2026-08-14 - Extensão Arrays + Loops
+
+**Material criado:** `aula/05-arrays-e-loops.md` com `for` por índice, `for...of`, posição humana, acumuladores, `continue`, `break`, loops aninhados e cuidado ao alterar o tamanho durante o percurso.
+
+**Prática:** `exercicios/lista-arrays-e-loops.md` contém quatro exercícios progressivos: índice e posição, soma e contagem, controle do percurso e array bidimensional.
+
+**Avaliação:** adicionada a Questão 8 prática à prova. As Questões 5–7 foram reponderadas para manter teoria em 4 pontos, prática em 6 pontos e total em 10 pontos. Gabarito e rubricas atualizados.
+
+**Integração:** README, ementa, extras e catálogo do leitor foram atualizados. Métodos como `forEach`, `map`, `filter`, `find` e `reduce` continuam no Capítulo 06.
+
+**Validação:** 25 blocos TypeScript verificados; exercícios fundamentais recompilados em modo estrito; leitor aprovado em typecheck, lint e build. Página inicial e rotas da nova aula e da nova lista responderam com HTTP 200. Permanecem apenas os dois avisos antigos de Fast Refresh e o aviso de tamanho de chunk, sem impedir o build.
+
+**Publicação:** atualização local concluída; publicação no projeto existente aguarda confirmação explícita do aluno.
+
+**Próximo passo:** aluno ler a nova aula e entregar os quatro exercícios de integração.
+
 ### 2026-08-14 - Primeira Correção da Lista do Capítulo 05
 
 **Resultado:** os 11 exercícios fundamentais e o bônus foram entregues. Todos compilam isoladamente em modo estrito e executam sem erros; seis foram aprovados e seis precisam de ajustes.
@@ -15,6 +31,8 @@
 **Requisitos incompletos:** corrigir o comentário do `ex21.ts`; adicionar a explicação do `ex23.ts`; completar comentários e chamadas de exibição no `ex31.ts`; explicar os dois índices no `ex33.ts`.
 
 **Próximo passo:** conferir os seis ajustes, encerrar a lista fundamental e então criar a ampliação de arrays + loops combinada com o aluno.
+
+**Conclusão:** os ajustes foram aplicados e conferidos. O `ex11.ts` demonstrava corretamente a incompatibilidade com o tipo numérico, embora a formulação pudesse separar melhor `const` de `number[]`. Todos os 11 obrigatórios e o bônus estão aprovados; lista fundamental encerrada.
 
 ### 2026-08-14 - Sequência para Arrays + Loops
 

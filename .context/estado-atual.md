@@ -8,26 +8,27 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Capítulo atual** | 05 - Arrays: Fundamentos (prévia) |
-| **Fase atual** | Primeira correção dos exercícios concluída; 6 ajustes pendentes |
+| **Capítulo atual** | 05 - Arrays: Fundamentos |
+| **Fase atual** | Lista fundamental concluída; extensão Arrays + Loops disponível |
 | **Último capítulo concluído** | 04 - Estruturas de Repetição |
-| **Próximo passo** | Corrigir `ex11`, `ex13`, `ex21`, `ex23`, `ex31` e `ex33`; depois integrar arrays + loops |
+| **Próximo passo** | Ler `aula/05-arrays-e-loops.md` e fazer os quatro exercícios de integração |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-08-14
-- **Atividade:** Primeira correção dos exercícios fundamentais do Capítulo 05
+- **Atividade:** Encerramento da lista fundamental e criação da extensão Arrays + Loops
 - **O que foi feito:**
-  - Os 11 exercícios obrigatórios e o bônus foram entregues
-  - Todos os 12 arquivos compilam isoladamente em modo estrito e executam sem erros
-  - Seis arquivos foram aprovados e seis precisam de ajustes conceituais ou de requisitos
-  - Correção detalhada registrada em `05-arrays-fundamentos/exercicios/correcoes.md`
+  - Os ajustes da lista fundamental foram conferidos; os 11 exercícios e o bônus estão aprovados
+  - Criada `aula/05-arrays-e-loops.md` com `for`, `for...of`, controle e loops aninhados
+  - Criada `exercicios/lista-arrays-e-loops.md` com quatro exercícios progressivos
+  - Prova e gabarito atualizados com a Questão 8, preservando o total de 10 pontos
+  - README, ementa, extras e catálogo do leitor atualizados
 
 ---
 
-## Conteúdo do Capítulo 04
+## Conteúdo do Capítulo 05
 
 | Item | Status | Arquivo |
 |------|--------|---------|
@@ -35,9 +36,11 @@
 | Aula - Sintaxe | ✅ Criado | `aula/02-sintaxe.md` |
 | Aula - Exemplos | ✅ Criado | `aula/03-exemplos.md` |
 | Aula - Mini-projeto | ✅ Criado | `aula/04-mini-projeto.md` |
-| Exercícios | ✅ Criado | `exercicios/lista.md` (12 exercícios + bônus) |
-| Prova | ✅ Criado | prova.md |
-| Gabarito | ✅ Criado | `.context/gabarito-cap04.md` |
+| Aula - Arrays + Loops | ✅ Criado | `aula/05-arrays-e-loops.md` |
+| Exercícios fundamentais | ✅ Aprovados | `exercicios/lista.md` (11 + bônus) |
+| Exercícios Arrays + Loops | ✅ Criados | `exercicios/lista-arrays-e-loops.md` (4 exercícios) |
+| Prova | ✅ Atualizada, não liberada | `avaliacao/prova.md` |
+| Gabarito | ✅ Atualizado | `.context/gabarito-cap05.md` |
 | Erros Comuns | ✅ Criado | `extras/erros-comuns.md` |
 | Recursos | ✅ Criado | `extras/recursos.md` |
 
@@ -47,35 +50,26 @@
 
 - [x] Aluno entregar os 11 exercícios fundamentais e o bônus do Capítulo 05
 - [x] Realizar a primeira correção da lista do Capítulo 05
-- [ ] Aluno corrigir `ex11`, `ex13`, `ex21`, `ex23`, `ex31` e `ex33`
-- [ ] Conferir os ajustes e encerrar a lista fundamental
-- [ ] Após a lista atual, adicionar uma aula curta de arrays + loops ao Capítulo 05
-- [ ] Adicionar exercícios obrigatórios de integração e uma questão correspondente à prova
-- [ ] Manter `forEach`, `map`, `filter` e demais métodos avançados no Capítulo 06
+- [x] Aluno corrigir os pontos indicados na primeira revisão
+- [x] Conferir os ajustes e encerrar a lista fundamental
+- [x] Adicionar uma aula curta de arrays + loops ao Capítulo 05
+- [x] Adicionar exercícios obrigatórios de integração e uma questão correspondente à prova
+- [x] Manter `forEach`, `map`, `filter` e demais métodos avançados no Capítulo 06
+- [ ] Aluno ler a aula Arrays + Loops
+- [ ] Aluno resolver os quatro exercícios de integração
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
-
-- [x] Aluno estudar o conteúdo da aula
-- [x] Aluno concluir e validar o desafio rápido
-- [x] Aluno concluir e validar o mini-projeto
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
-- [x] Aluno entregar os 12 exercícios e o bônus opcional
-- [x] Realizar a primeira correção dos exercícios
-- [x] Aluno aplicar eventuais ajustes da correção
-- [x] Aluno fazer a prova
-- [x] Corrigir prova e dar nota
-- [x] Publicar a versão atualizada do `leitor/` no Sites
-- [x] Validar e publicar o Capítulo 05 no leitor
+- [ ] Publicar a extensão no projeto existente do Sites após confirmação do aluno
 
 ---
 
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Conferir os seis ajustes indicados em `exercicios/correcoes.md`
-2. Encerrar a lista fundamental após a validação
-3. Depois da lista, ampliar o Capítulo 05 com uma seção curta de arrays + loops
-4. Criar exercícios integrados e acrescentar uma questão correspondente à prova
-5. Não antecipar métodos do Capítulo 06 nessa ampliação
+1. Aluno ler `aula/05-arrays-e-loops.md`
+2. Aluno resolver os quatro exercícios de `exercicios/lista-arrays-e-loops.md`
+3. Corrigir a lista de integração
+4. Concluir o Projeto 1 antes da liberação formal da prova do Capítulo 05
 
 ---
 
@@ -83,8 +77,8 @@ Quando o aluno retornar:
 
 | Flag | Status |
 |------|--------|
-| Revisão pendente | Sim; seis arquivos do Capítulo 05 |
-| Prova pendente | Não; aprovado com 9,4 |
+| Revisão pendente | Não |
+| Prova pendente | Sim; prova do Capítulo 05 preparada, mas não liberada |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não |
 
@@ -146,6 +140,7 @@ Quando o aluno retornar:
 | 2026-08-13 | Conferência final e liberação da prova do Capítulo 04 | ~5min |
 | 2026-08-13 | Correção da prova do Capítulo 04 — nota 9,4 | ~15min |
 | 2026-08-14 | Primeira correção da lista do Capítulo 05 | ~15min |
+| 2026-08-14 | Lista fundamental encerrada e extensão Arrays + Loops criada | ~30min |
 
 ---
 

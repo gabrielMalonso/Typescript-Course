@@ -106,7 +106,10 @@
 - Modificando elementos
 - Propriedade `length`
 - Métodos básicos: `push`, `pop`, `shift`, `unshift`
-- Arrays multidimensionais (menção)
+- Percorrendo índices com `for`
+- Percorrendo valores com `for...of`
+- Acumuladores, `continue` e `break` aplicados a arrays
+- Arrays multidimensionais e loops aninhados
 
 ### Capítulo 06 - Arrays: Métodos Avançados
 - Iterando com `forEach`
