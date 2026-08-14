@@ -8,25 +8,22 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Capítulo atual** | Projeto 1 - Calculadora |
-| **Fase atual** | Capítulo 04 concluído; Projeto 1 pendente |
+| **Capítulo atual** | 05 - Arrays: Fundamentos (prévia) |
+| **Fase atual** | Primeira correção dos exercícios concluída; 6 ajustes pendentes |
 | **Último capítulo concluído** | 04 - Estruturas de Repetição |
-| **Próximo passo** | Preparar e iniciar o Projeto 1 antes da liberação formal do Capítulo 05 |
+| **Próximo passo** | Corrigir `ex11`, `ex13`, `ex21`, `ex23`, `ex31` e `ex33`; depois integrar arrays + loops |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-08-13
-- **Atividade:** Correção da prova do Capítulo 04
+- **Data:** 2026-08-14
+- **Atividade:** Primeira correção dos exercícios fundamentais do Capítulo 05
 - **O que foi feito:**
-  - Respostas teóricas corrigidas conforme a rubrica do capítulo
-  - Os três arquivos práticos compilaram isoladamente em modo estrito e executaram corretamente
-  - Parte prática recebeu pontuação integral: 6,0/6,0
-  - Único desconto: ausência das explicações separadas de `continue` e `break` na questão 1
-  - Nota final: 9,4/10 — aprovado
-  - Resultado detalhado salvo em `avaliacao/resultado.md`
-  - Capítulo 04 concluído; próximo passo formal é o Projeto 1
+  - Os 11 exercícios obrigatórios e o bônus foram entregues
+  - Todos os 12 arquivos compilam isoladamente em modo estrito e executam sem erros
+  - Seis arquivos foram aprovados e seis precisam de ajustes conceituais ou de requisitos
+  - Correção detalhada registrada em `05-arrays-fundamentos/exercicios/correcoes.md`
 
 ---
 
@@ -48,6 +45,15 @@
 
 ## Pendências
 
+- [x] Aluno entregar os 11 exercícios fundamentais e o bônus do Capítulo 05
+- [x] Realizar a primeira correção da lista do Capítulo 05
+- [ ] Aluno corrigir `ex11`, `ex13`, `ex21`, `ex23`, `ex31` e `ex33`
+- [ ] Conferir os ajustes e encerrar a lista fundamental
+- [ ] Após a lista atual, adicionar uma aula curta de arrays + loops ao Capítulo 05
+- [ ] Adicionar exercícios obrigatórios de integração e uma questão correspondente à prova
+- [ ] Manter `forEach`, `map`, `filter` e demais métodos avançados no Capítulo 06
+- [ ] Projeto 1 — Calculadora continua pendente na sequência formal
+
 - [x] Aluno estudar o conteúdo da aula
 - [x] Aluno concluir e validar o desafio rápido
 - [x] Aluno concluir e validar o mini-projeto
@@ -65,10 +71,11 @@
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Preparar e iniciar o Projeto 1 — Calculadora
-2. Concluir e avaliar o Projeto 1
-3. Liberar formalmente o Capítulo 05 após o projeto
-4. Não fazer ainda o bônus nem a prova do Capítulo 05
+1. Conferir os seis ajustes indicados em `exercicios/correcoes.md`
+2. Encerrar a lista fundamental após a validação
+3. Depois da lista, ampliar o Capítulo 05 com uma seção curta de arrays + loops
+4. Criar exercícios integrados e acrescentar uma questão correspondente à prova
+5. Não antecipar métodos do Capítulo 06 nessa ampliação
 
 ---
 
@@ -76,7 +83,7 @@ Quando o aluno retornar:
 
 | Flag | Status |
 |------|--------|
-| Revisão pendente | Não |
+| Revisão pendente | Sim; seis arquivos do Capítulo 05 |
 | Prova pendente | Não; aprovado com 9,4 |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não |
@@ -138,7 +145,8 @@ Quando o aluno retornar:
 | 2026-08-13 | Conferência do primeiro ajuste no exercício 2.2 | ~5min |
 | 2026-08-13 | Conferência final e liberação da prova do Capítulo 04 | ~5min |
 | 2026-08-13 | Correção da prova do Capítulo 04 — nota 9,4 | ~15min |
+| 2026-08-14 | Primeira correção da lista do Capítulo 05 | ~15min |
 
 ---
 
-*Última atualização: 2026-08-13*
+*Última atualização: 2026-08-14*

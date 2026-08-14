@@ -38,7 +38,7 @@
 
 | Cap | Título | Aula | Exercícios | Prova | Status |
 |-----|--------|------|------------|-------|--------|
-| 05 | Arrays: Fundamentos | Disponível (prévia) | - | - | Aguardando sequência formal |
+| 05 | Arrays: Fundamentos | ✓ | Em revisão | - | 6 ajustes pendentes |
 | 06 | Arrays: Métodos Avançados | - | - | - | Bloqueado |
 | 07 | Tuples | - | - | - | Bloqueado |
 | 08 | Funções: Fundamentos | - | - | - | Bloqueado |
@@ -100,7 +100,7 @@
 ## Estatísticas
 
 - **Capítulos concluídos:** 5/32
-- **Exercícios realizados:** 56 + 4 bônus
+- **Exercícios realizados:** 67 + 5 bônus
 - **Provas realizadas:** 5
 - **Média geral:** 9,0
 - **Projetos entregues:** 0/4
@@ -120,4 +120,4 @@
 
 ---
 
-*Última atualização: 13/08/2026*
+*Última atualização: 14/08/2026*

@@ -221,6 +221,7 @@ const primeiro = itens.shift(); // primeiro = "A"; itens = ["B", "C", "D"]
 const ultimo = itens.pop(); // ultimo = "D"; itens = ["B", "C"]
 ```
 
+## TABELA RESUMO (MUITO IMPORTANTE)
 | Operação | Local | Efeito | Retorno |
 |----------|-------|--------|---------|
 | `push(valor)` | Fim | Adiciona | Novo `length` |

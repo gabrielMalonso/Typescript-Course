@@ -158,10 +158,11 @@ Assim, o TypeScript sabe desde a declaração quais elementos poderão entrar de
 ```typescript
 const cores: string[] = ["azul", "verde"];
 
+// Nos casos abaixo, só estamos mexendo no conteúdo do array, mas mantemos a variável apontada para o mesmo array.
 cores[0] = "roxo"; // permitido
 cores.push("amarelo"); // permitido
 
-// cores = ["preto"]; // erro: não é possível reatribuir a constante
+// cores = ["preto"]; // erro: não é possível reatribuir a constante.
 ```
 
 Modelo mental:
@@ -236,6 +237,39 @@ remover         shift  [ elemento | elemento ] pop
 
 Alterar o início exige reposicionar os índices dos elementos existentes. Em listas muito grandes ou operações muito repetidas, isso pode custar mais trabalho que alterar o fim. Não precisamos otimizar antecipadamente; por enquanto, escolha a operação que representa corretamente a regra do problema.
 
+```typescript
+//EXEMPLO:
+const sequencia: number[] = [10, 20, 30, 40, 50];
+console.log(`Array inicial = ${sequencia}`);
+console.log(`Tamanho do array: ${sequencia.length}`);
+
+// unshift -> adicionando um item na primeira posição do array
+sequencia.unshift(9);
+console.log(`unshift -> adicionando um item na primeira posição do array`);
+console.log(sequencia);
+console.log(`Tamanho do array: ${sequencia.length}`);
+
+// shift -> removendo um item da primeira posição do array
+sequencia.shift();
+console.log(`shift -> removendo um item da primeira posição do array`);
+console.log(sequencia);
+console.log(`Tamanho do array: ${sequencia.length}`);
+
+// push -> adicionando um elemento no final do array
+sequencia.push(60);
+console.log(`push -> adicionando um elemento no final do array`);
+console.log(sequencia);
+console.log(`Tamanho do array: ${sequencia.length}`);
+
+// pop -> removendo um elemento do final do array
+sequencia.pop();
+console.log(`pop -> removendo um elemento do final do array`);
+console.log(sequencia);
+console.log(`Tamanho do array: ${sequencia.length}`);
+
+console.log(`VOLTAMOS AO ARRAY INICIAL, TAMANHO ${sequencia.length}`);
+```
+
 ## Cópia ou referência?
 
 Arrays não se comportam como números e strings quando são atribuídos a outra variável.
@@ -265,7 +299,7 @@ console.log(original); // ["X", "B"]
 
 ```text
 original ───────────────┐
-                       ├──→ ["A", "B"]
+                        ├──→ ["A", "B"]
 apelidoDoMesmoArray ────┘
 ```
 
@@ -326,8 +360,6 @@ Note apenas a relação entre as partes:
 - começa no índice `0`;
 - continua enquanto `indice < etapas.length`;
 - aumenta o índice após cada acesso.
-
-Se essa parte ainda parecer difícil, pule-a sem prejuízo e retorne depois da prática do Capítulo 04.
 
 ## Resumo
 
