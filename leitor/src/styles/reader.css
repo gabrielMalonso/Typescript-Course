@@ -530,6 +530,10 @@ html[data-theme='dark'] .status-em_andamento .progress-dot {
   letter-spacing: 0.04em;
 }
 
+.nav-card strong {
+  overflow-wrap: anywhere;
+}
+
 .nav-card.next {
   text-align: right;
 }
@@ -856,11 +860,13 @@ html[data-theme='dark'] .sidebar-backdrop {
   }
 
   .reader-nav {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
   }
 
-  .nav-card.next {
-    text-align: left;
+  .nav-card {
+    min-width: 0;
+    padding: 0.8rem 0.75rem;
   }
 
   .reader-crumb span:nth-child(n + 4) {
