@@ -59,7 +59,7 @@
 - [ ] Aluno resolver os quatro exercícios de integração
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
-- [ ] Publicar a extensão no projeto existente do Sites após confirmação do aluno
+- [x] Publicar a extensão no projeto existente do Sites, preservando a URL privada
 
 ---
 
