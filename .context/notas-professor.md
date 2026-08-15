@@ -614,6 +614,10 @@ Celular na mesma rede: URL Network do Vite.
 - [ ] Perguntar preferência de horário/frequência de estudo
 - [ ] Observar estilo de comunicação preferido
 
+## Manutenção do Leitor
+
+- 2026-08-15: favicon roxo do starter substituído pelo ícone TS fornecido pelo aluno.
+
 ---
 
 ## Métricas de Qualidade do Curso
@@ -627,4 +631,4 @@ Celular na mesma rede: URL Network do Vite.
 
 ---
 
-*Última atualização: 2026-08-13*
+*Última atualização: 2026-08-15*
