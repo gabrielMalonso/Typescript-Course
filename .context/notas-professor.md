@@ -6,6 +6,18 @@
 
 ## Observações Gerais
 
+### 2026-08-15 - Novo Capítulo 06: Funções — Fundamentos
+
+**Material definitivo:** depois da reorganização da ementa, o Capítulo 06 foi recriado sobre definição versus execução, declarações, expressões, arrow functions, parâmetros, argumentos, retornos, `void`, escopo local e funções como valores.
+
+**Limite pedagógico:** parâmetros opcionais, defaults, rest parameters, funções recebidas como parâmetros, callbacks e closures permanecem no Capítulo 08. Métodos avançados de arrays permanecem no Capítulo 09. As referências antigas do Capítulo 05 foram alinhadas a essa sequência.
+
+**Prática:** mini-projeto de análise de uma semana de estudos; lista com 12 exercícios obrigatórios e bônus; testes alternativos reforçam limites, arrays vazios, divisão por zero e diferença entre função e resultado da chamada. A prova mantém 40% teoria e 60% prática.
+
+**Validação e publicação:** soluções de referência verificadas em modo estrito; leitor aprovado em typecheck, lint e build; home, README e teoria responderam com HTTP 200. Versão 16 publicada no projeto privado existente, preservando a URL atual.
+
+**Próximo passo:** Gabriel deve iniciar pelo README e pela teoria. A prova está preparada, mas só será liberada depois da aula, mini-projeto e exercícios.
+
 ### 2026-08-15 - Reorganização pedagógica dos capítulos 06–10
 
 **Decisão:** a ementa passa a seguir a sequência Funções Fundamentais → Objetos → Callbacks e Recursos → Métodos Avançados de Arrays → Tuples. A mudança cria a ponte conceitual entre funções como valores, callbacks e métodos de coleção.

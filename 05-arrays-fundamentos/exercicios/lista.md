@@ -339,7 +339,7 @@ Crie `total = 0` com `let`. Use um único `for`, começando no índice `0` e con
 - exibir `Medição X: VALOR`, usando posição humana a partir de `1`;
 - somar cada elemento em `total`.
 
-Depois do loop, exiba o total. Não use métodos do Capítulo 06.
+Depois do loop, exiba o total. Não use métodos avançados de arrays.
 
 **Saída esperada:**
 

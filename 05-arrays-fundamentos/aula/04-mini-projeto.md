@@ -4,7 +4,7 @@
 
 Construir uma fila simples que registra atividades de estudo, recebe prioridades, corrige um item e remove atividades das duas extremidades.
 
-Este mini-projeto isola as operações fundamentais do array. Não use `for`, `while` nem métodos do Capítulo 06 nesta primeira versão: o foco é acompanhar diretamente cada mudança de estado.
+Este mini-projeto isola as operações fundamentais do array. Não use `for`, `while` nem métodos avançados de arrays nesta primeira versão: o foco é acompanhar diretamente cada mudança de estado.
 
 ## Conceitos aplicados
 

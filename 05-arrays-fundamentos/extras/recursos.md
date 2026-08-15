@@ -68,5 +68,5 @@ Depois de concluir os fundamentos:
 1. leia `aula/05-arrays-e-loops.md`;
 2. faça `exercicios/lista-arrays-e-loops.md`;
 3. use a documentação de loops do Capítulo 04 apenas para revisar `for`, `continue`, `break` ou loops aninhados;
-4. não antecipe métodos de transformação, busca ou filtragem do Capítulo 06;
+4. não antecipe métodos de transformação, busca ou filtragem do Capítulo 09;
 5. não realize a prova do Capítulo 05 antes da liberação.

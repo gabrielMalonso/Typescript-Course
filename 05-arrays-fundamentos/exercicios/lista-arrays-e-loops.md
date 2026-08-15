@@ -6,7 +6,7 @@
 - Resolva os quatro exercícios na ordem.
 - Crie os arquivos em `exercicios/solucoes/`.
 - Use apenas `for`, `for...of`, condicionais, `break`, `continue` e os fundamentos já estudados.
-- Não use métodos do Capítulo 06, como `forEach`, `map`, `filter`, `find` ou `reduce`.
+- Não use métodos avançados de arrays, como `forEach`, `map`, `filter`, `find` ou `reduce`; eles pertencem ao Capítulo 09.
 - Antes de executar, registre em comentário a saída ou o estado final previsto.
 - Faça o teste de limite indicado em cada exercício e depois restaure a versão principal.
 
