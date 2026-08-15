@@ -8,70 +8,61 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Capítulo atual** | 05 - Arrays: Fundamentos |
-| **Fase atual** | Prova aprovada; integração Arrays + Loops e Projeto 1 pendentes |
-| **Último capítulo concluído** | 04 - Estruturas de Repetição |
-| **Próximo passo** | Corrigir os quatro exercícios de integração e concluir o Projeto 1 |
+| **Capítulo atual** | 06 - Arrays: Métodos Avançados |
+| **Fase atual** | Material criado; pronto para iniciar a aula |
+| **Último capítulo concluído** | 05 - Arrays: Fundamentos — prova 9,5 |
+| **Próximo passo** | Ler `06-arrays-metodos-avancados/README.md` e `aula/01-teoria.md` |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-08-15
-- **Atividade:** Correção da prova do Capítulo 05
+- **Atividade:** Fechamento do Capítulo 05 e criação do Capítulo 06
 - **O que foi feito:**
-  - Prova corrigida com nota 9,5/10 — aprovado
-  - Quatro arquivos práticos compilados isoladamente em modo estrito e executados sem erros
-  - Domínio de arrays, referências e integração com loops confirmado
-  - Ajustes identificados: `length - 1` em array vazio, previsões omitidas na Q6 e variável solicitada na Q7
+  - Quatro exercícios de integração Arrays + Loops corrigidos e aprovados
+  - Capítulo 05 encerrado com nota 9,5/10 na prova
+  - Capítulo 06 completo criado com aula, mini-projeto, 13 exercícios + bônus, prova e extras
+  - Leitor atualizado para marcar o Capítulo 05 como concluído e o 06 como em andamento
+  - Projeto 1 mantido como pendência separada, sem bloquear o avanço solicitado
 
 ---
 
-## Conteúdo do Capítulo 05
+## Conteúdo do Capítulo 06
 
 | Item | Status | Arquivo |
 |------|--------|---------|
-| Aula - Teoria | ✅ Criado | `aula/01-teoria.md` |
-| Aula - Sintaxe | ✅ Criado | `aula/02-sintaxe.md` |
-| Aula - Exemplos | ✅ Criado | `aula/03-exemplos.md` |
-| Aula - Mini-projeto | ✅ Criado | `aula/04-mini-projeto.md` |
-| Aula - Arrays + Loops | ✅ Criado | `aula/05-arrays-e-loops.md` |
-| Exercícios fundamentais | ✅ Aprovados | `exercicios/lista.md` (11 + bônus) |
-| Exercícios Arrays + Loops | 📝 Entregues; correção pendente | `exercicios/lista-arrays-e-loops.md` (4 exercícios) |
-| Prova | ✅ Aprovada — 9,5 | `avaliacao/resultado.md` |
-| Gabarito | ✅ Atualizado | `.context/gabarito-cap05.md` |
-| Erros Comuns | ✅ Criado | `extras/erros-comuns.md` |
-| Recursos | ✅ Criado | `extras/recursos.md` |
+| Aula - Teoria | ✅ Criado | `06-arrays-metodos-avancados/aula/01-teoria.md` |
+| Aula - Sintaxe | ✅ Criado | `06-arrays-metodos-avancados/aula/02-sintaxe.md` |
+| Aula - Exemplos | ✅ Criado | `06-arrays-metodos-avancados/aula/03-exemplos.md` |
+| Aula - Mini-projeto | ✅ Criado | `06-arrays-metodos-avancados/aula/04-mini-projeto.md` |
+| Exercícios | ✅ Criados | `06-arrays-metodos-avancados/exercicios/lista.md` (13 + bônus) |
+| Prova | ✅ Preparada; bloqueada | `06-arrays-metodos-avancados/avaliacao/prova.md` |
+| Gabarito | ✅ Criado | `.context/gabarito-cap06.md` |
+| Erros Comuns | ✅ Criado | `06-arrays-metodos-avancados/extras/erros-comuns.md` |
+| Recursos | ✅ Criado | `06-arrays-metodos-avancados/extras/recursos.md` |
 
 ---
 
 ## Pendências
 
-- [x] Aluno entregar os 11 exercícios fundamentais e o bônus do Capítulo 05
-- [x] Realizar a primeira correção da lista do Capítulo 05
-- [x] Aluno corrigir os pontos indicados na primeira revisão
-- [x] Conferir os ajustes e encerrar a lista fundamental
-- [x] Adicionar uma aula curta de arrays + loops ao Capítulo 05
-- [x] Adicionar exercícios obrigatórios de integração e uma questão correspondente à prova
-- [x] Manter `forEach`, `map`, `filter` e demais métodos avançados no Capítulo 06
-- [x] Aluno ler a aula Arrays + Loops
-- [x] Aluno resolver os quatro exercícios de integração
-- [ ] Corrigir formalmente os quatro exercícios de integração
-- [x] Corrigir a prova do Capítulo 05 — nota 9,5
+- [x] Corrigir formalmente os quatro exercícios de integração do Capítulo 05
+- [x] Encerrar o Capítulo 05 — nota 9,5
+- [x] Criar o material completo do Capítulo 06
+- [ ] Aluno iniciar README e teoria do Capítulo 06
+- [ ] Aluno concluir mini-projeto e exercícios do Capítulo 06
+- [ ] Liberar e corrigir a prova do Capítulo 06
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
-- [x] Publicar a extensão no projeto existente do Sites, preservando a URL privada
-- [x] Publicar o ajuste visual dos controles no projeto existente do Sites
-- [x] Publicar o ajuste da navegação móvel no projeto existente do Sites
+- [ ] Publicar o Capítulo 06 no projeto existente do Sites, preservando a URL privada
 
 ---
 
 ## Próxima Sessão
 
-Quando o aluno retornar:
-1. Corrigir a lista de integração Arrays + Loops já entregue
-2. Concluir o Projeto 1 — Calculadora
-3. Encerrar formalmente o Capítulo 05 e avançar ao Capítulo 06
+1. Ler `06-arrays-metodos-avancados/README.md`.
+2. Estudar `aula/01-teoria.md`.
+3. Tirar dúvidas antes de seguir para a sintaxe.
 
 ---
 
@@ -79,8 +70,8 @@ Quando o aluno retornar:
 
 | Flag | Status |
 |------|--------|
-| Revisão pendente | Sim; lista de integração Arrays + Loops aguarda correção |
-| Prova pendente | Não; prova do Capítulo 05 aprovada com 9,5 |
+| Revisão pendente | Não |
+| Prova pendente | Não; prova do Capítulo 06 ainda não liberada |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não |
 
