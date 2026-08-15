@@ -618,6 +618,14 @@ Celular na mesma rede: URL Network do Vite.
 
 - 2026-08-15: favicon roxo do starter substituído pelo ícone TS fornecido pelo aluno.
 
+## 2026-08-15 — Prova do Capítulo 05
+
+**Resultado:** 9,5/10 — aprovado. Demonstrou domínio sólido de arrays tipados, mutações, retornos de métodos, referência compartilhada e integração com `for` e `continue`.
+
+**Pontos a reforçar:** em array vazio, `length - 1` vale `-1`; a leitura nesse índice é que resulta em `undefined`. Continuar cobrando requisitos não executáveis: estados previstos da Q6 foram omitidos e o cálculo pedido em variável na Q7 foi feito apenas inline.
+
+**Sequência:** a prova foi entregue apesar do bloqueio ainda escrito no enunciado. A entrega foi aceita e não precisa ser refeita. Antes do Capítulo 06, corrigir formalmente a lista Arrays + Loops e concluir o Projeto 1.
+
 ---
 
 ## Métricas de Qualidade do Curso
