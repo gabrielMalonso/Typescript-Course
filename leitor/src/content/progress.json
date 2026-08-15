@@ -27,6 +27,11 @@
   {
     "chapterId": "05-arrays-fundamentos",
     "label": "Cap. 05 — Arrays: Fundamentos",
+    "status": "concluido"
+  },
+  {
+    "chapterId": "06-arrays-metodos-avancados",
+    "label": "Cap. 06 — Arrays: Métodos Avançados",
     "status": "em_andamento"
   }
 ]

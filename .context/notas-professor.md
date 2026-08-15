@@ -6,6 +6,16 @@
 
 ## Observações Gerais
 
+### 2026-08-15 - Conclusão do Capítulo 05 e criação do Capítulo 06
+
+**Fechamento do Capítulo 05:** os quatro exercícios de integração Arrays + Loops foram compilados isoladamente em modo estrito e executados. Todos estão corretos; variações textuais são cosméticas. O capítulo foi encerrado com nota 9,5 na prova.
+
+**Avanço solicitado:** Gabriel informou que concluiu o capítulo e pediu o início do Capítulo 06. O Projeto 1 — Calculadora permanece como pendência separada e não bloqueia este avanço explícito.
+
+**Capítulo 06:** material completo criado sobre `forEach`, `map`, `filter`, `find`, `findIndex`, `some`, `every`, `reduce`, encadeamento e spread. Como funções formais aparecem somente nos Capítulos 08 e 09, callbacks foram apresentados como pequenas regras contextualmente tipadas, sem antecipar toda a teoria de funções.
+
+**Adaptação pedagógica:** 13 exercícios obrigatórios e bônus priorizam escolha pelo retorno, tratamento de `undefined` e `-1`, comportamento de arrays vazios, valor inicial do `reduce` e previsão de etapas intermediárias. A prova mantém 40% teoria e 60% prática.
+
 ### 2026-08-14 - Navegação Lateral no Celular
 
 **Interface:** os cartões “Anterior” e “Próximo” deixaram de empilhar em telas menores e agora permanecem em duas colunas iguais. O espaçamento e o padding foram reduzidos apenas no mobile, e nomes longos receberam quebra segura.

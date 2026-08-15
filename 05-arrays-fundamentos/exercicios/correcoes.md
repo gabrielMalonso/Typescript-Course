@@ -2,7 +2,22 @@
 
 **Data:** 14/08/2026  
 **Entrega:** 11 exercícios obrigatórios + bônus  
-**Resultado:** lista aprovada após revisão
+**Resultado:** listas fundamental e de integração aprovadas
+
+## Integração Arrays + Loops — 15/08/2026
+
+Os quatro exercícios de `lista-arrays-e-loops.md` compilam isoladamente em modo estrito, executam sem erros e produzem os valores esperados.
+
+| Exercício | Status | Feedback |
+|---|---|---|
+| L1 | ✅ Aprovado | `for` percorre todos os índices válidos, distingue índice de posição humana e conta três elementos. |
+| L2 | ✅ Aprovado | `for...of`, soma, condição, contador e média resultam em `80`, `2` e `20`. |
+| L3 | ✅ Aprovado | `continue` ignora `-1`, `break` impede alcançar `9` e os acumuladores resultam em `11` e `2`. |
+| L4 | ✅ Aprovado | Loops aninhados usam corretamente o tamanho da linha atual e visitam as cinco posições. |
+
+As variações de pontuação e capitalização nas mensagens são cosméticas. As previsões e os testes alternativos não ficaram registrados nos arquivos entregues; como o domínio dos mecanismos foi demonstrado na execução principal e na prova, isso permanece como hábito recomendado, não como bloqueio.
+
+**Conclusão:** prática de Arrays + Loops encerrada; Capítulo 05 concluído com prova 9,5.
 
 ## Validação técnica
 

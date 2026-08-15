@@ -9,13 +9,13 @@
 ## Visão Geral
 
 ```
-[████████                                          ] 16%
+[█████████                                         ] 19%
 ```
 
 | Módulo | Status | Progresso |
 |--------|--------|-----------|
 | 1 - Fundamentos Absolutos | Capítulos concluídos; projeto pendente | 5/5 capítulos |
-| 2 - Estruturas de Dados e Funções | Capítulo 05 em andamento | 0/8 capítulos |
+| 2 - Estruturas de Dados e Funções | Capítulo 06 disponível | 1/8 capítulos |
 | 3 - TypeScript Intermediário | Bloqueado | 0/10 capítulos |
 | 4 - TypeScript Avançado | Bloqueado | 0/9 capítulos |
 
@@ -38,8 +38,8 @@
 
 | Cap | Título | Aula | Exercícios | Prova | Status |
 |-----|--------|------|------------|-------|--------|
-| 05 | Arrays: Fundamentos | ✓ | Fundamentos ✓; integração entregue | ★ 9,5 | Fechamento pendente |
-| 06 | Arrays: Métodos Avançados | - | - | - | Bloqueado |
+| 05 | Arrays: Fundamentos | ✓ | ✓ | ★ 9,5 | Concluído |
+| 06 | Arrays: Métodos Avançados | ✓ | Disponível | - | Em andamento |
 | 07 | Tuples | - | - | - | Bloqueado |
 | 08 | Funções: Fundamentos | - | - | - | Bloqueado |
 | 09 | Funções: Conceitos Avançados | - | - | - | Bloqueado |
@@ -100,8 +100,8 @@
 
 ## Estatísticas
 
-- **Capítulos concluídos:** 5/32
-- **Exercícios realizados:** 71 + 5 bônus
+- **Capítulos concluídos:** 6/32
+- **Exercícios realizados:** 75 + 5 bônus
 - **Provas realizadas:** 6
 - **Média geral:** 9,1
 - **Projetos entregues:** 0/4

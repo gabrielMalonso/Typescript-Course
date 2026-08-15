@@ -99,6 +99,7 @@
 | 2026-08-13 | 04 | Mini-projeto | Aprovado após revisão | Domínio conceitual demonstrado | `continue`, contador, loops aninhados e encerramento coordenado validados nos quatro cenários propostos |
 | 2026-08-13 | 04 | 12 obrigatórios + bônus | Aprovados após revisão | 100% após ajustes | `ex22.ts` passou a mostrar todas as verificações e usar a constante da busca; limite externo do bônus corrigido; `%` ausente no 1.4 é cosmético |
 | 2026-08-14 | 05 | 11 obrigatórios + bônus | Aprovados após revisão | 100% após ajustes | `length` corrigido no 1.3; requisitos textuais completados; entendimento de tipo do 1.1 confirmado; todos compilam e executam |
+| 2026-08-15 | 05 | 4 de integração Arrays + Loops | Aprovados | 100% | Percursos, acumuladores, `continue`, `break` e loops aninhados corretos; previsões e testes alternativos não registrados ficam como recomendação |
 
 ---
 
