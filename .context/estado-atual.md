@@ -142,7 +142,8 @@ Quando o aluno retornar:
 | 2026-08-13 | Correção da prova do Capítulo 04 — nota 9,4 | ~15min |
 | 2026-08-14 | Primeira correção da lista do Capítulo 05 | ~15min |
 | 2026-08-14 | Lista fundamental encerrada e extensão Arrays + Loops criada | ~30min |
+| 2026-08-15 | Favicon do leitor atualizado para o ícone TS | ~5min |
 
 ---
 
-*Última atualização: 2026-08-14*
+*Última atualização: 2026-08-15*
