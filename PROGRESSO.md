@@ -38,7 +38,7 @@
 
 | Cap | Título | Aula | Exercícios | Prova | Status |
 |-----|--------|------|------------|-------|--------|
-| 05 | Arrays: Fundamentos | ✓ | Fundamentos ✓; integração pendente | - | Em andamento |
+| 05 | Arrays: Fundamentos | ✓ | Fundamentos ✓; integração entregue | ★ 9,5 | Fechamento pendente |
 | 06 | Arrays: Métodos Avançados | - | - | - | Bloqueado |
 | 07 | Tuples | - | - | - | Bloqueado |
 | 08 | Funções: Fundamentos | - | - | - | Bloqueado |
@@ -94,15 +94,16 @@
 | 03/08/2026 | 02 - Tipos Primitivos | Prova | 9,0 | Aprovado |
 | 10/08/2026 | 03 - Operadores e Estruturas Condicionais | Prova | 8,7 | Aprovado |
 | 13/08/2026 | 04 - Estruturas de Repetição | Prova | 9,4 | Aprovado |
+| 15/08/2026 | 05 - Arrays: Fundamentos | Prova | 9,5 | Aprovado |
 
 ---
 
 ## Estatísticas
 
 - **Capítulos concluídos:** 5/32
-- **Exercícios realizados:** 67 + 5 bônus
-- **Provas realizadas:** 5
-- **Média geral:** 9,0
+- **Exercícios realizados:** 71 + 5 bônus
+- **Provas realizadas:** 6
+- **Média geral:** 9,1
 - **Projetos entregues:** 0/4
 
 ---
@@ -120,4 +121,4 @@
 
 ---
 
-*Última atualização: 14/08/2026*
+*Última atualização: 15/08/2026*

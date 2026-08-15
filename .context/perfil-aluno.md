@@ -155,7 +155,8 @@
 - Obteve 9,4 na prova do Capítulo 04, com pontuação integral na prática; o único desconto veio de duas explicações teóricas solicitadas e omitidas
 - Na primeira lista de arrays, demonstrou domínio das operações básicas; precisa reforçar a diferença entre `length` e último índice e separar o efeito de `const` da tipagem dos elementos
 - Corrigiu prontamente `length` versus último índice e completou os requisitos da lista de arrays; o entendimento sobre incompatibilidade de tipos já estava presente na explicação original
+- Obteve 9,5 na prova do Capítulo 05; dominou operações, retornos, referência compartilhada e percurso com `for`, mas confundiu `length - 1` com `undefined` no caso do array vazio
 
 ---
 
-*Última atualização: 2026-08-14*
+*Última atualização: 2026-08-15*

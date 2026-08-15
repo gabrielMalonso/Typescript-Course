@@ -8,8 +8,8 @@
 
 | Métrica | Valor |
 |---------|-------|
-| **Total de provas** | 5 |
-| **Média geral** | 9,0 |
+| **Total de provas** | 6 |
+| **Média geral** | 9,1 |
 | **Maior nota** | 9,5 |
 | **Menor nota** | 8,5 |
 | **Provas com nota < 7** | 0 |
@@ -36,7 +36,7 @@
 
 | Capítulo | Data | Nota | Principais Erros | Observações |
 |----------|------|------|------------------|-------------|
-| 05 | - | - | - | - |
+| 05 | 2026-08-15 | 9,5 | `ultimoIndice` de array vazio; previsões da Q6 e variável da Q7 omitidas | Aprovado; quatro arquivos práticos compilam e executam |
 | 06 | - | - | - | - |
 | 07 | - | - | - | - |
 | 08 | - | - | - | - |
@@ -45,7 +45,7 @@
 | 11 | - | - | - | - |
 | 12 | - | - | - | - |
 
-**Média do Módulo 2:** -
+**Média do Módulo 2:** 9,5
 
 ---
 
@@ -135,8 +135,8 @@
 | Tipos primitivos | 9,0 | 9,0 | Domínio sólido; reforçar conferência da saída |
 | Operadores e estruturas condicionais | 8,7 | 8,7 | Bom domínio; reforçar testes de limites e caminhos alternativos |
 | Estruturas de repetição | 9,4 | 9,4 | Domínio sólido; parte prática integralmente correta |
-| Arrays: fundamentos | Lista qualitativa | Aprovado após revisão | Operações, índices, `length`, referência e array bidimensional consolidados |
+| Arrays: fundamentos | Lista qualitativa | 9,5 | Domínio sólido; reforçar `length - 1` quando o array está vazio e requisitos textuais |
 
 ---
 
-*Última atualização: 2026-08-14*
+*Última atualização: 2026-08-15*

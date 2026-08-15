@@ -9,21 +9,21 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 05 - Arrays: Fundamentos |
-| **Fase atual** | Lista fundamental concluída; extensão Arrays + Loops disponível |
+| **Fase atual** | Prova aprovada; integração Arrays + Loops e Projeto 1 pendentes |
 | **Último capítulo concluído** | 04 - Estruturas de Repetição |
-| **Próximo passo** | Ler `aula/05-arrays-e-loops.md` e fazer os quatro exercícios de integração |
+| **Próximo passo** | Corrigir os quatro exercícios de integração e concluir o Projeto 1 |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-08-14
-- **Atividade:** Ajuste da navegação entre aulas no celular
+- **Data:** 2026-08-15
+- **Atividade:** Correção da prova do Capítulo 05
 - **O que foi feito:**
-  - Cartões “Anterior” e “Próximo” mantidos lado a lado também em telas estreitas
-  - Colunas móveis equilibradas com `minmax(0, 1fr)` e espaçamento reduzido
-  - Nomes longos podem quebrar linha sem ampliar ou sobrepor os cartões
-  - Layout validado nas larguras de 390 px e 320 px
+  - Prova corrigida com nota 9,5/10 — aprovado
+  - Quatro arquivos práticos compilados isoladamente em modo estrito e executados sem erros
+  - Domínio de arrays, referências e integração com loops confirmado
+  - Ajustes identificados: `length - 1` em array vazio, previsões omitidas na Q6 e variável solicitada na Q7
 
 ---
 
@@ -37,8 +37,8 @@
 | Aula - Mini-projeto | ✅ Criado | `aula/04-mini-projeto.md` |
 | Aula - Arrays + Loops | ✅ Criado | `aula/05-arrays-e-loops.md` |
 | Exercícios fundamentais | ✅ Aprovados | `exercicios/lista.md` (11 + bônus) |
-| Exercícios Arrays + Loops | ✅ Criados | `exercicios/lista-arrays-e-loops.md` (4 exercícios) |
-| Prova | ✅ Atualizada, não liberada | `avaliacao/prova.md` |
+| Exercícios Arrays + Loops | 📝 Entregues; correção pendente | `exercicios/lista-arrays-e-loops.md` (4 exercícios) |
+| Prova | ✅ Aprovada — 9,5 | `avaliacao/resultado.md` |
 | Gabarito | ✅ Atualizado | `.context/gabarito-cap05.md` |
 | Erros Comuns | ✅ Criado | `extras/erros-comuns.md` |
 | Recursos | ✅ Criado | `extras/recursos.md` |
@@ -54,8 +54,10 @@
 - [x] Adicionar uma aula curta de arrays + loops ao Capítulo 05
 - [x] Adicionar exercícios obrigatórios de integração e uma questão correspondente à prova
 - [x] Manter `forEach`, `map`, `filter` e demais métodos avançados no Capítulo 06
-- [ ] Aluno ler a aula Arrays + Loops
-- [ ] Aluno resolver os quatro exercícios de integração
+- [x] Aluno ler a aula Arrays + Loops
+- [x] Aluno resolver os quatro exercícios de integração
+- [ ] Corrigir formalmente os quatro exercícios de integração
+- [x] Corrigir a prova do Capítulo 05 — nota 9,5
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [x] Publicar a extensão no projeto existente do Sites, preservando a URL privada
@@ -67,10 +69,9 @@
 ## Próxima Sessão
 
 Quando o aluno retornar:
-1. Aluno ler `aula/05-arrays-e-loops.md`
-2. Aluno resolver os quatro exercícios de `exercicios/lista-arrays-e-loops.md`
-3. Corrigir a lista de integração
-4. Concluir o Projeto 1 antes da liberação formal da prova do Capítulo 05
+1. Corrigir a lista de integração Arrays + Loops já entregue
+2. Concluir o Projeto 1 — Calculadora
+3. Encerrar formalmente o Capítulo 05 e avançar ao Capítulo 06
 
 ---
 
@@ -78,8 +79,8 @@ Quando o aluno retornar:
 
 | Flag | Status |
 |------|--------|
-| Revisão pendente | Não |
-| Prova pendente | Sim; prova do Capítulo 05 preparada, mas não liberada |
+| Revisão pendente | Sim; lista de integração Arrays + Loops aguarda correção |
+| Prova pendente | Não; prova do Capítulo 05 aprovada com 9,5 |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não |
 
@@ -143,6 +144,7 @@ Quando o aluno retornar:
 | 2026-08-14 | Primeira correção da lista do Capítulo 05 | ~15min |
 | 2026-08-14 | Lista fundamental encerrada e extensão Arrays + Loops criada | ~30min |
 | 2026-08-15 | Favicon do leitor atualizado para o ícone TS | ~5min |
+| 2026-08-15 | Correção da prova do Capítulo 05 — nota 9,5 | ~15min |
 
 ---
 
