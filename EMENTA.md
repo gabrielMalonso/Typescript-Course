@@ -111,7 +111,49 @@
 - Acumuladores, `continue` e `break` aplicados a arrays
 - Arrays multidimensionais e loops aninhados
 
-### Capítulo 06 - Arrays: Métodos Avançados
+### Capítulo 06 - Funções: Fundamentos
+- O que são funções
+- Declaração de função (function declaration)
+- Parâmetros e argumentos
+- Tipagem de parâmetros
+- Tipagem de retorno
+- Funções que não retornam: `void`
+- Expressão de função (function expression)
+- Arrow functions (`=>`)
+- Funções como valores
+- Diferença entre definir uma função e executar uma função
+
+### Capítulo 07 - Objetos
+- O que são objetos
+- Criando objetos literais
+- Propriedades
+- Acessando propriedades: notação de ponto vs colchetes
+- Modificando propriedades
+- Objetos aninhados
+- Tipagem de objetos inline
+- Propriedades opcionais
+- Métodos
+- Spread operator com objetos
+- Destructuring de objetos
+
+### Capítulo 08 - Funções: Callbacks e Recursos
+- Parâmetros opcionais (`?`)
+- Parâmetros com valor default
+- Rest parameters (`...args`)
+- Funções anônimas
+- Funções como valores
+- Funções como parâmetros
+- O que é um callback
+- Tipando callbacks
+- Callbacks com arrow functions
+- Retorno de callbacks
+- Closures (introdução)
+- Extra: IIFE (Immediately Invoked Function Expression)
+
+### Capítulo 09 - Arrays: Métodos Avançados
+- Revisão: arrays de valores
+- Arrays de objetos
+- Métodos de array que recebem callbacks
 - Iterando com `forEach`
 - Transformando com `map`
 - Filtrando com `filter`
@@ -121,46 +163,18 @@
 - Encadeamento de métodos
 - Spread operator com arrays (`...`)
 
-### Capítulo 07 - Tuples
-- O que são tuples (arrays de tamanho fixo)
+### Capítulo 10 - Tuples
+- O que são tuples
 - Diferença entre array e tuple
 - Criando e tipando tuples
-- Acessando elementos de tuples
+- Acessando elementos
 - Tuples com elementos opcionais
 - Readonly tuples
-- Casos de uso: coordenadas, retorno múltiplo
 - Destructuring em tuples
-
-### Capítulo 08 - Funções: Fundamentos
-- O que são funções
-- Declaração de função (function declaration)
-- Expressão de função (function expression)
-- Arrow functions (`=>`)
-- Parâmetros e argumentos
-- Tipagem de parâmetros
-- Tipagem de retorno
-- Funções que não retornam: `void`
-
-### Capítulo 09 - Funções: Conceitos Avançados
-- Parâmetros opcionais (`?`)
-- Parâmetros com valor default
-- Rest parameters (`...args`)
-- Funções como parâmetros (callbacks)
-- Tipando callbacks
-- Funções anônimas
-- IIFE (Immediately Invoked Function Expression)
-- Closures (introdução)
-
-### Capítulo 10 - Objetos
-- O que são objetos
-- Criando objetos literais
-- Propriedades e métodos
-- Acessando propriedades: notação de ponto vs colchetes
-- Objetos aninhados
-- Tipagem de objetos inline
-- Propriedades opcionais em objetos
-- Spread operator com objetos
-- Destructuring de objetos
+- Casos de uso: coordenadas
+- Casos de uso: pares chave/valor
+- Tuples como retorno de funções
+- Quando preferir objeto em vez de tuple
 
 ### Capítulo 11 - Type Alias, Union e Intersection
 - Criando tipos customizados com `type`

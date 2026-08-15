@@ -134,7 +134,7 @@ const copia = [...original];
 console.log(original === copia); // false
 ```
 
-O spread cria outro array. A cópia é superficial; esse limite será importante quando estudarmos objetos.
+O spread cria outro array, mas a cópia é superficial. Se seus elementos forem objetos, os dois arrays ainda apontarão para os mesmos objetos internos.
 
 ## Checklist de diagnóstico
 

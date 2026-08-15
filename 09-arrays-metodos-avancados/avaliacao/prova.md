@@ -1,4 +1,4 @@
-# Prova — Capítulo 06: Arrays — Métodos Avançados
+# Prova — Capítulo 09: Arrays — Métodos Avançados
 
 > **PROVA PREPARADA, MAS AINDA NÃO LIBERADA.**
 >
@@ -15,7 +15,7 @@
 ## Orientações
 
 - Não altere este enunciado.
-- Use apenas conteúdos estudados até o Capítulo 06.
+- Use apenas conteúdos estudados até o Capítulo 09.
 - Não use loops explícitos nas questões práticas.
 - Use valor inicial em todo `reduce`.
 - Registre previsões antes de executar quando solicitado.
@@ -31,7 +31,7 @@
 | `questao07.ts` | Questão 7 |
 | `questao08.ts` | Questão 8 |
 
-Todos devem ficar em `06-arrays-metodos-avancados/avaliacao/`.
+Todos devem ficar em `09-arrays-metodos-avancados/avaliacao/`.
 
 ---
 

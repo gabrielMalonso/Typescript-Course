@@ -5,7 +5,7 @@
 Ao final desta aula, você será capaz de:
 
 - explicar por que existem diferentes métodos de percurso;
-- ler uma callback curta sem precisar dominar funções por completo;
+- relacionar callbacks já estudados com os métodos de arrays;
 - prever a forma do retorno de cada família de métodos;
 - distinguir métodos que criam arrays de métodos que devolvem um valor;
 - reconhecer quando um loop explícito ainda é a escolha mais clara.

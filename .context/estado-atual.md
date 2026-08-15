@@ -8,39 +8,37 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Capítulo atual** | 06 - Arrays: Métodos Avançados |
-| **Fase atual** | Material criado; pronto para iniciar a aula |
+| **Capítulo atual** | 06 - Funções: Fundamentos |
+| **Fase atual** | Ementa reorganizada; material do novo Capítulo 06 ainda será preparado |
 | **Último capítulo concluído** | 05 - Arrays: Fundamentos — prova 9,5 |
-| **Próximo passo** | Ler `06-arrays-metodos-avancados/README.md` e `aula/01-teoria.md` |
+| **Próximo passo** | Revisar e realocar os materiais dos capítulos 06–10 conforme a nova ementa |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-08-15
-- **Atividade:** Fechamento do Capítulo 05 e criação do Capítulo 06
+- **Atividade:** Reorganização pedagógica da ementa entre os capítulos 06 e 10
 - **O que foi feito:**
-  - Quatro exercícios de integração Arrays + Loops corrigidos e aprovados
-  - Capítulo 05 encerrado com nota 9,5/10 na prova
-  - Capítulo 06 completo criado com aula, mini-projeto, 13 exercícios + bônus, prova e extras
-  - Leitor atualizado e versão 14 publicada no mesmo endereço privado
-  - Projeto 1 mantido como pendência separada, sem bloquear o avanço solicitado
+  - Funções fundamentais movidas para o Capítulo 06
+  - Objetos movidos para o Capítulo 07
+  - Callbacks e recursos de funções organizados no Capítulo 08
+  - Métodos avançados de arrays movidos para o Capítulo 09
+  - Tuples movidas para o Capítulo 10
+  - Tópicos internos ajustados para que cada capítulo prepare o seguinte
+  - Pasta, gabarito, títulos, caminhos e progresso do antigo Capítulo 06 realocados para o Capítulo 09
 
 ---
 
-## Conteúdo do Capítulo 06
+## Situação dos materiais 06–10
 
-| Item | Status | Arquivo |
-|------|--------|---------|
-| Aula - Teoria | ✅ Criado | `06-arrays-metodos-avancados/aula/01-teoria.md` |
-| Aula - Sintaxe | ✅ Criado | `06-arrays-metodos-avancados/aula/02-sintaxe.md` |
-| Aula - Exemplos | ✅ Criado | `06-arrays-metodos-avancados/aula/03-exemplos.md` |
-| Aula - Mini-projeto | ✅ Criado | `06-arrays-metodos-avancados/aula/04-mini-projeto.md` |
-| Exercícios | ✅ Criados | `06-arrays-metodos-avancados/exercicios/lista.md` (13 + bônus) |
-| Prova | ✅ Preparada; bloqueada | `06-arrays-metodos-avancados/avaliacao/prova.md` |
-| Gabarito | ✅ Criado | `.context/gabarito-cap06.md` |
-| Erros Comuns | ✅ Criado | `06-arrays-metodos-avancados/extras/erros-comuns.md` |
-| Recursos | ✅ Criado | `06-arrays-metodos-avancados/extras/recursos.md` |
+| Item | Status |
+|------|--------|
+| Nova sequência na `EMENTA.md` | ✅ Definida |
+| Novo Capítulo 06 — Funções: Fundamentos | ⏳ Material pendente |
+| Capítulos 07, 08 e 10 | ⏳ Materiais pendentes |
+| Material `09-arrays-metodos-avancados/` | ✅ Renomeado; revisão didática específica ainda pendente |
+| Leitor e `PROGRESSO.md` | ⚠️ Aguardam a revisão dos materiais antes da atualização |
 
 ---
 
@@ -48,10 +46,12 @@
 
 - [x] Corrigir formalmente os quatro exercícios de integração do Capítulo 05
 - [x] Encerrar o Capítulo 05 — nota 9,5
-- [x] Criar o material completo do Capítulo 06
-- [ ] Aluno iniciar README e teoria do Capítulo 06
-- [ ] Aluno concluir mini-projeto e exercícios do Capítulo 06
-- [ ] Liberar e corrigir a prova do Capítulo 06
+- [x] Reorganizar os capítulos 06–10 na ementa
+- [ ] Criar o novo material do Capítulo 06 — Funções: Fundamentos
+- [x] Realocar o antigo Capítulo 06 para o novo Capítulo 09
+- [ ] Adaptar o conteúdo do Capítulo 09 para incluir arrays de objetos e os pré-requisitos novos
+- [ ] Criar ou revisar os materiais dos capítulos 07, 08 e 10
+- [ ] Atualizar leitor e `PROGRESSO.md` após estabilizar os materiais
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [x] Publicar o Capítulo 06 no projeto existente do Sites, preservando a URL privada
@@ -60,9 +60,9 @@
 
 ## Próxima Sessão
 
-1. Ler `06-arrays-metodos-avancados/README.md`.
-2. Estudar `aula/01-teoria.md`.
-3. Tirar dúvidas antes de seguir para a sintaxe.
+1. Revisar o escopo definitivo do novo Capítulo 06.
+2. Criar o material de Funções: Fundamentos.
+3. Revisar o Capítulo 09 depois que os materiais 06–08 estiverem estabilizados.
 
 ---
 
@@ -70,8 +70,8 @@
 
 | Flag | Status |
 |------|--------|
-| Revisão pendente | Não |
-| Prova pendente | Não; prova do Capítulo 06 ainda não liberada |
+| Revisão pendente | Sim; materiais 06–10 precisam acompanhar a nova ementa |
+| Prova pendente | Não; novo Capítulo 06 ainda não foi gerado |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não |
 
@@ -137,6 +137,7 @@
 | 2026-08-15 | Favicon do leitor atualizado para o ícone TS | ~5min |
 | 2026-08-15 | Correção da prova do Capítulo 05 — nota 9,5 | ~15min |
 | 2026-08-15 | Fechamento do Capítulo 05 e criação/publicação do Capítulo 06 | ~35min |
+| 2026-08-15 | Reorganização da ementa e realocação de Métodos Avançados para o Capítulo 09 | ~15min |
 
 ---
 

@@ -1,4 +1,4 @@
-# Capítulo 06: Arrays — Métodos Avançados
+# Capítulo 09: Arrays — Métodos Avançados
 
 ## Módulo 2 — Estruturas de Dados e Funções
 
@@ -51,14 +51,16 @@ TEORIA → SINTAXE → EXEMPLOS → MINI-PROJETO → EXERCÍCIOS → PROVA
 
 ## Pré-requisitos
 
-- Capítulo 05 concluído.
+- Capítulos 05 a 08 concluídos.
 - Saber percorrer arrays com `for` e `for...of`.
 - Entender índices, `length`, tipos de arrays e arrays vazios.
 - Saber usar comparações, condicionais e acumuladores.
+- Saber definir funções, trabalhar com objetos e tipar callbacks.
+- Entender como uma função é passada como argumento para outra função.
 
-## Limite deste capítulo
+## Conexão com os capítulos anteriores
 
-Você aprenderá a **ler e escrever callbacks curtos** porque os métodos precisam deles. O estudo completo de funções, parâmetros, retornos e callbacks virá nos Capítulos 08 e 09. Aqui, trate a arrow function como uma pequena regra entregue ao método.
+Os Capítulos 06 e 08 apresentaram funções, arrow functions e callbacks; o Capítulo 07 apresentou objetos. Agora esses conceitos serão aplicados em conjunto aos métodos de arrays, inclusive em arrays de objetos durante a revisão específica deste material.
 
 ## Compilação dos exercícios
 
@@ -70,6 +72,6 @@ npx tsc --strict --noEmit --target ES2022 caminho/do/arquivo.ts
 
 ## Depois deste capítulo
 
-O Capítulo 07 apresentará tuples: estruturas parecidas com arrays, mas com posições, tipos e tamanho conhecidos.
+O Capítulo 10 apresentará tuples e discutirá quando uma estrutura posicional é mais adequada que um objeto.
 
 *Tempo estimado: 6–8 horas de estudo e prática.*
