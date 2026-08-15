@@ -1,9 +1,9 @@
-# Exercícios — Capítulo 06: Arrays — Métodos Avançados
+# Exercícios — Capítulo 09: Arrays — Métodos Avançados
 
 ## Instruções gerais
 
 - Resolva na ordem apresentada.
-- Crie os arquivos diretamente em `06-arrays-metodos-avancados/exercicios/`.
+- Crie os arquivos diretamente em `09-arrays-metodos-avancados/exercicios/`.
 - Não use loops explícitos, exceto se o enunciado pedir uma comparação.
 - Use somente os conteúdos estudados até este capítulo.
 - Antes de executar, registre em comentário o tipo e o valor previstos para cada resultado.

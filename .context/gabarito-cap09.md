@@ -1,4 +1,4 @@
-# Gabarito Interno — Capítulo 06: Arrays — Métodos Avançados
+# Gabarito Interno — Capítulo 09: Arrays — Métodos Avançados
 
 > Uso exclusivo do professor. Não publicar no leitor.
 

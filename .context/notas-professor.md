@@ -6,6 +6,16 @@
 
 ## Observações Gerais
 
+### 2026-08-15 - Reorganização pedagógica dos capítulos 06–10
+
+**Decisão:** a ementa passa a seguir a sequência Funções Fundamentais → Objetos → Callbacks e Recursos → Métodos Avançados de Arrays → Tuples. A mudança cria a ponte conceitual entre funções como valores, callbacks e métodos de coleção.
+
+**Ajustes de conteúdo:** o Capítulo 06 agora diferencia definição e execução de funções; o 07 prepara arrays de objetos; o 08 concentra callbacks e deixa IIFE como extra; o 09 aplica callbacks a arrays de valores e objetos; o 10 inclui tuples como retorno e a escolha entre tuple e objeto.
+
+**Primeira etapa:** somente a ementa foi reorganizada. O antigo material de métodos avançados foi mantido temporariamente em `06-arrays-metodos-avancados/` para evitar alterar os materiais antes de estabilizar a nova sequência.
+
+**Realocação posterior:** o material foi movido para `09-arrays-metodos-avancados/`, e o gabarito interno passou a ser `gabarito-cap09.md`. Títulos, caminhos, pré-requisitos, progresso e catálogo do leitor foram alinhados à nova numeração. A revisão didática para incorporar arrays de objetos permanece como etapa futura.
+
 ### 2026-08-15 - Conclusão do Capítulo 05 e criação do Capítulo 06
 
 **Fechamento do Capítulo 05:** os quatro exercícios de integração Arrays + Loops foram compilados isoladamente em modo estrito e executados. Todos estão corretos; variações textuais são cosméticas. O capítulo foi encerrado com nota 9,5 na prova.

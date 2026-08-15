@@ -15,7 +15,7 @@
 | Módulo | Status | Progresso |
 |--------|--------|-----------|
 | 1 - Fundamentos Absolutos | Capítulos concluídos; projeto pendente | 5/5 capítulos |
-| 2 - Estruturas de Dados e Funções | Capítulo 06 disponível | 1/8 capítulos |
+| 2 - Estruturas de Dados e Funções | Capítulo 06 em preparação | 1/8 capítulos |
 | 3 - TypeScript Intermediário | Bloqueado | 0/10 capítulos |
 | 4 - TypeScript Avançado | Bloqueado | 0/9 capítulos |
 
@@ -39,11 +39,11 @@
 | Cap | Título | Aula | Exercícios | Prova | Status |
 |-----|--------|------|------------|-------|--------|
 | 05 | Arrays: Fundamentos | ✓ | ✓ | ★ 9,5 | Concluído |
-| 06 | Arrays: Métodos Avançados | ✓ | Disponível | - | Em andamento |
-| 07 | Tuples | - | - | - | Bloqueado |
-| 08 | Funções: Fundamentos | - | - | - | Bloqueado |
-| 09 | Funções: Conceitos Avançados | - | - | - | Bloqueado |
-| 10 | Objetos | - | - | - | Bloqueado |
+| 06 | Funções: Fundamentos | - | - | - | Em preparação |
+| 07 | Objetos | - | - | - | Bloqueado |
+| 08 | Funções: Callbacks e Recursos | - | - | - | Bloqueado |
+| 09 | Arrays: Métodos Avançados | ✓ | Disponível | - | Material preparado; bloqueado |
+| 10 | Tuples | - | - | - | Bloqueado |
 | 11 | Type Alias, Union e Intersection | - | - | - | Bloqueado |
 | 12 | Enums | - | - | - | Bloqueado |
 | P2 | Projeto: Gerenciador de Contatos | - | - | - | Bloqueado |
