@@ -16,6 +16,8 @@
 
 **Realocação posterior:** o material foi movido para `09-arrays-metodos-avancados/`, e o gabarito interno passou a ser `gabarito-cap09.md`. Títulos, caminhos, pré-requisitos, progresso e catálogo do leitor foram alinhados à nova numeração. A revisão didática para incorporar arrays de objetos permanece como etapa futura.
 
+**Validação e publicação:** leitor aprovado em typecheck, lint e build; home, README e teoria do Capítulo 09 responderam com HTTP 200. A versão 15 foi publicada no projeto privado existente, preservando `https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site`.
+
 ### 2026-08-15 - Conclusão do Capítulo 05 e criação do Capítulo 06
 
 **Fechamento do Capítulo 05:** os quatro exercícios de integração Arrays + Loops foram compilados isoladamente em modo estrito e executados. Todos estão corretos; variações textuais são cosméticas. O capítulo foi encerrado com nota 9,5 na prova.

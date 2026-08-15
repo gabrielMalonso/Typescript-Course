@@ -27,6 +27,7 @@
   - Tuples movidas para o Capítulo 10
   - Tópicos internos ajustados para que cada capítulo prepare o seguinte
   - Pasta, gabarito, títulos, caminhos e progresso do antigo Capítulo 06 realocados para o Capítulo 09
+  - Leitor validado e versão 15 publicada no mesmo endereço privado
 
 ---
 
