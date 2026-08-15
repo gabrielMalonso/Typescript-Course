@@ -20,7 +20,7 @@
 
 - Use somente os conteúdos estudados até este capítulo.
 - Use loops somente na Questão 8.
-- Não use métodos do Capítulo 06, como `forEach`, `map`, `filter`, `find` ou `reduce`.
+- Não use métodos avançados de arrays, como `forEach`, `map`, `filter`, `find` ou `reduce`.
 - Nas Questões 5–7, use apenas acesso por índice, `length`, `push`, `pop`, `shift` e `unshift`, além dos fundamentos anteriores.
 - Use tipos precisos, nomes descritivos em `camelCase` e ponto e vírgula.
 - Compile, execute e teste exatamente a versão entregue.
@@ -250,7 +250,7 @@ Em um comentário final, explique por que `indice + 1` é usado somente no rótu
 - [ ] Não alterei `prova.md`.
 - [ ] Respondi integralmente às questões 1–4 em `resposta.md`.
 - [ ] Criei separadamente `questao05.ts`, `questao06.ts`, `questao07.ts` e `questao08.ts`.
-- [ ] Usei loop somente na Questão 8 e não usei métodos do Capítulo 06.
+- [ ] Usei loop somente na Questão 8 e não usei métodos avançados de arrays.
 - [ ] Compilei e executei os quatro arquivos `.ts` entregues.
 - [ ] Conferi valores, ordem, retornos e quantidades finais.
 - [ ] Verifiquei que a versão entregue é a mesma que foi testada.

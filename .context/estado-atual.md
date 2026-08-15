@@ -9,25 +9,24 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 06 - Funções: Fundamentos |
-| **Fase atual** | Ementa reorganizada; material do novo Capítulo 06 ainda será preparado |
+| **Fase atual** | Material disponível; iniciar aula |
 | **Último capítulo concluído** | 05 - Arrays: Fundamentos — prova 9,5 |
-| **Próximo passo** | Revisar e realocar os materiais dos capítulos 06–10 conforme a nova ementa |
+| **Próximo passo** | Ler o README e `aula/01-teoria.md` do Capítulo 06 |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-08-15
-- **Atividade:** Reorganização pedagógica da ementa entre os capítulos 06 e 10
+- **Atividade:** Criação do novo Capítulo 06 — Funções: Fundamentos
 - **O que foi feito:**
-  - Funções fundamentais movidas para o Capítulo 06
-  - Objetos movidos para o Capítulo 07
-  - Callbacks e recursos de funções organizados no Capítulo 08
-  - Métodos avançados de arrays movidos para o Capítulo 09
-  - Tuples movidas para o Capítulo 10
-  - Tópicos internos ajustados para que cada capítulo prepare o seguinte
-  - Pasta, gabarito, títulos, caminhos e progresso do antigo Capítulo 06 realocados para o Capítulo 09
-  - Leitor validado e versão 15 publicada no mesmo endereço privado
+  - Aula completa criada em quatro etapas: teoria, sintaxe, exemplos e mini-projeto
+  - Lista criada com 12 exercícios obrigatórios e bônus
+  - Prova preparada com 40% de teoria e 60% de prática
+  - Extras e gabarito confidencial criados
+  - Escopo limitado a funções fundamentais; callbacks permanecem no Capítulo 08
+  - Referências antigas do Capítulo 05 corrigidas para apontar métodos avançados ao Capítulo 09
+  - Leitor validado e versão 16 publicada no mesmo endereço privado
 
 ---
 
@@ -36,10 +35,10 @@
 | Item | Status |
 |------|--------|
 | Nova sequência na `EMENTA.md` | ✅ Definida |
-| Novo Capítulo 06 — Funções: Fundamentos | ⏳ Material pendente |
+| Novo Capítulo 06 — Funções: Fundamentos | ✅ Material completo |
 | Capítulos 07, 08 e 10 | ⏳ Materiais pendentes |
 | Material `09-arrays-metodos-avancados/` | ✅ Renomeado; revisão didática específica ainda pendente |
-| Leitor e `PROGRESSO.md` | ⚠️ Aguardam a revisão dos materiais antes da atualização |
+| Leitor e `PROGRESSO.md` | ✅ Atualizados para o Capítulo 06 |
 
 ---
 
@@ -48,22 +47,22 @@
 - [x] Corrigir formalmente os quatro exercícios de integração do Capítulo 05
 - [x] Encerrar o Capítulo 05 — nota 9,5
 - [x] Reorganizar os capítulos 06–10 na ementa
-- [ ] Criar o novo material do Capítulo 06 — Funções: Fundamentos
+- [x] Criar o novo material do Capítulo 06 — Funções: Fundamentos
 - [x] Realocar o antigo Capítulo 06 para o novo Capítulo 09
 - [ ] Adaptar o conteúdo do Capítulo 09 para incluir arrays de objetos e os pré-requisitos novos
 - [ ] Criar ou revisar os materiais dos capítulos 07, 08 e 10
-- [ ] Atualizar leitor e `PROGRESSO.md` após estabilizar os materiais
+- [x] Atualizar leitor e `PROGRESSO.md` com o novo Capítulo 06
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
-- [x] Publicar o Capítulo 06 no projeto existente do Sites, preservando a URL privada
+- [x] Publicar o novo Capítulo 06 no projeto existente do Sites, preservando a URL privada
 
 ---
 
 ## Próxima Sessão
 
-1. Revisar o escopo definitivo do novo Capítulo 06.
-2. Criar o material de Funções: Fundamentos.
-3. Revisar o Capítulo 09 depois que os materiais 06–08 estiverem estabilizados.
+1. Ler o README e `aula/01-teoria.md` do Capítulo 06.
+2. Avançar por sintaxe, exemplos e mini-projeto.
+3. Iniciar a lista somente depois de concluir a aula.
 
 ---
 
@@ -71,8 +70,8 @@
 
 | Flag | Status |
 |------|--------|
-| Revisão pendente | Sim; materiais 06–10 precisam acompanhar a nova ementa |
-| Prova pendente | Não; novo Capítulo 06 ainda não foi gerado |
+| Revisão pendente | Sim; materiais 07–10 ainda precisam acompanhar a nova ementa |
+| Prova pendente | Sim; preparada, mas bloqueada até aula e exercícios |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não |
 
@@ -82,6 +81,7 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-08-15 | Criação do novo Capítulo 06 — Funções: Fundamentos | ~35min |
 | 2025-01-12 | Estruturação inicial do curso | ~1h |
 | 2025-01-12 | Criação do Capítulo 00 completo | ~30min |
 | 2025-01-25 | Verificação de exemplos + liberação para exercícios | ~10min |

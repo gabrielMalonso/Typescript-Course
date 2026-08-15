@@ -221,7 +221,7 @@ for (let indice = 0; indice < fila.length; indice++) {
 
 Por enquanto, percorra o array para ler, contar, somar ou localizar valores. Quando o problema exigir mudanças, faça-as antes ou depois do percurso, salvo se o enunciado explicar cuidadosamente a regra.
 
-## O que continua reservado ao Capítulo 06
+## O que continua reservado a capítulos futuros
 
 Ainda não use `forEach`, `map`, `filter`, `find`, `some`, `every` ou `reduce`. Eles oferecem outras formas de percorrer e transformar arrays, mas ficam mais fáceis de entender depois que a relação entre índice, valor, condição e acumulador está sólida.
 

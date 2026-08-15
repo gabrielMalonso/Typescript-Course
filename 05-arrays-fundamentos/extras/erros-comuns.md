@@ -158,9 +158,9 @@ console.log(original === outroNome); // true
 
 **Sintoma:** a solução funciona, mas esconde justamente o acesso por índice, as mudanças de estado ou os retornos que o exercício quer praticar.
 
-**Diagnóstico:** a lista fundamental isola índices, `length` e mutações; a lista de integração pratica `for` e `for...of`. Métodos do Capítulo 06 podem esconder justamente o mecanismo que o exercício quer tornar visível.
+**Diagnóstico:** a lista fundamental isola índices, `length` e mutações; a lista de integração pratica `for` e `for...of`. Métodos avançados de arrays podem esconder justamente o mecanismo que o exercício quer tornar visível.
 
-**Correção:** respeite o recurso pedido em cada etapa. Nos exercícios fundamentais, use operações diretas. Na integração, use os loops indicados. Deixe `forEach`, `map`, `filter`, `find` e `reduce` para o Capítulo 06.
+**Correção:** respeite o recurso pedido em cada etapa. Nos exercícios fundamentais, use operações diretas. Na integração, use os loops indicados. Deixe `forEach`, `map`, `filter`, `find` e `reduce` para o Capítulo 09, depois dos fundamentos de funções e callbacks.
 
 ## Checklist rápido de diagnóstico
 

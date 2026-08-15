@@ -30,6 +30,11 @@
     "status": "concluido"
   },
   {
+    "chapterId": "06-funcoes-fundamentos",
+    "label": "Cap. 06 — Funções: Fundamentos",
+    "status": "em_andamento"
+  },
+  {
     "chapterId": "09-arrays-metodos-avancados",
     "label": "Cap. 09 — Arrays: Métodos Avançados",
     "status": "pendente"

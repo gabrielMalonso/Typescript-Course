@@ -99,6 +99,6 @@ Se você já concluiu a lista fundamental, prossiga diretamente para `aula/05-ar
 
 ## Depois deste capítulo
 
-O Capítulo 06 mostrará métodos que percorrem, transformam, filtram e buscam dados, como `forEach`, `map`, `filter` e `find`. Aqui o foco continua sendo o percurso explícito, em que cada índice, valor e mudança de estado pode ser acompanhado.
+O Capítulo 06 introduzirá funções, parâmetros e retornos. Esses fundamentos serão necessários para compreender callbacks e, depois, métodos que percorrem e transformam arrays. Aqui o foco continua sendo o percurso explícito, em que cada índice, valor e mudança de estado pode ser acompanhado.
 
 *Tempo estimado para o capítulo completo: 5–7 horas de estudo e prática.*

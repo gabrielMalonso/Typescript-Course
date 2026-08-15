@@ -15,7 +15,7 @@
 | Módulo | Status | Progresso |
 |--------|--------|-----------|
 | 1 - Fundamentos Absolutos | Capítulos concluídos; projeto pendente | 5/5 capítulos |
-| 2 - Estruturas de Dados e Funções | Capítulo 06 em preparação | 1/8 capítulos |
+| 2 - Estruturas de Dados e Funções | Capítulo 06 em andamento | 1/8 capítulos |
 | 3 - TypeScript Intermediário | Bloqueado | 0/10 capítulos |
 | 4 - TypeScript Avançado | Bloqueado | 0/9 capítulos |
 
@@ -39,7 +39,7 @@
 | Cap | Título | Aula | Exercícios | Prova | Status |
 |-----|--------|------|------------|-------|--------|
 | 05 | Arrays: Fundamentos | ✓ | ✓ | ★ 9,5 | Concluído |
-| 06 | Funções: Fundamentos | - | - | - | Em preparação |
+| 06 | Funções: Fundamentos | Disponível | Disponível | Preparada | Em andamento |
 | 07 | Objetos | - | - | - | Bloqueado |
 | 08 | Funções: Callbacks e Recursos | - | - | - | Bloqueado |
 | 09 | Arrays: Métodos Avançados | ✓ | Disponível | - | Material preparado; bloqueado |
