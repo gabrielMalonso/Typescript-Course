@@ -16,6 +16,12 @@
 
 **Adaptação pedagógica:** 13 exercícios obrigatórios e bônus priorizam escolha pelo retorno, tratamento de `undefined` e `-1`, comportamento de arrays vazios, valor inicial do `reduce` e previsão de etapas intermediárias. A prova mantém 40% teoria e 60% prática.
 
+**Validação:** 93 blocos TypeScript passaram por verificação de sintaxe; as cinco soluções completas de referência passaram em tipagem estrita com alvo ES2022. Leitor aprovado em typecheck, lint e build; home, README e teoria do Capítulo 06 responderam com HTTP 200. Permanecem apenas dois avisos antigos de Fast Refresh e o aviso de tamanho de chunk, sem impedir o build.
+
+**Publicação:** versão 14 publicada com sucesso no projeto privado existente, preservando `https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site`.
+
+**Próximo passo:** iniciar o README e `aula/01-teoria.md` do Capítulo 06.
+
 ### 2026-08-14 - Navegação Lateral no Celular
 
 **Interface:** os cartões “Anterior” e “Próximo” deixaram de empilhar em telas menores e agora permanecem em duas colunas iguais. O espaçamento e o padding foram reduzidos apenas no mobile, e nomes longos receberam quebra segura.

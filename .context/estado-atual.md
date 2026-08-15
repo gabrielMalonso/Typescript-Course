@@ -23,7 +23,7 @@
   - Quatro exercícios de integração Arrays + Loops corrigidos e aprovados
   - Capítulo 05 encerrado com nota 9,5/10 na prova
   - Capítulo 06 completo criado com aula, mini-projeto, 13 exercícios + bônus, prova e extras
-  - Leitor atualizado para marcar o Capítulo 05 como concluído e o 06 como em andamento
+  - Leitor atualizado e versão 14 publicada no mesmo endereço privado
   - Projeto 1 mantido como pendência separada, sem bloquear o avanço solicitado
 
 ---
@@ -54,7 +54,7 @@
 - [ ] Liberar e corrigir a prova do Capítulo 06
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
-- [ ] Publicar o Capítulo 06 no projeto existente do Sites, preservando a URL privada
+- [x] Publicar o Capítulo 06 no projeto existente do Sites, preservando a URL privada
 
 ---
 
@@ -136,6 +136,7 @@
 | 2026-08-14 | Lista fundamental encerrada e extensão Arrays + Loops criada | ~30min |
 | 2026-08-15 | Favicon do leitor atualizado para o ícone TS | ~5min |
 | 2026-08-15 | Correção da prova do Capítulo 05 — nota 9,5 | ~15min |
+| 2026-08-15 | Fechamento do Capítulo 05 e criação/publicação do Capítulo 06 | ~35min |
 
 ---
 
