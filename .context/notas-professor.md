@@ -6,6 +6,16 @@
 
 ## Observações Gerais
 
+### 2026-08-16 - Leitura de código real incorporada ao curso
+
+**Objetivo:** aproximar cada capítulo do motivo principal do aluno para estudar TypeScript: ler projetos reais, acompanhar a lógica e orientar melhor implementações.
+
+**Formato definitivo:** antes da lista de exercícios, usar quatro recortes — um explicado, um guiado e dois interpretados pelo aluno. Cada recorte contém somente definição, chamada, argumentos, retorno e contexto indispensável. A redução de dez para quatro evita que a etapa atrase o avanço do curso.
+
+**Capítulo 06:** selecionados dois exemplos do AgenDoc (`dateKeyToMonthKey` e `limitPatientAlertNotes`) e dois do WhatsApp Audio Transcriber (`formatBytes` e `wrapTranscription`). JSX, objetos e regex aparecem apenas no nível necessário para seguir o fluxo da função.
+
+**Validação e publicação:** fontes originais foram consultadas sem alteração; o novo material foi integrado ao leitor e publicado como versão 18 no site privado existente.
+
 ### 2026-08-16 - Complementações na teoria do Capítulo 06
 
 **Iniciativa do aluno:** Gabriel ampliou a comparação entre declaração, expressão e arrow function com explicações intermediárias, diagramas e uma introdução ao hoisting. A complementação indica que ele consolida melhor conceitos quando explicita visualmente as diferenças de sintaxe e comportamento.
