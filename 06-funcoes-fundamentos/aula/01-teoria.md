@@ -180,7 +180,42 @@ function somar(a: number, b: number): number {
 }
 ```
 
+É a forma clássica.
+
+Uma característica importante é o **hoisting**. Você pode fazer:
+
+```ts
+const resultado = somar(10, 20);
+
+function somar(a: number, b: number): number {
+  return a + b;
+}
+```
+
+E funciona.
+
+Mentalmente:
+
+```text
+somar(10, 20)
+      ↓
+function somar(...)
+```
+
+O JavaScript disponibiliza essa declaração antes de chegar fisicamente nela no arquivo. Esse comportamento vale para **declarações de função**; expressões e arrows guardadas com `const` não podem ser chamadas antes da inicialização da constante.
+
+Para funções principais do programa, essa forma é muito boa:
+
+```ts
+function calcularTotal() {}
+function carregarUsuario() {}
+function salvarPedido() {}
+function enviarEmail() {}
+```
+
 ### Expressão de função
+
+Aqui você cria uma função e coloca essa função dentro de uma variável:
 
 ```typescript
 const subtrair = function (a: number, b: number): number {
@@ -188,12 +223,142 @@ const subtrair = function (a: number, b: number): number {
 };
 ```
 
+Olhe a estrutura:
+
+```text
+const subtrair = function (...) { ... };
+      ↑              ↑
+   variável        função
+```
+
+É conceitualmente semelhante a fazer:
+
+```ts
+const idade = 30;
+const nome = "Gabriel";
+const subtrair = function (a: number, b: number): number {
+  return a - b;
+};
+```
+
+A variável `subtrair` guarda uma **função como valor**.
+
+Por isso o nome **expressão de função**: a função aparece como uma expressão cujo valor está sendo atribuído a alguma coisa.
+
+E você também pode passar uma função diretamente:
+
+```ts
+setTimeout(function () {
+  console.log("Olá");
+}, 1000);
+```
+
+Nesse exemplo, a função entregue a `setTimeout` é um **callback**. Por enquanto, basta reconhecer que a função está sendo usada como valor; callbacks serão estudados com calma no Capítulo 08.
+
 ### Arrow function
+
+Arrow function é uma sintaxe mais moderna:
 
 ```typescript
 const multiplicar = (a: number, b: number): number => {
   return a * b;
 };
+```
+
+Visualmente, compare:
+
+```ts
+const multiplicar = function (a: number, b: number) {
+  return a * b;
+};
+```
+
+com:
+
+```ts
+const multiplicar = (a: number, b: number) => {
+  return a * b;
+};
+```
+
+Sim: **para um exemplo simples desses, parece que só trocaram `function` por `=>`.**
+
+E funcionalmente, nesse exemplo:
+
+```ts
+multiplicar(5, 10);
+```
+
+o resultado será exatamente o mesmo.
+
+Mas arrow functions têm algumas características próprias. Neste capítulo, a principal é a sintaxe curta; diferenças envolvendo `this` ficam para um momento posterior.
+
+---
+
+#### A vantagem mais óbvia da arrow: sintaxe curta
+
+Esta:
+
+```ts
+const multiplicar = (a: number, b: number) => {
+  return a * b;
+};
+```
+
+pode virar:
+
+```ts
+const multiplicar = (a: number, b: number) => a * b;
+```
+
+Quando existe apenas uma expressão, você pode eliminar:
+
+```text
+{ }
+return
+```
+
+Então:
+
+```ts
+const dobro = (numero: number) => numero * 2;
+```
+
+é equivalente a:
+
+```ts
+const dobro = function (numero: number) {
+  return numero * 2;
+};
+```
+
+Isso aparece **o tempo inteiro** em TypeScript/JavaScript moderno.
+
+#### O jeito mais útil de enxergar as três
+
+```text
+DECLARAÇÃO
+
+function calcular() {}
+         │
+         └── função nomeada diretamente
+```
+
+```text
+EXPRESSÃO
+
+const calcular = function () {};
+      │              │
+      └── variável   └── função
+```
+
+```text
+ARROW
+
+const calcular = () => {};
+      ↑          └───────┘
+ identificador   arrow function
+ da constante
 ```
 
 As três podem representar o mesmo tipo de contrato. Neste capítulo, prefira declaração para funções principais nomeadas e arrow functions curtas quando guardar a função em uma constante tornar a intenção clara.

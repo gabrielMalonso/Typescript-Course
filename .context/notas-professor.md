@@ -6,6 +6,14 @@
 
 ## Observações Gerais
 
+### 2026-08-16 - Complementações na teoria do Capítulo 06
+
+**Iniciativa do aluno:** Gabriel ampliou a comparação entre declaração, expressão e arrow function com explicações intermediárias, diagramas e uma introdução ao hoisting. A complementação indica que ele consolida melhor conceitos quando explicita visualmente as diferenças de sintaxe e comportamento.
+
+**Revisão:** conteúdo preservado com ajustes pequenos: remoção de repetição, tipagem uniforme, correção de um exemplo abreviado, delimitação do hoisting às declarações e identificação de `setTimeout` apenas como prévia de callbacks do Capítulo 08.
+
+**Validação e publicação:** todos os blocos TypeScript da teoria passaram pela verificação de sintaxe; leitor aprovado nos controles do projeto. Versão 17 publicada no site privado existente.
+
 ### 2026-08-15 - Novo Capítulo 06: Funções — Fundamentos
 
 **Material definitivo:** depois da reorganização da ementa, o Capítulo 06 foi recriado sobre definição versus execução, declarações, expressões, arrow functions, parâmetros, argumentos, retornos, `void`, escopo local e funções como valores.

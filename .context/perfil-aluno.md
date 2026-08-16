@@ -33,6 +33,7 @@
 | **Ritmo** | Diário, gradual |
 | **Profundidade** | Quer entender o "porquê", não só o "como" |
 | **Analogias** | Bem-vindas, com contextos variados e adequados ao conceito |
+| **Complementação** | Gosta de ampliar a teoria com comparações visuais e explicações intermediárias para consolidar o modelo mental |
 
 **Ajuste de ritmo em 2026-08-03:** aluno está confortável com a base e prefere acelerar quando temas próximos puderem ser integrados, compensando com 30–50% mais exercícios e variedade.
 
