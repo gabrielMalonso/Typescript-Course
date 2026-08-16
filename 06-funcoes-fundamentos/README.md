@@ -44,6 +44,7 @@ O tipo da função forma um contrato:
 | [02-sintaxe.md](aula/02-sintaxe.md) | Declaração, expressão, arrow, parâmetros, retorno e `void` |
 | [03-exemplos.md](aula/03-exemplos.md) | Exemplos progressivos e comparação entre formas |
 | [04-mini-projeto.md](aula/04-mini-projeto.md) | Analisador de uma semana de estudos |
+| [05-leitura-de-codigo-real.md](aula/05-leitura-de-codigo-real.md) | Definição, chamada e fluxo de funções em dois projetos reais |
 
 ### Exercícios
 
@@ -70,7 +71,7 @@ O tipo da função forma um contrato:
 ## Fluxo de estudo
 
 ```text
-TEORIA → SINTAXE → EXEMPLOS → MINI-PROJETO → EXERCÍCIOS → PROVA
+TEORIA → SINTAXE → EXEMPLOS → MINI-PROJETO → LEITURA REAL → EXERCÍCIOS → PROVA
 ```
 
 ## Pré-requisitos
@@ -88,4 +89,4 @@ Aqui, funções já podem ser guardadas em variáveis e chamadas por outro nome.
 
 O Capítulo 07 usará funções junto a objetos. Depois, o Capítulo 08 aprofundará funções como parâmetros e callbacks, preparando o uso consciente dos métodos avançados de arrays no Capítulo 09.
 
-*Tempo estimado: 5–7 horas de estudo e prática.*
+*Tempo estimado: 5–7 horas de estudo e prática, mais 30–45 minutos de leitura de código real.*

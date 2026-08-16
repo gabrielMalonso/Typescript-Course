@@ -72,7 +72,8 @@ XX-nome-do-capitulo/
 │   ├── 01-teoria.md             # Conceitos e explicações
 │   ├── 02-sintaxe.md            # Regras da linguagem
 │   ├── 03-exemplos.md           # Exemplos comentados
-│   └── 04-mini-projeto.md       # Aplicação guiada
+│   ├── 04-mini-projeto.md       # Aplicação guiada
+│   └── 05-leitura-codigo-real.md  # Leitura de trechos dos projetos do aluno
 │
 ├── exercicios/
 │   ├── lista.md                 # Enunciados
@@ -106,18 +107,21 @@ projetos/PXX-nome-do-projeto/
 ### Ciclo de um Capítulo
 
 ```
-AULA → EXERCÍCIOS → PROVA → (próximo capítulo ou revisão)
+AULA → LEITURA DE CÓDIGO REAL → EXERCÍCIOS → PROVA → (próximo capítulo ou revisão)
 ```
 
 ### Cenário 1: Começando Capítulo Novo
 
 1. Aluno indica que vai começar capítulo X
 2. Claude verifica `.context/` e confirma prontidão
-3. Aluno lê arquivos em `aula/` na ordem (01, 02, 03, 04)
+3. Aluno lê teoria, sintaxe e exemplos na ordem indicada
 4. Aluno tira dúvidas durante leitura
 5. Aluno faz mini-projeto guiado
-6. Aluno anota em `DIARIO.md`
-7. Claude atualiza `.context/`
+6. Antes da lista, aluno realiza a sessão curta de leitura de código real
+7. A sessão usa 4 recortes: 1 explicado, 1 guiado e 2 interpretados pelo aluno
+8. Cada recorte mostra somente definição, chamada, argumentos, retorno e contexto indispensável
+9. Aluno anota em `DIARIO.md`
+10. Claude atualiza `.context/`
 
 ### Cenário 2: Sessão de Exercícios
 
@@ -192,8 +196,9 @@ Cada capítulo combina:
 2. **Sintaxe e regras**: A parte técnica e formal
 3. **Exemplos práticos**: Código comentado e explicado
 4. **Aplicação imediata**: Mini-projeto que usa o conceito
-5. **Prática repetida**: Exercícios variados
-6. **Avaliação**: Prova para consolidar
+5. **Leitura de código real**: Quatro recortes de projetos do aluno, sem antecipar conteúdo futuro
+6. **Prática repetida**: Exercícios variados
+7. **Avaliação**: Prova para consolidar
 
 ### Princípios
 
@@ -201,6 +206,14 @@ Cada capítulo combina:
 - Errar faz parte - o importante é entender o erro
 - Preferir explicações com analogias do mundo real
 - Código sempre comentado e explicado linha a linha quando necessário
+
+### Leitura de Código Real
+
+- Usar como fontes principais `/Volumes/SSD1TB/Projetos/agendoc` e `/Volumes/SSD1TB/Projetos/whatsapp-audio-transcriber`.
+- Consultar as instruções próprias de cada projeto e não alterar seus arquivos durante a preparação da aula.
+- Selecionar somente mecanismos relacionados ao capítulo atual; sintaxe futura deve ser isolada e explicada como contexto, não cobrada.
+- Manter quatro recortes por capítulo: um explicado, um guiado e dois para o aluno interpretar.
+- Mostrar definição e chamada no mesmo bloco, com `// ...` para omitir código intermediário sem relevância.
 
 ---
 
@@ -287,7 +300,8 @@ O aluno solicita a criação de um novo capítulo quando:
 ┌─────────────────────────────────────────────────────┐
 │  AGENTE 1: Criação da Aula                          │
 │  Cria: 01-teoria.md, 02-sintaxe.md,                 │
-│        03-exemplos.md, 04-mini-projeto.md           │
+│        03-exemplos.md, 04-mini-projeto.md e         │
+│        05-leitura-codigo-real.md                    │
 │  Input: Ementa + contexto do aluno                  │
 └─────────────────┬───────────────────────────────────┘
                   ▼
@@ -316,6 +330,7 @@ O aluno solicita a criação de um novo capítulo quando:
 │  Claude verifica:                                   │
 │  - Exercícios cobrem o que a aula ensinou           │
 │  - Prova não cobra conteúdo não explicado           │
+│  - Leitura real tem só 4 recortes e contexto mínimo │
 │  - Dificuldade compatível com momento do aluno      │
 └─────────────────┬───────────────────────────────────┘
                   ▼

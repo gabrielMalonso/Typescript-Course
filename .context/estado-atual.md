@@ -9,22 +9,23 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 06 - Funções: Fundamentos |
-| **Fase atual** | Aula — teoria em leitura e complementação |
+| **Fase atual** | Aula — teoria em leitura; sessão de código real preparada |
 | **Último capítulo concluído** | 05 - Arrays: Fundamentos — prova 9,5 |
-| **Próximo passo** | Continuar a leitura de `aula/01-teoria.md` e avançar para a sintaxe |
+| **Próximo passo** | Concluir as aulas e realizar `aula/05-leitura-de-codigo-real.md` antes da lista |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-08-16
-- **Atividade:** Revisão das complementações do aluno na teoria de funções
+- **Atividade:** Criação da sessão curta de leitura de código real
 - **O que foi feito:**
-  - Complementações sobre declaração, expressão e arrow functions revisadas
-  - Repetição removida e exemplos mantidos com TypeScript válido
-  - Limite do hoisting esclarecido para declarações de função
-  - `setTimeout` identificado somente como prévia de callbacks do Capítulo 08
-  - Leitor validado e versão 17 publicada no mesmo endereço privado
+  - Fluxo do curso ampliado com leitura de código real antes dos exercícios
+  - Formato compacto definido: 1 bloco explicado, 1 guiado e 2 interpretados pelo aluno
+  - Dois recortes do AgenDoc e dois do WhatsApp Audio Transcriber selecionados
+  - Cada recorte mostra somente definição, chamada e fluxo essencial dos dados
+  - Conteúdo futuro de React, objetos e regex isolado sem virar requisito
+  - Leitor validado e versão 18 publicada no mesmo endereço privado
 
 ---
 
@@ -53,14 +54,15 @@
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [x] Publicar o novo Capítulo 06 no projeto existente do Sites, preservando a URL privada
+- [ ] Concluir a sessão de leitura de código real do Capítulo 06 antes da lista
 
 ---
 
 ## Próxima Sessão
 
-1. Concluir a leitura de `aula/01-teoria.md` do Capítulo 06.
-2. Avançar para `aula/02-sintaxe.md`.
-3. Iniciar a lista somente depois de concluir a aula.
+1. Concluir teoria, sintaxe, exemplos e mini-projeto do Capítulo 06.
+2. Realizar a sessão curta em `aula/05-leitura-de-codigo-real.md`.
+3. Iniciar a lista depois da correção dos dois blocos independentes.
 
 ---
 
@@ -79,6 +81,7 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-08-16 | Criação e publicação da sessão de leitura de código real | ~25min |
 | 2026-08-16 | Revisão e publicação das complementações da teoria do Capítulo 06 | ~15min |
 | 2026-08-15 | Criação do novo Capítulo 06 — Funções: Fundamentos | ~35min |
 | 2025-01-12 | Estruturação inicial do curso | ~1h |
