@@ -6,6 +6,14 @@
 
 ## Observações Gerais
 
+### 2026-08-16 - Correção da leitura de código real do Capítulo 06
+
+**Resultado:** Gabriel acompanhou corretamente contratos, caminhos de retorno e destinos dos valores nos três blocos respondidos. Os Blocos 2 e 3 foram aprovados com ajustes pontuais; no Bloco 4, deduziu corretamente a finalidade das tags XML mesmo sem dominar a regex.
+
+**Reforço:** separar os papéis dos parênteses, que executam a função, do argumento contido neles; distinguir também o argumento de um fallback aplicado depois da chamada. A versão corrigida foi registrada no próprio arquivo de respostas.
+
+**Próximo passo:** revisar a correção e iniciar a lista quando teoria, sintaxe, exemplos e mini-projeto estiverem concluídos.
+
 ### 2026-08-16 - Leitura de código real incorporada ao curso
 
 **Objetivo:** aproximar cada capítulo do motivo principal do aluno para estudar TypeScript: ler projetos reais, acompanhar a lógica e orientar melhor implementações.
