@@ -683,6 +683,7 @@ Celular na mesma rede: URL Network do Vite.
 ## Manutenção do Leitor
 
 - 2026-08-15: favicon roxo do starter substituído pelo ícone TS fornecido pelo aluno.
+- 2026-08-16: atividade e respostas corrigidas da primeira leitura de código real reunidas em um único arquivo. O gabarito ficou ao final da aula para preservar a possibilidade de tentativa antes da consulta e reduzir a fragmentação do material.
 
 ## 2026-08-15 — Prova do Capítulo 05
 

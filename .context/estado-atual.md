@@ -9,7 +9,7 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 06 - Funções: Fundamentos |
-| **Fase atual** | Aula — sessão de leitura de código real concluída |
+| **Fase atual** | Aula — leitura de código real concluída e organizada |
 | **Último capítulo concluído** | 05 - Arrays: Fundamentos — prova 9,5 |
 | **Próximo passo** | Concluir eventuais pendências da aula e então iniciar a lista de exercícios |
 
@@ -18,13 +18,12 @@
 ## Sessão Atual
 
 - **Data:** 2026-08-16
-- **Atividade:** Correção da primeira sessão de leitura de código real
+- **Atividade:** Unificação da atividade e das respostas da leitura de código real
 - **O que foi feito:**
-  - Blocos 2 e 3 aprovados com pequenos ajustes de terminologia
-  - Diferença entre chamada, parênteses e argumento reforçada
-  - `undefined` reposicionado corretamente como fallback posterior à chamada
-  - Raciocínio do Bloco 4 sobre tags XML confirmado e completado
-  - Arquivo do aluno atualizado como versão corrigida para consulta
+  - Atividade e respostas corrigidas reunidas em `aula/05-leitura-de-codigo-real.md`
+  - Exercícios permanecem primeiro para permitir a tentativa antes da consulta ao gabarito
+  - Respostas corrigidas foram colocadas no final do mesmo arquivo
+  - Arquivo de respostas separado removido para reduzir a fragmentação do material
 
 ---
 
@@ -60,7 +59,7 @@
 ## Próxima Sessão
 
 1. Concluir teoria, sintaxe, exemplos e mini-projeto do Capítulo 06.
-2. Revisar a versão corrigida de `leituras-dos-blocos-reais.md`.
+2. Consultar as respostas corrigidas ao final de `05-leitura-de-codigo-real.md` quando necessário.
 3. Iniciar a lista quando as demais etapas da aula estiverem concluídas.
 
 ---
@@ -80,6 +79,7 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-08-16 | Unificação da atividade e das respostas da leitura de código real | ~10min |
 | 2026-08-16 | Correção da primeira sessão de leitura de código real | ~15min |
 | 2026-08-16 | Criação e publicação da sessão de leitura de código real | ~25min |
 | 2026-08-16 | Revisão e publicação das complementações da teoria do Capítulo 06 | ~15min |
@@ -144,4 +144,4 @@
 
 ---
 
-*Última atualização: 2026-08-15*
+*Última atualização: 2026-08-16*

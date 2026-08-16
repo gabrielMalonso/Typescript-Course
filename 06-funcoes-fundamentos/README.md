@@ -44,7 +44,7 @@ O tipo da função forma um contrato:
 | [02-sintaxe.md](aula/02-sintaxe.md) | Declaração, expressão, arrow, parâmetros, retorno e `void` |
 | [03-exemplos.md](aula/03-exemplos.md) | Exemplos progressivos e comparação entre formas |
 | [04-mini-projeto.md](aula/04-mini-projeto.md) | Analisador de uma semana de estudos |
-| [05-leitura-de-codigo-real.md](aula/05-leitura-de-codigo-real.md) | Definição, chamada e fluxo de funções em dois projetos reais |
+| [05-leitura-de-codigo-real.md](aula/05-leitura-de-codigo-real.md) | Atividade, respostas corrigidas e fluxo de funções em dois projetos reais |
 
 ### Exercícios
 
