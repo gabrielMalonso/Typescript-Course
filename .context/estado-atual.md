@@ -9,24 +9,22 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 06 - Funções: Fundamentos |
-| **Fase atual** | Material disponível; iniciar aula |
+| **Fase atual** | Aula — teoria em leitura e complementação |
 | **Último capítulo concluído** | 05 - Arrays: Fundamentos — prova 9,5 |
-| **Próximo passo** | Ler o README e `aula/01-teoria.md` do Capítulo 06 |
+| **Próximo passo** | Continuar a leitura de `aula/01-teoria.md` e avançar para a sintaxe |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-08-15
-- **Atividade:** Criação do novo Capítulo 06 — Funções: Fundamentos
+- **Data:** 2026-08-16
+- **Atividade:** Revisão das complementações do aluno na teoria de funções
 - **O que foi feito:**
-  - Aula completa criada em quatro etapas: teoria, sintaxe, exemplos e mini-projeto
-  - Lista criada com 12 exercícios obrigatórios e bônus
-  - Prova preparada com 40% de teoria e 60% de prática
-  - Extras e gabarito confidencial criados
-  - Escopo limitado a funções fundamentais; callbacks permanecem no Capítulo 08
-  - Referências antigas do Capítulo 05 corrigidas para apontar métodos avançados ao Capítulo 09
-  - Leitor validado e versão 16 publicada no mesmo endereço privado
+  - Complementações sobre declaração, expressão e arrow functions revisadas
+  - Repetição removida e exemplos mantidos com TypeScript válido
+  - Limite do hoisting esclarecido para declarações de função
+  - `setTimeout` identificado somente como prévia de callbacks do Capítulo 08
+  - Leitor validado e versão 17 publicada no mesmo endereço privado
 
 ---
 
@@ -60,8 +58,8 @@
 
 ## Próxima Sessão
 
-1. Ler o README e `aula/01-teoria.md` do Capítulo 06.
-2. Avançar por sintaxe, exemplos e mini-projeto.
+1. Concluir a leitura de `aula/01-teoria.md` do Capítulo 06.
+2. Avançar para `aula/02-sintaxe.md`.
 3. Iniciar a lista somente depois de concluir a aula.
 
 ---
@@ -81,6 +79,7 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-08-16 | Revisão e publicação das complementações da teoria do Capítulo 06 | ~15min |
 | 2026-08-15 | Criação do novo Capítulo 06 — Funções: Fundamentos | ~35min |
 | 2025-01-12 | Estruturação inicial do curso | ~1h |
 | 2025-01-12 | Criação do Capítulo 00 completo | ~30min |
