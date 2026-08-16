@@ -49,6 +49,7 @@
 - [x] Curiosidade/Iniciativa - Vai além do pedido, experimenta por conta própria
 - [x] Mutabilidade e escopo de bloco - Aplica reatribuição e limites de bloco corretamente
 - [x] Escopo de função - Explicou corretamente que nomes internos não ficam disponíveis fora da função na prova do cap. 01
+- [x] Leitura de funções reais - Localizou contratos, argumentos, retornos e destinos em trechos de dois projetos
 
 ---
 
@@ -69,6 +70,7 @@
 | Classificação de diagnóstico | Chamou incompatibilidade de tipo na declaração de erro de cálculo | 1 exercício (cap. 02) |
 | Teste de limites condicionais | Inverteu `>= 6` para `<= 6`, tornando o ramo intermediário inalcançável para o valor testado | 1 prova (cap. 03) |
 | Organização da entrega | Respostas escritas no enunciado e arquivo prático solicitado ausente | 2 provas (caps. 02 e 03) |
+| Terminologia de funções | Confundiu o papel dos parênteses com o papel do argumento e incluiu um fallback como parte do argumento | 1 sessão de leitura (cap. 06) |
 
 ---
 

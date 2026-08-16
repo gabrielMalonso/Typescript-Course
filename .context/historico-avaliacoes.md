@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-08-16 — Leitura de código real — Capítulo 06
+
+**Resultado qualitativo:** concluída. O aluno identificou corretamente contratos, argumentos, caminhos de retorno e uso dos resultados em TypeScript e TSX. Ajustes: parênteses executam a função; `undefined` era fallback posterior à chamada, não argumento. No trecho com XML, o aluno inferiu corretamente a finalidade geral e recebeu complemento sobre escape de `<` e `>`.
+
 ## Resumo Geral
 
 | Métrica | Valor |
