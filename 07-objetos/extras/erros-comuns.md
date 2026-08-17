@@ -8,10 +8,10 @@ const ficha = {
   codigo: 17,
 };
 
-console.log(ficha[0]);
+console.log(ficha[0]); // erro de tipo em TypeScript estrito
 ```
 
-`undefined`. Objetos não possuem índice posicional por padrão. A leitura correta é `ficha.nome` ou `ficha["nome"]`.
+O TypeScript estrito rejeita esse acesso porque `0` não é uma chave conhecida de `ficha`. Em JavaScript sem verificação de tipos, a leitura produziria `undefined`. Objetos não possuem índice posicional por padrão; a leitura correta é `ficha.nome` ou `ficha["nome"]`.
 
 ## 2. Confundir o objeto com uma propriedade
 

@@ -209,7 +209,9 @@ function calcularTotal(itens: { quantidade: number; preco: number; ativa: boolea
 const criarResumo = function (
   quantidade: number,
   total: number,
-): string { ... }
+): string {
+  // retorne a string solicitada
+}
 ```
 
 Regras:
