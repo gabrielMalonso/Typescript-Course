@@ -4,6 +4,20 @@
 
 ---
 
+## 2026-08-17 — Correção pós-prova da Questão 8 — Capítulo 06
+
+**Resultado:** condição corrigida para ignorar valores `<= 0`. O arquivo compila em modo estrito, preserva as saídas da prova e, com `[14, -5, 0]`, retorna total `14` e quantidade `1`. Pendência conceitual resolvida.
+
+**Nota:** permanece 9,4, registrando o desempenho da entrega original.
+
+## 2026-08-17 — Prova do Capítulo 06
+
+**Resultado:** 9,4/10 — aprovado. A teoria recebeu 3,55/4,0 e a prática 5,8/6,0. Os quatro arquivos TypeScript compilam isoladamente em modo estrito, executam sem erros e produzem todas as saídas principais esperadas.
+
+**Descontos:** na Questão 3, `itemA` foi corretamente identificado como a própria função, mas recebeu incorretamente o tipo conceitual `number`, e o papel dos parênteses não foi explicado. Na Questão 8, soma e contagem ignoram somente zero e aceitariam negativos, apesar da regra exigir valores maiores que zero.
+
+**Organização:** respostas teóricas entregues em `respostas.md` em vez do nome solicitado `resposta.md`; sem desconto. Capítulo 06 concluído.
+
 ## 2026-08-17 — Conclusão da lista — Capítulo 06
 
 **Resultado qualitativo:** 12 exercícios obrigatórios e bônus aprovados. Os ajustes finais removeram uma explicação contraditória em `ex31.ts` e passaram a exibir os arrays originais em `ex32.ts`, comprovando a ausência de modificação.
@@ -38,7 +52,7 @@
 
 | Métrica | Valor |
 |---------|-------|
-| **Total de provas** | 6 |
+| **Total de provas** | 7 |
 | **Média geral** | 9,1 |
 | **Maior nota** | 9,5 |
 | **Menor nota** | 8,5 |
@@ -67,7 +81,7 @@
 | Capítulo | Data | Nota | Principais Erros | Observações |
 |----------|------|------|------------------|-------------|
 | 05 | 2026-08-15 | 9,5 | `ultimoIndice` de array vazio; previsões da Q6 e variável da Q7 omitidas | Aprovado; quatro arquivos práticos compilam e executam |
-| 06 | - | - | - | - |
+| 06 | 2026-08-17 | 9,4 | Tipo conceitual da função e filtro que aceita negativos | Aprovado; quatro arquivos práticos compilam e executam |
 | 07 | - | - | - | - |
 | 08 | - | - | - | - |
 | 09 | - | - | - | - |

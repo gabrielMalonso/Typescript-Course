@@ -76,6 +76,8 @@
 | Terminologia de funções | Confundiu o papel dos parênteses com o papel do argumento e incluiu um fallback como parte do argumento | 1 sessão de leitura (cap. 06) |
 | Formas de função | Usou arrow quando o exercício pedia expressão tradicional e converteu arrow em declaração ao mostrar a forma equivalente | 2 exercícios (cap. 06) |
 | Testes alternativos | Omitiu comprovação de não mutação e execução do pipeline vazio | 2 exercícios (cap. 06) |
+| Tipo de função | Identificou a referência corretamente, mas chamou seu tipo conceitual de `number`, confundindo contrato com retorno | 1 prova (cap. 06) |
+| Regra versus amostra | Implementou “diferente de zero” para dados contendo zeros, embora a regra exigisse “maior que zero”; corrigiu espontaneamente após a prova | 1 prova (cap. 06), resolvido |
 
 ---
 
@@ -104,6 +106,8 @@
 - Preservar o arquivo de enunciado e entregar todos os arquivos solicitados
 - Distinguir pela sintaxe declaração de função, expressão com `function` e arrow function
 - Executar todos os casos alternativos pedidos, mesmo quando a função principal já parece correta
+- Descrever o tipo de uma função pelo contrato completo, não apenas pelo tipo retornado
+- Testar regras numéricas com valores fora da amostra, especialmente negativos e limites
 
 ---
 
@@ -173,6 +177,7 @@
 - Na primeira lista de arrays, demonstrou domínio das operações básicas; precisa reforçar a diferença entre `length` e último índice e separar o efeito de `const` da tipagem dos elementos
 - Corrigiu prontamente `length` versus último índice e completou os requisitos da lista de arrays; o entendimento sobre incompatibilidade de tipos já estava presente na explicação original
 - Obteve 9,5 na prova do Capítulo 05; dominou operações, retornos, referência compartilhada e percurso com `for`, mas confundiu `length - 1` com `undefined` no caso do array vazio
+- Obteve 9,4 na prova do Capítulo 06; prática muito forte, com reforço necessário no tipo conceitual de uma função e na diferença entre filtrar zeros e aceitar somente positivos
 
 ---
 
