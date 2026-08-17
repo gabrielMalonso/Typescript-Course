@@ -6,6 +6,22 @@
 
 ## Observações Gerais
 
+### 2026-08-17 - Criação do Capítulo 07: Objetos
+
+**Avanço solicitado:** Gabriel informou que concluiu o Capítulo 06 e pediu o início do Capítulo 07. O Projeto 1 — Calculadora permanece como pendência separada e não bloqueia este avanço explícito.
+
+**Material criado:** aula sobre literais, ponto e colchetes, tipagem inline, propriedades opcionais, objetos aninhados, métodos com `this` básico, spread, destructuring e arrays de objetos; mini-projeto da ficha de equipamento; leitura de código real com quatro recortes; 12 exercícios e bônus; prova 40% teoria e 60% prática.
+
+**Adaptações pedagógicas:** reforço da diferença entre objeto e propriedade, analogia com o tipo da função versus o tipo do retorno; testes com zero, negativos, propriedade ausente e array vazio; `type`/`interface` e métodos avançados de arrays ficam fora do escopo.
+
+**Limite pedagógico:** parâmetros opcionais de função, callbacks e closures permanecem no Capítulo 08. Métodos avançados de arrays permanecem no Capítulo 09.
+
+**Validação:** mini-projeto, exemplos e gabarito da prova compilam em modo estrito e produzem as saídas previstas, inclusive limites `<= 0`, observação ausente/presente, array sem ativos e array vazio. Leitor aprovado em typecheck, lint e build; home, README, teoria e lista do Capítulo 07 responderam com HTTP 200. Permanecem os avisos antigos de Fast Refresh e tamanho de chunk.
+
+**Publicação:** o `project_id` existente em `leitor/.openai/hosting.json` foi preservado. Nesta sessão não havia a ferramenta de Sites (salvar versão + publicar). O capítulo já aparece no leitor local; a URL privada precisa de um save/deploy no projeto atual para refletir o Capítulo 07.
+
+**Próximo passo:** Gabriel deve iniciar pelo README e pela teoria. A prova está preparada, mas só será liberada depois da aula, mini-projeto e exercícios.
+
 ### 2026-08-17 - Correção pós-prova da Questão 8
 
 Gabriel corrigiu espontaneamente o filtro para rejeitar valores `<= 0`. O teste com número negativo passou, confirmando que ele compreendeu a diferença entre modelar a amostra e implementar a regra geral. Nota original 9,4 preservada; pendência pedagógica resolvida.
@@ -744,4 +760,4 @@ Celular na mesma rede: URL Network do Vite.
 
 ---
 
-*Última atualização: 2026-08-15*
+*Última atualização: 2026-08-17*
