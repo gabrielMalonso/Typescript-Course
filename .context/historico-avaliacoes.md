@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-08-17 — Criação do Capítulo 07 — Objetos
+
+**Resultado:** material completo gerado após a aprovação no Capítulo 06. Ainda não há correção de exercícios nem prova deste capítulo.
+
 ## 2026-08-17 — Correção pós-prova da Questão 8 — Capítulo 06
 
 **Resultado:** condição corrigida para ignorar valores `<= 0`. O arquivo compila em modo estrito, preserva as saídas da prova e, com `[14, -5, 0]`, retorna total `14` e quantidade `1`. Pendência conceitual resolvida.

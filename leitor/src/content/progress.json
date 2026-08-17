@@ -32,6 +32,11 @@
   {
     "chapterId": "06-funcoes-fundamentos",
     "label": "Cap. 06 — Funções: Fundamentos",
+    "status": "concluido"
+  },
+  {
+    "chapterId": "07-objetos",
+    "label": "Cap. 07 — Objetos",
     "status": "em_andamento"
   },
   {

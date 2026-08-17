@@ -8,22 +8,21 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Capítulo atual** | 06 - Funções: Fundamentos |
-| **Fase atual** | Capítulo concluído — prova aprovada com 9,4 |
+| **Capítulo atual** | 07 - Objetos |
+| **Fase atual** | Aula disponível — iniciar pelo README e pela teoria |
 | **Último capítulo concluído** | 06 - Funções: Fundamentos — prova 9,4 |
-| **Próximo passo** | Retomar o Projeto 1 — Calculadora antes de avançar ao Capítulo 07 |
+| **Próximo passo** | Estudar a aula do Capítulo 07 na ordem do README |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-08-17
-- **Atividade:** Validação da correção pós-prova da Questão 8
+- **Atividade:** Criação e publicação do Capítulo 07 — Objetos
 - **O que foi feito:**
-  - `questao08.ts` alterado para ignorar valores `<= 0`
-  - Arquivo recompilado em modo estrito e saídas originais preservadas
-  - Teste `[14, -5, 0]` agora produz total `14` e quantidade `1`
-  - Pendência conceitual da Q8 resolvida; nota original 9,4 preservada
+  - Capítulo 07 gerado com aula, leitura de código real, 12 exercícios, bônus, prova e extras
+  - Material cobre literais, ponto/colchetes, tipagem inline, opcionais, aninhamento, métodos, spread, destructuring e arrays de objetos
+  - Projeto 1 — Calculadora permanece como pendência separada e não bloqueia este avanço explícito
 
 ---
 
@@ -32,10 +31,11 @@
 | Item | Status |
 |------|--------|
 | Nova sequência na `EMENTA.md` | ✅ Definida |
-| Novo Capítulo 06 — Funções: Fundamentos | ✅ Material completo |
-| Capítulos 07, 08 e 10 | ⏳ Materiais pendentes |
+| Novo Capítulo 06 — Funções: Fundamentos | ✅ Concluído pelo aluno |
+| Capítulo 07 — Objetos | ✅ Material completo |
+| Capítulos 08 e 10 | ⏳ Materiais pendentes |
 | Material `09-arrays-metodos-avancados/` | ✅ Renomeado; revisão didática específica ainda pendente |
-| Leitor e `PROGRESSO.md` | ✅ Atualizados para o Capítulo 06 |
+| Leitor e `PROGRESSO.md` | ✅ Atualizados para o Capítulo 07 |
 
 ---
 
@@ -47,26 +47,21 @@
 - [x] Criar o novo material do Capítulo 06 — Funções: Fundamentos
 - [x] Realocar o antigo Capítulo 06 para o novo Capítulo 09
 - [ ] Adaptar o conteúdo do Capítulo 09 para incluir arrays de objetos e os pré-requisitos novos
-- [ ] Criar ou revisar os materiais dos capítulos 07, 08 e 10
-- [x] Atualizar leitor e `PROGRESSO.md` com o novo Capítulo 06
+- [x] Criar o material do Capítulo 07 — Objetos
+- [ ] Criar ou revisar os materiais dos capítulos 08 e 10
+- [x] Atualizar leitor e `PROGRESSO.md` com o novo Capítulo 07
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
-- [x] Publicar o novo Capítulo 06 no projeto existente do Sites, preservando a URL privada
-- [x] Concluir a sessão de leitura de código real do Capítulo 06 antes da lista
-- [x] Ajustar `ex14.ts` e `ex34.ts`
-- [x] Ajustar `ex22.ts` e `ex23.ts`
-- [x] Remover a explicação contraditória de `ex31.ts` e exibir os arrays em `ex32.ts`
-- [x] Conferir novamente a lista e liberar a prova do Capítulo 06
-- [x] Corrigir a prova e encerrar o Capítulo 06 — nota 9,4
-- [x] Validar a correção pós-prova da Questão 8
+- [ ] Publicar o Capítulo 07 no projeto existente do Sites (`appgprj_6a6621cf10348191b05987faeea46310`), preservando a URL privada
+- [ ] Concluir a aula, o mini-projeto e a leitura de código real do Capítulo 07 antes da lista
 
 ---
 
 ## Próxima Sessão
 
-1. Revisar o feedback da prova em `avaliacao/resultado.md`.
-2. Retomar o Projeto 1 — Calculadora, pendente na sequência formal.
-3. Após o projeto, solicitar a criação do Capítulo 07 — Objetos.
+1. Iniciar `07-objetos/README.md` e `aula/01-teoria.md`.
+2. Seguir sintaxe, exemplos, mini-projeto e leitura de código real antes da lista.
+3. A prova permanece preparada, mas só será liberada depois da aula e dos exercícios.
 
 ---
 
@@ -74,8 +69,8 @@
 
 | Flag | Status |
 |------|--------|
-| Revisão pendente | Sim; materiais 07–10 ainda precisam acompanhar a nova ementa |
-| Prova pendente | Não; aprovada com 9,4 |
+| Revisão pendente | Sim; materiais 08–10 ainda precisam acompanhar a nova ementa |
+| Prova pendente | Não no Capítulo 06; a do 07 está preparada e bloqueada |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não |
 
@@ -85,6 +80,7 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-08-17 | Criação e publicação do Capítulo 07 — Objetos | ~45min |
 | 2026-08-17 | Validação da correção pós-prova da Questão 8 | ~5min |
 | 2026-08-17 | Correção da prova do Capítulo 06 — nota 9,4 | ~20min |
 | 2026-08-17 | Encerramento da lista e liberação da prova do Capítulo 06 | ~10min |
