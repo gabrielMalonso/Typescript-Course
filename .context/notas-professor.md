@@ -6,6 +6,18 @@
 
 ## Observações Gerais
 
+### 2026-08-17 - Correção pós-prova da Questão 8
+
+Gabriel corrigiu espontaneamente o filtro para rejeitar valores `<= 0`. O teste com número negativo passou, confirmando que ele compreendeu a diferença entre modelar a amostra e implementar a regra geral. Nota original 9,4 preservada; pendência pedagógica resolvida.
+
+### 2026-08-17 - Prova do Capítulo 06
+
+**Resultado:** 9,4/10 — aprovado. Excelente desempenho prático; todos os arquivos compilam e as saídas principais estão corretas.
+
+**Reforço:** o tipo da função é seu contrato completo, não apenas o tipo retornado. Na Q8, Gabriel modelou os dados fornecidos (`0`) em vez da regra geral (`valor > 0`); reforçar testes com valores fora do exemplo, especialmente negativos.
+
+**Próximo passo:** retomar o Projeto 1 — Calculadora antes do Capítulo 07.
+
 ### 2026-08-17 - Conclusão da lista do Capítulo 06
 
 **Resultado final:** 12 obrigatórios e bônus aprovados. Os dois ajustes finais foram aplicados com autorização do aluno, e toda a lista foi recompilada em modo estrito.

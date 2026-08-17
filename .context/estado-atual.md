@@ -9,21 +9,21 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 06 - Funções: Fundamentos |
-| **Fase atual** | Exercícios concluídos — prova liberada |
-| **Último capítulo concluído** | 05 - Arrays: Fundamentos — prova 9,5 |
-| **Próximo passo** | Realizar a prova do Capítulo 06 |
+| **Fase atual** | Capítulo concluído — prova aprovada com 9,4 |
+| **Último capítulo concluído** | 06 - Funções: Fundamentos — prova 9,4 |
+| **Próximo passo** | Retomar o Projeto 1 — Calculadora antes de avançar ao Capítulo 07 |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-08-17
-- **Atividade:** Encerramento da lista de exercícios do Capítulo 06
+- **Atividade:** Validação da correção pós-prova da Questão 8
 - **O que foi feito:**
-  - A explicação contraditória foi removida de `ex31.ts`
-  - Os arrays originais passaram a ser exibidos depois das chamadas em `ex32.ts`
-  - Os 12 exercícios obrigatórios e o bônus foram aprovados
-  - Todos os 13 arquivos compilam isoladamente em modo estrito; prova liberada
+  - `questao08.ts` alterado para ignorar valores `<= 0`
+  - Arquivo recompilado em modo estrito e saídas originais preservadas
+  - Teste `[14, -5, 0]` agora produz total `14` e quantidade `1`
+  - Pendência conceitual da Q8 resolvida; nota original 9,4 preservada
 
 ---
 
@@ -57,14 +57,16 @@
 - [x] Ajustar `ex22.ts` e `ex23.ts`
 - [x] Remover a explicação contraditória de `ex31.ts` e exibir os arrays em `ex32.ts`
 - [x] Conferir novamente a lista e liberar a prova do Capítulo 06
+- [x] Corrigir a prova e encerrar o Capítulo 06 — nota 9,4
+- [x] Validar a correção pós-prova da Questão 8
 
 ---
 
 ## Próxima Sessão
 
-1. Ler as orientações de `avaliacao/prova.md`.
-2. Resolver a prova e entregar todos os arquivos solicitados.
-3. Solicitar a correção da prova.
+1. Revisar o feedback da prova em `avaliacao/resultado.md`.
+2. Retomar o Projeto 1 — Calculadora, pendente na sequência formal.
+3. Após o projeto, solicitar a criação do Capítulo 07 — Objetos.
 
 ---
 
@@ -73,7 +75,7 @@
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Sim; materiais 07–10 ainda precisam acompanhar a nova ementa |
-| Prova pendente | Sim; preparada e liberada |
+| Prova pendente | Não; aprovada com 9,4 |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não |
 
@@ -83,6 +85,8 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-08-17 | Validação da correção pós-prova da Questão 8 | ~5min |
+| 2026-08-17 | Correção da prova do Capítulo 06 — nota 9,4 | ~20min |
 | 2026-08-17 | Encerramento da lista e liberação da prova do Capítulo 06 | ~10min |
 | 2026-08-17 | Terceira correção da lista de exercícios do Capítulo 06 | ~10min |
 | 2026-08-17 | Segunda correção da lista de exercícios do Capítulo 06 | ~10min |
