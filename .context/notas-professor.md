@@ -6,6 +6,24 @@
 
 ## Observações Gerais
 
+### 2026-08-17 - Conclusão da lista do Capítulo 06
+
+**Resultado final:** 12 obrigatórios e bônus aprovados. Os dois ajustes finais foram aplicados com autorização do aluno, e toda a lista foi recompilada em modo estrito.
+
+**Domínio consolidado:** contratos explícitos, retorno versus efeito, declaração/expressão/arrow, função como valor, chamada versus referência e uso de funções para processar arrays. Prova do Capítulo 06 liberada.
+
+### 2026-08-17 - Terceira correção da lista do Capítulo 06
+
+**Aprovados nesta revisão:** exercícios 2.2 e 2.3. Gabriel agora apresentou corretamente a diferença sintática entre expressão de função, arrow concisa e arrow com bloco.
+
+**Pendências finais:** remover uma explicação antiga contraditória em `ex31.ts` e exibir os arrays originais em `ex32.ts`. São ajustes mínimos de clareza e comprovação, não lacunas no funcionamento do código.
+
+### 2026-08-17 - Segunda correção da lista do Capítulo 06
+
+**Aprovados nesta revisão:** exercícios 1.4 e 3.4; bônus aprovado considerando os dois estados testados manualmente. A observação do aluno sobre o booleano não assumir dois valores simultaneamente está correta; o requisito pretendia duas execuções sucessivas, não simultaneidade.
+
+**Pendências:** quatro ajustes de aderência ao mecanismo solicitado permanecem. Usar exemplos sintáticos explícitos na devolutiva para eliminar a ambiguidade entre declaração, expressão e arrow function.
+
 ### 2026-08-17 - Primeira correção da lista do Capítulo 06
 
 **Resultado:** todos os arquivos compilam e executam. Seis exercícios obrigatórios foram aprovados; os outros seis têm correções localizadas, sem indicar uma lacuna geral na compreensão de funções.

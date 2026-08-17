@@ -1,4 +1,4 @@
-function calcularAreaRetangulo (largura: number, altura: number): number {
+const calcularAreaRetangulo = function (largura: number, altura: number): number {
     return largura * altura;
 }
 

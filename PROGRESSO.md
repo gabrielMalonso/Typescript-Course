@@ -39,7 +39,7 @@
 | Cap | Título | Aula | Exercícios | Prova | Status |
 |-----|--------|------|------------|-------|--------|
 | 05 | Arrays: Fundamentos | ✓ | ✓ | ★ 9,5 | Concluído |
-| 06 | Funções: Fundamentos | ✓ | Em revisão | Preparada | Ajustes nos exercícios |
+| 06 | Funções: Fundamentos | ✓ | ✓ | Liberada | Pronto para prova |
 | 07 | Objetos | - | - | - | Bloqueado |
 | 08 | Funções: Callbacks e Recursos | - | - | - | Bloqueado |
 | 09 | Arrays: Métodos Avançados | ✓ | Disponível | - | Material preparado; bloqueado |

@@ -141,6 +141,8 @@
 - Diferença entre função que retorna valor e função `void` com efeito de exibição
 - Funções guardadas como valores e compatibilidade pelo contrato da função
 - Composição manual de funções para somar, contar e calcular média de valores válidos
+- Diferença sintática entre declaração, expressão de função, arrow concisa e arrow com bloco
+- Diferença entre guardar uma referência de função e executar uma chamada para obter seu retorno
 
 ---
 
