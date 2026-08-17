@@ -12,4 +12,4 @@ if (usarDobro) {
 
 console.log(transformar(8));
 
-// 
+// Ambas as funções possuem o mesmo contrato. Por isso, a variável acomoda corretamente as funções.

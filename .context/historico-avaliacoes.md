@@ -4,6 +4,24 @@
 
 ---
 
+## 2026-08-17 — Conclusão da lista — Capítulo 06
+
+**Resultado qualitativo:** 12 exercícios obrigatórios e bônus aprovados. Os ajustes finais removeram uma explicação contraditória em `ex31.ts` e passaram a exibir os arrays originais em `ex32.ts`, comprovando a ausência de modificação.
+
+**Validação:** todos os 13 arquivos compilam isoladamente em modo estrito e executam sem erros. O aluno demonstrou domínio de contratos, retornos, `void`, formas de definição, funções como valores, referência versus chamada e composição com arrays. Prova liberada.
+
+## 2026-08-17 — Terceira correção da lista — Capítulo 06
+
+**Resultado qualitativo:** `ex22.ts` e `ex23.ts` corrigidos e aprovados. Todos os 13 arquivos compilam isoladamente em modo estrito e executam sem erros.
+
+**Pendências mínimas:** em `ex31.ts`, remover a frase antiga que descreve incorretamente uma comparação e contradiz a explicação correta adicionada; em `ex32.ts`, exibir os dois arrays originais depois das chamadas. Restam 2 dos 12 obrigatórios para o encerramento formal.
+
+## 2026-08-17 — Segunda correção da lista — Capítulo 06
+
+**Resultado qualitativo:** `ex14.ts` e `ex34.ts` corrigidos e aprovados. O bônus também foi aprovado: o código demonstra uma escolha, o aluno relatou ter testado manualmente a outra, e explicou corretamente a compatibilidade pelo contrato comum. Todos os 13 arquivos continuam compilando isoladamente em modo estrito.
+
+**Pendências restantes:** `ex22.ts` ainda contém declaração em vez de expressão de função; `ex23.ts` não apresenta a equivalência entre arrow concisa e arrow com bloco; `ex31.ts` ainda usa `let` e descreve de forma imprecisa referência versus retorno; `ex32.ts` ainda não exibe os arrays originais após as chamadas.
+
 ## 2026-08-17 — Primeira correção da lista — Capítulo 06
 
 **Resultado qualitativo:** 6 dos 12 exercícios obrigatórios aprovados na primeira revisão; 6 requerem ajustes pontuais. Todos os 13 arquivos, incluindo o bônus, compilam isoladamente em modo estrito e executam sem erros.

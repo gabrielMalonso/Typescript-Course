@@ -6,8 +6,13 @@ const somarValores = (valores: number[]): number => {
     return total;
 };
 
-const teste1 = somarValores([4, 6, 10]);
-const teste2 = somarValores([]);
+const arrayTeste1 = [4, 6, 10];
+const arrayTeste2: number[] = [];
+
+const teste1 = somarValores(arrayTeste1);
+const teste2 = somarValores(arrayTeste2);
 
 console.log(`Total: ${teste1}`);
 console.log(`Total: ${teste2}`);
+console.log(arrayTeste1);
+console.log(arrayTeste2);

@@ -9,21 +9,21 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 06 - Funções: Fundamentos |
-| **Fase atual** | Exercícios — primeira correção concluída; ajustes pendentes |
+| **Fase atual** | Exercícios concluídos — prova liberada |
 | **Último capítulo concluído** | 05 - Arrays: Fundamentos — prova 9,5 |
-| **Próximo passo** | Corrigir 6 exercícios obrigatórios e solicitar conferência final |
+| **Próximo passo** | Realizar a prova do Capítulo 06 |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-08-17
-- **Atividade:** Primeira correção da lista de exercícios do Capítulo 06
+- **Atividade:** Encerramento da lista de exercícios do Capítulo 06
 - **O que foi feito:**
-  - Os 12 exercícios obrigatórios e o bônus foram compilados isoladamente em modo estrito e executados
-  - 6 exercícios obrigatórios foram aprovados e 6 ficaram com ajustes pontuais
-  - Domínio geral de contratos, retornos, `void`, funções como valores e processamento de arrays foi confirmado
-  - Correção registrada em `06-funcoes-fundamentos/exercicios/correcoes.md`
+  - A explicação contraditória foi removida de `ex31.ts`
+  - Os arrays originais passaram a ser exibidos depois das chamadas em `ex32.ts`
+  - Os 12 exercícios obrigatórios e o bônus foram aprovados
+  - Todos os 13 arquivos compilam isoladamente em modo estrito; prova liberada
 
 ---
 
@@ -53,16 +53,18 @@
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [x] Publicar o novo Capítulo 06 no projeto existente do Sites, preservando a URL privada
 - [x] Concluir a sessão de leitura de código real do Capítulo 06 antes da lista
-- [ ] Ajustar `ex14.ts`, `ex22.ts`, `ex23.ts`, `ex31.ts`, `ex32.ts` e `ex34.ts`
-- [ ] Conferir novamente a lista e liberar a prova do Capítulo 06
+- [x] Ajustar `ex14.ts` e `ex34.ts`
+- [x] Ajustar `ex22.ts` e `ex23.ts`
+- [x] Remover a explicação contraditória de `ex31.ts` e exibir os arrays em `ex32.ts`
+- [x] Conferir novamente a lista e liberar a prova do Capítulo 06
 
 ---
 
 ## Próxima Sessão
 
-1. Corrigir os seis exercícios obrigatórios indicados em `exercicios/correcoes.md`.
-2. Opcionalmente completar os dois caminhos e a explicação do bônus.
-3. Solicitar a conferência final antes da prova.
+1. Ler as orientações de `avaliacao/prova.md`.
+2. Resolver a prova e entregar todos os arquivos solicitados.
+3. Solicitar a correção da prova.
 
 ---
 
@@ -71,7 +73,7 @@
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Sim; materiais 07–10 ainda precisam acompanhar a nova ementa |
-| Prova pendente | Sim; preparada, mas bloqueada até a conferência final dos exercícios |
+| Prova pendente | Sim; preparada e liberada |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não |
 
@@ -81,6 +83,9 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-08-17 | Encerramento da lista e liberação da prova do Capítulo 06 | ~10min |
+| 2026-08-17 | Terceira correção da lista de exercícios do Capítulo 06 | ~10min |
+| 2026-08-17 | Segunda correção da lista de exercícios do Capítulo 06 | ~10min |
 | 2026-08-17 | Primeira correção da lista de exercícios do Capítulo 06 | ~20min |
 | 2026-08-16 | Unificação da atividade e das respostas da leitura de código real | ~10min |
 | 2026-08-16 | Correção da primeira sessão de leitura de código real | ~15min |
