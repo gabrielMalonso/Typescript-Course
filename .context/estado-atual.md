@@ -18,11 +18,13 @@
 ## Sessão Atual
 
 - **Data:** 2026-08-17
-- **Atividade:** Criação e publicação do Capítulo 07 — Objetos
+- **Atividade:** Revisão final e publicação do Capítulo 07 — Objetos
 - **O que foi feito:**
-  - Capítulo 07 gerado com aula, leitura de código real, 12 exercícios, bônus, prova e extras
-  - Material cobre literais, ponto/colchetes, tipagem inline, opcionais, aninhamento, métodos, spread, destructuring e arrays de objetos
-  - Projeto 1 — Calculadora permanece como pendência separada e não bloqueia este avanço explícito
+  - Conteúdo completo revisado contra a ementa, os pré-requisitos e os projetos usados na leitura de código real
+  - Quatro inconsistências localizadas corrigidas na leitura real, prova, lista e erros comuns
+  - 104 blocos TypeScript/TSX validados sem erros de sintaxe; gabarito executado com as saídas previstas
+  - Leitor aprovado em typecheck, lint e build; home, README e teoria responderam com HTTP 200
+  - Versão 20 publicada no projeto existente, preservando a URL e o acesso privado
 
 ---
 
@@ -52,7 +54,7 @@
 - [x] Atualizar leitor e `PROGRESSO.md` com o novo Capítulo 07
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
-- [ ] Publicar o Capítulo 07 no projeto existente do Sites (`appgprj_6a6621cf10348191b05987faeea46310`), preservando a URL privada
+- [x] Publicar o Capítulo 07 no projeto existente do Sites (`appgprj_6a6621cf10348191b05987faeea46310`), preservando a URL privada
 - [ ] Concluir a aula, o mini-projeto e a leitura de código real do Capítulo 07 antes da lista
 
 ---
@@ -80,7 +82,8 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
-| 2026-08-17 | Criação e publicação do Capítulo 07 — Objetos | ~45min |
+| 2026-08-17 | Revisão final e publicação do Capítulo 07 — Objetos | ~25min |
+| 2026-08-17 | Criação do Capítulo 07 — Objetos | ~45min |
 | 2026-08-17 | Validação da correção pós-prova da Questão 8 | ~5min |
 | 2026-08-17 | Correção da prova do Capítulo 06 — nota 9,4 | ~20min |
 | 2026-08-17 | Encerramento da lista e liberação da prova do Capítulo 06 | ~10min |

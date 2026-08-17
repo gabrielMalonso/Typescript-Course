@@ -6,6 +6,16 @@
 
 ## Observações Gerais
 
+### 2026-08-17 - Revisão final e publicação do Capítulo 07
+
+**Auditoria didática:** capítulo coerente com a ementa e com os conhecimentos consolidados até o Capítulo 06. Aula, mini-projeto, leitura real, exercícios e prova cobrem o mesmo conjunto de mecanismos sem exigir callbacks, métodos avançados de arrays, `type` ou `interface`.
+
+**Ajustes:** o exercício de spread deixou de pedir a recriação impossível de uma `const` no mesmo escopo; o erro de índice numérico passou a distinguir rejeição do TypeScript de `undefined` em JavaScript; o quarto recorte real agora mostra o destino dos dois retornos; o placeholder inválido da prova foi transformado em esqueleto sintaticamente válido.
+
+**Validação:** 104 blocos TypeScript/TSX sem erros de sintaxe; soluções do gabarito executadas com as saídas previstas; links internos e fontes externas conferidos; recortes reais confirmados nos projetos de origem. Leitor aprovado em typecheck, lint e build, com apenas os dois avisos antigos de Fast Refresh e o aviso de tamanho de chunk. Home, README e teoria responderam com HTTP 200.
+
+**Publicação:** versão 20 publicada com sucesso no projeto privado existente, preservando `https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site` e o acesso restrito ao proprietário.
+
 ### 2026-08-17 - Criação do Capítulo 07: Objetos
 
 **Avanço solicitado:** Gabriel informou que concluiu o Capítulo 06 e pediu o início do Capítulo 07. O Projeto 1 — Calculadora permanece como pendência separada e não bloqueia este avanço explícito.
@@ -18,7 +28,7 @@
 
 **Validação:** mini-projeto, exemplos e gabarito da prova compilam em modo estrito e produzem as saídas previstas, inclusive limites `<= 0`, observação ausente/presente, array sem ativos e array vazio. Leitor aprovado em typecheck, lint e build; home, README, teoria e lista do Capítulo 07 responderam com HTTP 200. Permanecem os avisos antigos de Fast Refresh e tamanho de chunk.
 
-**Publicação:** o `project_id` existente em `leitor/.openai/hosting.json` foi preservado. Nesta sessão não havia a ferramenta de Sites (salvar versão + publicar). O capítulo já aparece no leitor local; a URL privada precisa de um save/deploy no projeto atual para refletir o Capítulo 07.
+**Publicação na sessão de criação:** o `project_id` existente em `leitor/.openai/hosting.json` foi preservado. Naquele momento, a ferramenta de Sites não estava disponível; a publicação foi concluída posteriormente após a revisão final.
 
 **Próximo passo:** Gabriel deve iniciar pelo README e pela teoria. A prova está preparada, mas só será liberada depois da aula, mini-projeto e exercícios.
 
