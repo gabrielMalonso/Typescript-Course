@@ -9,21 +9,21 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 06 - Funções: Fundamentos |
-| **Fase atual** | Aula — leitura de código real concluída e organizada |
+| **Fase atual** | Exercícios — primeira correção concluída; ajustes pendentes |
 | **Último capítulo concluído** | 05 - Arrays: Fundamentos — prova 9,5 |
-| **Próximo passo** | Concluir eventuais pendências da aula e então iniciar a lista de exercícios |
+| **Próximo passo** | Corrigir 6 exercícios obrigatórios e solicitar conferência final |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-08-16
-- **Atividade:** Unificação da atividade e das respostas da leitura de código real
+- **Data:** 2026-08-17
+- **Atividade:** Primeira correção da lista de exercícios do Capítulo 06
 - **O que foi feito:**
-  - Atividade e respostas corrigidas reunidas em `aula/05-leitura-de-codigo-real.md`
-  - Exercícios permanecem primeiro para permitir a tentativa antes da consulta ao gabarito
-  - Respostas corrigidas foram colocadas no final do mesmo arquivo
-  - Arquivo de respostas separado removido para reduzir a fragmentação do material
+  - Os 12 exercícios obrigatórios e o bônus foram compilados isoladamente em modo estrito e executados
+  - 6 exercícios obrigatórios foram aprovados e 6 ficaram com ajustes pontuais
+  - Domínio geral de contratos, retornos, `void`, funções como valores e processamento de arrays foi confirmado
+  - Correção registrada em `06-funcoes-fundamentos/exercicios/correcoes.md`
 
 ---
 
@@ -53,14 +53,16 @@
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [x] Publicar o novo Capítulo 06 no projeto existente do Sites, preservando a URL privada
 - [x] Concluir a sessão de leitura de código real do Capítulo 06 antes da lista
+- [ ] Ajustar `ex14.ts`, `ex22.ts`, `ex23.ts`, `ex31.ts`, `ex32.ts` e `ex34.ts`
+- [ ] Conferir novamente a lista e liberar a prova do Capítulo 06
 
 ---
 
 ## Próxima Sessão
 
-1. Concluir teoria, sintaxe, exemplos e mini-projeto do Capítulo 06.
-2. Consultar as respostas corrigidas ao final de `05-leitura-de-codigo-real.md` quando necessário.
-3. Iniciar a lista quando as demais etapas da aula estiverem concluídas.
+1. Corrigir os seis exercícios obrigatórios indicados em `exercicios/correcoes.md`.
+2. Opcionalmente completar os dois caminhos e a explicação do bônus.
+3. Solicitar a conferência final antes da prova.
 
 ---
 
@@ -69,7 +71,7 @@
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Sim; materiais 07–10 ainda precisam acompanhar a nova ementa |
-| Prova pendente | Sim; preparada, mas bloqueada até aula e exercícios |
+| Prova pendente | Sim; preparada, mas bloqueada até a conferência final dos exercícios |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não |
 
@@ -79,6 +81,7 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-08-17 | Primeira correção da lista de exercícios do Capítulo 06 | ~20min |
 | 2026-08-16 | Unificação da atividade e das respostas da leitura de código real | ~10min |
 | 2026-08-16 | Correção da primeira sessão de leitura de código real | ~15min |
 | 2026-08-16 | Criação e publicação da sessão de leitura de código real | ~25min |
@@ -144,4 +147,4 @@
 
 ---
 
-*Última atualização: 2026-08-16*
+*Última atualização: 2026-08-17*

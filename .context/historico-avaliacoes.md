@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-08-17 — Primeira correção da lista — Capítulo 06
+
+**Resultado qualitativo:** 6 dos 12 exercícios obrigatórios aprovados na primeira revisão; 6 requerem ajustes pontuais. Todos os 13 arquivos, incluindo o bônus, compilam isoladamente em modo estrito e executam sem erros.
+
+**Domínio demonstrado:** contratos de parâmetros e retornos, retorno booleano, `void`, separação entre cálculo e exibição, função guardada como valor e processamento de arrays com loops.
+
+**Pontos a reforçar:** limite inclusivo em `120`; distinção sintática entre declaração, expressão e arrow function; papel dos parênteses como chamada; cumprimento dos testes alternativos e das explicações solicitadas. Arquivos pendentes: `ex14.ts`, `ex22.ts`, `ex23.ts`, `ex31.ts`, `ex32.ts` e `ex34.ts`.
+
 ## 2026-08-16 — Leitura de código real — Capítulo 06
 
 **Resultado qualitativo:** concluída. O aluno identificou corretamente contratos, argumentos, caminhos de retorno e uso dos resultados em TypeScript e TSX. Ajustes: parênteses executam a função; `undefined` era fallback posterior à chamada, não argumento. No trecho com XML, o aluno inferiu corretamente a finalidade geral e recebeu complemento sobre escape de `<` e `>`.

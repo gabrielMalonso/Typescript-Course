@@ -6,6 +6,14 @@
 
 ## Observações Gerais
 
+### 2026-08-17 - Primeira correção da lista do Capítulo 06
+
+**Resultado:** todos os arquivos compilam e executam. Seis exercícios obrigatórios foram aprovados; os outros seis têm correções localizadas, sem indicar uma lacuna geral na compreensão de funções.
+
+**Leitura pedagógica:** Gabriel compreendeu contratos, retornos reutilizáveis, `void`, funções como valores e processamento de arrays. A principal necessidade é consolidar a distinção formal entre declaração, expressão e arrow function e criar o hábito de executar todos os casos pedidos, especialmente limites e arrays vazios.
+
+**Próximo passo:** conferir `ex14.ts`, `ex22.ts`, `ex23.ts`, `ex31.ts`, `ex32.ts` e `ex34.ts` após os ajustes; bônus opcional. Só então liberar a prova.
+
 ### 2026-08-16 - Correção da leitura de código real do Capítulo 06
 
 **Resultado:** Gabriel acompanhou corretamente contratos, caminhos de retorno e destinos dos valores nos três blocos respondidos. Os Blocos 2 e 3 foram aprovados com ajustes pontuais; no Bloco 4, deduziu corretamente a finalidade das tags XML mesmo sem dominar a regex.

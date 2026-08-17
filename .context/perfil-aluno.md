@@ -50,6 +50,9 @@
 - [x] Mutabilidade e escopo de bloco - Aplica reatribuição e limites de bloco corretamente
 - [x] Escopo de função - Explicou corretamente que nomes internos não ficam disponíveis fora da função na prova do cap. 01
 - [x] Leitura de funções reais - Localizou contratos, argumentos, retornos e destinos em trechos de dois projetos
+- [x] Contratos de funções - Tipou parâmetros e retornos corretamente em toda a lista do Capítulo 06
+- [x] Retorno e efeito - Diferenciou `return` reutilizável de exibição com `console.log` e `void`
+- [x] Funções como valores - Guardou, chamou e comparou referências de função corretamente
 
 ---
 
@@ -71,6 +74,8 @@
 | Teste de limites condicionais | Inverteu `>= 6` para `<= 6`, tornando o ramo intermediário inalcançável para o valor testado | 1 prova (cap. 03) |
 | Organização da entrega | Respostas escritas no enunciado e arquivo prático solicitado ausente | 2 provas (caps. 02 e 03) |
 | Terminologia de funções | Confundiu o papel dos parênteses com o papel do argumento e incluiu um fallback como parte do argumento | 1 sessão de leitura (cap. 06) |
+| Formas de função | Usou arrow quando o exercício pedia expressão tradicional e converteu arrow em declaração ao mostrar a forma equivalente | 2 exercícios (cap. 06) |
+| Testes alternativos | Omitiu comprovação de não mutação e execução do pipeline vazio | 2 exercícios (cap. 06) |
 
 ---
 
@@ -97,6 +102,8 @@
 - Distinguir “verificar uma atribuição” de “aceitar uma atribuição” na linguagem dos enunciados
 - Testar pelo menos um valor de cada faixa e conferir a saída realmente executada
 - Preservar o arquivo de enunciado e entregar todos os arquivos solicitados
+- Distinguir pela sintaxe declaração de função, expressão com `function` e arrow function
+- Executar todos os casos alternativos pedidos, mesmo quando a função principal já parece correta
 
 ---
 
@@ -130,6 +137,10 @@
 - Interrupção por meta ou limite e uso de `continue` para exceções
 - Diagnóstico de loops infinitos pela relação entre condição, atualização e direção
 - Operações básicas de arrays, referência compartilhada e percurso por índice com `for`
+- Tipagem explícita de parâmetros e retornos de funções
+- Diferença entre função que retorna valor e função `void` com efeito de exibição
+- Funções guardadas como valores e compatibilidade pelo contrato da função
+- Composição manual de funções para somar, contar e calcular média de valores válidos
 
 ---
 
@@ -163,4 +174,4 @@
 
 ---
 
-*Última atualização: 2026-08-15*
+*Última atualização: 2026-08-17*
