@@ -226,11 +226,24 @@ function createEmptyPatientDetail(initialName: string) {
 
 // ...
 
-column("fullName", "fullName", "Nome completo.");
-createEmptyPatientDetail(initialName);
+export const patientExportSheets = [
+  {
+    // ...
+    columns: [
+      column("fullName", "fullName", "Nome completo."),
+    ],
+  },
+];
+
+// ...
+
+const detail = useMemo(
+  () => createEmptyPatientDetail(initialName),
+  [initialName],
+);
 ```
 
-O original de `column` usa `satisfies` com um tipo nomeado, e o de `createEmptyPatientDetail` devolve mais campos. O recorte mantém só o necessário para ver atalho de propriedades e objeto aninhado.
+O original de `column` usa `satisfies` com um tipo nomeado, e o de `createEmptyPatientDetail` devolve mais campos. O recorte mantém só o necessário para ver atalho de propriedades, objeto aninhado e o destino dos retornos. `useMemo` pertence ao React; aqui basta saber que ele chama `createEmptyPatientDetail(initialName)` e guarda o objeto devolvido em `detail`.
 
 Para este bloco, responda sem executar o projeto:
 
@@ -241,7 +254,8 @@ Bloco 4
 - Em `createEmptyPatientDetail`, quais objetos estão aninhados?
 - Qual propriedade recebe o argumento `initialName`?
 - `contacts: []` é um objeto ou um array?
-- Destino dos dois retornos:
+- Em que coleção entra o objeto devolvido por `column`?
+- Em qual variável fica o objeto devolvido por `createEmptyPatientDetail`?
 - Sintaxe que ainda parece estranha:
 ```
 

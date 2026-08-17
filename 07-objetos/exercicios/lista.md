@@ -103,9 +103,9 @@ const original = {
 
 1. Crie `alias = original` e altere `alias.potencia` para `80`.
 2. Exiba `original.potencia` e `alias === original`.
-3. Recrie `original` com `120` e, desta vez, faça `copia` com spread.
+3. Crie outro objeto `originalParaCopia`, também com `nome: "Motor"` e `potencia: 120`, e faça `copia` com spread.
 4. Altere `copia.potencia` para `150`.
-5. Exiba `original.potencia`, `copia.potencia` e `copia === original`.
+5. Exiba `originalParaCopia.potencia`, `copia.potencia` e `copia === originalParaCopia`.
 
 Comente a diferença entre os dois casos.
 
