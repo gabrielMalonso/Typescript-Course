@@ -57,6 +57,7 @@ O objeto funciona como uma ficha: cada campo tem um rótulo. Você não pergunta
 | Arquivo | Descrição |
 |---|---|
 | [lista.md](exercicios/lista.md) | 12 exercícios progressivos e um bônus |
+| [lista-sintaxe-extra.md](exercicios/lista-sintaxe-extra.md) | Treino extra da mistura array + objeto + função |
 | `solucoes/` | Pasta para seus arquivos `.ts` |
 
 ### Avaliação

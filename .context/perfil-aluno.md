@@ -78,6 +78,7 @@
 | Testes alternativos | Omitiu comprovação de não mutação e execução do pipeline vazio | 2 exercícios (cap. 06) |
 | Tipo de função | Identificou a referência corretamente, mas chamou seu tipo conceitual de `number`, confundindo contrato com retorno | 1 prova (cap. 06) |
 | Regra versus amostra | Implementou “diferente de zero” para dados contendo zeros, embora a regra exigisse “maior que zero”; corrigiu espontaneamente após a prova | 1 prova (cap. 06), resolvido |
+| Sintaxe empilhada | Conceito claro, mas a escrita trava ao misturar array de objetos com parâmetro e retorno de função | Relatado no cap. 07 |
 
 ---
 
@@ -108,6 +109,7 @@
 - Executar todos os casos alternativos pedidos, mesmo quando a função principal já parece correta
 - Descrever o tipo de uma função pelo contrato completo, não apenas pelo tipo retornado
 - Testar regras numéricas com valores fora da amostra, especialmente negativos e limites
+- Escrever a mistura de array de objetos com função: o que é o array, o que é um objeto, o que entra como parâmetro e o que a função devolve
 
 ---
 
@@ -147,6 +149,7 @@
 - Composição manual de funções para somar, contar e calcular média de valores válidos
 - Diferença sintática entre declaração, expressão de função, arrow concisa e arrow com bloco
 - Diferença entre guardar uma referência de função e executar uma chamada para obter seu retorno
+- Literal de objeto, mutação com `const`, ponto versus colchetes, alias versus spread e cópia rasa sem alterar o original
 
 ---
 
@@ -178,7 +181,8 @@
 - Corrigiu prontamente `length` versus último índice e completou os requisitos da lista de arrays; o entendimento sobre incompatibilidade de tipos já estava presente na explicação original
 - Obteve 9,5 na prova do Capítulo 05; dominou operações, retornos, referência compartilhada e percurso com `for`, mas confundiu `length - 1` com `undefined` no caso do array vazio
 - Obteve 9,4 na prova do Capítulo 06; prática muito forte, com reforço necessário no tipo conceitual de uma função e na diferença entre filtrar zeros e aceitar somente positivos
+- Na primeira lista de objetos, compilou e executou todos os arquivos; a escrita ainda trava quando array, objeto e função se empilham. Pediu treino extra focado em sintaxe, não em mais teoria.
 
 ---
 
-*Última atualização: 2026-08-17*
+*Última atualização: 2026-08-19*

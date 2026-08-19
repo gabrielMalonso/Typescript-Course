@@ -9,22 +9,21 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 07 - Objetos |
-| **Fase atual** | Aula disponível — iniciar pelo README e pela teoria |
+| **Fase atual** | Lista principal encerrada; treino extra de sintaxe pendente |
 | **Último capítulo concluído** | 06 - Funções: Fundamentos — prova 9,4 |
-| **Próximo passo** | Estudar a aula do Capítulo 07 na ordem do README |
+| **Próximo passo** | Fazer `07-objetos/exercicios/lista-sintaxe-extra.md` |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-08-17
-- **Atividade:** Revisão final e publicação do Capítulo 07 — Objetos
+- **Data:** 2026-08-19
+- **Atividade:** Revisão e publicação do treino extra do Capítulo 07
 - **O que foi feito:**
-  - Conteúdo completo revisado contra a ementa, os pré-requisitos e os projetos usados na leitura de código real
-  - Quatro inconsistências localizadas corrigidas na leitura real, prova, lista e erros comuns
-  - 104 blocos TypeScript/TSX validados sem erros de sintaxe; gabarito executado com as saídas previstas
-  - Leitor aprovado em typecheck, lint e build; home, README e teoria responderam com HTTP 200
-  - Versão 20 publicada no projeto existente, preservando a URL e o acesso privado
+  - `lista-sintaxe-extra.md` reduzida a cinco problemas com autonomia de arquitetura
+  - Removidos aquecimento guiado, assinaturas prontas e indicações de ferramentas
+  - Funções com arrays por parâmetro mantidas como restrição mínima do treino
+  - Leitor validado localmente e versão 21 publicada na URL privada existente
 
 ---
 
@@ -34,10 +33,10 @@
 |------|--------|
 | Nova sequência na `EMENTA.md` | ✅ Definida |
 | Novo Capítulo 06 — Funções: Fundamentos | ✅ Concluído pelo aluno |
-| Capítulo 07 — Objetos | ✅ Material completo |
+| Capítulo 07 — Objetos | 🔄 Lista principal encerrada; treino extra pendente |
 | Capítulos 08 e 10 | ⏳ Materiais pendentes |
 | Material `09-arrays-metodos-avancados/` | ✅ Renomeado; revisão didática específica ainda pendente |
-| Leitor e `PROGRESSO.md` | ✅ Atualizados para o Capítulo 07 |
+| Leitor e `PROGRESSO.md` | ✅ Capítulo 07 no catálogo; treino extra adicionado ao README |
 
 ---
 
@@ -55,15 +54,18 @@
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [x] Publicar o Capítulo 07 no projeto existente do Sites (`appgprj_6a6621cf10348191b05987faeea46310`), preservando a URL privada
-- [ ] Concluir a aula, o mini-projeto e a leitura de código real do Capítulo 07 antes da lista
+- [x] Concluir a aula, o mini-projeto e a leitura de código real do Capítulo 07 antes da lista
+- [x] Completar o comentário do `ex24.ts` e o teste visível do bônus
+- [ ] Fazer o treino extra de sintaxe (`lista-sintaxe-extra.md`)
+- [x] Publicar no Sites a versão com o treino extra; typecheck, lint, build, home e rota da lista validados
 
 ---
 
 ## Próxima Sessão
 
-1. Iniciar `07-objetos/README.md` e `aula/01-teoria.md`.
-2. Seguir sintaxe, exemplos, mini-projeto e leitura de código real antes da lista.
-3. A prova permanece preparada, mas só será liberada depois da aula e dos exercícios.
+1. Fazer `exercicios/lista-sintaxe-extra.md`, começando pela Parte A.
+2. Corrigir o treino extra sem reescrever o código do aluno: marcar correto / problema / pense novamente.
+3. Só então avaliar a liberação da prova do Capítulo 07.
 
 ---
 
@@ -72,9 +74,9 @@
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Sim; materiais 08–10 ainda precisam acompanhar a nova ementa |
-| Prova pendente | Não no Capítulo 06; a do 07 está preparada e bloqueada |
+| Prova pendente | Capítulo 07 preparada e bloqueada até lista + treino extra |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
-| Dúvida não resolvida | Não |
+| Dúvida não resolvida | Sintaxe da mistura array + objeto + função em reforço ativo |
 
 ---
 
@@ -82,6 +84,8 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-08-19 | Revisão e publicação do treino extra do Capítulo 07 | ~20min |
+| 2026-08-19 | Primeira correção da lista do Capítulo 07 e treino extra de sintaxe | ~25min |
 | 2026-08-17 | Revisão final e publicação do Capítulo 07 — Objetos | ~25min |
 | 2026-08-17 | Criação do Capítulo 07 — Objetos | ~45min |
 | 2026-08-17 | Validação da correção pós-prova da Questão 8 | ~5min |
@@ -155,4 +159,4 @@
 
 ---
 
-*Última atualização: 2026-08-17*
+*Última atualização: 2026-08-19*

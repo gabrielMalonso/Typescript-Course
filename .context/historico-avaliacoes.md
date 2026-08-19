@@ -4,6 +4,30 @@
 
 ---
 
+## 2026-08-19 — Conclusão da lista — Capítulo 07
+
+**Resultado qualitativo:** 12 exercícios obrigatórios e bônus aprovados. Os dois ajustes finais de `ex24.ts` e `bonus.ts` foram aplicados com autorização do aluno.
+
+**Validação:** os dois arquivos compilam isoladamente em modo estrito. Saídas conferidas: `Parafuso × 8` / `Arruela × 0`; bônus `2`, `18`, `T1: 21 °C | sem nota`, `T2: -3 °C | recalibrar`, depois `0` e `0`.
+
+**Próximo passo:** treino extra de sintaxe. Prova permanece bloqueada.
+
+## 2026-08-19 — Segunda correção da lista — Capítulo 07
+
+**Resultado qualitativo:** `ex14.ts`, `ex21.ts` e `ex23.ts` aprovados. Restam o comentário estrutural em `ex24.ts` e, no bônus, o formato exato mais a comprovação visível do array sem ativos.
+
+**Validação:** os cinco arquivos recompilam isoladamente em modo estrito. Saídas conferidas: `M-4`/`1.25`; `sem código`/`503`; `140`/`140`/`140`.
+
+## 2026-08-19 — Primeira correção da lista — Capítulo 07
+
+**Resultado qualitativo:** 8 dos 12 obrigatórios aprovados na primeira revisão; 4 obrigatórios e o bônus pedem complementos curtos. Todos os 13 arquivos compilam isoladamente em modo estrito e executam sem erros.
+
+**Domínio demonstrado:** literal tipado, mutação com `const`, ponto versus colchetes, objeto aninhado, método com `this`, destructuring no parâmetro, alias versus spread, percurso de array de objetos e cópia sem mutação.
+
+**Pontos a reforçar:** completar os dois testes no mesmo programa; exibir o retorno da função, não só o estado posterior; escrever o comentário de compatibilidade estrutural; formatar o resumo exatamente quando o enunciado define o texto; treinar a escrita da mistura array + objeto + função.
+
+**Próximo passo:** ajustes em `ex14.ts`, `ex21.ts`, `ex23.ts`, `ex24.ts` e `bonus.ts`; em seguida o treino extra `lista-sintaxe-extra.md`. Prova permanece bloqueada.
+
 ## 2026-08-17 — Criação do Capítulo 07 — Objetos
 
 **Resultado:** material completo gerado após a aprovação no Capítulo 06. Ainda não há correção de exercícios nem prova deste capítulo.
@@ -148,6 +172,7 @@
 | 2026-08-13 | 04 | 12 obrigatórios + bônus | Aprovados após revisão | 100% após ajustes | `ex22.ts` passou a mostrar todas as verificações e usar a constante da busca; limite externo do bônus corrigido; `%` ausente no 1.4 é cosmético |
 | 2026-08-14 | 05 | 11 obrigatórios + bônus | Aprovados após revisão | 100% após ajustes | `length` corrigido no 1.3; requisitos textuais completados; entendimento de tipo do 1.1 confirmado; todos compilam e executam |
 | 2026-08-15 | 05 | 4 de integração Arrays + Loops | Aprovados | 100% | Percursos, acumuladores, `continue`, `break` e loops aninhados corretos; previsões e testes alternativos não registrados ficam como recomendação |
+| 2026-08-19 | 07 | 12 + bônus | Aprovados após revisão | 100% após ajustes | Comentário estrutural e formato/teste visível do bônus aplicados na conferência final |
 
 ---
 
@@ -188,4 +213,4 @@
 
 ---
 
-*Última atualização: 2026-08-15*
+*Última atualização: 2026-08-19*
