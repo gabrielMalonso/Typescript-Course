@@ -1,0 +1,30 @@
+var numeroDoEnsaio = 27;
+var materialDaAmostra = "Liga de alumínio";
+var temperaturaInicial = 22.5;
+var temperaturaFinal = 78.5;
+var variacaoDeTemperatura = temperaturaFinal - temperaturaInicial;
+var temperaturaMedia = (temperaturaInicial + temperaturaFinal) / 2;
+var ensaioConcluido = true;
+var observacaoDoInspetor = null;
+var codigoDeFalha = undefined;
+// Desafios de Expansao - Declarações
+var duracaoDoEnsaioEmSegundos = 1.8e3;
+var laboratorioAcreditado = false;
+var resumoDoEnsaio = ("Ensaio: ET-".concat(numeroDoEnsaio, "\nMaterial: ").concat(materialDaAmostra, "\nTemperatura m\u00E9dia: ").concat(temperaturaMedia, "\u00BAC}"));
+console.log("");
+console.log("=== BOLETIM DE ENSAIO TÉRMICO ===");
+console.log("Ensaio: ET-".concat(numeroDoEnsaio));
+console.log("Material: ".concat(materialDaAmostra));
+console.log("Temperatura inicial: ".concat(temperaturaInicial, "\u00BAC"));
+console.log("Temperatura final: ".concat(temperaturaFinal, "\u00BAC"));
+console.log("Varia\u00E7\u00E3o: ".concat(variacaoDeTemperatura, "\u00BAC"));
+console.log("Temperatura m\u00E9dia: ".concat(temperaturaMedia, "\u00BAC"));
+console.log("Conclu\u00EDdo: ".concat(ensaioConcluido));
+console.log("Observa\u00E7\u00E3o do inspetor: ".concat(observacaoDoInspetor));
+console.log("C\u00F3digo de falha: ".concat(codigoDeFalha));
+// Desafios de Expansao - Outputs
+console.log("");
+console.log("=== DESAFIOS DE EXPANSÃO ===");
+console.log("Dura\u00E7\u00E3o: ".concat(duracaoDoEnsaioEmSegundos, " s"));
+console.log("Laborat\u00F3rio acreditado: ".concat(laboratorioAcreditado));
+console.log("Resumo: ".concat(resumoDoEnsaio));

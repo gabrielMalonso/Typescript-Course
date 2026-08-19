@@ -1,0 +1,13 @@
+var entrega = ["briefing", "design", "teste"];
+entrega.push("publicação");
+entrega.unshift("planejamento");
+entrega[2] = "implementação";
+var etapaAdiada = entrega.pop();
+var etapaConcluida = entrega.shift();
+var ultimoIndice = entrega.length - 1;
+console.log("Etapa adiada: ".concat(etapaAdiada));
+console.log("Etapa conclu\u00EDda: ".concat(etapaConcluida));
+console.log("Primeira restante: ".concat(entrega[0]));
+console.log("\u00DAltima restante: ".concat(entrega[ultimoIndice]));
+console.log(entrega);
+console.log("Quantidade final: ".concat(entrega.length));

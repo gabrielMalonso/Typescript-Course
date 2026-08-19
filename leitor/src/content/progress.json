@@ -1,0 +1,47 @@
+[
+  {
+    "chapterId": "00-preparacao-do-ambiente",
+    "label": "Cap. 00 — Preparação do Ambiente",
+    "status": "concluido"
+  },
+  {
+    "chapterId": "01-variaveis-e-constantes",
+    "label": "Cap. 01 — Variáveis e Constantes",
+    "status": "concluido"
+  },
+  {
+    "chapterId": "02-tipos-primitivos",
+    "label": "Cap. 02 — Tipos Primitivos",
+    "status": "concluido"
+  },
+  {
+    "chapterId": "03-operadores-e-condicionais",
+    "label": "Cap. 03 — Operadores e Condicionais",
+    "status": "concluido"
+  },
+  {
+    "chapterId": "04-estruturas-de-repeticao",
+    "label": "Cap. 04 — Estruturas de Repetição",
+    "status": "concluido"
+  },
+  {
+    "chapterId": "05-arrays-fundamentos",
+    "label": "Cap. 05 — Arrays: Fundamentos",
+    "status": "concluido"
+  },
+  {
+    "chapterId": "06-funcoes-fundamentos",
+    "label": "Cap. 06 — Funções: Fundamentos",
+    "status": "concluido"
+  },
+  {
+    "chapterId": "07-objetos",
+    "label": "Cap. 07 — Objetos",
+    "status": "em_andamento"
+  },
+  {
+    "chapterId": "09-arrays-metodos-avancados",
+    "label": "Cap. 09 — Arrays: Métodos Avançados",
+    "status": "pendente"
+  }
+]

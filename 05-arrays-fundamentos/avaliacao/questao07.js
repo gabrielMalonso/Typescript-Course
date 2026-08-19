@@ -1,0 +1,16 @@
+var filaPrincipal = ["INC-102", "INC-205"];
+var painelDaEquipe = filaPrincipal;
+var tamanhoAposUrgente = painelDaEquipe.unshift("INC-001");
+filaPrincipal[1] = "INC-102-R";
+var incidenteAtendido = painelDaEquipe.shift();
+var tamanhoAposNovo = filaPrincipal.push("INC-330");
+var mesmaReferencia = filaPrincipal === painelDaEquipe;
+console.log("Tamanho ap\u00F3s urgente: ".concat(tamanhoAposUrgente));
+console.log("Incidente Atendido: ".concat(incidenteAtendido));
+console.log("Tamanho ap\u00F3s novo: ".concat(tamanhoAposNovo));
+console.log("Mesma refer\u00EAncia: ".concat(mesmaReferencia));
+console.log(filaPrincipal);
+console.log(painelDaEquipe);
+console.log("Primeiro incidente: ".concat(filaPrincipal[0]));
+console.log("\u00DAltimo incidente: ".concat(painelDaEquipe[painelDaEquipe.length - 1]));
+console.log("Quantidade final: ".concat(filaPrincipal.length));

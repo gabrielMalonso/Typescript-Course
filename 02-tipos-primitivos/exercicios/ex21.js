@@ -1,0 +1,10 @@
+// Trecho A
+var trechoA = "1. Tipo inferido na primeira linha: number\n2. A atribui\u00E7\u00E3o posterior \u00E9 aceita ou rejeitada pelo TypeScript? - RESPOSTA: A atribui\u00E7\u00E3o posterior \u00E9 aceita, pois se trata do mesmo tipo.\n3. Por que os tipos s\u00E3o compat\u00EDveis ou incompat\u00EDveis? - RESPOSTA: Ambos s\u00E3o do tipo Number, por isso os tipos s\u00E3o compat\u00EDveis.";
+// Trecho B
+var trechoB = "1. Tipo inferido na primeira linha: number\n2. A atribui\u00E7\u00E3o posterior \u00E9 aceita ou rejeitada pelo TypeScript? - RESPOSTA: A atribui\u00E7\u00E3o posterior n\u00E3o ser\u00E1 aceita, pois se tratam de tipos diferentes.\n3. Por que os tipos s\u00E3o compat\u00EDveis ou incompat\u00EDveis? - RESPOSTA: Os tipos s\u00E3o incompat\u00EDveis, uma vez que a atribui\u00E7\u00E3o posterior atribuiu uma string a um identificador previamente inferido como number.";
+// Trecho C
+var trechoC = "1. Tipo inferido na primeira linha: string\n2. A atribui\u00E7\u00E3o posterior \u00E9 aceita ou rejeitada pelo TypeScript? - RESPOSTA: A atribui\u00E7\u00E3o posterior \u00E9 aceita por esse trato do mesmo tipo. \n3. Por que os tipos s\u00E3o compat\u00EDveis ou incompat\u00EDveis? - RESPOSTA: O tipo inferido na primeira linha foi string e a atribui\u00E7\u00E3o posterior tamb\u00E9m se trata de um string.";
+// Trecho D
+var trechoD = "1. Tipo inferido na primeira linha: string\n2. A atribui\u00E7\u00E3o posterior \u00E9 aceita ou rejeitada pelo TypeScript? - RESPOSTA: A atribui\u00E7\u00E3o posterior n\u00E3o ser\u00E1 aceita, pois ela se trata de um boolean. \n3. Por que os tipos s\u00E3o compat\u00EDveis ou incompat\u00EDveis? - RESPOSTA: Os tipos s\u00E3o incompat\u00EDveis, uma vez que a atribui\u00E7\u00E3o posterior atribuiu um boolean ao identificador previamente inferido como string.";
+var ExplicacaoDeValidacao = "Validar uma atribui\u00E7\u00E3o significa avaliar se aquela atribui\u00E7\u00E3o \u00E9 compat\u00EDvel ou incompat\u00EDvel com o tipo inferido na declara\u00E7\u00E3o da constante ou vari\u00E1vel.";
+console.log("An\u00E1lise de valida\u00E7\u00E3o registrada.");
