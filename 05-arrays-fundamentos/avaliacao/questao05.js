@@ -1,0 +1,13 @@
+var codigos = [];
+var tamanhoDepoisDoPush = codigos.push("M-20");
+var tamanhoDepoisDoUnshift = codigos.unshift("A-10");
+var retiradoDoInicio = codigos.shift();
+var retiradoDoFim = codigos.pop();
+var retiradaExtra = codigos.pop();
+console.log("Tamanho depois do push: ".concat(tamanhoDepoisDoPush));
+console.log("Tamanho depois do unshift: ".concat(tamanhoDepoisDoUnshift));
+console.log("Retirado do inicio: ".concat(retiradoDoInicio));
+console.log("Retirado do fim: ".concat(retiradoDoFim));
+console.log("Retirado extra: ".concat(retiradaExtra));
+console.log(codigos);
+console.log("Quantidade final: ".concat(codigos.length));

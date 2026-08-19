@@ -1,0 +1,10 @@
+var codigoDaOrdem = "MN-204";
+var nomeDaTecnica = "Aline";
+var manutencaoPrioritaria = true;
+var statusAtual = "agenada";
+console.log("Ordem:", codigoDaOrdem);
+console.log("Técnica:", nomeDaTecnica);
+console.log("Prioridade:", manutencaoPrioritaria);
+console.log("Status inicial:", statusAtual);
+statusAtual = "concluída";
+console.log("Status final:", statusAtual);

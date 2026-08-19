@@ -1,0 +1,10 @@
+var niveis = ["baixo", "médio", "alto"];
+var quantidade = niveis.length;
+var ultimoIndiceValido = niveis.length - 1;
+var ultimoNivel = niveis[ultimoIndiceValido];
+var valorForaDoArray = niveis[quantidade];
+console.log("Quantidade: ".concat(quantidade));
+console.log("\u00DAltimo \u00EDndice v\u00E1lido: ".concat(ultimoIndiceValido));
+console.log("\u00DAltimo n\u00EDvel: ".concat(ultimoNivel));
+console.log("Fora do array: ".concat(valorForaDoArray));
+var explicacao = "O \u00EDndice 3 n\u00E3o existe nesse array apesar de length valer 3 devido ao fato de que os \u00EDndices come\u00E7am sua contagem a partir do 0. Portanto, ele vai de 0 a 2, somando 3 \u00EDndices.";
