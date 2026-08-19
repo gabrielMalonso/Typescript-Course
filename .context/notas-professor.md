@@ -6,6 +6,40 @@
 
 ## Observações Gerais
 
+### 2026-08-19 - Revisão e publicação do treino extra do Capítulo 07
+
+**Direção pedagógica:** Gabriel identificou que exercícios com assinaturas, ferramentas e arquitetura previamente escolhidas limitam o treino de decompor problemas. O treino extra passou a fornecer somente dados, objetivos, restrições de conteúdo e formato de saída.
+
+**Limite preservado:** cada programa ainda exige ao menos uma função, com coleções recebidas por parâmetro e contratos explícitos. Essa é uma restrição de aprendizagem, não uma arquitetura pronta; quantidade de funções, responsabilidades e mecanismos internos permanecem a cargo do aluno.
+
+**Ajustes específicos:** removidos o aquecimento guiado e as pistas de implementação. O pedido 103 agora possui observação, permitindo testar presença e ausência da propriedade opcional entre os resumos exibidos.
+
+**Leitor:** typecheck, lint e build aprovados; home e rota da lista conferidas. Versão 21 publicada no projeto privado existente, preservando `https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site`.
+
+### 2026-08-19 - Encerramento da lista principal do Capítulo 07
+
+**Resultado final:** 12 obrigatórios e bônus aprovados. Comentário estrutural em `ex24.ts` e formato/teste `0`/`0` do bônus aplicados com autorização.
+
+**Próximo passo:** `lista-sintaxe-extra.md`. Prova ainda bloqueada.
+
+### 2026-08-19 - Segunda correção da lista do Capítulo 07
+
+**Aprovados nesta revisão:** `ex14.ts`, `ex21.ts` e `ex23.ts`. Gabriel passou a exibir o retorno de `depositar`, não só o saldo depois da chamada.
+
+**Pendências mínimas:** em `ex24.ts`, o comentário ainda descreve a escolha do destructuring em vez da compatibilidade estrutural. No bônus, o texto ainda contém `Nota:` e o array sem ativos não imprime quantidade `0` nem soma `0`.
+
+### 2026-08-19 - Primeira correção da lista do Capítulo 07 e treino extra
+
+**Entrega:** 12 obrigatórios + bônus. Todos compilam em modo estrito e executam. Oito aprovados; cinco complementos curtos.
+
+**Leitura pedagógica:** Gabriel não está perdido nos conceitos de objeto. Ele trava na hora de escrever a pilha `função(array de objetos)`. Pediu explicitamente mais treino de sintaxe, não mais teoria. Relatou que listas anteriores demais arquitetadas reduziram o treino de decidir parâmetros e tipos.
+
+**Resposta:** `lista-sintaxe-extra.md` tem duas partes. A Parte A é ginástica de escrita com assinaturas dadas. A Parte B repete os cinco programas só com dados + objetivo + resultado esperado. Na correção desses extras, marcar correto / problema / pense novamente, sem reescrever o código.
+
+**Sinal positivo:** os comentários do `ex33.ts` já descrevem parâmetro, elemento do `for...of` e retorno em camadas. É o modelo mental que precisa virar hábito de digitação.
+
+**Prova:** permanece bloqueada até os ajustes da lista e o treino extra.
+
 ### 2026-08-17 - Revisão final e publicação do Capítulo 07
 
 **Auditoria didática:** capítulo coerente com a ementa e com os conhecimentos consolidados até o Capítulo 06. Aula, mini-projeto, leitura real, exercícios e prova cobrem o mesmo conjunto de mecanismos sem exigir callbacks, métodos avançados de arrays, `type` ou `interface`.

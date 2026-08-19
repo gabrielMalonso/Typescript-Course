@@ -51,6 +51,8 @@ Diga o que foi copiado, o que foi substituído e o que cada variável guarda.
 
 Implemente uma função que recebe `{ quantidade: number; ativa: boolean }[]`, soma somente itens ativos com quantidade maior que `0` e devolve um objeto-resumo `{ quantidade: number; totalDeItens: number }`. Teste lista comum, item inativo, zero e array vazio.
 
+Se a escrita ainda travar ao misturar array, objeto e função, faça `exercicios/lista-sintaxe-extra.md` antes da prova.
+
 ## Limite pedagógico
 
 Não é necessário estudar agora:

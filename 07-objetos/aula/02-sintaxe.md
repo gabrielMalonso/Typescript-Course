@@ -162,7 +162,30 @@ cronometro.tick();
 console.log(cronometro.formatar());
 ```
 
-`this` só faz sentido depois da chamada `cronometro.tick()`. Sem o objeto à esquerda, não há dono daquele `this`.
+o `this` significa, nesse contexto:
+
+> o objeto que está chamando este método”.
+
+
+Então quando você faz:
+```ts
+cronometro.tick();
+```
+
+dentro de `tick`, o `this` aponta para `cronometro`.
+
+Ou seja:
+```ts
+this.segundos += 1;
+```
+
+pode ser entendido mentalmente como:
+```ts
+cronometro.segundos += 1;
+```
+
+Nesse caso específico.
+
 
 Função externa que recebe o objeto:
 
