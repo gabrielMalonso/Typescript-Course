@@ -1,20 +1,20 @@
-# Curso de TypeScript - Do Zero ao Avançado
+# Estudos de Programação e TypeScript
 
-Repositório de estudos para aprendizado completo de TypeScript, estruturado como um curso formal com aulas, exercícios, provas e projetos práticos.
+Repositório pessoal de estudos em programação e TypeScript, estruturado com aulas, exercícios, avaliações e projetos práticos.
 
 ---
 
 ## Sobre o Curso
 
-Este não é um repositório de aplicação - é um **ambiente de aprendizado personalizado** criado para estudar TypeScript do zero absoluto até conceitos avançados.
+Este não é um repositório de aplicação. É um **ambiente de aprendizado personalizado** criado para construir fundamentos de programação e avançar gradualmente em TypeScript.
 
 ### Características
 
-- **31 capítulos** organizados em 4 módulos
+- **32 capítulos planejados** em 4 módulos
 - **4 projetos práticos** integradores
 - **Abordagem híbrida**: teoria sólida + aplicação imediata
 - **Avaliações**: exercícios + provas por capítulo
-- **Acompanhamento**: sistema de progresso e feedback
+- **Acompanhamento público**: progresso, notas e feedback registrados no repositório
 
 ---
 
@@ -47,10 +47,10 @@ Typescript-Course/
 
 | # | Módulo | Capítulos | Projeto Final |
 |---|--------|-----------|---------------|
-| 1 | Fundamentos Absolutos | 00-05 | Calculadora de Terminal |
-| 2 | Estruturas de Dados e Funções | 06-13 | Gerenciador de Contatos |
-| 3 | TypeScript Intermediário | 14-23 | Sistema de Biblioteca |
-| 4 | TypeScript Avançado | 24-32 | Sistema de Gestão Financeira |
+| 1 | Fundamentos Absolutos | 00-04 | Calculadora de Terminal |
+| 2 | Estruturas de Dados e Funções | 05-12 | Gerenciador de Contatos |
+| 3 | TypeScript Intermediário | 13-22 | Sistema de Biblioteca |
+| 4 | TypeScript Avançado | 23-31 | Sistema de Gestão Financeira |
 
 ---
 
@@ -97,30 +97,34 @@ XX-nome-do-capitulo/
 - **Linguagem**: TypeScript
 - **Runtime**: Node.js
 - **Editor**: VS Code
-- **Tutor**: Claude (Anthropic)
+- **Tutor**: agente de IA, com estudo, resolução e revisão conduzidos pelo aluno
 
 ---
 
 ## Progresso Atual
 
 ```
-Módulo 1: [░░░░░░░░░░] 0%
-Módulo 2: [░░░░░░░░░░] 0%  (bloqueado)
+Módulo 1: [██████████] 100% (projeto pendente)
+Módulo 2: [███░░░░░░░]  25% (capítulo 07 em exercícios)
 Módulo 3: [░░░░░░░░░░] 0%  (bloqueado)
 Módulo 4: [░░░░░░░░░░] 0%  (bloqueado)
 
-Total:    [░░░░░░░░░░] 0%
+Total:    [██░░░░░░░░] 22%
 ```
 
-*Atualizado em: Janeiro/2025*
+Sete dos 32 capítulos foram concluídos, com 106 exercícios realizados e média 9,1 nas avaliações. O detalhamento está em [PROGRESSO.md](PROGRESSO.md).
+
+*Atualizado em: agosto de 2026*
 
 ---
 
 ## Sobre o Aluno
 
-**Gabriel Alonso**
-- Engenheiro Mecânico em transição para tecnologia
-- Objetivo: Construir base sólida em programação para desenvolver projetos próprios
+**Gabriel Monteiro Alonso**
+
+- Engenheiro Mecânico em transição para desenvolvimento de software.
+- Objetivo: construir uma base sólida em programação para complementar a experiência adquirida em produtos próprios.
+- Este repositório documenta estudos em andamento; não representa a conclusão antecipada dos conteúdos intermediários e avançados.
 
 ---
 
