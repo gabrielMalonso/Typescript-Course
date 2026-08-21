@@ -18,14 +18,14 @@
 6.  
 
 ## Bloco 4
-1.  Nesse exemplo, `{ key, label, description }` usa como nomes e como valores: "fullName", "fullName", "Nome completo.". Pelo que pude compreender, key utiliza key como nome e é do tipo string. De forma similar, label e descriptions, que também recebem esses nomes e tipos, respectivamente. 
-2.  column("fullName", "fullName", "Nome completo.")` devolve um objeto formado por {"fullName", "fullName", "Nome completo."}
-3.  base.address.country
-4.  string
-5.  contacts: [] é um array, que se encontra dentro de um objeto
-6.  entra no array columns: []
-7.  detail é a variável que recebe o objeto devolvido em createEmptyPatientDetail
-8.  Somente o que é referente ao react.
+1.  O atalho `{ key, label, description }` usa os parâmetros como nome e como valor. Equivale a `{ key: key, label: label, description: description }`.
+2.  `column("fullName", "fullName", "Nome completo.")` devolve o objeto `{ key: "fullName", label: "fullName", description: "Nome completo." }`.
+3.  Os objetos aninhados são `base` (dentro do retorno) e `address` (dentro de `base`).
+4.  A propriedade que recebe `initialName` é `fullName`.
+5.  `contacts: []` é um array, que se encontra dentro do objeto devolvido.
+6.  O objeto devolvido por `column` entra no array `columns`.
+7.  `detail` é a variável que recebe o objeto devolvido por `createEmptyPatientDetail`.
+8.  `useMemo` (React). Basta saber que ele chama `createEmptyPatientDetail(initialName)` e guarda o retorno em `detail`.
 
 ---
 
