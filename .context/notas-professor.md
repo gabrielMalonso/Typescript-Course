@@ -4,6 +4,14 @@
 
 ---
 
+### 2026-08-21 - Criação do Capítulo 08
+
+**Material:** aula, mini-projeto, leitura real com quatro recortes, 16 exercícios, prova 40/60 e extras concluídos. O capítulo reforça contrato completo, referência versus chamada e a mistura função + array de objetos antes dos métodos avançados do Capítulo 09.
+
+**Adaptação pedagógica:** casos alternativos, limites e comprovação de preservação aparecem repetidamente. O desafio final fornece dados e objetivos, mas deixa a decomposição a cargo do aluno.
+
+**Leitor:** validações aprovadas e nova versão publicada no projeto privado existente, preservando a URL atual.
+
 ## Observações Gerais
 
 ### 2026-08-21 - Prova do Capítulo 07
