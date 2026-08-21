@@ -8,21 +8,22 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Capítulo atual** | 07 - Objetos — prova 9,5, concluído |
-| **Fase atual** | Capítulo encerrado |
+| **Capítulo atual** | 08 - Funções: Callbacks e Recursos |
+| **Fase atual** | Material preparado; aula disponível |
 | **Último capítulo concluído** | 07 - Objetos — prova 9,5 |
-| **Próximo passo** | Aguardar solicitação do Capítulo 08; Projeto 1 continua pendente |
+| **Próximo passo** | Iniciar `08-funcoes-callbacks-e-recursos/aula/01-teoria.md`; Projeto 1 continua pendente |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-08-21
-- **Atividade:** Correção da prova do Capítulo 07
+- **Atividade:** Criação e publicação do Capítulo 08
 - **O que foi feito:**
-  - Quatro arquivos práticos compilados em modo estrito e executados
-  - Nota 9,5/10; capítulo encerrado
-  - Descontos: índice do array na Q1, origem do destructuring na Q4, `litros <= 50` extra na Q7
+  - Aula completa, mini-projeto e leitura de código real com quatro recortes
+  - Lista com 16 exercícios, prova 40% teoria / 60% prática e extras
+  - Coerência didática e blocos TypeScript da aula revisados
+  - Leitor validado e nova versão publicada no projeto existente
 
 ---
 
@@ -33,7 +34,8 @@
 | Nova sequência na `EMENTA.md` | ✅ Definida |
 | Novo Capítulo 06 — Funções: Fundamentos | ✅ Concluído pelo aluno |
 | Capítulo 07 — Objetos | ✅ Concluído — prova 9,5 |
-| Capítulos 08 e 10 | ⏳ Materiais pendentes |
+| Capítulo 08 | ✅ Material completo; estudo ainda não iniciado |
+| Capítulo 10 | ⏳ Material pendente |
 | Material `09-arrays-metodos-avancados/` | ✅ Renomeado; revisão didática específica ainda pendente |
 | Leitor e `PROGRESSO.md` | ✅ Capítulo 07 no catálogo; progresso atualizado |
 
@@ -48,7 +50,8 @@
 - [x] Realocar o antigo Capítulo 06 para o novo Capítulo 09
 - [ ] Adaptar o conteúdo do Capítulo 09 para incluir arrays de objetos e os pré-requisitos novos
 - [x] Criar o material do Capítulo 07 — Objetos
-- [ ] Criar ou revisar os materiais dos capítulos 08 e 10
+- [x] Criar o material do Capítulo 08
+- [ ] Criar ou revisar o material do Capítulo 10
 - [x] Atualizar leitor e `PROGRESSO.md` com o novo Capítulo 07
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
@@ -64,7 +67,7 @@
 
 ## Próxima Sessão
 
-1. Aluno pode solicitar o Capítulo 08 — Funções: Callbacks e Recursos.
+1. Aluno inicia a teoria do Capítulo 08 — Funções: Callbacks e Recursos.
 2. Projeto 1 — Calculadora permanece pendente na sequência formal, sem bloquear o avanço se o aluno pedir o próximo capítulo.
 
 ---
@@ -73,7 +76,7 @@
 
 | Flag | Status |
 |------|--------|
-| Revisão pendente | Sim; materiais 08–10 ainda precisam acompanhar a nova ementa |
+| Revisão pendente | Sim; materiais 09–10 ainda precisam acompanhar a nova ementa |
 | Prova pendente | Não |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não |
@@ -84,6 +87,7 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-08-21 | Criação, validação e publicação do Capítulo 08 | ~45min |
 | 2026-08-21 | Correção da prova do Capítulo 07 — nota 9,5 | ~20min |
 | 2026-08-21 | Revisão conjunta da leitura de código real do Capítulo 07 | ~40min |
 | 2026-08-21 | Correção da leitura real e primeira passagem do treino extra | ~15min |
