@@ -6,6 +6,14 @@
 
 ## Observações Gerais
 
+### 2026-08-21 - Prova do Capítulo 07
+
+**Resultado:** 9,5/10 — aprovado. Prática muito forte: destructuring aninhado, método com teto, filtro de array de objetos e array vazio.
+
+**Descontos:** `lista[2]` no lugar de `lista[1]`; origem do destructuring escrita como `promocao`; `litros <= 50` além do teto de volume.
+
+**Próximo passo:** Capítulo 07 encerrado. Aguardar solicitação do Capítulo 08. Projeto 1 permanece pendente.
+
 ### 2026-08-21 - Leitura real e primeira correção do treino extra
 
 **Lista principal:** já estava encerrada; Gabriel lembrou corretamente que os 12 + bônus tinham sido aprovados.

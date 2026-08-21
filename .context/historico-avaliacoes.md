@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-08-21 — Prova do Capítulo 07
+
+**Resultado:** 9,5/10 — aprovado. A teoria recebeu 3,65/4,0 e a prática 5,80/6,0. Os quatro arquivos TypeScript compilam isoladamente em modo estrito e executam sem erros.
+
+**Descontos:** na Questão 1, o código do equipamento foi lido em `lista[2]` em vez de `lista[1]`. Na Questão 4, a extração de `nome` foi descrita como vinda de `promocao`. Na Questão 7, a condição extra `litros <= 50` rejeitaria um abastecimento grande que deveria só cortar o volume em `50`.
+
+**Organização:** cinco arquivos obrigatórios no diretório correto. Capítulo 07 concluído.
+
+## 2026-08-21 — Correção pós-prova — Capítulo 07
+
+**Resultado:** índice, origem do destructuring, teto do volume e rótulo `Total:` corrigidos. `questao07.ts` e `questao08.ts` recompilam; saídas `40` / `40` / `50` e `Peças: 12 | Total: 21`. Nota original 9,5 preservada.
+
 ## 2026-08-21 — Leitura de código real e treino extra — Capítulo 07
 
 **Leitura de código real:** concluída com ajustes. O aluno acompanhou spread, propriedades opcionais, destructuring na entrada e destino dos objetos. Ajustes: atalho `{ tone }` equivale a `{ tone: tone }`; `requestedAt` vem de `payload.request.requestedAt`; `{ key, label, description }` usa os parâmetros como nomes e valores; `initialName` entra em `fullName`, não no tipo `string`.
@@ -88,8 +100,8 @@
 
 | Métrica | Valor |
 |---------|-------|
-| **Total de provas** | 7 |
-| **Média geral** | 9,1 |
+| **Total de provas** | 8 |
+| **Média geral** | 9,2 |
 | **Maior nota** | 9,5 |
 | **Menor nota** | 8,5 |
 | **Provas com nota < 7** | 0 |
@@ -118,7 +130,7 @@
 |----------|------|------|------------------|-------------|
 | 05 | 2026-08-15 | 9,5 | `ultimoIndice` de array vazio; previsões da Q6 e variável da Q7 omitidas | Aprovado; quatro arquivos práticos compilam e executam |
 | 06 | 2026-08-17 | 9,4 | Tipo conceitual da função e filtro que aceita negativos | Aprovado; quatro arquivos práticos compilam e executam |
-| 07 | - | - | - | - |
+| 07 | 2026-08-21 | 9,5 | Índice `lista[2]` em vez de `lista[1]`; extração descrita como vinda de `promocao`; `litros <= 50` extra no tanque | Aprovado; quatro arquivos práticos compilam e executam |
 | 08 | - | - | - | - |
 | 09 | - | - | - | - |
 | 10 | - | - | - | - |
@@ -219,7 +231,9 @@
 | Operadores e estruturas condicionais | 8,7 | 8,7 | Bom domínio; reforçar testes de limites e caminhos alternativos |
 | Estruturas de repetição | 9,4 | 9,4 | Domínio sólido; parte prática integralmente correta |
 | Arrays: fundamentos | Lista qualitativa | 9,5 | Domínio sólido; reforçar `length - 1` quando o array está vazio e requisitos textuais |
+| Funções: fundamentos | 9,4 | 9,4 | Domínio sólido; reforçar tipo da função versus tipo do retorno |
+| Objetos | 9,5 | 9,5 | Domínio sólido; reforçar índice versus propriedade nomeada e teto no acumulado |
 
 ---
 
-*Última atualização: 2026-08-19*
+*Última atualização: 2026-08-21*
