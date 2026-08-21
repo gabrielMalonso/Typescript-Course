@@ -8,21 +8,21 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Capítulo atual** | 07 - Objetos |
-| **Fase atual** | Leitura de código real: revisão conjunta, Bloco 2 |
-| **Último capítulo concluído** | 06 - Funções: Fundamentos — prova 9,4 |
-| **Próximo passo** | Fechar Bloco 2 e seguir para o Bloco 3 |
+| **Capítulo atual** | 07 - Objetos — prova 9,5, concluído |
+| **Fase atual** | Capítulo encerrado |
+| **Último capítulo concluído** | 07 - Objetos — prova 9,5 |
+| **Próximo passo** | Aguardar solicitação do Capítulo 08; Projeto 1 continua pendente |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-08-21
-- **Atividade:** Revisão conjunta da leitura de código real, começando pelo Bloco 2
+- **Atividade:** Correção da prova do Capítulo 07
 - **O que foi feito:**
-  - Extra 1 permanece na leitura de almoxarifado, a pedido do aluno
-  - Extra 4 encerrado com comentários de modelo mental
-  - Sessão de leitura: Bloco 2 item a item
+  - Quatro arquivos práticos compilados em modo estrito e executados
+  - Nota 9,5/10; capítulo encerrado
+  - Descontos: índice do array na Q1, origem do destructuring na Q4, `litros <= 50` extra na Q7
 
 ---
 
@@ -32,10 +32,10 @@
 |------|--------|
 | Nova sequência na `EMENTA.md` | ✅ Definida |
 | Novo Capítulo 06 — Funções: Fundamentos | ✅ Concluído pelo aluno |
-| Capítulo 07 — Objetos | 🔄 Treino extra em ajuste; prova ainda bloqueada |
+| Capítulo 07 — Objetos | ✅ Concluído — prova 9,5 |
 | Capítulos 08 e 10 | ⏳ Materiais pendentes |
 | Material `09-arrays-metodos-avancados/` | ✅ Renomeado; revisão didática específica ainda pendente |
-| Leitor e `PROGRESSO.md` | ✅ Capítulo 07 no catálogo |
+| Leitor e `PROGRESSO.md` | ✅ Capítulo 07 no catálogo; progresso atualizado |
 
 ---
 
@@ -53,22 +53,19 @@
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
 - [x] Publicar o Capítulo 07 no projeto existente do Sites (`appgprj_6a6621cf10348191b05987faeea46310`), preservando a URL privada
-- [x] Concluir a aula, o mini-projeto e a leitura de código real do Capítulo 07 antes da lista
+- [x] Concluir a aula, o mini-projeto e a leitura de código real do Capítulo 07
 - [x] Completar o comentário do `ex24.ts` e o teste visível do bônus
-- [ ] Encerrar o treino extra de sintaxe (`lista-sintaxe-extra.md`)
-- [x] Publicar no Sites a versão com o treino extra; typecheck, lint, build, home e rota da lista validados
+- [x] Treino extra de sintaxe encerrado o suficiente para a prova (Extra 1 permaneceu na leitura de unidades)
 - [x] Corrigir a leitura de código real do Capítulo 07
-- [x] Extra 4 encerrado (formato + comentários de raciocínio)
-- [ ] Extra 1 permanece na versão do aluno (leitura de unidades; não será refeito)
-- [ ] Revisar leitura de código real com o aluno, bloco a bloco
+- [x] Extra 4 encerrado
+- [x] Corrigir a prova do Capítulo 07 — nota 9,5
 
 ---
 
 ## Próxima Sessão
 
-1. Conferir Extra 1 e Extra 4 após o ajuste do aluno.
-2. Se aprovados, liberar a prova do Capítulo 07.
-3. Aluno resolve em `avaliacao/resposta.md` e nos quatro arquivos `questao05.ts` a `questao08.ts`.
+1. Aluno pode solicitar o Capítulo 08 — Funções: Callbacks e Recursos.
+2. Projeto 1 — Calculadora permanece pendente na sequência formal, sem bloquear o avanço se o aluno pedir o próximo capítulo.
 
 ---
 
@@ -77,9 +74,9 @@
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Sim; materiais 08–10 ainda precisam acompanhar a nova ementa |
-| Prova pendente | Capítulo 07 preparada e bloqueada até Extra 1 e Extra 4 |
+| Prova pendente | Não |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
-| Dúvida não resolvida | Distinguir contar objetos de somar uma propriedade numérica |
+| Dúvida não resolvida | Não |
 
 ---
 
@@ -87,6 +84,8 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-08-21 | Correção da prova do Capítulo 07 — nota 9,5 | ~20min |
+| 2026-08-21 | Revisão conjunta da leitura de código real do Capítulo 07 | ~40min |
 | 2026-08-21 | Correção da leitura real e primeira passagem do treino extra | ~15min |
 | 2026-08-19 | Revisão e publicação do treino extra do Capítulo 07 | ~20min |
 | 2026-08-19 | Primeira correção da lista do Capítulo 07 e treino extra de sintaxe | ~25min |

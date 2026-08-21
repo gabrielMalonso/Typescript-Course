@@ -9,13 +9,13 @@
 ## Visão Geral
 
 ```
-[███████████                                       ] 22%
+[████████████                                      ] 25%
 ```
 
 | Módulo | Status | Progresso |
 |--------|--------|-----------|
 | 1 - Fundamentos Absolutos | Capítulos concluídos; projeto pendente | 5/5 capítulos |
-| 2 - Estruturas de Dados e Funções | Capítulos 05 e 06 concluídos; 07 em exercícios | 2/8 capítulos |
+| 2 - Estruturas de Dados e Funções | Capítulos 05, 06 e 07 concluídos | 3/8 capítulos |
 | 3 - TypeScript Intermediário | Bloqueado | 0/10 capítulos |
 | 4 - TypeScript Avançado | Bloqueado | 0/9 capítulos |
 
@@ -40,7 +40,7 @@
 |-----|--------|------|------------|-------|--------|
 | 05 | Arrays: Fundamentos | ✓ | ✓ | ★ 9,5 | Concluído |
 | 06 | Funções: Fundamentos | ✓ | ✓ | ★ 9,4 | Concluído |
-| 07 | Objetos | ✓ | Lista ✓; extra 3/5 | - | Extra 1 e Extra 4 pendentes |
+| 07 | Objetos | ✓ | ✓ | ★ 9,5 | Concluído |
 | 08 | Funções: Callbacks e Recursos | - | - | - | Bloqueado |
 | 09 | Arrays: Métodos Avançados | ✓ | Disponível | - | Material preparado; bloqueado |
 | 10 | Tuples | - | - | - | Bloqueado |
@@ -95,16 +95,16 @@
 | 10/08/2026 | 03 - Operadores e Estruturas Condicionais | Prova | 8,7 | Aprovado |
 | 13/08/2026 | 04 - Estruturas de Repetição | Prova | 9,4 | Aprovado |
 | 15/08/2026 | 05 - Arrays: Fundamentos | Prova | 9,5 | Aprovado |
-| 17/08/2026 | 06 - Funções: Fundamentos | Prova | 9,4 | Aprovado |
+| 21/08/2026 | 07 - Objetos | Prova | 9,5 | Aprovado |
 
 ---
 
 ## Estatísticas
 
-- **Capítulos concluídos:** 7/32
-- **Exercícios realizados:** 99 + 7 bônus + 3 extras do cap. 07
-- **Provas realizadas:** 7
-- **Média geral:** 9,1
+- **Capítulos concluídos:** 8/32
+- **Exercícios realizados:** 99 + 7 bônus + extras do cap. 07
+- **Provas realizadas:** 8
+- **Média geral:** 9,2
 - **Projetos entregues:** 0/4
 
 ---

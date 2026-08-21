@@ -110,7 +110,7 @@
 - Descrever o tipo de uma função pelo contrato completo, não apenas pelo tipo retornado
 - Testar regras numéricas com valores fora da amostra, especialmente negativos e limites
 - Escrever a mistura de array de objetos com função: o que é o array, o que é um objeto, o que entra como parâmetro e o que a função devolve
-- Distinção entre array original, parâmetro da função e acumulador local preenchido com `push` — modelo confirmado; reforçar que o `push` é da cópia filtrada, não de todo item original
+- Distinguir o teto de um acumulador (`volume <= 50`) do tamanho de cada incremento (`litros <= 50`)
 
 ---
 
@@ -150,7 +150,7 @@
 - Composição manual de funções para somar, contar e calcular média de valores válidos
 - Diferença sintática entre declaração, expressão de função, arrow concisa e arrow com bloco
 - Diferença entre guardar uma referência de função e executar uma chamada para obter seu retorno
-- Literal de objeto, mutação com `const`, ponto versus colchetes, alias versus spread e cópia rasa sem alterar o original
+- Objetos literais, referência versus cópia, spread, destructuring e arrays de objetos com funções
 
 ---
 
@@ -183,7 +183,7 @@
 - Obteve 9,5 na prova do Capítulo 05; dominou operações, retornos, referência compartilhada e percurso com `for`, mas confundiu `length - 1` com `undefined` no caso do array vazio
 - Obteve 9,4 na prova do Capítulo 06; prática muito forte, com reforço necessário no tipo conceitual de uma função e na diferença entre filtrar zeros e aceitar somente positivos
 - Na primeira lista de objetos, compilou e executou todos os arquivos; a escrita ainda trava quando array, objeto e função se empilham. Pediu treino extra focado em sintaxe, não em mais teoria.
-- No treino extra, montou bem a pilha função + array de objetos nos Extras 2, 3 e 5. No Extra 1, somou a propriedade numérica quando o enunciado pedia a quantidade de produtos.
+- Obteve 9,5 na prova do Capítulo 07; consolidou objetos, spread, destructuring e lista de fichas. Descontos de atenção no índice do array e de regra geral no teto do tanque.
 
 ---
 
