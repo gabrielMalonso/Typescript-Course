@@ -6,6 +6,34 @@
 
 ## Observações Gerais
 
+### 2026-08-21 - Leitura real e primeira correção do treino extra
+
+**Lista principal:** já estava encerrada; Gabriel lembrou corretamente que os 12 + bônus tinham sido aprovados.
+
+**Leitura de código:** fluxo geral acompanhado. O ponto mais útil para a prova é a pergunta 4 do Bloco 4: ele respondeu o tipo (`string`) no lugar da propriedade (`fullName`). É o mesmo tipo de inversão camada/contrato que apareceu na prova do Capítulo 06.
+
+**Treino extra:** a arquitetura dos Extras 2, 3 e 5 mostra que a escrita da pilha função + array de objetos destravou. O Extra 1 erra a pergunta “quantos produtos”, não a sintaxe: soma `estoque` em vez de contar objetos. O Extra 4 acerta a cópia sem mutação e falha só no formato de exibição.
+
+**Prova:** ainda bloqueada. Extra 4 com exibição corrigida; Extra 1 ainda pendente na leitura de ficha versus unidades.
+
+### 2026-08-21 - Revisão conjunta da leitura, Bloco 2
+
+Gabriel pediu para percorrer os blocos da leitura de código real item a item. Extra 1 não será refeito; Extra 4 ficou com comentários de estudo. No Bloco 2, o mecanismo de spread já estava certo; o reforço é o atalho `{ tone }` e o destino de `next` (troca de estado, não mutação do objeto antigo).
+
+Na pergunta 3, ele não lembrava do atalho na aula (`02-sintaxe.md`, seção 6). Confirmou a dúvida certa: `tone` é propriedade do objeto que, dentro da função, se chama `change`. O nome no código é `tone`, não “tom”.
+
+Gabriel descreveu sozinho o modelo: array local começa vazio e o `for...of` vai enchendo com `push`. Dois refinamentos dados na hora: nem todo item entra (só `ativo`); o `push` empilha cópia reajustada, não o objeto original.
+
+Gabriel já havia usado `let cont = 0` nos extras. A dúvida anterior era a versão em coleção: `const funcionariosAtivos: { ... }[] = []`. Três nomes distintos (`funcionarios` original, `lista` parâmetro, `funcionariosAtivos` acumulador). O `[]` é o zero da coleta. A anotação existe porque um array vazio não deixa o TypeScript inferir o formato do objeto.
+
+### 2026-08-21 - Extra 1: interpretação de “produto”, não falha de lógica
+
+Gabriel defendeu corretamente a leitura de almoxarifado: duas furadeiras são dois produtos, não um produto com quantidade 2. A função somou `estoque` de forma coerente com essa leitura.
+
+O enunciado usou “produto” no sentido de ficha/SKU: cada objeto do array é um produto, e `estoque` é a quantidade daquela ficha. A saída `Produtos disponíveis: 2`, o pedido de “nome de cada produto” e o cálculo `preço × quantidade` apontam para essa segunda leitura.
+
+Não registrar como erro de lógica. O descompasso foi de vocabulário do enunciado, ambíguo para quem já pensa em estoque físico. Em exercícios futuros, preferir “quantos tipos de produto” ou “quantas fichas com estoque maior que zero” quando a intenção for contar objetos, não unidades.
+
 ### 2026-08-19 - Revisão e publicação do treino extra do Capítulo 07
 
 **Direção pedagógica:** Gabriel identificou que exercícios com assinaturas, ferramentas e arquitetura previamente escolhidas limitam o treino de decompor problemas. O treino extra passou a fornecer somente dados, objetivos, restrições de conteúdo e formato de saída.

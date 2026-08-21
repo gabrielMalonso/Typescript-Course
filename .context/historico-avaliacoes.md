@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-08-21 — Leitura de código real e treino extra — Capítulo 07
+
+**Leitura de código real:** concluída com ajustes. O aluno acompanhou spread, propriedades opcionais, destructuring na entrada e destino dos objetos. Ajustes: atalho `{ tone }` equivale a `{ tone: tone }`; `requestedAt` vem de `payload.request.requestedAt`; `{ key, label, description }` usa os parâmetros como nomes e valores; `initialName` entra em `fullName`, não no tipo `string`.
+
+**Treino extra:** 3 de 5 aprovados na primeira passagem. Extra 2, Extra 3 e Extra 5 corretos. Extra 1 soma unidades de estoque em vez de contar produtos disponíveis (`12` no lugar de `2`). Extra 4 copia e reajusta corretamente, mas imprime os arrays em vez do formato pedido.
+
+**Próximo passo:** ajustes em Extra 1 e Extra 4. Prova permanece bloqueada.
+
 ## 2026-08-19 — Conclusão da lista — Capítulo 07
 
 **Resultado qualitativo:** 12 exercícios obrigatórios e bônus aprovados. Os dois ajustes finais de `ex24.ts` e `bonus.ts` foram aplicados com autorização do aluno.
@@ -172,6 +180,7 @@
 | 2026-08-13 | 04 | 12 obrigatórios + bônus | Aprovados após revisão | 100% após ajustes | `ex22.ts` passou a mostrar todas as verificações e usar a constante da busca; limite externo do bônus corrigido; `%` ausente no 1.4 é cosmético |
 | 2026-08-14 | 05 | 11 obrigatórios + bônus | Aprovados após revisão | 100% após ajustes | `length` corrigido no 1.3; requisitos textuais completados; entendimento de tipo do 1.1 confirmado; todos compilam e executam |
 | 2026-08-15 | 05 | 4 de integração Arrays + Loops | Aprovados | 100% | Percursos, acumuladores, `continue`, `break` e loops aninhados corretos; previsões e testes alternativos não registrados ficam como recomendação |
+| 2026-08-21 | 07 extra | 5 | 3 corretos, 2 com ajuste | 60% na 1ª passagem | Extra 1 soma unidades em vez de contar produtos; Extra 4 não usa o formato de exibição |
 | 2026-08-19 | 07 | 12 + bônus | Aprovados após revisão | 100% após ajustes | Comentário estrutural e formato/teste visível do bônus aplicados na conferência final |
 
 ---

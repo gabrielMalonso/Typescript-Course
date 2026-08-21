@@ -40,7 +40,7 @@
 |-----|--------|------|------------|-------|--------|
 | 05 | Arrays: Fundamentos | ✓ | ✓ | ★ 9,5 | Concluído |
 | 06 | Funções: Fundamentos | ✓ | ✓ | ★ 9,4 | Concluído |
-| 07 | Objetos | ✓ | Lista principal ✓ | - | Treino extra pendente |
+| 07 | Objetos | ✓ | Lista ✓; extra 3/5 | - | Extra 1 e Extra 4 pendentes |
 | 08 | Funções: Callbacks e Recursos | - | - | - | Bloqueado |
 | 09 | Arrays: Métodos Avançados | ✓ | Disponível | - | Material preparado; bloqueado |
 | 10 | Tuples | - | - | - | Bloqueado |
@@ -102,7 +102,7 @@
 ## Estatísticas
 
 - **Capítulos concluídos:** 7/32
-- **Exercícios realizados:** 99 + 7 bônus
+- **Exercícios realizados:** 99 + 7 bônus + 3 extras do cap. 07
 - **Provas realizadas:** 7
 - **Média geral:** 9,1
 - **Projetos entregues:** 0/4
@@ -122,4 +122,4 @@
 
 ---
 
-*Última atualização: 19/08/2026*
+*Última atualização: 21/08/2026*
