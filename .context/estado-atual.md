@@ -9,21 +9,20 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 07 - Objetos |
-| **Fase atual** | Lista principal encerrada; treino extra de sintaxe pendente |
+| **Fase atual** | Leitura de código real: revisão conjunta, Bloco 2 |
 | **Último capítulo concluído** | 06 - Funções: Fundamentos — prova 9,4 |
-| **Próximo passo** | Fazer `07-objetos/exercicios/lista-sintaxe-extra.md` |
+| **Próximo passo** | Fechar Bloco 2 e seguir para o Bloco 3 |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-08-19
-- **Atividade:** Revisão e publicação do treino extra do Capítulo 07
+- **Data:** 2026-08-21
+- **Atividade:** Revisão conjunta da leitura de código real, começando pelo Bloco 2
 - **O que foi feito:**
-  - `lista-sintaxe-extra.md` reduzida a cinco problemas com autonomia de arquitetura
-  - Removidos aquecimento guiado, assinaturas prontas e indicações de ferramentas
-  - Funções com arrays por parâmetro mantidas como restrição mínima do treino
-  - Leitor validado localmente e versão 21 publicada na URL privada existente
+  - Extra 1 permanece na leitura de almoxarifado, a pedido do aluno
+  - Extra 4 encerrado com comentários de modelo mental
+  - Sessão de leitura: Bloco 2 item a item
 
 ---
 
@@ -33,10 +32,10 @@
 |------|--------|
 | Nova sequência na `EMENTA.md` | ✅ Definida |
 | Novo Capítulo 06 — Funções: Fundamentos | ✅ Concluído pelo aluno |
-| Capítulo 07 — Objetos | 🔄 Lista principal encerrada; treino extra pendente |
+| Capítulo 07 — Objetos | 🔄 Treino extra em ajuste; prova ainda bloqueada |
 | Capítulos 08 e 10 | ⏳ Materiais pendentes |
 | Material `09-arrays-metodos-avancados/` | ✅ Renomeado; revisão didática específica ainda pendente |
-| Leitor e `PROGRESSO.md` | ✅ Capítulo 07 no catálogo; treino extra adicionado ao README |
+| Leitor e `PROGRESSO.md` | ✅ Capítulo 07 no catálogo |
 
 ---
 
@@ -56,16 +55,20 @@
 - [x] Publicar o Capítulo 07 no projeto existente do Sites (`appgprj_6a6621cf10348191b05987faeea46310`), preservando a URL privada
 - [x] Concluir a aula, o mini-projeto e a leitura de código real do Capítulo 07 antes da lista
 - [x] Completar o comentário do `ex24.ts` e o teste visível do bônus
-- [ ] Fazer o treino extra de sintaxe (`lista-sintaxe-extra.md`)
+- [ ] Encerrar o treino extra de sintaxe (`lista-sintaxe-extra.md`)
 - [x] Publicar no Sites a versão com o treino extra; typecheck, lint, build, home e rota da lista validados
+- [x] Corrigir a leitura de código real do Capítulo 07
+- [x] Extra 4 encerrado (formato + comentários de raciocínio)
+- [ ] Extra 1 permanece na versão do aluno (leitura de unidades; não será refeito)
+- [ ] Revisar leitura de código real com o aluno, bloco a bloco
 
 ---
 
 ## Próxima Sessão
 
-1. Fazer `exercicios/lista-sintaxe-extra.md`, começando pela Parte A.
-2. Corrigir o treino extra sem reescrever o código do aluno: marcar correto / problema / pense novamente.
-3. Só então avaliar a liberação da prova do Capítulo 07.
+1. Conferir Extra 1 e Extra 4 após o ajuste do aluno.
+2. Se aprovados, liberar a prova do Capítulo 07.
+3. Aluno resolve em `avaliacao/resposta.md` e nos quatro arquivos `questao05.ts` a `questao08.ts`.
 
 ---
 
@@ -74,9 +77,9 @@
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Sim; materiais 08–10 ainda precisam acompanhar a nova ementa |
-| Prova pendente | Capítulo 07 preparada e bloqueada até lista + treino extra |
+| Prova pendente | Capítulo 07 preparada e bloqueada até Extra 1 e Extra 4 |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
-| Dúvida não resolvida | Sintaxe da mistura array + objeto + função em reforço ativo |
+| Dúvida não resolvida | Distinguir contar objetos de somar uma propriedade numérica |
 
 ---
 
@@ -84,6 +87,7 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-08-21 | Correção da leitura real e primeira passagem do treino extra | ~15min |
 | 2026-08-19 | Revisão e publicação do treino extra do Capítulo 07 | ~20min |
 | 2026-08-19 | Primeira correção da lista do Capítulo 07 e treino extra de sintaxe | ~25min |
 | 2026-08-17 | Revisão final e publicação do Capítulo 07 — Objetos | ~25min |
@@ -159,4 +163,4 @@
 
 ---
 
-*Última atualização: 2026-08-19*
+*Última atualização: 2026-08-21*
