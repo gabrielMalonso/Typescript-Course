@@ -18,11 +18,11 @@
 ## Sessão Atual
 
 - **Data:** 2026-08-24
-- **Atividade:** Complementação da teoria de callbacks e republicação do leitor
+- **Atividade:** Refinamento didático da explicação sobre contrato e implementação de callbacks
 - **O que foi feito:**
-  - Identificada uma lacuna entre o tipo do parâmetro callback e a implementação recebida como argumento
-  - Adicionada a seção 5.1 com encaixe visual, fluxo de execução e separação de responsabilidades
-  - Mantida a sequência original, sem antecipar retorno de callback, arrays ou closures
+  - Reescrita a seção 5.1 com explicação granular, fluxo numerado, tabela de papéis e resumo
+  - Removidas da seção 5 as explicações repetidas, preservando uma progressão contínua
+  - Mantida a precisão entre parâmetro, tipo, função concreta, referência e chamada
   - Leitor validado e republicado no projeto existente
 
 ---

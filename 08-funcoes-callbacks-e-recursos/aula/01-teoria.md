@@ -130,38 +130,22 @@ anunciar("inspeção concluída", (texto: string): void => {
 });
 ```
 
-Papéis diferentes:
-
-| Parte | Papel |
-|---|---|
-| `anunciar` | controla o fluxo |
-| `exibir` | parâmetro que receberá uma função |
-| `(texto) => console.log(texto)` | callback entregue |
-| `exibir(...)` | ponto em que o callback é chamado |
-
-Passar não é chamar:
-
-```typescript
-anunciar("ok", mostrar);   // passa a função
-anunciar("ok", mostrar()); // tenta passar o retorno da chamada
-```
-
-Se `mostrar()` retorna `void`, a segunda forma entrega `void`, não uma função.
-
 ### 5.1 O parâmetro descreve o contrato; o argumento traz a implementação
 
-Quando escrevemos:
+É comum olhar para a declaração de `exibir` e pensar: “onde está o corpo dessa função? O que ela faz?”. A resposta é que esse trecho não contém uma implementação. Ele descreve o **contrato** que o argumento deverá cumprir.
+
+#### 1. O que está escrito na função `anunciar`
 
 ```typescript
 function anunciar(
   mensagem: string,
-  exibir: (texto: string) => void,
+  exibir: (texto: string) => void, // contrato do segundo parâmetro
 ): void {
   exibir(`Aviso: ${mensagem}`);
 }
 ```
 
-este trecho:
+Esta parte:
 
 ```typescript
 exibir: (texto: string) => void
@@ -169,7 +153,7 @@ exibir: (texto: string) => void
 
 **não cria nem implementa uma função chamada `exibir`.**
 
-Ele declara um parâmetro chamado `exibir` e informa qual tipo de valor pode ser colocado nele:
+Ela declara um parâmetro chamado `exibir` e informa qual tipo de valor pode ocupá-lo:
 
 ```text
 exibir: (texto: string) => void
@@ -182,7 +166,15 @@ exibir: (texto: string) => void
 └── parâmetro
 ```
 
-A função concreta é fornecida como argumento na chamada:
+Em outras palavras, `anunciar` estabelece a seguinte exigência:
+
+> “Entregue-me uma função que aceite um texto e não devolva nenhum valor. Eu decidirei quando chamá-la e qual texto entregar.”
+
+Nesse ponto, `anunciar` conhece o **formato** da função que receberá, mas não conhece seu corpo nem o que ela fará.
+
+#### 2. Onde aparece a função concreta
+
+A implementação chega como segundo argumento na chamada:
 
 ```typescript
 anunciar(
@@ -193,7 +185,20 @@ anunciar(
 );
 ```
 
-Podemos visualizar o encaixe:
+Nessa chamada, dois valores são entregues:
+
+1. a string `"inspeção concluída"` ocupa o parâmetro `mensagem`;
+2. a função anônima ocupa o parâmetro `exibir`.
+
+A função anônima é o **callback concreto**. Seu corpo contém a implementação que faltava na declaração do parâmetro:
+
+```typescript
+(texto: string): void => {
+  console.log(texto);
+}
+```
+
+O encaixe entre parâmetros e argumentos fica assim:
 
 ```text
 PARÂMETROS                         ARGUMENTOS
@@ -205,7 +210,7 @@ exibir:                    ←       (texto: string): void => {
                                    }
 ```
 
-Portanto, durante essa execução de `anunciar`, podemos pensar conceitualmente:
+Durante essa execução, podemos pensar conceitualmente:
 
 ```text
 mensagem = "inspeção concluída"
@@ -214,15 +219,33 @@ exibir = função recebida
          (texto) => console.log(texto)
 ```
 
-A função recebida **ainda não foi executada**. Ela apenas foi entregue.
+A função agora está guardada no parâmetro `exibir`, mas **ainda não foi executada**. Até aqui, ela apenas foi entregue.
 
-A execução acontece aqui:
+#### 3. O fluxo real, passo a passo
+
+Quando o programa executa a chamada de `anunciar`, acontece o seguinte:
+
+1. `anunciar` começa a executar;
+2. `mensagem` recebe `"inspeção concluída"`;
+3. `exibir` recebe a função anônima que contém `console.log(texto)`;
+4. a execução entra no corpo de `anunciar` e chega a:
 
 ```typescript
 exibir(`Aviso: ${mensagem}`);
 ```
 
-O fluxo completo é:
+5. a template literal produz `"Aviso: inspeção concluída"`;
+6. `exibir(...)` chama o callback recebido com esse texto;
+7. o parâmetro `texto` do callback recebe a string;
+8. o corpo do callback executa `console.log(texto)`.
+
+O resultado no console é:
+
+```text
+Aviso: inspeção concluída
+```
+
+Visualmente, o fluxo completo é:
 
 ```text
 1. callback é criado
@@ -242,34 +265,46 @@ exibir("Aviso: inspeção concluída")
 console.log("Aviso: inspeção concluída")
 ```
 
-Isso também explica por que `anunciar` não precisa saber **como** a mensagem será exibida. Ela conhece apenas o contrato da função que receberá.
+Repare que `console.log` **não está no corpo de `anunciar`**. Ele pertence ao callback recebido. `anunciar` decide **quando** chamar e **qual texto** entregar; o callback decide **o que fazer** com esse texto.
 
-Por exemplo, callbacks diferentes poderiam obedecer ao mesmo contrato:
+#### 4. Os papéis de cada parte
+
+| Parte | O que é | Papel |
+|---|---|---|
+| `anunciar` | função controladora | decide quando chamar e qual argumento entregar |
+| `exibir` | parâmetro cujo tipo é função | recebe e guarda o callback durante a execução |
+| `(texto) => console.log(texto)` | função entregue como argumento | é o callback concreto e define o que fazer |
+| `exibir(...)` | chamada dentro de `anunciar` | é o ponto em que o callback é executado |
+
+#### 5. Passar não é chamar
+
+Considere esta função compatível com o contrato esperado:
 
 ```typescript
-let algumLugar = "";
-
-const mostrarNoConsole = (texto: string): void => {
+function mostrar(texto: string): void {
   console.log(texto);
-};
-
-const guardarTexto = (texto: string): void => {
-  algumLugar = texto;
-};
+}
 ```
 
-Ambos possuem o tipo:
+Há uma diferença essencial entre escrever seu nome com e sem parênteses:
 
 ```typescript
-(texto: string) => void
+anunciar("ok", mostrar);   // passa a própria função
+anunciar("ok", mostrar("agora")); // erro: executa agora e tenta passar o retorno void
 ```
 
-Assim, há uma separação de responsabilidades:
+- `mostrar` representa a própria função como um valor. Ela pode ser entregue e chamada depois.
+- `mostrar("agora")` executa a função imediatamente e representa o valor retornado pela chamada.
 
-| Parte | Decide |
-|---|---|
-| `anunciar` | **quando** chamar o callback e **qual argumento** entregar |
-| callback | **o que fazer** quando for chamado |
+Como `mostrar("agora")` retorna `void`, a segunda forma tenta entregar `void` onde `anunciar` exige uma função. Por isso ela não satisfaz o contrato.
+
+#### Resumo
+
+- `exibir: (texto: string) => void` descreve apenas o **tipo** do parâmetro;
+- a implementação chega na chamada, por meio da função entregue como argumento;
+- `anunciar` não precisa conhecer o corpo do callback;
+- `anunciar` controla **quando chamar** e **qual argumento entregar**;
+- o callback controla **o que fazer quando for chamado**.
 
 > **A assinatura do callback descreve o formato da função que será recebida; ela não descreve sua implementação. A implementação chega como argumento na chamada.**
 
