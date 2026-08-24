@@ -11,18 +11,19 @@
 | **Capítulo atual** | 08 - Funções: Callbacks e Recursos |
 | **Fase atual** | Aula em andamento — teoria de callbacks |
 | **Último capítulo concluído** | 07 - Objetos — prova 9,5 |
-| **Próximo passo** | Continuar `08-funcoes-callbacks-e-recursos/aula/01-teoria.md` a partir da seção 5.1; Projeto 1 continua pendente |
+| **Próximo passo** | Continuar `08-funcoes-callbacks-e-recursos/aula/01-teoria.md` a partir da seção 5; Projeto 1 continua pendente |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-08-24
-- **Atividade:** Refinamento didático da explicação sobre contrato e implementação de callbacks
+- **Atividade:** Síntese das seções 5–6 e inclusão de cartilhas visuais
 - **O que foi feito:**
-  - Reescrita a seção 5.1 com explicação granular, fluxo numerado, tabela de papéis e resumo
-  - Removidas da seção 5 as explicações repetidas, preservando uma progressão contínua
-  - Mantida a precisão entre parâmetro, tipo, função concreta, referência e chamada
+  - Seções 5 e 5.1 unificadas em uma explicação mais curta sobre contrato, implementação e execução
+  - Preservada a distinção essencial entre passar uma função e chamá-la
+  - Adicionadas cartilhas visuais aos exemplos de callback `void` e callback com retorno
+  - Imagens originais preservadas e disponibilizadas para abertura em tamanho integral
   - Leitor validado e republicado no projeto existente
 
 ---
@@ -79,7 +80,7 @@
 | Revisão pendente | Sim; materiais 09–10 ainda precisam acompanhar a nova ementa |
 | Prova pendente | Não |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
-| Dúvida não resolvida | Não; lacuna entre contrato e implementação foi coberta na seção 5.1 |
+| Dúvida não resolvida | Não; contrato, implementação e retorno foram consolidados com texto e modelos mentais visuais |
 
 ---
 

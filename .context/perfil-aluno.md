@@ -161,7 +161,7 @@
 
 - Analogias com mundo real: prefere variedade, sem privilegiar ou excluir previamente um contexto
 - Exemplos de código: variar entre cotidiano, software, jogos, negócios, criatividade e outros temas conforme o conceito
-- Diagramas/visuais: (aguardando feedback)
+- Diagramas/visuais: cartilhas com fluxo numerado, valores substituídos e setas ajudam a consolidar o modelo mental após uma explicação textual curta
 - Correções: priorizar domínio conceitual e comportamento do programa; tratar detalhes cosméticos de saída como observações opcionais, salvo quando formatação for o objetivo explícito do exercício
 - Feedback reforçado em 2026-08-06: não transformar capitalização, pontuação ou rótulos equivalentes em pendências para avançar
 
