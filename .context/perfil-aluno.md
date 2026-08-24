@@ -110,6 +110,7 @@
 - Descrever o tipo de uma função pelo contrato completo, não apenas pelo tipo retornado
 - Testar regras numéricas com valores fora da amostra, especialmente negativos e limites
 - Escrever a mistura de array de objetos com função: o que é o array, o que é um objeto, o que entra como parâmetro e o que a função devolve
+- Distinguir a assinatura do parâmetro callback da implementação concreta entregue como argumento
 - Distinguir o teto de um acumulador (`volume <= 50`) do tamanho de cada incremento (`litros <= 50`)
 
 ---
@@ -184,7 +185,8 @@
 - Obteve 9,4 na prova do Capítulo 06; prática muito forte, com reforço necessário no tipo conceitual de uma função e na diferença entre filtrar zeros e aceitar somente positivos
 - Na primeira lista de objetos, compilou e executou todos os arquivos; a escrita ainda trava quando array, objeto e função se empilham. Pediu treino extra focado em sintaxe, não em mais teoria.
 - Obteve 9,5 na prova do Capítulo 07; consolidou objetos, spread, destructuring e lista de fichas. Descontos de atenção no índice do array e de regra geral no teto do tanque.
+- Ao iniciar callbacks no Capítulo 08, identificou precisamente a lacuna entre “parâmetro cujo tipo é função” e “função concreta que ocupa o parâmetro”; pediu um fluxo visual sem antecipar conteúdos futuros.
 
 ---
 
-*Última atualização: 2026-08-21*
+*Última atualização: 2026-08-24*

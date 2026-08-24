@@ -826,6 +826,7 @@ Celular na mesma rede: URL Network do Vite.
 
 - 2026-08-15: favicon roxo do starter substituído pelo ícone TS fornecido pelo aluno.
 - 2026-08-16: atividade e respostas corrigidas da primeira leitura de código real reunidas em um único arquivo. O gabarito ficou ao final da aula para preservar a possibilidade de tentativa antes da consulta e reduzir a fragmentação do material.
+- 2026-08-24: a teoria do Capítulo 08 recebeu a seção 5.1 para separar explicitamente contrato do parâmetro callback e implementação entregue como argumento. O pedido do aluno mostrou boa leitura metacognitiva: ele localizou o salto conceitual e delimitou a correção sem antecipar assuntos posteriores.
 
 ## 2026-08-15 — Prova do Capítulo 05
 

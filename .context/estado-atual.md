@@ -9,21 +9,21 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 08 - Funções: Callbacks e Recursos |
-| **Fase atual** | Material preparado; aula disponível |
+| **Fase atual** | Aula em andamento — teoria de callbacks |
 | **Último capítulo concluído** | 07 - Objetos — prova 9,5 |
-| **Próximo passo** | Iniciar `08-funcoes-callbacks-e-recursos/aula/01-teoria.md`; Projeto 1 continua pendente |
+| **Próximo passo** | Continuar `08-funcoes-callbacks-e-recursos/aula/01-teoria.md` a partir da seção 5.1; Projeto 1 continua pendente |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-08-21
-- **Atividade:** Criação e publicação do Capítulo 08
+- **Data:** 2026-08-24
+- **Atividade:** Complementação da teoria de callbacks e republicação do leitor
 - **O que foi feito:**
-  - Aula completa, mini-projeto e leitura de código real com quatro recortes
-  - Lista com 16 exercícios, prova 40% teoria / 60% prática e extras
-  - Coerência didática e blocos TypeScript da aula revisados
-  - Leitor validado e nova versão publicada no projeto existente
+  - Identificada uma lacuna entre o tipo do parâmetro callback e a implementação recebida como argumento
+  - Adicionada a seção 5.1 com encaixe visual, fluxo de execução e separação de responsabilidades
+  - Mantida a sequência original, sem antecipar retorno de callback, arrays ou closures
+  - Leitor validado e republicado no projeto existente
 
 ---
 
@@ -34,7 +34,7 @@
 | Nova sequência na `EMENTA.md` | ✅ Definida |
 | Novo Capítulo 06 — Funções: Fundamentos | ✅ Concluído pelo aluno |
 | Capítulo 07 — Objetos | ✅ Concluído — prova 9,5 |
-| Capítulo 08 | ✅ Material completo; estudo ainda não iniciado |
+| Capítulo 08 | ▶️ Aula em andamento; teoria complementada |
 | Capítulo 10 | ⏳ Material pendente |
 | Material `09-arrays-metodos-avancados/` | ✅ Renomeado; revisão didática específica ainda pendente |
 | Leitor e `PROGRESSO.md` | ✅ Capítulo 07 no catálogo; progresso atualizado |
@@ -67,7 +67,7 @@
 
 ## Próxima Sessão
 
-1. Aluno inicia a teoria do Capítulo 08 — Funções: Callbacks e Recursos.
+1. Aluno continua a teoria do Capítulo 08 a partir da nova seção 5.1.
 2. Projeto 1 — Calculadora permanece pendente na sequência formal, sem bloquear o avanço se o aluno pedir o próximo capítulo.
 
 ---
@@ -79,7 +79,7 @@
 | Revisão pendente | Sim; materiais 09–10 ainda precisam acompanhar a nova ementa |
 | Prova pendente | Não |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
-| Dúvida não resolvida | Não |
+| Dúvida não resolvida | Não; lacuna entre contrato e implementação foi coberta na seção 5.1 |
 
 ---
 
@@ -87,6 +87,7 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-08-24 | Complementação e republicação da teoria de callbacks | ~15min |
 | 2026-08-21 | Criação, validação e publicação do Capítulo 08 | ~45min |
 | 2026-08-21 | Correção da prova do Capítulo 07 — nota 9,5 | ~20min |
 | 2026-08-21 | Revisão conjunta da leitura de código real do Capítulo 07 | ~40min |
