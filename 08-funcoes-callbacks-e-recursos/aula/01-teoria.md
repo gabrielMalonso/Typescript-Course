@@ -148,6 +148,131 @@ anunciar("ok", mostrar()); // tenta passar o retorno da chamada
 
 Se `mostrar()` retorna `void`, a segunda forma entrega `void`, não uma função.
 
+### 5.1 O parâmetro descreve o contrato; o argumento traz a implementação
+
+Quando escrevemos:
+
+```typescript
+function anunciar(
+  mensagem: string,
+  exibir: (texto: string) => void,
+): void {
+  exibir(`Aviso: ${mensagem}`);
+}
+```
+
+este trecho:
+
+```typescript
+exibir: (texto: string) => void
+```
+
+**não cria nem implementa uma função chamada `exibir`.**
+
+Ele declara um parâmetro chamado `exibir` e informa qual tipo de valor pode ser colocado nele:
+
+```text
+exibir: (texto: string) => void
+│       └──────────┬──────────┘
+│                  │
+│          tipo exigido:
+│          função que recebe string
+│          e retorna void
+│
+└── parâmetro
+```
+
+A função concreta é fornecida como argumento na chamada:
+
+```typescript
+anunciar(
+  "inspeção concluída",
+  (texto: string): void => {
+    console.log(texto);
+  },
+);
+```
+
+Podemos visualizar o encaixe:
+
+```text
+PARÂMETROS                         ARGUMENTOS
+
+mensagem: string          ←       "inspeção concluída"
+
+exibir:                    ←       (texto: string): void => {
+  (texto: string) => void            console.log(texto);
+                                   }
+```
+
+Portanto, durante essa execução de `anunciar`, podemos pensar conceitualmente:
+
+```text
+mensagem = "inspeção concluída"
+
+exibir = função recebida
+         (texto) => console.log(texto)
+```
+
+A função recebida **ainda não foi executada**. Ela apenas foi entregue.
+
+A execução acontece aqui:
+
+```typescript
+exibir(`Aviso: ${mensagem}`);
+```
+
+O fluxo completo é:
+
+```text
+1. callback é criado
+        ↓
+(texto) => console.log(texto)
+
+2. callback é passado para anunciar
+        ↓
+      exibir
+
+3. anunciar chama exibir(...)
+        ↓
+exibir("Aviso: inspeção concluída")
+
+4. o callback recebido é executado
+        ↓
+console.log("Aviso: inspeção concluída")
+```
+
+Isso também explica por que `anunciar` não precisa saber **como** a mensagem será exibida. Ela conhece apenas o contrato da função que receberá.
+
+Por exemplo, callbacks diferentes poderiam obedecer ao mesmo contrato:
+
+```typescript
+let algumLugar = "";
+
+const mostrarNoConsole = (texto: string): void => {
+  console.log(texto);
+};
+
+const guardarTexto = (texto: string): void => {
+  algumLugar = texto;
+};
+```
+
+Ambos possuem o tipo:
+
+```typescript
+(texto: string) => void
+```
+
+Assim, há uma separação de responsabilidades:
+
+| Parte | Decide |
+|---|---|
+| `anunciar` | **quando** chamar o callback e **qual argumento** entregar |
+| callback | **o que fazer** quando for chamado |
+
+> **A assinatura do callback descreve o formato da função que será recebida; ela não descreve sua implementação. A implementação chega como argumento na chamada.**
+
 ## 6. O retorno do callback importa
 
 Um callback pode produzir um valor que a função controladora reutiliza:

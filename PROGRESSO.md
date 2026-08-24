@@ -41,7 +41,7 @@
 | 05 | Arrays: Fundamentos | ✓ | ✓ | ★ 9,5 | Concluído |
 | 06 | Funções: Fundamentos | ✓ | ✓ | ★ 9,4 | Concluído |
 | 07 | Objetos | ✓ | ✓ | ★ 9,5 | Concluído |
-| 08 | Funções: Callbacks e Recursos | ✓ | Disponível | - | Material preparado |
+| 08 | Funções: Callbacks e Recursos | ✓ | Disponível | - | Em estudo |
 | 09 | Arrays: Métodos Avançados | ✓ | Disponível | - | Material preparado; bloqueado |
 | 10 | Tuples | - | - | - | Bloqueado |
 | 11 | Type Alias, Union e Intersection | - | - | - | Bloqueado |
@@ -122,4 +122,4 @@
 
 ---
 
-*Última atualização: 21/08/2026*
+*Última atualização: 24/08/2026*
