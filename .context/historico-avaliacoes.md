@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-08-27 — Treino extra de callbacks — Capítulo 08
+
+**Resultado qualitativo:** nove exercícios aprovados após ajustes. A estrutura central estava correta: controladoras percorrem, callbacks decidem ou formatam e o retorno sai da controladora.
+
+**Ajustes:** critério de A1 corrigido para consultar `ativo`; parâmetros de item padronizados no singular; B2 passou a mostrar o array original; D1 ganhou contador externo no teste vazio; D2 recebeu o formato solicitado. Na auditoria contra o enunciado, E1 também foi alinhado para chamar `acao` em todos os lotes e usar `vencido` somente na contagem.
+
+**Validação:** os nove arquivos compilam isoladamente sem erros e executam com as saídas previstas. Casos de array vazio, rejeição total e preservação do original foram comprovados.
+
 ## 2026-08-21 — Prova do Capítulo 07
 
 **Resultado:** 9,5/10 — aprovado. A teoria recebeu 3,65/4,0 e a prática 5,80/6,0. Os quatro arquivos TypeScript compilam isoladamente em modo estrito e executam sem erros.

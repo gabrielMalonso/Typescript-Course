@@ -9,22 +9,24 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 08 - Funções: Callbacks e Recursos |
-| **Fase atual** | Aula em andamento — teoria de callbacks |
+| **Fase atual** | Exercícios — treino extra de callbacks corrigido |
 | **Último capítulo concluído** | 07 - Objetos — prova 9,5 |
-| **Próximo passo** | Continuar `08-funcoes-callbacks-e-recursos/aula/01-teoria.md` a partir da seção 5; Projeto 1 continua pendente |
+| **Próximo passo** | Continuar a sequência formal do Capítulo 08; Projeto 1 continua pendente |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-08-24
-- **Atividade:** Síntese das seções 5–6 e inclusão de cartilhas visuais
+- **Data:** 2026-08-27
+- **Atividade:** Correção dos nove exercícios extras de callbacks
 - **O que foi feito:**
-  - Seções 5 e 5.1 unificadas em uma explicação mais curta sobre contrato, implementação e execução
-  - Preservada a distinção essencial entre passar uma função e chamá-la
-  - Adicionadas cartilhas visuais aos exemplos de callback `void` e callback com retorno
-  - Imagens originais preservadas e disponibilizadas para abertura em tamanho integral
-  - Leitor validado e republicado no projeto existente
+  - A1 alinhado ao critério `!sensor.ativo && sensor.temperatura < 20`
+  - Parâmetros de item renomeados no singular para separar coleção e elemento
+  - B2 passou a comprovar que o array original não mudou
+  - D1 passou a comprovar com contador externo que `avisar` não roda no array vazio
+  - D2 recebeu o formato exato solicitado
+  - E1 alinhado ao enunciado: registra todos os lotes e conta apenas os não vencidos
+  - Nove arquivos compilados isoladamente e executados com sucesso
 
 ---
 
@@ -35,7 +37,7 @@
 | Nova sequência na `EMENTA.md` | ✅ Definida |
 | Novo Capítulo 06 — Funções: Fundamentos | ✅ Concluído pelo aluno |
 | Capítulo 07 — Objetos | ✅ Concluído — prova 9,5 |
-| Capítulo 08 | ▶️ Aula em andamento; teoria complementada |
+| Capítulo 08 | ▶️ Treino extra concluído e corrigido; sequência formal em andamento |
 | Capítulo 10 | ⏳ Material pendente |
 | Material `09-arrays-metodos-avancados/` | ✅ Renomeado; revisão didática específica ainda pendente |
 | Leitor e `PROGRESSO.md` | ✅ Capítulo 07 no catálogo; progresso atualizado |
@@ -68,7 +70,7 @@
 
 ## Próxima Sessão
 
-1. Aluno continua a teoria do Capítulo 08 a partir da nova seção 5.1.
+1. Continuar a sequência formal do Capítulo 08 após o encerramento do treino extra.
 2. Projeto 1 — Calculadora permanece pendente na sequência formal, sem bloquear o avanço se o aluno pedir o próximo capítulo.
 
 ---
@@ -80,7 +82,7 @@
 | Revisão pendente | Sim; materiais 09–10 ainda precisam acompanhar a nova ementa |
 | Prova pendente | Não |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
-| Dúvida não resolvida | Não; contrato, implementação e retorno foram consolidados com texto e modelos mentais visuais |
+| Dúvida não resolvida | Não; percorrer, decidir e formatar estão consolidados; nomenclatura singular foi reforçada |
 
 ---
 
@@ -88,6 +90,7 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-08-27 | Correção e validação dos nove exercícios extras de callbacks | ~15min |
 | 2026-08-24 | Complementação e republicação da teoria de callbacks | ~15min |
 | 2026-08-21 | Criação, validação e publicação do Capítulo 08 | ~45min |
 | 2026-08-21 | Correção da prova do Capítulo 07 — nota 9,5 | ~20min |
@@ -168,4 +171,4 @@
 
 ---
 
-*Última atualização: 2026-08-21*
+*Última atualização: 2026-08-27*
