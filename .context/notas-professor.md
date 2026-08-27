@@ -4,6 +4,14 @@
 
 ---
 
+### 2026-08-27 - Correção do treino extra de callbacks
+
+**Leitura pedagógica:** Gabriel já domina a arquitetura percorrer → decidir/formatar → retornar. O erro funcional isolado foi consultar `!temperatura` no lugar de `!ativo`; o padrão restante era principalmente usar o plural da coleção como nome do item.
+
+**Correções materiais:** A1, nomes singulares, comprovação de não mutação em B2, contador externo em D1 e formatos de D2 foram alinhados. Embora o feedback inicial marcasse E1 como correto, a conferência literal do enunciado mostrou que `acao` deve registrar todos os lotes; somente a contagem depende de `vencido`. A solução foi corrigida de acordo com esse contrato.
+
+**Validação:** nove arquivos TypeScript compilados isoladamente e executados com sucesso. O próximo reforço é ler o contrato de cada callback e nomear o item antes de escrever a implementação.
+
 ### 2026-08-21 - Criação do Capítulo 08
 
 **Material:** aula, mini-projeto, leitura real com quatro recortes, 16 exercícios, prova 40/60 e extras concluídos. O capítulo reforça contrato completo, referência versus chamada e a mistura função + array de objetos antes dos métodos avançados do Capítulo 09.

@@ -53,6 +53,7 @@
 - [x] Contratos de funções - Tipou parâmetros e retornos corretamente em toda a lista do Capítulo 06
 - [x] Retorno e efeito - Diferenciou `return` reutilizável de exibição com `console.log` e `void`
 - [x] Funções como valores - Guardou, chamou e comparou referências de função corretamente
+- [x] Separação de papéis em callbacks - Monta controladoras que percorrem e callbacks que decidem, transformam ou produzem efeitos
 
 ---
 
@@ -79,6 +80,7 @@
 | Tipo de função | Identificou a referência corretamente, mas chamou seu tipo conceitual de `number`, confundindo contrato com retorno | 1 prova (cap. 06) |
 | Regra versus amostra | Implementou “diferente de zero” para dados contendo zeros, embora a regra exigisse “maior que zero”; corrigiu espontaneamente após a prova | 1 prova (cap. 06), resolvido |
 | Sintaxe empilhada | Conceito claro, mas a escrita trava ao misturar array de objetos com parâmetro e retorno de função | Relatado no cap. 07 |
+| Nomenclatura de callbacks | Usa com frequência o nome plural da coleção para o item singular recebido pelo callback | Recorrente nos extras do cap. 08 |
 
 ---
 
@@ -112,6 +114,7 @@
 - Escrever a mistura de array de objetos com função: o que é o array, o que é um objeto, o que entra como parâmetro e o que a função devolve
 - Distinguir a assinatura do parâmetro callback da implementação concreta entregue como argumento
 - Distinguir o teto de um acumulador (`volume <= 50`) do tamanho de cada incremento (`litros <= 50`)
+- Nomear no singular o elemento recebido por callbacks e percursos, preservando no plural apenas a coleção
 
 ---
 
@@ -152,6 +155,7 @@
 - Diferença sintática entre declaração, expressão de função, arrow concisa e arrow com bloco
 - Diferença entre guardar uma referência de função e executar uma chamada para obter seu retorno
 - Objetos literais, referência versus cópia, spread, destructuring e arrays de objetos com funções
+- Controladoras com callbacks booleanos, numéricos, formatadores e `void`, inclusive dois callbacks com contratos diferentes
 
 ---
 

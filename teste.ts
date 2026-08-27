@@ -1,43 +1,79 @@
-function aplicarDesconto (
-    produto: { nome: string, preco: number }, 
-    percentual: number,
-): { nome: string; preco: number} {
-    return {
-        ... produto,
-        preco: produto.preco * (1 - percentual /100),
-    };
+function formatarLeitura (valor: number, unidade?: string): string {
+    return unidade === undefined ? `${valor}` : `${valor} ${unidade}`
+    // if (unidade === undefined) {
+    //     return `${valor}`;
+    // }
+    // return `${valor} ${unidade}`;
 }
 
-const original = { nome: "Broca", preco: 20 };
-const comDesconto = aplicarDesconto(original, 10);
+console.log(formatarLeitura(25));
+console.log(formatarLeitura(25, "ºC"));
 
-console.log(original.preco);
-console.log(comDesconto.preco);
+function maiorValor (inicial: number, ...outros: number[]): number {
+    let maior = inicial;
 
-/*
-Raciocinando por partes:
+    for (const valor of outros) {
+        if (valor > maior) {
+            maior = valor;
+        }
+    }
+    return maior;
+}
 
-PARÂMETROS DA FUNÇÃO:
-- `produto`: objeto com `nome` string e `preco` number.
-- `percentual`: number.
+const maior = maiorValor(1, 4, 16, 55, 5, 22, 32, 7);
 
-TIPO DE RETORNO:
-A função retorna um objeto com `nome` string e `preco` number.
+console.log(maior);
 
-RETORNO:
-É criado um novo objeto.
-O spread `...produto` copia as propriedades do objeto recebido.
-Depois, a propriedade `preco` é sobrescrita com o preço calculado
-de acordo com o percentual de desconto.
+// maiorValor(8, 3, 12, 5)
+//            │  └───────┘
+//        inicial   outros = [3, 12, 5]
 
-O objeto original não é alterado.
 
-CHAMADA:
-`original` é passado como primeiro argumento.
-`10` é passado como segundo argumento.
+const converter: (valor: number) => string = (
+    valor: number,
+): string => `${valor} kg`;
 
-O resultado retornado pela função é armazenado em `comDesconto`.
+console.log(converter(2));
 
-Por fim, exibimos o preço do objeto original e o preço
-do novo objeto com desconto.
-*/
+
+function executarAviso (
+    mensagem: string,
+    avisar: (mensagem: string) => void,
+): void {
+    avisar (mensagem);
+}
+
+executarAviso("Pressão Alta", (mensagem) => {
+    console.log(`ALERTA: ${mensagem}`);
+});
+
+function decidirAcesso(
+    usuario: { nome: string; ativo: boolean },
+    permitir: (usuario: { nome: string; ativo: boolean }) => boolean,
+): string {
+    if (permitir(usuario)) {
+        return `Acesso liberado para ${usuario.nome}`;
+    }
+
+    return `Acesso negado para ${usuario.nome}`;
+}
+
+const acessoLiberado = decidirAcesso(
+    {nome: "Gabriel", ativo: false},
+    (usuario) => usuario.ativo,
+);
+
+console.log(acessoLiberado);
+
+function percorrerMedicoes(
+  medicoes: number[],
+  visitar: (valor: number, indice: number) => void,
+): void {
+  for (let indice = 0; indice < medicoes.length; indice += 1) {
+    visitar(medicoes[indice], indice);
+  }
+}
+
+percorrerMedicoes([12, 18], (valor, indice): void => {
+  console.log(`${indice}: ${valor}`);
+});
