@@ -75,12 +75,12 @@
 | Teste de limites condicionais | Inverteu `>= 6` para `<= 6`, tornando o ramo intermediário inalcançável para o valor testado | 1 prova (cap. 03) |
 | Organização da entrega | Respostas escritas no enunciado e arquivo prático solicitado ausente | 2 provas (caps. 02 e 03) |
 | Terminologia de funções | Confundiu o papel dos parênteses com o papel do argumento e incluiu um fallback como parte do argumento | 1 sessão de leitura (cap. 06) |
-| Formas de função | Usou arrow quando o exercício pedia expressão tradicional e converteu arrow em declaração ao mostrar a forma equivalente | 2 exercícios (cap. 06) |
+| Formas de função | Usou arrow quando o exercício pedia expressão tradicional e converteu arrow em declaração ao mostrar a forma equivalente | 2 exercícios (cap. 06); repetiu no ex04 do cap. 08 |
 | Testes alternativos | Omitiu comprovação de não mutação e execução do pipeline vazio | 2 exercícios (cap. 06) |
 | Tipo de função | Identificou a referência corretamente, mas chamou seu tipo conceitual de `number`, confundindo contrato com retorno | 1 prova (cap. 06) |
 | Regra versus amostra | Implementou “diferente de zero” para dados contendo zeros, embora a regra exigisse “maior que zero”; corrigiu espontaneamente após a prova | 1 prova (cap. 06), resolvido |
 | Sintaxe empilhada | Conceito claro, mas a escrita trava ao misturar array de objetos com parâmetro e retorno de função | Relatado no cap. 07 |
-| Nomenclatura de callbacks | Usa com frequência o nome plural da coleção para o item singular recebido pelo callback | Recorrente nos extras do cap. 08 |
+| Nomenclatura de callbacks | Usa com frequência o nome plural da coleção para o item singular recebido pelo callback | Recorrente nos extras do cap. 08; reapareceu no ex12, embora 09–11 já usem o singular |
 
 ---
 
@@ -156,6 +156,7 @@
 - Diferença entre guardar uma referência de função e executar uma chamada para obter seu retorno
 - Objetos literais, referência versus cópia, spread, destructuring e arrays de objetos com funções
 - Controladoras com callbacks booleanos, numéricos, formatadores e `void`, inclusive dois callbacks com contratos diferentes
+- Leitura de callbacks reais: localizou contrato, momento da execução e efeito versus retorno nos recortes 2 e 3 do Capítulo 08
 
 ---
 
@@ -190,7 +191,9 @@
 - Na primeira lista de objetos, compilou e executou todos os arquivos; a escrita ainda trava quando array, objeto e função se empilham. Pediu treino extra focado em sintaxe, não em mais teoria.
 - Obteve 9,5 na prova do Capítulo 07; consolidou objetos, spread, destructuring e lista de fichas. Descontos de atenção no índice do array e de regra geral no teto do tanque.
 - Ao iniciar callbacks no Capítulo 08, identificou precisamente a lacuna entre “parâmetro cujo tipo é função” e “função concreta que ocupa o parâmetro”; pediu um fluxo visual sem antecipar conteúdos futuros.
+- Na leitura real do Capítulo 08, descreveu sozinho que o callback do recorte 3 usa o array `stages` de fora — o mecanismo da closure, ainda sem o nome formal. A lista ainda não praticou esse tópico.
+- Na leitura real do Capítulo 08, descreveu sozinho que o callback do recorte 3 usa o array `stages` de fora — o mecanismo da closure, ainda sem o nome formal. A lista ainda não praticou esse tópico.
 
 ---
 
-*Última atualização: 2026-08-24*
+*Última atualização: 2026-08-28*

@@ -9,24 +9,20 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 08 - Funções: Callbacks e Recursos |
-| **Fase atual** | Exercícios — treino extra de callbacks corrigido |
+| **Fase atual** | Exercícios — `ex01` a `ex12` encerrados; falta a Parte 4 |
 | **Último capítulo concluído** | 07 - Objetos — prova 9,5 |
-| **Próximo passo** | Continuar a sequência formal do Capítulo 08; Projeto 1 continua pendente |
+| **Próximo passo** | Aluno faz `ex13` a `ex16`; depois conferir e liberar a prova |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-08-27
-- **Atividade:** Correção dos nove exercícios extras de callbacks
+- **Data:** 2026-08-28
+- **Atividade:** Ajustes autorizados em `ex01`, `ex04`, `ex07`, `ex08` e `ex12`; aluno segue para a Parte 4
 - **O que foi feito:**
-  - A1 alinhado ao critério `!sensor.ativo && sensor.temperatura < 20`
-  - Parâmetros de item renomeados no singular para separar coleção e elemento
-  - B2 passou a comprovar que o array original não mudou
-  - D1 passou a comprovar com contador externo que `avisar` não roda no array vazio
-  - D2 recebeu o formato exato solicitado
-  - E1 alinhado ao enunciado: registra todos os lotes e conta apenas os não vencidos
-  - Nove arquivos compilados isoladamente e executados com sucesso
+  - Cinco arquivos da lista ajustados e validados em modo estrito
+  - `ex01` a `ex12` encerrados
+  - Prova continua bloqueada até `ex13` a `ex16` (closure e IIFE)
 
 ---
 
@@ -37,7 +33,7 @@
 | Nova sequência na `EMENTA.md` | ✅ Definida |
 | Novo Capítulo 06 — Funções: Fundamentos | ✅ Concluído pelo aluno |
 | Capítulo 07 — Objetos | ✅ Concluído — prova 9,5 |
-| Capítulo 08 | ▶️ Treino extra concluído e corrigido; sequência formal em andamento |
+| Capítulo 08 | ▶️ `ex01`–`ex12` encerrados; Parte 4 pendente; prova bloqueada |
 | Capítulo 10 | ⏳ Material pendente |
 | Material `09-arrays-metodos-avancados/` | ✅ Renomeado; revisão didática específica ainda pendente |
 | Leitor e `PROGRESSO.md` | ✅ Capítulo 07 no catálogo; progresso atualizado |
@@ -65,13 +61,15 @@
 - [x] Corrigir a leitura de código real do Capítulo 07
 - [x] Extra 4 encerrado
 - [x] Corrigir a prova do Capítulo 07 — nota 9,5
+- [ ] Encerrar a lista do Capítulo 08 (`ex13`–`ex16`) e liberar a prova
 
 ---
 
 ## Próxima Sessão
 
-1. Continuar a sequência formal do Capítulo 08 após o encerramento do treino extra.
-2. Projeto 1 — Calculadora permanece pendente na sequência formal, sem bloquear o avanço se o aluno pedir o próximo capítulo.
+1. Conferir `ex13` a `ex16`.
+2. Se essa passagem fechar, liberar a prova do Capítulo 08.
+3. Projeto 1 — Calculadora permanece pendente na sequência formal, sem bloquear o avanço se o aluno pedir o próximo capítulo.
 
 ---
 
@@ -80,7 +78,7 @@
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Sim; materiais 09–10 ainda precisam acompanhar a nova ementa |
-| Prova pendente | Não |
+| Prova pendente | Sim; Capítulo 08 ainda não liberado |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não; percorrer, decidir e formatar estão consolidados; nomenclatura singular foi reforçada |
 
@@ -90,6 +88,8 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-08-28 | Ajustes autorizados em ex01, ex04, ex07, ex08 e ex12 | ~10min |
+| 2026-08-28 | Primeira correção da lista do Capítulo 08; prova não liberada | ~20min |
 | 2026-08-27 | Correção e validação dos nove exercícios extras de callbacks | ~15min |
 | 2026-08-24 | Complementação e republicação da teoria de callbacks | ~15min |
 | 2026-08-21 | Criação, validação e publicação do Capítulo 08 | ~45min |
@@ -171,4 +171,4 @@
 
 ---
 
-*Última atualização: 2026-08-27*
+*Última atualização: 2026-08-28*

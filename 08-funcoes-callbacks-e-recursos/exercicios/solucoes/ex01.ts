@@ -3,7 +3,7 @@ function identificarVisitante (nome: string, cracha?: number): string {
         return `${nome} | visitante sem crachá`;
     }
 
-        return `${nome} | crachá N ${cracha}`;
+        return `${nome} | crachá ${cracha}`;
 }
 
 console.log(identificarVisitante("Marina", 42));

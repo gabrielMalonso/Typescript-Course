@@ -31,6 +31,15 @@ registrar: (
 }
 
 
-percorrerPedidos(pedidos, (pedidos) => pedidos.quantidade * pedidos.preco, (codigo, valorCalculado) => {
+const total = percorrerPedidos(pedidos, (pedido) => pedido.quantidade * pedido.preco, (codigo, valorCalculado) => {
     console.log(`${codigo}: ${valorCalculado}`);
-})
+});
+console.log(total);
+
+let chamadasNoVazio = 0;
+const totalVazio = percorrerPedidos([], (pedido) => pedido.quantidade * pedido.preco, (codigo, valorCalculado) => {
+    chamadasNoVazio++;
+    console.log(`${codigo}: ${valorCalculado}`);
+});
+console.log(totalVazio);
+console.log(chamadasNoVazio);
