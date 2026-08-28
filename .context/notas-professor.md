@@ -4,6 +4,14 @@
 
 ---
 
+### 2026-08-28 - Primeira correção da lista do Capítulo 08
+
+Gabriel pediu a prova após 12 exercícios, extras e leitura (sem o recorte 4). A Parte 3 está sólida: controladora + critério + formatador já saem com naturalidade, e o recorte 3 descreveu sozinho o uso de `stages` de fora do callback — que é o mecanismo da closure.
+
+Os cinco ajustes de atenção (`ex01`, `ex04`, `ex07`, `ex08` e `ex12`) foram aplicados com autorização do aluno e validados em compilação estrita. `ex01` a `ex12` encerrados. Recorte 4 dispensado.
+
+A prova não foi liberada. Os exercícios 13 a 16 cobrem closure e IIFE, cobrados nas Questões 4 e 8.
+
 ### 2026-08-27 - Correção do treino extra de callbacks
 
 **Leitura pedagógica:** Gabriel já domina a arquitetura percorrer → decidir/formatar → retornar. O erro funcional isolado foi consultar `!temperatura` no lugar de `!ativo`; o padrão restante era principalmente usar o plural da coleção como nome do item.
@@ -859,4 +867,4 @@ Celular na mesma rede: URL Network do Vite.
 
 ---
 
-*Última atualização: 2026-08-17*
+*Última atualização: 2026-08-28*

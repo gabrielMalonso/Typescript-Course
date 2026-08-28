@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-08-28 — Primeira correção da lista — Capítulo 08
+
+**Resultado qualitativo:** 7 dos 12 arquivos entregues aprovados; 5 pedem ajuste; exercícios 13 a 16 não entregues. Os 12 arquivos compilam isoladamente em modo estrito e executam.
+
+**Domínio demonstrado:** parâmetro opcional com `0` válido, valor padrão, rest parameter, referência versus chamada, controladora com callback booleano, formatador e dois callbacks no mesmo percurso. Recortes 2 e 3 da leitura real aprovados; recorte 4 dispensado.
+
+**Pontos a reforçar:** expressão com `function` versus arrow; callback nomeado versus arrow inline; completar testes de array vazio e comentários com contrato/referência/chamada/retorno; nomear o item no singular; closures e IIFE ainda não praticados na lista.
+
+**Próximo passo:** aluno faz `ex13` a `ex16`. Prova bloqueada.
+
 ## 2026-08-27 — Treino extra de callbacks — Capítulo 08
 
 **Resultado qualitativo:** nove exercícios aprovados após ajustes. A estrutura central estava correta: controladoras percorrem, callbacks decidem ou formatam e o retorno sai da controladora.
@@ -139,7 +149,7 @@
 | 05 | 2026-08-15 | 9,5 | `ultimoIndice` de array vazio; previsões da Q6 e variável da Q7 omitidas | Aprovado; quatro arquivos práticos compilam e executam |
 | 06 | 2026-08-17 | 9,4 | Tipo conceitual da função e filtro que aceita negativos | Aprovado; quatro arquivos práticos compilam e executam |
 | 07 | 2026-08-21 | 9,5 | Índice `lista[2]` em vez de `lista[1]`; extração descrita como vinda de `promocao`; `litros <= 50` extra no tanque | Aprovado; quatro arquivos práticos compilam e executam |
-| 08 | - | - | - | - |
+| 08 | - | - | - | Lista em correção; prova bloqueada |
 | 09 | - | - | - | - |
 | 10 | - | - | - | - |
 | 11 | - | - | - | - |
@@ -188,8 +198,7 @@
 
 ## Exercícios Corrigidos
 
-| Data | Capítulo | Exercícios | Acertos | Taxa | Erros Principais |
-|------|----------|------------|---------|------|------------------|
+| 2026-08-28 | 08 | 12 de 16 | 7 aprovados, 5 com ajuste, 4 não entregues | — | Faltam closures/IIFE; forma da expressão de função; testes do ex12 |
 | 2026-02-01 | 00 | 10 | 8 corretos, 2 com ressalvas, 1 parcial | ~85% | Inconsistência com ponto e vírgula; saída divergente do esperado; confusão sobre o que é erro de compilação vs estilo |
 | 2026-07-30 | 01 | 10 + bônus | Aprovados após revisão | 100% após ajustes | Saída, requisitos textuais e escopo de função corrigidos |
 | 2026-08-01 | 02 | Desafio rápido + mini-projeto | Aprovados | Domínio conceitual demonstrado | Tipos, cálculos e template literals corretos; diferenças cosméticas não impedem avanço |
@@ -244,4 +253,4 @@
 
 ---
 
-*Última atualização: 2026-08-21*
+*Última atualização: 2026-08-28*
