@@ -17,11 +17,14 @@
 
 ## Sessão Atual
 
-- **Data:** 2026-08-28
-- **Atividade:** Ajustes autorizados em `ex01`, `ex04`, `ex07`, `ex08` e `ex12`; aluno segue para a Parte 4
+- **Data:** 2026-08-29
+- **Atividade:** Revisão conceitual de closure e IIFE durante a retomada da teoria do Capítulo 08
 - **O que foi feito:**
-  - Cinco arquivos da lista ajustados e validados em modo estrito
-  - `ex01` a `ex12` encerrados
+  - Seção 11 de `01-teoria.md` ampliada com a separação entre a chamada da função externa e a chamada da função retornada
+  - Closure definida como função acompanhada do acesso ao ambiente em que foi criada
+  - Acrescentado exemplo de ambientes independentes com `dobrar` e `triplicar`
+  - Seção 12 ampliada para separar parâmetros, retorno, função como valor, agrupamento e chamada imediata de uma IIFE
+  - Registrada para os próximos capítulos a didática de transformação incremental a partir de uma construção já dominada
   - Prova continua bloqueada até `ex13` a `ex16` (closure e IIFE)
 
 ---
@@ -80,7 +83,7 @@
 | Revisão pendente | Sim; materiais 09–10 ainda precisam acompanhar a nova ementa |
 | Prova pendente | Sim; Capítulo 08 ainda não liberado |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
-| Dúvida não resolvida | Não; percorrer, decidir e formatar estão consolidados; nomenclatura singular foi reforçada |
+| Dúvida não resolvida | Não; explicações de closure e IIFE foram aprofundadas antes da Parte 4 |
 
 ---
 
@@ -88,6 +91,9 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-08-29 | Registro da diretriz didática de transformação incremental | ~5min |
+| 2026-08-29 | Complementação da teoria de contrato e execução de IIFE | ~10min |
+| 2026-08-29 | Complementação da teoria de closure no Capítulo 08 | ~10min |
 | 2026-08-28 | Ajustes autorizados em ex01, ex04, ex07, ex08 e ex12 | ~10min |
 | 2026-08-28 | Primeira correção da lista do Capítulo 08; prova não liberada | ~20min |
 | 2026-08-27 | Correção e validação dos nove exercícios extras de callbacks | ~15min |
@@ -171,4 +177,4 @@
 
 ---
 
-*Última atualização: 2026-08-28*
+*Última atualização: 2026-08-29*

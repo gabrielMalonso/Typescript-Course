@@ -34,6 +34,7 @@
 | **Profundidade** | Quer entender o "porquê", não só o "como" |
 | **Analogias** | Bem-vindas, com contextos variados e adequados ao conceito |
 | **Complementação** | Gosta de ampliar a teoria com comparações visuais e explicações intermediárias para consolidar o modelo mental |
+| **Progressão conceitual** | Aprende melhor quando um exemplo já dominado é transformado passo a passo até chegar ao conceito novo, explicando o papel de cada alteração |
 | **Leitura de código** | Prefere sessões curtas: 1 recorte explicado, 1 guiado e 2 para interpretação própria, sempre com definição e chamada |
 
 **Ajuste de ritmo em 2026-08-03:** aluno está confortável com a base e prefere acelerar quando temas próximos puderem ser integrados, compensando com 30–50% mais exercícios e variedade.
@@ -167,6 +168,8 @@
 - Analogias com mundo real: prefere variedade, sem privilegiar ou excluir previamente um contexto
 - Exemplos de código: variar entre cotidiano, software, jogos, negócios, criatividade e outros temas conforme o conceito
 - Diagramas/visuais: cartilhas com fluxo numerado, valores substituídos e setas ajudam a consolidar o modelo mental após uma explicação textual curta
+- Conceitos novos: começar por uma construção já conhecida, apresentar uma mudança por vez e comparar antes/depois; nomear em cada etapa o que entrou, o que saiu e o que mudou de papel
+- Assuntos avançados: não presumir que uma sintaxe curta seja autoexplicativa; decompor seus termos antes de recombiná-los na forma final
 - Correções: priorizar domínio conceitual e comportamento do programa; tratar detalhes cosméticos de saída como observações opcionais, salvo quando formatação for o objetivo explícito do exercício
 - Feedback reforçado em 2026-08-06: não transformar capitalização, pontuação ou rótulos equivalentes em pendências para avançar
 
@@ -191,9 +194,10 @@
 - Na primeira lista de objetos, compilou e executou todos os arquivos; a escrita ainda trava quando array, objeto e função se empilham. Pediu treino extra focado em sintaxe, não em mais teoria.
 - Obteve 9,5 na prova do Capítulo 07; consolidou objetos, spread, destructuring e lista de fichas. Descontos de atenção no índice do array e de regra geral no teto do tanque.
 - Ao iniciar callbacks no Capítulo 08, identificou precisamente a lacuna entre “parâmetro cujo tipo é função” e “função concreta que ocupa o parâmetro”; pediu um fluxo visual sem antecipar conteúdos futuros.
+- Ao estudar closure e IIFE, criou espontaneamente uma estratégia eficaz: partiu do contrato de função já dominado e alterou uma parte por vez até compreender parâmetros vazios, retorno de objeto, função como valor e chamada imediata. Usar essa progressão como padrão nos tópicos novos.
 - Na leitura real do Capítulo 08, descreveu sozinho que o callback do recorte 3 usa o array `stages` de fora — o mecanismo da closure, ainda sem o nome formal. A lista ainda não praticou esse tópico.
 - Na leitura real do Capítulo 08, descreveu sozinho que o callback do recorte 3 usa o array `stages` de fora — o mecanismo da closure, ainda sem o nome formal. A lista ainda não praticou esse tópico.
 
 ---
 
-*Última atualização: 2026-08-28*
+*Última atualização: 2026-08-29*

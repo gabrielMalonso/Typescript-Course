@@ -330,25 +330,133 @@ const triplicar = criarMultiplicador(3);
 console.log(triplicar(4)); // 12
 ```
 
-`criarMultiplicador(3)` terminou, mas a função retornada preserva acesso a `fator`.
+### As duas funções são chamadas em momentos diferentes
+
+Neste exemplo existem duas chamadas:
+
+```typescript
+const triplicar = criarMultiplicador(3); // chamada 1
+console.log(triplicar(4));               // chamada 2
+```
+
+Na primeira chamada, `fator` recebe `3` e `criarMultiplicador` cria e devolve a função interna. O cálculo `valor * fator` ainda não acontece, porque o corpo dessa função interna ainda não foi executado.
 
 ```text
 criarMultiplicador(3)
-        ↓
-função retornada fecha sobre fator = 3
-        ↓
-triplicar(4) → 4 × 3 → 12
+        │
+        ├── fator recebe 3
+        ├── cria a função (valor) => valor * fator
+        └── devolve essa função para triplicar
 ```
 
-Isso é uma closure. Nesta introdução, basta reconhecer três peças:
+Na segunda chamada, `triplicar(4)` executa a função que havia sido devolvida. Agora `valor` recebe `4`, enquanto `fator` continua acessível com o valor `3`:
+
+```text
+triplicar(4)
+     │
+     ├── valor recebe 4
+     ├── fator continua sendo 3
+     └── 4 × 3 → 12
+```
+
+Portanto, `criarMultiplicador(3)` não calcula `3` vezes algum valor. Ela monta e devolve a “máquina” que fará esse cálculo depois. Quem efetivamente calcula é `triplicar(4)`.
+
+### Onde está a closure?
+
+A closure é a combinação de:
+
+```text
+função interna
+      +
+acesso ao ambiente em que ela foi criada
+```
+
+Quando `criarMultiplicador(3)` termina, sua variável local `fator` normalmente deixaria de ser necessária. Porém, a função interna usa essa variável. Por isso, enquanto a função devolvida existir, ela preserva acesso ao ambiente em que `fator` está.
+
+Não é preciso imaginar que o código da função foi reescrito como `valor * 3`. Isso pode ajudar como simplificação inicial, mas o mecanismo real é o acesso preservado à variável `fator`, não uma substituição de texto nem uma cópia congelada.
+
+Cada chamada da função externa cria um ambiente independente:
+
+```typescript
+const dobrar = criarMultiplicador(2);
+const triplicar = criarMultiplicador(3);
+
+console.log(dobrar(5));     // 10 — fator = 2
+console.log(triplicar(5));  // 15 — fator = 3
+```
+
+`dobrar` e `triplicar` foram criadas por chamadas diferentes. Cada função lembra do seu próprio `fator`.
+
+Para reconhecer uma closure, procure estas três peças:
 
 1. função externa;
-2. variável preservada;
-3. função interna que usa essa variável depois.
+2. variável do ambiente externo;
+3. função interna que continua usando essa variável depois.
+
+> **Closure é uma função acompanhada do acesso ao ambiente em que foi criada.**
 
 ## 12. Extra: IIFE
 
-IIFE é uma função criada e executada imediatamente:
+IIFE significa *Immediately Invoked Function Expression*: uma expressão de função executada imediatamente após ser criada.
+
+Antes de olhar a execução imediata, separe o contrato da função:
+
+```typescript
+function teste(objeto: { dentroDoObjeto: string }): string {
+  return "teste";
+}
+```
+
+```text
+(objeto: { dentroDoObjeto: string })  → entrada: um parâmetro objeto
+: string                              → saída: uma string
+```
+
+Se os parênteses da definição estão vazios, a função aceita zero parâmetros. Ela continua tendo um contrato de entrada: esse contrato apenas diz que nenhuma entrada é esperada.
+
+```typescript
+const criarModo = function (): { modo: string } {
+  const modo = "seguro";
+  return { modo };
+};
+```
+
+```text
+()                  → entrada: zero parâmetros
+: { modo: string }  → saída: objeto com a propriedade modo do tipo string
+```
+
+Essa função é anônima porque não existe um nome entre `function` e `()`. A variável `criarModo` apenas oferece uma forma de alcançá-la; isso não altera seu contrato. O trecho `{ modo: string }`, depois dos parâmetros, é o tipo de retorno prometido pela função. O `return { modo }` entrega um objeto que cumpre essa promessa.
+
+Uma função anônima escrita com `function` não pode ficar sozinha como uma declaração:
+
+```typescript
+function (): { modo: string } { // erro de sintaxe: declaração sem nome
+  return { modo: "seguro" };
+}
+```
+
+Ela precisa aparecer onde uma expressão é permitida, por exemplo depois de `=`, como no exemplo de `criarModo`, ou agrupada entre parênteses, como na IIFE a seguir.
+
+### Guardar a função ou guardar o resultado
+
+Sem a chamada final, a variável guarda a própria função:
+
+```typescript
+const criarConfiguracao = function (): { modo: string } {
+  const modo = "seguro";
+  return { modo };
+};
+
+const configuracao = criarConfiguracao();
+```
+
+```text
+criarConfiguracao  → função do tipo () => { modo: string }
+configuracao       → resultado do tipo { modo: string }
+```
+
+A IIFE reúne a criação e a chamada da função na mesma expressão:
 
 ```typescript
 const configuracao = (function (): { modo: string } {
@@ -357,14 +465,39 @@ const configuracao = (function (): { modo: string } {
 })();
 ```
 
-Os últimos `()` fazem a chamada imediata.
+Leia as três partes separadamente:
 
 ```text
-(function () { ... })  → função como expressão
-                      () → execução imediata
+function () { ... }    → cria a função anônima
+(                     ) → agrupa a expressão de função
+                       () → chama a função imediatamente
 ```
 
-IIFEs eram muito usadas para criar isolamento antes dos módulos modernos. Hoje são menos comuns. Saiba ler; não precisa usá-las por reflexo.
+Portanto, `configuracao` não recebe a função. Ela recebe o objeto devolvido pela chamada:
+
+```text
+(function (): { modo: string } { ... })  → a função
+(function (): { modo: string } { ... })() → o retorno da função
+```
+
+Os parênteses de agrupamento ao redor de `function` são a forma tradicional de deixar evidente que temos uma expressão de função pronta para ser chamada. Em uma atribuição, a função já está em posição de expressão e poderia ser guardada sem esse agrupamento:
+
+```typescript
+const criarConfiguracao = function (): { modo: string } {
+  return { modo: "seguro" };
+};
+```
+
+O que torna o primeiro exemplo uma IIFE é especificamente o `()` final: ele executa a função no mesmo momento em que ela é criada.
+
+Ao ler uma IIFE, pergunte:
+
+1. O que aparece entre os parênteses dos parâmetros?
+2. Qual tipo aparece depois deles como retorno?
+3. Onde estão os `()` que fazem a chamada?
+4. A variável externa guardará a função ou o resultado dessa chamada?
+
+IIFEs eram muito usadas para criar isolamento antes dos módulos modernos. Hoje são menos comuns. Saiba reconhecer o contrato e a chamada; não precisa usá-las por reflexo.
 
 ## 13. Checklist de leitura
 
