@@ -30,6 +30,12 @@ A prova não foi liberada. Os exercícios 13 a 16 cobrem closure e IIFE, cobrado
 
 ## Observações Gerais
 
+### 2026-08-29 - Diretriz didática para tópicos novos
+
+Gabriel aprende melhor por transformação incremental: partir de um contrato ou construção que ele já domina, alterar um elemento por vez e explicitar o efeito de cada mudança antes de apresentar a sintaxe final. O percurso feito com IIFE foi: função conhecida → zero parâmetros → retorno de objeto → função anônima como valor → chamada imediata.
+
+Nos próximos capítulos, especialmente nos assuntos mais avançados, usar preferencialmente a sequência **base conhecida → mudança isolada → comparação antes/depois → composição final**. Sintaxe curta não deve ser tratada como conceito simples por si só; primeiro nomear entrada, saída, valor produzido e momento de execução.
+
 ### 2026-08-21 - Prova do Capítulo 07
 
 **Resultado:** 9,5/10 — aprovado. Prática muito forte: destructuring aninhado, método com teto, filtro de array de objetos e array vazio.
@@ -845,6 +851,8 @@ Celular na mesma rede: URL Network do Vite.
 - 2026-08-24: a teoria do Capítulo 08 recebeu a seção 5.1 para separar explicitamente contrato do parâmetro callback e implementação entregue como argumento. O pedido do aluno mostrou boa leitura metacognitiva: ele localizou o salto conceitual e delimitou a correção sem antecipar assuntos posteriores.
 - 2026-08-24: após comparar duas formas de explicação, a seção 5.1 foi refinada para privilegiar passos curtos e numerados, perguntas que antecipam a dúvida do aluno e uma tabela com “o que é” e “papel”. Foram evitadas as simplificações imprecisas de dizer que o parâmetro “ainda não é uma função de verdade” e de justificar o conceito apenas pela tradução literal de callback.
 - 2026-08-24: com o conceito compreendido, o aluno percebeu que a explicação granular havia cumprido sua função e agora estava prolixa. As seções 5 e 5.1 foram sintetizadas, e duas cartilhas criadas pelo aluno passaram a complementar os exemplos de callback `void` e callback com retorno. Preferência confirmada: texto curto para introdução e imagem de fluxo para consolidar o modelo mental.
+- 2026-08-29: o aluno identificou corretamente que a introdução a closure estava curta demais e trouxe um modelo mental útil: a função externa monta e devolve a “máquina”, enquanto a função retornada calcula em outra chamada. A seção 11 foi ampliada para separar os dois momentos, definir closure como função + acesso ao ambiente e mostrar que chamadas distintas preservam ambientes independentes. Foi evitada a formulação absoluta “as duas funções não rodam juntas”, válida apenas para o exemplo apresentado.
+- 2026-08-29: ao estudar IIFE, o aluno transferiu corretamente o modelo de contrato: `()` representa zero parâmetros e `: { modo: string }` descreve o retorno. A seção 12 foi ampliada para contrastar guardar a função com guardar seu resultado e para distinguir os três papéis dos parênteses. Foi acrescentada a precisão de que, numa atribuição, a função já ocupa uma posição de expressão; é o `()` final que caracteriza a execução imediata.
 
 ## 2026-08-15 — Prova do Capítulo 05
 
@@ -867,4 +875,4 @@ Celular na mesma rede: URL Network do Vite.
 
 ---
 
-*Última atualização: 2026-08-28*
+*Última atualização: 2026-08-29*
