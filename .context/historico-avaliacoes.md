@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-09-01 — Terceira correção da lista — Capítulo 08
+
+**Resultado qualitativo:** `criterioExploracao` agora é função nomeada passada por referência, a closure foi integrada ao relatório de 60 pontos e os seis comentários finais foram respondidos. `ex16.ts` compila e executa sem erros.
+
+**Única pendência:** remover o quarto argumento da chamada que usa `peloMenos60`, permitindo que o item 2 use o título padrão `Painel de missões`.
+
+**Próximo passo:** conferência final dessa chamada; prova ainda bloqueada.
+
 ## 2026-09-01 — Segunda correção da lista — Capítulo 08
 
 **Resultado qualitativo:** `ex13`, `ex14` e `ex15` aprovados. `ex16` compila, executa e demonstra a arquitetura principal, mas ainda pede quatro ajustes de aderência ao enunciado. A lista está em 15 de 16 exercícios encerrados; prova bloqueada.

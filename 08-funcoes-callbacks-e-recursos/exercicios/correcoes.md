@@ -1,5 +1,21 @@
 # Correção dos exercícios — Capítulo 08: Funções — Callbacks e Recursos
 
+## Terceira correção — Exercício 16
+
+**Data:** 01/09/2026
+
+**Resultado:** função nomeada e comentários finais aprovados; resta um ajuste no uso do título padrão; prova **ainda não liberada**
+
+O arquivo compila em modo estrito e executa sem erros. `criterioExploracao` agora é uma função nomeada passada por referência, a closure `peloMenos60` está sendo usada e os seis comentários finais demonstram o fluxo dos callbacks.
+
+**Única pendência:** a chamada de `missoesMaiorIgual60PtsClosure` ainda passa `"Missões com 60 pontos ou mais (usando closure)"` como quarto argumento. Remova esse argumento para que o item 2 realmente use o valor padrão `"Painel de missões"`.
+
+O bloco antigo do item 2, agora comentado, pode ser removido como limpeza, mas isso não bloqueia a aprovação.
+
+**Próximo passo:** remover somente o título explícito da chamada que usa `peloMenos60` e pedir a conferência final.
+
+---
+
 ## Segunda correção — Parte 4
 
 **Data:** 01/09/2026
