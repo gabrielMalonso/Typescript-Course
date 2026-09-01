@@ -1,5 +1,33 @@
 # Correção dos exercícios — Capítulo 08: Funções — Callbacks e Recursos
 
+## Segunda correção — Parte 4
+
+**Data:** 01/09/2026
+
+**Entrega:** `ex13.ts` a `ex16.ts`
+
+**Resultado:** `ex13`, `ex14` e `ex15` aprovados; `ex16` pede quatro ajustes; prova **ainda não liberada**
+
+Os quatro arquivos compilam isoladamente em modo estrito e executam sem erros. As duas closures preservam corretamente seus valores, o limite inclusivo do exercício 14 foi testado e a IIFE do exercício 15 foi identificada corretamente.
+
+| Exercício | Status | Feedback |
+|---|---|---|
+| 13 | ✅ Aprovado | `criarDesconto` retorna a função correta; resultados `180` e `150`; comentários distinguem função externa, valor preservado e os dois momentos de execução. |
+| 14 | ✅ Aprovado | As closures de `30` e `10` minutos funcionam, e a tarefa com exatamente `30` comprova o limite inclusivo. |
+| 15 | ✅ Aprovado | Função, parênteses da chamada imediata, tipo de `etiqueta`, retorno armazenado e escopo local foram identificados corretamente. |
+| 16 | 🔧 Ajustar | O painel reutilizável, os dois callbacks, o percurso único e a closure estão corretos. Restam os quatro pontos abaixo. |
+
+### Ajustes do exercício 16
+
+1. No item 2, use a closure `peloMenos60` como critério e omita o quarto argumento para realmente testar o título padrão. Hoje há dois painéis de 60 pontos, ambos com título explícito.
+2. No item 3, o critério precisa ser uma função nomeada. A arrow inline atual ainda não atende a esse requisito.
+3. Acrescente os seis comentários finais pedidos no enunciado: recebimento e chamada de cada callback, retorno usado na decisão, retorno usado nas linhas, valor preservado e referência sem `()` versus chamada antecipada.
+4. Depois de incorporar a closure ao item 2, remova a duplicação do segundo painel de 60 pontos: o objetivo é um único item 2 que reúna closure e título padrão.
+
+**Próximo passo:** ajustar somente `ex16.ts` e pedir nova conferência. A prova será liberada se essa passagem fechar.
+
+---
+
 **Data:** 28/08/2026  
 **Entrega:** `ex01.ts` a `ex12.ts`, extras já aprovados, leitura real (recortes 2 e 3)  
 **Resultado:** `ex01` a `ex12` aprovados após ajuste; prova **não liberada** até `ex13`–`ex16`
@@ -54,4 +82,3 @@ As Questões 4 e 8 ainda não têm correspondente na entrega atual. Por isso a p
 ## Próximo passo
 
 Fazer `ex13.ts` a `ex16.ts` e pedir conferência. Se essa passagem fechar, a prova é liberada.
-

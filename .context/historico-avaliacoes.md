@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-09-01 — Segunda correção da lista — Capítulo 08
+
+**Resultado qualitativo:** `ex13`, `ex14` e `ex15` aprovados. `ex16` compila, executa e demonstra a arquitetura principal, mas ainda pede quatro ajustes de aderência ao enunciado. A lista está em 15 de 16 exercícios encerrados; prova bloqueada.
+
+**Domínio demonstrado:** closures numérica e booleana, valores preservados independentes, limite inclusivo, reconhecimento completo de IIFE, controladora com critério e formatador, percurso manual único e retorno `string[]`.
+
+**Pontos a ajustar:** integrar a closure ao item 2 usando o título padrão; usar função nomeada no item 3; responder aos seis comentários finais; remover o relatório duplicado de 60 pontos.
+
+**Validação:** os quatro arquivos compilam isoladamente em modo estrito e executam sem erros.
+
+**Próximo passo:** aluno ajusta somente `ex16.ts` e pede conferência final.
+
 ## 2026-08-28 — Primeira correção da lista — Capítulo 08
 
 **Resultado qualitativo:** 7 dos 12 arquivos entregues aprovados; 5 pedem ajuste; exercícios 13 a 16 não entregues. Os 12 arquivos compilam isoladamente em modo estrito e executam.
@@ -253,4 +265,4 @@
 
 ---
 
-*Última atualização: 2026-08-28*
+*Última atualização: 2026-09-01*

@@ -9,23 +9,21 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 08 - Funções: Callbacks e Recursos |
-| **Fase atual** | Exercícios — `ex01` a `ex12` encerrados; falta a Parte 4 |
+| **Fase atual** | Exercícios — `ex01` a `ex15` encerrados; ajustes finais no `ex16` |
 | **Último capítulo concluído** | 07 - Objetos — prova 9,5 |
-| **Próximo passo** | Aluno faz `ex13` a `ex16`; depois conferir e liberar a prova |
+| **Próximo passo** | Aluno ajusta quatro requisitos do `ex16`; depois conferir e liberar a prova |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-08-29
-- **Atividade:** Revisão conceitual de closure e IIFE durante a retomada da teoria do Capítulo 08
+- **Data:** 2026-09-01
+- **Atividade:** Segunda correção da lista do Capítulo 08 — Parte 4
 - **O que foi feito:**
-  - Seção 11 de `01-teoria.md` ampliada com a separação entre a chamada da função externa e a chamada da função retornada
-  - Closure definida como função acompanhada do acesso ao ambiente em que foi criada
-  - Acrescentado exemplo de ambientes independentes com `dobrar` e `triplicar`
-  - Seção 12 ampliada para separar parâmetros, retorno, função como valor, agrupamento e chamada imediata de uma IIFE
-  - Registrada para os próximos capítulos a didática de transformação incremental a partir de uma construção já dominada
-  - Prova continua bloqueada até `ex13` a `ex16` (closure e IIFE)
+  - `ex13`, `ex14` e `ex15` aprovados
+  - `ex13` a `ex16` compilam em modo estrito e executam sem erros
+  - `ex16` tem a arquitetura principal correta, mas ainda pede quatro ajustes de aderência ao enunciado
+  - Prova continua bloqueada até a conferência final do `ex16`
 
 ---
 
@@ -36,7 +34,7 @@
 | Nova sequência na `EMENTA.md` | ✅ Definida |
 | Novo Capítulo 06 — Funções: Fundamentos | ✅ Concluído pelo aluno |
 | Capítulo 07 — Objetos | ✅ Concluído — prova 9,5 |
-| Capítulo 08 | ▶️ `ex01`–`ex12` encerrados; Parte 4 pendente; prova bloqueada |
+| Capítulo 08 | ▶️ `ex01`–`ex15` encerrados; `ex16` em ajuste; prova bloqueada |
 | Capítulo 10 | ⏳ Material pendente |
 | Material `09-arrays-metodos-avancados/` | ✅ Renomeado; revisão didática específica ainda pendente |
 | Leitor e `PROGRESSO.md` | ✅ Capítulo 07 no catálogo; progresso atualizado |
@@ -64,14 +62,14 @@
 - [x] Corrigir a leitura de código real do Capítulo 07
 - [x] Extra 4 encerrado
 - [x] Corrigir a prova do Capítulo 07 — nota 9,5
-- [ ] Encerrar a lista do Capítulo 08 (`ex13`–`ex16`) e liberar a prova
+- [ ] Ajustar e encerrar o `ex16` do Capítulo 08; depois liberar a prova
 
 ---
 
 ## Próxima Sessão
 
-1. Conferir `ex13` a `ex16`.
-2. Se essa passagem fechar, liberar a prova do Capítulo 08.
+1. Aluno ajusta título padrão + closure no item 2, função nomeada no item 3, comentários finais e duplicação do painel de 60 pontos em `ex16.ts`.
+2. Conferir somente `ex16.ts`; se essa passagem fechar, liberar a prova do Capítulo 08.
 3. Projeto 1 — Calculadora permanece pendente na sequência formal, sem bloquear o avanço se o aluno pedir o próximo capítulo.
 
 ---
@@ -81,7 +79,7 @@
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Sim; materiais 09–10 ainda precisam acompanhar a nova ementa |
-| Prova pendente | Sim; Capítulo 08 ainda não liberado |
+| Prova pendente | Sim; falta a conferência final do `ex16` |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não; explicações de closure e IIFE foram aprofundadas antes da Parte 4 |
 
@@ -91,6 +89,8 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-09-01 | Segunda correção da lista do Capítulo 08 — Parte 4 | ~15min |
+| 2026-09-01 | Validação e publicação das atualizações do leitor — versão 26 | ~10min |
 | 2026-08-29 | Registro da diretriz didática de transformação incremental | ~5min |
 | 2026-08-29 | Complementação da teoria de contrato e execução de IIFE | ~10min |
 | 2026-08-29 | Complementação da teoria de closure no Capítulo 08 | ~10min |
@@ -177,4 +177,4 @@
 
 ---
 
-*Última atualização: 2026-08-29*
+*Última atualização: 2026-09-01*
