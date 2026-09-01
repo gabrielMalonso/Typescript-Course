@@ -11,19 +11,20 @@
 | **Capítulo atual** | 08 - Funções: Callbacks e Recursos |
 | **Fase atual** | Exercícios — `ex01` a `ex15` encerrados; ajustes finais no `ex16` |
 | **Último capítulo concluído** | 07 - Objetos — prova 9,5 |
-| **Próximo passo** | Aluno ajusta quatro requisitos do `ex16`; depois conferir e liberar a prova |
+| **Próximo passo** | Aluno remove o título explícito do item 2 no `ex16`; depois conferir e liberar a prova |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-09-01
-- **Atividade:** Segunda correção da lista do Capítulo 08 — Parte 4
+- **Atividade:** Terceira correção da lista do Capítulo 08 — `ex16`
 - **O que foi feito:**
-  - `ex13`, `ex14` e `ex15` aprovados
-  - `ex13` a `ex16` compilam em modo estrito e executam sem erros
-  - `ex16` tem a arquitetura principal correta, mas ainda pede quatro ajustes de aderência ao enunciado
-  - Prova continua bloqueada até a conferência final do `ex16`
+  - Função nomeada do item 3 aprovada
+  - Closure integrada ao relatório de 60 pontos e seis comentários finais incluídos
+  - `ex16` compila em modo estrito e executa sem erros
+  - Resta remover o quarto argumento do item 2 para acionar o título padrão
+  - Prova continua bloqueada até essa conferência final
 
 ---
 
@@ -62,14 +63,14 @@
 - [x] Corrigir a leitura de código real do Capítulo 07
 - [x] Extra 4 encerrado
 - [x] Corrigir a prova do Capítulo 07 — nota 9,5
-- [ ] Ajustar e encerrar o `ex16` do Capítulo 08; depois liberar a prova
+- [ ] Remover o título explícito do item 2, encerrar o `ex16` e liberar a prova
 
 ---
 
 ## Próxima Sessão
 
-1. Aluno ajusta título padrão + closure no item 2, função nomeada no item 3, comentários finais e duplicação do painel de 60 pontos em `ex16.ts`.
-2. Conferir somente `ex16.ts`; se essa passagem fechar, liberar a prova do Capítulo 08.
+1. Aluno remove o quarto argumento da chamada que usa `peloMenos60` em `ex16.ts`.
+2. Conferir somente essa chamada; se usar o título padrão, liberar a prova do Capítulo 08.
 3. Projeto 1 — Calculadora permanece pendente na sequência formal, sem bloquear o avanço se o aluno pedir o próximo capítulo.
 
 ---
@@ -89,6 +90,7 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-09-01 | Terceira correção da lista do Capítulo 08 — `ex16` | ~10min |
 | 2026-09-01 | Segunda correção da lista do Capítulo 08 — Parte 4 | ~15min |
 | 2026-09-01 | Validação e publicação das atualizações do leitor — versão 26 | ~10min |
 | 2026-08-29 | Registro da diretriz didática de transformação incremental | ~5min |

@@ -4,6 +4,12 @@
 
 ---
 
+### 2026-09-01 - Terceira correção da lista do Capítulo 08
+
+Gabriel aplicou corretamente a função nomeada no item 3 e explicou recebimento, execução e retornos dos callbacks, além do valor preservado pela closure. O arquivo compila e executa.
+
+Resta apenas omitir o quarto argumento no relatório construído com `peloMenos60`, para demonstrar de fato o título padrão. Após isso, liberar a prova.
+
 ### 2026-09-01 - Segunda correção da lista do Capítulo 08
 
 **Resultado:** `ex13`, `ex14` e `ex15` aprovados. Gabriel demonstrou compreender os valores preservados pelas closures e reconheceu corretamente função, chamada, retorno e escopo da IIFE.
