@@ -4,6 +4,20 @@
 
 ---
 
+### 2026-09-01 - Segunda correção da lista do Capítulo 08
+
+**Resultado:** `ex13`, `ex14` e `ex15` aprovados. Gabriel demonstrou compreender os valores preservados pelas closures e reconheceu corretamente função, chamada, retorno e escopo da IIFE.
+
+**Exercício 16:** a arquitetura do painel está correta e executa. As pendências são de integração e leitura literal do contrato: o item 2 deve reunir closure + título padrão em uma única chamada; o item 3 exige função nomeada; faltam os seis comentários finais.
+
+**Prova:** ainda não liberada. Após esses ajustes, conferir somente `ex16.ts`.
+
+### 2026-09-01 - Publicação das atualizações do leitor
+
+**Validação:** typecheck, lint e build concluídos com sucesso. Permanecem somente os dois avisos antigos de Fast Refresh e o aviso de tamanho de chunk, sem bloquear a publicação.
+
+**Publicação:** versão 26 publicada com sucesso no projeto privado existente, preservando `https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site`.
+
 ### 2026-08-28 - Primeira correção da lista do Capítulo 08
 
 Gabriel pediu a prova após 12 exercícios, extras e leitura (sem o recorte 4). A Parte 3 está sólida: controladora + critério + formatador já saem com naturalidade, e o recorte 3 descreveu sozinho o uso de `stages` de fora do callback — que é o mecanismo da closure.

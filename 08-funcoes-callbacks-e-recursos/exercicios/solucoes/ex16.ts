@@ -57,7 +57,6 @@ const missoesMaiorIgual60Pts = painelReutilizavel(
     missoes,
     (criterio) => criterio.pontos >= 60,
     (aprovadas) => `Título: ${aprovadas.titulo} | Pontos: ${aprovadas.pontos}`,
-    "Missões com 60 pontos ou mais",
 );
 
 console.log(missoesMaiorIgual60Pts);
@@ -102,3 +101,5 @@ const missoesMaiorIgual60PtsClosure = painelReutilizavel(
   (aprovadas) => `Título: ${aprovadas.titulo} | Pontos: ${aprovadas.pontos}`,
   "Missões com 60 pontos ou mais (usando closure)",
 );
+
+console.log(missoesMaiorIgual60PtsClosure);
