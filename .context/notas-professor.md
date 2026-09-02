@@ -92,7 +92,7 @@ A prova não foi liberada. Os exercícios 13 a 16 cobrem closure e IIFE, cobrado
 
 ### 2026-09-02 - Tema escuro do leitor alinhado ao editor
 
-O modo escuro passou a usar a mesma linguagem visual do tema Cursor/GitHub Dark personalizado do Gabriel. O modo claro foi preservado; a mudança cobre a interface e também realça parâmetros, tipos primitivos e comentários nos exemplos de código quando o realce sintático consegue identificar esses tokens.
+O modo escuro passou a usar a mesma linguagem visual do tema Cursor/GitHub Dark personalizado do Gabriel. O modo claro foi preservado; a mudança cobre a interface e também realça parâmetros, tipos primitivos e comentários nos exemplos de código quando o realce sintático consegue identificar esses tokens. Typecheck, lint e build passaram; versão 28 publicada no projeto privado existente, preservando a URL atual.
 
 ### 2026-08-29 - Diretriz didática para tópicos novos
 
