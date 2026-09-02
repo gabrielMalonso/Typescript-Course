@@ -55,6 +55,7 @@
 - [x] Retorno e efeito - Diferenciou `return` reutilizável de exibição com `console.log` e `void`
 - [x] Funções como valores - Guardou, chamou e comparou referências de função corretamente
 - [x] Separação de papéis em callbacks - Monta controladoras que percorrem e callbacks que decidem, transformam ou produzem efeitos
+- [x] Closures e IIFE - Cria funções com valores preservados, aplica-as como critérios e identifica função, chamada imediata e retorno de IIFE
 
 ---
 
@@ -82,6 +83,7 @@
 | Regra versus amostra | Implementou “diferente de zero” para dados contendo zeros, embora a regra exigisse “maior que zero”; corrigiu espontaneamente após a prova | 1 prova (cap. 06), resolvido |
 | Sintaxe empilhada | Conceito claro, mas a escrita trava ao misturar array de objetos com parâmetro e retorno de função | Relatado no cap. 07 |
 | Nomenclatura de callbacks | Usa com frequência o nome plural da coleção para o item singular recebido pelo callback | Recorrente nos extras do cap. 08; reapareceu no ex12, embora 09–11 já usem o singular |
+| Parâmetro versus variável externa | Na prova do Capítulo 08, a controladora recebeu `itens`, mas percorreu a coleção global `pedidos`; o teste vazio não revelou a dependência | 1 prova (cap. 08) |
 
 ---
 
@@ -116,6 +118,8 @@
 - Distinguir a assinatura do parâmetro callback da implementação concreta entregue como argumento
 - Distinguir o teto de um acumulador (`volume <= 50`) do tamanho de cada incremento (`litros <= 50`)
 - Nomear no singular o elemento recebido por callbacks e percursos, preservando no plural apenas a coleção
+- Conferir se funções reutilizáveis percorrem o parâmetro recebido, não uma variável externa com dados semelhantes
+- Criar casos alternativos capazes de revelar dependências externas, especialmente em testes de array vazio
 
 ---
 
@@ -158,6 +162,8 @@
 - Objetos literais, referência versus cópia, spread, destructuring e arrays de objetos com funções
 - Controladoras com callbacks booleanos, numéricos, formatadores e `void`, inclusive dois callbacks com contratos diferentes
 - Leitura de callbacks reais: localizou contrato, momento da execução e efeito versus retorno nos recortes 2 e 3 do Capítulo 08
+- Closures como fábrica de critérios e reconhecimento da execução imediata de IIFE
+- Contratos e fluxo de dois callbacks com papéis diferentes, inclusive retorno reutilizado e efeito `void`
 
 ---
 
@@ -195,9 +201,9 @@
 - Obteve 9,5 na prova do Capítulo 07; consolidou objetos, spread, destructuring e lista de fichas. Descontos de atenção no índice do array e de regra geral no teto do tanque.
 - Ao iniciar callbacks no Capítulo 08, identificou precisamente a lacuna entre “parâmetro cujo tipo é função” e “função concreta que ocupa o parâmetro”; pediu um fluxo visual sem antecipar conteúdos futuros.
 - Ao estudar closure e IIFE, criou espontaneamente uma estratégia eficaz: partiu do contrato de função já dominado e alterou uma parte por vez até compreender parâmetros vazios, retorno de objeto, função como valor e chamada imediata. Usar essa progressão como padrão nos tópicos novos.
-- Na leitura real do Capítulo 08, descreveu sozinho que o callback do recorte 3 usa o array `stages` de fora — o mecanismo da closure, ainda sem o nome formal. A lista ainda não praticou esse tópico.
-- Na leitura real do Capítulo 08, descreveu sozinho que o callback do recorte 3 usa o array `stages` de fora — o mecanismo da closure, ainda sem o nome formal. A lista ainda não praticou esse tópico.
+- Na leitura real do Capítulo 08, descreveu sozinho que o callback do recorte 3 usa o array `stages` de fora. Depois consolidou formalmente o mecanismo de closure nos exercícios 13, 14 e 16.
+- Obteve 9,2 na prova do Capítulo 08. Teoria de callbacks e closures muito sólida; principal reforço é distinguir dependência intencional de closure do uso acidental de uma coleção global no lugar do parâmetro.
 
 ---
 
-*Última atualização: 2026-08-29*
+*Última atualização: 2026-09-02*

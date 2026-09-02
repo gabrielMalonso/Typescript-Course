@@ -1,6 +1,6 @@
 # Prova — Capítulo 08: Funções — Callbacks e Recursos
 
-> **PROVA PREPARADA, MAS AINDA NÃO LIBERADA.**
+> **PROVA LIBERADA EM 01/09/2026.**
 >
 > Realize somente depois de concluir a aula, a leitura de código real, o mini-projeto, a lista de exercícios e receber a liberação do professor.
 

@@ -49,9 +49,9 @@ O callback é uma função entregue agora para ser chamada no ponto decidido por
 
 | Arquivo | Descrição |
 |---|---|
-| [prova.md](avaliacao/prova.md) | Prova preparada, liberada somente após a conclusão dos exercícios |
-| `resposta.md` | Arquivo que você criará no dia da prova |
-| `resultado.md` | Correção criada depois da entrega |
+| [prova.md](avaliacao/prova.md) | Prova concluída em 02/09/2026 |
+| [resposta.md](avaliacao/resposta.md) | Respostas teóricas entregues |
+| [resultado.md](avaliacao/resultado.md) | Correção — nota 9,2 |
 
 ### Extras
 

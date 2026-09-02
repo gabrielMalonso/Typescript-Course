@@ -9,22 +9,21 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 08 - Funções: Callbacks e Recursos |
-| **Fase atual** | Exercícios — `ex01` a `ex15` encerrados; ajustes finais no `ex16` |
-| **Último capítulo concluído** | 07 - Objetos — prova 9,5 |
-| **Próximo passo** | Aluno remove o título explícito do item 2 no `ex16`; depois conferir e liberar a prova |
+| **Fase atual** | Concluído — prova corrigida |
+| **Último capítulo concluído** | 08 - Funções: Callbacks e Recursos — prova 9,2 |
+| **Próximo passo** | Decidir entre o Projeto 1 pendente e o avanço ao Capítulo 09 |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-09-01
-- **Atividade:** Terceira correção da lista do Capítulo 08 — `ex16`
+- **Data:** 2026-09-02
+- **Atividade:** Correção pós-prova e preservação da versão final do Capítulo 08
 - **O que foi feito:**
-  - Função nomeada do item 3 aprovada
-  - Closure integrada ao relatório de 60 pontos e seis comentários finais incluídos
-  - `ex16` compila em modo estrito e executa sem erros
-  - Resta remover o quarto argumento do item 2 para acionar o título padrão
-  - Prova continua bloqueada até essa conferência final
+  - Respostas teóricas e quatro implementações corrigidas
+  - Questão 7 passou a percorrer `itens` e ganhou um teste vazio discriminante
+  - Textos e comentários alinhados ao enunciado
+  - Nota original 9,2 preservada; correção pós-prova registrada
 
 ---
 
@@ -35,7 +34,7 @@
 | Nova sequência na `EMENTA.md` | ✅ Definida |
 | Novo Capítulo 06 — Funções: Fundamentos | ✅ Concluído pelo aluno |
 | Capítulo 07 — Objetos | ✅ Concluído — prova 9,5 |
-| Capítulo 08 | ▶️ `ex01`–`ex15` encerrados; `ex16` em ajuste; prova bloqueada |
+| Capítulo 08 | ✅ Concluído — prova 9,2 |
 | Capítulo 10 | ⏳ Material pendente |
 | Material `09-arrays-metodos-avancados/` | ✅ Renomeado; revisão didática específica ainda pendente |
 | Leitor e `PROGRESSO.md` | ✅ Capítulo 07 no catálogo; progresso atualizado |
@@ -63,15 +62,15 @@
 - [x] Corrigir a leitura de código real do Capítulo 07
 - [x] Extra 4 encerrado
 - [x] Corrigir a prova do Capítulo 07 — nota 9,5
-- [ ] Remover o título explícito do item 2, encerrar o `ex16` e liberar a prova
+- [x] Encerrar `ex13`–`ex16` e liberar a prova do Capítulo 08
+- [x] Corrigir a prova do Capítulo 08 — nota 9,2
 
 ---
 
 ## Próxima Sessão
 
-1. Aluno remove o quarto argumento da chamada que usa `peloMenos60` em `ex16.ts`.
-2. Conferir somente essa chamada; se usar o título padrão, liberar a prova do Capítulo 08.
-3. Projeto 1 — Calculadora permanece pendente na sequência formal, sem bloquear o avanço se o aluno pedir o próximo capítulo.
+1. Projeto 1 — Calculadora permanece pendente na sequência formal, sem bloquear o avanço se o aluno pedir o próximo capítulo.
+2. Antes do Capítulo 09, adaptar o material existente para arrays de objetos e os novos pré-requisitos.
 
 ---
 
@@ -80,7 +79,7 @@
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Sim; materiais 09–10 ainda precisam acompanhar a nova ementa |
-| Prova pendente | Sim; falta a conferência final do `ex16` |
+| Prova pendente | Não; Capítulo 08 aprovado com 9,2 |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não; explicações de closure e IIFE foram aprofundadas antes da Parte 4 |
 
@@ -90,6 +89,9 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-09-02 | Correção pós-prova do Capítulo 08 e validação da versão final | ~15min |
+| 2026-09-02 | Correção da prova do Capítulo 08 — nota 9,2 | ~20min |
+| 2026-09-01 | Encerramento da lista e liberação da prova do Capítulo 08 | ~10min |
 | 2026-09-01 | Terceira correção da lista do Capítulo 08 — `ex16` | ~10min |
 | 2026-09-01 | Segunda correção da lista do Capítulo 08 — Parte 4 | ~15min |
 | 2026-09-01 | Validação e publicação das atualizações do leitor — versão 26 | ~10min |
@@ -179,4 +181,4 @@
 
 ---
 
-*Última atualização: 2026-09-01*
+*Última atualização: 2026-09-02*

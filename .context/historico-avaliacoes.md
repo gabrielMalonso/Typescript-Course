@@ -4,6 +4,30 @@
 
 ---
 
+## 2026-09-02 — Correção pós-prova — Capítulo 08
+
+**Resultado:** cinco arquivos de resposta corrigidos com autorização do aluno. A Questão 7 agora percorre `itens` e o caso vazio usa um critério que revelaria o acesso acidental à coleção global. Questões 1, 5 e 6 foram alinhadas ao valor e aos textos exatos; a explicação da Questão 8 distingue a fábrica da função retornada.
+
+**Validação:** quatro arquivos práticos compilam isoladamente em modo estrito e executam com as saídas esperadas. Nota original 9,2 preservada como registro da entrega.
+
+## 2026-09-02 — Prova do Capítulo 08
+
+**Resultado:** 9,2/10 — aprovado. A teoria recebeu 3,85/4,0 e a prática 5,30/6,0. Os quatro arquivos TypeScript compilam isoladamente em modo estrito e executam sem erros.
+
+**Descontos:** na Questão 1, faltou calcular explicitamente que `preco` vale `11`. Na Questão 5, houve diferenças literais na saída e o teste por valor verdadeiro também considera `""` ausente. Na Questão 6, a numeração usa `:` em vez de `.`. Na Questão 7, a controladora percorre a variável global `pedidos` em vez do parâmetro `itens`, invalidando a comprovação real do array vazio.
+
+**Domínio consolidado:** contratos de callbacks, referência versus chamada, retorno versus efeito, opcionais/default/rest, closures com valores independentes e reconhecimento de IIFE. Capítulo 08 concluído.
+
+## 2026-09-01 — Conclusão da lista — Capítulo 08
+
+**Resultado qualitativo:** `ex01.ts` a `ex16.ts` aprovados. O ajuste final removeu o título explícito da chamada construída com `peloMenos60`, comprovando o valor padrão `Painel de missões`.
+
+**Validação:** `ex16.ts` compila isoladamente em modo estrito e executa sem erros; o relatório final seleciona `Sinal perdido` e `Cristal raro`.
+
+**Domínio consolidado:** parâmetros opcionais, defaults e rest; callbacks `void` e com retorno; referência versus chamada; controladoras; funções nomeadas; closures; IIFE; integração com arrays de objetos.
+
+**Próximo passo:** prova do Capítulo 08 liberada.
+
 ## 2026-09-01 — Terceira correção da lista — Capítulo 08
 
 **Resultado qualitativo:** `criterioExploracao` agora é função nomeada passada por referência, a closure foi integrada ao relatório de 60 pontos e os seis comentários finais foram respondidos. `ex16.ts` compila e executa sem erros.
@@ -138,7 +162,7 @@
 
 | Métrica | Valor |
 |---------|-------|
-| **Total de provas** | 8 |
+| **Total de provas** | 9 |
 | **Média geral** | 9,2 |
 | **Maior nota** | 9,5 |
 | **Menor nota** | 8,5 |
@@ -169,13 +193,13 @@
 | 05 | 2026-08-15 | 9,5 | `ultimoIndice` de array vazio; previsões da Q6 e variável da Q7 omitidas | Aprovado; quatro arquivos práticos compilam e executam |
 | 06 | 2026-08-17 | 9,4 | Tipo conceitual da função e filtro que aceita negativos | Aprovado; quatro arquivos práticos compilam e executam |
 | 07 | 2026-08-21 | 9,5 | Índice `lista[2]` em vez de `lista[1]`; extração descrita como vinda de `promocao`; `litros <= 50` extra no tanque | Aprovado; quatro arquivos práticos compilam e executam |
-| 08 | - | - | - | Lista em correção; prova bloqueada |
+| 08 | 2026-09-02 | 9,2 | Valor de `preco` omitido; saídas literais; uso da variável global `pedidos` em vez do parâmetro `itens` | Aprovado; quatro arquivos práticos compilam e executam |
 | 09 | - | - | - | - |
 | 10 | - | - | - | - |
 | 11 | - | - | - | - |
 | 12 | - | - | - | - |
 
-**Média do Módulo 2:** 9,5
+**Média do Módulo 2:** 9,4
 
 ---
 
@@ -218,6 +242,7 @@
 
 ## Exercícios Corrigidos
 
+| 2026-09-01 | 08 | 16 | Aprovados após revisão | 100% após ajustes | Callbacks, closures, IIFE, função nomeada e painel configurável consolidados; prova liberada |
 | 2026-08-28 | 08 | 12 de 16 | 7 aprovados, 5 com ajuste, 4 não entregues | — | Faltam closures/IIFE; forma da expressão de função; testes do ex12 |
 | 2026-02-01 | 00 | 10 | 8 corretos, 2 com ressalvas, 1 parcial | ~85% | Inconsistência com ponto e vírgula; saída divergente do esperado; confusão sobre o que é erro de compilação vs estilo |
 | 2026-07-30 | 01 | 10 + bônus | Aprovados após revisão | 100% após ajustes | Saída, requisitos textuais e escopo de função corrigidos |
