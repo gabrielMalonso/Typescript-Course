@@ -2,190 +2,224 @@
 
 ## Instruções gerais
 
-- Resolva na ordem apresentada.
-- Crie os arquivos diretamente em `09-arrays-metodos-avancados/exercicios/`.
-- Não use loops explícitos, exceto se o enunciado pedir uma comparação.
-- Use somente os conteúdos estudados até este capítulo.
-- Antes de executar, registre em comentário o tipo e o valor previstos para cada resultado.
-- Faça o teste alternativo indicado e restaure os dados principais.
-- Diferenças cosméticas de texto não são o foco; tipos, valores, ordem e comportamento são.
-- Para compilar um arquivo isolado, use `npx tsc --strict --noEmit --target ES2022 arquivo.ts`.
+- Resolva na ordem apresentada em `exercicios/solucoes/`.
+- Não use loops explícitos, exceto quando o enunciado pedir comparação.
+- Use somente conteúdos estudados até este capítulo.
+- Mantenha casos principal e alternativo visíveis no mesmo arquivo.
+- Nas previsões pedidas, registre tipo e valor antes de executar.
+- Nomeie coleções no plural e o item da callback no singular.
+- Use valor inicial em todo `reduce`.
+- Compile isoladamente com `npx tsc --strict --noEmit --target ES2022 arquivo.ts`.
 
-## Nível 1 — Percorrer, transformar e filtrar
+## Nível 1 — Reconhecer cada método
 
 ### Exercício 1.1 — Inspeção numerada
 
 **Arquivo:** `ex11.ts`
 
-Use:
-
-```typescript
-const etapas: string[] = ["planejar", "construir", "testar"];
-```
-
-Com `forEach`, exiba cada etapa no formato `1. planejar`. Depois, explique em comentário por que `forEach` é adequado e qual é seu retorno.
-
-**Teste alternativo:** array vazio; nenhuma linha deve ser exibida.
+Use `forEach` em `["planejar", "construir", "testar"]` para exibir `1. planejar`. Explique por que seu retorno é `void`. Repita com um array vazio e comprove que nenhuma linha adicional aparece.
 
 ### Exercício 1.2 — Conversão de temperatura
 
 **Arquivo:** `ex12.ts`
 
-Use `map` para converter `[0, 20, 30]` de Celsius para Fahrenheit com `celsius * 1.8 + 32`. Exiba o original e o novo array.
+Use `map` para converter `[0, 20, 30]` de Celsius para Fahrenheit com `celsius * 1.8 + 32`. Exiba o original, o novo array e a comparação entre as referências.
 
-**Resultado:** `[32, 68, 86]`.
-
-**Teste alternativo:** `[-40]`; o resultado deve ser `[-40]`.
+Resultados: `[32, 68, 86]` e `false`. Faça também `[-40] → [-40]` no mesmo arquivo.
 
 ### Exercício 1.3 — Leituras válidas
 
 **Arquivo:** `ex13.ts`
 
-Use `filter` em `[12, -1, 0, 25, -3, 8]` para manter valores maiores ou iguais a `0`. Exiba o resultado, a quantidade removida e o original.
-
-**Resultado filtrado:** `[12, 0, 25, 8]`.
-
-**Teste alternativo:** `[-1, -2]`; o resultado deve ser vazio e a quantidade removida deve ser `2`.
+Use `filter` em `[12, -1, 0, 25, -3, 8]` para manter valores `>= 0`. Exiba resultado, quantidade removida e original. Faça também `[-1, -2]`, que deve produzir array vazio e duas remoções.
 
 ### Exercício 1.4 — Tipo transformado
 
 **Arquivo:** `ex14.ts`
 
-Use `map` em `[3, 8, 11]` para criar um `boolean[]` indicando se cada número é par. Exiba o resultado e responda em comentário por que `map` pode produzir outro tipo, mas conserva a quantidade.
+Use `map` em `[3, 8, 11]` para criar um `boolean[]` indicando se cada número é par. Explique por que o tipo pode mudar e a quantidade permanece três.
 
-**Resultado:** `[false, true, false]`.
+Resultado: `[false, true, false]`.
 
-## Nível 2 — Buscar e verificar
+## Nível 2 — Aplicar a arrays de objetos
 
-### Exercício 2.1 — Primeira prioridade
+Use estes dados nos exercícios 2.1 a 2.4:
+
+```typescript
+const produtos: {
+  codigo: string;
+  nome: string;
+  estoque: number;
+  ativo: boolean;
+}[] = [
+  { codigo: "P1", nome: "Broca", estoque: 8, ativo: true },
+  { codigo: "P2", nome: "Serra", estoque: 0, ativo: true },
+  { codigo: "P3", nome: "Lixa", estoque: 12, ativo: false },
+  { codigo: "P4", nome: "Disco", estoque: 5, ativo: true },
+];
+```
+
+### Exercício 2.1 — Seleção de disponíveis
 
 **Arquivo:** `ex21.ts`
 
-Use `find` em `[3, 8, 12, 5]` para obter o primeiro valor maior ou igual a `10`. Exiba o valor.
+Use o método adequado para criar outro array apenas com produtos ativos e `estoque > 0`. Exiba os códigos e comprove que `produtos` continua com quatro objetos.
 
-**Teste alternativo:** `[3, 8]`; trate `undefined` com um `if/else` e exiba `Nenhuma prioridade encontrada`.
+Resultado: `P1` e `P4`.
 
-### Exercício 2.2 — Índice de um código
+### Exercício 2.2 — Etiquetas de estoque
 
 **Arquivo:** `ex22.ts`
 
-Use `findIndex` em `["AA", "BC", "DX", "EF"]` para buscar `"DX"`. Se encontrado, exiba a posição humana; caso contrário, exiba uma mensagem de ausência.
+Transforme cada produto em uma string `P1 — Broca: 8`. Registre o tipo do item antes e depois do método e explique por que a quantidade continua quatro.
 
-**Resultado principal:** posição `3`.
-
-**Teste alternativo:** busque `"ZZ"`; o índice deve ser `-1` e nenhuma posição humana deve ser calculada como válida.
-
-### Exercício 2.3 — Existe bloqueio?
+### Exercício 2.3 — Busca com duas ausências
 
 **Arquivo:** `ex23.ts`
 
-Use `some` em `["ok", "ok", "bloqueado", "ok"]` para verificar se existe `"bloqueado"`. Exiba o boolean e uma mensagem condicional.
+Encontre o objeto de código `P3` e o índice de `P4`. Depois procure `P9` das duas formas. Trate `undefined` com `if/else` e só calcule posição humana quando o índice for diferente de `-1`.
 
-**Teste alternativo:** todos os valores `"ok"`; o boolean deve ser `false`.
-
-### Exercício 2.4 — Todos dentro da faixa?
+### Exercício 2.4 — Perguntas booleanas
 
 **Arquivo:** `ex24.ts`
 
-Use `every` em `[18, 22, 25, 19]` para verificar se todos os valores estão entre `18` e `25`, inclusive.
+Responda com os métodos mais diretos:
 
-Depois teste um array vazio e registre em comentário:
+1. existe produto ativo sem estoque?
+2. todos os produtos possuem estoque não negativo?
+3. todos os produtos ativos possuem estoque positivo?
+4. em um array vazio, quais são os retornos de `some` e `every`?
+5. como exigir ao mesmo tempo uma lista não vazia e todos válidos?
 
-1. o retorno de `every`;
-2. por que ele ocorre;
-3. como exigir ao mesmo tempo uma lista não vazia e todos os valores válidos.
+Resultados principais: `true`, `true`, `false`.
 
-## Nível 3 — Acumular, copiar e encadear
+## Nível 3 — Integrar contratos, objetos e referências
 
-### Exercício 3.1 — Soma segura
+### Exercício 3.1 — Total de pedidos válidos
 
 **Arquivo:** `ex31.ts`
 
-Use `reduce` com valor inicial `0` para somar `[15, 20, 5]`. Em comentário, registre o acumulador após cada elemento.
+Use:
 
-**Resultado:** `40`.
+```typescript
+const pedidos: {
+  codigo: string;
+  quantidade: number;
+  preco: number;
+  cancelado: boolean;
+}[] = [
+  { codigo: "A1", quantidade: 2, preco: 10, cancelado: false },
+  { codigo: "B2", quantidade: 1, preco: 30, cancelado: true },
+  { codigo: "C3", quantidade: 3, preco: 5, cancelado: false },
+];
+```
 
-**Teste alternativo:** array vazio; o resultado deve ser `0` sem erro.
+Com um único `reduce`, some `quantidade * preco` apenas dos não cancelados. Registre o acumulador depois de cada objeto. Resultado: `35`. Repita com array vazio: `0`.
 
-### Exercício 3.2 — Construção de código
+### Exercício 3.2 — Callback nomeada reutilizada
 
 **Arquivo:** `ex32.ts`
 
-Use `reduce` com valor inicial `""` para unir `["TS", "-", "06"]` em uma única string.
+Crie uma função nomeada:
 
-**Resultado:** `TS-06`.
+```typescript
+function disponivel(produto: {
+  codigo: string;
+  nome: string;
+  estoque: number;
+  ativo: boolean;
+}): boolean
+```
 
-Explique em comentário por que o tipo do acumulador é `string`.
+Ela deve aceitar somente produto ativo com estoque positivo. Passe a referência para `filter` e `some`, sem chamá-la antecipadamente. Explique o contrato recebido pelos dois métodos e os tipos dos dois retornos.
 
-### Exercício 3.3 — Cópia e extensão
+### Exercício 3.3 — Cópia do array versus cópia dos objetos
 
 **Arquivo:** `ex33.ts`
 
 Use:
 
 ```typescript
-const base: string[] = ["B", "C"];
+const sensores: { codigo: string; ativo: boolean }[] = [
+  { codigo: "T1", ativo: true },
+  { codigo: "T2", ativo: false },
+];
 ```
 
-Crie `completo` como `["A", ...base, "D"]`. Altere `completo[1]` para `"B2"` e exiba os dois arrays e a comparação `base === completo`.
+1. crie `copiaDoArray` com `[...sensores]`;
+2. comprove que o array é novo, mas o primeiro objeto é compartilhado;
+3. crie `copiaDosObjetos` com `map` + spread;
+4. comprove que o primeiro objeto também é novo;
+5. altere `copiaDosObjetos[0].ativo` e mostre que `sensores[0].ativo` permanece `true`.
 
-Explique por que `base` continua `["B", "C"]`.
-
-### Exercício 3.4 — Filtrar e transformar
+### Exercício 3.4 — A ordem altera a regra
 
 **Arquivo:** `ex34.ts`
 
-Use um encadeamento em `[4, 7, 10, 13, 16]` para:
+Em `[10, 20, 40]`, faça dois encadeamentos:
 
-1. manter apenas os pares;
-2. multiplicar cada valor mantido por `3`.
+1. mantenha valores `>= 20` e depois aplique desconto de `50%`;
+2. aplique o desconto primeiro e depois mantenha resultados `>= 20`.
 
-**Resultado:** `[12, 30, 48]`.
+Resultados: `[10, 20]` e `[20]`. Registre os dois intermediários e explique por que diferem.
 
-Registre em comentário o array intermediário e explique por que inverter `filter` e `map` mudaria a regra avaliada.
-
-### Exercício 3.5 — Relatório completo
+### Exercício 3.5 — Painel de equipamentos
 
 **Arquivo:** `ex35.ts`
 
 Use:
 
 ```typescript
-const consumos: number[] = [0, 12, 18, 7, 25];
+const equipamentos: {
+  nome: string;
+  horas: number;
+  ativo: boolean;
+}[] = [
+  { nome: "Torno", horas: 120, ativo: true },
+  { nome: "Fresa", horas: 80, ativo: false },
+  { nome: "Prensa", horas: 200, ativo: true },
+  { nome: "Serra", horas: 40, ativo: true },
+];
 ```
 
-Crie e exiba:
+Escolha os métodos, sem arquitetura pronta, para produzir:
 
-- `consumosRegistrados`: somente maiores que `0`;
-- `consumosEmDobro`: transformação dos registrados;
-- `primeiroAlto`: primeiro valor original maior que `15`;
-- `indiceDoPrimeiroZero`: índice do primeiro `0`;
-- `existeAcimaDeVinte`: com `some`;
-- `todosNaoNegativos`: com `every`;
-- `totalRegistrado`: com `reduce` iniciado em `0`;
-- `copiaComFechamento`: spread de `consumos` seguido de `10`.
+- objetos ativos;
+- nomes dos ativos;
+- primeiro ativo com pelo menos `150` horas;
+- índice do primeiro inativo;
+- existência de ativo acima de `100` horas;
+- confirmação de que todos possuem horas não negativas;
+- total de horas dos ativos;
+- cópias dos ativos com `10` horas adicionais, sem alterar os originais;
+- uma linha numerada para cada cópia.
 
-**Resultados principais:** `[12, 18, 7, 25]`, `[24, 36, 14, 50]`, `18`, `0`, `true`, `true`, `62` e `[0, 12, 18, 7, 25, 10]`.
+Faça também o caso abaixo e preveja todos os retornos:
 
-**Teste alternativo:** `[]`; preveja todos os retornos antes de executar.
+```typescript
+const equipamentosVazios: {
+  nome: string;
+  horas: number;
+  ativo: boolean;
+}[] = [];
+```
 
-## Bônus — Duas implementações, uma escolha
+## Bônus — Critério configurável
 
 **Arquivo:** `bonus.ts`
 
-Calcule a soma dos números pares de `[2, 5, 8, 11, 14]` de duas formas:
+Crie uma closure `criarMinimoDeHoras(minimo)` que devolve um callback para objetos com `horas: number`. Gere critérios de `80` e `150` horas e use cada referência em `filter` sobre `equipamentos`.
 
-1. `filter` seguido de `reduce`;
-2. um único `reduce` com condicional dentro da callback.
-
-As duas devem produzir `24`. Em comentário, compare legibilidade e número de arrays intermediários. Não existe uma resposta universal: justifique qual versão você escolheria neste caso.
+Explique quando o valor mínimo é definido, quando é reutilizado e por que `filter(criarMinimoDeHoras(80))` é válido, mas `filter(criarMinimoDeHoras(80)(equipamentos[0]))` entregaria um boolean.
 
 ## Checklist final
 
-- [ ] Sei o retorno de cada método usado.
-- [ ] Tratei `undefined` e `-1` como ausências diferentes.
-- [ ] Usei `map` para transformar e `filter` para selecionar.
+- [ ] Escolhi cada método pela pergunta e pelo retorno.
+- [ ] Nomeei coleção no plural e item no singular.
+- [ ] Tratei `undefined`, `-1` e array vazio.
 - [ ] Usei valor inicial em todo `reduce`.
-- [ ] Consigo prever os valores intermediários dos encadeamentos.
-- [ ] Confirmei quando o array original permanece intacto.
-- [ ] Restaurei os dados principais após os testes alternativos.
+- [ ] Registrei os valores intermediários dos encadeamentos.
+- [ ] Diferenciei novo array de novos objetos.
+- [ ] Passei callbacks por referência quando solicitado.
+- [ ] Mantive casos principal e alternativo visíveis.
+- [ ] Confirmei quando o original permanece intacto.

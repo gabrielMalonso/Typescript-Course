@@ -4,230 +4,117 @@
 
 ## Critérios gerais
 
-- Priorizar escolha correta do método, tipo do retorno, valores, ordem e tratamento de ausência.
-- Diferenças cosméticas de rótulos não impedem aprovação.
-- Cobrar `return` quando a callback usa chaves e precisa produzir resultado.
-- Cobrar valor inicial em `reduce`, pois é objetivo explícito do capítulo.
-- Nos encadeamentos, o aluno deve conseguir informar o valor intermediário.
-
-## Mini-projeto — referência
-
-```typescript
-const duracoes: number[] = [32, 18, 45, 27, 0, 36];
-
-const treinosRealizados = duracoes.filter((duracao) => duracao > 0);
-const duracoesComAquecimento = treinosRealizados.map((duracao) => duracao + 5);
-const treinosLongosComAquecimento = treinosRealizados
-  .filter((duracao) => duracao >= 30)
-  .map((duracao) => duracao + 5);
-const primeiroTreinoCurto = treinosRealizados.find((duracao) => duracao < 20);
-const indiceDaAusencia = duracoes.findIndex((duracao) => duracao === 0);
-const existeAcimaDeQuarenta = duracoes.some((duracao) => duracao > 40);
-const todosComQuinzeMinutos = treinosRealizados.every((duracao) => duracao >= 15);
-const totalRealizado = treinosRealizados.reduce(
-  (total, duracao) => total + duracao,
-  0,
-);
-const semanaEstendida = [...duracoes, 25];
-
-treinosRealizados.forEach((duracao, indice) => {
-  console.log(`Treino realizado ${indice + 1}: ${duracao} min`);
-});
-
-console.log(`Com aquecimento: ${duracoesComAquecimento}`);
-console.log(`Longos com aquecimento: ${treinosLongosComAquecimento}`);
-console.log(`Primeiro curto: ${primeiroTreinoCurto}`);
-console.log(`Índice da ausência: ${indiceDaAusencia}`);
-console.log(`Existe acima de 40: ${existeAcimaDeQuarenta}`);
-console.log(`Todos têm ao menos 15: ${todosComQuinzeMinutos}`);
-console.log(`Total realizado: ${totalRealizado}`);
-console.log(`Semana original: ${duracoes}`);
-console.log(`Semana estendida: ${semanaEstendida}`);
-```
+- Priorizar escolha do método, contrato da callback, valores intermediários e preservação dos originais.
+- Cobrar item singular e uso da coleção correta quando a troca provocar erro conceitual.
+- Cobrar tratamento de `undefined`, `-1`, vazio e valor inicial do `reduce`.
+- Diferenças cosméticas não impedem aprovação, salvo quando o formato é requisito funcional.
 
 ## Exercícios — resultados essenciais
 
 | Exercício | Resultado / conceito obrigatório |
 |---|---|
-| 1.1 | Três linhas numeradas; `forEach` para efeito e retorno `void` |
-| 1.2 | `[32, 68, 86]`; original intacto; `[-40] → [-40]` |
-| 1.3 | `[12, 0, 25, 8]`; dois removidos; original intacto |
+| 1.1 | três linhas; `forEach` retorna `void`; vazio não exibe |
+| 1.2 | `[32, 68, 86]`; `[-40]`; referências diferentes |
+| 1.3 | `[12, 0, 25, 8]`; duas remoções; alternativa `[]` |
 | 1.4 | `[false, true, false]`; `boolean[]`; mesma quantidade |
-| 2.1 | `12`; alternativa trata `undefined` |
-| 2.2 | índice `2`, posição humana `3`; alternativa trata `-1` |
-| 2.3 | `true` e mensagem de bloqueio; alternativa `false` |
-| 2.4 | principal `true`; vazio `true`; exigir `length > 0 && every(...)` |
-| 3.1 | `40`; acumulador `0 → 15 → 35 → 40`; vazio `0` |
-| 3.2 | `TS-06`; acumulador e valor inicial são strings |
-| 3.3 | base `["B", "C"]`; completo `["A", "B2", "C", "D"]`; `false` |
-| 3.4 | intermediário `[4, 10, 16]`; final `[12, 30, 48]` |
-| 3.5 | resultados definidos no enunciado; no vazio: `[]`, `[]`, `undefined`, `-1`, `false`, `true`, `0`, `[10]` |
-| Bônus | ambas as versões retornam `24`; comparação argumentada |
+| 2.1 | objetos `P1` e `P4`; original com quatro |
+| 2.2 | quatro strings; objeto vira string |
+| 2.3 | `P3`; índice `3`; ausências `undefined` e `-1` tratadas |
+| 2.4 | `true`, `true`, `false`; vazio `false`/`true`; regra com `length` |
+| 3.1 | total `35`; vazio `0`; acumulador `0 → 20 → 20 → 35` |
+| 3.2 | referência nomeada usada em `filter` e `some`; array e boolean |
+| 3.3 | array novo; primeiro objeto compartilhado na cópia por spread; objetos novos no `map` |
+| 3.4 | intermediários `[20, 40]` e `[5, 10, 20]`; finais `[10, 20]` e `[20]` |
+| 3.5 | ativos, nomes, Prensa, índice 1, `true`, `true`, total `360`, cópias sem mutação |
+| Bônus | closures independentes para 80 e 150; referências válidas em `filter` |
 
-## Prova — Parte 1
+## Prova — teoria
 
 ### Questão 1 — 1,0
 
-1. `map`: transforma cada elemento e cria novo array.
-2. `filter`: mantém os elementos cuja callback devolve `true`.
-3. `some`: responde se ao menos um atende à condição.
-4. `findIndex`: retorna o primeiro índice ou `-1`.
-5. `reduce`: combina valores em um acumulador.
-
-Dar 0,1 pelo método e 0,1 pela explicação em cada item.
+- coleção: `produtos`;
+- `produto`: um objeto do array em cada chamada;
+- `filter` espera `boolean`;
+- intermediário: `[{ nome: "Broca", ativo: true }]`, mesmo tipo de objeto em array;
+- final: `["Broca"]`, `string[]`.
 
 ### Questão 2 — 1,0
 
-- `forEach` retorna `void`.
-- `map` cria novo array com `N` elementos.
-- `filter` cria novo array com `0..N` elementos.
-- `map` e `filter` não alteram o original por si próprios.
-- `console.log` retorna `undefined`; `map` precisa receber o valor transformado da callback.
-
-Dar 0,2 por item.
+- `forEach` retorna `void`;
+- `map` produz `N` resultados;
+- `filter` produz `0..N` elementos;
+- `find` para no primeiro `true`; `some`, no primeiro `true`;
+- `return` encerra somente a callback atual do `forEach`; o método continua.
 
 ### Questão 3 — 1,0
 
-```text
-encontrado: undefined
-indice: -1
-existe: false
-todos: true
-```
-
-`find` representa ausência de valor com `undefined`; `findIndex`, ausência de posição com `-1`. `some` não encontra testemunha. `every` não encontra contraexemplo. Regra pedida:
-
-```typescript
-const valido = valores.length > 0 && valores.every((valor) => valor > 10);
-```
+Resultados: `false`, `true`, `false`. Spread cria novo array, mas preserva referências internas; `map` com spread cria cada objeto. Parênteses fazem `{ ...item }` ser uma expressão objeto retornada.
 
 ### Questão 4 — 1,0
 
-| chamada | acumulador | valor | devolvido |
-|---:|---:|---:|---:|
-| 1 | 10 | 3 | 16 |
-| 2 | 16 | 5 | 26 |
-| 3 | 26 | 2 | 30 |
+| chamada | acumulador | pedido | devolvido |
+|---:|---:|---|---:|
+| 1 | 0 | ativo, `2 × 10` | 20 |
+| 2 | 20 | inativo, `1 × 50` | 20 |
+| 3 | 20 | ativo, `3 × 5` | 35 |
 
-Resultado `30`. O `10` é o valor inicial do acumulador e torna o comportamento explícito, inclusive no array vazio.
+Resultado `35`; `0` é o valor inicial e define o caso vazio.
 
-## Prova — Parte 2
+## Prova — prática
 
 ### Questão 5 — 1,25
 
 ```typescript
-const velocidades: number[] = [0, 35, 52, 18, 61];
-const velocidadesValidas = velocidades.filter((velocidade) => velocidade > 0);
-const velocidadesEmMetrosPorSegundo = velocidadesValidas.map(
-  (velocidade) => velocidade / 3.6,
-);
-
-console.log(velocidadesValidas);
-console.log(velocidadesEmMetrosPorSegundo);
-console.log(velocidades);
+const velocidades: number[] = [0, 36, 72, -1, 18];
+// Intermediário: [36, 72, 18]
+const validas = velocidades.filter((velocidade) => velocidade > 0);
+const metrosPorSegundo = velocidades
+  .filter((velocidade) => velocidade > 0)
+  .map((velocidade) => velocidade / 3.6);
 ```
 
-| Critério | Pontos |
-|---|---:|
-| `filter` correto | 0,30 |
-| `map` e fórmula corretos | 0,30 |
-| arrays e original exibidos | 0,20 |
-| quantidades e não mutação explicadas | 0,20 |
-| compila e executa | 0,25 |
+Cobrar intermediário, `[10, 20, 5]`, original e encadeamento.
 
 ### Questão 6 — 1,25
 
-```typescript
-const niveis: number[] = [40, 55, 72, 68, 90];
-const primeiroNivelAlto = niveis.find((nivel) => nivel >= 70);
-const indiceDoPrimeiroAlto = niveis.findIndex((nivel) => nivel >= 70);
-const existeAcimaDeOitentaECinco = niveis.some((nivel) => nivel > 85);
-const todosNaFaixa = niveis.every((nivel) => nivel >= 0 && nivel <= 100);
-
-console.log(primeiroNivelAlto); // 72
-console.log(indiceDoPrimeiroAlto); // 2
-console.log(existeAcimaDeOitentaECinco); // true
-console.log(todosNaFaixa); // true
-```
-
-| Critério | Pontos |
-|---|---:|
-| `find` e retorno | 0,25 |
-| `findIndex` e retorno | 0,25 |
-| `some` correto | 0,20 |
-| `every` com limites inclusivos | 0,20 |
-| previsões e ausências explicadas | 0,15 |
-| compila e executa | 0,20 |
+Resultados: objeto `T3`, índice `1`, `false`, `true`, busca `T9` como `undefined` tratada em `if/else`.
 
 ### Questão 7 — 1,5
 
 ```typescript
-const parcelas: number[] = [20, 35, 15];
-const totalOriginal = parcelas.reduce((total, parcela) => total + parcela, 0);
-const parcelasComTaxa = [...parcelas, 5];
-parcelasComTaxa[0] = 25;
-const totalComTaxa = parcelasComTaxa.reduce(
-  (total, parcela) => total + parcela,
-  0,
-);
-
-console.log(parcelas);
-console.log(parcelasComTaxa);
-console.log(totalOriginal);
-console.log(totalComTaxa);
-console.log(parcelas === parcelasComTaxa);
+const copiaDoArray = [...tarefas];
+const copiaDosObjetos = tarefas.map((tarefa) => ({ ...tarefa }));
 ```
 
-| Critério | Pontos |
-|---|---:|
-| primeiro `reduce`, inicial `0`, total `70` | 0,30 |
-| spread e alteração somente na cópia | 0,30 |
-| segundo `reduce`, inicial `0`, total `80` | 0,30 |
-| arrays e comparação `false` exibidos | 0,20 |
-| explicação da nova referência | 0,15 |
-| compila e executa | 0,25 |
+Comparações: `false`, `true`, `false`. Depois da alteração, original `false`, cópia `true`.
 
 ### Questão 8 — 2,0
 
 ```typescript
-const medicoes: number[] = [12, -1, 25, 8, 30, -1, 18];
+function ordemValida(ordem: {
+  codigo: string;
+  quantidade: number;
+  preco: number;
+  aprovada: boolean;
+}): boolean {
+  return ordem.aprovada && ordem.quantidade > 0;
+}
 
-// Intermediário após filter: [12, 25, 8, 30, 18]
-const medicoesProcessadas = medicoes
-  .filter((medicao) => medicao >= 0)
-  .map((medicao) => medicao * 2);
+const resumos = ordens
+  .filter(ordemValida)
+  .map((ordem) => ({
+    codigo: ordem.codigo,
+    total: ordem.quantidade * ordem.preco,
+  }));
 
-const primeiraAcimaDeQuarenta = medicoesProcessadas.find(
-  (medicao) => medicao > 40,
-);
-const todasNaoNegativas = medicoesProcessadas.every((medicao) => medicao >= 0);
-const total = medicoesProcessadas.reduce(
-  (acumulador, medicao) => acumulador + medicao,
-  0,
-);
-
-medicoesProcessadas.forEach((medicao, indice) => {
-  console.log(`Medição ${indice + 1}: ${medicao}`);
-});
-
-console.log(primeiraAcimaDeQuarenta);
-console.log(todasNaoNegativas);
-console.log(total);
-console.log(medicoes);
+const primeiraAlta = resumos.find((resumo) => resumo.total >= 50);
+const todosPositivos = resumos.every((resumo) => resumo.total > 0);
+const total = resumos.reduce((soma, resumo) => soma + resumo.total, 0);
 ```
 
-| Critério | Pontos |
-|---|---:|
-| encadeamento `filter` → `map` | 0,40 |
-| intermediário e processado corretos | 0,25 |
-| `find` retorna `50` | 0,20 |
-| `every` retorna `true` | 0,20 |
-| `reduce` com inicial `0` retorna `186` | 0,30 |
-| `forEach` e posição humana | 0,20 |
-| original exibido e intacto | 0,15 |
-| compila e executa | 0,30 |
+Cobrar função por referência, intermediário A1/D4, resumos `20`/`50`, busca D4, `true`, `70`, `forEach`, original e vazio `undefined`/`true`/`0`.
 
-## Total da prova
+## Pontuação
 
 | Parte | Pontos |
 |---|---:|

@@ -136,6 +136,60 @@ console.log(original === copia); // false
 
 O spread cria outro array, mas a cópia é superficial. Se seus elementos forem objetos, os dois arrays ainda apontarão para os mesmos objetos internos.
 
+Para criar também objetos novos:
+
+```typescript
+const copiaDosObjetos = original.map((item) => ({ ...item }));
+```
+
+## 12. Confundir coleção e item da callback
+
+```typescript
+const produtosAtivos = produtos.filter(
+  (produtos) => produtos.ativo,
+);
+```
+
+O código pode funcionar, mas o parâmetro representa um único objeto. O singular deixa o papel explícito:
+
+```typescript
+const produtosAtivos = produtos.filter(
+  (produto) => produto.ativo,
+);
+```
+
+## 13. Consultar a coleção externa no lugar do item
+
+```typescript
+const produtosAtivos = produtos.filter(
+  () => produtos[0].ativo,
+);
+```
+
+Nesse caso, todos os objetos recebem a resposta baseada apenas no primeiro. Use o elemento entregue pelo método:
+
+```typescript
+const produtosAtivos = produtos.filter(
+  (produto) => produto.ativo,
+);
+```
+
+## 14. Devolver objeto sem parênteses na arrow concisa
+
+```typescript
+const copias = produtos.map((produto) => { ...produto });
+```
+
+As chaves são interpretadas como bloco. Para retornar um literal objeto:
+
+```typescript
+const copias = produtos.map((produto) => ({ ...produto }));
+```
+
+## 15. Tentar usar `break` ou interromper `forEach` com `return`
+
+Nos arrays densos deste capítulo, `forEach` continua chamando a callback para os elementos seguintes. `return` encerra somente a chamada atual. Para procurar até a primeira resposta, prefira `find`, `findIndex`, `some` ou `every`, conforme o retorno necessário.
+
 ## Checklist de diagnóstico
 
 - [ ] Escolhi o método pela intenção e pelo retorno?
@@ -144,4 +198,7 @@ O spread cria outro array, mas a cópia é superficial. Se seus elementos forem 
 - [ ] Tratei `undefined` ou `-1`?
 - [ ] Considerei array vazio em `every` e `reduce`?
 - [ ] Sei o valor intermediário do encadeamento?
+- [ ] Diferenciei novo array de novos objetos?
+- [ ] Usei o item recebido pela callback, não uma coleção externa?
+- [ ] Escolhi um método que pode parar cedo quando a pergunta permite?
 - [ ] Confirmei se o original deve permanecer intacto?

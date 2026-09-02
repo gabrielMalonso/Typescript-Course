@@ -2,11 +2,11 @@
 
 > **PROVA PREPARADA, MAS AINDA NÃO LIBERADA.**
 >
-> Realize somente após concluir as aulas, o mini-projeto, a lista e receber a liberação do professor.
+> Realize somente após concluir a aula, o mini-projeto, a leitura de código real, a lista e receber a liberação do professor.
 
 ## Informações
 
-- **Duração sugerida:** 75–90 minutos
+- **Duração sugerida:** 90–110 minutos
 - **Consulta:** não permitida, exceto à documentação oficial
 - **Pontuação:** 10 pontos
 - **Aprovação:** mínimo 7 pontos
@@ -18,7 +18,8 @@
 - Use apenas conteúdos estudados até o Capítulo 09.
 - Não use loops explícitos nas questões práticas.
 - Use valor inicial em todo `reduce`.
-- Registre previsões antes de executar quando solicitado.
+- Nomeie coleções no plural e itens no singular.
+- Registre previsões e intermediários quando solicitado.
 - Compile, execute e teste exatamente os arquivos entregues.
 
 ## Arquivos obrigatórios
@@ -37,140 +38,182 @@ Todos devem ficar em `09-arrays-metodos-avancados/avaliacao/`.
 
 ## Parte 1 — Teoria (4 pontos)
 
-### Questão 1 — Escolha do método (1 ponto)
+### Questão 1 — Método, callback e retorno (1 ponto)
 
-Para cada objetivo, indique o método mais direto e explique brevemente:
-
-1. criar um novo array com uma conversão para cada elemento;
-2. manter somente elementos aprovados por uma condição;
-3. descobrir se existe ao menos um valor inválido;
-4. obter o primeiro índice que atende a uma regra;
-5. combinar todos os números em um total.
-
-### Questão 2 — Retorno, quantidade e mutação (1 ponto)
-
-Compare `forEach`, `map` e `filter`:
-
-1. qual retorna `void`?
-2. qual cria um array com a mesma quantidade da entrada?
-3. qual pode criar um array de zero até `N` elementos?
-4. `map` e `filter` alteram o array original por si próprios?
-5. por que usar `console.log` dentro de `map` não substitui devolver o valor transformado?
-
-### Questão 3 — Ausência e arrays vazios (1 ponto)
-
-Sem executar, informe os quatro resultados e explique os marcadores de ausência:
+Analise:
 
 ```typescript
-const valores: number[] = [];
+const produtos: { nome: string; ativo: boolean }[] = [
+  { nome: "Broca", ativo: true },
+  { nome: "Serra", ativo: false },
+];
 
-const encontrado = valores.find((valor) => valor > 10);
-const indice = valores.findIndex((valor) => valor > 10);
-const existe = valores.some((valor) => valor > 10);
-const todos = valores.every((valor) => valor > 10);
+const nomesAtivos = produtos
+  .filter((produto) => produto.ativo)
+  .map((produto) => produto.nome);
 ```
 
-Como você representaria “a lista possui ao menos um valor e todos são maiores que 10”?
+Responda:
+
+1. qual coleção recebe o primeiro método;
+2. o que `produto` representa em cada callback;
+3. qual retorno `filter` espera da callback;
+4. o tipo e o valor do intermediário entre os métodos;
+5. o tipo e o valor de `nomesAtivos`.
+
+### Questão 2 — Quantidade, ausência e interrupção (1 ponto)
+
+Compare `forEach`, `map`, `filter`, `find` e `some`:
+
+1. qual retorna `void`;
+2. qual cria exatamente um resultado para cada entrada;
+3. qual cria de zero a `N` elementos;
+4. quais dois podem parar antes do fim e em que situação;
+5. por que `return` dentro de `forEach` não equivale a `break`.
+
+### Questão 3 — Referências e cópia de objetos (1 ponto)
+
+Sem executar, informe os três booleanos e explique:
+
+```typescript
+const original = [{ codigo: "A", ativo: true }];
+const copiaDoArray = [...original];
+const copiaDosObjetos = original.map((item) => ({ ...item }));
+
+console.log(original === copiaDoArray);
+console.log(original[0] === copiaDoArray[0]);
+console.log(original[0] === copiaDosObjetos[0]);
+```
+
+Por que `({ ...item })` precisa dos parênteses nessa arrow concisa?
 
 ### Questão 4 — Rastreamento do `reduce` (1 ponto)
 
-Considere:
-
 ```typescript
-const resultado = [3, 5, 2].reduce(
-  (acumulador, valor) => acumulador + valor * 2,
-  10,
+const pedidos: { quantidade: number; preco: number; ativo: boolean }[] = [
+  { quantidade: 2, preco: 10, ativo: true },
+  { quantidade: 1, preco: 50, ativo: false },
+  { quantidade: 3, preco: 5, ativo: true },
+];
+
+const total = pedidos.reduce(
+  (acumulador, pedido) =>
+    pedido.ativo ? acumulador + pedido.quantidade * pedido.preco : acumulador,
+  0,
 );
 ```
 
-Monte uma tabela com o acumulador recebido, o valor atual e o acumulador devolvido em cada chamada. Informe o resultado final e explique o papel do `10`.
+Monte uma tabela com acumulador recebido, pedido atual e acumulador devolvido em cada chamada. Informe o resultado final e explique o papel do `0`.
 
 ---
 
 ## Parte 2 — Prática (6 pontos)
 
-### Questão 5 — Seleção e transformação (1,25 ponto)
+### Questão 5 — Aquecimento: seleção e transformação (1,25 ponto)
 
-Crie `questao05.ts` com:
+Use:
 
 ```typescript
-const velocidades: number[] = [0, 35, 52, 18, 61];
+const velocidades: number[] = [0, 36, 72, -1, 18];
 ```
 
-1. Crie `velocidadesValidas` mantendo valores maiores que `0`.
-2. Crie `velocidadesEmMetrosPorSegundo` transformando as válidas com `valor / 3.6`.
-3. Exiba os dois arrays e o original.
-4. Em comentário, informe a quantidade de elementos depois de cada etapa e explique por que o original não muda.
+1. mantenha valores `> 0`;
+2. transforme os válidos em metros por segundo com `valor / 3.6`;
+3. faça as duas etapas em um encadeamento;
+4. registre o intermediário em comentário;
+5. exiba intermediário, resultado e original.
 
-Não arredonde os resultados.
+Resultados: `[36, 72, 18]` e `[10, 20, 5]`.
 
-### Questão 6 — Busca e verificação (1,25 ponto)
-
-Crie `questao06.ts` com:
+### Questão 6 — Busca e verificação em objetos (1,25 ponto)
 
 ```typescript
-const niveis: number[] = [40, 55, 72, 68, 90];
+const sensores: {
+  codigo: string;
+  valor: number;
+  online: boolean;
+}[] = [
+  { codigo: "T1", valor: 42, online: true },
+  { codigo: "T2", valor: -1, online: false },
+  { codigo: "T3", valor: 75, online: true },
+  { codigo: "T4", valor: 18, online: true },
+];
 ```
 
 Crie e exiba:
 
-1. o primeiro nível maior ou igual a `70` com `find`;
-2. o índice do primeiro nível maior ou igual a `70` com `findIndex`;
-3. se existe nível maior que `85` com `some`;
-4. se todos os níveis estão entre `0` e `100`, inclusive, com `every`.
+1. o primeiro sensor online com valor `>= 50`;
+2. o índice do primeiro sensor offline;
+3. se existe sensor online com valor negativo;
+4. se todos os sensores online possuem valor positivo;
+5. uma busca pelo código `T9`, tratada com `if/else`.
 
-Em comentários, registre os retornos previstos antes de executar e explique o que mudaria se nenhum valor atendesse à busca.
+Antes de executar, registre tipo e valor previstos.
 
-### Questão 7 — Total e cópia independente (1,5 ponto)
-
-Crie `questao07.ts` com:
-
-```typescript
-const parcelas: number[] = [20, 35, 15];
-```
-
-1. Some as parcelas com `reduce` e valor inicial `0`.
-2. Crie `parcelasComTaxa` como novo array contendo `...parcelas` e `5` no fim.
-3. Altere o primeiro elemento de `parcelasComTaxa` para `25`.
-4. Some `parcelasComTaxa` com outro `reduce` iniciado em `0`.
-5. Exiba os dois arrays, os dois totais e `parcelas === parcelasComTaxa`.
-6. Explique em comentário por que a alteração não atingiu `parcelas`.
-
-Resultados esperados: total original `70`, total com taxa e alteração `80`, comparação `false`.
-
-### Questão 8 — Pipeline de medições (2 pontos)
-
-Crie `questao08.ts` com:
+### Questão 7 — Cópia independente de objetos (1,5 ponto)
 
 ```typescript
-const medicoes: number[] = [12, -1, 25, 8, 30, -1, 18];
+const tarefas: { titulo: string; concluida: boolean }[] = [
+  { titulo: "Teoria", concluida: true },
+  { titulo: "Exercícios", concluida: false },
+];
 ```
 
-O valor `-1` representa medição inválida.
+1. crie `copiaDoArray` com spread do array;
+2. crie `copiaDosObjetos` com `map` e spread de cada objeto;
+3. exiba as três comparações de referência da Questão 3;
+4. altere `copiaDosObjetos[1].concluida` para `true`;
+5. exiba o segundo objeto original e o copiado;
+6. explique por que o original permanece `false`.
 
-1. Em um único encadeamento, mantenha medições válidas (`>= 0`) e multiplique cada uma por `2`; guarde em `medicoesProcessadas`.
-2. Registre em comentário o array intermediário entre as duas etapas.
-3. Em `medicoesProcessadas`, encontre o primeiro valor maior que `40`.
-4. Verifique se todos os valores processados são não negativos.
-5. Some os valores processados com `reduce` iniciado em `0`.
-6. Use `forEach` para exibir cada valor processado com posição humana.
-7. Exiba a busca, o boolean, o total e o array original.
+Não altere objetos de `copiaDoArray`, pois ela existe para comprovar a referência compartilhada sem modificar a entrega original.
+
+### Questão 8 — Pipeline de ordens (2 pontos)
+
+```typescript
+const ordens: {
+  codigo: string;
+  quantidade: number;
+  preco: number;
+  aprovada: boolean;
+}[] = [
+  { codigo: "A1", quantidade: 2, preco: 10, aprovada: true },
+  { codigo: "B2", quantidade: 0, preco: 40, aprovada: true },
+  { codigo: "C3", quantidade: 3, preco: 5, aprovada: false },
+  { codigo: "D4", quantidade: 1, preco: 50, aprovada: true },
+];
+```
+
+Sem loops explícitos:
+
+1. crie uma função nomeada `ordemValida` que aceite somente ordem aprovada com `quantidade > 0`;
+2. use sua referência em um encadeamento que filtre as ordens e transforme cada uma em `{ codigo, total }`;
+3. registre o array intermediário em comentário;
+4. encontre o primeiro resumo com `total >= 50`;
+5. verifique se todos os totais são positivos;
+6. some os totais com `reduce` iniciado em `0`;
+7. use `forEach` para exibir `1. A1: 20`;
+8. exiba busca, boolean, total e array original;
+9. repita os métodos de busca, verificação e soma para um array vazio de resumos.
 
 Resultados principais:
 
-- intermediário: `[12, 25, 8, 30, 18]`;
-- processado: `[24, 50, 16, 60, 36]`;
-- primeiro maior que `40`: `50`;
-- todos não negativos: `true`;
-- total: `186`;
-- original inalterado.
+- intermediário: ordens `A1` e `D4`;
+- resumos: `[{ codigo: "A1", total: 20 }, { codigo: "D4", total: 50 }]`;
+- primeira com total `>= 50`: `D4`;
+- todos positivos: `true`;
+- total: `70`;
+- no vazio: `undefined`, `true` e `0`.
 
 ## Checklist de entrega
 
 - [ ] Preservei `prova.md`.
-- [ ] Respondi às quatro questões teóricas em `resposta.md`.
-- [ ] Criei os quatro arquivos TypeScript pedidos.
+- [ ] Entreguei os cinco arquivos obrigatórios.
 - [ ] Não usei loops explícitos.
-- [ ] Usei valor inicial em cada `reduce`.
-- [ ] Registrei previsões e valor intermediário pedidos.
+- [ ] Nomeei coleção no plural e item no singular.
+- [ ] Tratei `undefined`, `-1` e vazio.
+- [ ] Usei valor inicial nos `reduce`.
+- [ ] Registrei intermediários e previsões solicitados.
+- [ ] Diferenciei novo array de novos objetos.
+- [ ] Passei a função nomeada por referência.
 - [ ] Compilei e executei a versão entregue.

@@ -1,14 +1,14 @@
 # Métodos Avançados de Array — Sintaxe
 
-## Arrow function curta
+## 1. Formas da callback
 
-Quando a regra possui uma única expressão, o resultado é retornado implicitamente:
+Arrow concisa devolve a expressão implicitamente:
 
 ```typescript
 const quadrados = [2, 3, 4].map((numero) => numero * numero);
 ```
 
-Com chaves, escreva `return` explicitamente:
+Com bloco, use `return`:
 
 ```typescript
 const quadrados = [2, 3, 4].map((numero) => {
@@ -17,18 +17,24 @@ const quadrados = [2, 3, 4].map((numero) => {
 });
 ```
 
-Este formato é incorreto para `map`, pois não devolve o novo valor:
+Sem `return`, o resultado será `void[]`:
 
 ```typescript
-const quadrados = [2, 3, 4].map((numero) => {
+const incorreto = [2, 3, 4].map((numero) => {
   numero * numero;
 });
-// tipo inferido: void[]
 ```
 
-## Parâmetros disponíveis
+Para devolver um objeto diretamente, envolva-o em parênteses:
 
-Os métodos podem fornecer o valor, o índice e o próprio array:
+```typescript
+const produtos = [{ nome: "Broca", preco: 20 }];
+const copias = produtos.map((produto) => ({ ...produto }));
+```
+
+## 2. Parâmetros disponíveis
+
+Os métodos fornecem valor, índice e o próprio array:
 
 ```typescript
 const rotulos = ["A", "B", "C"].map(
@@ -36,229 +42,236 @@ const rotulos = ["A", "B", "C"].map(
 );
 ```
 
-Use apenas os parâmetros necessários. Na maioria dos casos, o valor atual basta.
+Use apenas os parâmetros necessários. Nomeie a coleção no plural e o elemento no singular.
 
-## `forEach`: executar uma ação
+## 3. Callback inline, nomeada e criada por closure
+
+Inline:
 
 ```typescript
-array.forEach((valor, indice) => {
-  // ação
+const positivos = [3, -1, 5].filter((numero) => numero > 0);
+```
+
+Nomeada e passada por referência:
+
+```typescript
+function positivo(numero: number): boolean {
+  return numero > 0;
+}
+
+const positivos = [3, -1, 5].filter(positivo);
+```
+
+Produzida por closure:
+
+```typescript
+function criarMinimo(minimo: number): (numero: number) => boolean {
+  return (numero): boolean => numero >= minimo;
+}
+
+const peloMenosDez = criarMinimo(10);
+const aprovados = [7, 10, 14].filter(peloMenosDez);
+```
+
+Nos três casos, `filter` recebe uma função compatível com `(numero: number) => boolean`.
+
+## 4. Base de objetos dos exemplos
+
+```typescript
+const produtos: {
+  codigo: string;
+  nome: string;
+  preco: number;
+  ativo: boolean;
+}[] = [
+  { codigo: "P1", nome: "Broca", preco: 20, ativo: true },
+  { codigo: "P2", nome: "Serra", preco: 80, ativo: false },
+  { codigo: "P3", nome: "Lixa", preco: 5, ativo: true },
+];
+```
+
+O TypeScript infere o tipo do parâmetro `produto` em cada callback.
+
+## 5. `forEach`: executar uma ação
+
+```typescript
+produtos.forEach((produto, indice) => {
+  console.log(`${indice + 1}. ${produto.nome}`);
 });
 ```
 
-Exemplo:
+`forEach` retorna `void` e visita todos os elementos. Um `return` dentro da callback não interrompe o restante do array.
+
+## 6. `map`: transformar todos os elementos
+
+Objeto para string:
 
 ```typescript
-const etapas: string[] = ["planejar", "executar"];
-
-etapas.forEach((etapa, indice) => {
-  console.log(`${indice + 1}. ${etapa}`);
-});
+const etiquetas: string[] = produtos.map(
+  (produto) => `${produto.codigo} — ${produto.nome}`,
+);
 ```
 
-`forEach` retorna `void`. Ele não cria um array com os valores retornados pela callback.
-
-## `map`: transformar todos os elementos
+Objeto para novo objeto:
 
 ```typescript
-const novoArray = array.map((valor) => transformacao);
+const reajustados = produtos.map((produto) => ({
+  ...produto,
+  preco: produto.preco * 1.1,
+}));
 ```
 
+O resultado tem a mesma quantidade da entrada. O tipo pode permanecer igual ou mudar.
+
+## 7. `filter`: selecionar zero ou mais elementos
+
 ```typescript
-const precos: number[] = [10, 25];
-const precosEmCentavos = precos.map((preco) => preco * 100);
-// [1000, 2500]
+const ativos = produtos.filter((produto) => produto.ativo);
 ```
 
-O novo array possui a mesma quantidade de elementos. O tipo pode mudar:
+A callback devolve `true` para manter o objeto e `false` para descartá-lo. O array resultante é novo, mas os objetos mantidos continuam sendo as mesmas referências.
+
+## 8. `find`: buscar o primeiro elemento
 
 ```typescript
-const pares = [1, 2, 3].map((numero) => numero % 2 === 0);
-// boolean[]
+const encontrado = produtos.find((produto) => produto.codigo === "P2");
+// objeto | undefined
 ```
 
-## `filter`: selecionar zero ou mais elementos
+Antes de acessar uma propriedade, trate a ausência:
 
 ```typescript
-const selecionados = array.filter((valor) => condicaoBooleana);
-```
-
-```typescript
-const idades: number[] = [15, 21, 17, 30];
-const maiores = idades.filter((idade) => idade >= 18);
-// [21, 30]
-```
-
-A callback responde `true` para manter o elemento e `false` para descartá-lo.
-
-## `find`: buscar o primeiro valor
-
-```typescript
-const encontrado = array.find((valor) => condicaoBooleana);
-```
-
-```typescript
-const notas: number[] = [5, 8, 9];
-const primeiraAprovada = notas.find((nota) => nota >= 7);
-// 8; tipo number | undefined
-```
-
-Se nada for encontrado, o retorno é `undefined`. Verifique antes de usar operações específicas do tipo:
-
-```typescript
-if (primeiraAprovada !== undefined) {
-  console.log(primeiraAprovada.toFixed(1));
+if (encontrado !== undefined) {
+  console.log(encontrado.nome);
+} else {
+  console.log("Produto não encontrado");
 }
 ```
 
-## `findIndex`: buscar o primeiro índice
+`find` para no primeiro `true`.
+
+## 9. `findIndex`: buscar a primeira posição
 
 ```typescript
-const indice = array.findIndex((valor) => condicaoBooleana);
-```
+const indice = produtos.findIndex((produto) => produto.codigo === "P2");
 
-```typescript
-const nomes: string[] = ["Lia", "Caio", "Bia"];
-const indice = nomes.findIndex((nome) => nome === "Caio");
-// 1
-```
-
-Se nada for encontrado, o retorno é `-1`:
-
-```typescript
 if (indice !== -1) {
-  console.log(`Encontrado na posição ${indice + 1}`);
+  console.log(`Posição humana: ${indice + 1}`);
 }
 ```
 
-## `some`: pelo menos um?
+Ausência de posição é `-1`, não `undefined`.
+
+## 10. `some`: pelo menos um?
 
 ```typescript
-const existe = array.some((valor) => condicaoBooleana);
-```
-
-```typescript
-const estoque: number[] = [3, 0, 8];
-const existeEsgotado = estoque.some((quantidade) => quantidade === 0);
+const existeCaro = produtos.some((produto) => produto.preco > 50);
 // true
 ```
 
-## `every`: todos?
+`some` para na primeira callback que devolve `true`. Em array vazio, retorna `false`.
+
+## 11. `every`: todos?
 
 ```typescript
-const todosPassam = array.every((valor) => condicaoBooleana);
-```
-
-```typescript
-const leituras: number[] = [12, 15, 18];
-const todasPositivas = leituras.every((leitura) => leitura > 0);
+const todosComPrecoValido = produtos.every((produto) => produto.preco >= 0);
 // true
 ```
 
-Em um array vazio, `some` retorna `false` e `every` retorna `true`. Não existe item que satisfaça `some`, e também não existe contraexemplo que torne `every` falso. Se o domínio exige ao menos um item, combine com `array.length > 0`.
+`every` para na primeira callback que devolve `false`. Em array vazio, retorna `true`. Quando o domínio exige itens:
 
-## `reduce`: acumular em um resultado
+```typescript
+const listaValida = produtos.length > 0 && produtos.every(
+  (produto) => produto.preco >= 0,
+);
+```
+
+## 12. `reduce`: acumular em um resultado
 
 Forma geral:
 
 ```typescript
 const resultado = array.reduce(
-  (acumulador, valorAtual) => novoAcumulador,
+  (acumulador, elementoAtual) => proximoAcumulador,
   valorInicial,
 );
 ```
 
-Soma:
+Soma de números:
 
 ```typescript
-const valores: number[] = [4, 6, 10];
-
-const total = valores.reduce(
-  (acumulador, valorAtual) => acumulador + valorAtual,
+const total = [4, 6, 10].reduce(
+  (acumulador, numero) => acumulador + numero,
   0,
 );
-// 20
 ```
 
-Rastreamento:
+Soma de propriedades:
 
-| chamada | acumulador recebido | valor atual | acumulador devolvido |
+```typescript
+const totalDosAtivos = produtos.reduce(
+  (total, produto) => produto.ativo ? total + produto.preco : total,
+  0,
+);
+```
+
+Rastreamento para `[4, 6, 10]`:
+
+| chamada | acumulador recebido | número | devolvido |
 |---:|---:|---:|---:|
 | 1 | 0 | 4 | 4 |
 | 2 | 4 | 6 | 10 |
 | 3 | 10 | 10 | 20 |
 
-Use um valor inicial explícito. Assim, um array vazio ainda produz um resultado previsível:
+O valor inicial torna o tipo do acumulador e o caso vazio previsíveis.
+
+## 13. Encadeamento
 
 ```typescript
-const vazio: number[] = [];
-const total = vazio.reduce((acumulador, valor) => acumulador + valor, 0);
-// 0
+const nomesAtivos = produtos
+  .filter((produto) => produto.ativo)
+  .map((produto) => produto.nome);
 ```
 
-O acumulador pode ter outro tipo:
+O intermediário é um array de objetos ativos. O resultado final é `string[]`.
+
+Para depurar, separe:
 
 ```typescript
-const palavras: string[] = ["Type", "Script"];
-const texto = palavras.reduce(
-  (acumulador, palavra) => acumulador + palavra,
-  "",
-);
-// "TypeScript"
+const produtosAtivos = produtos.filter((produto) => produto.ativo);
+const nomesAtivos = produtosAtivos.map((produto) => produto.nome);
 ```
 
-## Encadeamento
+## 14. Spread e referências internas
+
+Cópia apenas do array:
 
 ```typescript
-const resultado = [2, 5, 8, 11]
-  .filter((numero) => numero >= 5)
-  .map((numero) => numero * 10);
-// [50, 80, 110]
+const copiaDoArray = [...produtos];
+
+console.log(copiaDoArray === produtos); // false
+console.log(copiaDoArray[0] === produtos[0]); // true
 ```
 
-Para depurar, separe temporariamente as etapas:
+Cópia de cada objeto:
 
 ```typescript
-const filtrados = [2, 5, 8, 11].filter((numero) => numero >= 5);
-const resultado = filtrados.map((numero) => numero * 10);
+const copiaDosObjetos = produtos.map((produto) => ({ ...produto }));
+
+console.log(copiaDosObjetos[0] === produtos[0]); // false
 ```
 
-## Spread operator com arrays
+Ambas são cópias superficiais. Uma propriedade que também seja objeto continuaria compartilhada até ser copiada separadamente.
 
-### Copiar
+## 15. Tabela de escolha rápida
 
-```typescript
-const original: number[] = [10, 20];
-const copia: number[] = [...original];
-```
-
-### Acrescentar sem alterar o original
-
-```typescript
-const base: string[] = ["A", "B"];
-const expandido = ["início", ...base, "fim"];
-// ["início", "A", "B", "fim"]
-```
-
-### Unir arrays compatíveis
-
-```typescript
-const primeiraParte: number[] = [1, 2];
-const segundaParte: number[] = [3, 4];
-const completo = [...primeiraParte, ...segundaParte];
-```
-
-O spread cria um novo array, mas a cópia é superficial. Com números, strings e booleans, isso basta para os exemplos atuais. Objetos e cópias aninhadas serão estudados adiante.
-
-## Tabela de escolha rápida
-
-| Método | Callback deve devolver | Resultado |
-|---|---|---|
-| `forEach` | nada obrigatório | `void` |
-| `map` | valor transformado | novo array |
-| `filter` | condição | novo array filtrado |
-| `find` | condição | primeiro valor ou `undefined` |
-| `findIndex` | condição | primeiro índice ou `-1` |
-| `some` | condição | `boolean` |
-| `every` | condição | `boolean` |
-| `reduce` | próximo acumulador | acumulador final |
+| Método | Callback devolve | Resultado | Pode parar cedo? |
+|---|---|---|---|
+| `forEach` | efeito; retorno ignorado | `void` | não |
+| `map` | valor transformado | novo array com `N` resultados | não |
+| `filter` | `boolean` | novo array com `0..N` itens | não |
+| `find` | `boolean` | item ou `undefined` | sim |
+| `findIndex` | `boolean` | índice ou `-1` | sim |
+| `some` | `boolean` | `boolean` | sim |
+| `every` | `boolean` | `boolean` | sim |
+| `reduce` | próximo acumulador | acumulador final | não |

@@ -2,180 +2,209 @@
 
 ## Objetivo
 
-Transformar uma lista de durações em um pequeno painel de análise, usando cada método para uma intenção específica.
-
-## Conceitos aplicados
-
-- `forEach` para exibição;
-- `filter` para seleção;
-- `map` para transformação;
-- `find` e `findIndex` para busca;
-- `some` e `every` para verificações;
-- `reduce` para total;
-- encadeamento;
-- spread para criar uma nova lista.
+Analisar uma semana de treinos modelada como array de objetos, escolhendo cada método pelo resultado necessário.
 
 ## Arquivo
 
-Crie `exercicios/painel-treinos.ts`.
+Crie `exercicios/solucoes/painel-treinos.ts`.
 
-## Estado inicial
+## Dados iniciais
 
 ```typescript
-const duracoes: number[] = [32, 18, 45, 27, 0, 36];
+const treinos: {
+  dia: string;
+  duracao: number;
+  realizado: boolean;
+}[] = [
+  { dia: "segunda", duracao: 32, realizado: true },
+  { dia: "terça", duracao: 0, realizado: false },
+  { dia: "quarta", duracao: 45, realizado: true },
+  { dia: "quinta", duracao: 18, realizado: true },
+  { dia: "sexta", duracao: 0, realizado: false },
+  { dia: "sábado", duracao: 36, realizado: true },
+];
 ```
-
-O valor `0` representa um treino não realizado.
 
 ## Requisitos obrigatórios
 
-1. Crie `treinosRealizados` mantendo apenas valores maiores que `0`.
-2. Crie `duracoesComAquecimento` somando `5` a cada treino realizado.
-3. Crie `treinosLongosComAquecimento` por encadeamento:
-   - parta de `treinosRealizados`;
-   - mantenha durações originais maiores ou iguais a `30`;
-   - some `5` a cada valor mantido.
-4. Encontre em `treinosRealizados` o primeiro treino menor que `20`.
-5. Encontre o índice original do treino não realizado.
-6. Verifique se existe treino original com duração maior que `40`.
-7. Verifique se todos os treinos realizados possuem ao menos `15` minutos.
-8. Some os minutos realizados com `reduce` e valor inicial `0`.
-9. Crie `semanaEstendida` como novo array contendo `...duracoes` e um novo treino de `25` minutos no fim.
-10. Use `forEach` para exibir as durações realizadas em posições humanas.
-11. Exiba os demais resultados e os dois arrays finais.
+Crie e exiba:
+
+1. `treinosRealizados`: objetos com `realizado === true` e `duracao > 0`;
+2. `resumos`: uma string por treino realizado no formato `segunda: 32 min`;
+3. `diasLongos`: dias dos treinos realizados com duração `>= 30`, usando encadeamento;
+4. `primeiroTreinoCurto`: primeiro treino realizado com duração `< 20`;
+5. `indiceDaPrimeiraAusencia`: índice do primeiro treino não realizado;
+6. `existeAcimaDeQuarenta`: se algum treino realizado dura mais de `40`;
+7. `todosComQuinzeMinutos`: se existe ao menos um realizado e todos duram `>= 15`;
+8. `totalRealizado`: soma das durações realizadas com `reduce` iniciado em `0`;
+9. `comAquecimento`: novos objetos dos treinos realizados, com `5` minutos somados à duração;
+10. `semanaEstendida`: novo array com spread e `{ dia: "domingo", duracao: 25, realizado: true }` no fim;
+11. uma linha numerada para cada resumo usando `forEach`;
+12. o array original depois de tudo, comprovando que não mudou.
 
 ## Saída conceitual esperada
 
 ```text
-Treino realizado 1: 32 min
-Treino realizado 2: 18 min
-Treino realizado 3: 45 min
-Treino realizado 4: 27 min
-Treino realizado 5: 36 min
-Com aquecimento: 37,23,50,32,41
-Longos com aquecimento: 37,50,41
-Primeiro curto: 18
-Índice da ausência: 4
+1. segunda: 32 min
+2. quarta: 45 min
+3. quinta: 18 min
+4. sábado: 36 min
+Dias longos: segunda,quarta,sábado
+Primeiro curto: quinta
+Índice da primeira ausência: 1
 Existe acima de 40: true
 Todos têm ao menos 15: true
-Total realizado: 158
-Semana original: 32,18,45,27,0,36
-Semana estendida: 32,18,45,27,0,36,25
+Total realizado: 131
+Durações com aquecimento: 37,50,23,41
+Semana original: 6 objetos
+Semana estendida: 7 objetos
 ```
 
 ## Construção guiada
 
-### 1. Limpar e transformar os dados
+### 1. Partir do que você já conhece
+
+Com loop, a seleção começaria assim:
 
 ```typescript
-const treinosRealizados = duracoes.filter((duracao) => duracao > 0);
+const treinosRealizados: {
+  dia: string;
+  duracao: number;
+  realizado: boolean;
+}[] = [];
 
-const duracoesComAquecimento = treinosRealizados.map(
-  (duracao) => duracao + 5,
+for (const treino of treinos) {
+  if (treino.realizado && treino.duracao > 0) {
+    treinosRealizados.push(treino);
+  }
+}
+```
+
+Neste capítulo, a controladora pronta é `filter`:
+
+```typescript
+const treinosRealizados = treinos.filter(
+  (treino) => treino.realizado && treino.duracao > 0,
 );
 ```
 
-`filter` pode reduzir a quantidade. `map` mantém a quantidade recebida.
-
-### 2. Encadear duas etapas
+### 2. Transformar objetos em strings
 
 ```typescript
-const treinosLongosComAquecimento = treinosRealizados
-  .filter((duracao) => duracao >= 30)
-  .map((duracao) => duracao + 5);
+const resumos = treinosRealizados.map(
+  (treino) => `${treino.dia}: ${treino.duracao} min`,
+);
 ```
 
-O filtro avalia as durações **antes** do aquecimento. O valor intermediário é `[32, 45, 36]`.
+Entrada intermediária: objeto[]. Retorno: string[]. A quantidade permanece quatro.
 
-### 3. Buscar valor e posição
+### 3. Encadear seleção e transformação
+
+```typescript
+const diasLongos = treinosRealizados
+  .filter((treino) => treino.duracao >= 30)
+  .map((treino) => treino.dia);
+```
+
+Antes do `map`, existem três objetos: segunda, quarta e sábado.
+
+### 4. Buscar valor e posição
 
 ```typescript
 const primeiroTreinoCurto = treinosRealizados.find(
-  (duracao) => duracao < 20,
+  (treino) => treino.duracao < 20,
 );
 
-const indiceDaAusencia = duracoes.findIndex((duracao) => duracao === 0);
+const indiceDaPrimeiraAusencia = treinos.findIndex(
+  (treino) => !treino.realizado,
+);
 ```
 
-`primeiroTreinoCurto` possui tipo `number | undefined`. Com estes dados ele vale `18`, mas a possibilidade de ausência continua fazendo parte do tipo.
+O primeiro retorno é objeto ou `undefined`; o segundo é índice ou `-1`.
 
-### 4. Fazer perguntas booleanas
+### 5. Verificar o domínio
 
 ```typescript
-const existeAcimaDeQuarenta = duracoes.some((duracao) => duracao > 40);
-
-const todosComQuinzeMinutos = treinosRealizados.every(
-  (duracao) => duracao >= 15,
+const existeAcimaDeQuarenta = treinosRealizados.some(
+  (treino) => treino.duracao > 40,
 );
+
+const todosComQuinzeMinutos =
+  treinosRealizados.length > 0 &&
+  treinosRealizados.every((treino) => treino.duracao >= 15);
 ```
 
-### 5. Acumular o total
+O teste de `length` evita considerar uma semana sem treinos como uma semana em que “todos os treinos” cumprem a meta.
+
+### 6. Acumular
 
 ```typescript
 const totalRealizado = treinosRealizados.reduce(
-  (total, duracao) => total + duracao,
+  (total, treino) => total + treino.duracao,
   0,
 );
 ```
 
-Rastreamento do acumulador:
+Rastreamento: `0 → 32 → 77 → 95 → 131`.
 
-```text
-0 → 32 → 50 → 95 → 122 → 158
-```
-
-### 6. Criar uma nova semana
+### 7. Criar objetos novos
 
 ```typescript
-const semanaEstendida = [...duracoes, 25];
+const comAquecimento = treinosRealizados.map((treino) => ({
+  ...treino,
+  duracao: treino.duracao + 5,
+}));
 ```
 
-O array `duracoes` continua com seis elementos; `semanaEstendida` possui sete.
+Sem `...treino`, o novo objeto perderia `dia` e `realizado`. Sem os parênteses externos, a arrow não devolveria o literal como expressão concisa.
 
-### 7. Exibir com `forEach`
+### 8. Estender a coleção
 
 ```typescript
-treinosRealizados.forEach((duracao, indice) => {
-  console.log(`Treino realizado ${indice + 1}: ${duracao} min`);
-});
+const semanaEstendida = [
+  ...treinos,
+  { dia: "domingo", duracao: 25, realizado: true },
+];
 ```
 
-Complete as demais saídas usando `console.log`.
+Complete as saídas e o `forEach` sem consultar uma solução pronta.
 
-## Testes obrigatórios
+## Testes obrigatórios visíveis
 
-Depois de validar a versão principal, teste temporariamente:
-
-### Todos os valores iguais a zero
+Mantenha os dados principais e crie também, no mesmo arquivo:
 
 ```typescript
-const duracoes: number[] = [0, 0];
+const semanaSemTreinos: {
+  dia: string;
+  duracao: number;
+  realizado: boolean;
+}[] = [
+  { dia: "segunda", duracao: 0, realizado: false },
+];
+
+const semanaVazia: {
+  dia: string;
+  duracao: number;
+  realizado: boolean;
+}[] = [];
 ```
 
-Previsões:
+Comprove:
 
-- arrays derivados ficam vazios;
-- buscas retornam `undefined` e índice `0` para a primeira ausência;
+- `find` retorna `undefined` quando não existe treino realizado;
+- `findIndex` retorna `-1` no array vazio;
 - `some` retorna `false`;
-- `every` em `treinosRealizados` retorna `true`;
-- o total retorna `0`;
-- a semana estendida se torna `[0, 0, 25]`.
-
-### Nenhuma ausência
-
-```typescript
-const duracoes: number[] = [15, 20];
-```
-
-`indiceDaAusencia` deve ser `-1`.
-
-Restaure os dados principais antes da entrega.
+- `every` sozinho retorna `true` no vazio;
+- `length > 0 && every(...)` retorna `false`;
+- `reduce` iniciado em `0` retorna `0`.
 
 ## Checklist
 
+- [ ] Nomeei coleção no plural e item no singular.
 - [ ] Escolhi o método pelo retorno necessário.
-- [ ] Não alterei `duracoes`.
+- [ ] Tratei `undefined` e `-1`.
 - [ ] Usei valor inicial no `reduce`.
-- [ ] Consigo informar o array intermediário do encadeamento.
-- [ ] Testei `undefined`, `-1` e array vazio.
-- [ ] Restaurei os dados principais antes de entregar.
+- [ ] Sei o tipo do intermediário em cada encadeamento.
+- [ ] Criei novos objetos ao alterar a duração.
+- [ ] Mantive os testes principal e alternativos visíveis.
+- [ ] Confirmei que `treinos` não mudou.

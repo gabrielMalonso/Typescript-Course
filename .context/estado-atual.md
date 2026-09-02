@@ -8,22 +8,23 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Capítulo atual** | 08 - Funções: Callbacks e Recursos |
-| **Fase atual** | Concluído — prova corrigida |
+| **Capítulo atual** | 09 - Arrays: Métodos Avançados |
+| **Fase atual** | Material revisado — pronto para iniciar a aula |
 | **Último capítulo concluído** | 08 - Funções: Callbacks e Recursos — prova 9,2 |
-| **Próximo passo** | Decidir entre o Projeto 1 pendente e o avanço ao Capítulo 09 |
+| **Próximo passo** | Aluno lê o README e inicia `aula/01-teoria.md` do Capítulo 09 |
 
 ---
 
 ## Sessão Atual
 
 - **Data:** 2026-09-02
-- **Atividade:** Correção pós-prova e preservação da versão final do Capítulo 08
+- **Atividade:** Adequação do Capítulo 09 à sequência atual do curso
 - **O que foi feito:**
-  - Respostas teóricas e quatro implementações corrigidas
-  - Questão 7 passou a percorrer `itens` e ganhou um teste vazio discriminante
-  - Textos e comentários alinhados ao enunciado
-  - Nota original 9,2 preservada; correção pós-prova registrada
+  - Base antiga de métodos preservada e conectada aos callbacks do Capítulo 08
+  - Arrays de objetos incorporados a teoria, exemplos, mini-projeto, exercícios e prova
+  - Leitura de código real criada com quatro recortes dos projetos do aluno
+  - Cópia superficial, interrupção antecipada e callbacks nomeados/closure adicionados
+  - Lista, prova, gabarito e organização em `exercicios/solucoes/` atualizados
 
 ---
 
@@ -35,8 +36,9 @@
 | Novo Capítulo 06 — Funções: Fundamentos | ✅ Concluído pelo aluno |
 | Capítulo 07 — Objetos | ✅ Concluído — prova 9,5 |
 | Capítulo 08 | ✅ Concluído — prova 9,2 |
+| Capítulo 09 | ✅ Revisado para a sequência atual; pronto para estudo |
 | Capítulo 10 | ⏳ Material pendente |
-| Material `09-arrays-metodos-avancados/` | ✅ Renomeado; revisão didática específica ainda pendente |
+| Material `09-arrays-metodos-avancados/` | ✅ Adequado com arrays de objetos, leitura real e avaliação atualizada |
 | Leitor e `PROGRESSO.md` | ✅ Capítulo 07 no catálogo; progresso atualizado |
 
 ---
@@ -48,7 +50,7 @@
 - [x] Reorganizar os capítulos 06–10 na ementa
 - [x] Criar o novo material do Capítulo 06 — Funções: Fundamentos
 - [x] Realocar o antigo Capítulo 06 para o novo Capítulo 09
-- [ ] Adaptar o conteúdo do Capítulo 09 para incluir arrays de objetos e os pré-requisitos novos
+- [x] Adaptar o conteúdo do Capítulo 09 para incluir arrays de objetos e os pré-requisitos novos
 - [x] Criar o material do Capítulo 07 — Objetos
 - [x] Criar o material do Capítulo 08
 - [ ] Criar ou revisar o material do Capítulo 10
@@ -69,8 +71,9 @@
 
 ## Próxima Sessão
 
-1. Projeto 1 — Calculadora permanece pendente na sequência formal, sem bloquear o avanço se o aluno pedir o próximo capítulo.
-2. Antes do Capítulo 09, adaptar o material existente para arrays de objetos e os novos pré-requisitos.
+1. Aluno lê o README e inicia a teoria do Capítulo 09.
+2. Seguir teoria → sintaxe → exemplos → mini-projeto → leitura real → exercícios.
+3. Projeto 1 — Calculadora permanece pendente, sem bloquear este avanço explícito.
 
 ---
 
@@ -78,8 +81,8 @@
 
 | Flag | Status |
 |------|--------|
-| Revisão pendente | Sim; materiais 09–10 ainda precisam acompanhar a nova ementa |
-| Prova pendente | Não; Capítulo 08 aprovado com 9,2 |
+| Revisão pendente | Sim; apenas o material do Capítulo 10 continua pendente nesta faixa |
+| Prova pendente | Capítulo 09 preparado, mas ainda não liberado |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não; explicações de closure e IIFE foram aprofundadas antes da Parte 4 |
 
@@ -89,6 +92,7 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
+| 2026-09-02 | Adequação completa do Capítulo 09 à sequência atual | ~45min |
 | 2026-09-02 | Correção pós-prova do Capítulo 08 e validação da versão final | ~15min |
 | 2026-09-02 | Correção da prova do Capítulo 08 — nota 9,2 | ~20min |
 | 2026-09-01 | Encerramento da lista e liberação da prova do Capítulo 08 | ~10min |

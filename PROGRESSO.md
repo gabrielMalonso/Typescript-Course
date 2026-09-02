@@ -42,7 +42,7 @@
 | 06 | Funções: Fundamentos | ✓ | ✓ | ★ 9,4 | Concluído |
 | 07 | Objetos | ✓ | ✓ | ★ 9,5 | Concluído |
 | 08 | Funções: Callbacks e Recursos | ✓ | ✓ | ★ 9,2 | Concluído |
-| 09 | Arrays: Métodos Avançados | ✓ | Disponível | - | Material preparado; bloqueado |
+| 09 | Arrays: Métodos Avançados | Disponível | - | - | Pronto para iniciar |
 | 10 | Tuples | - | - | - | Bloqueado |
 | 11 | Type Alias, Union e Intersection | - | - | - | Bloqueado |
 | 12 | Enums | - | - | - | Bloqueado |
