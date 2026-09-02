@@ -90,6 +90,10 @@ A prova não foi liberada. Os exercícios 13 a 16 cobrem closure e IIFE, cobrado
 
 ## Observações Gerais
 
+### 2026-09-02 - Tema escuro do leitor alinhado ao editor
+
+O modo escuro passou a usar a mesma linguagem visual do tema Cursor/GitHub Dark personalizado do Gabriel. O modo claro foi preservado; a mudança cobre a interface e também realça parâmetros, tipos primitivos e comentários nos exemplos de código quando o realce sintático consegue identificar esses tokens.
+
 ### 2026-08-29 - Diretriz didática para tópicos novos
 
 Gabriel aprende melhor por transformação incremental: partir de um contrato ou construção que ele já domina, alterar um elemento por vez e explicitar o efeito de cada mudança antes de apresentar a sintaxe final. O percurso feito com IIFE foi: função conhecida → zero parâmetros → retorno de objeto → função anônima como valor → chamada imediata.

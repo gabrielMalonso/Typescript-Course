@@ -18,14 +18,12 @@
 ## Sessão Atual
 
 - **Data:** 2026-09-02
-- **Atividade:** Adequação do Capítulo 09 à sequência atual do curso
+- **Atividade:** Aplicação do tema Cursor/GitHub Dark personalizado ao leitor
 - **O que foi feito:**
-  - Base antiga de métodos preservada e conectada aos callbacks do Capítulo 08
-  - Arrays de objetos incorporados a teoria, exemplos, mini-projeto, exercícios e prova
-  - Leitura de código real criada com quatro recortes dos projetos do aluno
-  - Cópia superficial, interrupção antecipada e callbacks nomeados/closure adicionados
-  - Lista, prova, gabarito e organização em `exercicios/solucoes/` atualizados
-  - Leitor validado e revisão publicada como versão 27 no projeto privado existente
+  - Tema claro preservado
+  - Paleta escura alinhada ao GitHub Dark Default
+  - Personalizações do editor levadas ao leitor: texto `#E6EDF3`, parâmetros `#58A6FF`, tipos `#FFB77A` e comentários `#6A9955`
+  - Superfícies, bordas, navegação, estados e blocos de código harmonizados com a nova paleta
 
 ---
 
