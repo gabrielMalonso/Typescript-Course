@@ -2,11 +2,13 @@
 
 ## Ordem recomendada de revisão
 
-1. Releia a tabela de escolha em `aula/01-teoria.md`.
-2. Para cada método, diga em voz alta qual é seu retorno.
-3. Refaça os casos de limite de `aula/03-exemplos.md`.
-4. Desenhe o acumulador de um `reduce` em três linhas.
-5. Separe um encadeamento em variáveis intermediárias e depois reúna-o novamente.
+1. Compare a controladora manual e o `filter` em `aula/01-teoria.md`.
+2. Para cada método, diga qual é o retorno da callback e do método.
+3. Refaça um exemplo primeiro com número e depois com objeto.
+4. Refaça os casos vazios de `aula/03-exemplos.md`.
+5. Desenhe acumulador e item atual de um `reduce` em três linhas.
+6. Separe um encadeamento em variáveis intermediárias e depois reúna-o.
+7. Compare `[...objetos]` com `objetos.map((item) => ({ ...item }))`.
 
 ## Documentação oficial
 
@@ -43,6 +45,9 @@ COPIA/UNE  spread   → novo array
 5. Para que serve o valor inicial do `reduce`?
 6. Qual é o array intermediário de `valores.filter(...).map(...)`?
 7. `const copia = original` e `const copia = [...original]` criam a mesma relação?
+8. Qual é a diferença entre copiar o array e copiar cada objeto?
+9. Quais métodos podem encerrar o percurso antes do fim?
+10. Em `produtos.filter((produto) => produto.ativo)`, quem é coleção e quem é item?
 
 ## Sinais de prontidão para os exercícios
 
@@ -50,4 +55,7 @@ COPIA/UNE  spread   → novo array
 - prevê `undefined`, `-1`, `false`, `true` e `0` nos casos vazios;
 - acompanha três etapas de um `reduce` manualmente;
 - explica por que um encadeamento produz determinado array intermediário;
-- distingue ação externa de transformação de dados.
+- distingue ação externa de transformação de dados;
+- aplica o mesmo método a números e a objetos sem repetir o tipo na callback;
+- passa uma callback nomeada por referência;
+- distingue novo array de novos objetos internos.

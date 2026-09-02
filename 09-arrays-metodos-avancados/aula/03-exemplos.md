@@ -1,178 +1,256 @@
 # Métodos Avançados de Array — Exemplos Práticos
 
-Execute cada exemplo separadamente. Antes de rodar, preveja o tipo e o valor do retorno.
+Execute os exemplos separadamente. Antes de rodar, preveja o tipo e o valor do retorno.
 
-## Exemplo 1: lista numerada com `forEach`
-
-```typescript
-const capitulos: string[] = ["Arrays", "Tuples", "Funções"];
-
-capitulos.forEach((capitulo, indice) => {
-  console.log(`${indice + 1}. ${capitulo}`);
-});
-```
-
-Saída:
-
-```text
-1. Arrays
-2. Tuples
-3. Funções
-```
-
-O objetivo é o efeito de exibir cada item; não precisamos de um novo array.
-
-## Exemplo 2: converter unidades com `map`
+## Exemplo 1 — Aquecimento com valores primitivos
 
 ```typescript
 const metros: number[] = [1.5, 2, 3.25];
 const centimetros = metros.map((valor) => valor * 100);
+const maioresQueDuzentos = centimetros.filter((valor) => valor > 200);
 
 console.log(centimetros); // [150, 200, 325]
+console.log(maioresQueDuzentos); // [325]
 console.log(metros); // [1.5, 2, 3.25]
 ```
 
-Há um resultado para cada entrada, portanto `map` é adequado. O original permanece intacto.
+`map` produz um resultado por entrada. `filter` decide quais resultados permanecem.
 
-## Exemplo 3: selecionar durações com `filter`
+## Dados usados nos próximos exemplos
 
 ```typescript
-const duracoes: number[] = [12, 25, 8, 30, 18];
-const sessoesLongas = duracoes.filter((duracao) => duracao >= 20);
-
-console.log(sessoesLongas); // [25, 30]
+const tarefas: {
+  titulo: string;
+  minutos: number;
+  concluida: boolean;
+}[] = [
+  { titulo: "Revisar callbacks", minutos: 30, concluida: true },
+  { titulo: "Praticar map", minutos: 45, concluida: false },
+  { titulo: "Ler código real", minutos: 25, concluida: true },
+  { titulo: "Refazer exercício", minutos: 20, concluida: false },
+];
 ```
 
-O resultado pode conter de zero até cinco elementos, mas todos continuam sendo números.
-
-## Exemplo 4: valor ou índice?
+## Exemplo 2 — `forEach` para efeito
 
 ```typescript
-const codigos: string[] = ["A-10", "B-20", "C-30"];
-
-const codigoEncontrado = codigos.find((codigo) => codigo === "B-20");
-const indiceEncontrado = codigos.findIndex((codigo) => codigo === "B-20");
-const ausente = codigos.find((codigo) => codigo === "X-99");
-
-console.log(codigoEncontrado); // B-20
-console.log(indiceEncontrado); // 1
-console.log(ausente); // undefined
+tarefas.forEach((tarefa, indice) => {
+  console.log(`${indice + 1}. ${tarefa.titulo}`);
+});
 ```
 
-Use `find` quando precisa do elemento. Use `findIndex` quando precisa da posição para outra operação.
+O método percorre todos os objetos e retorna `void`.
 
-## Exemplo 5: perguntas booleanas
+## Exemplo 3 — `filter` seleciona objetos
 
 ```typescript
-const percentuais: number[] = [100, 80, 100, 60];
+const concluidas = tarefas.filter((tarefa) => tarefa.concluida);
 
-const existeIncompleto = percentuais.some((valor) => valor < 100);
-const todosIniciados = percentuais.every((valor) => valor > 0);
-
-console.log(existeIncompleto); // true
-console.log(todosIniciados); // true
+console.log(concluidas.length); // 2
+console.log(concluidas[0].titulo); // Revisar callbacks
 ```
 
-Não use `filter(...).length > 0` apenas para responder se algo existe. `some` comunica diretamente essa intenção.
+O callback recebe uma tarefa, não o array inteiro. O resultado continua sendo um array de objetos com a mesma forma.
 
-## Exemplo 6: total com `reduce`
+## Exemplo 4 — `map` muda o tipo do elemento
 
 ```typescript
-const despesas: number[] = [35, 12, 8];
+const titulos: string[] = tarefas.map((tarefa) => tarefa.titulo);
+const resumos: string[] = tarefas.map(
+  (tarefa) => `${tarefa.titulo}: ${tarefa.minutos} min`,
+);
 
-const total = despesas.reduce(
-  (acumulador, despesa) => acumulador + despesa,
+console.log(titulos);
+console.log(resumos);
+```
+
+Quatro objetos entram; quatro strings saem.
+
+## Exemplo 5 — `find` e `findIndex`
+
+```typescript
+const primeiraLonga = tarefas.find((tarefa) => tarefa.minutos >= 40);
+const indiceDaPrimeiraPendente = tarefas.findIndex(
+  (tarefa) => !tarefa.concluida,
+);
+
+console.log(primeiraLonga?.titulo); // Praticar map
+console.log(indiceDaPrimeiraPendente); // 1
+```
+
+O `?.` apenas permite a leitura segura no exemplo. Nos exercícios, pratique também o tratamento explícito com `if/else`.
+
+## Exemplo 6 — `some` e `every` encerram quando podem
+
+```typescript
+let chamadasSome = 0;
+const existeLonga = tarefas.some((tarefa) => {
+  chamadasSome++;
+  return tarefa.minutos >= 40;
+});
+
+let chamadasEvery = 0;
+const todasPositivas = tarefas.every((tarefa) => {
+  chamadasEvery++;
+  return tarefa.minutos > 0;
+});
+
+console.log(existeLonga, chamadasSome); // true, 2
+console.log(todasPositivas, chamadasEvery); // true, 4
+```
+
+`some` encontrou sua resposta no segundo item. `every` precisou confirmar os quatro.
+
+## Exemplo 7 — `reduce` com item objeto
+
+```typescript
+const minutosConcluidos = tarefas.reduce(
+  (total, tarefa) => tarefa.concluida ? total + tarefa.minutos : total,
   0,
 );
 
-console.log(`Total: R$ ${total}`); // Total: R$ 55
+console.log(minutosConcluidos); // 55
 ```
 
-Para prever o resultado, acompanhe o acumulador: `0 → 35 → 47 → 55`.
+Rastreamento:
 
-## Exemplo 7: encadeamento com etapas claras
+```text
+0 → 30 → 30 → 55 → 55
+```
+
+O acumulador é `number`; o elemento atual é um objeto tarefa.
+
+## Exemplo 8 — Callback nomeada e referência
 
 ```typescript
-const pontuacoes: number[] = [4, 7, 9, 5, 10];
+function pendente(tarefa: {
+  titulo: string;
+  minutos: number;
+  concluida: boolean;
+}): boolean {
+  return !tarefa.concluida;
+}
 
-const bonusDosAprovados = pontuacoes
-  .filter((pontuacao) => pontuacao >= 7)
-  .map((pontuacao) => pontuacao + 1);
+const tarefasPendentes = tarefas.filter(pendente);
+const existePendente = tarefas.some(pendente);
 
-console.log(bonusDosAprovados); // [8, 10, 11]
-console.log(pontuacoes); // [4, 7, 9, 5, 10]
+console.log(tarefasPendentes.length); // 2
+console.log(existePendente); // true
 ```
 
-Primeiro ficam `[7, 9, 10]`; depois cada valor recebe `1`.
+A mesma referência é compatível com os dois métodos porque ambos esperam uma regra booleana para cada tarefa.
 
-## Exemplo 8: cópia e composição com spread
+## Exemplo 9 — Closure como critério configurável
 
 ```typescript
-const diasUteis: string[] = ["segunda", "terça"];
-const agendaCompleta = ["domingo", ...diasUteis, "quarta"];
+function criarDuracaoMinima(
+  minima: number,
+): (tarefa: { minutos: number }) => boolean {
+  return (tarefa): boolean => tarefa.minutos >= minima;
+}
 
-agendaCompleta[1] = "SEGUNDA";
+const peloMenosTrinta = criarDuracaoMinima(30);
+const tarefasLongas = tarefas.filter(peloMenosTrinta);
 
-console.log(diasUteis); // ["segunda", "terça"]
-console.log(agendaCompleta); // ["domingo", "SEGUNDA", "terça", "quarta"]
-console.log(diasUteis === agendaCompleta); // false
+console.log(tarefasLongas.map((tarefa) => tarefa.titulo));
+// ["Revisar callbacks", "Praticar map"]
 ```
 
-Para strings, alterar um elemento da nova lista não altera o elemento da lista original.
+`filter` recebe a função guardada em `peloMenosTrinta`, não o resultado de chamar essa função com uma tarefa específica.
+
+## Exemplo 10 — Encadeamento com tipo intermediário
+
+```typescript
+const titulosConcluidos = tarefas
+  .filter((tarefa) => tarefa.concluida)
+  .map((tarefa) => tarefa.titulo);
+
+console.log(titulosConcluidos);
+// ["Revisar callbacks", "Ler código real"]
+```
+
+```text
+tarefas → filter → objeto[] com 2 tarefas → map → string[] com 2 títulos
+```
+
+## Exemplo 11 — Ordem que muda o resultado
+
+```typescript
+const precos: number[] = [10, 20, 40];
+
+const filtrarDepoisDescontar = precos
+  .filter((preco) => preco >= 20)
+  .map((preco) => preco / 2);
+
+const descontarDepoisFiltrar = precos
+  .map((preco) => preco / 2)
+  .filter((preco) => preco >= 20);
+
+console.log(filtrarDepoisDescontar); // [10, 20]
+console.log(descontarDepoisFiltrar); // [20]
+```
+
+Na segunda versão, o filtro recebe os preços já reduzidos.
+
+## Exemplo 12 — Novo array e novos objetos
+
+```typescript
+const apenasOutroArray = [...tarefas];
+const novosObjetos = tarefas.map((tarefa) => ({ ...tarefa }));
+
+console.log(apenasOutroArray === tarefas); // false
+console.log(apenasOutroArray[0] === tarefas[0]); // true
+console.log(novosObjetos[0] === tarefas[0]); // false
+```
+
+Spread no array troca apenas a coleção externa. `map` com spread cria também um objeto novo para cada elemento.
 
 ## Casos de limite
 
 ```typescript
-const vazio: number[] = [];
+const vazio: { titulo: string; minutos: number; concluida: boolean }[] = [];
 
-console.log(vazio.map((numero) => numero * 2)); // []
-console.log(vazio.filter((numero) => numero > 0)); // []
-console.log(vazio.find((numero) => numero > 0)); // undefined
-console.log(vazio.findIndex((numero) => numero > 0)); // -1
-console.log(vazio.some((numero) => numero > 0)); // false
-console.log(vazio.every((numero) => numero > 0)); // true
-console.log(vazio.reduce((total, numero) => total + numero, 0)); // 0
-```
-
-O retorno de `every` merece atenção. Se sua regra de negócio exige uma lista não vazia:
-
-```typescript
-const todosPositivos = vazio.length > 0 && vazio.every((numero) => numero > 0);
-console.log(todosPositivos); // false
+console.log(vazio.map((tarefa) => tarefa.titulo)); // []
+console.log(vazio.filter((tarefa) => tarefa.concluida)); // []
+console.log(vazio.find((tarefa) => tarefa.concluida)); // undefined
+console.log(vazio.findIndex((tarefa) => tarefa.concluida)); // -1
+console.log(vazio.some((tarefa) => tarefa.concluida)); // false
+console.log(vazio.every((tarefa) => tarefa.minutos > 0)); // true
+console.log(vazio.reduce((total, tarefa) => total + tarefa.minutos, 0)); // 0
 ```
 
 ## Desafio rápido
 
-Crie `exercicios/desafio-rapido.ts` com:
+Crie `exercicios/solucoes/desafio-rapido.ts` com:
 
 ```typescript
-const tempos: number[] = [42, 35, 51, 28, 39];
+const leituras: {
+  sensor: string;
+  valor: number;
+  valida: boolean;
+}[] = [
+  { sensor: "T1", valor: 42, valida: true },
+  { sensor: "T2", valor: -1, valida: false },
+  { sensor: "T3", valor: 28, valida: true },
+  { sensor: "T4", valor: 51, valida: true },
+];
 ```
 
 Sem loops explícitos:
 
-1. crie `temposValidos` com valores menores ou iguais a `45`;
-2. crie `temposEmMilissegundos` transformando os válidos com `valor * 1000`;
-3. encontre o primeiro tempo menor que `30`;
-4. verifique se todos os tempos originais são positivos;
-5. some os tempos válidos com `reduce` e valor inicial `0`;
-6. exiba todos os resultados e confirme que `tempos` não mudou.
-
-Resultado conceitual:
-
-```text
-Válidos: 42,35,28,39
-Em milissegundos: 42000,35000,28000,39000
-Primeiro abaixo de 30: 28
-Todos positivos: true
-Total válido: 144
-Original: 42,35,51,28,39
-```
+1. mantenha somente leituras válidas;
+2. transforme as válidas em textos `T1: 42`;
+3. encontre o primeiro objeto com `valor < 30`;
+4. verifique se existe leitura inválida;
+5. verifique se todas as válidas possuem valor positivo;
+6. some os valores válidos com `reduce` iniciado em `0`;
+7. exiba os resultados e confirme que `leituras` não mudou.
 
 ## Perguntas de conferência
 
-1. Por que `map` e `filter` não são intercambiáveis?
-2. Qual ausência é indicada por `find`? E por `findIndex`?
-3. Por que o valor inicial de `reduce` torna o array vazio previsível?
-4. Qual é o valor intermediário antes do `map` no Exemplo 7?
-5. Por que `forEach` não deve ser usado para criar `temposEmMilissegundos`?
+1. Quem controla o percurso em `tarefas.filter(...)`?
+2. Qual é o contrato do callback de `map` quando objetos viram strings?
+3. Por que `find` pode chamar a callback menos vezes que `filter`?
+4. Qual é o tipo intermediário antes do `map` no Exemplo 10?
+5. Por que `[...tarefas]` não cria novos objetos internos?
+6. O que `total` e `tarefa` representam dentro do `reduce`?

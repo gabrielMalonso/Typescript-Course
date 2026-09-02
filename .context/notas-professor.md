@@ -4,6 +4,20 @@
 
 ---
 
+### 2026-09-02 - Adequação do Capítulo 09
+
+**Diagnóstico:** o material realocado do antigo Capítulo 06 ensinava corretamente os métodos em arrays primitivos, mas não cumpria a ementa atual em arrays de objetos, não possuía leitura de código real e não incorporava os aprendizados observados nos Capítulos 07 e 08.
+
+**Direção aplicada:** preservar o aquecimento com valores simples e avançar por transformação incremental: percurso/controladora manual conhecida → método nativo → mesmo método com objeto → encadeamento → escolha autônoma. Objetos não foram reensinados; passaram a ser o tipo dos elementos processados.
+
+**Adaptações personalizadas:** coleção plural e item singular; testes alternativos visíveis; uso do item recebido pela callback em vez de coleção externa; callbacks nomeados e closure; cópia do array versus cópia dos objetos; `find`/`some`/`every` com encerramento antecipado; `reduce` separando acumulador e objeto atual.
+
+**Material:** README, quatro aulas existentes, lista, prova, extras e gabarito revisados; nova leitura real com quatro recortes de AgenDoc e WhatsApp Audio Transcriber; pasta `exercicios/solucoes/` criada.
+
+**Validação didática:** 84 blocos TypeScript fora dos exemplos intencionalmente incorretos passaram na verificação sintática; links locais e resultados centrais conferidos. Prova permanece preparada, mas bloqueada até a conclusão do ciclo.
+
+**Próximo passo:** validar o leitor, publicar a revisão e orientar Gabriel a iniciar pelo README.
+
 ### 2026-09-02 - Correção pós-prova do Capítulo 08
 
 Gabriel pediu a correção integral para guardar a prova como referência. A versão final usa o parâmetro `itens` na controladora, testa o array vazio com um critério discriminante, alinha as saídas literais e refina as explicações de referência, rest, closure e função retornada.

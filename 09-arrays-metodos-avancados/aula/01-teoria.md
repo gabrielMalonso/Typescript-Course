@@ -4,15 +4,17 @@
 
 Ao final desta aula, você será capaz de:
 
-- explicar por que existem diferentes métodos de percurso;
-- relacionar callbacks já estudados com os métodos de arrays;
-- prever a forma do retorno de cada família de métodos;
-- distinguir métodos que criam arrays de métodos que devolvem um valor;
-- reconhecer quando um loop explícito ainda é a escolha mais clara.
+- reconhecer que métodos de array controlam percursos e chamam callbacks;
+- ligar cada método à pergunta que ele responde;
+- aplicar a mesma lógica a valores primitivos e objetos;
+- prever tipo, quantidade e ausência no retorno;
+- distinguir novo array, novos objetos e mutação acidental;
+- reconhecer quando um método pode parar antes do fim;
+- decidir quando um loop explícito continua mais claro.
 
-## Do mecanismo para a intenção
+## 1. Do percurso manual para o método
 
-No Capítulo 05, você controlou o percurso diretamente:
+No Capítulo 05, o percurso era explícito:
 
 ```typescript
 const temperaturas: number[] = [18, 21, 24];
@@ -25,7 +27,31 @@ for (const temperatura of temperaturas) {
 }
 ```
 
-Esse código mostra cada passo. Agora podemos expressar a intenção de manter somente os valores que passam por uma regra:
+No Capítulo 08, você separou o percurso da regra:
+
+```typescript
+function selecionarNumeros(
+  numeros: number[],
+  criterio: (numero: number) => boolean,
+): number[] {
+  const selecionados: number[] = [];
+
+  for (const numero of numeros) {
+    if (criterio(numero)) {
+      selecionados.push(numero);
+    }
+  }
+
+  return selecionados;
+}
+
+const temperaturasAltas = selecionarNumeros(
+  temperaturas,
+  (temperatura) => temperatura > 20,
+);
+```
+
+Agora o próprio array já oferece uma controladora com esse propósito:
 
 ```typescript
 const temperaturasAltas = temperaturas.filter(
@@ -33,162 +59,245 @@ const temperaturasAltas = temperaturas.filter(
 );
 ```
 
-O loop não deixou de existir: `filter` percorre o array internamente. A diferença é que o nome do método comunica **por que** estamos percorrendo.
+O mecanismo não desapareceu. `filter` percorre o array, chama a callback e cria o resultado. O nome do método comunica a intenção sem precisarmos reescrever a controladora.
 
-## Callback: uma regra entregue ao método
-
-Considere:
-
-```typescript
-const dobrados = [2, 4, 6].map((numero) => numero * 2);
-```
+## 2. Quem é coleção e quem é item
 
 Leia da esquerda para a direita:
 
-> No array `[2, 4, 6]`, transforme (`map`) cada `numero` no resultado de `numero * 2`.
-
-O trecho abaixo é uma arrow function usada como callback:
-
 ```typescript
-(numero) => numero * 2
+const ativos = equipamentos.filter((equipamento) => equipamento.ativo);
 ```
-
-Neste capítulo, use este modelo simples:
 
 ```text
-(valorAtual) => regra
+equipamentos          → coleção plural
+.filter               → controla o percurso
+equipamento           → um item singular por chamada
+equipamento.ativo     → boolean devolvido pela callback
+ativos                → novo array com os aprovados
 ```
 
-O método chama essa regra uma vez para cada elemento necessário. O TypeScript infere o tipo de `valorAtual` a partir do array:
+O método é chamado na coleção correta. A callback recebe um elemento dessa coleção. Essa distinção evita dois erros:
 
-```typescript
-const nomes: string[] = ["Ana", "Bia"];
-const tamanhos = nomes.map((nome) => nome.length);
-//                              nome é string
-// tamanhos é number[]
-```
+- usar um nome plural para o item e perder clareza;
+- consultar uma coleção externa em vez do item entregue à callback.
 
-## A pergunta determina o método
+## 3. A pergunta determina o método
 
-O erro mais comum não é de sintaxe: é escolher um método cujo retorno não representa a pergunta.
-
-| Pergunta | Método | Retorno típico |
+| Pergunta | Método | Retorno |
 |---|---|---|
 | Quero executar uma ação para cada item? | `forEach` | `void` |
-| Quero transformar cada item? | `map` | novo array |
-| Quero manter itens que passam por uma regra? | `filter` | novo array |
-| Quero o primeiro item que passa? | `find` | item ou `undefined` |
-| Quero o índice do primeiro item que passa? | `findIndex` | índice ou `-1` |
-| Quero saber se existe pelo menos um? | `some` | `boolean` |
+| Quero transformar cada item? | `map` | novo array com `N` resultados |
+| Quero manter itens aprovados? | `filter` | novo array com `0..N` itens |
+| Quero o primeiro item aprovado? | `find` | item ou `undefined` |
+| Quero a primeira posição aprovada? | `findIndex` | índice ou `-1` |
+| Quero saber se pelo menos um passa? | `some` | `boolean` |
 | Quero saber se todos passam? | `every` | `boolean` |
 | Quero combinar tudo em um resultado? | `reduce` | acumulador final |
 
-## Quantidade de elementos no resultado
+Escolher pela pergunta é mais seguro que escolher pela aparência da sintaxe.
 
-O tamanho do retorno ajuda a prever o comportamento:
+## 4. O retorno da callback muda de papel
+
+Você já sabe que callbacks podem ter contratos diferentes. Nos métodos, o retorno da callback determina o comportamento:
+
+```typescript
+const numeros: number[] = [2, 5, 8];
+
+numeros.forEach((numero): void => console.log(numero));
+const dobrados = numeros.map((numero): number => numero * 2);
+const pares = numeros.filter((numero): boolean => numero % 2 === 0);
+```
+
+```text
+forEach → retorno não forma resultado; o objetivo é o efeito
+map     → cada retorno vira um elemento do novo array
+filter  → cada retorno decide se o elemento original permanece
+```
+
+`console.log` retorna `undefined`. Por isso, exibir dentro de `map` não substitui devolver o valor transformado.
+
+## 5. A mesma ideia em arrays de objetos
+
+Arrays de objetos já são conhecidos:
+
+```typescript
+const produtos: {
+  nome: string;
+  preco: number;
+  ativo: boolean;
+}[] = [
+  { nome: "Broca", preco: 20, ativo: true },
+  { nome: "Serra", preco: 80, ativo: false },
+  { nome: "Lixa", preco: 5, ativo: true },
+];
+```
+
+O método muda; a forma do objeto continua a mesma:
+
+```typescript
+const ativos = produtos.filter((produto) => produto.ativo);
+// mesmo tipo dos elementos, quantidade possivelmente menor
+
+const nomes = produtos.map((produto) => produto.nome);
+// string[], mesma quantidade de produtos
+
+const serra = produtos.find((produto) => produto.nome === "Serra");
+// objeto encontrado ou undefined
+
+const total = produtos.reduce(
+  (acumulador, produto) => acumulador + produto.preco,
+  0,
+);
+// number
+```
+
+O TypeScript infere `produto` a partir de `produtos`. Você não precisa repetir o tipo inline dentro de cada callback.
+
+## 6. Quantidade e tipo no resultado
 
 ```text
 entrada com N elementos
 
 forEach   → nenhum array retornado
-map       → novo array com N elementos
-filter    → novo array com 0 até N elementos
-find      → um elemento ou undefined
+map       → novo array com N resultados; o tipo pode mudar
+filter    → novo array com 0 até N elementos do tipo original
+find      → um elemento original ou undefined
 findIndex → um índice ou -1
 some      → um boolean
 every     → um boolean
-reduce    → um resultado acumulado
+reduce    → um resultado do tipo do acumulador
 ```
 
-`map` preserva a quantidade, mas pode mudar o tipo:
+`map` pode transformar objetos em strings:
 
 ```typescript
-const nomes: string[] = ["Sol", "Marina"];
-const quantidades: number[] = nomes.map((nome) => nome.length);
+const etiquetas: string[] = produtos.map(
+  (produto) => `${produto.nome}: R$ ${produto.preco}`,
+);
 ```
 
-`filter` preserva o tipo dos elementos, mas pode mudar a quantidade:
+`filter` seleciona objetos, mas não altera sua forma:
 
 ```typescript
-const notas: number[] = [4, 7, 9];
-const aprovadas: number[] = notas.filter((nota) => nota >= 7);
+const produtosAtivos = produtos.filter((produto) => produto.ativo);
 ```
 
-## Retornar não é exibir
+## 7. Métodos que podem parar antes do fim
 
-Uma callback precisa produzir o resultado esperado pelo método. `console.log` apenas exibe e retorna `undefined`.
+Alguns métodos procuram apenas uma resposta suficiente:
+
+- `find` e `findIndex` param no primeiro item aprovado;
+- `some` para assim que encontra um `true`;
+- `every` para assim que encontra um `false`.
+
+`forEach`, `map`, `filter` e `reduce` percorrem todos os elementos. `return` dentro de `forEach` encerra apenas a chamada atual da callback; ele não equivale a `break`.
+
+Essa diferença conecta os métodos aos loops estudados no Capítulo 04: a intenção determina se precisamos visitar tudo ou se uma resposta antecipada basta.
+
+## 8. Arrays vazios e ausência
 
 ```typescript
-const numeros: number[] = [1, 2, 3];
+const vazio: number[] = [];
 
-numeros.forEach((numero) => console.log(numero)); // ação: exibir
-
-const dobrados = numeros.map((numero) => numero * 2); // transformação
+vazio.map((numero) => numero * 2); // []
+vazio.filter((numero) => numero > 0); // []
+vazio.find((numero) => numero > 0); // undefined
+vazio.findIndex((numero) => numero > 0); // -1
+vazio.some((numero) => numero > 0); // false
+vazio.every((numero) => numero > 0); // true
+vazio.reduce((total, numero) => total + numero, 0); // 0
 ```
 
-Use `forEach` quando a ação externa é o objetivo. Use `map` quando você precisa do novo array.
-
-## Mutação: o que muda e o que não muda
-
-Os métodos centrais deste capítulo não alteram o array original por si próprios:
+`every([])` é `true` porque não existe contraexemplo. Se o domínio exige pelo menos um item:
 
 ```typescript
-const original: number[] = [1, 2, 3];
-const dobrados = original.map((numero) => numero * 2);
-
-console.log(original); // [1, 2, 3]
-console.log(dobrados); // [2, 4, 6]
-console.log(original === dobrados); // false
+const todosPositivos = vazio.length > 0 && vazio.every((numero) => numero > 0);
 ```
 
-`map` e `filter` criam novos arrays. O spread operator também cria um novo array:
+## 9. Novo array não significa novos objetos
+
+`map`, `filter` e spread criam novos arrays, mas podem continuar apontando para os mesmos objetos internos:
 
 ```typescript
-const copia = [...original];
-console.log(original === copia); // false
+const copiaDoArray = [...produtos];
+
+console.log(copiaDoArray === produtos); // false
+console.log(copiaDoArray[0] === produtos[0]); // true
 ```
 
-Isso não significa que qualquer código dentro da callback seja incapaz de alterar algo. Uma callback pode conter mutações, mas misturar transformação com efeitos colaterais torna o raciocínio mais difícil. Nos exercícios, mantenha cada método em seu papel principal.
-
-## Encadeamento como linha de produção
-
-Cada método pode entregar seu resultado ao próximo:
+Para criar também um novo objeto para cada elemento, combine `map` com spread:
 
 ```typescript
-const resultado = [3, 8, 5, 10]
-  .filter((numero) => numero >= 5)
-  .map((numero) => numero * 2);
+const copiaDosObjetos = produtos.map((produto) => ({ ...produto }));
+
+console.log(copiaDosObjetos[0] === produtos[0]); // false
+```
+
+Os parênteses em `({ ...produto })` dizem que as chaves formam um objeto retornado, não o bloco da arrow function. A cópia ainda é superficial para propriedades aninhadas.
+
+## 10. Encadeamento como linha de produção
+
+```typescript
+const nomesAtivos = produtos
+  .filter((produto) => produto.ativo)
+  .map((produto) => produto.nome);
 ```
 
 ```text
-[3, 8, 5, 10]
-      filter >= 5
-         ↓
-   [8, 5, 10]
-      map × 2
-         ↓
-  [16, 10, 20]
+produtos
+   │ filter: produto.ativo
+   ▼
+array de produtos ativos
+   │ map: produto.nome
+   ▼
+string[] com os nomes
 ```
 
-A ordem importa. Transformar antes de filtrar pode produzir outra resposta. Encadeie apenas quando você consegue nomear o tipo e o valor intermediário de cada etapa.
+A ordem importa porque cada etapa recebe o resultado da anterior. Antes de encadear, nomeie mentalmente o valor e o tipo intermediários.
 
-## Quando preferir um loop
+## 11. `reduce`: acumulador e item têm papéis diferentes
 
-Métodos não substituem todos os loops. Um loop explícito continua útil quando:
+```typescript
+const totalAtivo = produtos.reduce(
+  (total, produto) => {
+    if (!produto.ativo) {
+      return total;
+    }
 
-- você precisa combinar vários efeitos e saídas diferentes;
-- a regra depende de `break` ou `continue` de maneira natural;
+    return total + produto.preco;
+  },
+  0,
+);
+```
+
+```text
+total   → estado acumulado, number
+produto → elemento atual, objeto
+return  → próximo valor de total
+0       → estado antes do primeiro produto
+```
+
+Use valor inicial explícito. Não escolha `reduce` apenas para evitar outros métodos; escolha-o quando a pergunta realmente pede combinar a coleção em um resultado.
+
+## 12. Quando preferir um loop
+
+Um loop explícito continua mais claro quando:
+
+- a regra usa `break` ou `continue` naturalmente;
+- várias saídas e efeitos precisam ser coordenados;
 - o encadeamento esconderia estados importantes;
-- a turma ainda está aprendendo o mecanismo que o método abstrai.
+- você precisa depurar passo a passo o percurso.
 
-Escolher o código mais legível é mais importante que usar o maior número de métodos.
+Métodos e loops são ferramentas complementares. O melhor código deixa a intenção evidente.
 
 ## Resumo
 
-- callback é a regra entregue ao método;
-- escolha o método pela pergunta e pelo retorno desejado;
-- `map` preserva a quantidade; `filter` pode reduzi-la;
-- `find` e `findIndex` representam ausência de formas diferentes;
-- `some` e `every` devolvem respostas booleanas;
-- `reduce` produz um acumulador final;
-- encadeamento é uma sequência de transformações, não uma competição de concisão.
+- métodos de array são controladoras prontas que recebem callbacks;
+- coleção tem nome plural; o item da callback, singular;
+- cada método espera um retorno diferente da callback;
+- arrays de objetos não mudam o mecanismo, apenas o tipo do item;
+- `find`, `findIndex`, `some` e `every` podem encerrar cedo;
+- novo array e novos objetos são duas decisões diferentes;
+- `reduce` combina acumulador e elemento atual;
+- encadeamento só é claro quando o intermediário também está claro.
