@@ -18,13 +18,14 @@
 ## Sessão Atual
 
 - **Data:** 2026-09-02
-- **Atividade:** Aplicação do tema Cursor/GitHub Dark personalizado ao leitor
+- **Atividade:** Correção completa do realce de sintaxe do tema escuro
 - **O que foi feito:**
-  - Tema claro preservado
-  - Paleta escura alinhada ao GitHub Dark Default
-  - Personalizações do editor levadas ao leitor: texto `#E6EDF3`, parâmetros `#58A6FF`, tipos `#FFB77A` e comentários `#6A9955`
-  - Superfícies, bordas, navegação, estados e blocos de código harmonizados com a nova paleta
-  - Typecheck, lint e build concluídos; versão 28 publicada no projeto privado existente
+  - Paleta completa conferida em uma aula real no tema escuro
+  - Operadores passaram a ser identificados em coral; parâmetros e suas referências, em azul itálico
+  - Variáveis, propriedades, tipos, strings, números, booleanos, funções e tags alinhados aos hexadecimais fornecidos
+  - Pares de parênteses, colchetes e chaves receberam cinco níveis de cores
+  - Fundo dos blocos corrigido para `#0D1117`; tema claro preservado
+  - Typecheck, lint, build e conferência da versão publicada concluídos; versão 29 no projeto privado existente
 
 ---
 
@@ -39,7 +40,7 @@
 | Capítulo 09 | ✅ Revisado para a sequência atual; pronto para estudo |
 | Capítulo 10 | ⏳ Material pendente |
 | Material `09-arrays-metodos-avancados/` | ✅ Adequado com arrays de objetos, leitura real e avaliação atualizada |
-| Leitor e `PROGRESSO.md` | ✅ Capítulo 09 revisado no catálogo; versão 27 publicada; progresso atualizado |
+| Leitor e `PROGRESSO.md` | ✅ Capítulo 09 no catálogo; tema escuro revisado; versão 29 publicada |
 
 ---
 
