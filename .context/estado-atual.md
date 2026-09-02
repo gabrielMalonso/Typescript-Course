@@ -25,6 +25,7 @@
   - Leitura de código real criada com quatro recortes dos projetos do aluno
   - Cópia superficial, interrupção antecipada e callbacks nomeados/closure adicionados
   - Lista, prova, gabarito e organização em `exercicios/solucoes/` atualizados
+  - Leitor validado e revisão publicada como versão 27 no projeto privado existente
 
 ---
 
@@ -39,7 +40,7 @@
 | Capítulo 09 | ✅ Revisado para a sequência atual; pronto para estudo |
 | Capítulo 10 | ⏳ Material pendente |
 | Material `09-arrays-metodos-avancados/` | ✅ Adequado com arrays de objetos, leitura real e avaliação atualizada |
-| Leitor e `PROGRESSO.md` | ✅ Capítulo 07 no catálogo; progresso atualizado |
+| Leitor e `PROGRESSO.md` | ✅ Capítulo 09 revisado no catálogo; versão 27 publicada; progresso atualizado |
 
 ---
 
@@ -66,6 +67,7 @@
 - [x] Corrigir a prova do Capítulo 07 — nota 9,5
 - [x] Encerrar `ex13`–`ex16` e liberar a prova do Capítulo 08
 - [x] Corrigir a prova do Capítulo 08 — nota 9,2
+- [x] Publicar a revisão do Capítulo 09 no projeto existente do Sites, preservando a URL privada
 
 ---
 
@@ -92,7 +94,7 @@
 
 | Data | Atividade | Duração |
 |------|-----------|---------|
-| 2026-09-02 | Adequação completa do Capítulo 09 à sequência atual | ~45min |
+| 2026-09-02 | Adequação, validação e publicação do Capítulo 09 — versão 27 | ~45min |
 | 2026-09-02 | Correção pós-prova do Capítulo 08 e validação da versão final | ~15min |
 | 2026-09-02 | Correção da prova do Capítulo 08 — nota 9,2 | ~20min |
 | 2026-09-01 | Encerramento da lista e liberação da prova do Capítulo 08 | ~10min |

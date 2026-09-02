@@ -16,7 +16,9 @@
 
 **Validação didática:** 84 blocos TypeScript fora dos exemplos intencionalmente incorretos passaram na verificação sintática; links locais e resultados centrais conferidos. Prova permanece preparada, mas bloqueada até a conclusão do ciclo.
 
-**Próximo passo:** validar o leitor, publicar a revisão e orientar Gabriel a iniciar pelo README.
+**Validação e publicação:** leitor aprovado em typecheck, lint e build; permanecem somente os dois avisos antigos de Fast Refresh e o aviso de tamanho de chunk. Home e rotas do Capítulo 09 responderam com HTTP 200, e a leitura de código real foi conferida na versão publicada. Versão 27 publicada com sucesso no projeto privado existente, preservando `https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site`.
+
+**Próximo passo:** Gabriel inicia pelo README e por `aula/01-teoria.md`.
 
 ### 2026-09-02 - Correção pós-prova do Capítulo 08
 
