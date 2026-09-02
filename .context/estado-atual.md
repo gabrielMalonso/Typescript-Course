@@ -24,6 +24,7 @@
   - Paleta escura alinhada ao GitHub Dark Default
   - Personalizações do editor levadas ao leitor: texto `#E6EDF3`, parâmetros `#58A6FF`, tipos `#FFB77A` e comentários `#6A9955`
   - Superfícies, bordas, navegação, estados e blocos de código harmonizados com a nova paleta
+  - Typecheck, lint e build concluídos; versão 28 publicada no projeto privado existente
 
 ---
 
