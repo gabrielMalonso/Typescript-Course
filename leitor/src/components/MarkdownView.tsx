@@ -2,6 +2,7 @@ import { useState, type ReactNode } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeHighlight from 'rehype-highlight'
+import { rehypeCodeTheme } from '../markdown/rehypeCodeTheme'
 
 type MarkdownViewProps = {
   content: string
@@ -90,7 +91,7 @@ export function MarkdownView({ content }: MarkdownViewProps) {
     <article className="markdown-body">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
-        rehypePlugins={[rehypeHighlight]}
+        rehypePlugins={[rehypeHighlight, rehypeCodeTheme]}
         components={{
           pre: ({ children }) => <CodeBlock>{children}</CodeBlock>,
         }}
