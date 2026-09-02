@@ -4,6 +4,30 @@
 
 ---
 
+### 2026-09-02 - Correção pós-prova do Capítulo 08
+
+Gabriel pediu a correção integral para guardar a prova como referência. A versão final usa o parâmetro `itens` na controladora, testa o array vazio com um critério discriminante, alinha as saídas literais e refina as explicações de referência, rest, closure e função retornada.
+
+Os quatro arquivos corrigidos recompilam isoladamente em modo estrito e executam com as saídas esperadas. A nota 9,2 permanece vinculada à entrega original.
+
+### 2026-09-02 - Prova do Capítulo 08
+
+**Resultado:** 9,2/10 — aprovado. A teoria de contratos, referência versus chamada, callbacks com papéis diferentes, closure e IIFE está bem consolidada. Os quatro arquivos práticos compilam e executam.
+
+**Ponto principal:** em `calcularPorCriterio`, Gabriel percorreu a variável global `pedidos` em vez do parâmetro `itens`. O caso vazio produziu `0` por coincidência, porque o critério rejeitava todos. Reforçar testes discriminantes: um array alternativo e um callback que aceite elementos revelariam a dependência externa.
+
+**Atenção secundária:** continua havendo pequenas divergências no formato literal das saídas. Não confundem o conceito, mas devem ser conferidas quando o enunciado fornece texto exato.
+
+**Próximo passo:** Capítulo 08 encerrado. Projeto 1 continua pendente; o Capítulo 09 existente precisa da revisão didática já registrada antes do avanço.
+
+### 2026-09-01 - Lista do Capítulo 08 encerrada
+
+**Resultado final:** `ex01` a `ex16` aprovados. O relatório de 60 pontos agora combina a closure `peloMenos60` com o título padrão e produz a saída esperada.
+
+**Domínio observado:** Gabriel separa controladora, critério e formatador; passa funções por referência; reconhece o momento da chamada; cria closures com valores preservados; identifica IIFE; e integra esses mecanismos a arrays de objetos.
+
+**Próximo passo:** prova do Capítulo 08 liberada.
+
 ### 2026-09-01 - Terceira correção da lista do Capítulo 08
 
 Gabriel aplicou corretamente a função nomeada no item 3 e explicou recebimento, execução e retornos dos callbacks, além do valor preservado pela closure. O arquivo compila e executa.
@@ -895,4 +919,4 @@ Celular na mesma rede: URL Network do Vite.
 
 ---
 
-*Última atualização: 2026-08-29*
+*Última atualização: 2026-09-02*

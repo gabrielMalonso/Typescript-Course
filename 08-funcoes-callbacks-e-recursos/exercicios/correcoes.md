@@ -1,5 +1,19 @@
 # Correção dos exercícios — Capítulo 08: Funções — Callbacks e Recursos
 
+## Correção final — Lista encerrada
+
+**Data:** 01/09/2026
+
+**Resultado:** `ex01.ts` a `ex16.ts` aprovados; prova **liberada**
+
+O item 2 do `ex16.ts` agora usa `peloMenos60` como critério e omite o quarto argumento. A execução confirma o título padrão `Painel de missões` e seleciona corretamente `Sinal perdido` e `Cristal raro`.
+
+**Validação final:** `ex16.ts` compila isoladamente em modo estrito e executa sem erros. O desafio integra percurso manual, dois callbacks, função nomeada, closure, título padrão e retorno `string[]`.
+
+**Próximo passo:** realizar a prova do Capítulo 08.
+
+---
+
 ## Terceira correção — Exercício 16
 
 **Data:** 01/09/2026
