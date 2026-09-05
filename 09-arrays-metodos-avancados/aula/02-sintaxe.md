@@ -43,6 +43,58 @@ const rotulos = ["A", "B", "C"].map(
 ```
 
 Use apenas os parâmetros necessários. Nomeie a coleção no plural e o elemento no singular.
+Na maioria dos métodos de array, a callback pode receber três parâmetros:
+
+```typescript
+(valorAtual, indice, array)
+```
+
+* **`valorAtual`** → elemento que está sendo processado naquele momento.
+* **`indice`** → posição desse elemento no array.
+* **`array`** → referência ao array completo que está sendo percorrido.
+
+Exemplo:
+
+```typescript
+produtos.map((produto, indice, array) => {
+  // produto → produto atual
+  // indice  → posição atual
+  // array   → produtos completo
+});
+```
+
+Não é necessário declarar todos. Se precisamos apenas do elemento atual:
+
+```typescript
+produtos.map((produto) => produto.nome);
+```
+
+O `map` continua disponibilizando índice e array, mas a callback simplesmente não os utiliza.
+
+A ordem dos parâmetros importa. Para usar o índice sem usar o primeiro parâmetro:
+
+```typescript
+produtos.map((_produto, indice) => indice);
+```
+
+Esse padrão `(valor, indice, array)` também aparece em `forEach`, `filter`, `find`, `findIndex`, `some` e `every`.
+
+A principal exceção é o `reduce`, que possui o **acumulador** antes deles:
+
+```typescript
+(acumulador, valorAtual, indice, array)
+```
+
+Resumo:
+
+```text
+map, filter, forEach, find, findIndex, some, every
+→ (valor, índice, array)
+
+reduce
+→ (acumulador, valor, índice, array)
+```
+
 
 ## 3. Callback inline, nomeada e criada por closure
 
