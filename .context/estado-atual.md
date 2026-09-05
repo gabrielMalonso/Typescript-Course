@@ -17,15 +17,13 @@
 
 ## Sessão Atual
 
-- **Data:** 2026-09-02
-- **Atividade:** Correção completa do realce de sintaxe do tema escuro
+- **Data:** 2026-09-05
+- **Atividade:** Sincronização da nova cor de strings do Cursor com o leitor
 - **O que foi feito:**
-  - Paleta completa conferida em uma aula real no tema escuro
-  - Operadores passaram a ser identificados em coral; parâmetros e suas referências, em azul itálico
-  - Variáveis, propriedades, tipos, strings, números, booleanos, funções e tags alinhados aos hexadecimais fornecidos
-  - Pares de parênteses, colchetes e chaves receberam cinco níveis de cores
-  - Fundo dos blocos corrigido para `#0D1117`; tema claro preservado
-  - Typecheck, lint, build e conferência da versão publicada concluídos; versão 29 no projeto privado existente
+  - Configuração atual do Cursor conferida em `settings.json`
+  - Strings do tema escuro alteradas de `#A5D6FF` para `#F2CC60`
+  - Restante da paleta e tema claro preservados
+  - Typecheck, lint e build concluídos; versão 30 publicada no projeto privado existente
 
 ---
 
@@ -40,7 +38,7 @@
 | Capítulo 09 | ✅ Revisado para a sequência atual; pronto para estudo |
 | Capítulo 10 | ⏳ Material pendente |
 | Material `09-arrays-metodos-avancados/` | ✅ Adequado com arrays de objetos, leitura real e avaliação atualizada |
-| Leitor e `PROGRESSO.md` | ✅ Capítulo 09 no catálogo; tema escuro revisado; versão 29 publicada |
+| Leitor e `PROGRESSO.md` | ✅ Capítulo 09 no catálogo; tema escuro sincronizado; versão 30 publicada |
 
 ---
 

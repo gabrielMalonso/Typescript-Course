@@ -4,6 +4,10 @@
 
 ---
 
+### 2026-09-05 - Cor de strings sincronizada com o Cursor
+
+A configuração atual do Cursor passou a usar `#F2CC60` para strings no GitHub Dark personalizado. O mesmo valor foi aplicado somente às strings do tema escuro do leitor; as demais cores e o tema claro foram preservados. Typecheck, lint e build passaram, e a versão 30 foi publicada no projeto privado existente.
+
 ### 2026-09-02 - Adequação do Capítulo 09
 
 **Diagnóstico:** o material realocado do antigo Capítulo 06 ensinava corretamente os métodos em arrays primitivos, mas não cumpria a ementa atual em arrays de objetos, não possuía leitura de código real e não incorporava os aprendizados observados nos Capítulos 07 e 08.
