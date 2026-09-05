@@ -807,7 +807,7 @@ html[data-theme='dark'] .syntax-type {
 }
 
 html[data-theme='dark'] .hljs-string {
-  color: #a5d6ff;
+  color: #f2cc60;
 }
 
 html[data-theme='dark'] .hljs-number,
