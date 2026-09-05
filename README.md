@@ -4,6 +4,20 @@ Repositório pessoal de estudos em programação e TypeScript, estruturado com a
 
 ---
 
+## Rodar um exercício
+
+Na pasta do exercício, use:
+
+```bash
+ts-node ex23.ts
+```
+
+O comando verifica os tipos e executa o arquivo, sem precisar gerar um `.js` separado. A configuração em `tsconfig.json` usa ES2022 e modo estrito. Cada arquivo é tratado como módulo independente, permitindo repetir nomes entre exercícios.
+
+Pré-requisitos: Node.js, TypeScript e ts-node (já instalados no ambiente atual). Em outro computador, instale as ferramentas com `npm install -g typescript ts-node`.
+
+Use esse comando no lugar de `tsc arquivo.ts && node arquivo.js` nos materiais antigos. Passar um arquivo diretamente para `tsc` ignora o `tsconfig.json`; executar `tsc` sem argumentos verifica todos os exercícios, inclusive os incompletos. O leitor tem configuração própria.
+
 ## Sobre o Curso
 
 Este não é um repositório de aplicação. É um **ambiente de aprendizado personalizado** criado para construir fundamentos de programação e avançar gradualmente em TypeScript.

@@ -9,13 +9,15 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 09 - Arrays: Métodos Avançados |
-| **Fase atual** | Material revisado — pronto para iniciar a aula |
+| **Fase atual** | Exercícios — aluno no `ex23.ts` |
 | **Último capítulo concluído** | 08 - Funções: Callbacks e Recursos — prova 9,2 |
-| **Próximo passo** | Aluno lê o README e inicia `aula/01-teoria.md` do Capítulo 09 |
+| **Próximo passo** | Continuar os exercícios do Capítulo 09 a partir do `ex23.ts` |
 
 ---
 
 ## Sessão Atual
+
+- **2026-09-05 — Execução dos exercícios:** criado `tsconfig.json` com ES2022, modo estrito e arquivos independentes. Comando padrão: `ts-node ex23.ts`, usando ferramentas já instaladas. Execução do arquivo atual validada. Aluno prefere escolher os métodos sem spoilers dos exercícios seguintes; lista mantida conforme combinado.
 
 - **Data:** 2026-09-05
 - **Atividade:** Sincronização da nova cor de strings do Cursor com o leitor
@@ -71,7 +73,7 @@
 
 ## Próxima Sessão
 
-1. Aluno lê o README e inicia a teoria do Capítulo 09.
+1. Aluno continua os exercícios do Capítulo 09 a partir do `ex23.ts`.
 2. Seguir teoria → sintaxe → exemplos → mini-projeto → leitura real → exercícios.
 3. Projeto 1 — Calculadora permanece pendente, sem bloquear este avanço explícito.
 

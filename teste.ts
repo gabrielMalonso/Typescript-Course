@@ -55,3 +55,5 @@ console.log(formatar);
 produtos.forEach((produto, indice) => {
   console.log(`${indice + 1}. ${produto.nome}`);
 });
+
+console.log(serra);

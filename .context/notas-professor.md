@@ -4,6 +4,12 @@
 
 ---
 
+### 2026-09-05 - Execução simples e autonomia nos exercícios
+
+Gabriel está no `ex23.ts` do Capítulo 09. O erro de reconhecimento de `find` vinha do alvo padrão de `tsc arquivo.ts`. Configuração do curso adicionada com ES2022, strict e moduleDetection force, para manter exercícios independentes. O comando padrão passa a ser `ts-node arquivo.ts`, com checagem de tipos e execução, usando a instalação existente. README atualizado e `ex23.ts` executado com sucesso, sem alterar soluções.
+
+Gabriel prefere escolher o método adequado e evitar spoilers dos exercícios seguintes. Conferimos a progressão da lista e combinamos mantê-la, pois a autonomia aumenta após o aquecimento.
+
 ### 2026-09-05 - Cor de strings sincronizada com o Cursor
 
 A configuração atual do Cursor passou a usar `#F2CC60` para strings no GitHub Dark personalizado. O mesmo valor foi aplicado somente às strings do tema escuro do leitor; as demais cores e o tema claro foram preservados. Typecheck, lint e build passaram, e a versão 30 foi publicada no projeto privado existente.
