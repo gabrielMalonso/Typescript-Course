@@ -42,7 +42,7 @@
 | 06 | Funções: Fundamentos | ✓ | ✓ | ★ 9,4 | Concluído |
 | 07 | Objetos | ✓ | ✓ | ★ 9,5 | Concluído |
 | 08 | Funções: Callbacks e Recursos | ✓ | ✓ | ★ 9,2 | Concluído |
-| 09 | Arrays: Métodos Avançados | Disponível | - | - | Pronto para iniciar |
+| 09 | Arrays: Métodos Avançados | ✓ | ✓ | Liberada | Prova em andamento |
 | 10 | Tuples | - | - | - | Bloqueado |
 | 11 | Type Alias, Union e Intersection | - | - | - | Bloqueado |
 | 12 | Enums | - | - | - | Bloqueado |
@@ -104,7 +104,7 @@
 ## Estatísticas
 
 - **Capítulos concluídos:** 9/32
-- **Exercícios realizados:** 103 + 7 bônus + extras dos caps. 07–08
+- **Exercícios realizados:** 116 + 8 bônus + extras dos caps. 07–08
 - **Provas realizadas:** 9
 - **Média geral:** 9,2
 - **Projetos entregues:** 0/4
@@ -124,4 +124,4 @@
 
 ---
 
-*Última atualização: 02/09/2026*
+*Última atualização: 06/09/2026*

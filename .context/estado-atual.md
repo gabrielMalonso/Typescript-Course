@@ -9,13 +9,15 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 09 - Arrays: Métodos Avançados |
-| **Fase atual** | Exercícios — aluno no `ex23.ts` |
+| **Fase atual** | Prova liberada |
 | **Último capítulo concluído** | 08 - Funções: Callbacks e Recursos — prova 9,2 |
-| **Próximo passo** | Continuar os exercícios do Capítulo 09 a partir do `ex23.ts` |
+| **Próximo passo** | Realizar a prova do Capítulo 09 |
 
 ---
 
 ## Sessão Atual
+
+- **2026-09-06 — Lista concluída e prova liberada:** 13 exercícios obrigatórios e bônus conferidos; todos compilam isoladamente em modo estrito. `ex21` e `ex31` têm apenas omissões não bloqueantes de apresentação/rastreamento. A leitura de código real foi dispensada neste capítulo. A partir dos próximos capítulos, ela não será criada automaticamente: será produzida somente sob demanda quando o aluno quiser ver um conceito em um projeto real.
 
 - **2026-09-05 — Execução dos exercícios:** criado `tsconfig.json` com ES2022, modo estrito e arquivos independentes. Comando padrão: `ts-node ex23.ts`, usando ferramentas já instaladas. Execução do arquivo atual validada. Aluno prefere escolher os métodos sem spoilers dos exercícios seguintes; lista mantida conforme combinado.
 
@@ -58,6 +60,7 @@
 - [x] Atualizar leitor e `PROGRESSO.md` com o novo Capítulo 07
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
+- [x] Corrigir os exercícios do Capítulo 09 e liberar a prova
 - [x] Publicar o Capítulo 07 no projeto existente do Sites (`appgprj_6a6621cf10348191b05987faeea46310`), preservando a URL privada
 - [x] Concluir a aula, o mini-projeto e a leitura de código real do Capítulo 07
 - [x] Completar o comentário do `ex24.ts` e o teste visível do bônus
@@ -73,8 +76,8 @@
 
 ## Próxima Sessão
 
-1. Aluno continua os exercícios do Capítulo 09 a partir do `ex23.ts`.
-2. Seguir teoria → sintaxe → exemplos → mini-projeto → leitura real → exercícios.
+1. Aluno realiza a prova do Capítulo 09.
+2. Entregar `resposta.md` e `questao05.ts` a `questao08.ts` em `09-arrays-metodos-avancados/avaliacao/`.
 3. Projeto 1 — Calculadora permanece pendente, sem bloquear este avanço explícito.
 
 ---
@@ -84,7 +87,7 @@
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Sim; apenas o material do Capítulo 10 continua pendente nesta faixa |
-| Prova pendente | Capítulo 09 preparado, mas ainda não liberado |
+| Prova pendente | Capítulo 09 liberado em 2026-09-06 |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não; explicações de closure e IIFE foram aprofundadas antes da Parte 4 |
 
@@ -187,4 +190,4 @@
 
 ---
 
-*Última atualização: 2026-09-02*
+*Última atualização: 2026-09-06*

@@ -1,8 +1,8 @@
 # Prova — Capítulo 09: Arrays — Métodos Avançados
 
-> **PROVA PREPARADA, MAS AINDA NÃO LIBERADA.**
+> **PROVA LIBERADA EM 06/09/2026.**
 >
-> Realize somente após concluir a aula, o mini-projeto, a leitura de código real, a lista e receber a liberação do professor.
+> A leitura de código real foi dispensada neste capítulo após a lista demonstrar domínio suficiente dos conceitos.
 
 ## Informações
 

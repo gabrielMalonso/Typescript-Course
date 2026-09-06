@@ -4,6 +4,12 @@
 
 ---
 
+### 2026-09-06 - Lista do Capítulo 09 e recalibração da leitura real
+
+Gabriel concluiu toda a lista e o bônus. Os arquivos compilam em modo estrito e mostram domínio suficiente dos métodos avançados de arrays. As únicas omissões são pequenas: exibir apenas os códigos no `ex21` e rastrear o acumulador no `ex31`; não bloqueiam a prova.
+
+Gabriel relatou que as leituras de código real estão complexas demais e que se perde no contexto, sem clareza se a atividade ajuda. O formato atual de quatro recortes não está cumprindo sua função de ponte para código real. Neste capítulo, a leitura foi dispensada. Nos próximos capítulos, não criar essa atividade automaticamente nem tratá-la como requisito: Gabriel solicitará sob demanda quando quiser ver algum conteúdo aplicado em um projeto real.
+
 ### 2026-09-05 - Execução simples e autonomia nos exercícios
 
 Gabriel está no `ex23.ts` do Capítulo 09. O erro de reconhecimento de `find` vinha do alvo padrão de `tsc arquivo.ts`. Configuração do curso adicionada com ES2022, strict e moduleDetection force, para manter exercícios independentes. O comando padrão passa a ser `ts-node arquivo.ts`, com checagem de tipos e execução, usando a instalação existente. README atualizado e `ex23.ts` executado com sucesso, sem alterar soluções.

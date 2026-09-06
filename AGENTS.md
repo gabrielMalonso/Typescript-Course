@@ -73,7 +73,7 @@ XX-nome-do-capitulo/
 │   ├── 02-sintaxe.md            # Regras da linguagem
 │   ├── 03-exemplos.md           # Exemplos comentados
 │   ├── 04-mini-projeto.md       # Aplicação guiada
-│   └── 05-leitura-codigo-real.md  # Leitura de trechos dos projetos do aluno
+│   └── 05-leitura-codigo-real.md  # Opcional; criado somente quando o aluno pedir
 │
 ├── exercicios/
 │   ├── lista.md                 # Enunciados
@@ -107,7 +107,9 @@ projetos/PXX-nome-do-projeto/
 ### Ciclo de um Capítulo
 
 ```
-AULA → LEITURA DE CÓDIGO REAL → EXERCÍCIOS → PROVA → (próximo capítulo ou revisão)
+AULA → EXERCÍCIOS → PROVA → (próximo capítulo ou revisão)
+
+Leitura de código real é uma atividade opcional, criada somente sob demanda.
 ```
 
 ### Cenário 1: Começando Capítulo Novo
@@ -117,11 +119,9 @@ AULA → LEITURA DE CÓDIGO REAL → EXERCÍCIOS → PROVA → (próximo capítu
 3. Aluno lê teoria, sintaxe e exemplos na ordem indicada
 4. Aluno tira dúvidas durante leitura
 5. Aluno faz mini-projeto guiado
-6. Antes da lista, aluno realiza a sessão curta de leitura de código real
-7. A sessão usa 4 recortes: 1 explicado, 1 guiado e 2 interpretados pelo aluno
-8. Cada recorte mostra somente definição, chamada, argumentos, retorno e contexto indispensável
-9. Aluno anota em `DIARIO.md`
-10. Claude atualiza `.context/`
+6. Se quiser ver o conteúdo em um projeto real, o aluno solicita uma leitura específica
+7. Aluno anota em `DIARIO.md`
+8. Claude atualiza `.context/`
 
 ### Cenário 2: Sessão de Exercícios
 
@@ -196,9 +196,9 @@ Cada capítulo combina:
 2. **Sintaxe e regras**: A parte técnica e formal
 3. **Exemplos práticos**: Código comentado e explicado
 4. **Aplicação imediata**: Mini-projeto que usa o conceito
-5. **Leitura de código real**: Quatro recortes de projetos do aluno, sem antecipar conteúdo futuro
-6. **Prática repetida**: Exercícios variados
-7. **Avaliação**: Prova para consolidar
+5. **Prática repetida**: Exercícios variados
+6. **Avaliação**: Prova para consolidar
+7. **Leitura de código real opcional**: Criada sob demanda quando o aluno quiser ver um conceito em um projeto real
 
 ### Princípios
 
@@ -209,11 +209,13 @@ Cada capítulo combina:
 
 ### Leitura de Código Real
 
+- Não incluir automaticamente nos novos capítulos e não usar como pré-requisito para exercícios ou provas.
+- Criar somente quando o aluno pedir um exemplo prático ou uma leitura de projeto real.
 - Usar como fontes principais `/Volumes/SSD1TB/Projetos/agendoc` e `/Volumes/SSD1TB/Projetos/whatsapp-audio-transcriber`.
 - Consultar as instruções próprias de cada projeto e não alterar seus arquivos durante a preparação da aula.
 - Selecionar somente mecanismos relacionados ao capítulo atual; sintaxe futura deve ser isolada e explicada como contexto, não cobrada.
-- Manter quatro recortes por capítulo: um explicado, um guiado e dois para o aluno interpretar.
-- Mostrar definição e chamada no mesmo bloco, com `// ...` para omitir código intermediário sem relevância.
+- Ajustar formato, quantidade e profundidade ao pedido concreto do aluno.
+- Mostrar apenas o contexto indispensável, usando `// ...` para omitir código intermediário sem relevância.
 
 ---
 
@@ -300,8 +302,7 @@ O aluno solicita a criação de um novo capítulo quando:
 ┌─────────────────────────────────────────────────────┐
 │  AGENTE 1: Criação da Aula                          │
 │  Cria: 01-teoria.md, 02-sintaxe.md,                 │
-│        03-exemplos.md, 04-mini-projeto.md e         │
-│        05-leitura-codigo-real.md                    │
+│        03-exemplos.md e 04-mini-projeto.md          │
 │  Input: Ementa + contexto do aluno                  │
 └─────────────────┬───────────────────────────────────┘
                   ▼
@@ -330,7 +331,6 @@ O aluno solicita a criação de um novo capítulo quando:
 │  Claude verifica:                                   │
 │  - Exercícios cobrem o que a aula ensinou           │
 │  - Prova não cobra conteúdo não explicado           │
-│  - Leitura real tem só 4 recortes e contexto mínimo │
 │  - Dificuldade compatível com momento do aluno      │
 └─────────────────┬───────────────────────────────────┘
                   ▼

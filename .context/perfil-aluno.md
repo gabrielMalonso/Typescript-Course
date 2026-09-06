@@ -35,7 +35,7 @@
 | **Analogias** | Bem-vindas, com contextos variados e adequados ao conceito |
 | **Complementação** | Gosta de ampliar a teoria com comparações visuais e explicações intermediárias para consolidar o modelo mental |
 | **Progressão conceitual** | Aprende melhor quando um exemplo já dominado é transformado passo a passo até chegar ao conceito novo, explicando o papel de cada alteração |
-| **Leitura de código** | Prefere sessões curtas: 1 recorte explicado, 1 guiado e 2 para interpretação própria, sempre com definição e chamada |
+| **Leitura de código** | Atividade opcional e sob demanda; não incluir automaticamente nos capítulos. Criar somente quando pedir um exemplo do conteúdo em código real |
 
 **Ajuste de ritmo em 2026-08-03:** aluno está confortável com a base e prefere acelerar quando temas próximos puderem ser integrados, compensando com 30–50% mais exercícios e variedade.
 
