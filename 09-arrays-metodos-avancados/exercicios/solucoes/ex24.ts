@@ -22,6 +22,17 @@ console.log(`2. todos os produtos possuem estoque não negativo? ${!estoquesNega
 const todosAtivosComEstoquesPositivos = produtos.every(
     produto => !produto.ativo || produto.estoque > 0
 );
+// Raciocínio:
+// produto inativo
+//     ↓
+// não importa para a regra
+//     ↓
+// true
+
+// produto ativo
+//     ↓
+// precisa ter estoque > 0
+
 console.log(`3. todos os produtos ativos possuem estoque positivo? ${todosAtivosComEstoquesPositivos ? "Sim" : "Não"}`);
 
 // 4. em um array vazio, quais são os retornos de some e every? some = false | every = true
