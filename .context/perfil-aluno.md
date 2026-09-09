@@ -15,7 +15,13 @@
 
 ---
 
-## Objetivos
+## Objetivos atuais — atualização solicitada em 2026-09-09
+
+Construir uma base generalista em Ciência da Computação e Engenharia de Software: resolver problemas, compreender sistemas, construir software e aprender tecnologias de forma independente. TypeScript é a linguagem principal; C, SQL, Shell e Assembly aparecem apenas como ferramentas explicativas contextuais.
+
+Gabriel trabalha e estuda sozinho: prefere uma única sequência, com um próximo passo claro. Iniciará MBA em Engenharia de Software; o MBA complementa a formação e pode influenciar prioridades pontuais, sem definir a ementa. Solicita a progressão conhecido → concreto → problema → ferramenta, com retomada do problema original.
+
+## Objetivos da fase inicial (preservados)
 
 1. Aprender TypeScript do zero
 2. Conseguir ler e entender código
@@ -35,7 +41,7 @@
 | **Analogias** | Bem-vindas, com contextos variados e adequados ao conceito |
 | **Complementação** | Gosta de ampliar a teoria com comparações visuais e explicações intermediárias para consolidar o modelo mental |
 | **Progressão conceitual** | Aprende melhor quando um exemplo já dominado é transformado passo a passo até chegar ao conceito novo, explicando o papel de cada alteração |
-| **Leitura de código** | Atividade opcional e sob demanda; não incluir automaticamente nos capítulos. Criar somente quando pedir um exemplo do conteúdo em código real |
+| **Leitura de código** | Preferência inicial registrada: opcional e sob demanda. Atualização de 09/09/2026: manter opcional nos blocos iniciais e incorporar gradualmente leitura/modificação nos intermediários e avançados, com contexto mínimo |
 
 **Ajuste de ritmo em 2026-08-03:** aluno está confortável com a base e prefere acelerar quando temas próximos puderem ser integrados, compensando com 30–50% mais exercícios e variedade.
 
@@ -206,4 +212,4 @@
 
 ---
 
-*Última atualização: 2026-09-02*
+*Última atualização: 2026-09-09*

@@ -7,6 +7,13 @@ const rawModules = import.meta.glob(
     '@course/[0-9][0-9]-*/extras/*.md',
     '@course/[0-9][0-9]-*/exercicios/lista*.md',
     '@course/[0-9][0-9]-*/avaliacao/prova.md',
+    '@course/[0-9][0-9]-*/pratica/0[1-3]-*.md',
+    '@course/[0-9][0-9]-*/pratica/debugging.md',
+    '@course/[0-9][0-9]-*/pratica/leetcode.md',
+    '@course/[0-9][0-9]-*/pratica/lab.md',
+    '@course/[0-9][0-9]-*/checkpoint/perguntas.md',
+    '@course/[0-9][0-9]-*/revisao/*.md',
+    '@course/[0-9][0-9]-*/recursos/referencias.md',
   ],
   {
     query: '?raw',
@@ -20,7 +27,8 @@ const EXCLUDED_NAME_PATTERNS = [
   /correcoes\.md$/i,
   /resultado\.md$/i,
   /gabarito/i,
-  /respostas-prova/i,
+  /respostas?[^/]*\.md$/i,
+  /(?:^|\/)solucoes(?:\/|\.md$)/i,
   /notas-professor/i,
   /historico-avaliacoes/i,
   /perfil-aluno/i,
@@ -28,7 +36,11 @@ const EXCLUDED_NAME_PATTERNS = [
   /prompts-agentes/i,
 ]
 
-const FOLDER_ORDER = ['aula', 'exercicios', 'avaliacao', 'extras']
+// As seções novas convivem com os caminhos históricos, sem mover materiais.
+const FOLDER_ORDER = [
+  'aula', 'pratica', 'checkpoint', 'revisao', 'recursos',
+  'exercicios', 'avaliacao', 'extras',
+]
 
 function shouldInclude(modulePath: string): boolean {
   const normalized = modulePath.replace(/\\/g, '/')
@@ -46,6 +58,10 @@ function shouldInclude(modulePath: string): boolean {
   if (rest.startsWith('extras/') && rest.endsWith('.md')) return true
   if (/^exercicios\/lista[^/]*\.md$/i.test(rest)) return true
   if (rest === 'avaliacao/prova.md') return true
+  if (/^pratica\/(?:0[1-3]-[^/]+|debugging|leetcode|lab)\.md$/i.test(rest)) return true
+  if (rest === 'checkpoint/perguntas.md') return true
+  if (/^revisao\/(?:resumo|erros-comuns|revisitar)\.md$/i.test(rest)) return true
+  if (rest === 'recursos/referencias.md') return true
 
   return false
 }

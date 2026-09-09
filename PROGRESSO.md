@@ -1,27 +1,21 @@
-# Progresso do Curso de TypeScript
+# Progresso do currículo pessoal
 
-**Aluno:** Gabriel Alonso
-**Início:** Janeiro/2025
-**Status:** Em andamento
+**Aluno:** Gabriel Alonso · **Início registrado:** Janeiro/2025 · **Status:** Em andamento
 
----
+## Ponto atual — 2026-09-09
 
-## Visão Geral
+**Fase inicial:** fundamentos de programação usando TypeScript. **Fase atual:** expansão para currículo de Ciência da Computação e Engenharia de Software.
 
-```
-[██████████████                                    ] 28%
-```
+- **00–08:** nove capítulos formalmente concluídos; notas originais preservadas abaixo.
+- **09:** aula e exercícios concluídos, lista e bônus aprovados em 06/09/2026. Gabriel relata conclusão; há respostas de prova no repositório, mas não há `avaliacao/resultado.md` e a questão 08 está incompleta no arquivo salvo. Praticamente concluído, com fechamento formal pendente; nenhuma nota atribuída nesta reformulação.
+- **Próximo conteúdo único:** 10 — Complexidade e Big O, primeiro capítulo do bloco de fundamentos algorítmicos; material ainda não gerado. Tuples passa a 16.
+- **Pendência de registro:** concluir/entregar a versão final da prova 09 e solicitar correção, sem alterar as respostas nesta tarefa. A expansão curricular não equivale a aprovação dessa prova.
 
-| Módulo | Status | Progresso |
-|--------|--------|-----------|
-| 1 - Fundamentos Absolutos | Capítulos concluídos; projeto pendente | 5/5 capítulos |
-| 2 - Estruturas de Dados e Funções | Capítulos 05 a 08 concluídos | 4/8 capítulos |
-| 3 - TypeScript Intermediário | Bloqueado | 0/10 capítulos |
-| 4 - TypeScript Avançado | Bloqueado | 0/9 capítulos |
+A ementa futura está em [EMENTA.md](EMENTA.md). Não usar o antigo denominador de 32 capítulos para calcular um percentual da formação ampliada; os blocos planejados ainda não são materiais criados nem competências avaliadas.
 
----
+## Histórico da fase inicial
 
-## Módulo 1: Fundamentos Absolutos
+### Antigo módulo 1 — Fundamentos Absolutos
 
 | Cap | Título | Aula | Exercícios | Prova | Status |
 |-----|--------|------|------------|-------|--------|
@@ -30,11 +24,10 @@
 | 02 | Tipos Primitivos | ✓ | ✓ | ★ 9,0 | Concluído |
 | 03 | Operadores e Estruturas Condicionais | ✓ | ✓ | ● 8,7 | Concluído |
 | 04 | Estruturas de Repetição | ✓ | ✓ | ★ 9,4 | Concluído |
-| P1 | Projeto: Calculadora | - | - | - | Pendente |
 
----
+**Projeto P1 — Calculadora:** pendente no planejamento anterior; nenhuma entrega encontrada. A partir de 09/09/2026, seus objetivos serão retomados quando úteis em C01, sem bloqueio retroativo nem marcação de conclusão.
 
-## Módulo 2: Estruturas de Dados e Funções
+### Antigo módulo 2 — Estruturas de Dados e Funções (parte realizada)
 
 | Cap | Título | Aula | Exercícios | Prova | Status |
 |-----|--------|------|------------|-------|--------|
@@ -42,48 +35,41 @@
 | 06 | Funções: Fundamentos | ✓ | ✓ | ★ 9,4 | Concluído |
 | 07 | Objetos | ✓ | ✓ | ★ 9,5 | Concluído |
 | 08 | Funções: Callbacks e Recursos | ✓ | ✓ | ★ 9,2 | Concluído |
-| 09 | Arrays: Métodos Avançados | ✓ | ✓ | Liberada | Prova em andamento |
-| 10 | Tuples | - | - | - | Bloqueado |
-| 11 | Type Alias, Union e Intersection | - | - | - | Bloqueado |
-| 12 | Enums | - | - | - | Bloqueado |
-| P2 | Projeto: Gerenciador de Contatos | - | - | - | Bloqueado |
+| 09 | Arrays: Métodos Avançados | ✓ | ✓ | Sem resultado formal | Praticamente concluído; fechamento pendente |
 
----
+## Sequência futura
 
-## Módulo 3: TypeScript Intermediário
+Checkpoints curtos por capítulo e avaliação integradora por bloco. A numeração abaixo é a nova, não a dos antigos módulos.
 
-| Cap | Título | Aula | Exercícios | Prova | Status |
-|-----|--------|------|------------|-------|--------|
-| 13 | Interfaces: Fundamentos | - | - | - | Bloqueado |
-| 14 | Interfaces: Recursos Avançados | - | - | - | Bloqueado |
-| 15 | Classes: Fundamentos | - | - | - | Bloqueado |
-| 16 | Classes: Encapsulamento | - | - | - | Bloqueado |
-| 17 | Classes: Herança e Polimorfismo | - | - | - | Bloqueado |
-| 18 | Narrowing: Refinamento de Tipos | - | - | - | Bloqueado |
-| 19 | Type Assertions e Predicates | - | - | - | Bloqueado |
-| 20 | Tipando o DOM | - | - | - | Bloqueado |
-| 21 | Generics: Introdução | - | - | - | Bloqueado |
-| 22 | Generics: Avançado | - | - | - | Bloqueado |
-| P3 | Projeto: Sistema de Biblioteca | - | - | - | Bloqueado |
+| Bloco | Tema | Capítulos | Situação |
+|---|---|---|---|
+| 1 | Fundamentos algorítmicos | 10–15 | Próximo bloco; iniciar pelo 10 |
+| 2 | TypeScript para modelagem | 16–19 | Planejado; não iniciado |
+| 3 | Matemática discreta e estruturas de dados | 20–28 | Planejado; não iniciado |
+| 4 | Padrões de resolução de problemas | 29–34 | Planejado; não iniciado |
+| 5 | TypeScript intermediário e modelagem de software | 35–41 | Planejado; não iniciado |
+| 6 | Como o computador funciona | 42–44 | Planejado; não iniciado |
+| 7 | Sistemas operacionais e runtime | 45–48 | Planejado; não iniciado |
+| 8 | Redes | 49–51 | Planejado; não iniciado |
+| 9 | Bancos de dados e dados | 52–55 | Planejado; não iniciado |
+| 10 | Ferramentas de desenvolvimento | 56–59 | Planejado; não iniciado |
+| 11 | TypeScript profissional | 60–65 | Planejado; não iniciado |
+| 12 | Engenharia de software | 66–70 | Planejado; não iniciado |
+| 13 | Linguagens e teoria da computação | 71–74 | Planejado; não iniciado |
+| 14 | Sistemas distribuídos e design de sistemas | 75–78 | Planejado; não iniciado |
+| 15 | Matemática para CS II | 79–81 | Planejado; não iniciado |
+| 16 | Integração final | 82 | Planejado; não iniciado |
 
----
+## Capstones previstos
 
-## Módulo 4: TypeScript Avançado
+| Marco | Momento | Situação |
+|---|---|---|
+| C01 — Fundamentos | Após 15 | Planejado; briefing sob demanda |
+| C02 — Modelagem/estruturas | Após 41 | Planejado; briefing sob demanda |
+| C03 — Software/sistemas | Após 70 | Planejado; briefing sob demanda |
+| C04 — Integração final | 82 | Planejado; briefing sob demanda |
 
-| Cap | Título | Aula | Exercícios | Prova | Status |
-|-----|--------|------|------------|-------|--------|
-| 23 | Configuração do Compilador | - | - | - | Bloqueado |
-| 24 | Módulos e Organização | - | - | - | Bloqueado |
-| 25 | Declaration Files e Tipagem Externa | - | - | - | Bloqueado |
-| 26 | Tratamento de Erros | - | - | - | Bloqueado |
-| 27 | Function Overloading | - | - | - | Bloqueado |
-| 28 | Utility Types | - | - | - | Bloqueado |
-| 29 | Tipos Avançados | - | - | - | Bloqueado |
-| 30 | Decorators | - | - | - | Bloqueado |
-| 31 | Boas Práticas e Padrões | - | - | - | Bloqueado |
-| PF | Projeto Final: Gestão Financeira | - | - | - | Bloqueado |
-
----
+Os antigos P2 — Contatos, P3 — Biblioteca e PF — Financeiro estavam bloqueados e sem entregas. O novo planejamento os substitui por capstones de integração; não existe equivalência automática de conclusão. `projetos/` contém somente `.gitkeep` nesta data.
 
 ## Histórico de Notas
 
@@ -101,27 +87,18 @@
 
 ---
 
-## Estatísticas
+## Estatísticas preservadas e limites
 
-- **Capítulos concluídos:** 9/32
-- **Exercícios realizados:** 116 + 8 bônus + extras dos caps. 07–08
-- **Provas realizadas:** 9
-- **Média geral:** 9,2
-- **Projetos entregues:** 0/4
+- **Capítulos formalmente concluídos:** 9 (00–08); 09 praticamente concluído, sem nota formal.
+- **Provas corrigidas:** 9; a prova 09 possui respostas, mas não resultado.
+- **Média geral registrada:** 9,2. Notas e cálculo histórico não foram reavaliados nesta tarefa.
+- **Contagem de exercícios anteriormente registrada:** 116 + 8 bônus + extras dos caps. 07–08. Mantida como registro anterior, não como total atualizado: a lista do 09 também possui 13 obrigatórios e bônus aprovados, sem auditoria de uma nova soma global.
+- **Projetos entregues:** 0. Quatro capstones previstos, sem entregas.
 
----
+## Como registrar daqui em diante
 
-## Legenda
+Atualizar um capítulo quando houver evidência de domínio no checkpoint; registrar avaliação de bloco/capstone separadamente. Revisões não apagam tentativas ou notas. Conteúdo gerado, estudo iniciado, prática entregue e domínio demonstrado são estados diferentes.
 
-| Símbolo | Significado |
-|---------|-------------|
-| - | Não realizado |
-| Disponível | Material criado, estudo ainda não concluído |
-| ✓ | Concluído |
-| ★ | Nota 9-10 |
-| ● | Nota 7-8 |
-| ○ | Nota < 7 (revisão necessária) |
+**Legenda histórica:** ✓ concluído; ★ nota 9–10; ● nota 7–8; ○ nota abaixo de 7; “-” não realizado. As marcas e notas antigas permanecem como estavam registradas.
 
----
-
-*Última atualização: 06/09/2026*
+*Última atualização: 2026-09-09.*
