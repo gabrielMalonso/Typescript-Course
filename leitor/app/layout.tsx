@@ -4,9 +4,9 @@ import type { ReactNode } from 'react'
 import '../src/styles/reader.css'
 import 'highlight.js/styles/github-dark.min.css'
 
-const title = 'Leitor de Aulas — Curso de TypeScript'
+const title = 'Leitor de Aulas — Ciência da Computação'
 const description =
-  'Aulas, exercícios e materiais do curso de TypeScript em um leitor confortável.'
+  'Formação pessoal em Ciência da Computação e Engenharia de Software com TypeScript.'
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers()

@@ -37,11 +37,21 @@
   {
     "chapterId": "07-objetos",
     "label": "Cap. 07 — Objetos",
-    "status": "em_andamento"
+    "status": "concluido"
+  },
+  {
+    "chapterId": "08-funcoes-callbacks-e-recursos",
+    "label": "Cap. 08 — Funções: Callbacks e Recursos",
+    "status": "concluido"
   },
   {
     "chapterId": "09-arrays-metodos-avancados",
-    "label": "Cap. 09 — Arrays: Métodos Avançados",
+    "label": "Cap. 09 — Arrays: Métodos Avançados (fechamento formal pendente)",
+    "status": "em_andamento"
+  },
+  {
+    "chapterId": "10-complexidade-e-big-o",
+    "label": "Cap. 10 — Complexidade e Big O (material disponível)",
     "status": "pendente"
   }
 ]

@@ -5,7 +5,7 @@ import { ProgressSummary } from '../components/ProgressSummary'
 import { ThemeToggle } from '../components/ThemeToggle'
 
 export function Home() {
-  const firstDoc = documents[0]
+  const firstDoc = documents.find((doc) => doc.slug === '10-complexidade-e-big-o/README') ?? documents[0]
 
   return (
     <div className="home-page">
@@ -14,17 +14,17 @@ export function Home() {
       </div>
 
       <header className="home-hero">
-        <p className="home-eyebrow">Curso de TypeScript</p>
+        <p className="home-eyebrow">Ciência da Computação e Engenharia de Software</p>
         <h1>Leitor de Aulas</h1>
         <p className="home-lead">
-          Navegue pelo índice no estilo explorador e leia as aulas com tipografia
-          confortável no computador ou no celular. Os arquivos Markdown do curso
-          continuam sendo a fonte da verdade — este app só os apresenta melhor.
+          Formação pessoal com TypeScript como linguagem principal. Próximo conteúdo:
+          capítulo 10 — Complexidade e Big O, disponível para estudo.
+          O capítulo 09 está praticamente concluído, com fechamento formal pendente.
         </p>
         <div className="home-actions">
           {firstDoc ? (
             <Link className="btn primary" to={`/ler/${firstDoc.slug}`}>
-              Começar a ler
+              Estudar capítulo 10
             </Link>
           ) : null}
           <a className="btn ghost" href="#indice">
