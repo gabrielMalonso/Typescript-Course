@@ -14,12 +14,12 @@ export function Home() {
       </div>
 
       <header className="home-hero">
-        <p className="home-eyebrow">Curso de TypeScript</p>
+        <p className="home-eyebrow">Ciência da Computação e Engenharia de Software</p>
         <h1>Leitor de Aulas</h1>
         <p className="home-lead">
-          Navegue pelo índice no estilo explorador e leia as aulas com tipografia
-          confortável no computador ou no celular. Os arquivos Markdown do curso
-          continuam sendo a fonte da verdade — este app só os apresenta melhor.
+          Formação pessoal com TypeScript como linguagem principal. Próximo conteúdo:
+          capítulo 10 — Complexidade e Big O, com material ainda a preparar.
+          O capítulo 09 está praticamente concluído, com fechamento formal pendente.
         </p>
         <div className="home-actions">
           {firstDoc ? (

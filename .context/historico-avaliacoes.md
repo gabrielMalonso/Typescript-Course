@@ -4,6 +4,13 @@
 
 ---
 
+## Nota de transição curricular — 2026-09-09
+
+Nenhuma nova avaliação corrigida nesta reformulação. As notas e observações abaixo permanecem intactas. A lista do 09 está aprovada; o aluno relata conclusão do capítulo, mas os arquivos de prova ainda não têm resultado formal e `questao08.ts` está incompleto no arquivo salvo. Não somar uma décima prova corrigida nem atribuir nota.
+
+As tabelas por módulos e as linhas futuras vazias (antigos capítulos 10–31 e projetos P1/P2/P3/PF) pertencem ao planejamento anterior; não são pendências da nova sequência. Novos resultados devem indicar bloco e capítulo da EMENTA vigente, em registros datados separados. A formação futura usa checkpoints e avaliações integradoras; notas e critérios históricos não são recalculados retroativamente.
+
+
 ## 2026-09-06 — Conclusão da lista — Capítulo 09
 
 **Resultado qualitativo:** 13 exercícios obrigatórios e bônus aprovados. Todos os arquivos compilam isoladamente em modo estrito.

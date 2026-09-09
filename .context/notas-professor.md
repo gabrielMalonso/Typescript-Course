@@ -4,6 +4,23 @@
 
 ---
 
+## 2026-09-09 — Evolução curricular para CS e Engenharia de Software
+
+**Solicitação de Gabriel:** formação generalista, sequência única, TypeScript como ferramenta, MBA como complemento e ponte do conhecido para o novo. Two Sum, Contains Duplicate, dois loops, TLE e busca de complemento foram indicados pelo aluno como experiências-âncora; não são avaliações realizadas nesta sessão.
+
+**Diagnóstico do repositório:** dez capítulos reais (00–09); projetos ainda sem conteúdo; README, progresso do leitor e prompts não acompanhavam todos os registros de conclusão. O 09 tem prática aprovada e respostas de prova presentes, mas não resultado formal; a questão 08 está incompleta no arquivo salvo. Registrar praticamente concluído, com fechamento formal pendente, sem nota inventada.
+
+**Decisões:** nova sequência de 16 blocos após a base, começando por 10 — Big O; Tuples deslocado para 16. Quatro capstones nas transições após 15, 41, 70 e no 82. A Calculadora fica como pendência histórica não entregue, com fundamentos absorvidos no planejamento de C01. Não há novas aulas/pastas vazias nesta reformulação.
+
+**Método:** ponte incremental, formatos por área, prática em níveis com debugging, LeetCode quando pertinente, labs, checkpoints e avaliações de bloco, revisão espaçada, documentação e IA com ajuda progressiva. Leitura real segue opcional no início e torna-se progressivamente curricular, com contexto mínimo; a dispensa do 09 continua válida.
+
+**Preservação:** trabalhos, avaliações, notas, diário e observações anteriores mantidos. EMENTA preserva o conteúdo realizado; AGENTS centraliza diretrizes. A reestruturação é documental e de compatibilidade local do leitor; não representa conclusão de novos estudos nem publicação.
+
+**Verificação da reformulação:** 523 arquivos dos capítulos 00–09, diário e `teste.ts` conferidos por SHA-256 e idênticos ao início. Conteúdo original de 00–09 na ementa, notas de provas e entradas anteriores do contexto preservados. Sequência 10–82 sem lacunas/duplicação; links locais dos documentos reformulados conferidos. Catálogo validado com 17 caminhos históricos/novos e 7 exclusões de respostas/gabaritos em memória; os 99 caminhos reais anteriores mantêm a mesma ordem. Typecheck, lint e build do leitor aprovados; permanecem dois avisos de Fast Refresh e o aviso de chunk grande já conhecidos. Home e rota da teoria do 09 responderam HTTP 200 localmente. Sem inspeção visual ou publicação nesta tarefa.
+
+**Vigência:** as entradas abaixo são observações históricas. Regras antigas como leitura obrigatória, prova a cada capítulo, agentes automáticos ou Tuples no 10 descrevem o plano da época; para gerar conteúdo novo, usar AGENTS e EMENTA atuais.
+
+
 ### 2026-09-06 - Lista do Capítulo 09 e recalibração da leitura real
 
 Gabriel concluiu toda a lista e o bônus. Os arquivos compilam em modo estrito e mostram domínio suficiente dos métodos avançados de arrays. As únicas omissões são pequenas: exibir apenas os códigos no `ex21` e rastrear o acumulador no `ex31`; não bloqueiam a prova.

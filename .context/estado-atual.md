@@ -1,3 +1,53 @@
+# Estado atual do currículo
+
+## Situação vigente — 2026-09-09
+
+| Campo | Valor |
+|---|---|
+| Fase inicial | Fundamentos de programação usando TypeScript, capítulos 00–09 preservados |
+| Fase atual | Expansão para currículo de Ciência da Computação e Engenharia de Software |
+| Último capítulo formalmente concluído | 08 — Funções: Callbacks e Recursos, nota 9,2 |
+| Capítulo 09 | Praticamente concluído: lista aprovada; fechamento formal da prova pendente |
+| Próximo bloco | 1 — Fundamentos algorítmicos (10–15) |
+| Próximo passo de conteúdo | Preparar 10 — Complexidade e Big O sob demanda |
+| Material do 10 | Ainda não criado; não iniciar Tuples (agora 16) |
+
+## Evidências e pendências
+
+Gabriel informou nesta solicitação que acabou o 09. A correção da lista confirma os 13 obrigatórios e bônus aprovados em 06/09. A prova tem `resposta.md` e `questao05.ts` a `questao08.ts`, mas nenhum `resultado.md`; a última expressão de `questao08.ts` está incompleta no arquivo salvo. Não foi feita correção nem atribuição de nota nesta tarefa. A prova precisa de versão final entregue e correção para fechamento formal; não exigir refazer a lista aprovada nem alterar trabalhos do aluno.
+
+Próximo conteúdo: Big O → Set/Map/hashing → arrays/strings algorítmicos → Stack/Queue → busca/ordenação → recursão. Depois, 16–19 retoma modelagem TypeScript. O fechamento formal do 09 é uma pendência separada, não uma segunda trilha curricular; não impede preparar o próximo conteúdo autorizado pelo aluno.
+
+P1 — Calculadora não foi entregue e `projetos/` só contém `.gitkeep`. Seus objetivos passam a ser retomados quando úteis no C01 após 15; não registrar entrega nem manter bloqueio retroativo. Diário permanece intocado e a cargo do aluno.
+
+## Decisões desta reformulação
+
+- Uma ementa sequencial com 16 blocos futuros e quatro capstones, criada sob demanda.
+- AGENTS concentra metodologia; EMENTA concentra currículo, transições e pré-requisitos. README e PROGRESSO apontam para essas fontes.
+- Ponte conhecido → limitação → pergunta → conceito → aplicação → retorno; formatos por área, prática por níveis, debugging permanente, LeetCode pertinente e labs em sistemas/redes/dados.
+- Checkpoints curtos e avaliações integradoras; revisão espaçada, pesquisa documental e ajuda de IA em níveis.
+- Leitura real opcional inicialmente, progressiva a partir de estruturas/modelagem; no intermediário/avançado, leitura e modificação tornam-se competências recorrentes. Isso atualiza prospectivamente a decisão de 06/09, sem mudar a dispensa do 09.
+- MBA complementar; TypeScript como ferramenta; segurança e assincronismo no núcleo obrigatório.
+- Nenhuma nova pasta de capítulo, resposta, avaliação ou projeto gerada. Nenhum trabalho de 00–09 alterado.
+- Leitor: atualização local de identidade, progresso e reconhecimento das novas seções. Publicação não realizada nesta reformulação; a URL e a configuração existentes devem ser preservadas em uma publicação futura autorizada.
+
+## Próxima sessão
+
+Preparar o capítulo 10 quando Gabriel pedir o início: partir de Contains Duplicate/TLE e de dois loops conhecidos, contar operações e explicar crescimento antes de formalizar Big O. Não fornecer soluções de Two Sum/Contains Duplicate; reservar tentativas de revisão para após Big O e Set/Map.
+
+Consultar separadamente o fechamento formal do 09 quando o aluno entregar a prova para correção. Não confundir sua declaração de conclusão com nota já registrada.
+
+## Verificação desta reformulação
+
+**Verificação da reformulação:** 523 arquivos dos capítulos 00–09, diário e `teste.ts` conferidos por SHA-256 e idênticos ao início. Conteúdo original de 00–09 na ementa, notas de provas e entradas anteriores do contexto preservados. Sequência 10–82 sem lacunas/duplicação; links locais dos documentos reformulados conferidos. Catálogo validado com 17 caminhos históricos/novos e 7 exclusões de respostas/gabaritos em memória; os 99 caminhos reais anteriores mantêm a mesma ordem. Typecheck, lint e build do leitor aprovados; permanecem dois avisos de Fast Refresh e o aviso de chunk grande já conhecidos. Home e rota da teoria do 09 responderam HTTP 200 localmente. Sem inspeção visual ou publicação nesta tarefa.
+
+## Registro anterior preservado — até 2026-09-06
+
+O conteúdo abaixo é um retrato integral do estado anterior. Próximos passos, flags, pendências de projeto, números futuros e regras de leitura/prova referem-se àquela data e **não substituem a situação vigente acima**. Sessões e fatos anteriores permanecem preservados.
+
+<details>
+<summary>Estado anterior e histórico de sessões</summary>
+
 # Estado Atual do Curso
 
 > Arquivo de controle do Claude - Atualizado a cada sessão
@@ -191,3 +241,5 @@
 ---
 
 *Última atualização: 2026-09-06*
+
+</details>
