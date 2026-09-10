@@ -1,3 +1,4 @@
+import { documentLabel } from '../content/catalog'
 import { Link } from 'react-router-dom'
 import type { CatalogDocument } from '../content/types'
 import { CopyMarkdownButton } from './CopyMarkdownButton'
@@ -16,7 +17,7 @@ export function ReaderToolbar({ doc, sidebarOpen, onOpenSidebar, showLocation = 
       ☰ Índice
     </button>
     {showLocation && <div className="reader-crumb">
-      <Link to="/">Início</Link><span>/</span><span>{doc.chapterId}</span><span>/</span><span>{doc.fileName}</span>
+      <Link to="/">Início</Link><span>/</span><span>{doc.chapterId}</span><span>/</span><span>{documentLabel(doc)}</span>
     </div>}
     <div className="toolbar-spacer" />
     <div className="toolbar-actions">

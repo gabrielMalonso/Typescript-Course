@@ -59,7 +59,7 @@ Agora compare modelos, sem implementar algoritmos novos: trabalho constante, uma
 
 ### 5. Um relatório funciona, mas repete trabalho
 
-**Atividade própria:** cobre custo de callbacks, memória e regressão, lacunas específicas da implementação em TypeScript. Consulte os apoios 2–3 das [notas](../notas.md).
+**Atividade própria:** cobre custo de callbacks, memória e regressão, lacunas específicas da implementação em TypeScript. Consulte [Callbacks](../notas.md#callbacks) e [Memória](../notas.md#memoria).
 
 Contrato: devolver, em cada posição, a soma de todos os valores recebidos. Para `[2, 3]`, a saída é `[5, 5]`. Os números e somas permanecem em limites seguros. O código é **intencionalmente ineficiente**, embora produza a saída esperada.
 
@@ -101,7 +101,7 @@ Para as atividades 6–8, se não houver versão antiga salva, registre essa aus
 
 ### 10. Contagem, tempo e logging
 
-**Experimento próprio:** retoma sua experiência com runtime. Reutilize `contarA` e `contarC` da atividade 4. Ambiente: terminal local do curso, sem bibliotecas novas; pré-requisitos: atividade 4 e apoio 4 das notas.
+**Experimento próprio:** retoma sua experiência com runtime. Reutilize `contarA` e `contarC` da atividade 4. Ambiente: terminal local do curso, sem bibliotecas novas; pré-requisitos: atividade 4 e a nota [Cronômetro e console](../notas.md#cronometro-e-console).
 
 Antes de executar, preveja as contagens para n = 100, 200 e 400. Confira as contagens. Se quiser cronometrar, registre `performance.now()` imediatamente antes e depois da chamada, subtraia os valores e imprima depois. Repita três vezes; compare contagem e tempo, sem tratar a razão de milissegundos como prova de Big O.
 
