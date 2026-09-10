@@ -3,6 +3,8 @@ import { getDocument, GlobalWorkerOptions, type PDFDocumentProxy } from 'pdfjs-d
 import workerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url'
 import type { CatalogDocument } from '../content/types'
 import { Sidebar } from './Sidebar'
+import { ReaderToolbar } from './ReaderToolbar'
+import { useTheme } from '../theme/ThemeProvider'
 import { usePdfZoom } from './usePdfZoom'
 import '../styles/pdf-reader.css'
 
@@ -52,7 +54,7 @@ export default function PdfReader({ doc }: { doc: PdfDocument }) {
   const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null)
   const [width, setWidth] = useState(0)
   const [sidebar, setSidebar] = useState(false)
-  const [night, setNight] = useState(true)
+  const { theme } = useTheme()
   const [error, setError] = useState('')
   const frame = useRef<HTMLElement>(null)
   const document = useRef<HTMLDivElement>(null)
@@ -76,14 +78,9 @@ export default function PdfReader({ doc }: { doc: PdfDocument }) {
     return () => observer.disconnect()
   }, [])
 
-  return <div className={`pdf-reader${night ? ' is-night' : ''}`}>
+  return <div className={`pdf-reader${theme === 'dark' ? ' is-night' : ''}`}>
     <Sidebar open={sidebar} onClose={() => setSidebar(false)} activeSlug={doc.slug} />
-    <header className="reader-toolbar pdf-toolbar">
-      <button type="button" className="btn ghost" onClick={() => setSidebar(true)} aria-expanded={sidebar}>☰ Índice</button>
-      <button type="button" className="btn ghost" onClick={() => setNight(value => !value)} aria-pressed={night} aria-label={night ? 'Desativar modo noturno' : 'Ativar modo noturno'}>
-        {night ? '☾' : '☀'} Modo noturno
-      </button>
-    </header>
+    <ReaderToolbar doc={doc} sidebarOpen={sidebar} onOpenSidebar={() => setSidebar(true)} />
     <main className="pdf-frame" ref={frame} aria-label={`${doc.reading.book} — ${doc.reading.section}`}>
       <div className="pdf-document" ref={document}>
       {error ? <p className="pdf-status" role="alert">{error} <a href={doc.url} target="_blank" rel="noreferrer">Abrir PDF original</a></p>
