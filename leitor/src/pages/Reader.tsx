@@ -64,9 +64,9 @@ export function Reader() {
           </p>
           <MarkdownView content={doc.content} slug={doc.slug} />
 
-          {doc.chapterId === '10-complexidade-e-big-o' ? (
+          {Number(doc.chapterId.slice(0, 2)) >= 10 ? (
             doc.slug.endsWith('/README') ? null : <nav className="reader-nav" aria-label="Voltar ao percurso">
-              <Link to="/ler/10-complexidade-e-big-o/README" className="nav-card prev"><span>Voltar ao percurso</span><strong>Guia de estudo</strong></Link>
+              <Link to={`/ler/${doc.chapterId}/README`} className="nav-card prev"><span>Voltar ao percurso</span><strong>Guia de estudo</strong></Link>
             </nav>
           ) : <nav className="reader-nav" aria-label="Navegação entre partes">
             {prev ? (

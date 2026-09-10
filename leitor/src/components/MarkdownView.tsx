@@ -102,8 +102,8 @@ export function MarkdownView({ content, slug }: MarkdownViewProps) {
   function headingId(children: ReactNode, level: number) {
     const text = extractText(children)
     const number = text.match(/^(\d+)\./)?.[1]
-    if (number && slug === '10-complexidade-e-big-o/README' && level === 2) return `etapa-${number}`
-    if (number && slug === '10-complexidade-e-big-o/pratica/atividades' && level === 3) return `atividade-${number}`
+    if (number && Number(slug.slice(0, 2)) >= 10 && slug.endsWith('/README') && level === 2) return `etapa-${number}`
+    if (number && Number(slug.slice(0, 2)) >= 10 && slug.endsWith('/pratica/atividades') && level === 3) return `atividade-${number}`
     return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-')
   }
   return (
@@ -122,6 +122,7 @@ export function MarkdownView({ content, slug }: MarkdownViewProps) {
               const target = decodeURIComponent(resolved.pathname.slice(1)).replace(/\.(?:md|pdf)$/i, '')
               const linked = getDocument(target)
               if (linked?.kind === 'pdf') {
+                if (resolved.hash) return <Link to={`/ler/${target}${resolved.hash}`}>{children}</Link>
                 return <Link className="reading-card" to={`/ler/${target}`}><strong>{children}</strong><span>Modo noturno · Abrir leitura →</span></Link>
               }
               if (linked) {

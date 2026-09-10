@@ -56,3 +56,12 @@ listeners.get('wheel')({ ctrlKey: false, preventDefault() { throw Error('Ordinar
 cleanup()
 assert.equal(listeners.size, 0, 'All gesture listeners cleaned up')
 console.log('PDF zoom: anchors, limits, touch handling, rendering and cleanup passed')
+
+
+const links = compile('../src/components/pdfPageLink.ts')
+assert.equal(links.pdfPageFromHash('#page=4', 4), 4)
+for (const fragment of ['', '#page=0', '#page=5', '#page=-1', '#page=1.5', '#page=bad']) assert.equal(links.pdfPageFromHash(fragment, 4), 1)
+assert.equal(links.pdfPagesBeforeTargetSettled(4, new Set([4, 2, 3])), false, 'Wait for earlier pages despite out-of-order rendering')
+assert.equal(links.pdfPagesBeforeTargetSettled(4, new Set([4, 2, 3, 1])), true)
+assert.equal(links.pdfPagesBeforeTargetSettled(2, new Set([1, 2])), true, 'No need to wait for later pages')
+console.log('PDF links: local page numbers, invalid fragments and render ordering passed')

@@ -94,30 +94,34 @@ Material próprio só entra para conectar conhecimentos, explicar uma dificuldad
 
 O feedback de Gabriel sobre o capítulo 10 refere-se à **dinâmica da escrita e à condução didática**, não simplesmente ao tamanho do texto. Nas notas necessárias, partir da dúvida concreta, transformar um exemplo conhecido gradualmente e mostrar o raciocínio antes de condensar definições. Encurtar texto, sozinho, não resolve a dificuldade.
 
-## README como guia central
+## Guia de estudo como percurso central
 
-A partir do piloto do 10, começar pelo README. Separar arquivos apenas quando facilitar a leitura; esta estrutura é uma possibilidade, não uma obrigação:
+Padrão aprovado no piloto do 10 em 2026-09-10 e adotado nos próximos capítulos. Manter `README.md` como caminho técnico, apresentado no leitor como **Guia de estudo**. Ele é o ponto de partida e retorno entre materiais, não uma apostila nem um relatório da curadoria.
 
 ```text
 XX-nome-do-capitulo/
-├── README.md
-├── notas.md                 # somente se houver apoio necessário
+├── README.md               # percurso do aluno
+├── notas.md                # somente complementos necessários
+├── leituras/               # somente recortes PDF disponíveis e autorizados
+│   ├── nome.pdf
+│   └── nome.json
 └── pratica/
-    └── atividades.md        # quando a seleção não couber bem no README
+    └── atividades.md
 ```
 
-O README deve permitir identificar rapidamente:
+Criar somente arquivos necessários, sem pastas vazias. Organizar o guia na ordem de uso: vídeo → recorte → prática → próximo recorte/apoio → feedback. Intercalar conforme o assunto, sem impor consumir toda a teoria antes de praticar. Cada etapa contém uma conexão curta com a anterior, link direto, foco e limite de leitura, e a próxima ação. O aluno deve conseguir abrir o material, voltar e continuar sem montar o roteiro sozinho.
 
-- Objetivo, bloco/área, pré-requisitos, conhecimentos-âncora e pergunta inicial.
-- Videoaula escolhida, trechos e motivo da seleção.
-- Leitura exata, objetivos e partes que ficam para depois.
-- Ordem de estudo, prática essencial e apoios condicionais.
-- LeetCode ou lab pertinente, critérios observáveis de domínio e o que revisitar.
-- Um próximo passo concreto, que pode ser um trecho externo, uma leitura ou uma atividade.
+- Apresentar objetivo e âncora brevemente. Informar livro/edição uma vez; seções e páginas nos links ou tabela. Não repetir apresentação, justificativas ou teoria.
+- Indicar videoaula já assistida pelo relato, sem obrigar repetição. Razões detalhadas da escolha, datas de verificação, alternativas descartadas e planejamento docente ficam em `.context/notas-professor.md` ou auditoria pertinente.
+- Notas só complementam lacunas: sintaxe, adaptação para TypeScript, memória ou dificuldade observada. Ligar à seção exata no momento necessário e oferecer retorno à etapa do guia. Não exigir ler todas as notas em sequência.
+- Atividades citam fonte e questão, com link à página do enunciado quando houver PDF no leitor. Se não houver recorte autorizado, indicar a referência original e paginação verificável.
+- Critérios de domínio e revisão imediata entram brevemente no fechamento; planejamento detalhado de retomadas fica no contexto do professor. Evitar listas administrativas no percurso.
 
-Importância, conexões, vocabulário e aplicação profissional entram onde ajudarem, sem exigir uma seção para cada item. Referências e revisão podem ficar no próprio README. Não criar resumo, aula, checkpoint ou mini-projeto por padrão. Só criar links para arquivos existentes; destinos futuros ficam em texto.
+Para PDF, usar `leituras/nome.pdf` e `nome.json` conforme `leitor/README.md`. Preservar original completo fora do repositório; conferir edição, páginas impressas, posições do PDF e conteúdo de cada recorte. Recortes mantêm páginas completas; o guia delimita os subtópicos a estudar. Um trecho anterior curto pode fornecer contexto ao próximo (como CLRS 2.1 antes de 2.2), sem antecipar a unidade futura de implementação/provas.
 
-O aluno cria soluções em `pratica/solucoes/`; correções ficam em `pratica/correcoes.md` após entrega. Não criar respostas, resultados nem diretórios vazios antecipadamente. Preservar tentativas e os caminhos dos trabalhos existentes. Novos nomes de arquivo precisam ser integrados ao catálogo do leitor quando o capítulo for criado; a árvore acima não implica suporte automático. Para leituras PDF autorizadas, usar `leituras/nome.pdf` com `leituras/nome.json`, conforme o contrato em `leitor/README.md`. O README liga ao recorte; livro/edição/seção e páginas impressas e posições no PDF ficam identificados. Preservar o livro completo fora do repositório e verificar o recorte antes de publicar.
+Links `nome.pdf#page=N` contam a página **dentro do recorte, a partir de 1**, não a página impressa nem a posição no livro completo. Exibir ao aluno a página impressa e conferir o destino. Manter barra/tema compartilhados, pinça restrita ao PDF, rolagem interna e interface mínima; não recriar um visualizador por capítulo.
+
+O aluno cria soluções em `pratica/solucoes/`; correções ficam em `pratica/correcoes.md` após entrega. Não criar respostas, resultados ou gabaritos antecipadamente. Preservar tentativas, caminhos e histórico 00–09. Integrar guias, notas, enunciados e recortes ao catálogo; conferir links, âncoras e exclusões. Só criar links para arquivos existentes; destinos futuros ficam em texto.
 
 ## Metodologia por área
 
@@ -182,7 +186,7 @@ As provas antigas de 00–09, suas notas e regras históricas permanecem intacta
 
 ## Revisão espaçada e documentação
 
-Ao criar um capítulo, indicar no README, ou em arquivo separado se útil, um roteiro concreto: quais exercícios/competências revisitar, em quais marcos e com que variação. Referência adaptável: próxima sessão, após 2–3 capítulos e no fechamento do bloco. Incorporar retomadas na prática futura, variando contexto ou contrato; registrar apenas revisões realizadas e ajustar a próxima retomada conforme esquecimento. Não criar calendário paralelo obrigatório.
+Ao criar um capítulo, registrar no contexto do professor quais exercícios/competências revisitar, em quais marcos e com que variação. No guia do aluno, mostrar apenas a retomada útil naquele momento. Referência adaptável: próxima sessão, após 2–3 capítulos e no fechamento do bloco. Incorporar retomadas na prática futura, variando contexto ou contrato; registrar apenas revisões realizadas e ajustar a próxima retomada conforme esquecimento. Não criar calendário paralelo obrigatório.
 
 O professor seleciona conhecimentos antigos sem anunciar a ferramenta no novo enunciado. Exemplo: após Map, resolver outro problema de frequências alguns capítulos depois sem sugerir Map. A revisão é transferência, não cópia da solução memorizada.
 
@@ -194,7 +198,7 @@ Objetivo: **não sei → sei pesquisar → sei ler documentação → sei experi
 
 Pesquisar referências no momento de criar o capítulo atual. Verificar primeiro **CS50/Harvard**, cuja didática Gabriel apreciou, depois **MIT OpenCourseWare** e outras fontes acadêmicas reconhecidas quando mais adequadas. A instituição não determina a ordem da EMENTA. Não selecionar agora toda a bibliografia ou os vídeos futuros.
 
-No README, registrar nome da videoaula, instituição, edição/ano, link oficial verificado e data da verificação, conteúdo relevante, se assistir inteira ou somente trechos e por que foi escolhida. Usar timestamps quando verificáveis; não inventá-los. Delimitar conteúdos antecipados sem convertê-los em pré-requisitos. O vídeo é preferencialmente a primeira exposição, seguido do livro. Se não houver referência adequada, registrar o motivo e oferecer um percurso viável, sem indicação forçada.
+No guia, indicar a videoaula com instituição/edição, link oficial e trechos a assistir. Registrar motivo da escolha, data da verificação e detalhes da curadoria no contexto do professor. Usar timestamps quando verificáveis; não inventá-los. Delimitar conteúdos antecipados sem convertê-los em pré-requisitos. O vídeo é preferencialmente a primeira exposição, seguido do livro. Se não houver referência adequada, registrar o motivo e oferecer um percurso viável, sem indicação forçada.
 
 Manter um ou dois livros-âncora por área quando úteis, sem escolher um diferente a cada capítulo. Para **algoritmos e estruturas de dados**, adotar inicialmente **Introduction to Algorithms, Cormen, Leiserson, Rivest e Stein (CLRS), 3ª edição**, à qual Gabriel já tem acesso.
 
@@ -202,7 +206,7 @@ Usar o [mapa oficial de leituras do MIT 6.006 — Fall 2011](https://ocw.mit.edu
 
 Cada indicação de leitura deve informar:
 
-- Livro e edição; capítulo e seções como referência principal.
+- Livro e edição uma vez no guia; capítulo e seções como referência principal em cada recorte.
 - Páginas quando verificadas na edição/idioma correspondente, distinguindo página impressa de posição do PDF quando necessário.
 - Objetivo da leitura e o que procurar entender.
 - Trechos que merecem atenção, partes dispensáveis por enquanto e pré-requisitos ainda não estudados.

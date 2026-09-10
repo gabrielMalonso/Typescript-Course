@@ -51,6 +51,10 @@ Gestos de zoom: `node tests/pdf-zoom.test.mjs`. Após mudanças no leitor, execu
 
 Colocar somente o recorte selecionado em `NN-capitulo/leituras/nome.pdf`, acompanhado de `nome.json`. O catálogo exige `title`, `book`, `edition`, `section`, `printedStart`, `sourcePdfStart` e `pageCount`; as páginas são numeradas a partir de 1. Cada recorte é contínuo. Para intervalos distintos, criar recortes separados.
 
+Para apontar uma página, use `[p. 14 — abrir enunciado](../leituras/clrs-1.2.pdf#page=4)` nas atividades: 14 é a página impressa; 4 é a posição dentro do recorte 11–14. O leitor preserva o fragmento e espera as páginas anteriores terem altura definida antes de rolar. Fragmentos inválidos abrem a primeira página. A pinça não refaz esse salto. Não usar a posição do PDF completo em `#page=`.
+
+A partir do capítulo 10, README aparece como “Guia de estudo”, com retorno a ele nos rodapés de notas/prática. Seções numeradas de nível 2 do guia usam `#etapa-N`; atividades numeradas de nível 3 em `pratica/atividades.md` usam `#atividade-N`. Outros títulos usam minúsculas, sem acentos/pontuação, com hífens entre palavras (ex.: `#memoria`). Links a notas devem incluir o fragmento e um retorno à etapa correspondente. Os caminhos antigos permanecem válidos.
+
 O link relativo `[Título · páginas](leituras/nome.pdf)` no README abre um cartão de leitura. PDF e metadados entram automaticamente no índice. O PDF.js é carregado somente ao abrir uma leitura, usa worker local e apresenta as páginas em rolagem contínua. A barra superior contém somente índice e alternância do modo noturno; o gesto de pinça amplia somente o PDF (1×–4×), com rolagem interna e barra fixa. Pinça de trackpad/Ctrl+roda também atua sobre o PDF. O PDF original permanece no arquivo do capítulo e é oferecido como alternativa em caso de erro; a tela do piloto utiliza canvas, sem camada de seleção de texto.
 
 Incluir apenas os recortes autorizados para o acesso do site; o livro completo permanece fora do repositório. No piloto, páginas impressas 11–14 correspondem às posições 32–35 do PDF enviado. O recorte inclui os limites completos das páginas, e o guia delimita a seção estudada.

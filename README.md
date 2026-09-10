@@ -26,13 +26,13 @@ Os capítulos 00–09 preservam sua estrutura, trabalhos e referências históri
 
 A ementa define o que aprender e em qual sequência. O professor organiza referências excelentes em um roteiro personalizado: **videoaula → leitura orientada → esclarecimentos necessários → prática selecionada → LeetCode ou lab → feedback e revisão**. Cada capítulo começa por conhecimentos e experiências anteriores.
 
-O README do capítulo indica o vídeo e seus trechos, o livro e suas seções/páginas verificadas, objetivos da leitura e atividades essenciais. CS50/Harvard é a primeira fonte de vídeo a consultar; MIT OCW e outras fontes acadêmicas entram conforme adequação. Em DSA, o livro-âncora inicial é CLRS, 3ª edição, com apoio do mapa de leituras do MIT 6.006 Fall 2011. Material próprio só preenche lacunas específicas.
+O **Guia de estudo** (`README.md`) conecta os materiais na ordem de uso: uma orientação curta, o link da leitura e a próxima atividade. Notas complementares aparecem somente no ponto necessário; exercícios ligam à página do enunciado nos recortes PDF disponíveis. CS50/Harvard é a primeira fonte de vídeo a consultar; MIT OCW e outras fontes acadêmicas entram conforme adequação. Em DSA, o livro-âncora inicial é CLRS, 3ª edição, com apoio do mapa de leituras do MIT 6.006 Fall 2011. Material próprio só preenche lacunas específicas.
 
 A prática é selecionada prioritariamente do livro, MIT e CS50; LeetCode e labs integram a faixa inicial flexível de 8–15 atividades totais. Consolidação depende da necessidade e desafios são opcionais. O aluno pode entregar tentativas durante o percurso; o avanço ocorre por domínio demonstrado, sem provas ou checkpoints obrigatórios. Revisões reaparecem naturalmente nos exercícios futuros.
 
 Há quatro capstones previstos e preservados, sem mini-projeto obrigatório a cada capítulo. Conteúdo é criado sob demanda e o próximo passo fica no contexto do professor. O MBA complementa a formação, sem ditar sua ordem. IA explica e oferece pistas graduais, preservando a tentativa própria; avaliações são corrigidas após a entrega.
 
-Em 10/09/2026, o capítulo 10 foi reconstruído localmente como guia, notas de apoio e prática selecionada. Gabriel já relata ter assistido ao CS50 Week 3; o próximo passo é a leitura orientada, sem domínio avaliado ou conclusão atribuída. A versão hospedada anterior ainda não foi atualizada nesta tarefa.
+Em 10/09/2026, o capítulo 10 foi reconstruído localmente como guia, notas de apoio e prática selecionada. Gabriel já relata ter assistido ao CS50 Week 3; o próximo passo é a leitura orientada, sem domínio avaliado ou conclusão atribuída. O guia e a leitura PDF noturna da seção 1.2 foram publicados no site privado em 10/09/2026 (versão 32).
 
 ## Estrutura real e expansão
 
