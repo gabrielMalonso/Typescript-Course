@@ -1023,3 +1023,12 @@ Gabriel relatou que a pinça no tablet ampliava o site inteiro. Ajustado para zo
 ### Protótipo de leitura aprovado — 2026-09-10
 
 Gabriel aprovou a experiência do leitor PDF com pinça e pediu uniformizar a barra com as demais páginas e incluir as leituras restantes do capítulo. A aprovação é da interface, não evidência de domínio acadêmico. `ReaderToolbar` e `ThemeToggle` agora são compartilhados; tema segue a preferência persistida do curso. Acrescentados os recortes já previstos no guia: 23–25, 27–29, 43–49 e 55–57. Com 11–14, são vinte páginas em cinco PDFs. Páginas completas preservadas; trechos internos dispensáveis continuam delimitados pelo guia. Nenhum conteúdo futuro, solução ou conclusão criado.
+
+
+### Guia como percurso — piloto do capítulo 10, 2026-09-10
+
+Gabriel relatou ter feito a primeira leitura no leitor e estar lendo os trechos do livro; isso não equivale a prática avaliada ou domínio. Pediu testar neste capítulo um guia que conecte vídeo, recortes, notas pontuais e exercícios na ordem de uso. README permanece como caminho técnico, exibido como “Guia de estudo”. Notas deixam de repetir teoria do livro; links ancorados permitem consultar um apoio e voltar à etapa correspondente. Esta experiência não altera as diretrizes de todos os capítulos.
+
+Curadoria retirada da interface, preservada aqui: CS50x 2026 Week 3 escolhido pela didática apreciada e demonstrações de busca/eficiência; assistir novamente só conforme dúvida (Searching, Linear Search, Binary Search e Running Time, antes de search.c). CLRS 3ª edição inglesa, MIT Press 2009, https://mitpress.mit.edu/9780262033848/introduction-to-algorithms/. Apoio MIT 6.006 Fall 2011: https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/pages/readings/ e Lecture 2 Models of computation (primeira página; demais custos de Python não transferidos automaticamente). Fontes e recortes conferidos em 10/09/2026 nas tarefas anteriores; não foi selecionada bibliografia nova. Lista MIT completa foi evitada pelos pré-requisitos adicionais. Referências das notas: MDN Array/map, Array/find e Node performance.now, já conferidas na curadoria anterior.
+
+Manter revisão futura: retomar Two Sum e Contains Duplicate após 11; código novo com arrays/callbacks em 12–13; análise de tempo, memória e decisões no capstone após 15. Critérios do feedback: justificar contagens e casos, interpretar O/Ω/Θ, comparar famílias, separar entrada/saída/auxiliar, testar limites e melhorar uma solução. Registros de avaliações e entregas permanecem intactos.

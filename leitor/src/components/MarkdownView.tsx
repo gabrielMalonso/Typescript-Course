@@ -1,5 +1,5 @@
-import { useState, type ReactNode } from 'react'
-import { Link } from 'react-router-dom'
+import { useEffect, useState, type ReactNode } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { getDocument } from '../content/catalog'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -90,12 +90,30 @@ function CodeBlock({ children }: { children?: ReactNode }) {
 }
 
 export function MarkdownView({ content, slug }: MarkdownViewProps) {
+  const { hash } = useLocation()
+  useEffect(() => {
+    if (!hash) return
+    const frame = requestAnimationFrame(() => {
+      document.getElementById(decodeURIComponent(hash.slice(1)))?.scrollIntoView()
+    })
+    return () => cancelAnimationFrame(frame)
+  }, [slug, hash, content])
+
+  function headingId(children: ReactNode, level: number) {
+    const text = extractText(children)
+    const number = text.match(/^(\d+)\./)?.[1]
+    if (number && slug === '10-complexidade-e-big-o/README' && level === 2) return `etapa-${number}`
+    if (number && slug === '10-complexidade-e-big-o/pratica/atividades' && level === 3) return `atividade-${number}`
+    return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-')
+  }
   return (
     <article className="markdown-body">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeHighlight, rehypeCodeTheme]}
         components={{
+          h2: ({ children }) => <h2 id={headingId(children, 2)}>{children}</h2>,
+          h3: ({ children }) => <h3 id={headingId(children, 3)}>{children}</h3>,
           pre: ({ children }) => <CodeBlock>{children}</CodeBlock>,
           a: ({ href, children }) => {
             // Resolve links escritos para os arquivos Markdown na rota do leitor.

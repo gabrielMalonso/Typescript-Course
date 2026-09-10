@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
-import { getDocument, getNeighbors, resolveDocumentSlug } from '../content/catalog'
+import { documentLabel, getDocument, getNeighbors, resolveDocumentSlug } from '../content/catalog'
 import { ReaderToolbar } from '../components/ReaderToolbar'
 import { MarkdownView } from '../components/MarkdownView'
 import { Sidebar } from '../components/Sidebar'
@@ -64,11 +64,15 @@ export function Reader() {
           </p>
           <MarkdownView content={doc.content} slug={doc.slug} />
 
-          <nav className="reader-nav" aria-label="Navegação entre partes">
+          {doc.chapterId === '10-complexidade-e-big-o' ? (
+            doc.slug.endsWith('/README') ? null : <nav className="reader-nav" aria-label="Voltar ao percurso">
+              <Link to="/ler/10-complexidade-e-big-o/README" className="nav-card prev"><span>Voltar ao percurso</span><strong>Guia de estudo</strong></Link>
+            </nav>
+          ) : <nav className="reader-nav" aria-label="Navegação entre partes">
             {prev ? (
               <Link to={`/ler/${prev.slug}`} className="nav-card prev">
                 <span>Anterior</span>
-                <strong>{prev.fileName}</strong>
+                <strong>{documentLabel(prev)}</strong>
               </Link>
             ) : (
               <span />
@@ -76,12 +80,12 @@ export function Reader() {
             {next ? (
               <Link to={`/ler/${next.slug}`} className="nav-card next">
                 <span>Próximo</span>
-                <strong>{next.fileName}</strong>
+                <strong>{documentLabel(next)}</strong>
               </Link>
             ) : (
               <span />
             )}
-          </nav>
+          </nav>}
         </main>
       </div>
     </div>

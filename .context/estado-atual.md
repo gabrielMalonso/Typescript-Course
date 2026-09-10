@@ -1,3 +1,7 @@
+## Atualização mais recente — guia como percurso, 2026-09-10
+
+Gabriel relata ter feito a primeira leitura no site e estar lendo os trechos do livro. Guia do capítulo 10 reorganizado em sete etapas que conectam vídeo, leituras, notas pontuais e prática; exibido como “Guia de estudo”. Próximo passo: retomar a etapa correspondente à leitura atual e realizar a atividade indicada, sem pressupor prática entregue ou domínio. Experiência restrita ao capítulo 10. Versão 36 publicada com acesso privado, confirmação `succeeded`, no mesmo endereço do leitor.
+
 # Estado atual do currículo
 
 ## Situação vigente — 2026-09-10: piloto reconstruído

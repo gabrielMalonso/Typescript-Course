@@ -30,3 +30,12 @@ Versão 34 publicada com acesso privado, estado `succeeded`. Fonte `1ba0aa09097d
 Quatro novos recortes: 23–25 (PDF 44–46), 27–29 (48–50), 43–49 (64–70), 55–57 (76–78). Vinte páginas ao incluir 11–14 existente. Todos os textos e pixels rasterizados dos novos recortes comparados ao PDF original e idênticos; folha de contato inspecionada. Guia liga a cada leitura e delimita trechos dispensáveis nas páginas completas. Nenhuma alteração curricular ou de trabalhos do aluno.
 
 Typecheck, lint, build, testes de zoom e diff check passaram; avisos anteriores mantidos. Catálogo: 107 documentos, cinco leituras/20 páginas, links do guia resolvidos e exclusões preservadas. Guia e rota CLRS 3.1 retornaram HTTP 200. Sem teste visual de navegador. Fonte `d63c4326374dce8f389f087ee059daf143490690`; versão 35, deployment `appgdep_6aa318a95d208191a3d968b686268e4d`, confirmado `succeeded` no mesmo site privado.
+
+
+## Guia como percurso — validação em 2026-09-10
+
+Piloto restrito ao capítulo 10: README com sete etapas, conexões curtas e leituras intercaladas com exercícios; notas apenas complementares. Justificativas de fontes e plano de revisões preservados nas notas do professor. Nome visual “Guia de estudo” no índice, toolbar e navegação; arquivo/rota README preservados. Rodapé do piloto retorna ao guia, sem impor leitura sequencial de todas as notas. Referências aos apoios na prática atualizadas; enunciados e respostas não alterados.
+
+Adicionados IDs de títulos e rolagem por fragmento para abrir uma nota/atividade no ponto indicado. Vinte links ancorados conferidos no HTML efetivamente renderizado de guia, notas e prática. Typecheck, lint, build, testes de zoom e diff check aprovados; avisos anteriores mantidos. Guia e notas responderam HTTP 200. Nenhum PDF, currículo ou material 00–09 alterado. Sem inspeção de navegador; não se atribui domínio ao relato de leitura do aluno.
+
+Publicação do percurso confirmada: versão 36, fonte `11a05ad98a90d24af60e0ff318359fd82780cbcd`, deployment `appgdep_6aa31b5368d88191b7a16dcd398d9a55`, estado `succeeded`. Mesmo endereço e acesso privado.

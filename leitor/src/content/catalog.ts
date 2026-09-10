@@ -173,7 +173,7 @@ function buildTree(documents: CatalogDocument[]): TreeNode[] {
       chapter.children.push({
         type: 'file',
         id: doc.slug,
-        name: doc.fileName,
+        name: documentLabel(doc),
         slug: doc.slug,
         chapterId: doc.chapterId,
         section: doc.section,
@@ -199,7 +199,7 @@ function buildTree(documents: CatalogDocument[]): TreeNode[] {
     sectionFolder.children.push({
       type: 'file',
       id: doc.slug,
-      name: doc.fileName,
+      name: documentLabel(doc),
       slug: doc.slug,
       chapterId: doc.chapterId,
       section: doc.section,
@@ -277,4 +277,9 @@ export function getNeighbors(slug: string): {
 
 export function chapterCount(): number {
   return new Set(documents.map((d) => d.chapterId)).size
+}
+
+
+export function documentLabel(doc: CatalogDocument): string {
+  return doc.slug === '10-complexidade-e-big-o/README' ? 'Guia de estudo' : doc.fileName
 }
