@@ -37,7 +37,7 @@ Respostas, soluções, correções, resultados e gabaritos ficam fora do catálo
 
 Arquivos sensíveis (`.context/`, `correcoes.md`, `resultado.md`, gabaritos) ficam fora do catálogo. Os 14 caminhos substituídos do capítulo 10 redirecionam ao novo README sem recolocar o material antigo no índice.
 
-Reconstrução local do piloto em 10/09/2026: a publicação descrita acima ainda corresponde ao material anterior; nenhuma nova publicação foi realizada nesta tarefa.
+Atualização em 10/09/2026: piloto por curadoria e leitor PDF noturno publicados na versão 32, com acesso privado e publicação confirmada. A versão 31 acima descreve o histórico anterior.
 
 ## Progresso
 
@@ -51,6 +51,6 @@ Após mudanças no leitor, executar `npm run typecheck`, `npm run lint` e `npm r
 
 Colocar somente o recorte selecionado em `NN-capitulo/leituras/nome.pdf`, acompanhado de `nome.json`. O catálogo exige `title`, `book`, `edition`, `section`, `printedStart`, `sourcePdfStart` e `pageCount`; as páginas são numeradas a partir de 1. Cada recorte é contínuo. Para intervalos distintos, criar recortes separados.
 
-O link relativo `[Título · páginas](leituras/nome.pdf)` no README abre um cartão de leitura. PDF e metadados entram automaticamente no índice. O PDF.js é carregado somente ao abrir uma leitura, usa worker local e renderiza uma página por vez, com zoom e cores noturnas. O original continua disponível para seleção de texto e recursos de acessibilidade do visualizador do dispositivo; a tela do piloto utiliza canvas, sem camada de seleção de texto.
+O link relativo `[Título · páginas](leituras/nome.pdf)` no README abre um cartão de leitura. PDF e metadados entram automaticamente no índice. O PDF.js é carregado somente ao abrir uma leitura, usa worker local e apresenta as páginas em rolagem contínua. A barra superior contém somente índice e alternância do modo noturno; o zoom usa o gesto ou recurso nativo do navegador. O PDF original permanece no arquivo do capítulo e é oferecido como alternativa em caso de erro; a tela do piloto utiliza canvas, sem camada de seleção de texto.
 
 Incluir apenas os recortes autorizados para o acesso do site; o livro completo permanece fora do repositório. No piloto, páginas impressas 11–14 correspondem às posições 32–35 do PDF enviado. O recorte inclui os limites completos das páginas, e o guia delimita a seção estudada.
