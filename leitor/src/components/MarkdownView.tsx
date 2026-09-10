@@ -1,4 +1,6 @@
 import { useState, type ReactNode } from 'react'
+import { Link } from 'react-router-dom'
+import { getDocument } from '../content/catalog'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeHighlight from 'rehype-highlight'
@@ -6,6 +8,7 @@ import { rehypeCodeTheme } from '../markdown/rehypeCodeTheme'
 
 type MarkdownViewProps = {
   content: string
+  slug: string
 }
 
 function extractText(node: ReactNode): string {
@@ -86,7 +89,7 @@ function CodeBlock({ children }: { children?: ReactNode }) {
   )
 }
 
-export function MarkdownView({ content }: MarkdownViewProps) {
+export function MarkdownView({ content, slug }: MarkdownViewProps) {
   return (
     <article className="markdown-body">
       <ReactMarkdown
@@ -94,6 +97,17 @@ export function MarkdownView({ content }: MarkdownViewProps) {
         rehypePlugins={[rehypeHighlight, rehypeCodeTheme]}
         components={{
           pre: ({ children }) => <CodeBlock>{children}</CodeBlock>,
+          a: ({ href, children }) => {
+            // Resolve links escritos para os arquivos Markdown na rota do leitor.
+            if (href && !/^(?:[a-z][a-z\d+.-]*:|\/|#)/i.test(href)) {
+              const resolved = new URL(href, `https://course.local/${slug}.md`)
+              const target = decodeURIComponent(resolved.pathname.slice(1)).replace(/\.md$/i, '')
+              if (getDocument(target)) {
+                return <Link to={`/ler/${target}${resolved.hash}`}>{children}</Link>
+              }
+            }
+            return <a href={href}>{children}</a>
+          },
         }}
       >
         {content}

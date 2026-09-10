@@ -77,7 +77,7 @@ export function Reader() {
             {doc.chapterTitle}
             {doc.section !== 'raiz' ? ` · ${doc.section}` : ''}
           </p>
-          <MarkdownView content={doc.content} />
+          <MarkdownView content={doc.content} slug={doc.slug} />
 
           <nav className="reader-nav" aria-label="Navegação entre partes">
             {prev ? (

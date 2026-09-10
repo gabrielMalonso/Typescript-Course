@@ -6,9 +6,9 @@ Aplicação React com Vinext/Vite para ler os materiais do currículo pessoal em
 
 O leitor está publicado com acesso privado em:
 
-<https://leitor-typescript-gabriel.gabrielmonteiroalons.chatgpt.site>
+<https://leitor-typescript-gabriel.gabrielm-alonso.chatgpt.site>
 
-A reformulação curricular de 09/09/2026 foi integrada localmente; esta alteração ainda não foi publicada. A URL existente permanece a mesma.
+A reformulação curricular e o capítulo 10 foram publicados em 09/09/2026 na versão 31, no projeto existente e com acesso privado preservado. A URL acima é a retornada pelo Sites na confirmação.
 
 ## Como usar
 
@@ -38,7 +38,7 @@ Arquivos sensíveis (`.context/`, `correcoes.md`, `resultado.md`, gabaritos) fic
 
 ## Progresso
 
-Atualize `src/content/progress.json` com base nas evidências de `PROGRESSO.md`: 00–08 concluídos; 09 em andamento para fechamento formal. A contagem da home refere-se aos capítulos registrados, não à porcentagem do currículo futuro. Atualize também a indicação de próximo conteúdo na home quando houver avanço.
+Atualize `src/content/progress.json` com base nas evidências de `PROGRESSO.md`: 00–08 concluídos; 09 em andamento para fechamento formal; 10 com material disponível e estudo pendente. A contagem da home refere-se aos capítulos registrados, não à porcentagem do currículo futuro. Atualize também a indicação de próximo conteúdo na home quando houver avanço.
 
 ## Verificação
 

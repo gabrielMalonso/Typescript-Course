@@ -8,7 +8,7 @@
 
 - **00–08:** nove capítulos formalmente concluídos; notas originais preservadas abaixo.
 - **09:** aula e exercícios concluídos, lista e bônus aprovados em 06/09/2026. Gabriel relata conclusão; há respostas de prova no repositório, mas não há `avaliacao/resultado.md` e a questão 08 está incompleta no arquivo salvo. Praticamente concluído, com fechamento formal pendente; nenhuma nota atribuída nesta reformulação.
-- **Próximo conteúdo único:** 10 — Complexidade e Big O, primeiro capítulo do bloco de fundamentos algorítmicos; material ainda não gerado. Tuples passa a 16.
+- **Próximo conteúdo único:** 10 — Complexidade e Big O, primeiro capítulo do bloco de fundamentos algorítmicos; material criado e publicado no site privado (versão 31) em 09/09/2026, disponível para estudo, sem prática entregue ou domínio avaliado. Começar pelo [README do 10](10-complexidade-e-big-o/README.md). Tuples passa a 16.
 - **Pendência de registro:** concluir/entregar a versão final da prova 09 e solicitar correção, sem alterar as respostas nesta tarefa. A expansão curricular não equivale a aprovação dessa prova.
 
 A ementa futura está em [EMENTA.md](EMENTA.md). Não usar o antigo denominador de 32 capítulos para calcular um percentual da formação ampliada; os blocos planejados ainda não são materiais criados nem competências avaliadas.

@@ -4,6 +4,12 @@
 
 ---
 
+## 2026-09-09 — Capítulo 10 criado sob demanda
+
+Gabriel solicitou criação do 10 para estudar e deploy no site existente. Criados README, quatro aulas, prática em três níveis, debugging, retomada das próprias tentativas no LeetCode, checkpoint de quatro tarefas, revisão e referências. Âncora: dois loops/TLE relatados; exemplos de busca por teto, torneio e somas parciais sem resolver Two Sum/Contains Duplicate. Reforços: parâmetros versus globais, vazio, negativos e testes discriminantes. Não há sintaxe autoral de generics, classes ou recursão exigida.
+
+Leitor reconhece os enunciados pelas regras de catálogo existentes; home aponta para o README do 10 e progresso registra material disponível, estudo pendente. Nenhuma avaliação do aluno realizada; prova 09 segue com fechamento formal pendente. Validação concluída: 14 blocos compilados, exemplos de aulas executados, links e catálogo conferidos; typecheck/lint/build aprovados com avisos antigos. Publicação privada da versão 31 confirmada pelo Sites: https://leitor-typescript-gabriel.gabrielm-alonso.chatgpt.site. Detalhes em `auditoria-cap10.md`.
+
 ## 2026-09-09 — Evolução curricular para CS e Engenharia de Software
 
 **Solicitação de Gabriel:** formação generalista, sequência única, TypeScript como ferramenta, MBA como complemento e ponte do conhecido para o novo. Two Sum, Contains Duplicate, dois loops, TLE e busca de complemento foram indicados pelo aluno como experiências-âncora; não são avaliações realizadas nesta sessão.

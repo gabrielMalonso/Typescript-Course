@@ -9,8 +9,8 @@
 | Último capítulo formalmente concluído | 08 — Funções: Callbacks e Recursos, nota 9,2 |
 | Capítulo 09 | Praticamente concluído: lista aprovada; fechamento formal da prova pendente |
 | Próximo bloco | 1 — Fundamentos algorítmicos (10–15) |
-| Próximo passo de conteúdo | Preparar 10 — Complexidade e Big O sob demanda |
-| Material do 10 | Ainda não criado; não iniciar Tuples (agora 16) |
+| Próximo passo de conteúdo | Estudar 10 — Complexidade e Big O, começando pelo README |
+| Material do 10 | Criado em 2026-09-09; disponível para estudo, sem avaliação; Tuples permanece 16 |
 
 ## Evidências e pendências
 
@@ -33,13 +33,19 @@ P1 — Calculadora não foi entregue e `projetos/` só contém `.gitkeep`. Seus 
 
 ## Próxima sessão
 
-Preparar o capítulo 10 quando Gabriel pedir o início: partir de Contains Duplicate/TLE e de dois loops conhecidos, contar operações e explicar crescimento antes de formalizar Big O. Não fornecer soluções de Two Sum/Contains Duplicate; reservar tentativas de revisão para após Big O e Set/Map.
+Gabriel inicia por `10-complexidade-e-big-o/README.md` e `aula/01-do-problema-a-contagem.md`. Depois segue a prática e entrega para correção antes do checkpoint. Two Sum/Contains Duplicate têm reanálise após Big O e revisão após Set/Map, sem soluções fornecidas. Material criado não equivale a estudo iniciado ou domínio demonstrado.
 
 Consultar separadamente o fechamento formal do 09 quando o aluno entregar a prova para correção. Não confundir sua declaração de conclusão com nota já registrada.
 
 ## Verificação desta reformulação
 
 **Verificação da reformulação:** 523 arquivos dos capítulos 00–09, diário e `teste.ts` conferidos por SHA-256 e idênticos ao início. Conteúdo original de 00–09 na ementa, notas de provas e entradas anteriores do contexto preservados. Sequência 10–82 sem lacunas/duplicação; links locais dos documentos reformulados conferidos. Catálogo validado com 17 caminhos históricos/novos e 7 exclusões de respostas/gabaritos em memória; os 99 caminhos reais anteriores mantêm a mesma ordem. Typecheck, lint e build do leitor aprovados; permanecem dois avisos de Fast Refresh e o aviso de chunk grande já conhecidos. Home e rota da teoria do 09 responderam HTTP 200 localmente. Sem inspeção visual ou publicação nesta tarefa.
+
+## Atualização posterior à reformulação — capítulo 10 publicado em 2026-09-09
+
+A pedido de Gabriel, o capítulo 10 foi criado e publicado na versão 31 do site existente, com acesso privado preservado e estado `succeeded` confirmado. URL atual informada pelo Sites: https://leitor-typescript-gabriel.gabrielm-alonso.chatgpt.site. Foram conferidos exemplos, links, catálogo, rotas locais, typecheck, lint e build; detalhes em `auditoria-cap10.md`. Permanecem avisos antigos do leitor; sem inspeção visual de navegador.
+
+Próximo passo único: ler `10-complexidade-e-big-o/README.md` e seguir para a aula 1. Não há registro de estudo iniciado, entrega de prática ou checkpoint avaliado. Fechamento formal do 09 permanece pendente. Os registros de “sem publicação” acima descrevem somente a reformulação anterior desta mesma data.
 
 ## Registro anterior preservado — até 2026-09-06
 
