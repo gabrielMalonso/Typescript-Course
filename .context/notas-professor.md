@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-09-10 — Curadoria como metodologia de criação
+
+Após análise e ajustes, Gabriel autorizou alterar a documentação de criação de novas aulas e capítulos. O professor passa a organizar um roadmap apoiado em fontes existentes, com vídeo primeiro, leitura orientada, apoios específicos, exercícios selecionados e feedback. CLRS 3ª é a âncora inicial de DSA, com mapa do MIT 6.006 Fall 2011 como apoio, sem importar sua sequência ou pressupor seus pré-requisitos.
+
+A faixa inicial de 8–15 atividades inclui LeetCode, labs e revisões; essenciais são o percurso padrão, consolidação é condicional e desafios são opcionais. Feedback pode ocorrer antes do fim da lista. Avanço por domínio observado na prática; provas/checkpoints por capítulo e avaliações formais de bloco deixam de ser obrigatórios. Os quatro capstones permanecem. Subagentes podem ajudar na curadoria, prática e revisão de capítulos, com um professor principal responsável e escopo de edição separado quando houver paralelismo.
+
+Gabriel esclareceu que o problema do material do 10 foi a dinâmica da escrita e a didática, não simplesmente excesso de texto. Já assistiu ao CS50 Week 3; recursão em C foi uma dificuldade relatada, sem domínio atribuído. Suas experiências em Two Sum, Contains Duplicate e Stock serão âncoras, a conferir em código quando disponível.
+
+Escopo executado: AGENTS, prompts, README geral, orientações futuras do PROGRESSO, referências metodológicas da EMENTA e contexto. Sequência e competências curriculares preservadas. Capítulo 10 não foi reconstruído nesta etapa; nenhum trabalho do aluno foi modificado, nenhum domínio atribuído e nenhuma publicação realizada. A seleção final de trechos/páginas e exercícios fica para a preparação do piloto. Os registros anteriores abaixo permanecem históricos, inclusive a regra de vídeo apenas complementar, substituída prospectivamente por esta decisão.
+
+## 2026-09-10 — Videoaulas complementares por capítulo
+
+A pedido de Gabriel, AGENTS e roteiro de criação passam a exigir pesquisa de uma videoaula complementar no momento de criar cada capítulo: primeiro CS50/Harvard, depois outra fonte acadêmica de alta qualidade se necessário. Quando adequada, a indicação entra no README com nome, fonte, link oficial verificado, partes pertinentes e orientação. Material permanece autossuficiente e personalizado; sequência e estrutura da ementa preservadas, sem seleção antecipada de referências futuras.
+
+README do 10 recebeu Week 3 — Algorithms, CS50x 2026, com link oficial conferido em 10/09/2026. Gabriel relata já ter assistido à aula; não foi avaliado domínio nem atribuída conclusão ao capítulo. Alteração somente documental e local, sem nova publicação do site.
+
 ## 2026-09-09 — Capítulo 10 criado sob demanda
 
 Gabriel solicitou criação do 10 para estudar e deploy no site existente. Criados README, quatro aulas, prática em três níveis, debugging, retomada das próprias tentativas no LeetCode, checkpoint de quatro tarefas, revisão e referências. Âncora: dois loops/TLE relatados; exemplos de busca por teto, torneio e somas parciais sem resolver Two Sum/Contains Duplicate. Reforços: parâmetros versus globais, vazio, negativos e testes discriminantes. Não há sintaxe autoral de generics, classes ou recursão exigida.

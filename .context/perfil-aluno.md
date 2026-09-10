@@ -15,6 +15,12 @@
 
 ---
 
+## Preferências e experiências relatadas — 2026-09-10
+
+Gabriel prefere começar pela videoaula para obter uma visão do assunto, depois aprofundar no livro e praticar com exercícios selecionados de referências acadêmicas, LeetCode ou labs. O professor organiza o roteiro e acompanha as tentativas; material próprio entra para dificuldades específicas. A crítica ao capítulo 10 foi à dinâmica do texto e à condução didática, não simplesmente à extensão. Não concluir que encurtar o texto resolverá o problema.
+
+Relata já ter assistido ao CS50 Week 3, acompanhando a maior parte, com dificuldade na implementação de recursão em C; não registrar domínio de recursão. Relata trabalho em Two Sum, Contains Duplicate e Best Time to Buy and Sell Stock, TLE, loops aninhados, efeito de console.log no runtime e otimização de Stock para uma passagem. São âncoras de estudo, sem avaliação formal dessas soluções nesta sessão.
+
 ## Objetivos atuais — atualização solicitada em 2026-09-09
 
 Construir uma base generalista em Ciência da Computação e Engenharia de Software: resolver problemas, compreender sistemas, construir software e aprender tecnologias de forma independente. TypeScript é a linguagem principal; C, SQL, Shell e Assembly aparecem apenas como ferramentas explicativas contextuais.

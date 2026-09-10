@@ -26,6 +26,16 @@ Seu relato de Contains Duplicate e Time Limit Exceeded abre a investigação. Os
 
 **Critério de domínio:** analisar uma variação sem decorar a aparência do código, justificar a contagem, testar limites e explicar o que uma medição permite concluir. Ler o material ou obter Accepted não substitui essa demonstração. O checkpoint não tem nota numérica: domínio demonstrado, reforço localizado ou revisão necessária. Uma lacuna específica recebe uma rechecagem curta; o avanço ao 11 depende dos pré-requisitos demonstrados.
 
+## Aula complementar recomendada
+
+- **Aula:** Week 3 — Algorithms, CS50x 2026, com David J. Malan.
+- **Instituição/fonte:** Harvard University — CS50 OpenCourseWare.
+- **Link oficial:** [Week 3 — Algorithms](https://cs50.harvard.edu/x/2026/weeks/3/) — verificado em 10/09/2026; página com vídeo, notas, slides e transcrição.
+- **Partes relacionadas ao capítulo:** busca linear e busca binária para comparar crescimento linear e logarítmico; discussão de eficiência e notação assintótica, principalmente Big O. As notações Ω e Θ aparecem como contexto, sem exigência de formalização adicional aqui.
+- **Por que assistir:** as demonstrações concretas ajudam a perceber como o trabalho cresce antes de organizar a análise na leitura. Você pode assistir primeiro e depois retomar os exemplos em TypeScript deste capítulo. Ordenação e recursão também aparecem no vídeo, mas são apenas um primeiro contato; sua implementação fica para os capítulos 14 e 15.
+
+A videoaula é complementar e opcional; este material continua autossuficiente. **Gabriel relata já ter assistido a essa aula**; não é necessário revê-la inteira. Retome somente os trechos que ajudarem com uma dúvida. Esse relato não equivale a avaliação de domínio do capítulo.
+
 ## Roteiro único
 
 1. [Do código que funciona ao trabalho que cresce](aula/01-do-problema-a-contagem.md).

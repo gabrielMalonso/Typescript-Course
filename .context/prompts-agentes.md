@@ -1,38 +1,53 @@
-# Roteiro de criação de conteúdo
+# Roteiro de criação de capítulos por curadoria
 
-Atualizado em 2026-09-09. O nome deste arquivo foi mantido para continuidade, mas não implica execução de subagentes. Usá-los somente se Gabriel solicitar. Este roteiro substitui os prompts antigos de quatro agentes e estrutura fixa; [AGENTS.md](../AGENTS.md) é a fonte da metodologia, e [EMENTA.md](../EMENTA.md) é a fonte do currículo.
+Atualizado em 2026-09-10. [AGENTS.md](../AGENTS.md) define a metodologia; [EMENTA.md](../EMENTA.md) define o conteúdo e a sequência. Este roteiro substitui a geração automática de apostilas, checkpoints e provas de bloco. Não reorganizar ou renumerar o currículo.
 
-## Antes de gerar
+## Antes de criar
 
-Ler estado atual, perfil, notas relevantes, histórico de avaliações, última correção e trecho da ementa. Identificar capítulo/bloco/área, conhecimento-âncora comprovado, problema inicial, pré-requisitos, competência esperada e reforços necessários. Não assumir domínio de conteúdo apenas planejado.
+Ler estado atual, perfil, notas relevantes, histórico de avaliações, última correção e trecho da ementa. Identificar capítulo/bloco/área, conhecimento-âncora, pré-requisitos, competências esperadas e dificuldades observadas. Distinguir relato do aluno, código encontrado e domínio avaliado.
 
 ## Pedido-base ao professor
 
-> Crie somente o capítulo solicitado da ementa vigente, usando o desempenho registrado. Escolha os arquivos úteis ao tema, sem pastas vazias. Comece por uma construção conhecida, explicite sua limitação, desenvolva a ferramenta e volte ao problema original. O README deve apresentar objetivo, pré-requisitos, âncoras, ponte, importância, conexões, aplicação profissional, vocabulário, resultados esperados, critério de domínio e ordem de leitura.
+> Monte o guia de estudo somente do capítulo solicitado. Use vídeo para a primeira visão, leitura orientada para aprofundamento e prática para desenvolver e demonstrar competências. Preserve a ponte entre experiência conhecida, pergunta e conceito novo. Não reescreva teoria já bem ensinada nas fontes.
 >
-> Produza prática de fundamentos, aplicação autônoma, desafios e debugging proporcional ao conteúdo. Inclua testes, limites, leitura e explicação; LeetCode em DSA e labs quando experimentar o sistema for mais útil. Não entregue soluções prematuras nem indique a ferramenta nos exercícios de aplicação. Crie checkpoint curto e roteiro concreto de revisão espaçada. Avaliação integradora somente no fechamento do bloco, podendo usar o capstone como evidência.
+> Pesquise a videoaula no momento da criação: CS50/Harvard primeiro, depois MIT OCW ou outra fonte acadêmica mais adequada. Registre link oficial, edição, trechos ou timestamps verificados, motivo da escolha e data. Não exigir rever o que o aluno já assistiu nem dominar conteúdos que aparecem apenas como prévia.
 >
-> Use somente sintaxe ensinada ou uma introdução contextual explícita. Preserve todas as respostas e registros existentes. Valide conteúdo e integração do leitor; atualize contexto sem marcar o material gerado como aprendido.
+> Em DSA, use CLRS 3ª edição como livro-âncora e o mapa do MIT 6.006 Fall 2011 como apoio. Inspecione os recortes antes da seleção final. Informe livro/edição, capítulo/seções, páginas quando verificáveis, objetivo, pontos de atenção, partes que ficam para depois e pré-requisitos externos. Não importar a sequência ou a carga do MIT.
+>
+> Selecione exercícios adequados do livro, MIT e CS50, complementando com LeetCode ou labs conforme a área. Registre origem e adaptações; preserve o objetivo ao traduzir para TypeScript. Não incluir soluções junto aos enunciados. Use a faixa inicial total de 8–15 atividades, incluindo LeetCode, labs e revisões, como referência flexível de esforço. Essenciais formam o percurso padrão; consolidação é condicional e desafios são opcionais. Os cerca de 3–6 LeetCodes, quando pertinentes, já pertencem a esse total e não constituem quota.
+>
+> Crie notas próprias apenas para lacunas concretas, com exemplos conhecidos e transformações graduais. Não presumir que a dificuldade didática se resolve apenas encurtando o texto. Se a referência exigir muitos pré-requisitos ausentes, recorte ou substitua o apoio em vez de abrir novas aulas paralelas.
+>
+> Permita prática entre trechos e feedback antes do fim da lista. Defina competências observáveis; a prática pode demonstrá-las sem checkpoint ou prova obrigatória. Se houver lacuna essencial, proponha reforço localizado. Preserve os quatro capstones e incorpore revisão em atividades futuras, sem calendário ou formulário obrigatório.
+>
+> Concentre o percurso no README, com um próximo passo claro. Crie outros arquivos apenas quando úteis. Preserve respostas, tentativas e histórico; integre novos enunciados no leitor e registre o trabalho sem inventar estudo concluído ou publicação.
 
-## Ordem de trabalho
+## Ordem de trabalho do professor
 
-1. Contexto e escopo do capítulo.
-2. Aula adaptada à área e README.
-3. Prática ligada ao que foi ensinado.
-4. Checkpoint e, no momento correto, avaliação de bloco/capstone.
-5. Revisão espaçada e referências verificadas.
-6. Auditoria pedagógica, exemplos, links, catálogo e verificações pertinentes do leitor.
-7. Registro do que foi criado, verificado e do único próximo passo.
+1. Definir escopo e competências a partir do contexto e da ementa.
+2. Pesquisar e conferir referências e exercícios, incluindo pré-requisitos e esforço.
+3. Selecionar o percurso essencial e montar o README: vídeo → leitura → apoio necessário → prática → LeetCode/lab → feedback e revisão.
+4. Acrescentar somente notas e adaptações que resolvam lacunas identificáveis.
+5. Revisar cobertura, redundância, clareza, autonomia, links e exemplos executáveis pertinentes.
+6. Integrar arquivos no catálogo do leitor quando criados. Se o leitor mudar, executar typecheck, lint e build e conferir home/rota pertinente. Publicar apenas no escopo autorizado, preservando projeto, URL e acesso.
+7. Atualizar contexto e progresso com evidências e um próximo passo; não registrar consumo de recursos como domínio.
+
+## Delegação proporcional
+
+Conforme autorização registrada em AGENTS, o professor pode usar subagentes para curadoria de fontes, seleção de prática e revisão. Dar a todos o mesmo briefing de competências, conhecimentos demonstrados e limites. Paralelizar apenas trabalho independente; revisar o guia depois da integração. Entregas dos agentes são recomendações fundamentadas, não aulas completas nem arquivos extras obrigatórios. O principal responde pela coerência. Se houver edição paralela, atribuir arquivos exclusivos antes de começar.
 
 ## Conferência final
 
-- O problema inicial ativa conhecimento realmente anterior?
-- O novo conceito responde à limitação e volta ao problema original?
-- Os enunciados permitem decomposição própria sem spoilers?
-- A avaliação mede transferência, diagnóstico e verificação, não só memória?
-- Cada recurso necessário foi ensinado ou introduzido explicitamente?
-- Revisões reaproveitam conhecimentos sem repetir toda a aula?
-- A prática e a ajuda de IA seguem AGENTS?
-- Nenhuma resposta/gabarito foi incluído no catálogo de enunciados?
-- Capítulos 00–09, diário, notas e tentativas estão preservados?
-- Aulas futuras ainda inexistentes estão apenas planejadas, sem links quebrados ou conclusão inventada?
+- A EMENTA e seus pré-requisitos foram preservados?
+- O README mostra um percurso e um próximo passo, distinguindo essencial, consolidação e desafio?
+- Vídeo, livro e cada apoio têm funções claras, com referências e recortes verificados?
+- Páginas, timestamps, origem e adaptações são verificáveis, sem seleção baseada só em títulos?
+- Tudo cobrado está nas fontes selecionadas, no conhecimento anterior ou em apoio explícito?
+- O esforço total inclui subitens, LeetCode, labs e revisão, sem quotas artificiais?
+- As notas acrescentam personalização e conduzem o raciocínio, em vez de repetir teoria?
+- A prática permite autonomia, ajuda gradual e feedback durante o estudo?
+- O avanço usa evidências de competência, sem prova disfarçada ou nova burocracia?
+- As retomadas futuras pedem recuperação e transferência, sem antecipar todas as listas?
+- Arquivos novos são reconhecidos no leitor, com respostas/correções/gabaritos excluídos?
+- Capítulos 00–09, diário, notas históricas e tentativas estão preservados?
+- O registro distingue proposta, material criado, estudo relatado, prática avaliada e publicação confirmada?

@@ -1,6 +1,21 @@
 # Estado atual do currículo
 
-## Situação vigente — 2026-09-09
+## Situação vigente — 2026-09-10: metodologia de curadoria
+
+Gabriel aprovou atualizar a documentação de criação de aulas e capítulos com os ajustes discutidos. A sequência da EMENTA, os 16 blocos e os quatro capstones permanecem aprovados. O percurso preferencial é vídeo → leitura orientada → esclarecimentos necessários → prática selecionada → LeetCode/lab → feedback e revisão. AGENTS e prompts definem as regras atuais; as entradas abaixo são registros históricos, inclusive instruções antigas de aula/checkpoint, e não substituem esta situação vigente.
+
+**Próximo passo único:** reconstruir o capítulo 10 como guia de estudo em uma próxima tarefa. Nesta etapa foram atualizadas somente as diretrizes e documentos de orientação; materiais do 10 e leitor permanecem como estavam, sem publicação. Recortes completos do CLRS e seleção definitiva de exercícios ainda precisam ser conferidos ao preparar o piloto. Não encaminhar o aluno automaticamente ao roteiro antigo de quatro aulas e checkpoint.
+
+Gabriel relata ter assistido ao CS50 — Week 3: Algorithms e acompanhado a maior parte; a implementação de recursão em C causou dificuldade. Recursão não é competência demonstrada e permanece no capítulo 15. O piloto poderá partir da leitura selecionada, sem repetir o vídeo inteiro.
+
+Âncoras relatadas: Two Sum, Contains Duplicate, Best Time to Buy and Sell Stock, TLE, loops aninhados, diferença entre O(n²) e O(n), logging alterando runtime e melhoria de Stock de buscas repetidas para uma passagem. Conferir o código real antes de avaliar; relatos não equivalem a correção ou resultado externo verificado.
+
+A dificuldade com o material do 10 foi a dinâmica da escrita e da explicação, não necessariamente volume de texto ou atividades. Preferir fontes externas como exposição principal e notas próprias que respondam a lacunas concretas.
+
+Nenhum capítulo foi concluído nesta atualização. A pendência formal histórica do 09 permanece separada e não bloqueia a preparação do 10. Revisões, provas antigas, respostas e diário foram preservados.
+
+
+## Registro preservado — situação de 2026-09-09
 
 | Campo | Valor |
 |---|---|

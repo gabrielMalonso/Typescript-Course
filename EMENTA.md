@@ -18,9 +18,9 @@ O aluno relata ter terminado o capítulo 09. No repositório, a lista está apro
 
 Conhecido → limitação concreta → pergunta → conceito/ferramenta → aplicação → retorno ao problema original. A metodologia completa está em [AGENTS.md](AGENTS.md).
 
-Cada capítulo combina aula adequada à área, prática e checkpoint curto. Cada bloco termina com avaliação integradora; nos marcos de capstone, projeto e defesa podem constituir essa avaliação. Revisões antigas reaparecem dentro da atividade corrente, sem criar outra trilha. Avançar por competência demonstrada, não por quantidade de arquivos lidos.
+Cada capítulo terá um guia de estudo por curadoria: videoaula → leitura orientada → apoios necessários → prática selecionada → LeetCode/lab → feedback e revisão. Avançar por domínio demonstrado na prática, sem checkpoint, prova de capítulo ou avaliação formal de bloco obrigatórios. Os quatro capstones permanecem como experiências de integração. Revisões reaparecem na atividade corrente; avaliações formais são pontuais quando úteis. A seleção de fontes e a política de prática seguem AGENTS, sem alterar esta sequência ou suas competências.
 
-Os intervalos abaixo são o planejamento vigente, ajustável conforme desempenho. Aulas serão geradas sob demanda; não há promessa de duração fixa nem percentual global de formação. Pré-requisitos indicados destacam dependências essenciais e se somam à sequência anterior.
+Os intervalos abaixo são o planejamento vigente, ajustável conforme desempenho. Guias de estudo serão organizados sob demanda; não há promessa de duração fixa nem percentual global de formação. Pré-requisitos indicados destacam dependências essenciais e se somam à sequência anterior.
 
 | Ordem | Bloco | Capítulos | Transição principal |
 |---|---|---|---|
@@ -202,7 +202,7 @@ Conteúdo da fase inicial mantido abaixo. Capítulos 00–08 têm aprovação re
 | 18 | PROG — Enums e alternativas | Enums numéricos/string e comparação com union de literais; reconhecer reverse mapping, enums heterogêneos e const enum como detalhes de leitura, sem peso central. Escolher representação pela necessidade, não por obrigação sintática. |
 | 19 | PROG — Interfaces fundamentais | Contratos de objetos, opcionais, readonly, compatibilidade estrutural e interface versus type. Modelar dados de uma pequena coleção e justificar as fronteiras. |
 
-**Saída/avaliação:** remodelar um problema do bloco 1, representar ausência/estado válido e explicar o contrato. Essa modelagem prepara nós autorreferentes no bloco seguinte.
+**Evidências de saída:** remodelar um problema do bloco 1, representar ausência/estado válido e explicar o contrato. Essa modelagem prepara nós autorreferentes no bloco seguinte.
 
 ## Bloco 3 — Matemática discreta e estruturas de dados (20–28)
 
@@ -222,7 +222,7 @@ Conteúdo da fase inicial mantido abaixo. Capítulos 00–08 têm aprovação re
 
 **Progressão explícita:** Array → Stack/Queue → Node → Linked List → Tree → Graph. Heap reaproveita array e árvore; lógica/invariantes sustentam correção. LeetCode em listas, árvores, heaps e grafos; leitura gradual de implementações curtas.
 
-**Saída/avaliação:** modelar e percorrer uma estrutura, testar vazio/ciclo/desbalanceamento, justificar representação e custo. Generics serão uma refatoração posterior, não um pré-requisito oculto.
+**Evidências de saída:** modelar e percorrer uma estrutura, testar vazio/ciclo/desbalanceamento, justificar representação e custo. Generics serão uma refatoração posterior, não um pré-requisito oculto.
 
 ## Bloco 4 — Padrões de resolução de problemas (29–34)
 
@@ -237,7 +237,7 @@ Conteúdo da fase inicial mantido abaixo. Capítulos 00–08 têm aprovação re
 | 33 | DSA — Backtracking | Árvore de decisões, escolher/explorar/desfazer, poda e estado compartilhado; enumerar combinações sem perder soluções. Relacionar custo com tamanho da árvore de busca. |
 | 34 | DSA — Dynamic Programming introdutório | Recursão com subproblemas repetidos → memoização → tabulação; estado, transição, base e ordem; complexidade pelo número de estados e trabalho por estado. Explicar por que uma formulação funciona antes de otimizar memória. |
 
-**Saída/avaliação:** problemas misturados sem rótulo de padrão, incluindo leitura, debugging e análise de alternativas. LeetCode com registros de tentativas e revisões, sem metas artificiais de volume.
+**Evidências de saída:** problemas misturados sem rótulo de padrão, incluindo leitura, debugging e análise de alternativas. LeetCode com registros de tentativas e revisões, sem metas artificiais de volume.
 
 ## Bloco 5 — TypeScript intermediário e modelagem de software (35–41)
 
@@ -278,7 +278,7 @@ Conteúdo da fase inicial mantido abaixo. Capítulos 00–08 têm aprovação re
 | 47 | SYS/PROG — Runtime JavaScript | Call stack, event loop, callbacks, timers, I/O assíncrono, filas e tarefas/microtasks; distinguir modelo geral de detalhes do ambiente Node/browser. Prever ordem e observar bloqueio por cálculo síncrono. |
 | 48 | PROG/SYS — Promises e async/await | Estados e composição de Promises, await, propagação de erros, try/catch/finally mínimo, execução sequencial versus concorrente, limites e cancelamento introdutório. Interpretar microtasks/macrotasks conforme o ambiente. Implementar e testar I/O assíncrono com falhas. |
 
-**Promises e async/await são núcleo obrigatório.** Labs de PID, memória, permissões e ordem de execução substituem problemas artificiais de LeetCode. Avaliação: explicar evidências e diagnosticar uma falha de concorrência/runtime sem exigir detalhes internos não ensinados.
+**Promises e async/await são núcleo obrigatório.** Labs de PID, memória, permissões e ordem de execução substituem problemas artificiais de LeetCode. Evidência de domínio: explicar evidências e diagnosticar uma falha de concorrência/runtime sem exigir detalhes internos não ensinados.
 
 ## Bloco 8 — Redes (49–51)
 
@@ -290,7 +290,7 @@ Conteúdo da fase inicial mantido abaixo. Capítulos 00–08 têm aprovação re
 | 50 | NET — DNS, HTTP e HTTPS | Resolução de nomes, request/response, métodos, headers, status, corpo, HTTPS/TLS e certificados conceituais; confidencialidade em trânsito versus autenticação da aplicação. Inspecionar troca real com ferramentas simples. |
 | 51 | NET/PROG — APIs sobre HTTP | Implementar servidor e cliente mínimos, JSON, contratos, erros, timeout e autenticação/autorização introdutórias; APIs como aplicação dos fundamentos. Laboratório de sucesso, requisição inválida e servidor indisponível. |
 
-**Saída/avaliação:** rastrear uma requisição do nome ao processo, interpretar headers/status e explicar falhas. Framework é uma escolha de implementação posterior, não substituto de HTTP.
+**Evidências de saída:** rastrear uma requisição do nome ao processo, interpretar headers/status e explicar falhas. Framework é uma escolha de implementação posterior, não substituto de HTTP.
 
 ## Bloco 9 — Bancos de dados e dados (52–55)
 
@@ -316,7 +316,7 @@ Conteúdo da fase inicial mantido abaixo. Capítulos 00–08 têm aprovação re
 | 58 | SWE — Ecossistema de projeto | npm, package.json, scripts, dependências diretas/transitivas, lockfile, versionamento semântico, instalação reproduzível, lint e formatting. Diagnosticar ambiente/configuração sem atualização indiscriminada. |
 | 59 | SWE — Investigar, medir e verificar | Debugger, breakpoints, stepping, stack traces, logging, profiling, testes automatizados e leitura de documentação. Reproduzir bug, formular hipótese, medir e documentar solução com evidência. |
 
-**Saída/avaliação:** receber um repositório pequeno, executá-lo, investigar um bug, criar teste e preparar mudança revisável com Git. Leitura e modificação de código existente passam a ser recorrentes.
+**Evidências de saída:** receber um repositório pequeno, executá-lo, investigar um bug, criar teste e preparar mudança revisável com Git. Leitura e modificação de código existente passam a ser recorrentes.
 
 ## Bloco 11 — TypeScript profissional (60–65)
 
@@ -333,7 +333,7 @@ Conteúdo da fase inicial mantido abaixo. Capítulos 00–08 têm aprovação re
 
 **Peso pedagógico:** configuração, contratos e erros têm prática robusta; detalhes de declarations, tipos avançados e decorators pedem leitura e aplicação pontual, sem o mesmo peso de algoritmos, sistemas e dados. Tipagem de DOM/eventos/null, prevista no curso antigo, pode aparecer como laboratório contextual após 60, se o projeto usar navegador; não abre uma trilha obrigatória de frontend.
 
-**Saída/avaliação:** corrigir uma fronteira não validada, modelar resultados e explicar um tipo de biblioteca com documentação.
+**Evidências de saída:** corrigir uma fronteira não validada, modelar resultados e explicar um tipo de biblioteca com documentação.
 
 ## Bloco 12 — Engenharia de software (66–70)
 
@@ -360,7 +360,7 @@ Conteúdo da fase inicial mantido abaixo. Capítulos 00–08 têm aprovação re
 | 73 | MATH/PROG — Linguagens formais e autômatos | Alfabetos, palavras, linguagens, expressões regulares e autômatos finitos; noção de pilha para aninhamento. Relacionar reconhecimento de formato a estruturas estudadas. |
 | 74 | MATH — Computabilidade e complexidade | Máquina de Turing conceitual, decidibilidade, problema da parada e limites; problemas versus algoritmos, classes de complexidade, P e NP, verificação e reduções introdutórias. Não confundir NP com “não polinomial” nem presumir resposta para P versus NP. |
 
-**Saída/avaliação:** explicar uma pequena cadeia fonte → AST → execução e distinguir dificuldade prática, crescimento e impossibilidade computacional. Profundidade de big picture, com exemplos concretos.
+**Evidências de saída:** explicar uma pequena cadeia fonte → AST → execução e distinguir dificuldade prática, crescimento e impossibilidade computacional. Profundidade de big picture, com exemplos concretos.
 
 ## Bloco 14 — Sistemas distribuídos e design de sistemas (75–78)
 
@@ -385,11 +385,11 @@ Conteúdo da fase inicial mantido abaixo. Capítulos 00–08 têm aprovação re
 | 80 | MATH — Estatística básica | Amostra/população, média, mediana, dispersão, percentis, viés e incerteza; correlação versus causalidade. Interpretar benchmarks e latências sem concluir a partir de uma única medição. |
 | 81 | MATH — Grafos, recorrências e análise assintótica | Graus, caminhos, conectividade e propriedades de árvores/grafos; recorrências de algoritmos conhecidos, somatórios, logaritmos e crescimento; aprofundar O/Ω/Θ e análise amortizada introdutória. Revisitar merge sort, DP e fila com compactação. |
 
-**Saída/avaliação:** justificar uma estimativa e interpretar um experimento, declarando limites. Sustentar futuros estudos de ML/IA sem transformar a formação em graduação de matemática.
+**Evidências de saída:** justificar uma estimativa e interpretar um experimento, declarando limites. Sustentar futuros estudos de ML/IA sem transformar a formação em graduação de matemática.
 
 ## Bloco 16 — Integração final (82)
 
-**Pré-requisitos:** competências essenciais dos blocos anteriores, verificadas nas avaliações e revisões. **Ponte:** reunir as decisões antes estudadas separadamente em uma entrega independente.
+**Pré-requisitos:** competências essenciais dos blocos anteriores, demonstradas na prática, nos projetos e nas revisões. **Ponte:** reunir as decisões antes estudadas separadamente em uma entrega independente.
 
 ### Capítulo 82 — Capstone final: construir, explicar e evoluir um sistema
 
@@ -406,7 +406,7 @@ Entrega: briefing e critérios de aceitação, implementação reproduzível, te
 | C03 — Software/sistemas | Após 70 | Serviço pequeno com API, persistência, I/O assíncrono, tratamento de erros, segurança, testes e observabilidade; execução reproduzível e mudança de requisito. |
 | C04 — Integração final | Capítulo 82 | Sistema integrado, decisões arquiteturais, investigação de falhas, evolução e defesa independente. |
 
-Temas são propostas de briefing, não aulas/projetos já criados. Ao chegar ao marco, adaptar domínio e tamanho ao desempenho/interesse. Reduzir duplicação entre capstone e avaliação de bloco. Os projetos antigos Calculadora, Contatos, Biblioteca e Financeiro não têm entregas registradas; sua substituição no planejamento não representa conclusão retroativa.
+Temas são propostas de briefing, não aulas/projetos já criados. Ao chegar ao marco, adaptar domínio e tamanho ao desempenho/interesse. Não acrescentar automaticamente uma prova de bloco ao capstone. Os projetos antigos Calculadora, Contatos, Biblioteca e Financeiro não têm entregas registradas; sua substituição no planejamento não representa conclusão retroativa.
 
 ## Competências transversais e introduções antecipadas
 
@@ -443,6 +443,6 @@ Narrowing mínimo aparece no 17 para permitir estruturas com null; refinamento c
 
 O professor pode antecipar uma introdução curta necessária, aprofundar uma sobreposição ou transformar teoria do MBA em experimento, registrando a decisão sem abrir matérias simultâneas. Não eliminar fundamentos para acompanhar modismos nem insistir em repetir superficialmente conteúdo já demonstrado.
 
-Aulas detalhadas, seleção de problemas/links, ferramentas dos labs, rubricas específicas e temas definitivos dos capstones serão definidos sob demanda. Na reformulação não foram criadas pastas futuras. **Atualização de 2026-09-09:** o [capítulo 10 — Complexidade e Big O](10-complexidade-e-big-o/README.md) foi criado sob demanda e está disponível para estudo; os demais materiais futuros continuam sob demanda.
+Guias, recortes de referências, seleção de problemas, apoios personalizados, ferramentas dos labs e temas definitivos dos capstones serão definidos sob demanda. Na reformulação não foram criadas pastas futuras. **Atualização de 2026-09-09:** o [capítulo 10 — Complexidade e Big O](10-complexidade-e-big-o/README.md) foi criado sob demanda e está disponível para estudo; os demais materiais futuros continuam sob demanda.
 
-*Última atualização: 2026-09-09.*
+*Atualização metodológica: 2026-09-10; sequência curricular aprovada preservada.*
