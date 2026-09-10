@@ -4,6 +4,9 @@ Você já encontrou uma solução correta que ultrapassou o limite de tempo e me
 
 **Comece aqui:** como você já assistiu ao CS50 Week 3, abra o **CLRS, 3ª edição, seção 1.2**. Leia com a pergunta “quando melhorar o algoritmo importa mais que melhorar a máquina?” e faça a atividade 1 da [prática selecionada](pratica/atividades.md). Não precisa rever o vídeo inteiro nem terminar todas as leituras antes de praticar.
 
+
+[CLRS · Seção 1.2 · páginas 11–14](leituras/clrs-1.2.pdf)
+
 ## De onde você parte
 
 **Área:** DSA · **Bloco:** 1 — Fundamentos algorítmicos · **Pré-requisitos:** loops, arrays, funções, callbacks e métodos de arrays dos capítulos 04–09.
@@ -43,6 +46,18 @@ As páginas abaixo são **impressas na edição inglesa**, conferidas em 10/09/2
 | B | **2.2 — Analyzing algorithms**: abertura nas pp. 23–25; retome **Worst-case and average-case analysis**, pp. 27–28, e **Order of growth**, pp. 28–29 | Identifique tamanho da entrada, operação contada e hipótese sobre os casos | Detalhes de bits/shift e a tabela/derivações linha a linha de insertion sort nas pp. 26–27 |
 | C | **3.1 — Asymptotic notation**, pp. 43–49, até antes de **Asymptotic notation in equations and inequalities** | Interprete a figura 3.1 e o significado de Θ, O e Ω. Distinga limite superior de ordem justa | Reproduzir provas algébricas; equações assintóticas, little-o/little-omega e comparações formais posteriores |
 | D | **3.2 — Standard notations and common functions**: **Polynomials** e início de **Exponentials**, p. 55, até antes da introdução de `e`; **Logarithms**, pp. 56–57, até o primeiro parágrafo da p. 57 sobre mudança de base | Compare crescimento linear, quadrático e exponencial; interprete log como reduções repetidas. Relacione n log n a repetir esse trabalho para n itens | Séries, identidades extensas, limites formais, fatorial, logaritmos iterados e Fibonacci |
+
+### Abrir as leituras no site
+
+Os recortes mantêm as páginas originais completas. Siga os limites da tabela acima: partes vizinhas na mesma página não entram automaticamente no estudo.
+
+[Etapa B · Modelo de análise · páginas 23–25](leituras/clrs-2.2-01-modelo.pdf)
+
+[Etapa B · Casos e crescimento · páginas 27–29](leituras/clrs-2.2-02-casos.pdf)
+
+[Etapa C · Notação assintótica · páginas 43–49](leituras/clrs-3.1.pdf)
+
+[Etapa D · Funções de crescimento · páginas 55–57](leituras/clrs-3.2.pdf)
 
 Na etapa B, a ordenação é o exemplo usado pelo autor, não uma implementação exigida de você. Se pseudocódigo ou índices atrapalharem, consulte o apoio 1 das notas e volte ao recorte. Se uma passagem continuar obscura, traga a seção e a dúvida; não precisa destravar sozinho um tema futuro.
 

@@ -1,10 +1,12 @@
-import { useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { getDocument, getNeighbors, resolveDocumentSlug } from '../content/catalog'
-import { CopyMarkdownButton } from '../components/CopyMarkdownButton'
+import { ReaderToolbar } from '../components/ReaderToolbar'
 import { MarkdownView } from '../components/MarkdownView'
 import { Sidebar } from '../components/Sidebar'
 import { ThemeToggle } from '../components/ThemeToggle'
+
+const PdfReader = lazy(() => import('../components/PdfReader'))
 
 export function Reader() {
   const params = useParams()
@@ -42,6 +44,8 @@ export function Reader() {
     )
   }
 
+  if (doc.kind === 'pdf') return <Suspense fallback={<p role="status">Abrindo leitura…</p>}><PdfReader key={doc.slug} doc={doc} /></Suspense>
+
   return (
     <div className="reader-page">
       <Sidebar
@@ -50,29 +54,7 @@ export function Reader() {
         activeSlug={doc.slug}
       />
 
-      <header className="reader-toolbar">
-        <button
-          type="button"
-          className="btn ghost toolbar-btn"
-          onClick={() => setSidebarOpen(true)}
-          aria-label="Abrir índice"
-          aria-expanded={sidebarOpen}
-        >
-          ☰ Índice
-        </button>
-        <div className="reader-crumb">
-          <Link to="/">Início</Link>
-          <span>/</span>
-          <span>{doc.chapterId}</span>
-          <span>/</span>
-          <span>{doc.fileName}</span>
-        </div>
-        <div className="toolbar-spacer" />
-        <div className="toolbar-actions">
-          <CopyMarkdownButton content={doc.content} />
-          <ThemeToggle />
-        </div>
-      </header>
+      <ReaderToolbar doc={doc} sidebarOpen={sidebarOpen} onOpenSidebar={() => setSidebarOpen(true)} showLocation />
 
       <div className="reader-stage">
         <main className="reader-main">

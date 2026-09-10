@@ -1003,3 +1003,23 @@ Celular na mesma rede: URL Network do Vite.
 ---
 
 *Última atualização: 2026-09-02*
+
+
+## 2026-09-10 — Leitura noturna do CLRS no piloto
+
+Gabriel prefere consultar o livro original, mas considera a tela branca desconfortável no tablet e no computador. Autorizou leitor PDF noturno e publicação privada. O piloto usa somente CLRS 3ª edição, seção 1.2: páginas impressas 11–14, posições 32–35 do PDF enviado. O arquivo completo permanece fora do repositório; recorte e metadados ficam em `10-complexidade-e-big-o/leituras/`. O guia abre a leitura, com zoom, páginas e retorno ao percurso. Não há evidência nova de estudo ou domínio. Seleção de texto no modo noturno e novos recortes ficam para depois da experiência de uso.
+
+
+### Ajuste de interface solicitado em 2026-09-10
+
+Gabriel gostou da função de leitura, mas considerou a página carregada. Pediu somente uma barra com índice e botão de modo noturno, deixando o restante para o PDF. Interface ajustada para rolagem contínua das quatro páginas, sem cabeçalho editorial, metadados, rodapé ou barra de paginação/zoom. Modo noturno agora pode ser ativado/desativado; zoom fica com o navegador. Preferência: reduzir elementos em volta do material de leitura.
+
+
+### Zoom do PDF — 2026-09-10
+
+Gabriel relatou que a pinça no tablet ampliava o site inteiro. Ajustado para zoom interno do PDF, mantendo a barra fixa e a rolagem com um dedo. Preferência é comportamento de leitor PDF, preservando a interface mínima. Validação física no tablet ainda depende da experiência de Gabriel.
+
+
+### Protótipo de leitura aprovado — 2026-09-10
+
+Gabriel aprovou a experiência do leitor PDF com pinça e pediu uniformizar a barra com as demais páginas e incluir as leituras restantes do capítulo. A aprovação é da interface, não evidência de domínio acadêmico. `ReaderToolbar` e `ThemeToggle` agora são compartilhados; tema segue a preferência persistida do curso. Acrescentados os recortes já previstos no guia: 23–25, 27–29, 43–49 e 55–57. Com 11–14, são vinte páginas em cinco PDFs. Páginas completas preservadas; trechos internos dispensáveis continuam delimitados pelo guia. Nenhum conteúdo futuro, solução ou conclusão criado.

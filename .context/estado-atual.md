@@ -6,7 +6,7 @@ Gabriel autorizou remover o material didático anterior do 10 e recriá-lo pela 
 
 **Próximo passo único:** estudar CLRS 3ª edição, seção 1.2 (pp. 11–14 na edição inglesa), e fazer a atividade 1 do guia do 10. CS50 Week 3 já assistido por relato; não precisa repetir a aula inteira. Os recortes completos do livro e quatro exercícios foram conferidos; as páginas se referem à edição inglesa, não à posição de PDF.
 
-Prática: 8 essenciais, 2 de consolidação e 1 desafio opcional, incluindo reanálise de Two Sum, Contains Duplicate e Stock. Sem prova/checkpoint obrigatório, sem domínio atribuído e sem recursão exigida. O leitor local reconhece o novo formato e encaminha os caminhos substituídos ao guia. Nenhuma nova publicação nesta tarefa; site anterior permanece como registro separado.
+Prática: 8 essenciais, 2 de consolidação e 1 desafio opcional, incluindo reanálise de Two Sum, Contains Duplicate e Stock. Sem prova/checkpoint obrigatório, sem domínio atribuído e sem recursão exigida. O leitor local reconhece o novo formato e encaminha os caminhos substituídos ao guia. Guia e leitura PDF noturna publicados em 10/09/2026 na versão 32, com acesso privado preservado; nenhuma conclusão de estudo atribuída.
 
 Os registros abaixo descrevem as etapas anteriores e não substituem este próximo passo. Fechamento formal do 09 permanece uma pendência histórica separada.
 
@@ -274,3 +274,17 @@ O conteúdo abaixo é um retrato integral do estado anterior. Próximos passos, 
 *Última atualização: 2026-09-06*
 
 </details>
+
+
+## 2026-09-10 — Publicação do guia e leitura PDF noturna
+
+Publicação privada confirmada (`succeeded`), versão 32. URL: https://leitor-typescript-gabriel.gabrielm-alonso.chatgpt.site. Próximo passo permanece CLRS 1.2 e atividade 1, agora com leitura noturna das páginas 11–14 acessível pelo guia. Metadados distinguem páginas impressas de posições 32–35 no PDF. Livro completo e trabalhos do aluno preservados. Detalhes técnicos em `auditoria-leitor-pdf.md`.
+
+
+Atualização posterior em 10/09/2026: interface de leitura simplificada publicada na versão 33, com confirmação `succeeded` e acesso privado preservado. Somente índice e alternância do modo noturno na barra; páginas em rolagem contínua.
+
+
+Zoom interno do PDF publicado em 10/09/2026 na versão 34, com estado `succeeded`: pinça amplia o documento e mantém a barra fixa. Validação em tablet físico ainda não realizada.
+
+
+Atualização em 10/09/2026, versão 35 publicada (`succeeded`): barra e tema compartilhados entre Markdown/PDF; cinco recortes CLRS do capítulo 10 disponíveis (20 páginas). Protótipo aprovado por Gabriel; estudo e domínio não concluídos.

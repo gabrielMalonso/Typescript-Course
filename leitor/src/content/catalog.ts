@@ -1,4 +1,4 @@
-import type { CatalogDocument, TreeNode } from './types'
+import type { CatalogDocument, TreeNode, ReadingMetadata } from './types'
 
 const rawModules = import.meta.glob(
   [
@@ -40,7 +40,7 @@ const EXCLUDED_NAME_PATTERNS = [
 
 // As seções novas convivem com os caminhos históricos, sem mover materiais.
 const FOLDER_ORDER = [
-  'aula', 'pratica', 'checkpoint', 'revisao', 'recursos',
+  'leituras', 'aula', 'pratica', 'checkpoint', 'revisao', 'recursos',
   'exercicios', 'avaliacao', 'extras',
 ]
 
@@ -88,6 +88,12 @@ function toCourseRelative(modulePath: string): string | null {
   return match ? match[1] : null
 }
 
+function isReadingMetadata(value: unknown): value is ReadingMetadata {
+  if (!value || typeof value !== 'object') return false
+  return ['title', 'book', 'edition', 'section'].every(key => key in value && typeof Reflect.get(value, key) === 'string')
+    && ['printedStart', 'sourcePdfStart', 'pageCount'].every(key => key in value && Number.isInteger(Reflect.get(value, key)) && Reflect.get(value, key) > 0)
+}
+
 function buildDocuments(): CatalogDocument[] {
   const docs: CatalogDocument[] = []
 
@@ -111,10 +117,22 @@ function buildDocuments(): CatalogDocument[] {
       section,
       fileName,
       title: extractTitle(content, fileName),
+      kind: 'markdown',
       content,
     })
   }
 
+  const pdfs = import.meta.glob<string>('@course/[0-9][0-9]-*/leituras/*.pdf', { query: '?url', import: 'default', eager: true })
+  const metadata = import.meta.glob<unknown>('@course/[0-9][0-9]-*/leituras/*.json', { import: 'default', eager: true })
+  for (const [path, url] of Object.entries(pdfs)) {
+    const relative = toCourseRelative(path)
+    const reading = metadata[path.replace(/\.pdf$/, '.json')]
+    if (!relative || !isReadingMetadata(reading)) throw new Error(`Metadados de leitura inválidos: ${path}`)
+    const chapterId = relative.split('/')[0]
+    docs.push({ kind: 'pdf', slug: relative.replace(/\.pdf$/, ''), chapterId,
+      chapterTitle: humanizeSlug(chapterId), section: 'leituras',
+      fileName: relative.split('/').at(-1) ?? reading.title, title: reading.title, url, reading })
+  }
   return docs.sort((a, b) => a.slug.localeCompare(b.slug, 'pt-BR', { numeric: true }))
 }
 

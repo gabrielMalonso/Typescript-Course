@@ -117,7 +117,7 @@ O README deve permitir identificar rapidamente:
 
 Importância, conexões, vocabulário e aplicação profissional entram onde ajudarem, sem exigir uma seção para cada item. Referências e revisão podem ficar no próprio README. Não criar resumo, aula, checkpoint ou mini-projeto por padrão. Só criar links para arquivos existentes; destinos futuros ficam em texto.
 
-O aluno cria soluções em `pratica/solucoes/`; correções ficam em `pratica/correcoes.md` após entrega. Não criar respostas, resultados nem diretórios vazios antecipadamente. Preservar tentativas e os caminhos dos trabalhos existentes. Novos nomes de arquivo precisam ser integrados ao catálogo do leitor quando o capítulo for criado; a árvore acima não implica suporte automático.
+O aluno cria soluções em `pratica/solucoes/`; correções ficam em `pratica/correcoes.md` após entrega. Não criar respostas, resultados nem diretórios vazios antecipadamente. Preservar tentativas e os caminhos dos trabalhos existentes. Novos nomes de arquivo precisam ser integrados ao catálogo do leitor quando o capítulo for criado; a árvore acima não implica suporte automático. Para leituras PDF autorizadas, usar `leituras/nome.pdf` com `leituras/nome.json`, conforme o contrato em `leitor/README.md`. O README liga ao recorte; livro/edição/seção e páginas impressas e posições no PDF ficam identificados. Preservar o livro completo fora do repositório e verificar o recorte antes de publicar.
 
 ## Metodologia por área
 

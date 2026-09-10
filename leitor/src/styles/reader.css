@@ -952,3 +952,7 @@ html[data-theme='dark'] .syntax-bracket-4 {
     display: none;
   }
 }
+
+.markdown-body .reading-card { display:flex; flex-direction:column; gap:6px; padding:18px 20px; margin:20px 0; border:1px solid var(--border); border-radius:10px; background:var(--bg-elevated); text-decoration:none; }
+.reading-card span { font-family:var(--font-ui); font-size:.85rem; color:var(--text-soft); }
+.markdown-body .reading-card:hover { border-color:var(--accent); }

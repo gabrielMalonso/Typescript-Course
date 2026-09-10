@@ -1,0 +1,11 @@
+.pdf-reader { background:var(--bg); color:var(--text); height:100dvh; display:flex; flex-direction:column; overflow:hidden; font-family:var(--font-ui); }
+.pdf-reader > .reader-toolbar { flex-shrink:0; }
+.pdf-reader a { color:var(--accent); }
+.pdf-frame { width:100%; flex:1; min-height:0; overflow:auto; overscroll-behavior:contain; touch-action:pan-x pan-y; }
+.pdf-document { margin:0 auto; }
+.pdf-page { width:100%; margin:0 auto; background:#fff; }
+.pdf-page + .pdf-page { margin-top:8px; }
+.is-night .pdf-page { background:#000; }
+.pdf-status { margin:0; padding:16px; text-align:center; font-size:.85rem; color:var(--text-soft); }
+.pdf-surface canvas { display:block; max-width:100%; }
+.is-night .pdf-surface canvas { filter:invert(1) brightness(.9); }

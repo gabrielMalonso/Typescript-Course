@@ -101,8 +101,12 @@ export function MarkdownView({ content, slug }: MarkdownViewProps) {
             // Resolve links escritos para os arquivos Markdown na rota do leitor.
             if (href && !/^(?:[a-z][a-z\d+.-]*:|\/|#)/i.test(href)) {
               const resolved = new URL(href, `https://course.local/${slug}.md`)
-              const target = decodeURIComponent(resolved.pathname.slice(1)).replace(/\.md$/i, '')
-              if (getDocument(target)) {
+              const target = decodeURIComponent(resolved.pathname.slice(1)).replace(/\.(?:md|pdf)$/i, '')
+              const linked = getDocument(target)
+              if (linked?.kind === 'pdf') {
+                return <Link className="reading-card" to={`/ler/${target}`}><strong>{children}</strong><span>Modo noturno · Abrir leitura →</span></Link>
+              }
+              if (linked) {
                 return <Link to={`/ler/${target}${resolved.hash}`}>{children}</Link>
               }
             }

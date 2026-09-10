@@ -22,7 +22,16 @@ export type CatalogDocument = {
   section: string
   fileName: string
   title: string
-  content: string
+} & ({ kind: 'markdown'; content: string } | { kind: 'pdf'; url: string; reading: ReadingMetadata })
+
+export type ReadingMetadata = {
+  title: string
+  book: string
+  edition: string
+  section: string
+  printedStart: number
+  sourcePdfStart: number
+  pageCount: number
 }
 
 export type ChapterProgressStatus = 'concluido' | 'em_andamento' | 'pendente'
