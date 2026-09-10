@@ -30,7 +30,7 @@ Abra o endereço local (e, na mesma rede, o IP mostrado pelo Vite no celular).
 Novos capítulos em pastas `NN-nome/` entram no índice via `import.meta.glob`, conforme as seções permitidas em `src/content/catalog.ts`:
 
 - Histórico: README, aula, extras, listas de exercícios e enunciado da prova.
-- Guias por curadoria: README, notas.md opcional e pratica/atividades.md. O capítulo 10 usa esses três documentos e cinco recortes PDF.
+- Guias por curadoria: README, notas.md opcional e pratica/atividades.md. O capítulo 10 usa esses três documentos e seis recortes PDF.
 - Formatos anteriores continuam reconhecidos: aula, prática numerada 01–03, debugging/LeetCode/lab, perguntas do checkpoint, resumo/erros comuns/revisitar e referências. Isso não torna essas etapas obrigatórias.
 
 Respostas, soluções, correções, resultados e gabaritos ficam fora do catálogo. Variações de nomes/seções precisam ser conferidas na geração de cada capítulo. Avaliações de bloco em `avaliacoes/` e capstones em `projetos/` deverão ser integrados quando seus primeiros enunciados forem criados; essas pastas ainda não têm materiais novos.
@@ -62,4 +62,7 @@ Atualização posterior em 10/09/2026: interface de leitura simplificada publica
 Zoom interno do PDF publicado em 10/09/2026 na versão 34, com estado `succeeded`: pinça amplia o documento e mantém a barra fixa. Validação em tablet físico ainda não realizada.
 
 
-O leitor Markdown e o PDF compartilham `ReaderToolbar` e `ThemeToggle`. O PDF usa o tema persistido por `ThemeProvider`, mantendo a barra mínima sem cabeçalho editorial. Leituras do capítulo 10: 1.2 (11–14), 2.2 em dois recortes (23–25 e 27–29), 3.1 (43–49) e 3.2 (55–57). Total: 20 páginas originais; os limites pedagógicos dentro das páginas continuam no guia.
+O leitor Markdown e o PDF compartilham `ReaderToolbar` e `ThemeToggle`. O PDF usa o tema persistido por `ThemeProvider`, mantendo a barra mínima sem cabeçalho editorial. Leituras do capítulo 10: 1.2 (11–14), introdução de 2.1 (16–18), 2.2 em dois recortes (23–25 e 27–29), 3.1 (43–49) e 3.2 (55–57). Total: 23 páginas originais; os limites pedagógicos dentro das páginas continuam no guia.
+
+
+Atualização em 10/09/2026, versão 35 publicada (`succeeded`): barra e tema compartilhados entre Markdown/PDF; cinco recortes CLRS do capítulo 10 disponíveis (20 páginas). Protótipo aprovado por Gabriel; estudo e domínio não concluídos.
