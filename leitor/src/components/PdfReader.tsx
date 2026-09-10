@@ -3,6 +3,7 @@ import { getDocument, GlobalWorkerOptions, type PDFDocumentProxy } from 'pdfjs-d
 import workerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url'
 import type { CatalogDocument } from '../content/types'
 import { Sidebar } from './Sidebar'
+import { usePdfZoom } from './usePdfZoom'
 import '../styles/pdf-reader.css'
 
 GlobalWorkerOptions.workerSrc = workerUrl
@@ -27,12 +28,12 @@ function PdfPage({ pdf, page, width, doc }: { pdf: PDFDocumentProxy; page: numbe
     pdf.getPage(page).then(async sheet => {
       if (!active) return
       const base = sheet.getViewport({ scale: 1 })
-      const viewport = sheet.getViewport({ scale: Math.min(width, 1000) / base.width })
-      const density = Math.min(window.devicePixelRatio || 1, 2)
+      const viewport = sheet.getViewport({ scale: width / base.width })
+      const density = Math.min(window.devicePixelRatio || 1, 2, 2400 / viewport.width)
       canvas.width = Math.ceil(viewport.width * density)
       canvas.height = Math.ceil(viewport.height * density)
-      canvas.style.width = `${viewport.width}px`
-      canvas.style.height = `${viewport.height}px`
+      canvas.style.width = '100%'
+      canvas.style.height = 'auto'
       render = sheet.render({ canvas, viewport, transform: [density, 0, 0, density, 0, 0] })
       await render.promise
       if (active) { surface.current?.replaceChildren(canvas); setBusy(false) }
@@ -41,9 +42,9 @@ function PdfPage({ pdf, page, width, doc }: { pdf: PDFDocumentProxy; page: numbe
   }, [pdf, page, width, doc])
 
   return <section className="pdf-page" aria-label={`Página ${doc.reading.printedStart + page - 1}`} aria-busy={busy}>
-    {busy && <p className="pdf-status" role="status">Preparando página…</p>}
+    {busy && !surface.current?.firstChild && <p className="pdf-status" role="status">Preparando página…</p>}
     {error && <p className="pdf-status" role="alert">Não foi possível exibir esta página. <a href={`${doc.url}#page=${page}`} target="_blank" rel="noreferrer">Abrir PDF original</a></p>}
-    <div className="pdf-surface" ref={surface} style={{ visibility: busy || error ? 'hidden' : 'visible' }} />
+    <div className="pdf-surface" ref={surface} style={{ visibility: error ? 'hidden' : 'visible' }} />
   </section>
 }
 
@@ -54,6 +55,8 @@ export default function PdfReader({ doc }: { doc: PdfDocument }) {
   const [night, setNight] = useState(true)
   const [error, setError] = useState('')
   const frame = useRef<HTMLElement>(null)
+  const document = useRef<HTMLDivElement>(null)
+  const renderWidth = usePdfZoom(frame, document, width)
 
   useEffect(() => {
     const task = getDocument({ url: doc.url })
@@ -82,9 +85,11 @@ export default function PdfReader({ doc }: { doc: PdfDocument }) {
       </button>
     </header>
     <main className="pdf-frame" ref={frame} aria-label={`${doc.reading.book} — ${doc.reading.section}`}>
+      <div className="pdf-document" ref={document}>
       {error ? <p className="pdf-status" role="alert">{error} <a href={doc.url} target="_blank" rel="noreferrer">Abrir PDF original</a></p>
-        : pdf ? Array.from({ length: pdf.numPages }, (_, index) => <PdfPage key={index + 1} pdf={pdf} page={index + 1} width={width} doc={doc} />)
+        : pdf ? Array.from({ length: pdf.numPages }, (_, index) => <PdfPage key={index + 1} pdf={pdf} page={index + 1} width={renderWidth} doc={doc} />)
         : <p className="pdf-status" role="status">Abrindo leitura…</p>}
+      </div>
     </main>
   </div>
 }

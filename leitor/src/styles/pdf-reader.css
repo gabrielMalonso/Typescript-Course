@@ -1,10 +1,11 @@
-.pdf-reader { --bg:#f2f3f5; --bg-elevated:#fff; --text:#24292f; --text-soft:#57606a; --accent:#0969da; --border:#d0d7de; background:var(--bg); color:var(--text); min-height:100vh; font-family:var(--font-ui); }
+.pdf-reader { --bg:#f2f3f5; --bg-elevated:#fff; --text:#24292f; --text-soft:#57606a; --accent:#0969da; --border:#d0d7de; background:var(--bg); color:var(--text); height:100dvh; display:flex; flex-direction:column; overflow:hidden; font-family:var(--font-ui); }
 .pdf-reader.is-night { --bg:#0d1117; --bg-elevated:#161b22; --text:#e6edf3; --text-soft:#8b949e; --accent:#79b8ff; --border:#30363d; }
 .pdf-reader a { color:var(--accent); }
-.pdf-toolbar { justify-content:space-between; background:var(--bg-elevated); backdrop-filter:none; }
+.pdf-toolbar { flex-shrink:0; justify-content:space-between; background:var(--bg-elevated); backdrop-filter:none; }
 .pdf-toolbar [aria-pressed="true"] { color:var(--accent); }
-.pdf-frame { width:100%; }
-.pdf-page { max-width:1000px; margin:0 auto; background:#fff; }
+.pdf-frame { width:100%; flex:1; min-height:0; overflow:auto; overscroll-behavior:contain; touch-action:pan-x pan-y; }
+.pdf-document { margin:0 auto; }
+.pdf-page { width:100%; margin:0 auto; background:#fff; }
 .pdf-page + .pdf-page { margin-top:8px; }
 .is-night .pdf-page { background:#000; }
 .pdf-status { margin:0; padding:16px; text-align:center; font-size:.85rem; color:var(--text-soft); }

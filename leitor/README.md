@@ -45,12 +45,15 @@ Atualize `src/content/progress.json` com base nas evidências de `PROGRESSO.md`:
 
 ## Verificação
 
-Após mudanças no leitor, executar `npm run typecheck`, `npm run lint` e `npm run build`. Conferir home e rota pertinente, mantendo as rotas existentes. Publicação requer escopo autorizado e deve reutilizar `leitor/.openai/hosting.json`, URL e acesso existentes.
+Gestos de zoom: `node tests/pdf-zoom.test.mjs`. Após mudanças no leitor, executar `npm run typecheck`, `npm run lint` e `npm run build`. Conferir home e rota pertinente, mantendo as rotas existentes. Publicação requer escopo autorizado e deve reutilizar `leitor/.openai/hosting.json`, URL e acesso existentes.
 
 ## Leituras PDF
 
 Colocar somente o recorte selecionado em `NN-capitulo/leituras/nome.pdf`, acompanhado de `nome.json`. O catálogo exige `title`, `book`, `edition`, `section`, `printedStart`, `sourcePdfStart` e `pageCount`; as páginas são numeradas a partir de 1. Cada recorte é contínuo. Para intervalos distintos, criar recortes separados.
 
-O link relativo `[Título · páginas](leituras/nome.pdf)` no README abre um cartão de leitura. PDF e metadados entram automaticamente no índice. O PDF.js é carregado somente ao abrir uma leitura, usa worker local e apresenta as páginas em rolagem contínua. A barra superior contém somente índice e alternância do modo noturno; o zoom usa o gesto ou recurso nativo do navegador. O PDF original permanece no arquivo do capítulo e é oferecido como alternativa em caso de erro; a tela do piloto utiliza canvas, sem camada de seleção de texto.
+O link relativo `[Título · páginas](leituras/nome.pdf)` no README abre um cartão de leitura. PDF e metadados entram automaticamente no índice. O PDF.js é carregado somente ao abrir uma leitura, usa worker local e apresenta as páginas em rolagem contínua. A barra superior contém somente índice e alternância do modo noturno; o gesto de pinça amplia somente o PDF (1×–4×), com rolagem interna e barra fixa. Pinça de trackpad/Ctrl+roda também atua sobre o PDF. O PDF original permanece no arquivo do capítulo e é oferecido como alternativa em caso de erro; a tela do piloto utiliza canvas, sem camada de seleção de texto.
 
 Incluir apenas os recortes autorizados para o acesso do site; o livro completo permanece fora do repositório. No piloto, páginas impressas 11–14 correspondem às posições 32–35 do PDF enviado. O recorte inclui os limites completos das páginas, e o guia delimita a seção estudada.
+
+
+Atualização posterior em 10/09/2026: interface de leitura simplificada publicada na versão 33, com confirmação `succeeded` e acesso privado preservado. Somente índice e alternância do modo noturno na barra; páginas em rolagem contínua.
