@@ -4,6 +4,69 @@
 
 ---
 
+## 2026-09-10 — Reconstrução do capítulo 10 como piloto
+
+Remoção/substituição expressamente solicitada por Gabriel. Os 15 documentos didáticos anteriores deram lugar a README, notas e pratica/atividades.md. Versão anterior preservada no Git (faa0924fb005d9a5a20ea2f7d0c12c3bd7c46ef5); auditoria de 09/09 permanece histórica. Nenhuma resposta ou solução encontrada no 10; nenhuma tentativa alterada.
+
+Curadoria: CS50 Week 3 já visto por relato; CLRS 3ª §§1.2, 2.2, 3.1 e 3.2 com recortes e páginas impressas inglesas conferidos. Exercícios 1.2-2, 2.2-1, 2.2-3 essenciais e 1.2-3 de consolidação, com extensões explicitadas. MIT 6.006 Fall 2011 apoia as leituras; Lecture 2 é consulta opcional. PS1 não foi importado por exigir recorrências e peak finding além dos pré-requisitos. Reanálise de Two Sum, Contains Duplicate e Stock, sem antecipar Set/Map. Notas próprias cobrem pseudocódigo, custos de callbacks, memória, medição e dúvida opcional de recursão em C.
+
+A seleção tem 8 essenciais, 2 consolidações e 1 desafio opcional. Feedback pode ocorrer após 1–3; nenhum checkpoint, resultado ou resposta criado. Recursão permanece no 15 e a sequência curricular está intacta. Catálogo adaptado para notas/atividades; 14 caminhos substituídos remetem ao guia, com exclusões de trabalhos preservadas. Reconstrução local, sem publicação nesta tarefa. Detalhes de curadoria e verificação em auditoria-cap10-piloto.md.
+
+## 2026-09-10 — Curadoria como metodologia de criação
+
+Após análise e ajustes, Gabriel autorizou alterar a documentação de criação de novas aulas e capítulos. O professor passa a organizar um roadmap apoiado em fontes existentes, com vídeo primeiro, leitura orientada, apoios específicos, exercícios selecionados e feedback. CLRS 3ª é a âncora inicial de DSA, com mapa do MIT 6.006 Fall 2011 como apoio, sem importar sua sequência ou pressupor seus pré-requisitos.
+
+A faixa inicial de 8–15 atividades inclui LeetCode, labs e revisões; essenciais são o percurso padrão, consolidação é condicional e desafios são opcionais. Feedback pode ocorrer antes do fim da lista. Avanço por domínio observado na prática; provas/checkpoints por capítulo e avaliações formais de bloco deixam de ser obrigatórios. Os quatro capstones permanecem. Subagentes podem ajudar na curadoria, prática e revisão de capítulos, com um professor principal responsável e escopo de edição separado quando houver paralelismo.
+
+Gabriel esclareceu que o problema do material do 10 foi a dinâmica da escrita e a didática, não simplesmente excesso de texto. Já assistiu ao CS50 Week 3; recursão em C foi uma dificuldade relatada, sem domínio atribuído. Suas experiências em Two Sum, Contains Duplicate e Stock serão âncoras, a conferir em código quando disponível.
+
+Escopo executado: AGENTS, prompts, README geral, orientações futuras do PROGRESSO, referências metodológicas da EMENTA e contexto. Sequência e competências curriculares preservadas. Capítulo 10 não foi reconstruído nesta etapa; nenhum trabalho do aluno foi modificado, nenhum domínio atribuído e nenhuma publicação realizada. A seleção final de trechos/páginas e exercícios fica para a preparação do piloto. Os registros anteriores abaixo permanecem históricos, inclusive a regra de vídeo apenas complementar, substituída prospectivamente por esta decisão.
+
+## 2026-09-10 — Videoaulas complementares por capítulo
+
+A pedido de Gabriel, AGENTS e roteiro de criação passam a exigir pesquisa de uma videoaula complementar no momento de criar cada capítulo: primeiro CS50/Harvard, depois outra fonte acadêmica de alta qualidade se necessário. Quando adequada, a indicação entra no README com nome, fonte, link oficial verificado, partes pertinentes e orientação. Material permanece autossuficiente e personalizado; sequência e estrutura da ementa preservadas, sem seleção antecipada de referências futuras.
+
+README do 10 recebeu Week 3 — Algorithms, CS50x 2026, com link oficial conferido em 10/09/2026. Gabriel relata já ter assistido à aula; não foi avaliado domínio nem atribuída conclusão ao capítulo. Alteração somente documental e local, sem nova publicação do site.
+
+## 2026-09-09 — Capítulo 10 criado sob demanda
+
+Gabriel solicitou criação do 10 para estudar e deploy no site existente. Criados README, quatro aulas, prática em três níveis, debugging, retomada das próprias tentativas no LeetCode, checkpoint de quatro tarefas, revisão e referências. Âncora: dois loops/TLE relatados; exemplos de busca por teto, torneio e somas parciais sem resolver Two Sum/Contains Duplicate. Reforços: parâmetros versus globais, vazio, negativos e testes discriminantes. Não há sintaxe autoral de generics, classes ou recursão exigida.
+
+Leitor reconhece os enunciados pelas regras de catálogo existentes; home aponta para o README do 10 e progresso registra material disponível, estudo pendente. Nenhuma avaliação do aluno realizada; prova 09 segue com fechamento formal pendente. Validação concluída: 14 blocos compilados, exemplos de aulas executados, links e catálogo conferidos; typecheck/lint/build aprovados com avisos antigos. Publicação privada da versão 31 confirmada pelo Sites: https://leitor-typescript-gabriel.gabrielm-alonso.chatgpt.site. Detalhes em `auditoria-cap10.md`.
+
+## 2026-09-09 — Evolução curricular para CS e Engenharia de Software
+
+**Solicitação de Gabriel:** formação generalista, sequência única, TypeScript como ferramenta, MBA como complemento e ponte do conhecido para o novo. Two Sum, Contains Duplicate, dois loops, TLE e busca de complemento foram indicados pelo aluno como experiências-âncora; não são avaliações realizadas nesta sessão.
+
+**Diagnóstico do repositório:** dez capítulos reais (00–09); projetos ainda sem conteúdo; README, progresso do leitor e prompts não acompanhavam todos os registros de conclusão. O 09 tem prática aprovada e respostas de prova presentes, mas não resultado formal; a questão 08 está incompleta no arquivo salvo. Registrar praticamente concluído, com fechamento formal pendente, sem nota inventada.
+
+**Decisões:** nova sequência de 16 blocos após a base, começando por 10 — Big O; Tuples deslocado para 16. Quatro capstones nas transições após 15, 41, 70 e no 82. A Calculadora fica como pendência histórica não entregue, com fundamentos absorvidos no planejamento de C01. Não há novas aulas/pastas vazias nesta reformulação.
+
+**Método:** ponte incremental, formatos por área, prática em níveis com debugging, LeetCode quando pertinente, labs, checkpoints e avaliações de bloco, revisão espaçada, documentação e IA com ajuda progressiva. Leitura real segue opcional no início e torna-se progressivamente curricular, com contexto mínimo; a dispensa do 09 continua válida.
+
+**Preservação:** trabalhos, avaliações, notas, diário e observações anteriores mantidos. EMENTA preserva o conteúdo realizado; AGENTS centraliza diretrizes. A reestruturação é documental e de compatibilidade local do leitor; não representa conclusão de novos estudos nem publicação.
+
+**Verificação da reformulação:** 523 arquivos dos capítulos 00–09, diário e `teste.ts` conferidos por SHA-256 e idênticos ao início. Conteúdo original de 00–09 na ementa, notas de provas e entradas anteriores do contexto preservados. Sequência 10–82 sem lacunas/duplicação; links locais dos documentos reformulados conferidos. Catálogo validado com 17 caminhos históricos/novos e 7 exclusões de respostas/gabaritos em memória; os 99 caminhos reais anteriores mantêm a mesma ordem. Typecheck, lint e build do leitor aprovados; permanecem dois avisos de Fast Refresh e o aviso de chunk grande já conhecidos. Home e rota da teoria do 09 responderam HTTP 200 localmente. Sem inspeção visual ou publicação nesta tarefa.
+
+**Vigência:** as entradas abaixo são observações históricas. Regras antigas como leitura obrigatória, prova a cada capítulo, agentes automáticos ou Tuples no 10 descrevem o plano da época; para gerar conteúdo novo, usar AGENTS e EMENTA atuais.
+
+
+### 2026-09-06 - Lista do Capítulo 09 e recalibração da leitura real
+
+Gabriel concluiu toda a lista e o bônus. Os arquivos compilam em modo estrito e mostram domínio suficiente dos métodos avançados de arrays. As únicas omissões são pequenas: exibir apenas os códigos no `ex21` e rastrear o acumulador no `ex31`; não bloqueiam a prova.
+
+Gabriel relatou que as leituras de código real estão complexas demais e que se perde no contexto, sem clareza se a atividade ajuda. O formato atual de quatro recortes não está cumprindo sua função de ponte para código real. Neste capítulo, a leitura foi dispensada. Nos próximos capítulos, não criar essa atividade automaticamente nem tratá-la como requisito: Gabriel solicitará sob demanda quando quiser ver algum conteúdo aplicado em um projeto real.
+
+### 2026-09-05 - Execução simples e autonomia nos exercícios
+
+Gabriel está no `ex23.ts` do Capítulo 09. O erro de reconhecimento de `find` vinha do alvo padrão de `tsc arquivo.ts`. Configuração do curso adicionada com ES2022, strict e moduleDetection force, para manter exercícios independentes. O comando padrão passa a ser `ts-node arquivo.ts`, com checagem de tipos e execução, usando a instalação existente. README atualizado e `ex23.ts` executado com sucesso, sem alterar soluções.
+
+Gabriel prefere escolher o método adequado e evitar spoilers dos exercícios seguintes. Conferimos a progressão da lista e combinamos mantê-la, pois a autonomia aumenta após o aquecimento.
+
+### 2026-09-05 - Cor de strings sincronizada com o Cursor
+
+A configuração atual do Cursor passou a usar `#F2CC60` para strings no GitHub Dark personalizado. O mesmo valor foi aplicado somente às strings do tema escuro do leitor; as demais cores e o tema claro foram preservados. Typecheck, lint e build passaram, e a versão 30 foi publicada no projeto privado existente.
+
 ### 2026-09-02 - Adequação do Capítulo 09
 
 **Diagnóstico:** o material realocado do antigo Capítulo 06 ensinava corretamente os métodos em arrays primitivos, mas não cumpria a ementa atual em arrays de objetos, não possuía leitura de código real e não incorporava os aprendizados observados nos Capítulos 07 e 08.

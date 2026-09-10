@@ -1,3 +1,84 @@
+# Estado atual do currículo
+
+## Situação vigente — 2026-09-10: piloto reconstruído
+
+Gabriel autorizou remover o material didático anterior do 10 e recriá-lo pela metodologia aprovada. O capítulo agora contém README central, notas de apoio e pratica/atividades.md. Foram retirados 14 documentos antigos e substituído o README, preservando a versão no Git e a auditoria anterior. Não havia respostas ou soluções do aluno no inventário do 10; nenhum trabalho de 00–09 foi alterado.
+
+**Próximo passo único:** estudar CLRS 3ª edição, seção 1.2 (pp. 11–14 na edição inglesa), e fazer a atividade 1 do guia do 10. CS50 Week 3 já assistido por relato; não precisa repetir a aula inteira. Os recortes completos do livro e quatro exercícios foram conferidos; as páginas se referem à edição inglesa, não à posição de PDF.
+
+Prática: 8 essenciais, 2 de consolidação e 1 desafio opcional, incluindo reanálise de Two Sum, Contains Duplicate e Stock. Sem prova/checkpoint obrigatório, sem domínio atribuído e sem recursão exigida. O leitor local reconhece o novo formato e encaminha os caminhos substituídos ao guia. Nenhuma nova publicação nesta tarefa; site anterior permanece como registro separado.
+
+Os registros abaixo descrevem as etapas anteriores e não substituem este próximo passo. Fechamento formal do 09 permanece uma pendência histórica separada.
+
+## Registro preservado — 2026-09-10: metodologia de curadoria
+
+Gabriel aprovou atualizar a documentação de criação de aulas e capítulos com os ajustes discutidos. A sequência da EMENTA, os 16 blocos e os quatro capstones permanecem aprovados. O percurso preferencial é vídeo → leitura orientada → esclarecimentos necessários → prática selecionada → LeetCode/lab → feedback e revisão. AGENTS e prompts definem as regras atuais; as entradas abaixo são registros históricos, inclusive instruções antigas de aula/checkpoint, e não substituem esta situação vigente.
+
+**Próximo passo único:** reconstruir o capítulo 10 como guia de estudo em uma próxima tarefa. Nesta etapa foram atualizadas somente as diretrizes e documentos de orientação; materiais do 10 e leitor permanecem como estavam, sem publicação. Recortes completos do CLRS e seleção definitiva de exercícios ainda precisam ser conferidos ao preparar o piloto. Não encaminhar o aluno automaticamente ao roteiro antigo de quatro aulas e checkpoint.
+
+Gabriel relata ter assistido ao CS50 — Week 3: Algorithms e acompanhado a maior parte; a implementação de recursão em C causou dificuldade. Recursão não é competência demonstrada e permanece no capítulo 15. O piloto poderá partir da leitura selecionada, sem repetir o vídeo inteiro.
+
+Âncoras relatadas: Two Sum, Contains Duplicate, Best Time to Buy and Sell Stock, TLE, loops aninhados, diferença entre O(n²) e O(n), logging alterando runtime e melhoria de Stock de buscas repetidas para uma passagem. Conferir o código real antes de avaliar; relatos não equivalem a correção ou resultado externo verificado.
+
+A dificuldade com o material do 10 foi a dinâmica da escrita e da explicação, não necessariamente volume de texto ou atividades. Preferir fontes externas como exposição principal e notas próprias que respondam a lacunas concretas.
+
+Nenhum capítulo foi concluído nesta atualização. A pendência formal histórica do 09 permanece separada e não bloqueia a preparação do 10. Revisões, provas antigas, respostas e diário foram preservados.
+
+
+## Registro preservado — situação de 2026-09-09
+
+| Campo | Valor |
+|---|---|
+| Fase inicial | Fundamentos de programação usando TypeScript, capítulos 00–09 preservados |
+| Fase atual | Expansão para currículo de Ciência da Computação e Engenharia de Software |
+| Último capítulo formalmente concluído | 08 — Funções: Callbacks e Recursos, nota 9,2 |
+| Capítulo 09 | Praticamente concluído: lista aprovada; fechamento formal da prova pendente |
+| Próximo bloco | 1 — Fundamentos algorítmicos (10–15) |
+| Próximo passo de conteúdo | Estudar 10 — Complexidade e Big O, começando pelo README |
+| Material do 10 | Criado em 2026-09-09; disponível para estudo, sem avaliação; Tuples permanece 16 |
+
+## Evidências e pendências
+
+Gabriel informou nesta solicitação que acabou o 09. A correção da lista confirma os 13 obrigatórios e bônus aprovados em 06/09. A prova tem `resposta.md` e `questao05.ts` a `questao08.ts`, mas nenhum `resultado.md`; a última expressão de `questao08.ts` está incompleta no arquivo salvo. Não foi feita correção nem atribuição de nota nesta tarefa. A prova precisa de versão final entregue e correção para fechamento formal; não exigir refazer a lista aprovada nem alterar trabalhos do aluno.
+
+Próximo conteúdo: Big O → Set/Map/hashing → arrays/strings algorítmicos → Stack/Queue → busca/ordenação → recursão. Depois, 16–19 retoma modelagem TypeScript. O fechamento formal do 09 é uma pendência separada, não uma segunda trilha curricular; não impede preparar o próximo conteúdo autorizado pelo aluno.
+
+P1 — Calculadora não foi entregue e `projetos/` só contém `.gitkeep`. Seus objetivos passam a ser retomados quando úteis no C01 após 15; não registrar entrega nem manter bloqueio retroativo. Diário permanece intocado e a cargo do aluno.
+
+## Decisões desta reformulação
+
+- Uma ementa sequencial com 16 blocos futuros e quatro capstones, criada sob demanda.
+- AGENTS concentra metodologia; EMENTA concentra currículo, transições e pré-requisitos. README e PROGRESSO apontam para essas fontes.
+- Ponte conhecido → limitação → pergunta → conceito → aplicação → retorno; formatos por área, prática por níveis, debugging permanente, LeetCode pertinente e labs em sistemas/redes/dados.
+- Checkpoints curtos e avaliações integradoras; revisão espaçada, pesquisa documental e ajuda de IA em níveis.
+- Leitura real opcional inicialmente, progressiva a partir de estruturas/modelagem; no intermediário/avançado, leitura e modificação tornam-se competências recorrentes. Isso atualiza prospectivamente a decisão de 06/09, sem mudar a dispensa do 09.
+- MBA complementar; TypeScript como ferramenta; segurança e assincronismo no núcleo obrigatório.
+- Nenhuma nova pasta de capítulo, resposta, avaliação ou projeto gerada. Nenhum trabalho de 00–09 alterado.
+- Leitor: atualização local de identidade, progresso e reconhecimento das novas seções. Publicação não realizada nesta reformulação; a URL e a configuração existentes devem ser preservadas em uma publicação futura autorizada.
+
+## Próxima sessão
+
+Gabriel inicia por `10-complexidade-e-big-o/README.md` e `aula/01-do-problema-a-contagem.md`. Depois segue a prática e entrega para correção antes do checkpoint. Two Sum/Contains Duplicate têm reanálise após Big O e revisão após Set/Map, sem soluções fornecidas. Material criado não equivale a estudo iniciado ou domínio demonstrado.
+
+Consultar separadamente o fechamento formal do 09 quando o aluno entregar a prova para correção. Não confundir sua declaração de conclusão com nota já registrada.
+
+## Verificação desta reformulação
+
+**Verificação da reformulação:** 523 arquivos dos capítulos 00–09, diário e `teste.ts` conferidos por SHA-256 e idênticos ao início. Conteúdo original de 00–09 na ementa, notas de provas e entradas anteriores do contexto preservados. Sequência 10–82 sem lacunas/duplicação; links locais dos documentos reformulados conferidos. Catálogo validado com 17 caminhos históricos/novos e 7 exclusões de respostas/gabaritos em memória; os 99 caminhos reais anteriores mantêm a mesma ordem. Typecheck, lint e build do leitor aprovados; permanecem dois avisos de Fast Refresh e o aviso de chunk grande já conhecidos. Home e rota da teoria do 09 responderam HTTP 200 localmente. Sem inspeção visual ou publicação nesta tarefa.
+
+## Atualização posterior à reformulação — capítulo 10 publicado em 2026-09-09
+
+A pedido de Gabriel, o capítulo 10 foi criado e publicado na versão 31 do site existente, com acesso privado preservado e estado `succeeded` confirmado. URL atual informada pelo Sites: https://leitor-typescript-gabriel.gabrielm-alonso.chatgpt.site. Foram conferidos exemplos, links, catálogo, rotas locais, typecheck, lint e build; detalhes em `auditoria-cap10.md`. Permanecem avisos antigos do leitor; sem inspeção visual de navegador.
+
+Próximo passo único: ler `10-complexidade-e-big-o/README.md` e seguir para a aula 1. Não há registro de estudo iniciado, entrega de prática ou checkpoint avaliado. Fechamento formal do 09 permanece pendente. Os registros de “sem publicação” acima descrevem somente a reformulação anterior desta mesma data.
+
+## Registro anterior preservado — até 2026-09-06
+
+O conteúdo abaixo é um retrato integral do estado anterior. Próximos passos, flags, pendências de projeto, números futuros e regras de leitura/prova referem-se àquela data e **não substituem a situação vigente acima**. Sessões e fatos anteriores permanecem preservados.
+
+<details>
+<summary>Estado anterior e histórico de sessões</summary>
+
 # Estado Atual do Curso
 
 > Arquivo de controle do Claude - Atualizado a cada sessão
@@ -9,23 +90,25 @@
 | Campo | Valor |
 |-------|-------|
 | **Capítulo atual** | 09 - Arrays: Métodos Avançados |
-| **Fase atual** | Material revisado — pronto para iniciar a aula |
+| **Fase atual** | Prova liberada |
 | **Último capítulo concluído** | 08 - Funções: Callbacks e Recursos — prova 9,2 |
-| **Próximo passo** | Aluno lê o README e inicia `aula/01-teoria.md` do Capítulo 09 |
+| **Próximo passo** | Realizar a prova do Capítulo 09 |
 
 ---
 
 ## Sessão Atual
 
-- **Data:** 2026-09-02
-- **Atividade:** Correção completa do realce de sintaxe do tema escuro
+- **2026-09-06 — Lista concluída e prova liberada:** 13 exercícios obrigatórios e bônus conferidos; todos compilam isoladamente em modo estrito. `ex21` e `ex31` têm apenas omissões não bloqueantes de apresentação/rastreamento. A leitura de código real foi dispensada neste capítulo. A partir dos próximos capítulos, ela não será criada automaticamente: será produzida somente sob demanda quando o aluno quiser ver um conceito em um projeto real.
+
+- **2026-09-05 — Execução dos exercícios:** criado `tsconfig.json` com ES2022, modo estrito e arquivos independentes. Comando padrão: `ts-node ex23.ts`, usando ferramentas já instaladas. Execução do arquivo atual validada. Aluno prefere escolher os métodos sem spoilers dos exercícios seguintes; lista mantida conforme combinado.
+
+- **Data:** 2026-09-05
+- **Atividade:** Sincronização da nova cor de strings do Cursor com o leitor
 - **O que foi feito:**
-  - Paleta completa conferida em uma aula real no tema escuro
-  - Operadores passaram a ser identificados em coral; parâmetros e suas referências, em azul itálico
-  - Variáveis, propriedades, tipos, strings, números, booleanos, funções e tags alinhados aos hexadecimais fornecidos
-  - Pares de parênteses, colchetes e chaves receberam cinco níveis de cores
-  - Fundo dos blocos corrigido para `#0D1117`; tema claro preservado
-  - Typecheck, lint, build e conferência da versão publicada concluídos; versão 29 no projeto privado existente
+  - Configuração atual do Cursor conferida em `settings.json`
+  - Strings do tema escuro alteradas de `#A5D6FF` para `#F2CC60`
+  - Restante da paleta e tema claro preservados
+  - Typecheck, lint e build concluídos; versão 30 publicada no projeto privado existente
 
 ---
 
@@ -40,7 +123,7 @@
 | Capítulo 09 | ✅ Revisado para a sequência atual; pronto para estudo |
 | Capítulo 10 | ⏳ Material pendente |
 | Material `09-arrays-metodos-avancados/` | ✅ Adequado com arrays de objetos, leitura real e avaliação atualizada |
-| Leitor e `PROGRESSO.md` | ✅ Capítulo 09 no catálogo; tema escuro revisado; versão 29 publicada |
+| Leitor e `PROGRESSO.md` | ✅ Capítulo 09 no catálogo; tema escuro sincronizado; versão 30 publicada |
 
 ---
 
@@ -58,6 +141,7 @@
 - [x] Atualizar leitor e `PROGRESSO.md` com o novo Capítulo 07
 - [ ] Projeto 1 — Calculadora continua pendente na sequência formal
 - [ ] Aluno registrar aprendizados no `DIARIO.md`
+- [x] Corrigir os exercícios do Capítulo 09 e liberar a prova
 - [x] Publicar o Capítulo 07 no projeto existente do Sites (`appgprj_6a6621cf10348191b05987faeea46310`), preservando a URL privada
 - [x] Concluir a aula, o mini-projeto e a leitura de código real do Capítulo 07
 - [x] Completar o comentário do `ex24.ts` e o teste visível do bônus
@@ -73,8 +157,8 @@
 
 ## Próxima Sessão
 
-1. Aluno lê o README e inicia a teoria do Capítulo 09.
-2. Seguir teoria → sintaxe → exemplos → mini-projeto → leitura real → exercícios.
+1. Aluno realiza a prova do Capítulo 09.
+2. Entregar `resposta.md` e `questao05.ts` a `questao08.ts` em `09-arrays-metodos-avancados/avaliacao/`.
 3. Projeto 1 — Calculadora permanece pendente, sem bloquear este avanço explícito.
 
 ---
@@ -84,7 +168,7 @@
 | Flag | Status |
 |------|--------|
 | Revisão pendente | Sim; apenas o material do Capítulo 10 continua pendente nesta faixa |
-| Prova pendente | Capítulo 09 preparado, mas ainda não liberado |
+| Prova pendente | Capítulo 09 liberado em 2026-09-06 |
 | Projeto em andamento | Não; Projeto 1 continua pendente |
 | Dúvida não resolvida | Não; explicações de closure e IIFE foram aprofundadas antes da Parte 4 |
 
@@ -187,4 +271,6 @@
 
 ---
 
-*Última atualização: 2026-09-02*
+*Última atualização: 2026-09-06*
+
+</details>

@@ -1,148 +1,71 @@
-# Estudos de Programação e TypeScript
+# Formação pessoal em Ciência da Computação e Engenharia de Software
 
-Repositório pessoal de estudos em programação e TypeScript, estruturado com aulas, exercícios, avaliações e projetos práticos.
+Currículo sequencial de Gabriel Alonso para aprender programação, algoritmos, estruturas de dados, matemática, sistemas, redes, bancos, segurança e engenharia de software. **TypeScript é a linguagem principal de implementação; a formação é o objetivo.**
 
----
+## Onde estamos
 
-## Sobre o Curso
+Capítulos 00–08 formalmente concluídos. O 09 tem prática aprovada e está praticamente concluído, com fechamento formal da prova pendente: existem respostas, mas ainda não há resultado e a questão 08 está incompleta no arquivo salvo.
 
-Este não é um repositório de aplicação. É um **ambiente de aprendizado personalizado** criado para construir fundamentos de programação e avançar gradualmente em TypeScript.
+**Próximo conteúdo: 10 — Complexidade e Big O**, reconstruído como piloto de curadoria: [comece pelo guia](10-complexidade-e-big-o/README.md), com CLRS 1.2 e a atividade 1. Em seguida: Set/Map/hashing → arrays/strings algorítmicos → Stack/Queue → busca/ordenação → recursão. Tuples passa a 16.
 
-### Características
+## Mapa do curso
 
-- **32 capítulos planejados** em 4 módulos
-- **4 projetos práticos** integradores
-- **Abordagem híbrida**: teoria sólida + aplicação imediata
-- **Avaliações**: exercícios + provas por capítulo
-- **Acompanhamento público**: progresso, notas e feedback registrados no repositório
+- [EMENTA.md](EMENTA.md): sequência única de 16 blocos após a base 00–09, pré-requisitos e quatro capstones.
+- [AGENTS.md](AGENTS.md): diretrizes do professor, prática, avaliação, revisão e política de IA.
+- [PROGRESSO.md](PROGRESSO.md): histórico de notas e situação atual.
+- [DIARIO.md](DIARIO.md): anotações pessoais do aluno, preservadas.
+- [Leitor de aulas](leitor/README.md): navegação pelos materiais criados.
 
----
+## Evolução curricular — 09/09/2026
 
-## Estrutura do Repositório
+**Fase inicial:** fundamentos de programação usando TypeScript. **Fase atual:** expansão para Ciência da Computação e Engenharia de Software.
 
-```
-Typescript-Course/
-│
-├── CLAUDE.md              # Diretrizes do curso (para o tutor IA)
-├── EMENTA.md              # Ementa completa com todos os capítulos
-├── PROGRESSO.md           # Acompanhamento de progresso
-├── DIARIO.md              # Diário de aprendizado pessoal
-│
-├── .context/              # Arquivos de controle do tutor
-│
-├── 00-preparacao/         # Capítulos do curso
-├── 01-variaveis/
-├── ...
-│
-└── projetos/              # Projetos práticos
-    ├── P01-calculadora/
-    ├── P02-contatos/
-    ├── P03-biblioteca/
-    └── P04-gestao-financeira/
-```
+Os capítulos 00–09 preservam sua estrutura, trabalhos e referências históricas. Indicações antigas de Tuples no capítulo 10, projetos obrigatórios anteriores ou provas após cada capítulo não definem a nova sequência. Consulte a EMENTA e o PROGRESSO atuais. O nome histórico no diário e o caminho `Typescript-Course` foram preservados.
 
----
+## Como estudar
 
-## Módulos
+A ementa define o que aprender e em qual sequência. O professor organiza referências excelentes em um roteiro personalizado: **videoaula → leitura orientada → esclarecimentos necessários → prática selecionada → LeetCode ou lab → feedback e revisão**. Cada capítulo começa por conhecimentos e experiências anteriores.
 
-| # | Módulo | Capítulos | Projeto Final |
-|---|--------|-----------|---------------|
-| 1 | Fundamentos Absolutos | 00-04 | Calculadora de Terminal |
-| 2 | Estruturas de Dados e Funções | 05-12 | Gerenciador de Contatos |
-| 3 | TypeScript Intermediário | 13-22 | Sistema de Biblioteca |
-| 4 | TypeScript Avançado | 23-31 | Sistema de Gestão Financeira |
+O README do capítulo indica o vídeo e seus trechos, o livro e suas seções/páginas verificadas, objetivos da leitura e atividades essenciais. CS50/Harvard é a primeira fonte de vídeo a consultar; MIT OCW e outras fontes acadêmicas entram conforme adequação. Em DSA, o livro-âncora inicial é CLRS, 3ª edição, com apoio do mapa de leituras do MIT 6.006 Fall 2011. Material próprio só preenche lacunas específicas.
 
----
+A prática é selecionada prioritariamente do livro, MIT e CS50; LeetCode e labs integram a faixa inicial flexível de 8–15 atividades totais. Consolidação depende da necessidade e desafios são opcionais. O aluno pode entregar tentativas durante o percurso; o avanço ocorre por domínio demonstrado, sem provas ou checkpoints obrigatórios. Revisões reaparecem naturalmente nos exercícios futuros.
 
-## Estrutura de Cada Capítulo
+Há quatro capstones previstos e preservados, sem mini-projeto obrigatório a cada capítulo. Conteúdo é criado sob demanda e o próximo passo fica no contexto do professor. O MBA complementa a formação, sem ditar sua ordem. IA explica e oferece pistas graduais, preservando a tentativa própria; avaliações são corrigidas após a entrega.
 
-```
-XX-nome-do-capitulo/
-├── README.md                 # Índice e objetivos
-├── aula/
-│   ├── 01-teoria.md          # Conceitos e explicações
-│   ├── 02-sintaxe.md         # Regras da linguagem
-│   ├── 03-exemplos.md        # Exemplos práticos comentados
-│   └── 04-mini-projeto.md    # Aplicação guiada
-├── exercicios/
-│   ├── lista.md              # Enunciados dos exercícios
-│   ├── solucoes/             # Minhas soluções (.ts)
-│   └── correcoes.md          # Feedback do tutor
-├── avaliacao/
-│   ├── prova.md              # Enunciado da prova
-│   ├── resposta.md           # Minha resposta
-│   └── resultado.md          # Correção e nota
-└── extras/
-    ├── erros-comuns.md       # Erros típicos do capítulo
-    └── recursos.md           # Links e materiais complementares
+Em 10/09/2026, o capítulo 10 foi reconstruído localmente como guia, notas de apoio e prática selecionada. Gabriel já relata ter assistido ao CS50 Week 3; o próximo passo é a leitura orientada, sem domínio avaliado ou conclusão atribuída. A versão hospedada anterior ainda não foi atualizada nesta tarefa.
+
+## Estrutura real e expansão
+
+```text
+AGENTS.md / EMENTA.md / PROGRESSO.md / DIARIO.md
+.context/                  contexto e histórico do professor
+00-preparacao-do-ambiente/  início da base preservada
+…
+09-arrays-metodos-avancados/
+projetos/                  somente .gitkeep; capstones sob demanda
+leitor/                    aplicação de leitura dos Markdown
 ```
 
----
+Os capítulos novos terão README central, com notas e arquivos de prática somente quando úteis, conforme AGENTS. Nenhuma pasta futura vazia foi criada. As soluções antigas continuam nos locais originais, mesmo onde diferem da convenção atual.
 
-## Fluxo de Estudo
+## Rodar um exercício
 
-```
-📖 AULA → 💻 EXERCÍCIOS → 📝 PROVA → ✅ PRÓXIMO CAPÍTULO
-              ↓                ↓
-          Correção         Nota ≥ 7?
-              ↓                ↓
-          Feedback         Sim → Avança
-                           Não → Revisão
+Na pasta do exercício, use:
+
+```bash
+ts-node ex23.ts
 ```
 
----
+O comando verifica os tipos e executa o arquivo, sem precisar gerar um `.js` separado. A configuração em `tsconfig.json` usa ES2022 e modo estrito. Cada arquivo é tratado como módulo independente, permitindo repetir nomes entre exercícios.
 
-## Tecnologias
+Pré-requisitos: Node.js, TypeScript e ts-node (já instalados no ambiente atual). Em outro computador, instale as ferramentas com `npm install -g typescript ts-node`.
 
-- **Linguagem**: TypeScript
-- **Runtime**: Node.js
-- **Editor**: VS Code
-- **Tutor**: agente de IA, com estudo, resolução e revisão conduzidos pelo aluno
+Use esse comando no lugar de `tsc arquivo.ts && node arquivo.js` nos materiais antigos. Passar um arquivo diretamente para `tsc` ignora o `tsconfig.json`; executar `tsc` sem argumentos verifica todos os exercícios, inclusive os incompletos. O leitor tem configuração própria.
 
----
+## Sobre o aluno
 
-## Progresso Atual
-
-```
-Módulo 1: [██████████] 100% (projeto pendente)
-Módulo 2: [███░░░░░░░]  25% (capítulo 07 em exercícios)
-Módulo 3: [░░░░░░░░░░] 0%  (bloqueado)
-Módulo 4: [░░░░░░░░░░] 0%  (bloqueado)
-
-Total:    [██░░░░░░░░] 22%
-```
-
-Sete dos 32 capítulos foram concluídos, com 106 exercícios realizados e média 9,1 nas avaliações. O detalhamento está em [PROGRESSO.md](PROGRESSO.md).
-
-*Atualizado em: agosto de 2026*
-
----
-
-## Sobre o Aluno
-
-**Gabriel Monteiro Alonso**
-
-- Engenheiro Mecânico em transição para desenvolvimento de software.
-- Objetivo: construir uma base sólida em programação para complementar a experiência adquirida em produtos próprios.
-- Este repositório documenta estudos em andamento; não representa a conclusão antecipada dos conteúdos intermediários e avançados.
-
----
-
-## Metodologia
-
-Este curso utiliza uma metodologia personalizada com:
-
-1. **Geração sob demanda**: Conteúdo criado capítulo por capítulo
-2. **Adaptação contínua**: Material ajustado conforme dificuldades identificadas
-3. **Feedback detalhado**: Correções explicativas, não apenas notas
-4. **Projetos práticos**: Aplicação real dos conceitos a cada módulo
-
----
+Gabriel Monteiro Alonso, engenheiro mecânico, desenvolve projetos próprios e busca autonomia para resolver problemas, compreender sistemas e aprender novas tecnologias. O repositório registra estudos em andamento; não representa conclusão antecipada do currículo.
 
 ## Licença
 
-Este repositório é para uso pessoal e educacional.
-
----
-
-*Curso iniciado em Janeiro/2025*
+Uso pessoal e educacional. Curso iniciado em Janeiro/2025; evolução curricular registrada em 09/09/2026.

@@ -4,6 +4,23 @@
 
 ---
 
+## Nota de transição curricular — 2026-09-09
+
+Nenhuma nova avaliação corrigida nesta reformulação. As notas e observações abaixo permanecem intactas. A lista do 09 está aprovada; o aluno relata conclusão do capítulo, mas os arquivos de prova ainda não têm resultado formal e `questao08.ts` está incompleto no arquivo salvo. Não somar uma décima prova corrigida nem atribuir nota.
+
+As tabelas por módulos e as linhas futuras vazias (antigos capítulos 10–31 e projetos P1/P2/P3/PF) pertencem ao planejamento anterior; não são pendências da nova sequência. Novos resultados devem indicar bloco e capítulo da EMENTA vigente, em registros datados separados. A formação futura usa checkpoints e avaliações integradoras; notas e critérios históricos não são recalculados retroativamente.
+
+
+## 2026-09-06 — Conclusão da lista — Capítulo 09
+
+**Resultado qualitativo:** 13 exercícios obrigatórios e bônus aprovados. Todos os arquivos compilam isoladamente em modo estrito.
+
+**Domínio consolidado:** escolha de `forEach`, `map`, `filter`, `find`, `findIndex`, `some`, `every` e `reduce`; encadeamento; callbacks por referência; arrays vazios; cópia de array versus cópia de objetos; preservação dos originais; closure aplicada como critério.
+
+**Ressalvas não bloqueantes:** `ex21.ts` exibe objetos em vez de somente os códigos; `ex31.ts` calcula corretamente `35` e `0`, mas não registra o acumulador após cada item.
+
+**Decisão pedagógica:** leitura de código real dispensada neste capítulo. A lista já demonstrou domínio suficiente, e o aluno relatou que o formato atual empilha complexidade e o faz se perder. Prova liberada.
+
 ## 2026-09-02 — Correção pós-prova — Capítulo 08
 
 **Resultado:** cinco arquivos de resposta corrigidos com autorização do aluno. A Questão 7 agora percorre `itens` e o caso vazio usa um critério que revelaria o acesso acidental à coleção global. Questões 1, 5 e 6 foram alinhadas ao valor e aos textos exatos; a explicação da Questão 8 distingue a fábrica da função retornada.

@@ -8,7 +8,7 @@
 
 - **00–08:** nove capítulos formalmente concluídos; notas originais preservadas abaixo.
 - **09:** aula e exercícios concluídos, lista e bônus aprovados em 06/09/2026. Gabriel relata conclusão; há respostas de prova no repositório, mas não há `avaliacao/resultado.md` e a questão 08 está incompleta no arquivo salvo. Praticamente concluído, com fechamento formal pendente; nenhuma nota atribuída nesta reformulação.
-- **Próximo conteúdo único:** 10 — Complexidade e Big O, primeiro capítulo do bloco de fundamentos algorítmicos; material criado em 09/09/2026, disponível para estudo, sem prática entregue ou domínio avaliado. Começar pelo [README do 10](10-complexidade-e-big-o/README.md). Tuples passa a 16.
+- **Próximo conteúdo único:** 10 — Complexidade e Big O, reconstruído localmente em 10/09/2026 como guia de estudo, notas pontuais e prática selecionada (8 essenciais, 2 de consolidação e 1 desafio opcional, incluindo 3 LeetCodes). [Começar pelo guia](10-complexidade-e-big-o/README.md): CLRS 1.2 e atividade 1. CS50 Week 3 já assistido por relato; nenhuma prática avaliada ou conclusão atribuída. A versão 31 publicada em 09/09 permanece como registro do material anterior; não houve nova publicação nesta tarefa. Tuples permanece 16.
 - **Pendência de registro:** concluir/entregar a versão final da prova 09 e solicitar correção, sem alterar as respostas nesta tarefa. A expansão curricular não equivale a aprovação dessa prova.
 
 A ementa futura está em [EMENTA.md](EMENTA.md). Não usar o antigo denominador de 32 capítulos para calcular um percentual da formação ampliada; os blocos planejados ainda não são materiais criados nem competências avaliadas.
@@ -39,7 +39,7 @@ A ementa futura está em [EMENTA.md](EMENTA.md). Não usar o antigo denominador 
 
 ## Sequência futura
 
-Checkpoints curtos por capítulo e avaliação integradora por bloco. A numeração abaixo é a nova, não a dos antigos módulos.
+Desde 10/09/2026, os próximos capítulos usam curadoria de vídeo, leitura e prática, com avanço por domínio demonstrado. Checkpoints e avaliações formais de bloco deixam de ser obrigatórios; os quatro capstones permanecem. A numeração abaixo é a nova, não a dos antigos módulos.
 
 | Bloco | Tema | Capítulos | Situação |
 |---|---|---|---|
@@ -97,8 +97,8 @@ Os antigos P2 — Contatos, P3 — Biblioteca e PF — Financeiro estavam bloque
 
 ## Como registrar daqui em diante
 
-Atualizar um capítulo quando houver evidência de domínio no checkpoint; registrar avaliação de bloco/capstone separadamente. Revisões não apagam tentativas ou notas. Conteúdo gerado, estudo iniciado, prática entregue e domínio demonstrado são estados diferentes.
+Atualizar um capítulo quando houver evidência de domínio na prática; registrar trabalho observado, apoio relevante e eventual reforço localizado. Capstones e avaliações formais pontuais são registrados quando realizados. Revisões não apagam tentativas ou notas. Conteúdo gerado, estudo iniciado, prática entregue e domínio demonstrado são estados diferentes.
 
 **Legenda histórica:** ✓ concluído; ★ nota 9–10; ● nota 7–8; ○ nota abaixo de 7; “-” não realizado. As marcas e notas antigas permanecem como estavam registradas.
 
-*Última atualização: 2026-09-09.*
+*Última atualização: 2026-09-10 (metodologia e situação do piloto; notas históricas preservadas).*
