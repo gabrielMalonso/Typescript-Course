@@ -1,6 +1,16 @@
 # Estado atual do currículo
 
-## Situação vigente — 2026-09-10: metodologia de curadoria
+## Situação vigente — 2026-09-10: piloto reconstruído
+
+Gabriel autorizou remover o material didático anterior do 10 e recriá-lo pela metodologia aprovada. O capítulo agora contém README central, notas de apoio e pratica/atividades.md. Foram retirados 14 documentos antigos e substituído o README, preservando a versão no Git e a auditoria anterior. Não havia respostas ou soluções do aluno no inventário do 10; nenhum trabalho de 00–09 foi alterado.
+
+**Próximo passo único:** estudar CLRS 3ª edição, seção 1.2 (pp. 11–14 na edição inglesa), e fazer a atividade 1 do guia do 10. CS50 Week 3 já assistido por relato; não precisa repetir a aula inteira. Os recortes completos do livro e quatro exercícios foram conferidos; as páginas se referem à edição inglesa, não à posição de PDF.
+
+Prática: 8 essenciais, 2 de consolidação e 1 desafio opcional, incluindo reanálise de Two Sum, Contains Duplicate e Stock. Sem prova/checkpoint obrigatório, sem domínio atribuído e sem recursão exigida. O leitor local reconhece o novo formato e encaminha os caminhos substituídos ao guia. Nenhuma nova publicação nesta tarefa; site anterior permanece como registro separado.
+
+Os registros abaixo descrevem as etapas anteriores e não substituem este próximo passo. Fechamento formal do 09 permanece uma pendência histórica separada.
+
+## Registro preservado — 2026-09-10: metodologia de curadoria
 
 Gabriel aprovou atualizar a documentação de criação de aulas e capítulos com os ajustes discutidos. A sequência da EMENTA, os 16 blocos e os quatro capstones permanecem aprovados. O percurso preferencial é vídeo → leitura orientada → esclarecimentos necessários → prática selecionada → LeetCode/lab → feedback e revisão. AGENTS e prompts definem as regras atuais; as entradas abaixo são registros históricos, inclusive instruções antigas de aula/checkpoint, e não substituem esta situação vigente.
 

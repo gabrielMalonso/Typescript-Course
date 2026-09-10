@@ -30,11 +30,14 @@ Abra o endereço local (e, na mesma rede, o IP mostrado pelo Vite no celular).
 Novos capítulos em pastas `NN-nome/` entram no índice via `import.meta.glob`, conforme as seções permitidas em `src/content/catalog.ts`:
 
 - Histórico: README, aula, extras, listas de exercícios e enunciado da prova.
-- Novos capítulos: aula, prática numerada 01–03, debugging/LeetCode/lab, perguntas do checkpoint, resumo/erros comuns/revisitar e referências.
+- Guias por curadoria: README, notas.md opcional e pratica/atividades.md. O piloto do 10 usa esses três documentos.
+- Formatos anteriores continuam reconhecidos: aula, prática numerada 01–03, debugging/LeetCode/lab, perguntas do checkpoint, resumo/erros comuns/revisitar e referências. Isso não torna essas etapas obrigatórias.
 
 Respostas, soluções, correções, resultados e gabaritos ficam fora do catálogo. Variações de nomes/seções precisam ser conferidas na geração de cada capítulo. Avaliações de bloco em `avaliacoes/` e capstones em `projetos/` deverão ser integrados quando seus primeiros enunciados forem criados; essas pastas ainda não têm materiais novos.
 
-Arquivos sensíveis (`.context/`, `correcoes.md`, `resultado.md`, gabaritos) ficam fora do catálogo.
+Arquivos sensíveis (`.context/`, `correcoes.md`, `resultado.md`, gabaritos) ficam fora do catálogo. Os 14 caminhos substituídos do capítulo 10 redirecionam ao novo README sem recolocar o material antigo no índice.
+
+Reconstrução local do piloto em 10/09/2026: a publicação descrita acima ainda corresponde ao material anterior; nenhuma nova publicação foi realizada nesta tarefa.
 
 ## Progresso
 

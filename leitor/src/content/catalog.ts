@@ -3,6 +3,8 @@ import type { CatalogDocument, TreeNode } from './types'
 const rawModules = import.meta.glob(
   [
     '@course/[0-9][0-9]-*/README.md',
+    '@course/[0-9][0-9]-*/notas.md',
+    '@course/[0-9][0-9]-*/pratica/atividades.md',
     '@course/[0-9][0-9]-*/aula/*.md',
     '@course/[0-9][0-9]-*/extras/*.md',
     '@course/[0-9][0-9]-*/exercicios/lista*.md',
@@ -53,7 +55,8 @@ function shouldInclude(modulePath: string): boolean {
 
   const rest = chapterMatch[2]
 
-  if (/^README\.md$/i.test(rest)) return true
+  if (/^(?:README|notas)\.md$/i.test(rest)) return true
+  if (rest === 'pratica/atividades.md') return true
   if (rest.startsWith('aula/') && rest.endsWith('.md')) return true
   if (rest.startsWith('extras/') && rest.endsWith('.md')) return true
   if (/^exercicios\/lista[^/]*\.md$/i.test(rest)) return true
@@ -98,9 +101,8 @@ function buildDocuments(): CatalogDocument[] {
     const parts = withoutExt.split('/')
     const chapterId = parts[0]
 
-    const isReadme = parts.length === 2 && parts[1].toLowerCase() === 'readme'
-    const section = isReadme ? 'raiz' : parts[1]
-    const fileName = isReadme ? 'README.md' : `${parts[parts.length - 1]}.md`
+    const section = parts.length === 2 ? 'raiz' : parts[1]
+    const fileName = `${parts[parts.length - 1]}.md`
 
     docs.push({
       slug: withoutExt,
@@ -193,14 +195,46 @@ export const documents = buildDocuments()
 export const documentMap = new Map(documents.map((d) => [d.slug, d]))
 export const fileTree = buildTree(documents)
 
+
+// Links salvos do piloto anterior continuam levando ao capítulo reconstruído.
+const replacedChapter10Slugs = new Set([
+  '10-complexidade-e-big-o/aula/01-do-problema-a-contagem',
+  '10-complexidade-e-big-o/aula/02-big-o-e-crescimento',
+  '10-complexidade-e-big-o/aula/03-memoria-e-custos-escondidos',
+  '10-complexidade-e-big-o/aula/04-experimentos',
+  '10-complexidade-e-big-o/pratica/01-fundamentos',
+  '10-complexidade-e-big-o/pratica/02-aplicacao',
+  '10-complexidade-e-big-o/pratica/03-desafios',
+  '10-complexidade-e-big-o/pratica/debugging',
+  '10-complexidade-e-big-o/pratica/leetcode',
+  '10-complexidade-e-big-o/checkpoint/perguntas',
+  '10-complexidade-e-big-o/revisao/resumo',
+  '10-complexidade-e-big-o/revisao/erros-comuns',
+  '10-complexidade-e-big-o/revisao/revisitar',
+  '10-complexidade-e-big-o/recursos/referencias',
+])
+
+export function resolveDocumentSlug(slug: string): string {
+  return replacedChapter10Slugs.has(slug) ? '10-complexidade-e-big-o/README' : slug
+}
+
 export function getDocument(slug: string): CatalogDocument | undefined {
-  return documentMap.get(slug)
+  return documentMap.get(resolveDocumentSlug(slug))
 }
 
 export function getNeighbors(slug: string): {
   prev: CatalogDocument | null
   next: CatalogDocument | null
 } {
+  slug = resolveDocumentSlug(slug)
+  const chapterId = documentMap.get(slug)?.chapterId
+  if (chapterId && documentMap.has(`${chapterId}/pratica/atividades`)) {
+    const ordered = [`${chapterId}/README`, `${chapterId}/notas`, `${chapterId}/pratica/atividades`]
+      .map((path) => documentMap.get(path))
+      .filter((doc): doc is CatalogDocument => doc !== undefined)
+    const position = ordered.findIndex((doc) => doc.slug === slug)
+    if (position !== -1) return { prev: ordered[position - 1] ?? null, next: ordered[position + 1] ?? null }
+  }
   const index = documents.findIndex((d) => d.slug === slug)
   if (index === -1) return { prev: null, next: null }
 

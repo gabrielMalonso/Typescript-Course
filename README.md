@@ -6,7 +6,7 @@ Currículo sequencial de Gabriel Alonso para aprender programação, algoritmos,
 
 Capítulos 00–08 formalmente concluídos. O 09 tem prática aprovada e está praticamente concluído, com fechamento formal da prova pendente: existem respostas, mas ainda não há resultado e a questão 08 está incompleta no arquivo salvo.
 
-**Próximo conteúdo: 10 — Complexidade e Big O**, cujo material anterior já existe e será reconstruído como piloto de curadoria em uma próxima tarefa. Em seguida: Set/Map/hashing → arrays/strings algorítmicos → Stack/Queue → busca/ordenação → recursão. Tuples passa a 16.
+**Próximo conteúdo: 10 — Complexidade e Big O**, reconstruído como piloto de curadoria: [comece pelo guia](10-complexidade-e-big-o/README.md), com CLRS 1.2 e a atividade 1. Em seguida: Set/Map/hashing → arrays/strings algorítmicos → Stack/Queue → busca/ordenação → recursão. Tuples passa a 16.
 
 ## Mapa do curso
 
@@ -32,7 +32,7 @@ A prática é selecionada prioritariamente do livro, MIT e CS50; LeetCode e labs
 
 Há quatro capstones previstos e preservados, sem mini-projeto obrigatório a cada capítulo. Conteúdo é criado sob demanda e o próximo passo fica no contexto do professor. O MBA complementa a formação, sem ditar sua ordem. IA explica e oferece pistas graduais, preservando a tentativa própria; avaliações são corrigidas após a entrega.
 
-A atualização metodológica de 10/09/2026 é documental: o capítulo 10 ainda mantém os arquivos anteriores e sua reconstrução como guia está pendente. Gabriel já relata ter assistido ao CS50 Week 3; isso não equivale a domínio avaliado.
+Em 10/09/2026, o capítulo 10 foi reconstruído localmente como guia, notas de apoio e prática selecionada. Gabriel já relata ter assistido ao CS50 Week 3; o próximo passo é a leitura orientada, sem domínio avaliado ou conclusão atribuída. A versão hospedada anterior ainda não foi atualizada nesta tarefa.
 
 ## Estrutura real e expansão
 

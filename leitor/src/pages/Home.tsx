@@ -18,7 +18,7 @@ export function Home() {
         <h1>Leitor de Aulas</h1>
         <p className="home-lead">
           Formação pessoal com TypeScript como linguagem principal. Próximo conteúdo:
-          capítulo 10 — Complexidade e Big O, disponível para estudo.
+          capítulo 10 — Complexidade e Big O, com vídeo, leitura orientada e prática selecionada.
           O capítulo 09 está praticamente concluído, com fechamento formal pendente.
         </p>
         <div className="home-actions">

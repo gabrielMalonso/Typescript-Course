@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
-import { getDocument, getNeighbors } from '../content/catalog'
+import { Link, Navigate, useParams } from 'react-router-dom'
+import { getDocument, getNeighbors, resolveDocumentSlug } from '../content/catalog'
 import { CopyMarkdownButton } from '../components/CopyMarkdownButton'
 import { MarkdownView } from '../components/MarkdownView'
 import { Sidebar } from '../components/Sidebar'
@@ -17,6 +17,9 @@ export function Reader() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [slug])
+
+  const resolvedSlug = resolveDocumentSlug(slug)
+  if (resolvedSlug !== slug) return <Navigate to={`/ler/${resolvedSlug}`} replace />
 
   if (!doc) {
     return (

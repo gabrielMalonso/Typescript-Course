@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-09-10 — Reconstrução do capítulo 10 como piloto
+
+Remoção/substituição expressamente solicitada por Gabriel. Os 15 documentos didáticos anteriores deram lugar a README, notas e pratica/atividades.md. Versão anterior preservada no Git (faa0924fb005d9a5a20ea2f7d0c12c3bd7c46ef5); auditoria de 09/09 permanece histórica. Nenhuma resposta ou solução encontrada no 10; nenhuma tentativa alterada.
+
+Curadoria: CS50 Week 3 já visto por relato; CLRS 3ª §§1.2, 2.2, 3.1 e 3.2 com recortes e páginas impressas inglesas conferidos. Exercícios 1.2-2, 2.2-1, 2.2-3 essenciais e 1.2-3 de consolidação, com extensões explicitadas. MIT 6.006 Fall 2011 apoia as leituras; Lecture 2 é consulta opcional. PS1 não foi importado por exigir recorrências e peak finding além dos pré-requisitos. Reanálise de Two Sum, Contains Duplicate e Stock, sem antecipar Set/Map. Notas próprias cobrem pseudocódigo, custos de callbacks, memória, medição e dúvida opcional de recursão em C.
+
+A seleção tem 8 essenciais, 2 consolidações e 1 desafio opcional. Feedback pode ocorrer após 1–3; nenhum checkpoint, resultado ou resposta criado. Recursão permanece no 15 e a sequência curricular está intacta. Catálogo adaptado para notas/atividades; 14 caminhos substituídos remetem ao guia, com exclusões de trabalhos preservadas. Reconstrução local, sem publicação nesta tarefa. Detalhes de curadoria e verificação em auditoria-cap10-piloto.md.
+
 ## 2026-09-10 — Curadoria como metodologia de criação
 
 Após análise e ajustes, Gabriel autorizou alterar a documentação de criação de novas aulas e capítulos. O professor passa a organizar um roadmap apoiado em fontes existentes, com vídeo primeiro, leitura orientada, apoios específicos, exercícios selecionados e feedback. CLRS 3ª é a âncora inicial de DSA, com mapa do MIT 6.006 Fall 2011 como apoio, sem importar sua sequência ou pressupor seus pré-requisitos.
