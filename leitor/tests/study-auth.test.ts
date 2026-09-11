@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { sealData } from 'iron-session'
 import { safeReturnTo, withStudyAccess } from '../worker/study-auth'
-const mocks = vi.hoisted(() => ({ identity: '', exchange: vi.fn() }))
+const mocks = vi.hoisted(() => ({ identity: '', exchange: vi.fn(), authorize: vi.fn(() => 'https://api.workos.com/authorize') }))
 vi.mock('@workos-inc/node', () => ({ WorkOS: class {
   userManagement = {
     loadSealedSession: ({ sessionData }: { sessionData: string }) => ({
@@ -9,14 +9,30 @@ vi.mock('@workos-inc/node', () => ({ WorkOS: class {
       getLogoutUrl: async () => 'https://api.workos.com/logout',
     }),
     authenticateWithCodeAndVerifier: mocks.exchange,
-    getAuthorizationUrl: () => 'https://api.workos.com/authorize',
+    getAuthorizationUrl: mocks.authorize,
   }
 } }))
 const env = { WORKOS_API_KEY: 'test-key', WORKOS_CLIENT_ID: 'client', OWNER_WORKOS_USER_ID: 'owner', STUDY_COOKIE_PASSWORD: 'a-secret-for-test-sessions-at-least-32-chars' }
 const origin = 'https://study.example'
 const next = vi.fn(async () => new Response('private content'))
-beforeEach(() => { mocks.identity = 'owner'; mocks.exchange.mockReset(); next.mockClear() })
+beforeEach(() => { mocks.identity = 'owner'; mocks.exchange.mockReset(); mocks.authorize.mockClear(); next.mockClear() })
 describe('whole-site authorization', () => {
+  it('automatically starts AuthKit while preserving the reading destination and avoiding error loops', async () => {
+    const response = await withStudyAccess(new Request(origin + '/ler/book?mode=read', { headers: { accept: 'text/html' } }), env, next)
+    expect(response.headers.get('location')).toBe('/auth/entrar?returnTo=%2Fler%2Fbook%3Fmode%3Dread')
+    const landing = await withStudyAccess(new Request(origin + response.headers.get('location')), env, next)
+    const html = await landing.text()
+    expect(html).toContain('location.replace(u.href)')
+    expect(html).toContain('target+location.hash')
+    expect(html).toContain('<main hidden>')
+    const start = await withStudyAccess(new Request(origin + '/auth/iniciar?returnTo=%2Fler%2Fbook%23page%3D3'), env, next)
+    expect(start.headers.get('location')).toBe('https://api.workos.com/authorize')
+    expect(mocks.authorize).toHaveBeenCalledWith(expect.objectContaining({ provider: 'authkit', codeChallengeMethod: 'S256', redirectUri: origin + '/auth/retorno' }))
+    expect(start.headers.get('set-cookie')).toContain('HttpOnly')
+    const failed = await withStudyAccess(new Request(origin + '/auth/entrar?error=1'), env, next)
+    expect(await failed.text()).not.toContain('location.replace')
+    expect(next).not.toHaveBeenCalled()
+  })
   it('blocks pages, PDFs and bundles before their content is served', async () => {
     for (const path of ['/', '/ler/book', '/assets/book.pdf', '/assets/catalog.js', '/laboratorio/anotacoes-v1.pdf']) {
       const response = await withStudyAccess(new Request(origin + path), env, next)
