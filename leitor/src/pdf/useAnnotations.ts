@@ -6,12 +6,12 @@ import {
   HistoryPlugin,
   type AnnotationScope,
   type PluginRegistry,
-  type PdfAnnotationObject,
 } from '@embedpdf/react-pdf-viewer'
 import { api } from '../../convex/_generated/api'
 import { AnnotationSync, type SyncStatus } from './sync'
 import { ImageAssets, payloadImageKey } from './imageAssets'
 import { useStudyToken } from '../auth/session'
+import { encodeAnnotation, decodeAnnotation } from './annotationPayload'
 
 /** Connect one viewer document to the owner's persistent annotation history. */
 export function useAnnotations(
@@ -99,13 +99,7 @@ export function useAnnotations(
       if (event.committed || applying.current) return
       const controller = sync.current
       const enqueue = (imageKey?: string) => {
-        const payload =
-          event.type === 'delete'
-            ? null
-            : JSON.stringify({
-                ...event.annotation,
-                ...(imageKey ? { _imageKey: imageKey } : {}),
-              })
+        const payload = encodeAnnotation(event, imageKey)
         seen.current.set(event.annotation.id, payload)
         controller?.enqueue(event.annotation.id, event.pageIndex, payload)
       }
@@ -254,25 +248,4 @@ export function useAnnotations(
     resolveConflict,
     retry,
   }
-}
-
-// The serialized object comes from EmbedPDF; validate its envelope at this boundary.
-function decodeAnnotation(payload: string): PdfAnnotationObject {
-  const value: unknown = JSON.parse(payload)
-  if (
-    !value ||
-    typeof value !== 'object' ||
-    !('id' in value) ||
-    typeof value.id !== 'string' ||
-    !('type' in value) ||
-    typeof value.type !== 'number' ||
-    !('pageIndex' in value) ||
-    !Number.isInteger(value.pageIndex) ||
-    !('rect' in value)
-  )
-    throw new Error('Invalid annotation')
-  const { _imageKey: _key, ...annotation } = value as PdfAnnotationObject & {
-    _imageKey?: string
-  }
-  return annotation
 }
