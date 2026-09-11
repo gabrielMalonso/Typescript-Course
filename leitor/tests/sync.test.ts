@@ -70,3 +70,14 @@ describe('annotation outbox', () => {
     expect(restored.drafts.map(x => x.annotationId).sort()).toEqual(['a', 'b'])
   })
 })
+
+it('restores only the selected reading outbox', async () => {
+  const disk = storage()
+  const offline = async () => { throw new Error('offline') }
+  const first = new AnnotationSync('owner', disk, offline, () => {}, 'reading-one@v1')
+  const second = new AnnotationSync('owner', disk, offline, () => {}, 'reading-two@v1')
+  first.enqueue('same-id', 0, 'one'); second.enqueue('same-id', 0, 'two')
+  await settled()
+  expect(new AnnotationSync('owner', disk, offline, () => {}, 'reading-one@v1').drafts.map(x => x.payload)).toEqual(['one'])
+  expect(new AnnotationSync('owner', disk, offline, () => {}, 'reading-one@v2').drafts).toEqual([])
+})

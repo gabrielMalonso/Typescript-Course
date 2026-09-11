@@ -1,3 +1,4 @@
+import { readings } from '../shared/readings'
 import { ConvexError, v } from 'convex/values'
 import { mutation, query, type QueryCtx } from './_generated/server'
 
@@ -15,7 +16,10 @@ export const access = query({ args: {}, handler: async ctx => {
 } })
 
 function checkDocument(document: string) {
-  if (document !== 'laboratorio-anotacoes-v1') throw new ConvexError('Documento não autorizado.')
+  if (document === 'laboratorio-anotacoes-v1') return 2
+  const reading = readings.find(item => item.id === document)
+  if (!reading) throw new ConvexError('Documento não autorizado.')
+  return reading.pages
 }
 
 export const list = query({ args: { document: v.string() }, handler: async (ctx, args) => {
@@ -32,10 +36,10 @@ export const save = mutation({
   },
   handler: async (ctx, args) => {
     const user = await owner(ctx)
-    checkDocument(args.document)
+    const pageCount = checkDocument(args.document)
     const receipt = await ctx.db.query('receipts').withIndex('by_operation', q => q.eq('owner', user).eq('operationId', args.operationId)).unique()
     if (receipt) return { status: 'saved' as const, revision: receipt.revision }
-    if (!args.annotationId || args.annotationId.length > 160 || args.operationId.length > 160 || !Number.isInteger(args.pageIndex) || args.pageIndex < 0 || args.pageIndex > 1 || !Number.isInteger(args.baseRevision) || args.baseRevision < 0) throw new ConvexError('Anotação inválida.')
+    if (!args.annotationId || args.annotationId.length > 160 || !args.operationId || args.operationId.length > 160 || !Number.isInteger(args.pageIndex) || args.pageIndex < 0 || args.pageIndex >= pageCount || !Number.isInteger(args.baseRevision) || args.baseRevision < 0) throw new ConvexError('Anotação inválida.')
     if (args.payload !== null) {
       if (args.payload.length > 200_000) throw new ConvexError('Anotação muito grande.')
       const data: unknown = JSON.parse(args.payload)

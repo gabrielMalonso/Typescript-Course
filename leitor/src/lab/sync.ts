@@ -13,20 +13,22 @@ export class AnnotationSync {
   private conflictRevision: number | null = null
   private error = ''
   private readonly prefix: string
+  private readonly document: string
   private storage: Storage
   private save: (pending: Pending) => Promise<SaveResult>
   private changed: (state: SyncStatus) => void
-  constructor(owner: string, storage: Storage, save: (pending: Pending) => Promise<SaveResult>, changed: (state: SyncStatus) => void) {
+  constructor(owner: string, storage: Storage, save: (pending: Pending) => Promise<SaveResult>, changed: (state: SyncStatus) => void, document: string = DOCUMENT) {
+    this.document = document
     this.storage = storage
     this.save = save
     this.changed = changed
-    this.prefix = `pdf-outbox:${owner}:${DOCUMENT}:`
+    this.prefix = `pdf-outbox:${owner}:${document}:`
     try {
       for (let i = 0; i < storage.length; i++) {
         const key = storage.key(i)
         if (!key?.startsWith(this.prefix)) continue
         const value: unknown = JSON.parse(storage.getItem(key) ?? 'null')
-        if (!isPending(value)) throw new Error('Rascunho inválido')
+        if (!isPending(value) || value.document !== document) throw new Error('Rascunho inválido')
         this.pending.push(value)
       }
       this.pending.sort((a, b) => a.queuedAt - b.queuedAt || a.operationId.localeCompare(b.operationId))
@@ -43,7 +45,7 @@ export class AnnotationSync {
   }
   enqueue(annotationId: string, pageIndex: number, payload: string | null) {
     const previous = this.pending.filter(p => p.annotationId === annotationId).at(-1)
-    const operation: Pending = { document: DOCUMENT, annotationId, pageIndex, payload, operationId: crypto.randomUUID(), baseRevision: previous ? previous.baseRevision + 1 : this.revisions.get(annotationId) ?? 0, queuedAt: Math.max(Date.now(), (this.pending.at(-1)?.queuedAt ?? 0) + 1) }
+    const operation: Pending = { document: this.document, annotationId, pageIndex, payload, operationId: crypto.randomUUID(), baseRevision: previous ? previous.baseRevision + 1 : this.revisions.get(annotationId) ?? 0, queuedAt: Math.max(Date.now(), (this.pending.at(-1)?.queuedAt ?? 0) + 1) }
     this.pending.push(operation)
     this.persist(operation)
     this.emit()
@@ -91,5 +93,5 @@ export class AnnotationSync {
 
 function isPending(v: unknown): v is Pending {
   if (!v || typeof v !== 'object') return false
-  return 'document' in v && v.document === DOCUMENT && 'annotationId' in v && typeof v.annotationId === 'string' && 'operationId' in v && typeof v.operationId === 'string' && 'pageIndex' in v && Number.isInteger(v.pageIndex) && 'payload' in v && (v.payload === null || typeof v.payload === 'string') && 'baseRevision' in v && Number.isInteger(v.baseRevision) && 'queuedAt' in v && typeof v.queuedAt === 'number'
+  return 'document' in v && typeof v.document === 'string' && 'annotationId' in v && typeof v.annotationId === 'string' && 'operationId' in v && typeof v.operationId === 'string' && 'pageIndex' in v && Number.isInteger(v.pageIndex) && 'payload' in v && (v.payload === null || typeof v.payload === 'string') && 'baseRevision' in v && Number.isInteger(v.baseRevision) && 'queuedAt' in v && typeof v.queuedAt === 'number'
 }

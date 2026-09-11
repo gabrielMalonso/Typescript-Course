@@ -4,9 +4,10 @@ import {
   handleImageOptimization,
 } from 'vinext/server/image-optimization'
 import handler from 'vinext/server/app-router-entry'
+import { withStudyAccess, type AuthEnv } from './study-auth'
 
-interface Env {
-  ASSETS: Fetcher
+interface Env extends AuthEnv {
+  ASSETS: { fetch(request: Request): Promise<Response> }
   IMAGES: {
     input(stream: ReadableStream): {
       transform(options: Record<string, unknown>): {
@@ -26,29 +27,35 @@ interface ExecutionContext {
 
 const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-    const url = new URL(request.url)
+    return withStudyAccess(request, env, async () => {
+      const url = new URL(request.url)
 
-    if (url.pathname === '/_vinext/image') {
-      const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES]
-      return handleImageOptimization(
-        request,
-        {
-          fetchAsset: (assetPath) =>
-            env.ASSETS.fetch(new Request(new URL(assetPath, request.url))),
-          transformImage: async (body, { width, format, quality }) => {
-            const options = width > 0 ? { width } : {}
-            const result = await env.IMAGES.input(body).transform(options).output({
-              format,
-              quality,
-            })
-            return result.response()
+      if (url.pathname === '/_vinext/image') {
+        const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES]
+        return handleImageOptimization(
+          request,
+          {
+            fetchAsset: (assetPath) =>
+              env.ASSETS.fetch(new Request(new URL(assetPath, request.url))),
+            transformImage: async (body, { width, format, quality }) => {
+              const options = width > 0 ? { width } : {}
+              const result = await env.IMAGES.input(body).transform(options).output({
+                format,
+                quality,
+              })
+              return result.response()
+            },
           },
-        },
-        allowedWidths,
-      )
-    }
+          allowedWidths,
+        )
+      }
 
-    return handler.fetch(request, env, ctx)
+      if (env.ASSETS && (request.method === 'GET' || request.method === 'HEAD')) {
+        const asset = await env.ASSETS.fetch(request)
+        if (asset.status !== 404) return asset
+      }
+      return handler.fetch(request, env, ctx)
+    })
   },
 }
 

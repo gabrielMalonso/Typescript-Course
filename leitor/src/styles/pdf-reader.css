@@ -9,3 +9,7 @@
 .pdf-status { margin:0; padding:16px; text-align:center; font-size:.85rem; color:var(--text-soft); }
 .pdf-surface canvas { display:block; max-width:100%; }
 .is-night .pdf-surface canvas { filter:invert(1) brightness(.9); }
+.pdf-embed { flex:1; min-height:0; width:100%; overflow:hidden; }
+.pdf-alert { padding:10px 16px; background:var(--surface,#fff5df); color:var(--text); font-size:14px; }
+.pdf-alert button { margin-left:12px; }
+.session-error { padding:40px; }

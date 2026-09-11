@@ -35,3 +35,14 @@ describe('private annotations', () => {
     for (const bad of [{ document: 'course' }, { pageIndex: 2 }, { payload: '{}' }, { payload: 'bad JSON' }]) await expect(t.mutation(api.annotations.save, { ...args, ...bad })).rejects.toThrow()
   })
 })
+
+it('isolates the same annotation ID across readings and validates each file length', async () => {
+  const { readings } = await import('../shared/readings')
+  const t = convexTest(schema, modules).withIdentity({ subject: 'owner' })
+  const [first, second] = readings
+  await t.mutation(api.annotations.save, { ...args, document: first.id })
+  expect(await t.query(api.annotations.list, { document: second.id })).toHaveLength(0)
+  await t.mutation(api.annotations.save, { ...args, document: second.id, operationId: 'second-book' })
+  expect(await t.query(api.annotations.list, { document: first.id })).toHaveLength(1)
+  await expect(t.mutation(api.annotations.save, { ...args, document: second.id, pageIndex: second.pages, operationId: 'past-end' })).rejects.toThrow()
+})
