@@ -39,3 +39,21 @@ Piloto restrito ao capítulo 10: README com sete etapas, conexões curtas e leit
 Adicionados IDs de títulos e rolagem por fragmento para abrir uma nota/atividade no ponto indicado. Vinte links ancorados conferidos no HTML efetivamente renderizado de guia, notas e prática. Typecheck, lint, build, testes de zoom e diff check aprovados; avisos anteriores mantidos. Guia e notas responderam HTTP 200. Nenhum PDF, currículo ou material 00–09 alterado. Sem inspeção de navegador; não se atribui domínio ao relato de leitura do aluno.
 
 Publicação do percurso confirmada: versão 36, fonte `11a05ad98a90d24af60e0ff318359fd82780cbcd`, deployment `appgdep_6aa31b5368d88191b7a16dcd398d9a55`, estado `succeeded`. Mesmo endereço e acesso privado.
+
+
+## CLRS 2.1 — versão 37
+
+Acrescentadas páginas impressas 16–18, posições 37–39 do PDF original, como ponte antes de 2.2 na etapa 3. Guia delimita início no título 2.1 e fim antes de invariantes; nenhuma exigência de implementação ou prova. JSON mantém mapeamento e extensão de três páginas. Texto e rasterização das três páginas idênticos ao original; prévia inspecionada. Typecheck, lint e build aprovados, avisos anteriores mantidos. PDF presente no pacote e rota HTTP 200. Seis recortes somam 23 páginas. Nenhum trabalho do aluno ou currículo alterado.
+
+Publicação privada confirmada (`succeeded`): versão 37, fonte `cef7f1025d38816630457ba53bd04ccb25827699`, deployment `appgdep_6aa31d72517c81918438fd908fde1235`. Mesmo endereço do leitor.
+
+
+## Links de enunciados e adoção do fluxo — 2026-09-10
+
+Quatro links diretos nas atividades do CLRS: 1/9 para `clrs-1.2.pdf#page=4` (impressa 14); 2/3 para `clrs-2.2-02-casos.pdf#page=3` (impressa 29). Markdown preserva o fragmento; leitor espera páginas anteriores/target finalizarem layout e rola uma vez por navegação. Zoom não repete o salto; fragmentos inválidos voltam à página 1. Enunciados e arquivos PDF não alterados.
+
+AGENTS, prompts, README geral e documentação do leitor incorporam guia como percurso, notas pontuais, justificativas docentes no contexto, PDF/JSON e páginas diretas. Rótulo de guia, âncoras e retorno generalizados para capítulos >=10; nenhum capítulo futuro criado e nomes 00–09 preservados. Perfil/progresso registram relato de leitura, sem domínio. Sem mudança de ementa, provas, respostas ou diário.
+
+Typecheck, lint, build e testes de zoom/links passaram. Testes cobrem limites, fragmentos inválidos e renderização fora de ordem; HTML renderizado confere quatro links PDF e vinte âncoras Markdown, além do nome de guia futuro e nome histórico. Rota atividades HTTP 200; diff check limpo. Sem inspeção visual de navegador. Permanecem avisos anteriores.
+
+Publicação confirmada: versão 38, fonte `9758d5d9d55cae577ea95ad9dc2c9a55ff29dd9e`, deployment `appgdep_6aa32003c570819191e4c33930f8e541`, estado `succeeded`, acesso privado e URL preservados.

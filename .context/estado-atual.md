@@ -1,3 +1,11 @@
+## Situação atual — links diretos e fluxo adotado, 2026-09-10
+
+Gabriel autorizou incorporar as melhorias aprovadas do piloto à criação dos próximos capítulos: guia como percurso, notas pontuais e links a páginas do PDF. Diretrizes e prompts atualizados; generalização não cria capítulos futuros nem altera a ementa. Os quatro exercícios CLRS do 10 abrem a página do enunciado. Versão 38 publicada no mesmo site privado, confirmação `succeeded`. Próximo passo continua estudar a etapa atual do guia e realizar a atividade correspondente; leitura relatada não implica domínio ou conclusão. As entradas abaixo registram decisões e publicações anteriores.
+
+## Atualização — CLRS 2.1, 2026-09-10
+
+Incluído recorte de introdução a insertion sort (pp. 16–18) na etapa 3 do guia, antes da análise da 2.2. Sem implementação/prova exigida agora. Seis recortes, 23 páginas disponíveis. Versão 37 publicada no mesmo site privado, com estado `succeeded`; nenhum domínio ou conclusão atribuído.
+
 ## Atualização mais recente — guia como percurso, 2026-09-10
 
 Gabriel relata ter feito a primeira leitura no site e estar lendo os trechos do livro. Guia do capítulo 10 reorganizado em sete etapas que conectam vídeo, leituras, notas pontuais e prática; exibido como “Guia de estudo”. Próximo passo: retomar a etapa correspondente à leitura atual e realizar a atividade indicada, sem pressupor prática entregue ou domínio. Experiência restrita ao capítulo 10. Versão 36 publicada com acesso privado, confirmação `succeeded`, no mesmo endereço do leitor.

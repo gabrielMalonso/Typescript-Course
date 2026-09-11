@@ -1,4 +1,6 @@
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
+import { useLocation } from 'react-router-dom'
+import { pdfPageFromHash, pdfPagesBeforeTargetSettled } from './pdfPageLink'
 import { getDocument, GlobalWorkerOptions, type PDFDocumentProxy } from 'pdfjs-dist'
 import workerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url'
 import type { CatalogDocument } from '../content/types'
@@ -12,7 +14,7 @@ GlobalWorkerOptions.workerSrc = workerUrl
 
 type PdfDocument = Extract<CatalogDocument, { kind: 'pdf' }>
 
-function PdfPage({ pdf, page, width, doc }: { pdf: PDFDocumentProxy; page: number; width: number; doc: PdfDocument }) {
+function PdfPage({ pdf, page, width, doc, onSettled }: { pdf: PDFDocumentProxy; page: number; width: number; doc: PdfDocument; onSettled: (page: number) => void }) {
   const surface = useRef<HTMLDivElement>(null)
   const [busy, setBusy] = useState(true)
   const [error, setError] = useState(false)
@@ -38,12 +40,12 @@ function PdfPage({ pdf, page, width, doc }: { pdf: PDFDocumentProxy; page: numbe
       canvas.style.height = 'auto'
       render = sheet.render({ canvas, viewport, transform: [density, 0, 0, density, 0, 0] })
       await render.promise
-      if (active) { surface.current?.replaceChildren(canvas); setBusy(false) }
-    }).catch(() => { if (active) { setError(true); setBusy(false) } })
+      if (active) { surface.current?.replaceChildren(canvas); setBusy(false); onSettled(page) }
+    }).catch(() => { if (active) { setError(true); setBusy(false); onSettled(page) } })
     return () => { active = false; render?.cancel() }
-  }, [pdf, page, width, doc])
+  }, [pdf, page, width, doc, onSettled])
 
-  return <section className="pdf-page" aria-label={`Página ${doc.reading.printedStart + page - 1}`} aria-busy={busy}>
+  return <section data-pdf-page={page} className="pdf-page" aria-label={`Página ${doc.reading.printedStart + page - 1}`} aria-busy={busy}>
     {busy && !surface.current?.firstChild && <p className="pdf-status" role="status">Preparando página…</p>}
     {error && <p className="pdf-status" role="alert">Não foi possível exibir esta página. <a href={`${doc.url}#page=${page}`} target="_blank" rel="noreferrer">Abrir PDF original</a></p>}
     <div className="pdf-surface" ref={surface} style={{ visibility: error ? 'hidden' : 'visible' }} />
@@ -59,6 +61,25 @@ export default function PdfReader({ doc }: { doc: PdfDocument }) {
   const frame = useRef<HTMLElement>(null)
   const document = useRef<HTMLDivElement>(null)
   const renderWidth = usePdfZoom(frame, document, width)
+  const { hash, key: navigationKey } = useLocation()
+  const [settledPages, setSettledPages] = useState<ReadonlySet<number>>(() => new Set())
+  const lastNavigation = useRef<string | null>(null)
+  const onPageSettled = useCallback((page: number) => {
+    setSettledPages(current => current.has(page) ? current : new Set([...current, page]))
+  }, [])
+
+  useEffect(() => {
+    if (lastNavigation.current === navigationKey) return
+    const page = pdfPageFromHash(hash, doc.reading.pageCount)
+    // Earlier pages must have their final heights before scrolling to the target.
+    if (!pdfPagesBeforeTargetSettled(page, settledPages)) return
+    const viewport = frame.current
+    const target = document.current?.querySelector<HTMLElement>(`[data-pdf-page="${page}"]`)
+    if (!viewport || !target) return
+    viewport.scrollTo({ left: 0, top: viewport.scrollTop + target.getBoundingClientRect().top - viewport.getBoundingClientRect().top })
+    lastNavigation.current = navigationKey
+  }, [hash, navigationKey, settledPages, doc.reading.pageCount])
+
 
   useEffect(() => {
     const task = getDocument({ url: doc.url })
@@ -84,7 +105,7 @@ export default function PdfReader({ doc }: { doc: PdfDocument }) {
     <main className="pdf-frame" ref={frame} aria-label={`${doc.reading.book} — ${doc.reading.section}`}>
       <div className="pdf-document" ref={document}>
       {error ? <p className="pdf-status" role="alert">{error} <a href={doc.url} target="_blank" rel="noreferrer">Abrir PDF original</a></p>
-        : pdf ? Array.from({ length: pdf.numPages }, (_, index) => <PdfPage key={index + 1} pdf={pdf} page={index + 1} width={renderWidth} doc={doc} />)
+        : pdf ? Array.from({ length: pdf.numPages }, (_, index) => <PdfPage key={index + 1} pdf={pdf} page={index + 1} width={renderWidth} doc={doc} onSettled={onPageSettled} />)
         : <p className="pdf-status" role="status">Abrindo leitura…</p>}
       </div>
     </main>

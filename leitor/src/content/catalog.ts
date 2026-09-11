@@ -281,5 +281,5 @@ export function chapterCount(): number {
 
 
 export function documentLabel(doc: CatalogDocument): string {
-  return doc.slug === '10-complexidade-e-big-o/README' ? 'Guia de estudo' : doc.fileName
+  return Number(doc.chapterId.slice(0, 2)) >= 10 && doc.fileName === 'README.md' ? 'Guia de estudo' : doc.fileName
 }

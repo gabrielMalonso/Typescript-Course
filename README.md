@@ -26,7 +26,7 @@ Os capítulos 00–09 preservam sua estrutura, trabalhos e referências históri
 
 A ementa define o que aprender e em qual sequência. O professor organiza referências excelentes em um roteiro personalizado: **videoaula → leitura orientada → esclarecimentos necessários → prática selecionada → LeetCode ou lab → feedback e revisão**. Cada capítulo começa por conhecimentos e experiências anteriores.
 
-O README do capítulo indica o vídeo e seus trechos, o livro e suas seções/páginas verificadas, objetivos da leitura e atividades essenciais. CS50/Harvard é a primeira fonte de vídeo a consultar; MIT OCW e outras fontes acadêmicas entram conforme adequação. Em DSA, o livro-âncora inicial é CLRS, 3ª edição, com apoio do mapa de leituras do MIT 6.006 Fall 2011. Material próprio só preenche lacunas específicas.
+O **Guia de estudo** (`README.md`) conecta os materiais na ordem de uso: uma orientação curta, o link da leitura e a próxima atividade. Notas complementares aparecem somente no ponto necessário; exercícios ligam à página do enunciado nos recortes PDF disponíveis. CS50/Harvard é a primeira fonte de vídeo a consultar; MIT OCW e outras fontes acadêmicas entram conforme adequação. Em DSA, o livro-âncora inicial é CLRS, 3ª edição, com apoio do mapa de leituras do MIT 6.006 Fall 2011. Material próprio só preenche lacunas específicas.
 
 A prática é selecionada prioritariamente do livro, MIT e CS50; LeetCode e labs integram a faixa inicial flexível de 8–15 atividades totais. Consolidação depende da necessidade e desafios são opcionais. O aluno pode entregar tentativas durante o percurso; o avanço ocorre por domínio demonstrado, sem provas ou checkpoints obrigatórios. Revisões reaparecem naturalmente nos exercícios futuros.
 

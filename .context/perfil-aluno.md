@@ -21,6 +21,10 @@ Gabriel prefere começar pela videoaula para obter uma visão do assunto, depois
 
 Relata já ter assistido ao CS50 Week 3, acompanhando a maior parte, com dificuldade na implementação de recursão em C; não registrar domínio de recursão. Relata trabalho em Two Sum, Contains Duplicate e Best Time to Buy and Sell Stock, TLE, loops aninhados, efeito de console.log no runtime e otimização de Stock para uma passagem. São âncoras de estudo, sem avaliação formal dessas soluções nesta sessão.
 
+### Preferências confirmadas no uso do leitor — 2026-09-10
+
+Gabriel aprovou a leitura do PDF original em modo escuro, com pinça restrita ao documento e barra igual às páginas de texto. Relata ter feito a primeira leitura e continuar estudando trechos. Prefere um guia curto que conecte materiais e prática na ordem de uso, notas somente no ponto necessário e links de exercícios à página exata do enunciado. Aprovação da ferramenta e relato de leitura não equivalem a domínio avaliado.
+
 ## Objetivos atuais — atualização solicitada em 2026-09-09
 
 Construir uma base generalista em Ciência da Computação e Engenharia de Software: resolver problemas, compreender sistemas, construir software e aprender tecnologias de forma independente. TypeScript é a linguagem principal; C, SQL, Shell e Assembly aparecem apenas como ferramentas explicativas contextuais.

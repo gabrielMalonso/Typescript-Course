@@ -22,7 +22,13 @@ Leia **Algorithms as a technology** pensando no seu TLE: em que situação o cre
 
 ## 3. Como contar o trabalho?
 
-Comparar fórmulas é um começo. Agora você precisa reconhecer o tamanho da entrada e o trabalho que se repete no código.
+Comparar fórmulas é um começo. Antes de analisar o custo, conheça o algoritmo que o livro usa como exemplo.
+
+[CLRS 2.1 · páginas 16–18](leituras/clrs-2.1.pdf)
+
+Comece em **2.1 — Insertion sort**, na p. 16. Acompanhe a ideia das cartas, a figura 2.2 e os passos do pseudocódigo; pare antes de **Loop invariants and the correctness of insertion sort**, na p. 18. Por enquanto, basta entender o funcionamento: implementação, provas e comparação entre ordenações ficam para o capítulo de sorting.
+
+Agora siga para a seção 2.2: identifique o tamanho da entrada e conte o trabalho que se repete nesse algoritmo.
 
 | Ordem | Leitura da seção 2.2 | Recorte |
 |---|---|---|

@@ -8,17 +8,17 @@ São **11 atividades no total**: 1–8 essenciais; 9–10 de consolidação; 11 
 
 ### 1. CLRS 1.2-2 — Comparar alternativas
 
-**Origem:** seção 1.2, p. 14. Faça após a leitura 1.2. Use as expressões e a condição exatas do livro. Pode usar uma tabela ou um pequeno programa em TypeScript; explique como verificou os limites da sua resposta. Não precisa implementar as ordenações mencionadas.
+**Origem:** seção 1.2, [p. 14 — abrir enunciado](../leituras/clrs-1.2.pdf#page=4). Faça após a leitura 1.2. Use as expressões e a condição exatas do livro. Pode usar uma tabela ou um pequeno programa em TypeScript; explique como verificou os limites da sua resposta. Não precisa implementar as ordenações mencionadas.
 
 O foco é perceber quando constantes e crescimento mudam a comparação entre algoritmos. Registre o raciocínio e a resposta, sem relatório extenso.
 
 ### 2. CLRS 2.2-1 — Ordem de crescimento
 
-**Origem:** seção 2.2, p. 29. Faça após os recortes de 2.2 e 3.1. O original pede **Θ**; use essa notação e explique por que o termo escolhido descreve o crescimento. Não é necessário demonstrar formalmente com constantes e limiares.
+**Origem:** seção 2.2, [p. 29 — abrir enunciado](../leituras/clrs-2.2-02-casos.pdf#page=3). Faça após os recortes de 2.2 e 3.1. O original pede **Θ**; use essa notação e explique por que o termo escolhido descreve o crescimento. Não é necessário demonstrar formalmente com constantes e limiares.
 
 ### 3. CLRS 2.2-3 — Uma busca e suas entradas
 
-**Origem:** seção 2.2, p. 29. A busca linear mencionada percorre a coleção em sequência até encontrar o valor. Leia e responda o enunciado original, incluindo suas hipóteses sobre a posição do elemento. Distingua quantidade esperada de verificações e ordem de crescimento.
+**Origem:** seção 2.2, [p. 29 — abrir enunciado](../leituras/clrs-2.2-02-casos.pdf#page=3). A busca linear mencionada percorre a coleção em sequência até encontrar o valor. Leia e responda o enunciado original, incluindo suas hipóteses sobre a posição do elemento. Distingua quantidade esperada de verificações e ordem de crescimento.
 
 **Extensão do curso para TypeScript e testes:** implemente uma busca que recebe um array de números e um valor, retornando um objeto com o índice da primeira ocorrência (`-1` se ausente) e a quantidade de comparações de igualdade realizadas. Preserve a entrada.
 
@@ -97,7 +97,7 @@ Para as atividades 6–8, se não houver versão antiga salva, registre essa aus
 
 ### 9. CLRS 1.2-3 — Crescimentos que se cruzam
 
-**Origem:** seção 1.2, p. 14. Faça com os valores e a comparação do enunciado original. Pode usar tabela ou programa com limites pequenos e explícitos. Explique como verificou o primeiro valor que satisfaz a condição, sem depender de um único teste isolado. Esta atividade reforça a comparação de crescimento polinomial e exponencial.
+**Origem:** seção 1.2, [p. 14 — abrir enunciado](../leituras/clrs-1.2.pdf#page=4). Faça com os valores e a comparação do enunciado original. Pode usar tabela ou programa com limites pequenos e explícitos. Explique como verificou o primeiro valor que satisfaz a condição, sem depender de um único teste isolado. Esta atividade reforça a comparação de crescimento polinomial e exponencial.
 
 ### 10. Contagem, tempo e logging
 

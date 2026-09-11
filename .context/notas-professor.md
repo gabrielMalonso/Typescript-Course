@@ -1032,3 +1032,20 @@ Gabriel relatou ter feito a primeira leitura no leitor e estar lendo os trechos 
 Curadoria retirada da interface, preservada aqui: CS50x 2026 Week 3 escolhido pela didática apreciada e demonstrações de busca/eficiência; assistir novamente só conforme dúvida (Searching, Linear Search, Binary Search e Running Time, antes de search.c). CLRS 3ª edição inglesa, MIT Press 2009, https://mitpress.mit.edu/9780262033848/introduction-to-algorithms/. Apoio MIT 6.006 Fall 2011: https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/pages/readings/ e Lecture 2 Models of computation (primeira página; demais custos de Python não transferidos automaticamente). Fontes e recortes conferidos em 10/09/2026 nas tarefas anteriores; não foi selecionada bibliografia nova. Lista MIT completa foi evitada pelos pré-requisitos adicionais. Referências das notas: MDN Array/map, Array/find e Node performance.now, já conferidas na curadoria anterior.
 
 Manter revisão futura: retomar Two Sum e Contains Duplicate após 11; código novo com arrays/callbacks em 12–13; análise de tempo, memória e decisões no capstone após 15. Critérios do feedback: justificar contagens e casos, interpretar O/Ω/Θ, comparar famílias, separar entrada/saída/auxiliar, testar limites e melhorar uma solução. Registros de avaliações e entregas permanecem intactos.
+
+
+### Ponte antes da análise — CLRS 2.1, 2026-09-10
+
+Gabriel autorizou incluir as páginas 16–18 da seção 2.1 antes da 2.2 e publicar. Objetivo: compreender o exemplo de insertion sort (cartas, figura 2.2 e pseudocódigo) antes de analisar seu custo. Leitura começa no título 2.1 da p. 16 e termina antes de “Loop invariants and the correctness of insertion sort” na p. 18. Implementação, provas e comparação de ordenações permanecem para o capítulo de sorting; não foram acrescentados exercícios nem as páginas 20–22 sugeridas apenas como possível consulta. O recorte corresponde às posições 37–39 do PDF enviado. Sequência curricular e evidências acadêmicas preservadas.
+
+
+### Fluxo aprovado incorporado à criação de capítulos — 2026-09-10
+
+Gabriel autorizou links diretos das atividades às páginas do PDF e generalização das melhorias do piloto para capítulos futuros. AGENTS e prompts agora definem guia como percurso conciso, notas pontuais com retorno à etapa, detalhes docentes no contexto, recortes PDF/JSON e links `#page=N` relativos ao recorte. Leitor generalizado para nome “Guia de estudo”, âncoras de etapas/atividades e retorno ao guia a partir do capítulo 10. Nenhum capítulo futuro criado, nenhuma mudança de sequência ou nova exigência de avaliação.
+
+Atividades 1 e 9: CLRS 1.2-2/1.2-3, página impressa 14 = página 4 de clrs-1.2.pdf. Atividades 2 e 3: CLRS 2.2-1/2.2-3, página impressa 29 = página 3 de clrs-2.2-02-casos.pdf. Enunciados e soluções preservados; não foram criados PDFs adicionais.
+
+
+### Catálogo de consulta rápida — 2026-09-10
+
+A pedido de Gabriel, criado `CATALOGO.md` na raiz com uma entrada-modelo de Insertion Sort: ideia curta, adequação por situação, custos, contrato, código TypeScript e referência. Organização por categoria e nome; novas entradas serão adicionadas manualmente ou por solicitação, sem antecipar todo o currículo. Código de referência fornecido por pedido explícito, sem registrar implementação independente ou domínio do aluno. Nove casos executados validaram ordenação e mutação da mesma referência. Criação local; integração ao leitor não solicitada nesta etapa.
