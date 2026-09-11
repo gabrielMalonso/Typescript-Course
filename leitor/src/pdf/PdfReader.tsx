@@ -46,10 +46,10 @@ export default function PdfReader({ doc }: { doc: PdfDocument }) {
     disabledCategories: [
       'document-open',
       'document-close',
+      'insert-rubber-stamp',
+      'insert-signature',
       'redaction',
-      'insert',
       'attachment',
-      'annotation-stamp',
       'form',
     ],
     annotations: { annotationAuthor: 'Gabriel Alonso' },

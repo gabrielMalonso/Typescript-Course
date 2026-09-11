@@ -1,24 +1,6 @@
-import { readings } from '../shared/readings'
+import { owner, checkDocument } from './access'
 import { ConvexError, v } from 'convex/values'
-import { mutation, query, type QueryCtx } from './_generated/server'
-
-async function owner(ctx: Pick<QueryCtx, 'auth'>) {
-  const identity = await ctx.auth.getUserIdentity()
-  if (
-    !identity ||
-    !process.env.OWNER_WORKOS_USER_ID ||
-    identity.subject !== process.env.OWNER_WORKOS_USER_ID
-  ) {
-    throw new ConvexError('Acesso restrito ao proprietário.')
-  }
-  return identity.subject
-}
-
-function checkDocument(document: string) {
-  const reading = readings.find((item) => item.id === document)
-  if (!reading) throw new ConvexError('Documento não autorizado.')
-  return reading.pages
-}
+import { mutation, query } from './_generated/server'
 
 export const list = query({
   args: { document: v.string() },
@@ -81,6 +63,19 @@ export const save = mutation({
         typeof data.type !== 'number'
       )
         throw new ConvexError('Anotação inválida.')
+      if ('_imageKey' in data) {
+        if (typeof data._imageKey !== 'string')
+          throw new ConvexError('Imagem inválida.')
+        const key = data._imageKey
+        const image = await ctx.db
+          .query('images')
+          .withIndex('by_owner_document_key', (q) =>
+            q.eq('owner', user).eq('document', args.document).eq('key', key),
+          )
+          .unique()
+        if (!image) throw new ConvexError('A imagem ainda não foi salva.')
+      } else if (data.type === 13)
+        throw new ConvexError('Imagem sem arquivo associado.')
     }
     const existing = await ctx.db
       .query('annotations')

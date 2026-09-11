@@ -10,6 +10,8 @@ import {
 } from '@embedpdf/react-pdf-viewer'
 import { api } from '../../convex/_generated/api'
 import { AnnotationSync, type SyncStatus } from './sync'
+import { ImageAssets, payloadImageKey } from './imageAssets'
+import { useStudyToken } from '../auth/session'
 
 /** Connect one viewer document to the owner's persistent annotation history. */
 export function useAnnotations(
@@ -17,6 +19,14 @@ export function useAnnotations(
   documentId: string,
   registry: PluginRegistry | null,
 ) {
+  const fetchToken = useStudyToken()
+  const [images] = useState(
+    () => new ImageAssets(owner, documentId, fetchToken),
+  )
+  const jobs = useRef(new Map<string, () => Promise<void>>())
+  const jobChain = useRef(Promise.resolve())
+  const [imageError, setImageError] = useState('')
+  const [imageBusy, setImageBusy] = useState(false)
   const { isAuthenticated } = useConvexAuth()
   const rows = useQuery(
     api.annotations.list,
@@ -39,7 +49,11 @@ export function useAnnotations(
     const controller = new AnnotationSync(
       owner,
       localStorage,
-      ({ queuedAt: _queuedAt, ...op }) => save(op),
+      async ({ queuedAt: _queuedAt, ...op }) => {
+        const key = payloadImageKey(op.payload)
+        if (key) await images.upload(key)
+        return save(op)
+      },
       setStatus,
       documentId,
     )
@@ -48,7 +62,7 @@ export function useAnnotations(
       void controller.flush()
     }
     const unload = (event: BeforeUnloadEvent) => {
-      if (controller.hasPending) {
+      if (controller.hasPending || jobs.current.size) {
         event.preventDefault()
         event.returnValue = ''
       }
@@ -61,7 +75,7 @@ export function useAnnotations(
       window.removeEventListener('online', retry)
       window.removeEventListener('beforeunload', unload)
     }
-  }, [owner, save, documentId])
+  }, [owner, save, documentId, images])
 
   useEffect(() => {
     if (!registry) return
@@ -83,10 +97,48 @@ export function useAnnotations(
         return
       }
       if (event.committed || applying.current) return
-      const payload =
-        event.type === 'delete' ? null : JSON.stringify(event.annotation)
-      seen.current.set(event.annotation.id, payload)
-      sync.current?.enqueue(event.annotation.id, event.pageIndex, payload)
+      const controller = sync.current
+      const enqueue = (imageKey?: string) => {
+        const payload =
+          event.type === 'delete'
+            ? null
+            : JSON.stringify({
+                ...event.annotation,
+                ...(imageKey ? { _imageKey: imageKey } : {}),
+              })
+        seen.current.set(event.annotation.id, payload)
+        controller?.enqueue(event.annotation.id, event.pageIndex, payload)
+      }
+      if (event.annotation.type !== 13) {
+        enqueue()
+        return
+      }
+      const id = event.annotation.id
+      // Serialize creation and subsequent moves so the binary is durable before its metadata.
+      const job = async () => {
+        const key =
+          event.type === 'delete'
+            ? undefined
+            : await images.prepare(
+                id,
+                event.type === 'create' ? event.ctx : undefined,
+              )
+        enqueue(key)
+        if (jobs.current.get(id) === job) jobs.current.delete(id)
+      }
+      jobs.current.set(id, job)
+      setImageBusy(true)
+      jobChain.current = jobChain.current
+        .then(job)
+        .then(() => {
+          if (!jobs.current.size) setImageError('')
+        })
+        .catch((error) =>
+          setImageError(
+            error instanceof Error ? error.message : 'Falha ao salvar imagem.',
+          ),
+        )
+        .finally(() => setImageBusy(jobs.current.size > 0))
     })
     const offError = documents.onDocumentError(() =>
       setFailure('Não foi possível abrir o PDF. Recarregue a página.'),
@@ -97,64 +149,106 @@ export function useAnnotations(
       off()
       offError()
     }
-  }, [registry, documentId])
+  }, [registry, documentId, images])
 
   useEffect(() => {
     if (!scope || !rows || !sync.current) return
     const controller = sync.current
     controller.receive(rows)
-    applying.current = true
-    try {
-      const apply = (id: string, page: number, payload: string | null) => {
-        if (seen.current.get(id) === payload) return
-        const existing = scope.getAnnotationById(id)
-        if (payload === null) {
-          if (existing && existing.commitState !== 'deleted')
-            scope.deleteAnnotation(page, id)
-        } else {
-          const annotation = decodeAnnotation(payload)
-          if (existing && existing.commitState !== 'deleted')
-            scope.updateAnnotation(page, id, annotation)
-          else scope.importAnnotations([{ annotation }])
-        }
-        // Undo must not restore a stale version over a change from another device.
-        registry
-          ?.getPlugin<HistoryPlugin>('history')
-          ?.provides()
-          .forDocument(documentId)
-          .purgeByMetadata<{ annotationIds?: string[] }>(
-            (metadata) => metadata?.annotationIds?.includes(id) ?? false,
+    let cancelled = false
+    const restore = async () => {
+      try {
+        const apply = async (
+          id: string,
+          page: number,
+          payload: string | null,
+          draft = false,
+        ) => {
+          if (seen.current.get(id) === payload) return
+          const key = payloadImageKey(payload)
+          const data = key ? await images.load(key) : undefined
+          if (
+            cancelled ||
+            jobs.current.has(id) ||
+            (!draft && controller.hasPendingFor(id))
           )
-        seen.current.set(id, payload)
+            return
+          if (key) images.remember(id, key)
+          applying.current = true
+          const existing = scope.getAnnotationById(id)
+          if (payload === null) {
+            if (existing && existing.commitState !== 'deleted')
+              scope.deleteAnnotation(page, id)
+          } else {
+            const annotation = decodeAnnotation(payload)
+            if (existing && existing.commitState !== 'deleted')
+              scope.updateAnnotation(page, id, annotation)
+            else
+              scope.importAnnotations([
+                { annotation, ...(data ? { ctx: { data } } : {}) },
+              ])
+          }
+          // Undo must not restore a stale version over a change from another device.
+          registry
+            ?.getPlugin<HistoryPlugin>('history')
+            ?.provides()
+            .forDocument(documentId)
+            .purgeByMetadata<{ annotationIds?: string[] }>(
+              (metadata) => metadata?.annotationIds?.includes(id) ?? false,
+            )
+          seen.current.set(id, payload)
+          applying.current = false
+        }
+        for (const row of rows) {
+          if (
+            !controller.hasPendingFor(row.annotationId) &&
+            row.revision >= controller.revisionFor(row.annotationId)
+          )
+            await apply(row.annotationId, row.pageIndex, row.payload)
+        }
+        for (const draft of controller.drafts)
+          await apply(draft.annotationId, draft.pageIndex, draft.payload, true)
+      } catch {
+        if (!cancelled)
+          setImageError(
+            'Uma anotação não pôde ser restaurada. Seus dados continuam salvos.',
+          )
+      } finally {
+        applying.current = false
       }
-      for (const row of rows) {
-        if (
-          !controller.hasPendingFor(row.annotationId) &&
-          row.revision >= controller.revisionFor(row.annotationId)
-        )
-          apply(row.annotationId, row.pageIndex, row.payload)
-      }
-      for (const draft of controller.drafts)
-        apply(draft.annotationId, draft.pageIndex, draft.payload)
-    } catch {
-      setFailure(
-        'Uma anotação não pôde ser restaurada. Seus dados continuam salvos.',
-      )
-    } finally {
-      applying.current = false
+      if (!cancelled) void controller.flush()
     }
-    void controller.flush()
-  }, [rows, scope, registry, status.pending, refresh, documentId])
+    void restore()
+    return () => {
+      cancelled = true
+    }
+  }, [
+    rows,
+    scope,
+    registry,
+    status.pending,
+    refresh,
+    documentId,
+    images,
+    imageBusy,
+  ])
 
   const resolveConflict = (keep: boolean) => {
     sync.current?.resolveConflict(keep)
     setRefresh((n) => n + 1)
   }
   const retry = () => {
+    setImageError('')
+    for (const job of jobs.current.values())
+      jobChain.current = jobChain.current
+        .then(job)
+        .catch((error) => setImageError(String(error)))
+        .finally(() => setImageBusy(jobs.current.size > 0))
+    setRefresh((n) => n + 1)
     void sync.current?.flush()
   }
   return {
-    status,
+    status: { ...status, error: imageError || status.error },
     failure,
     ready: Boolean(rows && scope && !failure),
     resolveConflict,
@@ -177,5 +271,8 @@ function decodeAnnotation(payload: string): PdfAnnotationObject {
     !('rect' in value)
   )
     throw new Error('Invalid annotation')
-  return value as PdfAnnotationObject
+  const { _imageKey: _key, ...annotation } = value as PdfAnnotationObject & {
+    _imageKey?: string
+  }
+  return annotation
 }

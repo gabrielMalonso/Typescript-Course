@@ -8,7 +8,10 @@
  * @module
  */
 
+import type * as access from "../access.js";
 import type * as annotations from "../annotations.js";
+import type * as http from "../http.js";
+import type * as images from "../images.js";
 
 import type {
   ApiFromModules,
@@ -17,7 +20,10 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  access: typeof access;
   annotations: typeof annotations;
+  http: typeof http;
+  images: typeof images;
 }>;
 
 /**

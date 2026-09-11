@@ -12,7 +12,10 @@ export function arrangeViewer(container: Element, dark: boolean) {
     #document-content { order: 0; min-height: 0; }
     [data-study-bar] { flex-shrink: 0; border-top: 1px solid var(--ep-border-subtle); }
     [data-study-popup] { top: var(--study-popup-top) !important; max-height: var(--study-popup-height); overflow-y: auto; }
-    ${dark ? '#document-content img[src^="blob:"] { filter: invert(1) hue-rotate(180deg) brightness(.9); }' : ''}
+    ${dark ? `
+      #document-content img[src^="blob:"] { filter: invert(1) hue-rotate(180deg) brightness(.9); }
+      #document-content [style*="mix-blend-mode"] img { filter: none; }
+    ` : ''}
     @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
   `
   root.append(style)

@@ -27,3 +27,9 @@ export function useStudyOwner() {
   if (!value?.session) throw new Error('Missing authenticated owner')
   return value.session.user.id
 }
+
+export function useStudyToken() {
+  const value = useContext(SessionContext)
+  if (!value) throw new Error('Missing StudySession')
+  return value.fetchToken
+}

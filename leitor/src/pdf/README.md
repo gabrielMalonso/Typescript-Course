@@ -40,6 +40,26 @@ repetidas seguras. Alterações simultâneas no mesmo objeto pedem uma escolha.
 A fila local preserva gravações pendentes, mas não garante leitura offline.
 Avisos aparecem somente em erro ou conflito; não há painel permanente de sync.
 
+### Imagens
+
+Em **Inserir → Imagem**, clicar na página e escolher um PNG ou JPEG de até
+5 MB. A imagem pode ser movida, redimensionada e excluída pelas ferramentas
+nativas. Suas cores são preservadas no modo escuro.
+
+`imageAssets.ts` guarda o rascunho binário no IndexedDB, envia o arquivo ao
+Convex Storage e só então libera a gravação da anotação. O campo `_imageKey`
+associa a posição ao conteúdo SHA-256; mover a imagem não repete o upload.
+Imagens restauradas são mantidas em memória durante a leitura. O banco local
+guarda somente uploads pendentes e não constitui um modo offline completo.
+
+`VITE_CONVEX_SITE_URL` aponta para o domínio HTTP do Convex (`*.convex.site`).
+O endpoint `/reading-image` exige o token WorkOS e verifica o proprietário e a
+leitura em cada upload/download. Nenhuma URL pública de Storage é entregue.
+Novos domínios de frontend precisam entrar na allowlist CORS de `convex/http.ts`.
+Arquivos permanecem armazenados após excluir uma anotação, permitindo desfazer;
+não há coleta automática de arquivos órfãos. As imagens também entram na cópia
+anotada exportada pelo EmbedPDF; o livro original permanece intacto.
+
 `pdfLayout.ts` adapta a disposição dos slots originais no Shadow DOM do EmbedPDF
 2.15. Ao atualizar a biblioteca, verificar rodapé, menus, zoom, anotação e tema.
 A entrada usa os controles nativos; não há seletor adicional de caneta/toque.
@@ -55,12 +75,15 @@ Na publicação, verificar que uma requisição anônima não recebe PDFs ou bun
 e que a allowlist do Sites continua contendo somente o proprietário. Testes com
 o token administrativo de bypass do Sites não representam acesso anônimo: esse
 token autoriza o dispatcher e permite arquivos estáticos mesmo sem WorkOS.
+Os testes de imagens cobrem acesso anônimo e de outra conta, isolamento por
+leitura, limites, integridade do arquivo, deduplicação e vínculo da anotação.
 
 ## Organização
 
 - `PdfReader.tsx`: composição do leitor, tema e navegação por página.
 - `useAnnotations.ts`: integração React/EmbedPDF/Convex e restauração das marcações.
 - `sync.ts`: fila persistente, revisões e resolução de conflitos, sem depender do React.
+- `imageAssets.ts`: rascunhos binários e transporte autenticado das imagens.
 - `pdfLayout.ts`: adaptação das barras e menus nativos ao rodapé.
 - `pdfPageLink.ts`: interpretação dos links para páginas do recorte.
 
