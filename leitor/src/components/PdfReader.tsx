@@ -1,113 +1,145 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { useConvexAuth, useMutation, useQuery } from 'convex/react'
+import { PDFViewer, AnnotationPlugin, DocumentManagerPlugin, HistoryPlugin, ScrollPlugin, ZoomMode, type AnnotationScope, type PDFViewerConfig, type PluginRegistry, type PdfAnnotationObject } from '@embedpdf/react-pdf-viewer'
+import wasmUrl from '@embedpdf/pdfium/pdfium.wasm?url'
+import { api } from '../../convex/_generated/api'
+import { AnnotationSync, type SyncStatus } from '../lab/sync'
 import { useLocation } from 'react-router-dom'
-import { pdfPageFromHash, pdfPagesBeforeTargetSettled } from './pdfPageLink'
-import { getDocument, GlobalWorkerOptions, type PDFDocumentProxy } from 'pdfjs-dist'
-import workerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url'
-import type { CatalogDocument } from '../content/types'
+import { useStudyOwner } from '../auth/StudySession'
+import { useTheme } from '../theme/ThemeProvider'
 import { Sidebar } from './Sidebar'
 import { ReaderToolbar } from './ReaderToolbar'
-import { useTheme } from '../theme/ThemeProvider'
-import { usePdfZoom } from './usePdfZoom'
+import { pdfPageFromHash } from './pdfPageLink'
+import { readings } from '../../shared/readings'
+import type { CatalogDocument } from '../content/types'
+import { arrangeViewer } from './pdfLayout'
 import '../styles/pdf-reader.css'
-
-GlobalWorkerOptions.workerSrc = workerUrl
 
 type PdfDocument = Extract<CatalogDocument, { kind: 'pdf' }>
 
-function PdfPage({ pdf, page, width, doc, onSettled }: { pdf: PDFDocumentProxy; page: number; width: number; doc: PdfDocument; onSettled: (page: number) => void }) {
-  const surface = useRef<HTMLDivElement>(null)
-  const [busy, setBusy] = useState(true)
-  const [error, setError] = useState(false)
-
-  useEffect(() => {
-    if (!width) return
-    let active = true
-    let render: ReturnType<Awaited<ReturnType<PDFDocumentProxy['getPage']>>['render']> | undefined
-    setBusy(true)
-    setError(false)
-    // Each render owns its canvas, including while the viewport is being resized.
-    const canvas = document.createElement('canvas')
-    canvas.setAttribute('role', 'img')
-    canvas.setAttribute('aria-label', `${doc.reading.title}, página ${doc.reading.printedStart + page - 1}`)
-    pdf.getPage(page).then(async sheet => {
-      if (!active) return
-      const base = sheet.getViewport({ scale: 1 })
-      const viewport = sheet.getViewport({ scale: width / base.width })
-      const density = Math.min(window.devicePixelRatio || 1, 2, 2400 / viewport.width)
-      canvas.width = Math.ceil(viewport.width * density)
-      canvas.height = Math.ceil(viewport.height * density)
-      canvas.style.width = '100%'
-      canvas.style.height = 'auto'
-      render = sheet.render({ canvas, viewport, transform: [density, 0, 0, density, 0, 0] })
-      await render.promise
-      if (active) { surface.current?.replaceChildren(canvas); setBusy(false); onSettled(page) }
-    }).catch(() => { if (active) { setError(true); setBusy(false); onSettled(page) } })
-    return () => { active = false; render?.cancel() }
-  }, [pdf, page, width, doc, onSettled])
-
-  return <section data-pdf-page={page} className="pdf-page" aria-label={`Página ${doc.reading.printedStart + page - 1}`} aria-busy={busy}>
-    {busy && !surface.current?.firstChild && <p className="pdf-status" role="status">Preparando página…</p>}
-    {error && <p className="pdf-status" role="alert">Não foi possível exibir esta página. <a href={`${doc.url}#page=${page}`} target="_blank" rel="noreferrer">Abrir PDF original</a></p>}
-    <div className="pdf-surface" ref={surface} style={{ visibility: error ? 'hidden' : 'visible' }} />
-  </section>
+export default function PdfReader({ doc }: { doc: PdfDocument }) {
+  return <ReadingViewer key={doc.slug} doc={doc} />
 }
 
-export default function PdfReader({ doc }: { doc: PdfDocument }) {
-  const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null)
-  const [width, setWidth] = useState(0)
-  const [sidebar, setSidebar] = useState(false)
+function ReadingViewer({ doc }: { doc: PdfDocument }) {
+  const owner = useStudyOwner()
+  const reading = readings.find(item => item.slug === doc.slug)
+  if (!reading) throw new Error('Leitura não cadastrada')
+  const DOCUMENT = reading.id
   const { theme } = useTheme()
-  const [error, setError] = useState('')
-  const frame = useRef<HTMLElement>(null)
-  const document = useRef<HTMLDivElement>(null)
-  const renderWidth = usePdfZoom(frame, document, width)
   const { hash, key: navigationKey } = useLocation()
-  const [settledPages, setSettledPages] = useState<ReadonlySet<number>>(() => new Set())
-  const lastNavigation = useRef<string | null>(null)
-  const onPageSettled = useCallback((page: number) => {
-    setSettledPages(current => current.has(page) ? current : new Set([...current, page]))
-  }, [])
+  const [sidebar, setSidebar] = useState(false)
+  const [config] = useState<PDFViewerConfig>(() => ({
+    documentManager: { maxDocuments: 1, initialDocuments: [{ url: doc.url, documentId: DOCUMENT, name: doc.reading.title }] },
+    wasmUrl: new URL(wasmUrl, window.location.origin).href,
+    stamp: { defaultLibrary: false, manifests: [], libraries: [] }, fonts: { ui: null, signature: null }, fontFallback: null,
+    theme: { preference: theme }, tabBar: 'never', i18n: { defaultLocale: 'pt-BR' },
+    zoom: { defaultZoomLevel: ZoomMode.FitWidth },
+    disabledCategories: ['document-open', 'document-close', 'redaction', 'insert', 'attachment', 'annotation-stamp', 'form'],
+    annotations: { annotationAuthor: 'Gabriel Alonso' },
+  }))
+  const { isAuthenticated } = useConvexAuth()
+  const rows = useQuery(api.annotations.list, isAuthenticated ? { document: DOCUMENT } : 'skip')
+  const save = useMutation(api.annotations.save)
+  const [status, setStatus] = useState<SyncStatus>({ pending: 0, error: '', conflict: false })
+  const [scope, setScope] = useState<AnnotationScope | null>(null)
+  const [registry, setRegistry] = useState<PluginRegistry | null>(null)
+  const [failure, setFailure] = useState('')
+  const host = useRef<HTMLDivElement>(null)
+  const sync = useRef<AnnotationSync | null>(null)
+  const applying = useRef(false)
+  const seen = useRef(new Map<string, string | null>())
+  const [refresh, setRefresh] = useState(0)
 
   useEffect(() => {
-    if (lastNavigation.current === navigationKey) return
-    const page = pdfPageFromHash(hash, doc.reading.pageCount)
-    // Earlier pages must have their final heights before scrolling to the target.
-    if (!pdfPagesBeforeTargetSettled(page, settledPages)) return
-    const viewport = frame.current
-    const target = document.current?.querySelector<HTMLElement>(`[data-pdf-page="${page}"]`)
-    if (!viewport || !target) return
-    viewport.scrollTo({ left: 0, top: viewport.scrollTop + target.getBoundingClientRect().top - viewport.getBoundingClientRect().top })
-    lastNavigation.current = navigationKey
-  }, [hash, navigationKey, settledPages, doc.reading.pageCount])
+    const controller = new AnnotationSync(owner, localStorage, ({ queuedAt: _queuedAt, ...op }) => save(op), setStatus, DOCUMENT)
+    sync.current = controller
+    const retry = () => { void controller.flush() }
+    const unload = (event: BeforeUnloadEvent) => { if (controller.hasPending) { event.preventDefault(); event.returnValue = '' } }
+    window.addEventListener('online', retry)
+    window.addEventListener('beforeunload', unload)
+    return () => { controller.stop(); sync.current = null; window.removeEventListener('online', retry); window.removeEventListener('beforeunload', unload) }
+  }, [owner, save, DOCUMENT])
 
+  const onReady = useCallback((ready: PluginRegistry) => { setRegistry(ready) }, [])
+  useEffect(() => {
+    if (!registry) return
+    const annotations = registry.getPlugin<AnnotationPlugin>('annotation')?.provides()
+    const documents = registry.getPlugin<DocumentManagerPlugin>('document-manager')?.provides()
+    if (!annotations || !documents) { setFailure('O leitor não conseguiu iniciar as ferramentas.'); return }
+    const current = annotations.forDocument(DOCUMENT)
+    const off = annotations.onAnnotationEvent(event => {
+      if (event.documentId !== DOCUMENT) return
+      if (event.type === 'loaded') { setScope(current); return }
+      if (event.committed || applying.current) return
+      const payload = event.type === 'delete' ? null : JSON.stringify(event.annotation)
+      seen.current.set(event.annotation.id, payload)
+      sync.current?.enqueue(event.annotation.id, event.pageIndex, payload)
+    })
+    const offError = documents.onDocumentError(() => setFailure('Não foi possível abrir o PDF. Recarregue a página.'))
+    // A cached PDF may finish loading before the registry callback.
+    if (documents.getActiveDocument() && current.getState()) setScope(current)
+    return () => { off(); offError() }
+  }, [registry, DOCUMENT])
 
   useEffect(() => {
-    const task = getDocument({ url: doc.url })
-    let active = true
-    task.promise.then(result => {
-      if (!active) return
-      if (result.numPages !== doc.reading.pageCount) setError('O recorte não corresponde às páginas indicadas no guia.')
-      else setPdf(result)
-    }).catch(() => { if (active) setError('Não foi possível abrir o PDF. Tente recarregar a página.') })
-    return () => { active = false; void task.destroy() }
-  }, [doc])
+    if (!scope || !rows || !sync.current) return
+    const controller = sync.current
+    controller.receive(rows)
+    applying.current = true
+    try {
+      const apply = (id: string, page: number, payload: string | null) => {
+        if (seen.current.get(id) === payload) return
+        const existing = scope.getAnnotationById(id)
+        if (payload === null) { if (existing && existing.commitState !== 'deleted') scope.deleteAnnotation(page, id) }
+        else {
+          const annotation = decodeAnnotation(payload)
+          if (existing && existing.commitState !== 'deleted') scope.updateAnnotation(page, id, annotation)
+          else scope.importAnnotations([{ annotation }])
+        }
+        // Undo must not restore a stale version over a change from another device.
+        registry?.getPlugin<HistoryPlugin>('history')?.provides().forDocument(DOCUMENT).purgeByMetadata<{ annotationIds?: string[] }>(metadata => metadata?.annotationIds?.includes(id) ?? false)
+        seen.current.set(id, payload)
+      }
+      for (const row of rows) {
+        if (!controller.hasPendingFor(row.annotationId) && row.revision >= controller.revisionFor(row.annotationId)) apply(row.annotationId, row.pageIndex, row.payload)
+      }
+      for (const draft of controller.drafts) apply(draft.annotationId, draft.pageIndex, draft.payload)
+    } catch { setFailure('Uma anotação não pôde ser restaurada. Seus dados continuam salvos.'); }
+    finally { applying.current = false }
+    void controller.flush()
+  }, [rows, scope, registry, status.pending, refresh, DOCUMENT])
 
   useEffect(() => {
-    if (!frame.current) return
-    const observer = new ResizeObserver(([entry]) => setWidth(Math.floor(entry.contentRect.width)))
-    observer.observe(frame.current)
-    return () => observer.disconnect()
-  }, [])
+    const container = host.current?.querySelector('embedpdf-container')
+    if (!container || !registry) return
+    return arrangeViewer(container, theme === 'dark')
+  }, [registry, theme])
 
+  useEffect(() => {
+    if (!registry) return
+    const scroll = registry.getPlugin<ScrollPlugin>('scroll')?.provides()
+    if (!scroll) return
+    const navigate = () => scroll.forDocument(DOCUMENT).scrollToPage({ pageNumber: pdfPageFromHash(hash, doc.reading.pageCount), behavior: 'instant' })
+    const off = scroll.onLayoutReady(event => { if (event.documentId === DOCUMENT && event.isInitial) navigate() })
+    navigate()
+    return off
+  }, [registry, DOCUMENT, hash, navigationKey, doc.reading.pageCount])
+
+  const resolve = (keep: boolean) => { sync.current?.resolveConflict(keep); setRefresh(n => n + 1) }
   return <div className={`pdf-reader${theme === 'dark' ? ' is-night' : ''}`}>
     <Sidebar open={sidebar} onClose={() => setSidebar(false)} activeSlug={doc.slug} />
     <ReaderToolbar doc={doc} sidebarOpen={sidebar} onOpenSidebar={() => setSidebar(true)} />
-    <main className="pdf-frame" ref={frame} aria-label={`${doc.reading.book} — ${doc.reading.section}`}>
-      <div className="pdf-document" ref={document}>
-      {error ? <p className="pdf-status" role="alert">{error} <a href={doc.url} target="_blank" rel="noreferrer">Abrir PDF original</a></p>
-        : pdf ? Array.from({ length: pdf.numPages }, (_, index) => <PdfPage key={index + 1} pdf={pdf} page={index + 1} width={renderWidth} doc={doc} onSettled={onPageSettled} />)
-        : <p className="pdf-status" role="status">Abrindo leitura…</p>}
-      </div>
-    </main>
+    {status.error && <div className="pdf-alert" role="alert">{status.error}<button onClick={() => void sync.current?.flush()}>Tentar sincronizar</button></div>}
+    {status.conflict && <div className="pdf-alert" role="alert">Esta anotação também foi alterada em outro dispositivo.<button onClick={() => resolve(true)}>Manter minha versão</button><button onClick={() => resolve(false)}>Usar versão sincronizada</button></div>}
+    {failure && <div className="pdf-alert" role="alert">{failure}</div>}
+    <div ref={host} className="pdf-embed" inert={!rows || !scope || Boolean(failure)}><PDFViewer config={config} onReady={onReady} style={{ height: '100%' }} /></div>
   </div>
+}
+
+// The serialized object comes from EmbedPDF; validate its envelope at this boundary.
+function decodeAnnotation(payload: string): PdfAnnotationObject {
+  const value: unknown = JSON.parse(payload)
+  if (!value || typeof value !== 'object' || !('id' in value) || typeof value.id !== 'string' || !('type' in value) || typeof value.type !== 'number' || !('pageIndex' in value) || !Number.isInteger(value.pageIndex) || !('rect' in value)) throw new Error('Invalid annotation')
+  return value as PdfAnnotationObject
 }
