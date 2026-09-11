@@ -6,7 +6,7 @@ import { MarkdownView } from '../components/MarkdownView'
 import { Sidebar } from '../components/Sidebar'
 import { ThemeToggle } from '../components/ThemeToggle'
 
-const PdfReader = lazy(() => import('../components/PdfReader'))
+const PdfReader = lazy(() => import('../pdf/PdfReader'))
 
 export function Reader() {
   const params = useParams()
