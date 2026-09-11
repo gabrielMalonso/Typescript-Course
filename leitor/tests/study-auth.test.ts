@@ -47,6 +47,11 @@ describe('whole-site authorization', () => {
     expect((await withStudyAccess(new Request(origin + '/auth/sessao', { headers }), env, next)).status).toBe(403)
     expect((await withStudyAccess(new Request(origin + '/auth/sair', { headers: { cookie: headers.cookie } }), env, next)).status).toBe(405)
   })
+  it('accepts same-origin logout forms with an opaque Origin header', async () => {
+    const response = await withStudyAccess(new Request(origin + '/auth/sair', { method: 'POST', headers: { cookie: '__Host-study-session=valid', origin: 'null', 'sec-fetch-site': 'same-origin' } }), env, next)
+    expect(response.status).toBe(303)
+    expect(response.headers.get('set-cookie')).toContain('Max-Age=0')
+  })
   it('binds the callback to its sealed PKCE state and sets HttpOnly cookies', async () => {
     const sealed = await sealData({ nonce: 'state', verifier: 'verifier', returnTo: '/ler/book' }, { password: env.STUDY_COOKIE_PASSWORD, ttl: 600 })
     const headers = { cookie: '__Host-study-session-login=' + sealed }

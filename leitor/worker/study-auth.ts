@@ -17,7 +17,11 @@ function cookie(request: Request, name: string, value: string, age: number) {
 }
 function redirect(location: string, headers?: Headers) { const h = new Headers(headers); h.set('Location', location); return new Response(null, { status: 303, headers: h }) }
 function sameOrigin(request: Request) {
-  return request.headers.get('sec-fetch-site') !== 'cross-site' && (!request.headers.get('origin') || request.headers.get('origin') === new URL(request.url).origin)
+  const site = request.headers.get('sec-fetch-site')
+  if (site === 'cross-site' || site === 'same-site') return false
+  // Form navigation with no-referrer can send Origin: null. Fetch Metadata still identifies its origin.
+  if (site === 'same-origin') return true
+  return !request.headers.get('origin') || request.headers.get('origin') === new URL(request.url).origin
 }
 function loginPage(returnTo: string, failed: boolean) {
   const nonce = crypto.randomUUID()
