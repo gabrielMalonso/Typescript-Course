@@ -1,8 +1,7 @@
 # Anotações nas leituras
 
 As seis leituras de livros usam EmbedPDF 2.15, com o header compartilhado e as
-barras nativas no rodapé. `/laboratorio/pdf` redireciona para a home; o protótipo
-permanece arquivado no código, sem entrada no site. Nenhum PDF original é alterado.
+barras nativas no rodapé. `/laboratorio/pdf` redireciona para a home; a rota antiga é mantida somente como redirecionamento. Nenhum PDF original é alterado.
 
 ## Autenticação
 
@@ -31,7 +30,8 @@ As URLs publicada e localhost:3003 estão cadastradas no WorkOS.
 
 `shared/readings.ts` registra slug, hash do PDF e quantidade de páginas. O build
 regenera esse arquivo. Ao acrescentar/substituir uma leitura, executar
-`node scripts/reading-registry.mjs` e `npx convex dev --once` antes da publicação.
+`npm run readings:sync` antes da publicação. `dev` e `build` regeneram o
+cadastro local sem executar publicações do backend.
 Cada versão de PDF tem seu histórico separado, evitando deslocar marcações para
 páginas diferentes. A exportação do EmbedPDF produz uma cópia anotada.
 
@@ -48,10 +48,22 @@ da palma nem pressão.
 
 ## Verificação
 
-`npx vitest run` cobre autorização global, isolamento por leitura, limites de
+`npm test` cobre autorização global, isolamento por leitura, limites de
 páginas, revisão, exclusão, repetição, fila e conflitos. Completar com
 `npm run typecheck`, `npm run lint`, `npm run build` e QA no navegador.
 Na publicação, verificar que uma requisição anônima não recebe PDFs ou bundles
 e que a allowlist do Sites continua contendo somente o proprietário. Testes com
 o token administrativo de bypass do Sites não representam acesso anônimo: esse
 token autoriza o dispatcher e permite arquivos estáticos mesmo sem WorkOS.
+
+## Organização
+
+- `PdfReader.tsx`: composição do leitor, tema e navegação por página.
+- `useAnnotations.ts`: integração React/EmbedPDF/Convex e restauração das marcações.
+- `sync.ts`: fila persistente, revisões e resolução de conflitos, sem depender do React.
+- `pdfLayout.ts`: adaptação das barras e menus nativos ao rodapé.
+- `pdfPageLink.ts`: interpretação dos links para páginas do recorte.
+
+O código e o PDF do laboratório foram removidos. Registros antigos no banco e
+rascunhos locais não são apagados pela limpeza; somente PDFs cadastrados recebem
+novas leituras/escritas pela API atual.

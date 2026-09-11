@@ -18,7 +18,7 @@ npm install
 npm run dev
 ```
 
-Abra o endereço local (e, na mesma rede, o IP mostrado pelo Vite no celular).
+Configure os identificadores e segredos conforme o [guia do leitor PDF](src/pdf/README.md). Abra o endereço local com callback cadastrado no WorkOS.
 
 ## Rotas
 
@@ -45,7 +45,7 @@ Atualize `src/content/progress.json` com base nas evidências de `PROGRESSO.md`:
 
 ## Verificação
 
-Gestos de zoom: `node tests/pdf-zoom.test.mjs`. Após mudanças no leitor, executar `npm run typecheck`, `npm run lint` e `npm run build`. Conferir home e rota pertinente, mantendo as rotas existentes. Publicação requer escopo autorizado e deve reutilizar `leitor/.openai/hosting.json`, URL e acesso existentes.
+Testes: `npm test` (autorização, sincronização e links de páginas). Após mudanças no leitor, executar `npm run typecheck`, `npm run lint` e `npm run build`. Conferir home e rota pertinente, mantendo as rotas existentes. Publicação requer escopo autorizado e deve reutilizar `leitor/.openai/hosting.json`, URL e acesso existentes.
 
 ## Leituras PDF
 
@@ -55,7 +55,9 @@ Para apontar uma página, use `[p. 14 — abrir enunciado](../leituras/clrs-1.2.
 
 A partir do capítulo 10, README aparece como “Guia de estudo”, com retorno a ele nos rodapés de notas/prática. Seções numeradas de nível 2 do guia usam `#etapa-N`; atividades numeradas de nível 3 em `pratica/atividades.md` usam `#atividade-N`. Outros títulos usam minúsculas, sem acentos/pontuação, com hífens entre palavras (ex.: `#memoria`). Links a notas devem incluir o fragmento e um retorno à etapa correspondente. Os caminhos antigos permanecem válidos.
 
-O link relativo `[Título · páginas](leituras/nome.pdf)` no README abre um cartão de leitura. PDF e metadados entram automaticamente no índice. O PDF.js é carregado somente ao abrir uma leitura, usa worker local e apresenta as páginas em rolagem contínua. A barra superior contém somente índice e alternância do modo noturno; o gesto de pinça amplia somente o PDF (1×–4×), com rolagem interna e barra fixa. Pinça de trackpad/Ctrl+roda também atua sobre o PDF. O PDF original permanece no arquivo do capítulo e é oferecido como alternativa em caso de erro; a tela do piloto utiliza canvas, sem camada de seleção de texto.
+O link relativo `[Título · páginas](leituras/nome.pdf)` no README abre um cartão de leitura. PDF e metadados entram automaticamente no índice. O EmbedPDF é carregado somente ao abrir uma leitura, com ferramentas nativas no rodapé e header compartilhado. Anotações são sincronizadas pelo Convex e separadas por versão do arquivo; o PDF original permanece intacto.
+
+Após adicionar ou substituir PDFs, execute `npm run readings:sync` para regenerar o cadastro e atualizar o backend, depois valide e publique o site. `dev` e `build` também regeneram o cadastro local, mas não modificam o backend. Configuração do login e arquitetura: [leitor PDF](src/pdf/README.md).
 
 Incluir apenas os recortes autorizados para o acesso do site; o livro completo permanece fora do repositório. No piloto, páginas impressas 11–14 correspondem às posições 32–35 do PDF enviado. O recorte inclui os limites completos das páginas, e o guia delimita a seção estudada.
 

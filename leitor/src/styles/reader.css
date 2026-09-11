@@ -958,3 +958,5 @@ html[data-theme='dark'] .syntax-bracket-4 {
 .markdown-body .reading-card:hover { border-color:var(--accent); }
 
 .markdown-body h2[id], .markdown-body h3[id] { scroll-margin-top: 6rem; }
+
+.session-error { padding:40px; }

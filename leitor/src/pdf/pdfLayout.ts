@@ -4,7 +4,8 @@
 export function arrangeViewer(container: Element, dark: boolean) {
   const root = container.shadowRoot
   if (!root) return
-  if ('setTheme' in container && typeof container.setTheme === 'function') container.setTheme(dark ? 'dark' : 'light')
+  if ('setTheme' in container && typeof container.setTheme === 'function')
+    container.setTheme(dark ? 'dark' : 'light')
   const style = document.createElement('style')
   style.textContent = `
     [data-study-layout] { padding-bottom: env(safe-area-inset-bottom, 0px); }
@@ -23,26 +24,61 @@ export function arrangeViewer(container: Element, dark: boolean) {
     let order = 1
     for (const child of layout.children) {
       if (child === content) break
-      if (child instanceof HTMLElement) { child.setAttribute('data-study-bar', ''); const value = String(order++); if (child.style.order !== value) child.style.order = value }
+      if (child instanceof HTMLElement) {
+        child.setAttribute('data-study-bar', '')
+        const value = String(order++)
+        if (child.style.order !== value) child.style.order = value
+      }
     }
   }
   const positionMenus = () => {
-    const bounds = root.getElementById('document-content')?.getBoundingClientRect()
+    const bounds = root
+      .getElementById('document-content')
+      ?.getBoundingClientRect()
     if (!bounds) return
-    for (const menu of root.querySelectorAll<HTMLElement>('[data-epdf-i][style*="position: fixed"]')) {
+    for (const menu of root.querySelectorAll<HTMLElement>(
+      '[data-epdf-i][style*="position: fixed"]',
+    )) {
       const height = Math.max(80, bounds.height - 16)
-      const top = Math.max(bounds.top + 8, Math.min(parseFloat(menu.style.top) || bounds.top, bounds.bottom - 8 - Math.min(menu.scrollHeight, height)))
-      if (!menu.hasAttribute('data-study-popup')) menu.setAttribute('data-study-popup', '')
-      for (const [key, value] of [['--study-popup-top', `${top}px`], ['--study-popup-height', `${height}px`]]) {
-        if (menu.style.getPropertyValue(key) !== value) menu.style.setProperty(key, value)
+      const top = Math.max(
+        bounds.top + 8,
+        Math.min(
+          parseFloat(menu.style.top) || bounds.top,
+          bounds.bottom - 8 - Math.min(menu.scrollHeight, height),
+        ),
+      )
+      if (!menu.hasAttribute('data-study-popup'))
+        menu.setAttribute('data-study-popup', '')
+      for (const [key, value] of [
+        ['--study-popup-top', `${top}px`],
+        ['--study-popup-height', `${height}px`],
+      ]) {
+        if (menu.style.getPropertyValue(key) !== value)
+          menu.style.setProperty(key, value)
       }
     }
   }
   let frame = 0
-  const schedule = () => { cancelAnimationFrame(frame); frame = requestAnimationFrame(() => { arrange(); positionMenus() }) }
+  const schedule = () => {
+    cancelAnimationFrame(frame)
+    frame = requestAnimationFrame(() => {
+      arrange()
+      positionMenus()
+    })
+  }
   arrange()
   const observer = new MutationObserver(schedule)
-  observer.observe(root, { childList: true, subtree: true, attributes: true, attributeFilter: ['style'] })
+  observer.observe(root, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ['style'],
+  })
   window.addEventListener('resize', schedule)
-  return () => { observer.disconnect(); cancelAnimationFrame(frame); window.removeEventListener('resize', schedule); style.remove() }
+  return () => {
+    observer.disconnect()
+    cancelAnimationFrame(frame)
+    window.removeEventListener('resize', schedule)
+    style.remove()
+  }
 }
