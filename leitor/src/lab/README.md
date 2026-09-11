@@ -6,9 +6,13 @@ permanece arquivado no código, sem entrada no site. Nenhum PDF original é alte
 
 ## Autenticação
 
-O Worker exige sessão WorkOS para páginas, PDFs e demais assets, com
-`assets.run_worker_first: true`. O acesso exige o ID do proprietário, também
-validado em toda função Convex. A proteção privada do Sites permanece ativa.
+O Worker exige sessão WorkOS para todas as páginas e endpoints. O acesso exige
+o ID do proprietário, também validado em toda função Convex. No Sites, arquivos
+estáticos passam primeiro pelo dispatcher da hospedagem, que exige o acesso
+privado do proprietário; eles não passam pelo cookie WorkOS. Não tornar o site
+público sem migrar esses arquivos para uma entrega autenticada pelo backend.
+`assets.run_worker_first` protege assets em hospedagens Cloudflare que respeitam
+a configuração, mas não substitui a política privada do Sites.
 Login Google usa PKCE e estado selado; a sessão fica em cookie HttpOnly, Secure
 em HTTPS e SameSite=Lax. Somente o access token temporário é entregue em memória
 ao cliente Convex. Tokens antigos do protótipo são removidos do localStorage.
@@ -47,5 +51,7 @@ da palma nem pressão.
 `npx vitest run` cobre autorização global, isolamento por leitura, limites de
 páginas, revisão, exclusão, repetição, fila e conflitos. Completar com
 `npm run typecheck`, `npm run lint`, `npm run build` e QA no navegador.
-Na publicação, verificar também que uma requisição sem sessão WorkOS não recebe
-PDFs ou bundles, mesmo passando pela camada privada do Sites.
+Na publicação, verificar que uma requisição anônima não recebe PDFs ou bundles
+e que a allowlist do Sites continua contendo somente o proprietário. Testes com
+o token administrativo de bypass do Sites não representam acesso anônimo: esse
+token autoriza o dispatcher e permite arquivos estáticos mesmo sem WorkOS.
