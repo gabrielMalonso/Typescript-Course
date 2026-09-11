@@ -24,6 +24,13 @@ depende do navegador/dispositivo; validar a S Pen no tablet real.
 - Callback: `/auth/retorno`. CORS e retorno de saída estão cadastrados para a
   URL privada publicada e `http://localhost:3002`.
 
+`VITE_AUTHKIT_TEST_MODE=true` ativa o `devMode` oficial do SDK neste laboratório
+privado de staging. Ele guarda o refresh token no `localStorage` para manter
+a sessão entre recargas, sem precisar de um domínio próprio da Authentication
+API. Antes de promover para uso definitivo, migrar para sessões com cookies
+HttpOnly no servidor ou configurar o domínio de autenticação de produção e
+desativar essa opção. Referência: https://github.com/workos/authkit-react.
+
 As anotações ficam separadas do PDF original, com revisão por anotação, exclusões
 persistentes e recibos de operações repetidas. Alterações simultâneas no mesmo
 traço exigem escolha explícita. Uma fila em `localStorage` preserva gravações

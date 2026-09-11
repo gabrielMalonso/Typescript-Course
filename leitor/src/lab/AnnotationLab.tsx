@@ -12,7 +12,7 @@ const client = convexUrl ? new ConvexReactClient(convexUrl) : null
 
 export default function AnnotationLab() {
   if (!client || !clientId) return <main className="lab-login"><h1>Laboratório de PDF</h1><p>A conexão de acesso ainda não foi configurada.</p><a href="/">Voltar às aulas</a></main>
-  return <AuthKitProvider clientId={clientId} redirectUri={`${window.location.origin}/auth/retorno`} onRedirectCallback={() => window.location.replace('/laboratorio/pdf')}>
+  return <AuthKitProvider clientId={clientId} devMode={import.meta.env.VITE_AUTHKIT_TEST_MODE === 'true'} redirectUri={`${window.location.origin}/auth/retorno`} onRedirectCallback={() => window.location.replace('/laboratorio/pdf')}>
     <ConvexProviderWithAuthKit client={client} useAuth={useAuth}><Access /></ConvexProviderWithAuthKit>
   </AuthKitProvider>
 }
