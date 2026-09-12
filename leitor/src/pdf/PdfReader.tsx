@@ -17,6 +17,7 @@ import { pdfPageFromHash } from './pdfPageLink'
 import { readings } from '../../shared/readings'
 import type { CatalogDocument } from '../content/types'
 import { arrangeViewer } from './pdfLayout'
+import { restrictPdfInput } from './pdfInput'
 import '../styles/pdf-reader.css'
 
 type PdfDocument = Extract<CatalogDocument, { kind: 'pdf' }>
@@ -66,6 +67,12 @@ export default function PdfReader({ doc }: { doc: PdfDocument }) {
     if (!container || !registry) return
     return arrangeViewer(container, theme === 'dark')
   }, [registry, theme])
+
+  useEffect(() => {
+    const container = host.current?.querySelector('embedpdf-container')
+    if (!container || !registry) return
+    return restrictPdfInput(container)
+  }, [registry])
 
   useEffect(() => {
     if (!registry) return

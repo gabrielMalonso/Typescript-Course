@@ -62,7 +62,11 @@ anotada exportada pelo EmbedPDF; o livro original permanece intacto.
 
 `pdfLayout.ts` adapta a disposição dos slots originais no Shadow DOM do EmbedPDF
 2.15. Ao atualizar a biblioteca, verificar rodapé, menus, zoom, anotação e tema.
-A entrada usa os controles nativos; não há seletor adicional de caneta/toque.
+`pdfInput.ts` intercepta os eventos antes que o EmbedPDF remova `pointerType`:
+somente caneta e mouse chegam às ferramentas da página. Um dedo move o viewport;
+os TouchEvents de dois dedos continuam chegando ao zoom nativo. Durante contato
+da caneta, os toques são ignorados até serem levantados. Botões e menus continuam
+aceitando toque; não há seletor adicional de entrada.
 Validar a caneta física no tablet, pois eventos simulados não comprovam rejeição
 da palma nem pressão.
 
