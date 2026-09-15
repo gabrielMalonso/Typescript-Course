@@ -1,3 +1,15 @@
+## Situação atual — links diretos e fluxo adotado, 2026-09-10
+
+Gabriel autorizou incorporar as melhorias aprovadas do piloto à criação dos próximos capítulos: guia como percurso, notas pontuais e links a páginas do PDF. Diretrizes e prompts atualizados; generalização não cria capítulos futuros nem altera a ementa. Os quatro exercícios CLRS do 10 abrem a página do enunciado. Versão 38 publicada no mesmo site privado, confirmação `succeeded`. Próximo passo continua estudar a etapa atual do guia e realizar a atividade correspondente; leitura relatada não implica domínio ou conclusão. As entradas abaixo registram decisões e publicações anteriores.
+
+## Atualização — CLRS 2.1, 2026-09-10
+
+Incluído recorte de introdução a insertion sort (pp. 16–18) na etapa 3 do guia, antes da análise da 2.2. Sem implementação/prova exigida agora. Seis recortes, 23 páginas disponíveis. Versão 37 publicada no mesmo site privado, com estado `succeeded`; nenhum domínio ou conclusão atribuído.
+
+## Atualização mais recente — guia como percurso, 2026-09-10
+
+Gabriel relata ter feito a primeira leitura no site e estar lendo os trechos do livro. Guia do capítulo 10 reorganizado em sete etapas que conectam vídeo, leituras, notas pontuais e prática; exibido como “Guia de estudo”. Próximo passo: retomar a etapa correspondente à leitura atual e realizar a atividade indicada, sem pressupor prática entregue ou domínio. Experiência restrita ao capítulo 10. Versão 36 publicada com acesso privado, confirmação `succeeded`, no mesmo endereço do leitor.
+
 # Estado atual do currículo
 
 ## Situação vigente — 2026-09-10: piloto reconstruído
@@ -6,7 +18,7 @@ Gabriel autorizou remover o material didático anterior do 10 e recriá-lo pela 
 
 **Próximo passo único:** estudar CLRS 3ª edição, seção 1.2 (pp. 11–14 na edição inglesa), e fazer a atividade 1 do guia do 10. CS50 Week 3 já assistido por relato; não precisa repetir a aula inteira. Os recortes completos do livro e quatro exercícios foram conferidos; as páginas se referem à edição inglesa, não à posição de PDF.
 
-Prática: 8 essenciais, 2 de consolidação e 1 desafio opcional, incluindo reanálise de Two Sum, Contains Duplicate e Stock. Sem prova/checkpoint obrigatório, sem domínio atribuído e sem recursão exigida. O leitor local reconhece o novo formato e encaminha os caminhos substituídos ao guia. Nenhuma nova publicação nesta tarefa; site anterior permanece como registro separado.
+Prática: 8 essenciais, 2 de consolidação e 1 desafio opcional, incluindo reanálise de Two Sum, Contains Duplicate e Stock. Sem prova/checkpoint obrigatório, sem domínio atribuído e sem recursão exigida. O leitor local reconhece o novo formato e encaminha os caminhos substituídos ao guia. Guia e leitura PDF noturna publicados em 10/09/2026 na versão 32, com acesso privado preservado; nenhuma conclusão de estudo atribuída.
 
 Os registros abaixo descrevem as etapas anteriores e não substituem este próximo passo. Fechamento formal do 09 permanece uma pendência histórica separada.
 
@@ -274,3 +286,17 @@ O conteúdo abaixo é um retrato integral do estado anterior. Próximos passos, 
 *Última atualização: 2026-09-06*
 
 </details>
+
+
+## 2026-09-10 — Publicação do guia e leitura PDF noturna
+
+Publicação privada confirmada (`succeeded`), versão 32. URL: https://leitor-typescript-gabriel.gabrielm-alonso.chatgpt.site. Próximo passo permanece CLRS 1.2 e atividade 1, agora com leitura noturna das páginas 11–14 acessível pelo guia. Metadados distinguem páginas impressas de posições 32–35 no PDF. Livro completo e trabalhos do aluno preservados. Detalhes técnicos em `auditoria-leitor-pdf.md`.
+
+
+Atualização posterior em 10/09/2026: interface de leitura simplificada publicada na versão 33, com confirmação `succeeded` e acesso privado preservado. Somente índice e alternância do modo noturno na barra; páginas em rolagem contínua.
+
+
+Zoom interno do PDF publicado em 10/09/2026 na versão 34, com estado `succeeded`: pinça amplia o documento e mantém a barra fixa. Validação em tablet físico ainda não realizada.
+
+
+Atualização em 10/09/2026, versão 35 publicada (`succeeded`): barra e tema compartilhados entre Markdown/PDF; cinco recortes CLRS do capítulo 10 disponíveis (20 páginas). Protótipo aprovado por Gabriel; estudo e domínio não concluídos.

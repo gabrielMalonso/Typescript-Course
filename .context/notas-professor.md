@@ -1003,3 +1003,56 @@ Celular na mesma rede: URL Network do Vite.
 ---
 
 *Última atualização: 2026-09-02*
+
+
+## 2026-09-10 — Leitura noturna do CLRS no piloto
+
+Gabriel prefere consultar o livro original, mas considera a tela branca desconfortável no tablet e no computador. Autorizou leitor PDF noturno e publicação privada. O piloto usa somente CLRS 3ª edição, seção 1.2: páginas impressas 11–14, posições 32–35 do PDF enviado. O arquivo completo permanece fora do repositório; recorte e metadados ficam em `10-complexidade-e-big-o/leituras/`. O guia abre a leitura, com zoom, páginas e retorno ao percurso. Não há evidência nova de estudo ou domínio. Seleção de texto no modo noturno e novos recortes ficam para depois da experiência de uso.
+
+
+### Ajuste de interface solicitado em 2026-09-10
+
+Gabriel gostou da função de leitura, mas considerou a página carregada. Pediu somente uma barra com índice e botão de modo noturno, deixando o restante para o PDF. Interface ajustada para rolagem contínua das quatro páginas, sem cabeçalho editorial, metadados, rodapé ou barra de paginação/zoom. Modo noturno agora pode ser ativado/desativado; zoom fica com o navegador. Preferência: reduzir elementos em volta do material de leitura.
+
+
+### Zoom do PDF — 2026-09-10
+
+Gabriel relatou que a pinça no tablet ampliava o site inteiro. Ajustado para zoom interno do PDF, mantendo a barra fixa e a rolagem com um dedo. Preferência é comportamento de leitor PDF, preservando a interface mínima. Validação física no tablet ainda depende da experiência de Gabriel.
+
+
+### Protótipo de leitura aprovado — 2026-09-10
+
+Gabriel aprovou a experiência do leitor PDF com pinça e pediu uniformizar a barra com as demais páginas e incluir as leituras restantes do capítulo. A aprovação é da interface, não evidência de domínio acadêmico. `ReaderToolbar` e `ThemeToggle` agora são compartilhados; tema segue a preferência persistida do curso. Acrescentados os recortes já previstos no guia: 23–25, 27–29, 43–49 e 55–57. Com 11–14, são vinte páginas em cinco PDFs. Páginas completas preservadas; trechos internos dispensáveis continuam delimitados pelo guia. Nenhum conteúdo futuro, solução ou conclusão criado.
+
+
+### Guia como percurso — piloto do capítulo 10, 2026-09-10
+
+Gabriel relatou ter feito a primeira leitura no leitor e estar lendo os trechos do livro; isso não equivale a prática avaliada ou domínio. Pediu testar neste capítulo um guia que conecte vídeo, recortes, notas pontuais e exercícios na ordem de uso. README permanece como caminho técnico, exibido como “Guia de estudo”. Notas deixam de repetir teoria do livro; links ancorados permitem consultar um apoio e voltar à etapa correspondente. Esta experiência não altera as diretrizes de todos os capítulos.
+
+Curadoria retirada da interface, preservada aqui: CS50x 2026 Week 3 escolhido pela didática apreciada e demonstrações de busca/eficiência; assistir novamente só conforme dúvida (Searching, Linear Search, Binary Search e Running Time, antes de search.c). CLRS 3ª edição inglesa, MIT Press 2009, https://mitpress.mit.edu/9780262033848/introduction-to-algorithms/. Apoio MIT 6.006 Fall 2011: https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/pages/readings/ e Lecture 2 Models of computation (primeira página; demais custos de Python não transferidos automaticamente). Fontes e recortes conferidos em 10/09/2026 nas tarefas anteriores; não foi selecionada bibliografia nova. Lista MIT completa foi evitada pelos pré-requisitos adicionais. Referências das notas: MDN Array/map, Array/find e Node performance.now, já conferidas na curadoria anterior.
+
+Manter revisão futura: retomar Two Sum e Contains Duplicate após 11; código novo com arrays/callbacks em 12–13; análise de tempo, memória e decisões no capstone após 15. Critérios do feedback: justificar contagens e casos, interpretar O/Ω/Θ, comparar famílias, separar entrada/saída/auxiliar, testar limites e melhorar uma solução. Registros de avaliações e entregas permanecem intactos.
+
+
+### Ponte antes da análise — CLRS 2.1, 2026-09-10
+
+Gabriel autorizou incluir as páginas 16–18 da seção 2.1 antes da 2.2 e publicar. Objetivo: compreender o exemplo de insertion sort (cartas, figura 2.2 e pseudocódigo) antes de analisar seu custo. Leitura começa no título 2.1 da p. 16 e termina antes de “Loop invariants and the correctness of insertion sort” na p. 18. Implementação, provas e comparação de ordenações permanecem para o capítulo de sorting; não foram acrescentados exercícios nem as páginas 20–22 sugeridas apenas como possível consulta. O recorte corresponde às posições 37–39 do PDF enviado. Sequência curricular e evidências acadêmicas preservadas.
+
+
+### Fluxo aprovado incorporado à criação de capítulos — 2026-09-10
+
+Gabriel autorizou links diretos das atividades às páginas do PDF e generalização das melhorias do piloto para capítulos futuros. AGENTS e prompts agora definem guia como percurso conciso, notas pontuais com retorno à etapa, detalhes docentes no contexto, recortes PDF/JSON e links `#page=N` relativos ao recorte. Leitor generalizado para nome “Guia de estudo”, âncoras de etapas/atividades e retorno ao guia a partir do capítulo 10. Nenhum capítulo futuro criado, nenhuma mudança de sequência ou nova exigência de avaliação.
+
+Atividades 1 e 9: CLRS 1.2-2/1.2-3, página impressa 14 = página 4 de clrs-1.2.pdf. Atividades 2 e 3: CLRS 2.2-1/2.2-3, página impressa 29 = página 3 de clrs-2.2-02-casos.pdf. Enunciados e soluções preservados; não foram criados PDFs adicionais.
+
+
+### Catálogo de consulta rápida — 2026-09-10
+
+A pedido de Gabriel, criado `CATALOGO.md` na raiz com uma entrada-modelo de Insertion Sort: ideia curta, adequação por situação, custos, contrato, código TypeScript e referência. Organização por categoria e nome; novas entradas serão adicionadas manualmente ou por solicitação, sem antecipar todo o currículo. Código de referência fornecido por pedido explícito, sem registrar implementação independente ou domínio do aluno. Nove casos executados validaram ordenação e mutação da mesma referência. Criação local; integração ao leitor não solicitada nesta etapa.
+
+
+### Registro da revisão dos enunciados do 10 — 2026-09-15
+
+Na revisão do PR #2 solicitada por Gabriel, conferida a reformulação que `pratica/atividades.md` data de 12/09/2026. O diff transforma orientações corridas em perguntas numeradas, explicita previsões, justificativas, casos de borda e comparação com a execução, e distingue o enunciado externo das extensões do curso. A finalidade observável é tornar claro o que responder e facilitar entregas parciais; não há registro adicional que permita atribuir uma nova dificuldade ao aluno.
+
+Continuam 11 atividades: 8 essenciais, 2 de consolidação e 1 desafio opcional. Os subitens detalham a análise dentro dessas atividades, sem nova lista, prova ou condição de avanço. Preservados os exercícios externos, a sequência e as evidências acadêmicas. Próximo passo continua retomar a etapa atual do guia e realizar a atividade correspondente; esta revisão não registra entrega nem domínio.
