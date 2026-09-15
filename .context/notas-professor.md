@@ -1049,3 +1049,10 @@ Atividades 1 e 9: CLRS 1.2-2/1.2-3, página impressa 14 = página 4 de clrs-1.2.
 ### Catálogo de consulta rápida — 2026-09-10
 
 A pedido de Gabriel, criado `CATALOGO.md` na raiz com uma entrada-modelo de Insertion Sort: ideia curta, adequação por situação, custos, contrato, código TypeScript e referência. Organização por categoria e nome; novas entradas serão adicionadas manualmente ou por solicitação, sem antecipar todo o currículo. Código de referência fornecido por pedido explícito, sem registrar implementação independente ou domínio do aluno. Nove casos executados validaram ordenação e mutação da mesma referência. Criação local; integração ao leitor não solicitada nesta etapa.
+
+
+### Registro da revisão dos enunciados do 10 — 2026-09-15
+
+Na revisão do PR #2 solicitada por Gabriel, conferida a reformulação que `pratica/atividades.md` data de 12/09/2026. O diff transforma orientações corridas em perguntas numeradas, explicita previsões, justificativas, casos de borda e comparação com a execução, e distingue o enunciado externo das extensões do curso. A finalidade observável é tornar claro o que responder e facilitar entregas parciais; não há registro adicional que permita atribuir uma nova dificuldade ao aluno.
+
+Continuam 11 atividades: 8 essenciais, 2 de consolidação e 1 desafio opcional. Os subitens detalham a análise dentro dessas atividades, sem nova lista, prova ou condição de avanço. Preservados os exercícios externos, a sequência e as evidências acadêmicas. Próximo passo continua retomar a etapa atual do guia e realizar a atividade correspondente; esta revisão não registra entrega nem domínio.

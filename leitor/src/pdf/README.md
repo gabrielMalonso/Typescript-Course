@@ -86,6 +86,7 @@ leitura, limites, integridade do arquivo, deduplicação e vínculo da anotaçã
 
 - `PdfReader.tsx`: composição do leitor, tema e navegação por página.
 - `useAnnotations.ts`: integração React/EmbedPDF/Convex e restauração das marcações.
+- `restoreAnnotations.ts`: recuperação independente de cada anotação e do último rascunho local, preservando o histórico de desfazer das edições locais.
 - `sync.ts`: fila persistente, revisões e resolução de conflitos, sem depender do React.
 - `imageAssets.ts`: rascunhos binários e transporte autenticado das imagens.
 - `pdfLayout.ts`: adaptação das barras e menus nativos ao rodapé.
