@@ -41,8 +41,9 @@ A correção faz esse caminho respeitar a mesclagem da ferramenta, como ocorre
 ao ativar Realçar antes de selecionar o texto. Ao atualizar EmbedPDF, revisar
 essa compatibilidade; o build falha se o trecho esperado mudar.
 
-Padrões publicados em 16/09/2026 na versão 53, com acesso privado preservado
-e deployment `appgdep_6aaaf22614f48191b690b7112d8ac48b` confirmado como `succeeded`.
+Padrões e correção do Realçar publicados em 16/09/2026 na versão 54, com acesso
+privado preservado e deployment `appgdep_6aaaf3a12148819190f36148641ecee6`
+confirmado como `succeeded`.
 
 `shared/readings.ts` registra slug, hash do PDF e quantidade de páginas. O build
 regenera esse arquivo. Ao acrescentar/substituir uma leitura, executar

@@ -18,13 +18,13 @@ export function Home() {
         <h1>Leitor de Aulas</h1>
         <p className="home-lead">
           Formação pessoal com TypeScript como linguagem principal. Capítulo 10 — Complexidade e Big O concluído.
-          Próximo conteúdo: capítulo 11 — Set, Map e hashing, disponível para começar.
+          Capítulo 11 em andamento: fundamentos estudados; continue com Set e Map na prática.
           O capítulo 09 está praticamente concluído, com fechamento formal pendente.
         </p>
         <div className="home-actions">
           {firstDoc ? (
-            <Link className="btn primary" to={`/ler/${firstDoc.slug}`}>
-              Começar capítulo 11
+            <Link className="btn primary" to={`/ler/${firstDoc.slug}#etapa-3`}>
+              Continuar capítulo 11
             </Link>
           ) : null}
           <a className="btn ghost" href="#indice">

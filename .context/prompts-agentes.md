@@ -6,7 +6,7 @@ Atualizado em 2026-09-16. [AGENTS.md](../AGENTS.md) define a metodologia; [EMENT
 
 Ler estado atual, perfil, notas pertinentes, base de conhecimentos disponível e o trecho correspondente da ementa. Consultar correções anteriores apenas quando necessárias à tarefa. Distinguir estudo relatado, código inspecionado e domínio avaliado.
 
-Definir o que o aluno precisa conseguir fazer ao final e qual experiência conhecida abre o assunto. Conferir os pré-requisitos. Não criar capítulos futuros nem ampliar a ementa para acomodar uma referência difícil.
+Definir o que o aluno precisa conseguir fazer ao final e qual experiência conhecida abre o assunto. Conferir os pré-requisitos. Aplicar os três níveis de profundidade do AGENTS: domínio prático, mecanismos que melhoram decisões e aprofundamento formal opcional. A fonte não determina a profundidade; delimitar ou interromper seções quando necessário. Não criar capítulos futuros nem ampliar a ementa para acomodar uma referência difícil.
 
 ## 2. Selecionar fontes e prática
 
@@ -44,6 +44,7 @@ Permitir entregas parciais e feedback durante o percurso. Não exigir respostas 
 
 Conferir antes de integrar:
 
+- **Profundidade:** há prática suficiente e compreensão dos mecanismos? Formalismo de baixo retorno está opcional, sem reduzir o percurso a sintaxe/API?
 - **Conteúdo:** a prática cobre as competências e cobra apenas conhecimentos disponíveis? As fontes e adaptações foram verificadas?
 - **Compreensão:** Gabriel consegue acompanhar cada trecho com o que já sabe? Há termos sem explicação, saltos de raciocínio ou conceitos demais numa frase?
 - **Ação e esforço:** fica claro o que fazer em seguida? Cada pergunta acrescenta algo necessário? Código, conversa e experimentação já respondem a parte da cobrança?

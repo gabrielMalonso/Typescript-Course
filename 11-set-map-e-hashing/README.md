@@ -1,80 +1,59 @@
 # Guia de estudo — Set, Map e hashing
 
-**Objetivo:** escolher o que guardar para evitar buscas repetidas, usar Set e Map em TypeScript e justificar o custo dessa escolha.
+**Objetivo:** escolher como representar presença e associações, usar Set e Map em TypeScript e explicar o custo e os limites dessa escolha.
 
-No capítulo 10, você identificou o trabalho de procurar novamente um valor dentro de um array. Agora a pergunta é: **podemos organizar a informação para encontrá-la sem percorrer tudo a cada consulta?** Depois de conhecer as ferramentas, você voltará a Contains Duplicate e Two Sum.
+**Continue na [etapa 3 — Set e Map na prática](#etapa-3).** Os trechos de vídeo e os fundamentos do livro abaixo já foram estudados, conforme seu relato em 16/09/2026. Não é necessário refazê-los. A prática ainda será acompanhada; estudo concluído não significa avaliação de domínio do capítulo.
 
-Siga as etapas e retorne ao guia entre materiais. A leitura usa **Introduction to Algorithms, CLRS, 3ª edição em inglês**. As páginas indicadas são as impressas. Os recortes PDF abaixo preservam as páginas completas; siga os limites de leitura de cada etapa.
+## 1. Vídeo já estudado — consulta
 
-## 1. Uma primeira visão de hashing
+**Estudo concluído:** trechos da [CS50x 2026 — Week 5, David Malan](https://cs50.harvard.edu/x/2026/weeks/5/), gravação de 2025:
 
-Assista à [CS50x 2026 — Week 5: Data Structures, David Malan](https://cs50.harvard.edu/x/2026/weeks/5/), com aula gravada em **2025**. Use estes trechos do vídeo:
+- [Dictionaries — 10:44–12:26](https://www.youtube.com/watch?v=PmAI76OGE_E&t=644s).
+- [Hashing and Hash Tables — 1:36:47–1:53:51](https://www.youtube.com/watch?v=PmAI76OGE_E&t=5807s).
 
-- [**10:44–12:26 — Dictionaries**](https://www.youtube.com/watch?v=PmAI76OGE_E&t=644s): como associar uma chave a um valor. Pare ao começar *Resizing Arrays*.
-- [**1:36:47–1:53:51 — Hashing and Hash Tables**](https://www.youtube.com/watch?v=PmAI76OGE_E&t=5807s): acompanhe a distribuição das cartas e dos nomes, as colisões e a troca entre trabalho de busca e memória. Pare ao começar *Tries*.
+Os links permanecem para consulta. Reproduzir C, ponteiros ou listas ligadas não é necessário neste capítulo.
 
-Nos exemplos em C, foque na entrada e na saída da função: um nome entra e uma posição sai. Não precisa reproduzir o código nem acompanhar os detalhes de `const`, `unsigned int` e ponteiros. Nos desenhos, as setas ligam elementos que ficaram no mesmo grupo; listas ligadas serão estudadas depois.
+## 2. Fundamentos já estudados — consulta
 
-Observe também que o exemplo usa uma quantidade fixa de grupos. Na etapa 4, o livro explica as condições para obter custo médio constante conforme a quantidade de dados cresce.
+Referência: **Introduction to Algorithms, CLRS, 3ª edição em inglês**. As páginas abaixo são as impressas; os PDFs preservam páginas completas.
 
-**Depois:** veja como o livro representa essa mesma ideia.
+**Estudo conceitual concluído:** [introdução e 11.1, pp. 253–255](leituras/clrs-11.1.pdf) e parte relevante de [11.2, pp. 256–260](leituras/clrs-11.2.pdf): endereçamento direto e seu custo de espaço, chave → hash → posição, colisões, encadeamento (*chaining*), fator de carga intuitivo e eficiência média/esperada versus pior caso.
 
-## 2. Do índice conhecido à posição calculada
+Essa base basta para continuar. Os teoremas, suas demonstrações, esperança matemática e variáveis indicadoras das pp. 259–260 ficam como **aprofundamento opcional**, sem leitura ou entrega exigida. Não é preciso terminar a seção para avançar. A [atividade 1](pratica/atividades.md#atividade-1) permanece como consulta opcional para visualizar colisões, se sentir necessidade.
 
-[CLRS · Introdução e seção 11.1 · páginas 253–255](leituras/clrs-11.1.pdf)
+## 3. Set e Map na prática — comece aqui
 
-Comece pela **abertura do capítulo, p. 253**. Ela apresenta o problema que a tabela hash resolve e sua relação com arrays. As menções às seções seguintes são um mapa do livro, não uma lista de pré-requisitos.
+No capítulo 10, você identificou buscas repetidas em arrays. Agora conheça coleções que expressam outras necessidades: guardar valores únicos ou recuperar um dado por uma chave.
 
-Depois leia **11.1 — Direct-address tables**, da p. 254 até o parágrafo anterior a *Exercises*, na p. 255. Acompanhe a figura 11.1 e a ideia das operações de buscar, inserir e remover. Nos pequenos pseudocódigos, `T[k]` é a posição de índice `k`; `x.key` é a chave do elemento `x`. Não precisa implementar ponteiros nem fazer os exercícios de 11.1.
+Leia estes recortes da documentação, experimentando os métodos conforme aparecem:
 
-[CLRS 11.2 · páginas 256–260](leituras/clrs-11.2.pdf)
+| Fonte | Foco e limite |
+|---|---|
+| [MDN — Set: Description](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set#description) | Leia a descrição, *Value equality* e *Performance*. Pare antes de *Set composition*. Observe unicidade, ordem de inserção e identidade de objetos. |
+| [MDN — métodos de Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set#instance_methods) | Consulte somente `add`, `has`, `delete`, `clear` e a propriedade `size`. Não é preciso estudar união/interseção, subclasses ou protocolos. |
+| [MDN — Map: Description](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#description) | Leia a descrição e *Key equality*. Veja chave → valor, atualização de uma chave existente e ordem de inserção. |
+| [MDN — métodos de Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#instance_methods) | Consulte `set`, `get`, `has`, `delete`, `clear`, `forEach` e a propriedade `size`. Foque no que entra e no que cada operação devolve. |
 
-Leia as pp. **256–257**, até o parágrafo que abre *Collision resolution by chaining*. Deixe as pp. 258–260 para a etapa 4.
+Para adaptar os exemplos a TypeScript, use as notas [Set](notas.md#set-guardar-presenca), [Map](notas.md#map-associar-uma-informacao) e, se precisar, [igualdade e identidade](notas.md#igualdade-e-identidade). Elas são apoios pontuais, não uma segunda leitura obrigatória da mesma teoria.
 
-Procure a diferença entre usar a própria chave como índice e calcular uma posição para ela. Nas figuras, as setas apenas indicam onde encontrar os elementos; não implemente ponteiros. No agrupamento de colisões, basta entender que várias chaves continuam guardadas e precisam ser distinguidas.
+**Depois:** faça a [atividade 2 — experimentar as coleções](pratica/atividades.md#atividade-2). Pode enviar essa primeira entrega para feedback.
 
-Se a notação atrapalhar: `U` é o conjunto de todas as chaves possíveis; `K`, o das chaves guardadas; `h(k)`, a posição calculada para a chave `k`. `NIL` representa ausência.
+## 4. Escolher a estrutura e analisar seu custo
 
-**Depois:** faça a [atividade 1 — desenho da distribuição](pratica/atividades.md#atividade-1). Volte aqui para usar coleções prontas, sem construir uma tabela hash.
+Leia [Escolher entre Array, Set, Map e Object](notas.md#escolher-entre-array-set-map-e-object), com o recorte indicado da MDN, e [Custo das coleções no JavaScript](notas.md#custo-das-colecoes-no-javascript).
 
-## 3. Levar a ideia para TypeScript
+Conecte o modelo que você já estudou ao contrato da linguagem: a API define comportamento, mas não impõe uma implementação particular de hash table. Considere também construir a coleção e mantê-la em memória; acelerar consultas tem um custo.
 
-Comece pela [nota Set: guardar presença](notas.md#set-guardar-presenca). Ela transforma uma consulta em array em uma consulta à coleção. Siga para [Map: associar uma informação](notas.md#map-associar-uma-informacao) e [Igualdade e identidade](notas.md#igualdade-e-identidade).
+**Depois:** retome [Contains Duplicate — atividade 3](pratica/atividades.md#atividade-3). Preserve a tentativa anterior e escolha sua própria estratégia. O material não fornece o algoritmo da revisão.
 
-Para consultar os métodos durante a prática, use as referências [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set#instance_methods) e [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#instance_methods). Não é necessário estudar todos os métodos: os usados nas notas bastam.
+## 5. Aplicar e investigar
 
-**Depois:** faça a [atividade 2 — experimentar as coleções](pratica/atividades.md#atividade-2). Pode enviar essa primeira entrega junto com o desenho da atividade 1 para feedback.
+Faça [atividade 4 — investigar uma consulta](pratica/atividades.md#atividade-4), [atividade 5 — Two Sum](pratica/atividades.md#atividade-5) e [atividade 6 — Valid Anagram](pratica/atividades.md#atividade-6).
 
-## 4. O que sustenta o custo esperado?
+Escolha a representação a partir do contrato de cada problema. Comece com uma solução que consiga construir, teste e analise antes de melhorar. Se travar, envie a tentativa e a dificuldade; não precisa terminar tudo para receber feedback.
 
-Retorne à [seção 11.2 · página 258](leituras/clrs-11.2.pdf#page=3), a partir de *Analysis of hashing with chaining*. Pule o pseudocódigo e a discussão de remoção que vêm antes desse subtítulo.
+## 6. Feedback
 
-Siga até a conclusão da seção com estes limites:
+O percurso essencial agora é **atividades 2–6**. Código, testes e explicações breves devem mostrar uso correto das coleções, escolha de representação, tratamento de ausência/identidade e análise de tempo e espaço com hipóteses claras. Os fundamentos já estudados serão conectados às decisões da prática, sem prova matemática obrigatória.
 
-- **P. 258:** leia a introdução da análise e o pior caso. O fator de carga `α = n/m` é a quantidade de elementos dividida pela quantidade de posições.
-- **[P. 259](leituras/clrs-11.2.pdf#page=4):** leia a hipótese de distribuição uniforme, a explicação da busca e os enunciados dos teoremas 11.1 e 11.2. Pode pular os trechos intitulados *Proof* e as fórmulas de valor esperado; eles não são necessários para esta etapa.
-- **[P. 260](leituras/clrs-11.2.pdf#page=5):** retome no último parágrafo, iniciado por *What does this analysis mean?*. Ele conclui quando a busca tem custo médio constante. Deixe a demonstração acima e os detalhes de remoção com listas duplamente ligadas para depois.
-
-Procure a ligação: se a distribuição for adequada e a quantidade de posições acompanhar a de elementos, a quantidade média de candidatos por posição permanece limitada. É isso que sustenta a conclusão sobre a busca.
-
-Em seguida, leia [Custo das coleções no JavaScript](notas.md#custo-das-colecoes-no-javascript). A nota conecta o modelo do livro às operações que você vai usar.
-
-**Depois:** faça a [atividade 3 — Contains Duplicate](pratica/atividades.md#atividade-3). Compare com sua tentativa do 10, preservando-a. O foco é reconhecer qual trabalho deixou de se repetir e o que passou a ocupar memória.
-
-## 5. Quando presença não basta
-
-Agora pratique consultas que precisam devolver uma informação associada à chave. Faça, nesta ordem:
-
-1. [Atividade 4 — investigar uma consulta](pratica/atividades.md#atividade-4).
-2. [Atividade 5 — Two Sum](pratica/atividades.md#atividade-5).
-3. [Atividade 6 — Valid Anagram](pratica/atividades.md#atividade-6).
-
-Na última, você encontrará um contrato diferente das revisões. Experimente decidir o que precisa guardar antes de escrever o código. Se houver dificuldade, envie a tentativa e o ponto em que travou; não precisa terminar a lista para receber feedback.
-
-## 6. Feedback e continuidade
-
-Envie as atividades essenciais **1–6**. Código, testes e uma explicação breve podem fornecer a evidência necessária: escolher a coleção pela informação exigida, tratar ausência e identidade corretamente, explicar colisões e analisar tempo e memória sob hipóteses claras.
-
-Se precisar consolidar, retome [Find All Numbers Disappeared in an Array — atividade 7](pratica/atividades.md#atividade-7). Há também um [desafio opcional — atividade 8](pratica/atividades.md#atividade-8). Nenhum dos dois bloqueia o avanço sem uma lacuna essencial identificada.
-
-No início da próxima sessão, explique com suas palavras por que uma colisão não significa que duas chaves sejam iguais. Após o feedback, a sequência segue para **12 — Arrays e strings como problemas**.
+A [atividade 7](pratica/atividades.md#atividade-7) é consolidação e a [atividade 8](pratica/atividades.md#atividade-8) é desafio opcional. Não bloqueiam avanço sem uma lacuna essencial identificada. Por enquanto, continuamos no capítulo 11.

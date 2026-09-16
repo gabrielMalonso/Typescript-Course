@@ -6,7 +6,7 @@ Currículo sequencial de Gabriel Alonso para aprender programação, algoritmos,
 
 Capítulos 00–08 formalmente concluídos. O 09 tem prática aprovada e está praticamente concluído, com fechamento formal da prova pendente: existem respostas, mas ainda não há resultado e a questão 08 está incompleta no arquivo salvo.
 
-**Capítulo 10 — Complexidade e Big O concluído em 16/09/2026**, por avaliação qualitativa da prática. **Próximo passo:** iniciar o [Guia de estudo do capítulo 11 — Set, Map e hashing](11-set-map-e-hashing/README.md), criado em 16/09/2026. Estudo e prática ainda não avaliados. Depois: arrays/strings algorítmicos → Stack/Queue → busca/ordenação → recursão. Tuples permanece 16.
+**Capítulo 10 concluído; capítulo 11 em andamento.** Os fundamentos de hashing foram estudados conforme relato de Gabriel. **Próximo passo:** [Set e Map na prática — etapa 3](11-set-map-e-hashing/README.md#etapa-3). A prática do 11 ainda não foi avaliada. A metodologia prioriza domínio prático e compreensão dos mecanismos; aprofundamento formal de baixo retorno é opcional.
 
 ## Mapa do curso
 

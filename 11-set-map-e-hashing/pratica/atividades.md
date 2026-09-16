@@ -4,7 +4,9 @@ Resolva na ordem do [guia](../README.md). Crie suas entregas em `pratica/solucoe
 
 Nos problemas de implementação, teste exemplos e limites relevantes ao contrato. Explique brevemente a ideia e o custo de tempo e espaço; comentários no código ou conversa bastam. Quando usar o modelo de hashing, declare a hipótese de custo esperado. Consulta à documentação é permitida; tente antes de buscar pistas ou soluções prontas.
 
-## Essenciais
+## Consulta opcional — fundamentos já estudados
+
+Não é necessário fazer esta atividade para continuar. Use-a apenas se quiser visualizar novamente as colisões.
 
 ### 1. Desenhar a distribuição
 
@@ -15,6 +17,8 @@ Represente a distribuição das chaves do exercício nas nove posições. No liv
 **Adaptação:** desenhe cada posição com seu grupo de chaves, inserindo a nova chave no início do grupo. Isso representa o encadeamento pedido sem implementar listas ligadas nem ponteiros. Sinalize onde houve colisão. Em uma frase, explique por que uma distribuição muito concentrada aumenta o trabalho de busca.
 
 [Voltar à etapa 2](../README.md#etapa-2).
+
+## Essenciais — atividades 2–6
 
 ### 2. Experimentar as coleções
 
@@ -39,7 +43,7 @@ console.log(locais.get(4));
 console.log(locais.size);
 ```
 
-Depois remova a chave `4` e confira sua ausência com `has`. É uma experimentação local; não altera arquivos ou serviços externos.
+Depois experimente `add`/`has`/`delete` em um Set de permissões e `get`/`has`/`delete` no Map acima. Percorra uma coleção, confira `size` e esvazie-a com `clear`. Registre somente o que surpreender; não precisa entregar um relatório de cada método.
 
 [Voltar à etapa 3](../README.md#etapa-3).
 
@@ -47,7 +51,7 @@ Depois remova a chave `4` e confira sua ausência com `has`. É uma experimenta�
 
 **Fonte:** [LeetCode 217 — enunciado](https://leetcode.com/problems/contains-duplicate/description/). Revisão da tentativa do capítulo 10.
 
-O contrato permanece: receber inteiros e informar se existe valor repetido. Leia também os limites no original. Procure uma solução que evite as buscas repetidas da sua versão anterior, sem modificar aquela entrega.
+O contrato permanece: receber inteiros e informar se existe valor repetido. Leia também os limites no original. Crie uma nova tentativa com o repertório atual, sem modificar aquela entrega.
 
 Compare o tempo e a memória das duas versões e mostre um teste com todos os valores distintos e outro com repetição. Não é necessário refazer a análise inteira do capítulo anterior.
 
@@ -75,7 +79,7 @@ Formule uma hipótese, encontre uma entrada que exponha a falha e corrija a fun�
 
 Devolva os dois índices pedidos sem reutilizar o mesmo elemento. Tente reduzir o custo da versão anterior. Guarde a nova tentativa separadamente e justifique a mudança de tempo e memória.
 
-Além dos exemplos, teste uma resposta que contenha o índice zero e outra que use dois valores iguais em posições diferentes. A análise deve explicar por que seu código respeita os índices distintos.
+Teste também valores iguais em posições distintas e explique brevemente por que seu código não reutiliza um elemento.
 
 [Voltar à etapa 5](../README.md#etapa-5).
 

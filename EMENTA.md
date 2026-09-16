@@ -4,6 +4,8 @@
 
 ## Objetivo e visão geral
 
+A profundidade segue os três níveis do AGENTS: domínio prático como prioridade máxima, mecanismos internos como fundamento e aprofundamento acadêmico/formal opcional quando não melhorar significativamente a capacidade atual de implementação ou decisão. TypeScript é a principal ferramenta; os conceitos devem ser transferíveis entre linguagens. Essa regra vale também para os blocos de matemática e teoria, sem eliminar seus fundamentos úteis nem alterar a sequência.
+
 Construir uma base generalista sólida em Ciência da Computação e Engenharia de Software, utilizando TypeScript como linguagem principal, desenvolvendo progressivamente a capacidade de resolver problemas, compreender sistemas, construir software e aprender novas tecnologias de forma independente.
 
 Uma **única ementa sequencial**, com blocos estudados um após o outro. TypeScript serve à formação; C, SQL, Shell e pequenos trechos de Assembly aparecem pontualmente onde esclarecem o assunto. Não há cursos paralelos dessas linguagens.
@@ -12,7 +14,7 @@ Uma **única ementa sequencial**, com blocos estudados um após o outro. TypeScr
 
 **Fase inicial:** fundamentos de programação usando TypeScript (00–09). **Fase atual:** expansão para currículo de Ciência da Computação e Engenharia de Software (a partir de 10). Os materiais e trabalhos antigos mantêm seus nomes, caminhos e regras históricas. Nenhuma atividade futura representa avanço já realizado.
 
-O aluno relata ter terminado o capítulo 09. No repositório, a lista está aprovada; há respostas da prova, mas não há resultado formal e a questão 08 está incompleta no arquivo salvo. Registrar como praticamente concluído, com fechamento formal pendente, sem inventar nota. **Próximo conteúdo: 10 — Complexidade e Big O.**
+O aluno relata ter terminado o capítulo 09. No repositório, a lista está aprovada; há respostas da prova, mas não há resultado formal e a questão 08 está incompleta no arquivo salvo. Registrar como praticamente concluído, com fechamento formal pendente, sem inventar nota. O 10 está concluído; a atividade atual do 11 está em `.context/estado-atual.md`.
 
 ## Como percorrer
 
@@ -181,7 +183,7 @@ Conteúdo da fase inicial mantido abaixo. Capítulos 00–08 têm aprovação re
 | Cap. | Área e tema | Conteúdo e competência esperada |
 |---|---|---|
 | 10 | DSA — Complexidade e Big O | Definir tamanho da entrada e contar operações antes da notação; tempo e espaço auxiliar/total; O(1), O(log n), O(n), O(n log n), O(n²), crescimento exponencial; loops simples, sequenciais e aninhados; pior caso e caso médio com hipóteses explícitas; trade-off tempo × memória. Reconhecer dividir pela metade antes da formalização de logaritmos. Comparar crescimento sem confundir cronômetro com prova assintótica. |
-| 11 | DSA — Set, Map e hashing | Pertinência, unicidade, chave/valor, lookup, frequências, igualdade e identidade, colisões e distribuição; custos esperados sob hipóteses de hashing, sem prometer O(1) garantido para qualquer runtime. Escolher Set ou Map pela informação necessária. Não implementar hash table genérica agora. |
+| 11 | DSA — Set, Map e hashing | Pertinência, unicidade, chave/valor, lookup, frequências, igualdade e identidade, colisões e distribuição; custos esperados sob hipóteses de hashing, sem prometer O(1) garantido para qualquer runtime. Escolher Set ou Map pela informação necessária. Comparar Array/Set e Object/Map. Hash functions, chaining e carga intuitiva como fundamentos; provas probabilísticas opcionais. Não implementar hash table genérica agora. |
 | 12 | DSA — Arrays e strings como problemas | Percursos, índices, cópias, mutação, custo dos métodos e encadeamentos; strings imutáveis, tamanho/unidade de caractere e limites de Unicode explicitados nos enunciados. Resolver transformações e contagens; criar testes de vazio, repetidos e ausência. Padrões de janelas ficam para 29–31. |
 | 13 | DSA — Stack e Queue | Array + push/pop → LIFO; entrada/saída → FIFO; operações restritas, estado vazio, custo de shift e fila com índice de início, retenção de memória e compactação quando pertinente. Implementar versões de números/strings com funções e arrays, sem exigir classes. |
 | 14 | DSA — Busca e ordenação | Busca linear e binária; ordenação como pré-condição, limites do intervalo e término; insertion/selection sort, comparação numérica, mutação e estabilidade conceitual; custo quadrático versus n log n. Implementar busca binária iterativa e ordenação simples; não exigir recursão antes de ensiná-la. |
@@ -443,6 +445,6 @@ Narrowing mínimo aparece no 17 para permitir estruturas com null; refinamento c
 
 O professor pode antecipar uma introdução curta necessária, aprofundar uma sobreposição ou transformar teoria do MBA em experimento, registrando a decisão sem abrir matérias simultâneas. Não eliminar fundamentos para acompanhar modismos nem insistir em repetir superficialmente conteúdo já demonstrado.
 
-Guias, recortes de referências, seleção de problemas, apoios personalizados, ferramentas dos labs e temas definitivos dos capstones serão definidos sob demanda. Na reformulação não foram criadas pastas futuras. **Atualização de 2026-09-16:** o capítulo 10 foi concluído e o [capítulo 11 — Set, Map e hashing](11-set-map-e-hashing/README.md) foi criado sob demanda, sem estudo ou domínio ainda atribuídos. Os demais materiais futuros continuam sob demanda.
+Guias, recortes de referências, seleção de problemas, apoios personalizados, ferramentas dos labs e temas definitivos dos capstones serão definidos sob demanda. Na reformulação não foram criadas pastas futuras. **Atualização de 2026-09-16:** o capítulo 10 foi concluído e o [capítulo 11 — Set, Map e hashing](11-set-map-e-hashing/README.md) está em andamento: fundamentos estudados conforme relato, continuação prática com Set/Map e domínio ainda não avaliado. Os demais materiais futuros continuam sob demanda.
 
 *Atualização metodológica: 2026-09-10; sequência curricular aprovada preservada.*

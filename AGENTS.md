@@ -92,6 +92,24 @@ Material próprio só entra para conectar conhecimentos, explicar uma dificuldad
 
 O feedback de Gabriel sobre o capítulo 10 refere-se à **dinâmica da escrita e à condução didática**, não simplesmente ao tamanho do texto. Nas notas necessárias, partir da dúvida concreta, transformar um exemplo conhecido gradualmente e mostrar o raciocínio antes de condensar definições. Encurtar texto, sozinho, não resolve a dificuldade.
 
+## Profundidade orientada à formação de desenvolvedor — 2026-09-16
+
+O objetivo é formar um desenvolvedor competente com fundamentos de Ciência da Computação aplicada e Engenharia de Software. TypeScript é a principal linguagem de implementação, mas o raciocínio, os conceitos e as decisões devem ser transferíveis para outras linguagens. Não limitar o curso a APIs nem transformar formação acadêmica ou de pesquisador em requisito.
+
+Na curadoria, distinguir implicitamente três níveis, sem exigir que o aluno os classifique:
+
+| Nível | Prioridade e tratamento |
+|---|---|
+| **1 — Domínio prático** | Máxima: implementar, escolher estruturas/APIs, testar, depurar, analisar tempo e espaço, reconhecer padrões e discutir legibilidade e trade-offs. Praticar intensamente. |
+| **2 — Fundamentos e funcionamento interno** | Alta: compreender os mecanismos que explicam as abstrações e melhoram decisões, mesmo quando escondidos pelo runtime ou biblioteca. Inclui hashing, colisões, carga intuitiva, memória, algoritmos, sistemas, redes e bancos. Relacionar o modelo ao comportamento observado. |
+| **3 — Aprofundamento acadêmico/matemático** | Opcional quando o retorno adicional for predominantemente formal: provas extensas, derivações, demonstrações de teoremas e análise probabilística detalhada. Pode ser apresentado intuitivamente ou indicado para futura exploração, sem bloquear avanço. |
+
+**Descer na abstração até onde isso melhora a compreensão e a capacidade como desenvolvedor. Quando a profundidade adicional trouxer predominantemente benefício acadêmico/formal, torná-la opcional e seguir adiante.** Isso preserva complexidade, raciocínio e fundamentos; não dispensa explicar por que funciona nem as condições de uma afirmação.
+
+A fonte serve ao currículo. Antes de selecionar trechos, definir o que dominar na prática, o que entender por baixo e o que é opcional. É válido interromper uma seção do CLRS, combinar intuição da CS50, comportamento real da documentação oficial/MDN e um apoio autoral pontual. Não exigir terminar capítulos nem importar os pré-requisitos formais de uma fonte. Matemática útil à implementação e à decisão continua no percurso; formalismo pode ser retomado por interesse ou necessidade futura.
+
+Sempre que útil, ligar conceito e intuição a um pequeno experimento, implementação, aplicação, debugging e comparação de tempo/espaço e alternativas. Não transformar essa sequência em um formulário obrigatório. Preservar a primeira solução com o repertório atual antes de ensinar a ferramenta otimizada, sem antecipar as respostas das revisões. O avanço depende de competências práticas e fundamentos relevantes, não do aprofundamento opcional.
+
 ## Linguagem e explicação didática
 
 Escrever para o conhecimento atual de Gabriel, preservando a precisão técnica. Desenvolver uma ideia por vez e ligar cada frase à anterior. Explicar termos novos no primeiro uso, com palavras familiares; evitar acumular siglas, conceitos e ressalvas antes de mostrar a ideia principal.

@@ -1,6 +1,6 @@
 # Notas — Set e Map em TypeScript
 
-Use estes apoios no ponto indicado pelo guia. Hashing e colisões são apresentados no vídeo e no livro; aqui vamos conectar as coleções à linguagem que você já usa.
+Use estes apoios no ponto indicado pelo guia. Hashing e colisões já foram estudados no vídeo e no livro; aqui vamos conectar as coleções à linguagem que você já usa.
 
 ## Set: guardar presença
 
@@ -113,6 +113,27 @@ Para strings e números comuns, a comparação acompanha `===`: `"7"` e `7` são
 **Colisão é outra coisa:** duas chaves diferentes podem produzir a mesma posição de hash. A estrutura ainda precisa comparar as chaves para distinguir os elementos; não pode simplesmente tratar a segunda como repetida.
 
 Consulta: [MDN — igualdade das chaves](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#key_equality). [Voltar à etapa 3](README.md#etapa-3).
+
+## Escolher entre Array, Set, Map e Object
+
+Uma lista de eventos pode conter o mesmo evento várias vezes; eliminar repetições mudaria a informação. Já uma coleção de permissões precisa apenas registrar quais estão presentes. Essa diferença no contrato vem antes da escolha de API. **Deduplicar** significa manter uma ocorrência de cada valor: antes de fazer isso, decida o que conta como igual e se as repetições podem ser descartadas.
+
+| Necessidade | Ponto de partida | Consequência |
+|---|---|---|
+| Sequência com posições e possíveis repetições | Array | Preserva ocorrências; `includes` pode percorrer toda a sequência. |
+| Valores únicos e consulta de presença (*membership*) | Set | Expressa unicidade; não preserva quantidades nem oferece acesso por índice. |
+| Coleção de associações que cresce e muda | Map | Chave → valor, tamanho e iteração explícitos; aceita chaves de qualquer tipo. |
+| Registro com campos conhecidos, como nome e preço de um produto | Object | Campos nomeados tornam o formato do dado claro para quem lê e para o TypeScript. |
+
+Leia na [MDN — Objects vs. Maps](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#objects_vs._maps) as linhas *Accidental Keys*, *Key Types*, *Size* e *Iteration*. As demais ficam como consulta. Um objeto comum herda propriedades: consultar uma propriedade não é necessariamente consultar um campo próprio. `Object.hasOwn` faz essa distinção quando necessária.
+
+Chaves de propriedades de Object são strings ou symbols (identificadores especiais, sem necessidade de aprofundá-los agora); uma chave numérica vira string. Map distingue `4` de `"4"` e pode usar a identidade de um objeto como chave. Para registrar campos fixos, não é preciso substituir todo objeto por Map. Para associações dinâmicas, seus métodos costumam expressar melhor a intenção.
+
+Set e Map percorrem entradas na ordem de inserção. Atualizar o valor de uma chave existente no Map não muda sua posição. Ambos oferecem `clear()` para esvaziar a coleção e `delete(...)` devolve se havia uma entrada a remover. Em Map, use `set`/`get`, não `map[chave]`: propriedades do objeto Map não são entradas da coleção.
+
+Uma frequência é uma quantidade associada a um valor: presença sozinha não distingue uma ocorrência de várias. Nos problemas, decidir o que guardar e como atualizar é parte da sua solução. Considere também legibilidade e se a coleção será a fonte dos dados ou uma cópia auxiliar que precisará acompanhar alterações.
+
+[Voltar à etapa 4](README.md#etapa-4).
 
 ## Custo das coleções no JavaScript
 

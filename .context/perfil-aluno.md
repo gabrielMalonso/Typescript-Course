@@ -2,7 +2,7 @@
 
 Atualizado em 2026-09-16.
 
-Engenheiro mecânico, com experiência construindo projetos com LLMs. Busca uma formação generalista em Ciência da Computação e Engenharia de Software, usando TypeScript como linguagem principal. Prefere uma sequência única; o MBA complementa a formação.
+Engenheiro mecânico, com experiência construindo projetos com LLMs. Busca uma formação generalista em Ciência da Computação e Engenharia de Software, usando TypeScript como linguagem principal. Seu objetivo é ser um desenvolvedor competente, com fundamentos aplicados e raciocínio independente de linguagem. Quer entender o funcionamento interno que melhora suas decisões, sem provas formais ou formalismo probabilístico como pedágio. Prefere uma sequência única; o MBA complementa a formação.
 
 ## Como aprende melhor
 
