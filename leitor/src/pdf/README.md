@@ -28,6 +28,23 @@ As URLs publicada e localhost:3003 estão cadastradas no WorkOS.
 
 ## Persistência e manutenção
 
+Os padrões de novas anotações ficam em `PdfReader.tsx`: sublinhado com 55% de
+opacidade; caneta com 55% e espessura 1; Realçar e Marca-texto em amarelo
+(`#FFCD45`), com 45% e mesclagem Luz intensa. Marca-texto usa espessura 8 e
+rotação 0°. Espessuras usam unidades do documento e acompanham o zoom.
+O EmbedPDF 2.15 não expõe espessura configurável para sublinhado.
+Esses padrões não modificam anotações já salvas.
+
+`build/embedpdf-highlight.ts` corrige o comando nativo do EmbedPDF 2.15 que
+força Multiplicar quando o texto é selecionado antes de clicar em Realçar.
+A correção faz esse caminho respeitar a mesclagem da ferramenta, como ocorre
+ao ativar Realçar antes de selecionar o texto. Ao atualizar EmbedPDF, revisar
+essa compatibilidade; o build falha se o trecho esperado mudar.
+
+Padrões e correção do Realçar publicados em 16/09/2026 na versão 54, com acesso
+privado preservado e deployment `appgdep_6aaaf3a12148819190f36148641ecee6`
+confirmado como `succeeded`.
+
 `shared/readings.ts` registra slug, hash do PDF e quantidade de páginas. O build
 regenera esse arquivo. Ao acrescentar/substituir uma leitura, executar
 `npm run readings:sync` antes da publicação. `dev` e `build` regeneram o
