@@ -41,7 +41,7 @@ Atualização em 10/09/2026: piloto por curadoria e leitor PDF noturno publicado
 
 ## Progresso
 
-Atualize `src/content/progress.json` com base nas evidências de `PROGRESSO.md`: 00–08 e 10 concluídos; 09 em andamento para fechamento formal; próximo conteúdo 11, criado e pendente de estudo. Capítulo 11 com guia, notas, atividades e três recortes PDF publicado em 16/09/2026 na versão 50 (`succeeded`), com acesso privado preservado. Cadastro das nove leituras sincronizado com o Convex existente. Fonte `3fc936232b41a1d8c3c17d553a2e141d5a8dc0bf`; deployment `appgdep_6aaa93c9bdf0819198a20c204a865d13`. A contagem da home refere-se aos capítulos registrados, não à porcentagem do currículo futuro. Atualize também a indicação de próximo conteúdo na home quando houver avanço.
+Atualize `src/content/progress.json` com base nas evidências de `PROGRESSO.md`: 00–08 e 10 concluídos; 09 em andamento para fechamento formal; próximo conteúdo 11, criado e pendente de estudo. Capítulo 11 com guia, notas, atividades e três recortes PDF publicado em 16/09/2026 na versão 51 (`succeeded`), com leituras completas de 253–260 e exercício na p. 261, ordenadas por página do livro, com acesso privado preservado. Cadastro das nove leituras sincronizado com o Convex existente. Fonte `7cf6b3e16d4882e4822abbedf64c746f9faf060e`; deployment `appgdep_6aaa9aae81d8819190fbc312826400db`. A contagem da home refere-se aos capítulos registrados, não à porcentagem do currículo futuro. Atualize também a indicação de próximo conteúdo na home quando houver avanço.
 
 ## Verificação
 

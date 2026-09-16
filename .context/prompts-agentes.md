@@ -10,7 +10,7 @@ Definir o que o aluno precisa conseguir fazer ao final e qual experiência conhe
 
 ## 2. Selecionar fontes e prática
 
-Pesquisar primeiro CS50/Harvard para vídeo; recorrer ao MIT OCW ou a outra fonte acadêmica quando mais adequada. Não exigir rever aula já assistida. Indicar link oficial, edição e trechos; usar timestamps somente quando conferidos.
+Pesquisar primeiro CS50/Harvard para vídeo; sempre verificar a aula mais atualizada disponível, distinguindo edição do curso de ano da gravação, conforme AGENTS. Recorrer ao MIT OCW ou a outra fonte acadêmica quando mais adequada. Não exigir rever aula já assistida. Indicar link oficial, edição e trechos; usar timestamps somente quando conferidos.
 
 Em DSA, usar CLRS 3ª edição como livro-âncora e o mapa de leituras do MIT como apoio. Inspecionar o conteúdo dos recortes, verificar páginas e selecionar o que serve à competência atual. Se houver muitos pré-requisitos ausentes, recortar ou substituir a referência. Registrar justificativas da seleção nas notas do professor.
 
