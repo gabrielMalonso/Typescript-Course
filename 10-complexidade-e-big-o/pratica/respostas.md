@@ -122,7 +122,7 @@ function linearSearch(nums: number[], alvo: number): boolean {
     } 
     ```
     3. Qual entrada representa o melhor caso da sua busca? O que a função precisa fazer nesse caso?
-    R. A segunda entrada. Como a segunda entrada está completamente desorganizada, o linear search representa melhor essa busca. 
+    R. O melhor caso ocorre quando o target está na primeira posição. Nesse caso, é necessária apenas uma comparação: Θ(1). A ordenação ou desordem do array não interfere na Linear Search.
 
     4. Se o valor estiver ausente, nada muda na minha busca. O que acontece é que o algoritmo vai procurar em todos os elementos e, ao constatar que nenhum deles bate com o target, ele termina com menos 1. Comparado aos casos anteriores, tem a melhor e a pior hipótese, mas ambas crescem de acordo com N, ou seja, O(n).
 
@@ -131,7 +131,7 @@ ContarA: Temos, nesse caso, dois `for` NÃO ANINHADOS. Sendo assim, percorre-se 
 
 ContarB: tem-se dois `for`, dessa vez, aninhados. No entanto, o segundo `for` vai apenas até 4, hardcoded. Sendo assim, para valores acima de 4, principalmente valores muito maiores que 4, tem-se `Theta(n)` ainda. Apenas o primeiro `for` percorre `n` por completo.
 
-ContarC: Tem-se dois `for` aninhados e percorrendo, inicialmente, todo o array `n`. Mesmo que o número de passos seja reduzido, ainda é possível, assintoticamente, considerar Big O(n²).
+ContarC: O loop interno executa (n-1) + (n-2) + ... + 1 vezes. Essa soma é n(n-1)/2, cujo termo dominante é n². Portanto, Θ(n²).
 
 1. 
 ```csv  
@@ -191,16 +191,20 @@ console.log(repetirTotal(numsUmElemento)); // [LOG]: [42]
 console.log(repetirTotal(numsNegativos)); // [LOG]: [-430, -430, -430, -430, -430, -430, -430, -430, -430, -430] 
 ```
 5.  Theta (n). A mudança feita é que a soma de todos os n itens do array é feita apenas uma vez, ao invés de ser refeita para cada elemento.
-6.  
-    **Versão original:**
-    entrada: n
-    saída: n
-    auxiliar: n²
+6.  **Versão original:**
 
-    **Versão modifiada:**
-    entrada: n
-    saída: n
-    auxiliar: 1
+    - entrada: Θ(n)
+    - saída: Θ(n)
+    - espaço auxiliar: Θ(1)
+
+    **Versão modificada:**
+
+    - entrada: Θ(n)
+    - saída: Θ(n)
+    - espaço auxiliar: Θ(1)
+
+    A otimização melhorou o tempo de Θ(n²) para Θ(n), mas não alterou a complexidade espacial.
+
 7.  Original: n² | Modificada: n
 
 Parte B:
@@ -222,7 +226,7 @@ function twoSum(nums: number[], target: number): number[] {
 };
 ```
 1.  n seria o nums.length
-2.  n * [(n-1) + (n-2) ... ] ≈ O(n²)
+2.  (n−1)+(n−2)+...+1= [n(n−1)]/2 ​= Θ(n²)
 3.  nums = [2,7,11,15], target = 26 - Para se chegar ao target, exige-se que o algoritmo rode até os dois últimos itens do array.
 4.  Com relação a espaço auxiliar, a estrutura não cresce, permanece Theta(1).
 5.  Input: nums = [3,3], target = 6 | Output: [0,1]
@@ -245,7 +249,7 @@ function containsDuplicate(nums: number[]): boolean {
 }
 ```
 1.  n = nums.length. Estamos comparando a referência com algum dos valores do array ≈n² vezes.
-2.  Entradas permitidas onde os números duplicados são especificamente o último e o penúltimo. 
+2.  Uma entrada sem nenhum número duplicado é um pior caso, pois o algoritmo precisa testar todos os pares antes de retornar false. Um duplicado encontrado somente muito tarde também pode se aproximar desse comportamento. 
 3.  O(n²). 
 4.  Teoricamente, aproximadamente 100x o trabalho anterior. 
 5.  Como o número de operações cresce ao quadrado em relação ao número de elementos de entrada, isso explica o motivo pelo qual entradas maiores recebem TLE e entradas menores passam numa boa.
