@@ -20,11 +20,11 @@ As faixas de atividades do AGENTS são referências flexíveis, não metas. Cont
 
 ## 3. Montar o percurso do aluno
 
-Usar `README.md`, apresentado como **Guia de estudo**, para conectar vídeo, leitura, prática e feedback. Intercalar conforme o assunto. Cada etapa explica brevemente a ligação com a anterior, aponta o material e indica a próxima ação.
+Usar `README.md`, apresentado como **Guia de estudo**, para conectar fontes, aula autoral, experimentação, prática e feedback, sem exigir todos os formatos. Intercalar conforme o assunto. Cada etapa explica brevemente a ligação com a anterior, aponta o material e indica a próxima ação.
 
-Informar livro/edição uma vez; delimitar seções, páginas e o foco de cada leitura. Ligar às notas somente quando necessárias. Usar PDFs com metadados conforme `leitor/README.md`; nos links, `#page=N` é a página dentro do recorte, a partir de 1. Só criar links para arquivos existentes.
+Informar livro/edição uma vez; delimitar seções, páginas e o foco de cada leitura. Posicionar as aulas e os complementos conforme a progressão escolhida. Usar PDFs com metadados conforme `leitor/README.md`; nos links, `#page=N` é a página dentro do recorte, a partir de 1. Só criar links para arquivos existentes.
 
-Apoio autoral serve para uma ligação, dúvida ou adaptação concreta. Começar por exemplo conhecido, desenvolver uma ideia por vez e explicar termos novos. Mostrar o raciocínio antes de condensar a conclusão. Mais frases podem facilitar a compreensão; não empilhar conceitos para encurtar o texto.
+Planejar e escrever a aula conforme “Fontes, aula autoral e prática” do AGENTS: identificar as pontes e lacunas atuais, construir a progressão e concretizá-la em TypeScript. Registrar fontes/recortes e distinguir garantias de modelos e simplificações. A consulta à documentação pode fundamentar a aula sem se tornar leitura sequencial obrigatória.
 
 O capítulo 10 é referência de navegação, recortes e prática intercalada. Seus questionários extensos e trechos densos não são um modelo a reproduzir.
 
@@ -45,6 +45,7 @@ Permitir entregas parciais e feedback durante o percurso. Não exigir respostas 
 Conferir antes de integrar:
 
 - **Profundidade:** há prática suficiente e compreensão dos mecanismos? Formalismo de baixo retorno está opcional, sem reduzir o percurso a sintaxe/API?
+- **Integração didática:** o contato com fontes, a reconstrução personalizada e a ponte explícita para TypeScript se complementam sem repetição desnecessária?
 - **Conteúdo:** a prática cobre as competências e cobra apenas conhecimentos disponíveis? As fontes e adaptações foram verificadas?
 - **Compreensão:** Gabriel consegue acompanhar cada trecho com o que já sabe? Há termos sem explicação, saltos de raciocínio ou conceitos demais numa frase?
 - **Ação e esforço:** fica claro o que fazer em seguida? Cada pergunta acrescenta algo necessário? Código, conversa e experimentação já respondem a parte da cobrança?

@@ -20,7 +20,7 @@ O aluno relata ter terminado o capítulo 09. No repositório, a lista está apro
 
 Conhecido → limitação concreta → pergunta → conceito/ferramenta → aplicação → retorno ao problema original. A metodologia completa está em [AGENTS.md](AGENTS.md).
 
-Cada capítulo terá um guia de estudo por curadoria: videoaula → leitura orientada → apoios necessários → prática selecionada → LeetCode/lab → feedback e revisão. Avançar por domínio demonstrado na prática, sem checkpoint, prova de capítulo ou avaliação formal de bloco obrigatórios. Os quatro capstones permanecem como experiências de integração. Revisões reaparecem na atividade corrente; avaliações formais são pontuais quando úteis. A seleção de fontes e a política de prática seguem AGENTS, sem alterar esta sequência ou suas competências.
+Cada capítulo terá um guia de estudo que combina fontes, aula autoral personalizada e prática conforme a metodologia do [AGENTS.md](AGENTS.md), sem formato obrigatório. Avançar por domínio demonstrado, sem checkpoint ou prova obrigatória. Os quatro capstones e a sequência abaixo permanecem; fontes e formato didático servem às competências previstas.
 
 Os intervalos abaixo são o planejamento vigente, ajustável conforme desempenho. Guias de estudo serão organizados sob demanda; não há promessa de duração fixa nem percentual global de formação. Pré-requisitos indicados destacam dependências essenciais e se somam à sequência anterior.
 

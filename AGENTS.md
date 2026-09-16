@@ -71,26 +71,29 @@ Consultar as evidências atuais para escolher uma âncora realmente conhecida; n
 
 Variar contextos (cotidiano, software, jogos, negócios, engenharia) conforme utilidade. Usar texto curto e diagramas quando ajudam. Não empilhar sintaxe futura e contexto profissional desconhecido em uma mesma explicação.
 
-## Curadoria como metodologia — 2026-09-10
+## Fontes, aula autoral e prática — 2026-09-16
 
-**A ementa define o que aprender e em qual sequência. O professor/agente não precisa recriar conhecimento que já está bem ensinado em fontes excelentes. Seu papel é selecionar, organizar, contextualizar, adaptar, acompanhar a prática e preencher lacunas.**
-
-Vídeo fornece intuição. Livro fornece profundidade e referência. O agente fornece personalização. Exercícios fornecem prática. LeetCode desenvolve resolução de problemas. Labs conectam conceitos ao sistema real. Revisão espaçada sustenta retenção.
-
-Percurso preferencial do aluno:
+**Fonte:** em qual conhecimento confiável este capítulo está baseado? **Aula:** qual é a melhor maneira de ensinar esse conhecimento para Gabriel neste momento? Uma fonte rigorosa pode exigir uma mediação didática que ela própria não oferece. O professor faz curadoria e trabalho pedagógico; não inventa fundamentos nem terceiriza todo o ensino às referências.
 
 ```text
-CONHECIMENTO ANTERIOR / PROBLEMA-ÂNCORA
-→ VIDEOAULA → LEITURA ORIENTADA
-→ ESCLARECIMENTOS NECESSÁRIOS → PRÁTICA SELECIONADA
-→ LEETCODE / LAB QUANDO PERTINENTE → FEEDBACK E REVISÃO → AVANÇO
+FONTES CONFIÁVEIS → CURADORIA → CONTATO DIRETO COM BOAS FONTES
+→ AULA AUTORAL PERSONALIZADA → TYPESCRIPT / EXPERIMENTAÇÃO
+→ PRÁTICA → FEEDBACK E DISCUSSÃO → PROBLEMAS REAIS / CONSOLIDAÇÃO
 ```
 
-Permitir pequenas aplicações entre trechos e feedback durante a prática. Não exigir consumir todos os recursos antes de tentar, nem rever uma videoaula já assistida para cumprir o roteiro. Cada referência deve ter função identificável; leituras redundantes ficam como consulta. O percurso deve orientar suficientemente o estudo pelas fontes, sem prometer uma apostila própria completa de reserva. Dificuldades de acesso recebem alternativa pontual.
+Esse percurso é uma diretriz, não um template. Vídeo → trecho de livro → tentativa de compreensão independente → aula autoral → aplicação é uma boa sequência quando agrega valor. Também cabem livro → aula → projeto, aula → documentação → laboratório ou documentação → experimento → aula curta → problema. Não exigir vídeo, livro, documentação e LeetCode em todos os capítulos nem repetir materiais já estudados.
 
-Material próprio só entra para conectar conhecimentos, explicar uma dificuldade observada, adaptar pseudocódigo/C/Python para TypeScript, esclarecer sintaxe externa, criar um diagrama útil ou preencher um pré-requisito pequeno. Se vídeo e livro explicam bem a teoria, não reescrevê-la em Markdown. Uma cadeia de pré-requisitos ausentes indica necessidade de recortar ou substituir a referência, não de criar várias miniaulas.
+Preservar o contato direto com livros técnicos, CS50, MIT, documentação e outras boas fontes. Encontrar dificuldade antes da explicação pode ser produtivo. A aula autoral funciona como segunda passagem que reconstrói as conexões: “era isso que aquele trecho queria dizer”. Não facilitar tudo antecipadamente nem deixar a densidade da fonte bloquear o aprendizado. CLRS 11.2, consolidado por explicação guiada e chaining, é a experiência que motivou esta evolução; o capítulo 10 preserva o valor da leitura original.
 
-O feedback de Gabriel sobre o capítulo 10 refere-se à **dinâmica da escrita e à condução didática**, não simplesmente ao tamanho do texto. Nas notas necessárias, partir da dúvida concreta, transformar um exemplo conhecido gradualmente e mostrar o raciocínio antes de condensar definições. Encurtar texto, sozinho, não resolve a dificuldade.
+Documentação de referência não vira automaticamente apostila: MDN pode orientar a API, ECMAScript confirmar garantias e CS50 fornecer intuição, enquanto a aula conecta isso ao repertório do aluno. Selecionar trechos para contato direto quando forem didáticos ou treinarem consulta; não exigir leitura sequencial de um catálogo de métodos.
+
+Antes de escrever, identificar conhecimentos e experiências disponíveis, o que a fonte já ensinou bem, os saltos conceituais, os termos que precisam de explicação, os mecanismos úteis ao desenvolvedor e o formalismo opcional. Escolher pontes para TypeScript, problemas anteriores e pequenos experimentos. Essa preparação orienta a escrita; não é um formulário para o aluno.
+
+A aula não resume todas as fontes. Desenvolve uma progressão: **conceito conhecido → pequena mudança → novo problema → nova ferramenta → consequência → próximo problema**. Explicar por que algo existe antes de enumerar sua API; não despejar definições simultâneas. Reconstruir extensamente só o que precisa de mediação, preservando o que já foi compreendido.
+
+Fazer explicitamente a ponte **conceito independente de linguagem → funcionamento → TypeScript → uso em software**. Fontes em C, pseudocódigo ou outras linguagens continuam válidas; não transferir repetidamente ao aluno toda a tradução. Ensinar a sintaxe mínima necessária no contexto, sem antecipar cursos de classes ou generics.
+
+Cada aula autoral registra fontes e recortes usados, com links e seções verificadas, sem aparato acadêmico excessivo. Distinguir, quando afetar decisões, modelo conceitual, implementação comum e garantia da especificação. Declarar simplificações pedagógicas e hipóteses de custo. Justificativas de curadoria ficam no contexto docente; a rastreabilidade do conteúdo fica junto da aula.
 
 ## Profundidade orientada à formação de desenvolvedor — 2026-09-16
 
@@ -106,7 +109,7 @@ Na curadoria, distinguir implicitamente três níveis, sem exigir que o aluno os
 
 **Descer na abstração até onde isso melhora a compreensão e a capacidade como desenvolvedor. Quando a profundidade adicional trouxer predominantemente benefício acadêmico/formal, torná-la opcional e seguir adiante.** Isso preserva complexidade, raciocínio e fundamentos; não dispensa explicar por que funciona nem as condições de uma afirmação.
 
-A fonte serve ao currículo. Antes de selecionar trechos, definir o que dominar na prática, o que entender por baixo e o que é opcional. É válido interromper uma seção do CLRS, combinar intuição da CS50, comportamento real da documentação oficial/MDN e um apoio autoral pontual. Não exigir terminar capítulos nem importar os pré-requisitos formais de uma fonte. Matemática útil à implementação e à decisão continua no percurso; formalismo pode ser retomado por interesse ou necessidade futura.
+A fonte serve ao currículo. Antes de selecionar trechos, definir o que dominar na prática, o que entender por baixo e o que é opcional. É válido interromper uma seção do CLRS, combinar intuição da CS50, comportamento real da documentação oficial/MDN e uma aula autoral personalizada. Não exigir terminar capítulos nem importar os pré-requisitos formais de uma fonte. Matemática útil à implementação e à decisão continua no percurso; formalismo pode ser retomado por interesse ou necessidade futura.
 
 Sempre que útil, ligar conceito e intuição a um pequeno experimento, implementação, aplicação, debugging e comparação de tempo/espaço e alternativas. Não transformar essa sequência em um formulário obrigatório. Preservar a primeira solução com o repertório atual antes de ensinar a ferramenta otimizada, sem antecipar as respostas das revisões. O avanço depende de competências práticas e fundamentos relevantes, não do aprofundamento opcional.
 
@@ -118,7 +121,7 @@ Nas explicações necessárias, partir de uma situação ou de um código conhec
 
 Clareza pode exigir mais frases. Não comprimir o raciocínio para cumprir uma meta de brevidade, nem substituir explicação por listas de termos. Manter condições que afetam a correção junto da afirmação; colocar detalhes secundários depois, como consulta quando útil. Diagramas, tabelas e pequenos rastreamentos entram quando tornam a explicação mais fácil.
 
-O guia orienta a próxima ação, as notas esclarecem uma dificuldade e o enunciado apresenta o problema. Justificativas de curadoria e verificações do professor ficam no contexto docente. Nos exercícios, esclarecer termos, entradas, saídas e restrições sem entregar a decomposição ou a solução.
+O guia orienta a próxima ação, a aula desenvolve a compreensão, as notas complementares esclarecem dúvidas e o enunciado apresenta o problema. Justificativas de curadoria e verificações do professor ficam no contexto docente. Nos exercícios, esclarecer termos, entradas, saídas e restrições sem entregar a decomposição ou a solução.
 
 Antes de entregar, reler guia, notas, atividades e feedback com esta pergunta: **com o que Gabriel já sabe, ele consegue entender este trecho e saber o que fazer sem decifrar a redação?** Se não, explicitar a ligação que falta ou dividir a explicação. Essa revisão é trabalho do professor, não um questionário para o aluno.
 
@@ -129,7 +132,7 @@ Padrão aprovado no piloto do 10 em 2026-09-10 e adotado nos próximos capítulo
 ```text
 XX-nome-do-capitulo/
 ├── README.md               # percurso do aluno
-├── notas.md                # somente complementos necessários
+├── notas.md                # aulas autorais e/ou complementos, conforme o percurso
 ├── leituras/               # somente recortes PDF disponíveis e autorizados
 │   ├── nome.pdf
 │   └── nome.json
@@ -137,11 +140,11 @@ XX-nome-do-capitulo/
     └── atividades.md
 ```
 
-Criar somente arquivos necessários, sem pastas vazias. Organizar o guia na ordem de uso: vídeo → recorte → prática → próximo recorte/apoio → feedback. Intercalar conforme o assunto, sem impor consumir toda a teoria antes de praticar. Cada etapa contém uma conexão curta com a anterior, link direto, foco e limite de leitura, e a próxima ação. O aluno deve conseguir abrir o material, voltar e continuar sem montar o roteiro sozinho.
+Criar somente arquivos necessários, sem pastas vazias. Organizar o guia na ordem de uso escolhida pela curadoria, incluindo aulas autorais e experimentação quando úteis. Intercalar conforme o assunto, sem impor consumir toda a teoria antes de praticar. Cada etapa contém uma conexão curta com a anterior, link direto, foco e limite de leitura, e a próxima ação. O aluno deve conseguir abrir o material, voltar e continuar sem montar o roteiro sozinho.
 
 - Apresentar objetivo e âncora brevemente. Informar livro/edição uma vez; seções e páginas nos links ou tabela. Não repetir apresentação, justificativas ou teoria.
 - Indicar videoaula já assistida pelo relato, sem obrigar repetição. Guardar nas notas do professor apenas justificativas de escolha e verificações ainda necessárias para usar ou revisar a referência; não manter um relato de todas as alternativas descartadas.
-- Notas só complementam lacunas: sintaxe, adaptação para TypeScript, memória ou dificuldade observada. Ligar à seção exata no momento necessário e oferecer retorno à etapa do guia. Não exigir ler todas as notas em sequência.
+- Aulas autorais podem ficar em `notas.md` ou em `aula/*.md`, conforme extensão e navegação. Ligar à seção exata no momento necessário e oferecer retorno ao guia; complementos opcionais não viram leitura obrigatória. Não duplicar a mesma aula em vários arquivos.
 - Atividades citam fonte e questão, com link à página do enunciado quando houver PDF no leitor. Se não houver recorte autorizado, indicar a referência original e paginação verificável.
 - Critérios de domínio e revisão imediata entram brevemente no fechamento; planejamento detalhado de retomadas fica no contexto do professor. Evitar listas administrativas no percurso.
 
@@ -163,7 +166,7 @@ O aluno cria soluções em `pratica/solucoes/`; correções ficam em `pratica/co
 | SWE — Engenharia | Código problemático → diagnóstico → princípio → refatoração → testes → trade-offs |
 | MATH — Matemática | Intuição → definição → exemplos → exercícios → aplicação computacional |
 
-Linguagens/teoria combinam PROG e MATH; distribuídos combinam SYS, NET, DATA e SWE. Essa classificação orienta a curadoria e a prática dentro da sequência única; não exige redigir aulas próprias nem abre disciplinas paralelas.
+Linguagens/teoria combinam PROG e MATH; distribuídos combinam SYS, NET, DATA e SWE. Essa classificação orienta a curadoria e a prática dentro da sequência única; orienta a aula autoral quando útil e não abre disciplinas paralelas.
 
 ## Prática, debugging e autonomia
 
@@ -294,7 +297,7 @@ Frontend/backend, cloud, DevOps, segurança, DDD, design patterns e IA/RAG/agent
 
 1. Ler contexto e identificar capítulo, área, âncora, pré-requisitos e competências esperadas, preservando a sequência.
 2. Curar vídeo, leitura e atividades do capítulo; conferir fontes, recortes e adequação antes de apresentá-los como seleção final.
-3. Montar o README com um percurso essencial claro, prática selecionada, revisão integrada e apoios próprios somente para lacunas específicas.
+3. Montar o README com um percurso essencial claro, prática selecionada, revisão integrada e aulas autorais fundamentadas e personalizadas conforme a seção metodológica, sem reescrever indiscriminadamente as fontes.
 4. Conferir cobertura das competências, esforço total, autonomia e ajuda gradual. Aplicar a revisão de linguagem acima e remover cobranças redundantes, inclusive perguntas embutidas na mesma frase. Não exigir conteúdo ausente nas fontes ou nos apoios; distinguir revisão de duplicação e prévia de pré-requisito.
 5. Validar exemplos executáveis, entradas/saídas, casos de borda e links; exemplos intencionalmente incorretos devem estar identificados. Não rodar todos os trabalhos antigos para validar documentação nova.
 6. Integrar os enunciados no catálogo do `leitor/`, preservando rotas antigas e exclusões de respostas/correções/gabaritos. Conferir também avaliações de bloco e capstones quando criados.
@@ -303,4 +306,4 @@ Frontend/backend, cloud, DevOps, segurança, DDD, design patterns e IA/RAG/agent
 
 Ao gerar e publicar um novo capítulo, reutilizar o projeto indicado por `leitor/.openai/hosting.json`, preservar URL e acesso e confirmar publicação antes de registrá-la. Para alterações documentais, publicar somente dentro do escopo autorizado; respeitar confirmações exigidas para sistemas compartilhados e escritas externas.
 
-*Diretrizes vigentes desde 2026-09-09; curadoria adotada em 2026-09-10; linguagem e prática revisadas em 2026-09-16.*
+*Diretrizes vigentes desde 2026-09-09; curadoria adotada em 2026-09-10; fontes + aula autoral + prática adotadas em 2026-09-16.*

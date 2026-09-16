@@ -4,9 +4,9 @@ Resolva na ordem do [guia](../README.md). Crie suas entregas em `pratica/solucoe
 
 Nos problemas de implementação, teste exemplos e limites relevantes ao contrato. Explique brevemente a ideia e o custo de tempo e espaço; comentários no código ou conversa bastam. Quando usar o modelo de hashing, declare a hipótese de custo esperado. Consulta à documentação é permitida; tente antes de buscar pistas ou soluções prontas.
 
-## Consulta opcional — fundamentos já estudados
+## Concluído — fundamentos já estudados
 
-Não é necessário fazer esta atividade para continuar. Use-a apenas se quiser visualizar novamente as colisões.
+O exercício 1 já foi entregue e concluído. O enunciado original permanece para consulta, sem repetição exigida.
 
 ### 1. Desenhar a distribuição
 
@@ -18,13 +18,13 @@ Represente a distribuição das chaves do exercício nas nove posições. No liv
 
 [Voltar à etapa 2](../README.md#etapa-2).
 
-## Essenciais — atividades 2–6
+## Continuação essencial — na ordem do guia
 
 ### 2. Experimentar as coleções
 
-**Prática própria:** ponte entre as estruturas das referências e o comportamento de Set/Map no TypeScript.
+**Prática própria:** faça cada experimento depois da respectiva aula. Preveja a saída, execute e comente somente o que surpreender. Não precisa entregar um relatório de métodos.
 
-Antes de executar, anote o que espera nos cinco `console.log`. Rode o código e explique apenas as diferenças entre sua previsão e o resultado.
+### Experimento de Set
 
 ```typescript
 const primeiro = { codigo: 4 };
@@ -35,17 +35,26 @@ console.log(itens.has({ codigo: 4 }));
 
 const numeros = new Set([NaN, NaN, 0, -0]);
 console.log(numeros.size);
+```
 
+Num Set de permissões, experimente conceder duas vezes a mesma permissão, revogá-la e percorrer o que restou. Confira o tamanho e esvazie a coleção. O objetivo é observar mudanças de estado, não registrar cada chamada.
+
+[Voltar à etapa 3](../README.md#etapa-3), para Contains Duplicate. O experimento de Map fica para depois.
+
+### Experimento de Map
+
+```typescript
 const locais = new Map<number, string>();
 locais.set(4, "A");
 locais.set(4, "B");
 console.log(locais.get(4));
 console.log(locais.size);
+console.log(locais.get(9));
 ```
 
-Depois experimente `add`/`has`/`delete` em um Set de permissões e `get`/`has`/`delete` no Map acima. Percorra uma coleção, confira `size` e esvazie-a com `clear`. Registre somente o que surpreender; não precisa entregar um relatório de cada método.
+Experimente remover uma chave, consultar novamente e percorrer as associações. Explique apenas alguma diferença entre a previsão e o resultado.
 
-[Voltar à etapa 3](../README.md#etapa-3).
+[Voltar à etapa 4](../README.md#etapa-4).
 
 ### 3. Contains Duplicate
 
@@ -55,7 +64,7 @@ O contrato permanece: receber inteiros e informar se existe valor repetido. Leia
 
 Compare o tempo e a memória das duas versões e mostre um teste com todos os valores distintos e outro com repetição. Não é necessário refazer a análise inteira do capítulo anterior.
 
-[Voltar à etapa 4](../README.md#etapa-4).
+[Voltar à etapa 3](../README.md#etapa-3).
 
 ### 4. Investigar uma consulta
 
@@ -71,7 +80,7 @@ function temRegistro(estoque: Map<string, number>, codigo: string): boolean {
 
 Formule uma hipótese, encontre uma entrada que exponha a falha e corrija a função. Entregue um teste que falhe antes e passe depois, além de um caso com chave ausente. Uma frase sobre a causa basta.
 
-[Voltar à etapa 5](../README.md#etapa-5).
+[Voltar à etapa 4](../README.md#etapa-4).
 
 ### 5. Two Sum
 
@@ -81,7 +90,7 @@ Devolva os dois índices pedidos sem reutilizar o mesmo elemento. Tente reduzir 
 
 Teste também valores iguais em posições distintas e explique brevemente por que seu código não reutiliza um elemento.
 
-[Voltar à etapa 5](../README.md#etapa-5).
+[Voltar à etapa 4](../README.md#etapa-4).
 
 ### 6. Valid Anagram
 
@@ -91,7 +100,7 @@ Um anagrama usa as mesmas letras, com as mesmas quantidades, possivelmente em ou
 
 Tente uma solução sem ordenar as strings. Essa é a restrição adicional do curso para explorar o conteúdo deste capítulo. Teste também palavras com as mesmas letras distintas, mas quantidades diferentes. Explique o custo considerando os comprimentos das duas entradas.
 
-[Voltar à etapa 5](../README.md#etapa-5).
+[Voltar à etapa 4](../README.md#etapa-4).
 
 ## Consolidação — se precisar ou quiser retomar
 
@@ -114,3 +123,14 @@ Neste capítulo, memória auxiliar é permitida. O follow-up do original que ped
 Devolva o índice do primeiro caractere que ocorre uma única vez, ou `-1` se ele não existir. Mantenha o alfabeto `a` a `z` do original. Escolha sua representação e explique por que o resultado corresponde ao primeiro índice válido, não apenas a algum caractere único.
 
 [Voltar ao fechamento](../README.md#etapa-6).
+
+
+## Aplicação essencial — depois da comparação de representações
+
+### 9. Empréstimos em memória
+
+**Problema autoral de software:** cada livro tem código único e título; há um único exemplar por código. O programa recebe empréstimos e devoluções. Deve recusar empréstimo de livro inexistente ou já emprestado, e devolução de livro que não está emprestado. Consulte quem está com um livro e preserve o histórico dos eventos aceitos, na ordem em que ocorreram. A mesma pessoa pode retirar o mesmo livro novamente após devolvê-lo.
+
+Implemente com funções e dados em memória, escolhendo as representações. Sem interface, classes ou banco. Mostre um ciclo empréstimo → devolução → novo empréstimo e uma recusa. Explique uma escolha de estrutura e o custo da consulta de quem está com o livro. Não é preciso usar todas as coleções nem produzir um relatório.
+
+[Voltar à etapa 5](../README.md#etapa-5).

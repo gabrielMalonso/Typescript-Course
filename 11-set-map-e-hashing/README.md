@@ -2,7 +2,7 @@
 
 **Objetivo:** escolher como representar presença e associações, usar Set e Map em TypeScript e explicar o custo e os limites dessa escolha.
 
-**Continue na [etapa 3 — Set e Map na prática](#etapa-3).** Os trechos de vídeo e os fundamentos do livro abaixo já foram estudados, conforme seu relato em 16/09/2026. Não é necessário refazê-los. A prática ainda será acompanhada; estudo concluído não significa avaliação de domínio do capítulo.
+**Próximo passo: [aula de Set — etapa 3](#etapa-3).** Vídeos, leituras conceituais e exercício de chaining estão concluídos. Não é necessário refazê-los. Set e Map são a continuação, ainda sem domínio prático avaliado.
 
 ## 1. Vídeo já estudado — consulta
 
@@ -19,41 +19,36 @@ Referência: **Introduction to Algorithms, CLRS, 3ª edição em inglês**. As p
 
 **Estudo conceitual concluído:** [introdução e 11.1, pp. 253–255](leituras/clrs-11.1.pdf) e parte relevante de [11.2, pp. 256–260](leituras/clrs-11.2.pdf): endereçamento direto e seu custo de espaço, chave → hash → posição, colisões, encadeamento (*chaining*), fator de carga intuitivo e eficiência média/esperada versus pior caso.
 
-Essa base basta para continuar. Os teoremas, suas demonstrações, esperança matemática e variáveis indicadoras das pp. 259–260 ficam como **aprofundamento opcional**, sem leitura ou entrega exigida. Não é preciso terminar a seção para avançar. A [atividade 1](pratica/atividades.md#atividade-1) permanece como consulta opcional para visualizar colisões, se sentir necessidade.
+A explicação guiada consolidou a leitura densa de 11.2, reconstruindo a progressão de array e busca linear até hashing, colisões e custo. O exercício **11.2-2, `h(k) = k mod 9`, com inserção no início das cadeias, está concluído**, conforme sua entrega e relato. Essa base basta para continuar. Os teoremas, suas demonstrações, esperança matemática e variáveis indicadoras das pp. 259–260 ficam como **aprofundamento opcional**, sem leitura ou entrega exigida. Não é preciso terminar a seção para avançar. A [atividade 1](pratica/atividades.md#atividade-1) fica preservada como referência do exercício feito, sem nova entrega.
 
-## 3. Set e Map na prática — comece aqui
+## 3. Aula de Set — comece aqui
 
-No capítulo 10, você identificou buscas repetidas em arrays. Agora conheça coleções que expressam outras necessidades: guardar valores únicos ou recuperar um dado por uma chave.
+No capítulo 10, você reconheceu o custo das buscas repetidas em arrays. Leia a [aula autoral de Set](notas.md#set-guardar-presenca), que parte da pergunta “este valor está presente?” e desenvolve criação, consulta, alteração, identidade e custo em TypeScript.
 
-Leia estes recortes da documentação, experimentando os métodos conforme aparecem:
+Execute os exemplos separadamente, num arquivo de rascunho, com `ts-node arquivo.ts`, como nos exercícios do curso. Faça o [experimento de Set da atividade 2](pratica/atividades.md#experimento-de-set). Não precisa estudar Map para concluir esta etapa.
 
-| Fonte | Foco e limite |
-|---|---|
-| [MDN — Set: Description](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set#description) | Leia a descrição, *Value equality* e *Performance*. Pare antes de *Set composition*. Observe unicidade, ordem de inserção e identidade de objetos. |
-| [MDN — métodos de Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set#instance_methods) | Consulte somente `add`, `has`, `delete`, `clear` e a propriedade `size`. Não é preciso estudar união/interseção, subclasses ou protocolos. |
-| [MDN — Map: Description](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#description) | Leia a descrição e *Key equality*. Veja chave → valor, atualização de uma chave existente e ordem de inserção. |
-| [MDN — métodos de Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#instance_methods) | Consulte `set`, `get`, `has`, `delete`, `clear`, `forEach` e a propriedade `size`. Foque no que entra e no que cada operação devolve. |
+**Depois:** retome [Contains Duplicate — atividade 3](pratica/atividades.md#atividade-3) sem substituir a tentativa quadrática anterior. Escolha sua estratégia, teste e compare o custo. Pode enviar a tentativa para feedback antes de prosseguir; a aula não entrega a solução otimizada.
 
-Para adaptar os exemplos a TypeScript, use as notas [Set](notas.md#set-guardar-presenca), [Map](notas.md#map-associar-uma-informacao) e, se precisar, [igualdade e identidade](notas.md#igualdade-e-identidade). Elas são apoios pontuais, não uma segunda leitura obrigatória da mesma teoria.
+A MDN e a especificação fundamentam as aulas e estão ligadas ao fim de cada parte. Consulte-as se quiser verificar um comportamento ou esclarecer uma dúvida; não há leitura sequencial obrigatória dessas páginas.
 
-**Depois:** faça a [atividade 2 — experimentar as coleções](pratica/atividades.md#atividade-2). Pode enviar essa primeira entrega para feedback.
+## 4. Aula de Map — da presença à associação
 
-## 4. Escolher a estrutura e analisar seu custo
+Leia a [aula autoral de Map](notas.md#map-associar-uma-informacao). A ponte agora é: saber que um produto existe → recuperar seu preço → atualizar uma informação → representar uma quantidade ou índice de consulta.
 
-Leia [Escolher entre Array, Set, Map e Object](notas.md#escolher-entre-array-set-map-e-object), com o recorte indicado da MDN, e [Custo das coleções no JavaScript](notas.md#custo-das-colecoes-no-javascript).
+Faça o [experimento de Map da atividade 2](pratica/atividades.md#experimento-de-map). Em seguida, passe à [atividade 4 — investigar uma consulta](pratica/atividades.md#atividade-4), [atividade 5 — Two Sum](pratica/atividades.md#atividade-5) e [atividade 6 — Valid Anagram](pratica/atividades.md#atividade-6), uma por vez, com feedback quando útil.
 
-Conecte o modelo que você já estudou ao contrato da linguagem: a API define comportamento, mas não impõe uma implementação particular de hash table. Considere também construir a coleção e mantê-la em memória; acelerar consultas tem um custo.
+Comece com o que consegue construir. Depois de testar e entender o custo, procure trabalho repetido e tente melhorar. As representações e os algoritmos dos problemas ficam para você descobrir.
 
-**Depois:** retome [Contains Duplicate — atividade 3](pratica/atividades.md#atividade-3). Preserve a tentativa anterior e escolha sua própria estratégia. O material não fornece o algoritmo da revisão.
+## 5. Escolher a representação num problema de software
 
-## 5. Aplicar e investigar
+Leia [Array, Set, Map e Object](notas.md#escolher-entre-array-set-map-e-object). A aula acompanha mudanças no requisito de um sistema de empréstimos: campos de um registro, histórico, presença e informação associada. Execute o pequeno experimento de atualização; não há tabela para decorar.
 
-Faça [atividade 4 — investigar uma consulta](pratica/atividades.md#atividade-4), [atividade 5 — Two Sum](pratica/atividades.md#atividade-5) e [atividade 6 — Valid Anagram](pratica/atividades.md#atividade-6).
+Aplique esse critério na [atividade 9 — empréstimos em memória](pratica/atividades.md#atividade-9). É um programa pequeno, sem interface ou banco. O objetivo é escolher representações e discutir uma decisão, não montar um projeto extenso.
 
-Escolha a representação a partir do contrato de cada problema. Comece com uma solução que consiga construir, teste e analise antes de melhorar. Se travar, envie a tentativa e a dificuldade; não precisa terminar tudo para receber feedback.
+## 6. Feedback e consolidação
 
-## 6. Feedback
+A continuação essencial é **Set → experimento → Contains Duplicate → feedback → Map → experimento e atividades 4–6 → escolha de representação → atividade 9**. Envie partes conforme avançar; não espere concluir tudo para discutir.
 
-O percurso essencial agora é **atividades 2–6**. Código, testes e explicações breves devem mostrar uso correto das coleções, escolha de representação, tratamento de ausência/identidade e análise de tempo e espaço com hipóteses claras. Os fundamentos já estudados serão conectados às decisões da prática, sem prova matemática obrigatória.
+A prática deve mostrar uso das coleções, tratamento de ausência e identidade, escolha de representação e custo com hipóteses claras. A compreensão dos fundamentos já estudados será conectada a essas decisões, sem prova matemática nem questionário obrigatório.
 
-A [atividade 7](pratica/atividades.md#atividade-7) é consolidação e a [atividade 8](pratica/atividades.md#atividade-8) é desafio opcional. Não bloqueiam avanço sem uma lacuna essencial identificada. Por enquanto, continuamos no capítulo 11.
+A [atividade 7](pratica/atividades.md#atividade-7) é consolidação adicional e a [atividade 8](pratica/atividades.md#atividade-8), desafio opcional. Use-as por interesse ou dificuldade observada, sem quota de exercícios. A continuação de Set/Map está preparada, mas ainda não foi estudada ou aprovada. **Permanecemos no capítulo 11.**

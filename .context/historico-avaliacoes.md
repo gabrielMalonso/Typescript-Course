@@ -8,7 +8,7 @@ Atualizado em 2026-09-16. Este arquivo mantém apenas a base útil ao ensino atu
 - [Capítulo 10 concluído](../10-complexidade-e-big-o/pratica/correcoes.md): tamanho da entrada, contagem pelos limites reais dos loops, famílias de crescimento, casos com hipóteses, tempo e memória, identificação e redução de trabalho repetido. É base suficiente para Set/Map/hashing.
 - No 10, foram inspecionadas as soluções de Two Sum, Contains Duplicate e Stock. A prática adicional no LeetCode foi relatada, sem auditoria de submissões externas.
 
-- No 11, Gabriel relata estudo concluído dos trechos CS50 Dictionaries/Hashing e CLRS 11.1/parte conceitual de 11.2: endereçamento direto, espaço, hash, colisões, chaining, carga intuitiva e custo esperado versus pior caso. Não houve entrega de prática nem avaliação de domínio de Set/Map; provas probabilísticas não são exigidas.
+- No 11, Gabriel relata estudo concluído dos trechos CS50 Dictionaries/Hashing e CLRS 11.1/parte conceitual de 11.2: endereçamento direto, espaço, hash, colisões, chaining, carga intuitiva e custo esperado versus pior caso. A explicação guiada consolidou o trecho denso de 11.2; a entrega de chaining foi inspecionada, com resultado registrado no [PROGRESSO](../PROGRESSO.md). Set/Map ainda não têm domínio prático avaliado; provas probabilísticas não são exigidas.
 
 Não há reforço essencial pendente que bloqueie a continuação prática do 11. Recursão permanece no 15, sem domínio atribuído por ter aparecido na CS50.
 
