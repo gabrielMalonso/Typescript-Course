@@ -38,7 +38,7 @@ Em 10/09/2026, o capítulo 10 foi reconstruído localmente como guia, notas de a
 
 ```text
 AGENTS.md / EMENTA.md / PROGRESSO.md / DIARIO.md
-.context/                  contexto e histórico do professor
+.context/                  contexto atual para orientar o ensino
 00-preparacao-do-ambiente/  início da base preservada
 …
 09-arrays-metodos-avancados/

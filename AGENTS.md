@@ -12,21 +12,17 @@ Uma única sequência, organizada em blocos, com um próximo passo claro. Não c
 
 TypeScript é ferramenta de aprendizagem e implementação. C aparece para memória, ponteiros e baixo nível ou como linguagem de uma referência, com explicação contextual mínima; SQL para dados; Bash/Shell para ferramentas e sistemas; pequenos trechos de Assembly para explicar arquitetura. Ensinar a sintaxe auxiliar necessária no próprio contexto, sem abrir cursos paralelos.
 
-## Transição e preservação do histórico
+## Preservação dos trabalhos e manutenção do contexto
 
-Em **2026-09-09**, o curso evoluiu de **“Fase inicial: fundamentos de programação usando TypeScript”** para **“Fase atual: expansão para currículo de Ciência da Computação e Engenharia de Software”**.
+Preservar materiais, entregas, correções, notas e caminhos dos capítulos já estudados. `DIARIO.md` pertence ao aluno; não preencher por ele. Não inventar resultados, domínio ou conclusão. A sequência vigente está na EMENTA; planos antigos não criam obrigações para os próximos capítulos.
 
-- Preservar integralmente os capítulos 00–09: aulas, READMEs, exercícios, respostas, avaliações, notas e caminhos. Não reorganizar retroativamente suas pastas.
-- Preservar `DIARIO.md` como espaço do aluno. Não preencher por ele.
-- Não inventar nota, data de entrega, domínio ou conclusão. Diferenciar relato do aluno, arquivos encontrados e avaliação formal.
-- Situação encontrada em 2026-09-09: o capítulo 09 tem lista aprovada e respostas de prova presentes, mas não tem `avaliacao/resultado.md`; `questao08.ts` está incompleto no arquivo salvo. Está praticamente concluído, com fechamento formal pendente. A reformulação não corrige essa prova nem atribui nota.
-- O próximo conteúdo é **10 — Complexidade e Big O**. Tuples passa a 16. A pendência formal do 09 não transforma Tuples em próximo passo nem bloqueia a preparação autorizada de Big O.
-- Referências a módulos, provas por capítulo, leitura obrigatória e antigo capítulo 10 dentro dos materiais preservados descrevem a fase anterior. Para a sequência futura, prevalecem estes documentos atuais.
-- Preservar entradas históricas em `.context/`; registrar mudanças com data. Notas antigas são evidências da época, não diretrizes atuais. A Calculadora não entregue fica registrada como pendência histórica absorvida pelo planejamento do capstone de fundamentos, sem marcar entrega nem criar bloqueio retroativo.
+`.context/` é contexto de trabalho para ensinar e criar conteúdo, não um diário histórico. Manter apenas informações que ajudam uma decisão atual: preferências, conhecimentos disponíveis, dificuldades presentes, pendências relevantes e próximo passo. Remover dificuldades superadas, pendências resolvidas, relatos antigos e duplicações, sem criar resumos ou arquivos históricos substitutos. A remoção de um apontamento antigo não é uma nova avaliação de domínio.
+
+Atualizar as informações no lugar, com a data vigente, em vez de acumular entradas de sessão. Entregas e correções originais continuam nos capítulos; resultados gerais ficam no PROGRESSO. Não copiar esses registros para o contexto sem uma necessidade atual.
 
 ## Sessões e fontes de verdade
 
-Antes de orientar ou criar conteúdo, ler o estado atual, os pontos pertinentes do perfil, notas e histórico de avaliações, a ementa e a última correção disponível. Não tratar o aluno como iniciante absoluto a cada sessão.
+Antes de orientar ou criar conteúdo, ler estado atual, perfil e notas pertinentes, a base de conhecimentos disponível e o trecho da ementa. Consultar a última correção ou uma entrega anterior quando necessário à decisão. Não tratar o aluno como iniciante absoluto a cada sessão.
 
 | Arquivo | Responsabilidade |
 |---|---|
@@ -35,9 +31,11 @@ Antes de orientar ou criar conteúdo, ler o estado atual, os pontos pertinentes 
 | `PROGRESSO.md` | Evidências de avanço e visão dos blocos futuros |
 | `.context/estado-atual.md` | Um próximo passo, fase, pendências e data |
 | `.context/perfil-aluno.md` | Objetivos atuais, preferências e observações comprovadas |
-| `.context/notas-professor.md` | Decisões datadas, feedbacks e adaptações |
-| `.context/historico-avaliacoes.md` | Resultados efetivamente corrigidos, sem reescrever notas originais |
+| `.context/notas-professor.md` | Decisões e retomadas ainda úteis aos próximos conteúdos |
+| `.context/historico-avaliacoes.md` | Base de conhecimentos disponível e links às evidências pertinentes; sem cronologia |
 | `.context/prompts-agentes.md` | Roteiro compacto de geração, subordinado a estas diretrizes |
+
+As responsabilidades da tabela definem qual fonte consultar para cada decisão. O roteiro aplica estas diretrizes, sem criar exigências extras. Manter cada informação na fonte correspondente, sem repetir relatos entre os arquivos. Ao atualizar o contexto, retirar o que deixou de orientar o ensino.
 
 Atualizar contexto quando houver decisão ou trabalho autorizado; registrar observações relevantes e atualizar progresso quando houver avanço significativo. Perguntas informativas são somente leitura: não editar arquivos apenas para registrar uma dúvida. Não duplicar estatísticas manualmente sem conferir a fonte. O leitor apresenta os materiais; não concede aprovação pedagógica.
 
@@ -69,7 +67,7 @@ Ativar uma âncora que o aluno realmente conhece. Transformar o exemplo uma muda
 | `localhost:3000` | “O que são localhost e 3000?” → IP e portas |
 | Array de objetos, de 100 a 10 milhões de registros | Persistência, busca e concorrência → banco e índices |
 
-Two Sum, Contains Duplicate e TLE são experiências relatadas pelo aluno neste pedido; não registrar resultados externos como se tivessem sido corrigidos. Usar problemas análogos na explicação e devolver os originais como revisão sem soluções antecipadas.
+Consultar as evidências atuais para escolher uma âncora realmente conhecida; não confundir revisão local de código com verificação de resultados externos. Usar problemas análogos na explicação e devolver os originais como revisão sem soluções antecipadas.
 
 Variar contextos (cotidiano, software, jogos, negócios, engenharia) conforme utilidade. Usar texto curto e diagramas quando ajudam. Não empilhar sintaxe futura e contexto profissional desconhecido em uma mesma explicação.
 
@@ -94,9 +92,21 @@ Material próprio só entra para conectar conhecimentos, explicar uma dificuldad
 
 O feedback de Gabriel sobre o capítulo 10 refere-se à **dinâmica da escrita e à condução didática**, não simplesmente ao tamanho do texto. Nas notas necessárias, partir da dúvida concreta, transformar um exemplo conhecido gradualmente e mostrar o raciocínio antes de condensar definições. Encurtar texto, sozinho, não resolve a dificuldade.
 
+## Linguagem e explicação didática
+
+Escrever para o conhecimento atual de Gabriel, preservando a precisão técnica. Desenvolver uma ideia por vez e ligar cada frase à anterior. Explicar termos novos no primeiro uso, com palavras familiares; evitar acumular siglas, conceitos e ressalvas antes de mostrar a ideia principal.
+
+Nas explicações necessárias, partir de uma situação ou de um código conhecido. Mostrar o que acontece com uma entrada pequena e por que acontece; depois nomear o conceito e apresentar a conclusão geral. Transformar o exemplo uma mudança por vez. Não aplicar esse percurso mecanicamente a cada frase nem repetir conceitos já compreendidos.
+
+Clareza pode exigir mais frases. Não comprimir o raciocínio para cumprir uma meta de brevidade, nem substituir explicação por listas de termos. Manter condições que afetam a correção junto da afirmação; colocar detalhes secundários depois, como consulta quando útil. Diagramas, tabelas e pequenos rastreamentos entram quando tornam a explicação mais fácil.
+
+O guia orienta a próxima ação, as notas esclarecem uma dificuldade e o enunciado apresenta o problema. Justificativas de curadoria e verificações do professor ficam no contexto docente. Nos exercícios, esclarecer termos, entradas, saídas e restrições sem entregar a decomposição ou a solução.
+
+Antes de entregar, reler guia, notas, atividades e feedback com esta pergunta: **com o que Gabriel já sabe, ele consegue entender este trecho e saber o que fazer sem decifrar a redação?** Se não, explicitar a ligação que falta ou dividir a explicação. Essa revisão é trabalho do professor, não um questionário para o aluno.
+
 ## Guia de estudo como percurso central
 
-Padrão aprovado no piloto do 10 em 2026-09-10 e adotado nos próximos capítulos. Manter `README.md` como caminho técnico, apresentado no leitor como **Guia de estudo**. Ele é o ponto de partida e retorno entre materiais, não uma apostila nem um relatório da curadoria.
+Padrão aprovado no piloto do 10 em 2026-09-10 e adotado nos próximos capítulos. Aproveitar sua organização de links, recortes e retorno ao guia; não copiar a quantidade de subperguntas nem a densidade das notas como modelo obrigatório. Manter `README.md` como caminho técnico, apresentado no leitor como **Guia de estudo**. Ele é o ponto de partida e retorno entre materiais, não uma apostila nem um relatório da curadoria.
 
 ```text
 XX-nome-do-capitulo/
@@ -112,7 +122,7 @@ XX-nome-do-capitulo/
 Criar somente arquivos necessários, sem pastas vazias. Organizar o guia na ordem de uso: vídeo → recorte → prática → próximo recorte/apoio → feedback. Intercalar conforme o assunto, sem impor consumir toda a teoria antes de praticar. Cada etapa contém uma conexão curta com a anterior, link direto, foco e limite de leitura, e a próxima ação. O aluno deve conseguir abrir o material, voltar e continuar sem montar o roteiro sozinho.
 
 - Apresentar objetivo e âncora brevemente. Informar livro/edição uma vez; seções e páginas nos links ou tabela. Não repetir apresentação, justificativas ou teoria.
-- Indicar videoaula já assistida pelo relato, sem obrigar repetição. Razões detalhadas da escolha, datas de verificação, alternativas descartadas e planejamento docente ficam em `.context/notas-professor.md` ou auditoria pertinente.
+- Indicar videoaula já assistida pelo relato, sem obrigar repetição. Guardar nas notas do professor apenas justificativas de escolha e verificações ainda necessárias para usar ou revisar a referência; não manter um relato de todas as alternativas descartadas.
 - Notas só complementam lacunas: sintaxe, adaptação para TypeScript, memória ou dificuldade observada. Ligar à seção exata no momento necessário e oferecer retorno à etapa do guia. Não exigir ler todas as notas em sequência.
 - Atividades citam fonte e questão, com link à página do enunciado quando houver PDF no leitor. Se não houver recorte autorizado, indicar a referência original e paginação verificável.
 - Critérios de domínio e revisão imediata entram brevemente no fechamento; planejamento detalhado de retomadas fica no contexto do professor. Evitar listas administrativas no percurso.
@@ -137,15 +147,15 @@ O aluno cria soluções em `pratica/solucoes/`; correções ficam em `pratica/co
 
 Linguagens/teoria combinam PROG e MATH; distribuídos combinam SYS, NET, DATA e SWE. Essa classificação orienta a curadoria e a prática dentro da sequência única; não exige redigir aulas próprias nem abre disciplinas paralelas.
 
-## Ajuste após o piloto — 2026-09-16
+## Prática, debugging e autonomia
 
-Atividades devem ser enxutas: resolver/implementar, explicar brevemente por que funciona, analisar tempo e espaço e registrar limitação/trade-off/melhoria somente quando pertinente. Esse roteiro é flexível, não um formulário obrigatório. Perguntas adicionais precisam explorar um conceito específico; não criar automaticamente Parte A + Parte B ou repetir a mesma análise de Big O em várias formulações. A dificuldade deve estar no conteúdo e na resolução, não no volume de documentação.
+Atividades devem ser enxutas: resolver/implementar, explicar brevemente por que funciona, analisar tempo e espaço e registrar limitação/trade-off/melhoria somente quando pertinente. Esse roteiro é flexível, não um formulário obrigatório. Pedir menos perguntas de fato, não apenas condensar várias cobranças numa única frase. Uma entrega curta, comentários no código ou uma explicação na conversa podem fornecer evidência suficiente. Perguntas adicionais precisam explorar um conceito específico; não criar automaticamente Parte A + Parte B ou repetir a mesma análise de Big O em várias formulações. A dificuldade deve estar no conteúdo e na resolução, não no volume de documentação.
 
 Avaliar o conjunto de respostas, código, experimentação, debugging, análises e prática pertinente; distinguir evidência inspecionada de relato. Não exigir correspondência textual para cada subpergunta quando a competência já estiver demonstrada, nem reconstrução retrospectiva de tentativas ausentes. Consolidação e desafio não bloqueiam avanço sem lacuna essencial identificada.
 
 Quando faltar a técnica otimizada, preservar o percurso: modelagem manual/pseudocódigo → primeira solução correta com o repertório atual, inclusive força bruta → testes/debugging → análise de tempo/espaço → identificar repetição ou memória desnecessária → melhorar até onde o repertório permitir → revisitar após aprender a nova ferramenta. Não antecipar automaticamente a solução ótima. Problemas já vivenciados são pontes para compreender a otimização, não padrões para memorizar.
 
-## Prática, debugging e autonomia
+### Seleção e acompanhamento
 
 Priorizar exercícios adequados do MIT, CS50 e livro-âncora; complementar com LeetCode e labs. A adequação aos conhecimentos atuais prevalece sobre a origem. Em sistemas, runtime, redes, bancos, ferramentas e distribuídos, labs podem ser a primeira escolha. Criar exercícios próprios apenas quando houver lacuna pedagógica identificável.
 
@@ -157,21 +167,21 @@ Usar **8–15 atividades como faixa inicial total, incluindo LeetCode, labs e re
 - **Consolidação:** prática adicional acionada por insegurança, dificuldade ou solicitação.
 - **Desafio:** aprofundamento opcional, sem bloquear avanço nem cobrar sintaxe não ensinada.
 
-Combinar análise conceitual, implementação, leitura de código, testes, casos de borda, comparação, refatoração e debugging conforme o tema; não exigir todas as modalidades em cada capítulo. No debugging, pedir hipótese, caso que reproduz, diagnóstico, correção e teste de regressão. Não colocar dicas que denunciem a solução nos títulos dos exercícios de aplicação. Dar dados, objetivos e restrições; deixar decomposição e escolha de funções com o aluno.
+Combinar análise conceitual, implementação, leitura de código, testes, casos de borda, comparação, refatoração e debugging conforme o tema; não exigir todas as modalidades em cada capítulo. No debugging, orientar a investigação por uma hipótese e um caso que reproduza a falha. Conferir se a correção resolve a causa e se o teste revela uma regressão. Pedir registro apenas do que ajuda a compreender a investigação, sem cinco campos obrigatórios. Não colocar dicas que denunciem a solução nos títulos dos exercícios de aplicação. Dar dados, objetivos e restrições; deixar decomposição e escolha de funções com o aluno.
 
 Permitir entregas parciais e discussão de tentativas antes do fim da lista. O feedback deve apontar competência demonstrada, dificuldade relevante e próxima ação útil. Buscar novos exercícios no momento em que forem necessários, em vez de produzir um estoque para todos os capítulos.
 
-Reforços já observados: arrays vazios, negativos e limites; parâmetro versus coleção global; função versus retorno; referência versus cópia; testes que realmente revelem a falha. Detalhes cosméticos não impedem avanço, salvo quando formatação é o objetivo ou afeta o comportamento.
+Definir reforços a partir de dificuldades atuais, sem repetir uma lista fixa de erros antigos. Detalhes cosméticos não impedem avanço, salvo quando formatação é o objetivo ou afeta o comportamento.
 
 Evolução transversal: **escrever → testar → debugar → ler → refatorar → medir → projetar**. Introduzir terminal, debugger, testes, Git e documentação quando necessários; continuar usando-os nos capítulos seguintes. O bloco de ferramentas consolida competências já praticadas.
 
 ## LeetCode e laboratórios
 
-LeetCode integra oficialmente DSA quando a plataforma for adequada: arrays, strings, hashing, stacks, queues, busca binária, listas, árvores, heaps, grafos e padrões. Selecionar normalmente cerca de 3–6 problemas quando houver correspondência, dentro da faixa total de prática, sem quota fixa. Reanálises de tentativas anteriores contam; não acrescentar problemas apenas para preencher a faixa. Usar progressão de aquecimento, aplicação, problema menos óbvio, revisão e desafio quando útil, sem obrigar todas as etapas. Preferir poucos problemas explorados profundamente. `Accepted` sozinho não prova domínio; pedir explicação, limites, complexidade e uma variação sem solução pronta.
+LeetCode integra oficialmente DSA quando a plataforma for adequada: arrays, strings, hashing, stacks, queues, busca binária, listas, árvores, heaps, grafos e padrões. Selecionar normalmente cerca de 3–6 problemas quando houver correspondência, dentro da faixa total de prática, sem quota fixa. Reanálises de tentativas anteriores contam; não acrescentar problemas apenas para preencher a faixa. Usar progressão de aquecimento, aplicação, problema menos óbvio, revisão e desafio quando útil, sem obrigar todas as etapas. Preferir poucos problemas explorados profundamente. `Accepted` sozinho não prova domínio. Avaliar o código e a análise disponíveis; pedir esclarecimento ou uma variação curta sem solução pronta somente se uma competência essencial continuar incerta.
 
 Para problemas com evolução de tentativas, usar como roteiro flexível: primeira ideia → solução inicial → complexidade → problema encontrado → conhecimento novo → solução revisada → complexidade final → aprendizado. Guardar tentativas do aluno em `pratica/solucoes/`, sem substituí-las pela resposta do professor. Reapresentar Two Sum e Contains Duplicate após Big O/Set/Map e mais tarde sem anunciar a estrutura útil; Best Time to Buy and Sell Stock também pode ser retomado. Ajustar a extensão do registro ao trabalho: uma questão curta pode pedir apenas resposta e justificativa, sem oito campos obrigatórios.
 
-Usar labs em redes, bancos, SO e runtime, sem forçar LeetCode. Cada lab declara objetivo, pré-requisitos, ambiente isolado, previsão, procedimento, evidências observadas, explicação, falhas provocadas e encerramento seguro. Exemplos:
+Usar labs em redes, bancos, SO e runtime, sem forçar LeetCode. O professor fornece objetivo, pré-requisitos, ambiente isolado, procedimento e encerramento seguro. O aluno experimenta e registra o resultado relevante com uma breve explicação. Pedir previsão ou provocar falha somente quando isso ajudar a explorar o conceito; não exigir um relatório com todos esses campos em todo lab. Exemplos:
 
 - Redes: subir servidor local, fazer requisição, observar porta, headers e status; provocar falha de conexão.
 - Dados: criar tabela descartável, inserir, consultar, comparar plano antes/depois do índice.
@@ -194,11 +204,11 @@ As provas antigas de 00–09, suas notas e regras históricas permanecem intacta
 
 ## Revisão espaçada e documentação
 
-Ao criar um capítulo, registrar no contexto do professor quais exercícios/competências revisitar, em quais marcos e com que variação. No guia do aluno, mostrar apenas a retomada útil naquele momento. Referência adaptável: próxima sessão, após 2–3 capítulos e no fechamento do bloco. Incorporar retomadas na prática futura, variando contexto ou contrato; registrar apenas revisões realizadas e ajustar a próxima retomada conforme esquecimento. Não criar calendário paralelo obrigatório.
+Ao criar um capítulo, registrar no contexto do professor quais exercícios/competências revisitar, em quais marcos e com que variação. No guia do aluno, mostrar apenas a retomada útil naquele momento. Referência adaptável: próxima sessão, após 2–3 capítulos e no fechamento do bloco. Incorporar retomadas na prática futura, variando contexto ou contrato. Após a prática, atualizar o que ainda precisa ser retomado e retirar as pendências resolvidas, sem acumular uma cronologia de revisões. Não criar calendário paralelo obrigatório.
 
 O professor seleciona conhecimentos antigos sem anunciar a ferramenta no novo enunciado. Exemplo: após Map, resolver outro problema de frequências alguns capítulos depois sem sugerir Map. A revisão é transferência, não cópia da solução memorizada.
 
-Progressão de pesquisa: localizar uma seção fornecida → encontrar método/API sozinho → explicar assinatura, exemplos e limites → construir experimento mínimo → justificar aplicação no problema. Documentação oficial pode ser consultada; soluções prontas, editoriais e repositórios de respostas não substituem a tentativa. Pedir que o aluno registre a fonte consultada, o que entendeu e como verificou. Conferir links e compatibilidade com as versões usadas ao gerar a aula.
+Progressão de pesquisa: localizar uma seção fornecida → encontrar método/API sozinho → explicar assinatura, exemplos e limites → construir experimento mínimo → justificar aplicação no problema. Documentação oficial pode ser consultada; soluções prontas, editoriais e repositórios de respostas não substituem a tentativa. Quando a pesquisa for o foco da atividade, pedir uma referência e uma breve explicação de como aplicou ou verificou o que leu. Não repetir esse registro em toda consulta incidental. Conferir links e compatibilidade com as versões usadas ao gerar a aula.
 
 Objetivo: **não sei → sei pesquisar → sei ler documentação → sei experimentar → sei aplicar**.
 
@@ -263,12 +273,12 @@ Frontend/backend, cloud, DevOps, segurança, DDD, design patterns e IA/RAG/agent
 1. Ler contexto e identificar capítulo, área, âncora, pré-requisitos e competências esperadas, preservando a sequência.
 2. Curar vídeo, leitura e atividades do capítulo; conferir fontes, recortes e adequação antes de apresentá-los como seleção final.
 3. Montar o README com um percurso essencial claro, prática selecionada, revisão integrada e apoios próprios somente para lacunas específicas.
-4. Conferir cobertura das competências, esforço total, autonomia e ajuda gradual. Não exigir conteúdo ausente nas fontes ou nos apoios; distinguir revisão de duplicação e prévia de pré-requisito.
+4. Conferir cobertura das competências, esforço total, autonomia e ajuda gradual. Aplicar a revisão de linguagem acima e remover cobranças redundantes, inclusive perguntas embutidas na mesma frase. Não exigir conteúdo ausente nas fontes ou nos apoios; distinguir revisão de duplicação e prévia de pré-requisito.
 5. Validar exemplos executáveis, entradas/saídas, casos de borda e links; exemplos intencionalmente incorretos devem estar identificados. Não rodar todos os trabalhos antigos para validar documentação nova.
 6. Integrar os enunciados no catálogo do `leitor/`, preservando rotas antigas e exclusões de respostas/correções/gabaritos. Conferir também avaliações de bloco e capstones quando criados.
 7. Se o leitor mudar, executar `npm run typecheck`, `npm run lint` e `npm run build` em `leitor/`; conferir home e rota relevante. Não alterar dependências nem hospedagem para uma mudança curricular sem necessidade.
 8. Atualizar contexto e progresso sem antecipar estudo concluído. Reportar limitações da verificação.
 
-Ao gerar e publicar um novo capítulo, reutilizar o projeto indicado por `leitor/.openai/hosting.json`, preservar URL e acesso e confirmar publicação antes de registrá-la. A reformulação documental de 2026-09-09 é local e não implica publicação. Para outras alterações, publicar somente dentro do escopo autorizado; respeitar confirmações exigidas para sistemas compartilhados e escritas externas.
+Ao gerar e publicar um novo capítulo, reutilizar o projeto indicado por `leitor/.openai/hosting.json`, preservar URL e acesso e confirmar publicação antes de registrá-la. Para alterações documentais, publicar somente dentro do escopo autorizado; respeitar confirmações exigidas para sistemas compartilhados e escritas externas.
 
-*Diretrizes vigentes desde 2026-09-09; metodologia de curadoria atualizada em 2026-09-10.*
+*Diretrizes vigentes desde 2026-09-09; curadoria adotada em 2026-09-10; linguagem e prática revisadas em 2026-09-16.*
