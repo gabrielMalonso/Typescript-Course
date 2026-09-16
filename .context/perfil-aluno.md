@@ -15,6 +15,10 @@
 
 ---
 
+## Preferências confirmadas — 2026-09-16
+
+A prática extra durante viagem com tablet consolidou o 10, segundo Gabriel. Desenhar/manuscrever a lógica antes do TypeScript, começar por força bruta, testar, debugar e analisar custos funcionou bem. Prefere atividades diretas, mais código e menos questionários; não preencher retrospectivamente subitens quando já houver evidência equivalente. Preservar soluções com o repertório atual para compreender depois de onde vem a otimização. O fechamento qualitativo está registrado nas correções do 10; resultados externos não foram auditados.
+
 ## Preferências e experiências relatadas — 2026-09-10
 
 Gabriel prefere começar pela videoaula para obter uma visão do assunto, depois aprofundar no livro e praticar com exercícios selecionados de referências acadêmicas, LeetCode ou labs. O professor organiza o roteiro e acompanha as tentativas; material próprio entra para dificuldades específicas. A crítica ao capítulo 10 foi à dinâmica do texto e à condução didática, não simplesmente à extensão. Não concluir que encurtar o texto resolverá o problema.

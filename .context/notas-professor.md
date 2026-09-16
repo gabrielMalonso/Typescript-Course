@@ -1,3 +1,19 @@
+## 2026-09-16 — Fechamento do 10 e ajustes após a primeira aplicação
+
+Capítulo 10 concluído conforme [correção](../10-complexidade-e-big-o/pratica/correcoes.md). Evidência local: respostas 1–8, implementações, contagens e melhoria de callbacks. Considerado também o relato de CS50 assistida, leituras CLRS e prática adicional em TypeScript durante viagem com tablet. Não há auditoria de submissões externas. Preservadas respostas e lacunas documentais intencionais; correções pontuais ficam no feedback, sobretudo espaço total em 5.A.7 e retorno estrito de Two Sum.
+
+**Prática adicional relatada:** Two Sum; Contains Duplicate; Best Time to Buy and Sell Stock; Unique 3-Digit Even Numbers; Find All Numbers Disappeared in an Array; Filter Elements from Array; Number of Good Pairs; Concatenation of Array; Richest Customer Wealth; Reverse String; Valid Palindrome; Running Sum of 1d Array. Não converter essa relação em contagem de Accepted ou exercícios formalmente corrigidos.
+
+**Aprendizados relatados:** modelagem manual/pseudocódigo → primeira solução correta → testes/debugging → tempo e espaço → identificação de repetição → melhoria possível. Incluem dimensões independentes Θ(mn), callbacks, soma triangular, limites constantes, escalares versus estruturas crescentes, saída versus auxiliar, in-place, saídas antecipadas e runtime melhor sem mudança de classe assintótica. Os exemplos externos sem código permanecem relatos; as competências observadas localmente estão na correção.
+
+**Feedback novo:** a prática formal teve subperguntas demais e competiu com implementar e experimentar. Isso complementa, sem apagar, a crítica anterior à condução didática. Adotar implementação, breve justificativa, tempo/espaço e trade-off apenas quando pertinente; perguntas extras somente para um conceito específico. Não fazer desse roteiro quatro campos obrigatórios em todo exercício. Avaliar evidências equivalentes em conjunto, sem exigir uma resposta por subitem. Força bruta é base legítima para entender o custo; melhorar até onde o repertório permitir e preservar a tentativa para futuras técnicas.
+
+**Retomadas planejadas, ainda não realizadas:** no 11, após Set/Map, revisitar Contains Duplicate e Find All Numbers Disappeared in an Array, e Two Sum quando pertinente. Recuperar custo da busca repetida e comparar com a nova solução, sem spoilers; distinguir custo esperado e limites O/Ω/Θ. Após 2–3 capítulos, variar contrato/contexto para recuperar análise de loops e espaço total/auxiliar; no C01, comparar alternativas e custos reais. Não acrescentar questionário ou calendário paralelo.
+
+Nenhum material do 11 criado. Sequência da EMENTA, histórico 00–09 e diário preservados. Atualização local, sem publicação.
+
+**Verificação local:** typecheck, lint e build do leitor concluídos; lint com dois avisos de Fast Refresh e build com avisos de chunk grande/crypto externalizado. Home respondeu HTTP 200; rota do guia respondeu HTTP 401 por exigir autenticação, sem verificação visual autenticada. Novos links locais conferidos; respostas/correções seguem excluídas do catálogo. Respostas do aluno, 00–09, diário e EMENTA sem diferenças no Git.
+
 # Notas do Professor
 
 > Arquivo de controle do Claude - Observações livres sobre o curso

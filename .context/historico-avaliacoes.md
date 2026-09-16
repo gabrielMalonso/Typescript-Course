@@ -1,3 +1,11 @@
+## 2026-09-16 — Revisão dos ajustes do Capítulo 10
+
+Confirmados os ajustes do aluno sobre alvo ausente, limite interno constante, espaço total e invalidação do resultado armazenado. Os quatro pontos estão resolvidos; código inalterado, sem repetição de testes. Ressalva de retorno estrito em Two Sum preservada como não bloqueante. Capítulo permanece concluído, sem nova atividade exigida. Detalhes na correção do 10.
+
+## 2026-09-16 — Bloco 1, Capítulo 10: concluído
+
+Avaliação qualitativa das respostas 1–8 e dos códigos, considerando prática adicional relatada: competências essenciais suficientes para avançar. Sem nota ou prova. [Correção completa](../10-complexidade-e-big-o/pratica/correcoes.md) registra evidências, ressalvas e testes do professor; não exige completar subperguntas ou atividades opcionais. Set/Map/hashing ainda não estudados nesta avaliação. Prova 09 permanece sem fechamento; notas anteriores intactas.
+
 # Histórico de Avaliações
 
 > Arquivo de controle do Claude - Registro de todas as avaliações

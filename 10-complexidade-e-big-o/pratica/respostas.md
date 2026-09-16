@@ -124,12 +124,12 @@ function linearSearch(nums: number[], alvo: number): boolean {
     3. Qual entrada representa o melhor caso da sua busca? O que a função precisa fazer nesse caso?
     R. O melhor caso ocorre quando o target está na primeira posição. Nesse caso, é necessária apenas uma comparação: Θ(1). A ordenação ou desordem do array não interfere na Linear Search.
 
-    4. Se o valor estiver ausente, nada muda na minha busca. O que acontece é que o algoritmo vai procurar em todos os elementos e, ao constatar que nenhum deles bate com o target, ele termina com menos 1. Comparado aos casos anteriores, tem a melhor e a pior hipótese, mas ambas crescem de acordo com N, ou seja, O(n).
+    4. Se o valor estiver ausente, nada muda na minha busca. O que acontece é que o algoritmo vai procurar em todos os elementos e, ao constatar que nenhum deles bate com o target, ele termina com menos 1. Se o alvo estiver ausente, a busca precisa verificar todos os n elementos antes de retornar -1. Portanto, esse caso tem Θ(n) de tempo.
 
 ## Atividade 4:
 ContarA: Temos, nesse caso, dois `for` NÃO ANINHADOS. Sendo assim, percorre-se `n` duas vezes: 2n. Assintoticamente, tem-se `Theta(n)`.
 
-ContarB: tem-se dois `for`, dessa vez, aninhados. No entanto, o segundo `for` vai apenas até 4, hardcoded. Sendo assim, para valores acima de 4, principalmente valores muito maiores que 4, tem-se `Theta(n)` ainda. Apenas o primeiro `for` percorre `n` por completo.
+ContarB: O loop externo executa n vezes e, para cada execução, o interno executa exatamente 4 vezes. Portanto, são 4n incrementos. Como 4 é constante, temos Θ(n).
 
 ContarC: O loop interno executa (n-1) + (n-2) + ... + 1 vezes. Essa soma é n(n-1)/2, cujo termo dominante é n². Portanto, Θ(n²).
 
@@ -205,12 +205,13 @@ console.log(repetirTotal(numsNegativos)); // [LOG]: [-430, -430, -430, -430, -43
 
     A otimização melhorou o tempo de Θ(n²) para Θ(n), mas não alterou a complexidade espacial.
 
-7.  Original: n² | Modificada: n
+7.  Original: Θ(n) | Modificada: Θ(n)
+Em ambas, entrada Θ(n) + saída Θ(n) + espaço auxiliar Θ(1) resulta em espaço total Θ(n). A melhoria de Θ(n²) para Θ(n) ocorreu no tempo, não no espaço.
 
 Parte B:
 1.  O primeiro pedido tem o mesmo custo. Já os demais pedidos são muito mais eficientes na versão onde guardamos o array de resposta. O custo disso é um gasto maior com memória.
 2.  Cada pedido receberá a mesma referência. Como dito acima, o custo será maior com memória. (Theta(n))
-3.  É necessário recalcular a referência.
+3.  Se o array de entrada mudar, o resultado armazenado deixa de ser válido. É necessário invalidar e recalcular a resposta antes de reutilizá-la.
 4.  Não há vantagem de guardar a resposta, nesse caso.
 
 ## Atividade 6: LeetCode 1 - TwoSum

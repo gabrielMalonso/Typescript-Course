@@ -2,13 +2,14 @@
 
 **Aluno:** Gabriel Alonso · **Início registrado:** Janeiro/2025 · **Status:** Em andamento
 
-## Ponto atual — 2026-09-09
+## Ponto atual — 2026-09-16
 
 **Fase inicial:** fundamentos de programação usando TypeScript. **Fase atual:** expansão para currículo de Ciência da Computação e Engenharia de Software.
 
 - **00–08:** nove capítulos formalmente concluídos; notas originais preservadas abaixo.
 - **09:** aula e exercícios concluídos, lista e bônus aprovados em 06/09/2026. Gabriel relata conclusão; há respostas de prova no repositório, mas não há `avaliacao/resultado.md` e a questão 08 está incompleta no arquivo salvo. Praticamente concluído, com fechamento formal pendente; nenhuma nota atribuída nesta reformulação.
-- **Próximo conteúdo único:** 10 — Complexidade e Big O. Gabriel relata leitura iniciada; nenhuma prática avaliada ou conclusão atribuída. O [Guia de estudo](10-complexidade-e-big-o/README.md) conecta vídeo, seis recortes CLRS, notas pontuais e prática (8 essenciais, 2 de consolidação e 1 desafio opcional, incluindo 3 LeetCodes). Retomar a etapa correspondente à leitura atual. As melhorias do piloto orientam capítulos futuros; Tuples permanece 16.
+- **10 — Complexidade e Big O:** concluído em 16/09/2026 por avaliação qualitativa das respostas 1–8, códigos e análises, considerando também prática adicional relatada. [Correção](10-complexidade-e-big-o/pratica/correcoes.md), sem nota ou exigência de preencher todos os subitens; consolidações 9–10 e desafio 11 não exigidos.
+- **Próximo passo único:** preparar futuramente 11 — Set, Map e hashing, quando solicitado. Material ainda não criado. Tuples permanece 16.
 - **Pendência de registro:** concluir/entregar a versão final da prova 09 e solicitar correção, sem alterar as respostas nesta tarefa. A expansão curricular não equivale a aprovação dessa prova.
 
 A ementa futura está em [EMENTA.md](EMENTA.md). Não usar o antigo denominador de 32 capítulos para calcular um percentual da formação ampliada; os blocos planejados ainda não são materiais criados nem competências avaliadas.
@@ -43,7 +44,7 @@ Desde 10/09/2026, os próximos capítulos usam curadoria de vídeo, leitura e pr
 
 | Bloco | Tema | Capítulos | Situação |
 |---|---|---|---|
-| 1 | Fundamentos algorítmicos | 10–15 | Próximo bloco; iniciar pelo 10 |
+| 1 | Fundamentos algorítmicos | 10–15 | Em andamento; 10 concluído, próximo 11 |
 | 2 | TypeScript para modelagem | 16–19 | Planejado; não iniciado |
 | 3 | Matemática discreta e estruturas de dados | 20–28 | Planejado; não iniciado |
 | 4 | Padrões de resolução de problemas | 29–34 | Planejado; não iniciado |
@@ -89,7 +90,7 @@ Os antigos P2 — Contatos, P3 — Biblioteca e PF — Financeiro estavam bloque
 
 ## Estatísticas preservadas e limites
 
-- **Capítulos formalmente concluídos:** 9 (00–08); 09 praticamente concluído, sem nota formal.
+- **Capítulos formalmente concluídos:** 10 (00–08 e 10); 09 praticamente concluído, sem nota formal.
 - **Provas corrigidas:** 9; a prova 09 possui respostas, mas não resultado.
 - **Média geral registrada:** 9,2. Notas e cálculo histórico não foram reavaliados nesta tarefa.
 - **Contagem de exercícios anteriormente registrada:** 116 + 8 bônus + extras dos caps. 07–08. Mantida como registro anterior, não como total atualizado: a lista do 09 também possui 13 obrigatórios e bônus aprovados, sem auditoria de uma nova soma global.
@@ -101,4 +102,4 @@ Atualizar um capítulo quando houver evidência de domínio na prática; registr
 
 **Legenda histórica:** ✓ concluído; ★ nota 9–10; ● nota 7–8; ○ nota abaixo de 7; “-” não realizado. As marcas e notas antigas permanecem como estavam registradas.
 
-*Última atualização: 2026-09-10 (metodologia e situação do piloto; notas históricas preservadas).*
+*Última atualização: 2026-09-16 (fechamento qualitativo do 10; notas históricas preservadas).*

@@ -41,7 +41,7 @@ Atualização em 10/09/2026: piloto por curadoria e leitor PDF noturno publicado
 
 ## Progresso
 
-Atualize `src/content/progress.json` com base nas evidências de `PROGRESSO.md`: 00–08 concluídos; 09 em andamento para fechamento formal; 10 com material disponível e estudo pendente. A contagem da home refere-se aos capítulos registrados, não à porcentagem do currículo futuro. Atualize também a indicação de próximo conteúdo na home quando houver avanço.
+Atualize `src/content/progress.json` com base nas evidências de `PROGRESSO.md`: 00–08 e 10 concluídos; 09 em andamento para fechamento formal; próximo conteúdo 11, ainda não criado. Fechamento do 10 registrado localmente em 16/09/2026, sem nova publicação nesta tarefa. A contagem da home refere-se aos capítulos registrados, não à porcentagem do currículo futuro. Atualize também a indicação de próximo conteúdo na home quando houver avanço.
 
 ## Verificação
 

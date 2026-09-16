@@ -137,6 +137,14 @@ O aluno cria soluções em `pratica/solucoes/`; correções ficam em `pratica/co
 
 Linguagens/teoria combinam PROG e MATH; distribuídos combinam SYS, NET, DATA e SWE. Essa classificação orienta a curadoria e a prática dentro da sequência única; não exige redigir aulas próprias nem abre disciplinas paralelas.
 
+## Ajuste após o piloto — 2026-09-16
+
+Atividades devem ser enxutas: resolver/implementar, explicar brevemente por que funciona, analisar tempo e espaço e registrar limitação/trade-off/melhoria somente quando pertinente. Esse roteiro é flexível, não um formulário obrigatório. Perguntas adicionais precisam explorar um conceito específico; não criar automaticamente Parte A + Parte B ou repetir a mesma análise de Big O em várias formulações. A dificuldade deve estar no conteúdo e na resolução, não no volume de documentação.
+
+Avaliar o conjunto de respostas, código, experimentação, debugging, análises e prática pertinente; distinguir evidência inspecionada de relato. Não exigir correspondência textual para cada subpergunta quando a competência já estiver demonstrada, nem reconstrução retrospectiva de tentativas ausentes. Consolidação e desafio não bloqueiam avanço sem lacuna essencial identificada.
+
+Quando faltar a técnica otimizada, preservar o percurso: modelagem manual/pseudocódigo → primeira solução correta com o repertório atual, inclusive força bruta → testes/debugging → análise de tempo/espaço → identificar repetição ou memória desnecessária → melhorar até onde o repertório permitir → revisitar após aprender a nova ferramenta. Não antecipar automaticamente a solução ótima. Problemas já vivenciados são pontes para compreender a otimização, não padrões para memorizar.
+
 ## Prática, debugging e autonomia
 
 Priorizar exercícios adequados do MIT, CS50 e livro-âncora; complementar com LeetCode e labs. A adequação aos conhecimentos atuais prevalece sobre a origem. Em sistemas, runtime, redes, bancos, ferramentas e distribuídos, labs podem ser a primeira escolha. Criar exercícios próprios apenas quando houver lacuna pedagógica identificável.

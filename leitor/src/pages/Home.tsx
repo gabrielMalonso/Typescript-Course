@@ -17,14 +17,14 @@ export function Home() {
         <p className="home-eyebrow">Ciência da Computação e Engenharia de Software</p>
         <h1>Leitor de Aulas</h1>
         <p className="home-lead">
-          Formação pessoal com TypeScript como linguagem principal. Próximo conteúdo:
-          capítulo 10 — Complexidade e Big O, com vídeo, leitura orientada e prática selecionada.
+          Formação pessoal com TypeScript como linguagem principal. Capítulo 10 — Complexidade e Big O concluído.
+          Próximo conteúdo: capítulo 11 — Set, Map e hashing, ainda a preparar.
           O capítulo 09 está praticamente concluído, com fechamento formal pendente.
         </p>
         <div className="home-actions">
           {firstDoc ? (
             <Link className="btn primary" to={`/ler/${firstDoc.slug}`}>
-              Estudar capítulo 10
+              Revisitar capítulo 10
             </Link>
           ) : null}
           <a className="btn ghost" href="#indice">

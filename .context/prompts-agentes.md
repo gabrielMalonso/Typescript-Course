@@ -1,6 +1,6 @@
 # Roteiro de criação de capítulos por curadoria
 
-Atualizado em 2026-09-10. [AGENTS.md](../AGENTS.md) define a metodologia; [EMENTA.md](../EMENTA.md) define o conteúdo e a sequência. Este roteiro substitui a geração automática de apostilas, checkpoints e provas de bloco. Não reorganizar ou renumerar o currículo.
+Atualizado em 2026-09-16. [AGENTS.md](../AGENTS.md) define a metodologia; [EMENTA.md](../EMENTA.md) define o conteúdo e a sequência. Este roteiro substitui a geração automática de apostilas, checkpoints e provas de bloco. Não reorganizar ou renumerar o currículo.
 
 ## Antes de criar
 
@@ -15,6 +15,8 @@ Ler estado atual, perfil, notas relevantes, histórico de avaliações, última 
 > Em DSA, use CLRS 3ª edição como livro-âncora e o mapa do MIT 6.006 Fall 2011 como apoio. Inspecione os recortes antes da seleção final. Informe livro/edição uma vez e, em cada etapa, capítulo/seções, páginas verificadas, foco e limites de leitura. Antecipe somente o pequeno contexto necessário ao recorte, sem reorganizar a ementa. Não importar a sequência ou a carga do MIT.
 >
 > Selecione exercícios adequados do livro, MIT e CS50, complementando com LeetCode ou labs conforme a área. Registre origem e adaptações; preserve o objetivo ao traduzir para TypeScript. Não incluir soluções junto aos enunciados. Use a faixa inicial total de 8–15 atividades, incluindo LeetCode, labs e revisões, como referência flexível de esforço. Essenciais formam o percurso padrão; consolidação é condicional e desafios são opcionais. Os cerca de 3–6 LeetCodes, quando pertinentes, já pertencem a esse total e não constituem quota.
+>
+> Mantenha atividades enxutas: resolver/implementar, breve justificativa, tempo/espaço e trade-off quando útil, sem transformar isso em campos obrigatórios. Perguntas extras somente por necessidade conceitual; evite Parte A + Parte B automáticas e repetições de Big O. Avalie evidências em conjunto, sem exigir preenchimento retrospectivo de cada subitem. Preserve modelagem manual, força bruta correta, testes/debugging e análise antes da melhoria; não antecipe técnicas desconhecidas. No 11, use buscas repetidas já vividas como ponte e retome Contains Duplicate e Find All Numbers Disappeared in an Array após Set/Map, sem entregar soluções.
 >
 > Crie notas próprias apenas para lacunas concretas, com exemplos conhecidos e transformações graduais. Não presumir que a dificuldade didática se resolve apenas encurtando o texto. Se a referência exigir muitos pré-requisitos ausentes, recorte ou substitua o apoio em vez de abrir novas aulas paralelas.
 >

@@ -1,3 +1,13 @@
+# Situação vigente — 2026-09-16: Capítulo 10 concluído
+
+**Último capítulo concluído:** 10 — Complexidade e Big O, por avaliação qualitativa das respostas 1–8, códigos e análises, considerando também a prática adicional relatada. [Correção e limites da verificação](../10-complexidade-e-big-o/pratica/correcoes.md). Sem nota, nova prova ou preenchimento retrospectivo. Atividades 9–10 e 11 não exigidas para este fechamento.
+
+**Próximo passo único:** preparar futuramente o Capítulo 11 — Set, Map e hashing, quando Gabriel solicitar. Não criado nesta tarefa. Usar buscas repetidas em Contains Duplicate e Find All Numbers Disappeared in an Array como ponte, sem soluções antecipadas.
+
+Diretrizes e prompts incorporam atividades enxutas e força bruta como primeira solução com o repertório atual. Progresso e leitor atualizados localmente; nenhuma publicação nesta tarefa. Fechamento histórico do 09 permanece separado, sem alteração de nota ou respostas.
+
+As entradas abaixo são históricas; seus próximos passos e estados de “não concluído” não substituem este registro.
+
 ## Situação atual — links diretos e fluxo adotado, 2026-09-10
 
 Gabriel autorizou incorporar as melhorias aprovadas do piloto à criação dos próximos capítulos: guia como percurso, notas pontuais e links a páginas do PDF. Diretrizes e prompts atualizados; generalização não cria capítulos futuros nem altera a ementa. Os quatro exercícios CLRS do 10 abrem a página do enunciado. Versão 38 publicada no mesmo site privado, confirmação `succeeded`. Próximo passo continua estudar a etapa atual do guia e realizar a atividade correspondente; leitura relatada não implica domínio ou conclusão. As entradas abaixo registram decisões e publicações anteriores.
