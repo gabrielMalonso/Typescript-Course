@@ -6,7 +6,7 @@ Currículo sequencial de Gabriel Alonso para aprender programação, algoritmos,
 
 Capítulos 00–08 formalmente concluídos. O 09 tem prática aprovada e está praticamente concluído, com fechamento formal da prova pendente: existem respostas, mas ainda não há resultado e a questão 08 está incompleta no arquivo salvo.
 
-**Capítulo 10 concluído; capítulo 11 em andamento.** Os fundamentos de hashing foram estudados conforme relato de Gabriel. **Próximo passo:** [Set e Map na prática — etapa 3](11-set-map-e-hashing/README.md#etapa-3). A prática do 11 ainda não foi avaliada. A metodologia prioriza domínio prático e compreensão dos mecanismos; aprofundamento formal de baixo retorno é opcional.
+**Capítulo 10 concluído; capítulo 11 em andamento.** Os fundamentos de hashing foram estudados conforme relato de Gabriel. **Próximo passo:** [Aula de Set — etapa 3](11-set-map-e-hashing/README.md#etapa-3). O exercício de chaining está concluído; a prática de Set/Map ainda não foi avaliada. A metodologia prioriza domínio prático e compreensão dos mecanismos; aprofundamento formal de baixo retorno é opcional.
 
 ## Mapa do curso
 
@@ -24,9 +24,7 @@ Os capítulos 00–09 preservam sua estrutura, trabalhos e referências históri
 
 ## Como estudar
 
-A ementa define o que aprender e em qual sequência. O professor organiza referências excelentes em um roteiro personalizado: **videoaula → leitura orientada → esclarecimentos necessários → prática selecionada → LeetCode ou lab → feedback e revisão**. Cada capítulo começa por conhecimentos e experiências anteriores.
-
-O **Guia de estudo** (`README.md`) conecta os materiais na ordem de uso: uma orientação curta, o link da leitura e a próxima atividade. Notas complementares aparecem somente no ponto necessário; exercícios ligam à página do enunciado nos recortes PDF disponíveis. CS50/Harvard é a primeira fonte de vídeo a consultar; MIT OCW e outras fontes acadêmicas entram conforme adequação. Em DSA, o livro-âncora inicial é CLRS, 3ª edição, com apoio do mapa de leituras do MIT 6.006 Fall 2011. Material próprio só preenche lacunas específicas.
+O **Guia de estudo** (`README.md`) conecta fontes confiáveis, aulas autorais personalizadas, experimentação em TypeScript e prática com feedback. Livros e vídeos continuam no percurso; a aula faz as pontes que o aluno precisa. A combinação varia conforme o assunto, sem leitura sequencial obrigatória de documentação ou repetição do que já foi estudado. A metodologia completa e seus critérios estão no [AGENTS.md](AGENTS.md).
 
 A prática é selecionada prioritariamente do livro, MIT e CS50; LeetCode e labs integram a faixa inicial flexível de 8–15 atividades totais. Consolidação depende da necessidade e desafios são opcionais. O aluno pode entregar tentativas durante o percurso; o avanço ocorre por domínio demonstrado, sem provas ou checkpoints obrigatórios. Revisões reaparecem naturalmente nos exercícios futuros.
 

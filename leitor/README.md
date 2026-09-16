@@ -30,7 +30,7 @@ Configure os identificadores e segredos conforme o [guia do leitor PDF](src/pdf/
 Novos capítulos em pastas `NN-nome/` entram no índice via `import.meta.glob`, conforme as seções permitidas em `src/content/catalog.ts`:
 
 - Histórico: README, aula, extras, listas de exercícios e enunciado da prova.
-- Guias por curadoria: README, notas.md opcional e pratica/atividades.md. O capítulo 10 usa esses três documentos e seis recortes PDF; o 11 usa os três documentos e três recortes PDF (nove páginas: 253–255, 256–260 e 261).
+- Guias por curadoria: README, notas.md opcional e pratica/atividades.md. O capítulo 10 usa esses três documentos e seis recortes PDF; o 11 usa guia, três aulas por assunto em `02-aulas-do-curso/`, prática e três recortes PDF (nove páginas: 253–255, 256–260 e 261). O índice apresenta 01. Leituras do livro, 02. Aulas do curso e 03. Prática. O caminho antigo de notas redireciona ao guia.
 - Formatos anteriores continuam reconhecidos: aula, prática numerada 01–03, debugging/LeetCode/lab, perguntas do checkpoint, resumo/erros comuns/revisitar e referências. Isso não torna essas etapas obrigatórias.
 
 Respostas, soluções, correções, resultados e gabaritos ficam fora do catálogo. Variações de nomes/seções precisam ser conferidas na geração de cada capítulo. Avaliações de bloco em `avaliacoes/` e capstones em `projetos/` deverão ser integrados quando seus primeiros enunciados forem criados; essas pastas ainda não têm materiais novos.
@@ -41,7 +41,7 @@ Atualização em 10/09/2026: piloto por curadoria e leitor PDF noturno publicado
 
 ## Progresso
 
-Atualize `src/content/progress.json` com base nas evidências de `PROGRESSO.md`: 00–08 e 10 concluídos; 09 em andamento para fechamento formal; 11 em andamento, com fundamentos estudados conforme relato e prática ainda não avaliada. A home aponta para a etapa 3 do guia. Os três recortes do 11 mantêm páginas, caminhos e cadastro existentes; a reformulação muda o percurso, não os PDFs. Preserve o acesso privado. A contagem da home refere-se aos capítulos registrados, não à porcentagem do currículo futuro. Atualize também a indicação de próximo conteúdo na home quando houver avanço.
+Atualize `src/content/progress.json` com base nas evidências de `PROGRESSO.md`: 00–08 e 10 concluídos; 09 em andamento para fechamento formal; 11 em andamento, com fundamentos estudados conforme relato e prática ainda não avaliada. A home aponta para a etapa 3 do guia. Os três recortes do 11 mantêm páginas, caminhos e cadastro existentes; a reformulação muda o percurso, não os PDFs. Preserve o acesso privado. Reformulação do capítulo 11 publicada em 16/09/2026, versão 55, com status `succeeded` confirmado (deployment `appgdep_6aab08a5b1a881918ba24a4bebc2d7fa`). A contagem da home refere-se aos capítulos registrados, não à porcentagem do currículo futuro. Atualize também a indicação de próximo conteúdo na home quando houver avanço.
 
 ## Verificação
 
@@ -72,3 +72,5 @@ O leitor Markdown e o PDF compartilham `ReaderToolbar` e `ThemeToggle`. O PDF us
 
 
 Atualização em 10/09/2026, versão 35 publicada (`succeeded`): barra e tema compartilhados entre Markdown/PDF; cinco recortes CLRS do capítulo 10 disponíveis (20 páginas). Protótipo aprovado por Gabriel; estudo e domínio não concluídos.
+
+Pastas numeradas do capítulo 11 usam caminhos físicos novos; o catálogo normaliza os endereços para manter URLs e IDs de anotações dos PDFs. O registro de leituras aceita ambas as convenções, sem mudar o hash ou criar outro histórico. Livro vem primeiro como regra geral; o guia intercala aula e prática.

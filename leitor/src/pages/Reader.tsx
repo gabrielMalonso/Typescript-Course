@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
 import { documentLabel, getDocument, getNeighbors, resolveDocumentSlug } from '../content/catalog'
 import { ReaderToolbar } from '../components/ReaderToolbar'
 import { MarkdownView } from '../components/MarkdownView'
@@ -10,6 +10,7 @@ const PdfReader = lazy(() => import('../pdf/PdfReader'))
 
 export function Reader() {
   const params = useParams()
+  const { hash } = useLocation()
   const slug = params['*'] ? decodeURIComponent(params['*']) : ''
   const doc = slug ? getDocument(slug) : undefined
   const { prev, next } = slug ? getNeighbors(slug) : { prev: null, next: null }
@@ -21,7 +22,7 @@ export function Reader() {
   }, [slug])
 
   const resolvedSlug = resolveDocumentSlug(slug)
-  if (resolvedSlug !== slug) return <Navigate to={`/ler/${resolvedSlug}`} replace />
+  if (resolvedSlug !== slug) return <Navigate to={`/ler/${resolvedSlug}${hash}`} replace />
 
   if (!doc) {
     return (

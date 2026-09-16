@@ -6,7 +6,7 @@ Engenheiro mecânico, com experiência construindo projetos com LLMs. Busca uma 
 
 ## Como aprende melhor
 
-- Vídeo para a primeira visão, livro para aprofundar e prática intercalada. Aprovou esse percurso no capítulo 10; tem acesso ao CLRS, 3ª edição.
+- Apreciou retomar livros técnicos no capítulo 10; tem acesso ao CLRS, 3ª edição. No 11, a leitura independente seguida de reconstrução guiada tornou o texto denso compreensível. Quer preservar esse contato com a fonte e a segunda passagem personalizada, com ponte explícita para TypeScript.
 - Exemplo conhecido transformado uma mudança por vez. Gosta de entender por que funciona, com diagramas ou rastreamentos quando ajudam.
 - Modelagem manual/pseudocódigo antes do código, primeira solução com o repertório disponível, testes e análise antes de otimizar.
 - Atividades diretas, menos perguntas e mais implementação/experimentação. Não quer documentar cada detalhe nem preencher retrospectivamente subitens redundantes.
