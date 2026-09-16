@@ -216,6 +216,8 @@ Objetivo: **não sei → sei pesquisar → sei ler documentação → sei experi
 
 Pesquisar referências no momento de criar o capítulo atual. Verificar primeiro **CS50/Harvard**, cuja didática Gabriel apreciou, depois **MIT OpenCourseWare** e outras fontes acadêmicas reconhecidas quando mais adequadas. A instituição não determina a ordem da EMENTA. Não selecionar agora toda a bibliografia ou os vídeos futuros.
 
+**Atualidade das videoaulas:** sempre procurar a aula mais atualizada disponível sobre o assunto antes de selecionar um vídeo. Conferir a edição atual do curso e o ano real da gravação; uma página atual pode reutilizar um vídeo antigo. Priorizar a aula mais recente adequada ao conteúdo e recortar os trechos pertinentes. Não escolher um short antigo apenas por ser mais curto sem comparar com a aula atual. Se uma referência anterior for necessária por adequação ou disponibilidade, explicar a escolha e apresentar a alternativa mais recente encontrada.
+
 No guia, indicar a videoaula com instituição/edição, link oficial e trechos a assistir. Registrar motivo da escolha, data da verificação e detalhes da curadoria no contexto do professor. Usar timestamps quando verificáveis; não inventá-los. Delimitar conteúdos antecipados sem convertê-los em pré-requisitos. O vídeo é preferencialmente a primeira exposição, seguido do livro. Se não houver referência adequada, registrar o motivo e oferecer um percurso viável, sem indicação forçada.
 
 Manter um ou dois livros-âncora por área quando úteis, sem escolher um diferente a cada capítulo. Para **algoritmos e estruturas de dados**, adotar inicialmente **Introduction to Algorithms, Cormen, Leiserson, Rivest e Stein (CLRS), 3ª edição**, à qual Gabriel já tem acesso.

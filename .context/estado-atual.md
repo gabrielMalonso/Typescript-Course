@@ -2,7 +2,7 @@
 
 Atualizado em 2026-09-16.
 
-**Capítulo 11 — Set, Map e hashing disponível no site privado**, com guia, três recortes PDF do exemplar autorizado (nove páginas na revisão atual), notas pontuais e oito atividades (seis essenciais, uma consolidação e um desafio). Estudo ainda não confirmado; não há entrega nem avaliação do 11. Revisão dos recortes e da ordem de leitura publicada em 16/09/2026, versão 51, com estado `succeeded` confirmado.
+**Capítulo 11 — Set, Map e hashing disponível no site privado**, com guia, três recortes PDF do exemplar autorizado (nove páginas na revisão atual), notas pontuais e oito atividades (seis essenciais, uma consolidação e um desafio). Estudo ainda não confirmado; não há entrega nem avaliação do 11. Recortes, ordem de leitura e videoaula atualizados no site em 16/09/2026, versão 52, com estado `succeeded` confirmado.
 
 **Próximo passo único:** iniciar a [etapa 1 do Guia de estudo](../11-set-map-e-hashing/README.md#etapa-1), com os trechos da CS50 sobre hashing.
 

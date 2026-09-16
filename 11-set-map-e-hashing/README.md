@@ -8,12 +8,14 @@ Siga as etapas e retorne ao guia entre materiais. A leitura usa **Introduction t
 
 ## 1. Uma primeira visão de hashing
 
-Assista ao [CS50 — Short: Hash Tables, Doug Lloyd](https://cs50.harvard.edu/x/shorts/hash_tables/) (gravação de 2017, disponível no CS50x):
+Assista à [CS50x 2026 — Week 5: Data Structures, David Malan](https://cs50.harvard.edu/x/2026/weeks/5/), com aula gravada em **2025**. Use estes trechos do vídeo:
 
-- [**02:44–06:14**](https://www.youtube.com/watch?v=nvzVHwrrub0&t=164s): como uma função transforma uma chave em uma posição; acompanhe os exemplos com nomes.
-- [**08:29–09:42**](https://www.youtube.com/watch?v=nvzVHwrrub0&t=509s): duas chaves podem chegar à mesma posição. Pare antes da explicação de *linear probing*.
+- [**10:44–12:26 — Dictionaries**](https://www.youtube.com/watch?v=PmAI76OGE_E&t=644s): como associar uma chave a um valor. Pare ao começar *Resizing Arrays*.
+- [**1:36:47–1:53:51 — Hashing and Hash Tables**](https://www.youtube.com/watch?v=PmAI76OGE_E&t=5807s): acompanhe a distribuição das cartas e dos nomes, as colisões e a troca entre trabalho de busca e memória. Pare ao começar *Tries*.
 
-A posição calculada ajuda a localizar um valor. Ela não é uma identificação exclusiva: o segundo trecho apresenta justamente esse limite. Há uma menção a listas ligadas; você não precisa conhecer nem implementar essa estrutura agora. Pule o exemplo em C entre os recortes.
+Nos exemplos em C, foque na entrada e na saída da função: um nome entra e uma posição sai. Não precisa reproduzir o código nem acompanhar os detalhes de `const`, `unsigned int` e ponteiros. Nos desenhos, as setas ligam elementos que ficaram no mesmo grupo; listas ligadas serão estudadas depois.
+
+Observe também que o exemplo usa uma quantidade fixa de grupos. Na etapa 4, o livro explica as condições para obter custo médio constante conforme a quantidade de dados cresce.
 
 **Depois:** veja como o livro representa essa mesma ideia.
 
