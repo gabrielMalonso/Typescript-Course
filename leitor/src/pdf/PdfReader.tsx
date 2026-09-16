@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import {
   PDFViewer,
+  PdfBlendMode,
   ScrollPlugin,
   ZoomMode,
   type PDFViewerConfig,
@@ -53,7 +54,32 @@ export default function PdfReader({ doc }: { doc: PdfDocument }) {
       'attachment',
       'form',
     ],
-    annotations: { annotationAuthor: 'Gabriel Alonso' },
+    annotations: {
+      annotationAuthor: 'Gabriel Alonso',
+      tools: [
+        // EmbedPDF fixes underline thickness internally; only opacity is configurable.
+        { id: 'underline', defaults: { opacity: 0.55 } },
+        { id: 'ink', defaults: { opacity: 0.55, strokeWidth: 1 } },
+        {
+          id: 'highlight',
+          defaults: {
+            strokeColor: '#FFCD45',
+            opacity: 0.45,
+            blendMode: PdfBlendMode.HardLight,
+          },
+        },
+        {
+          id: 'inkHighlighter',
+          defaults: {
+            strokeColor: '#FFCD45',
+            opacity: 0.45,
+            strokeWidth: 8,
+            blendMode: PdfBlendMode.HardLight,
+            rotation: 0,
+          },
+        },
+      ],
+    },
   }))
   const [registry, setRegistry] = useState<PluginRegistry | null>(null)
   const host = useRef<HTMLDivElement>(null)
