@@ -1,6 +1,6 @@
 # Guia de estudo — Complexidade e Big O
 
-**Concluído em 16/09/2026**, pela avaliação conjunta da prática registrada e adicional relatada. Próximo conteúdo: 11 — Set, Map e hashing, a preparar futuramente. O percurso abaixo permanece como referência; não há preenchimento retrospectivo obrigatório nem exigência das atividades 9–11 para este fechamento.
+**Concluído em 16/09/2026**, pela avaliação conjunta da prática registrada e adicional relatada. Próximo conteúdo: [11 — Set, Map e hashing](../11-set-map-e-hashing/README.md), disponível para estudo. O percurso abaixo permanece como referência; não há preenchimento retrospectivo obrigatório nem exigência das atividades 9–11 para este fechamento.
 
 **Objetivo:** explicar como o tempo e a memória de uma solução crescem com a entrada. Você já percebeu essa diferença no TLE e ao trocar buscas repetidas por uma única passagem; agora vai aprender a analisá-la.
 

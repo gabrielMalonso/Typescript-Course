@@ -220,6 +220,8 @@ No guia, indicar a videoaula com instituição/edição, link oficial e trechos 
 
 Manter um ou dois livros-âncora por área quando úteis, sem escolher um diferente a cada capítulo. Para **algoritmos e estruturas de dados**, adotar inicialmente **Introduction to Algorithms, Cormen, Leiserson, Rivest e Stein (CLRS), 3ª edição**, à qual Gabriel já tem acesso.
 
+**Fonte local canônica do CLRS (3ª edição em inglês):** `/Volumes/SSD1TB/Documents/Cormen Introduction to Algorithms.pdf`. Usar esse exemplar autorizado por Gabriel como primeira fonte para conferir conteúdo, paginação e gerar recortes nos próximos capítulos. Preservar o original completo nesse caminho, fora do repositório. Se estiver indisponível, informar isso antes de adotar outro exemplar; não presumir que o livro precisa ser enviado novamente sem verificar o caminho.
+
 Usar o [mapa oficial de leituras do MIT 6.006 — Fall 2011](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/pages/readings/), correspondente à 3ª edição, como apoio de curadoria. Lecture notes, problem sets e questões de quizzes/exams podem fornecer prática, sem virar provas obrigatórias. O [syllabus do MIT](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/pages/syllabus/) pressupõe Python e matemática discreta: verificar a adequação de cada recorte e não transportar modelos de custo de Python automaticamente para TypeScript. Links e correspondência de edição conferidos em 10/09/2026; revalidar ao selecionar material.
 
 Cada indicação de leitura deve informar:

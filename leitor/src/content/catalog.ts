@@ -133,7 +133,17 @@ function buildDocuments(): CatalogDocument[] {
       chapterTitle: humanizeSlug(chapterId), section: 'leituras',
       fileName: relative.split('/').at(-1) ?? reading.title, title: reading.title, url, reading })
   }
-  return docs.sort((a, b) => a.slug.localeCompare(b.slug, 'pt-BR', { numeric: true }))
+  return docs.sort(compareDocuments)
+}
+
+// Within the same book, follow its pages rather than filename punctuation.
+function compareDocuments(a: CatalogDocument, b: CatalogDocument): number {
+  if (a.kind === 'pdf' && b.kind === 'pdf' && a.chapterId === b.chapterId
+    && a.reading.book === b.reading.book && a.reading.edition === b.reading.edition) {
+    const pageOrder = a.reading.printedStart - b.reading.printedStart
+    if (pageOrder !== 0) return pageOrder
+  }
+  return a.slug.localeCompare(b.slug, 'pt-BR', { numeric: true })
 }
 
 function sortNodes(nodes: TreeNode[]): TreeNode[] {
@@ -149,6 +159,11 @@ function sortNodes(nodes: TreeNode[]): TreeNode[] {
         if (ai !== -1 || bi !== -1) {
           return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi)
         }
+      }
+      if (a.type === 'file' && b.type === 'file') {
+        const left = documentMap.get(a.slug)
+        const right = documentMap.get(b.slug)
+        if (left?.kind === 'pdf' && right?.kind === 'pdf') return compareDocuments(left, right)
       }
       return a.name.localeCompare(b.name, 'pt-BR', { numeric: true })
     })

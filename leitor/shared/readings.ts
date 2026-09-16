@@ -29,5 +29,20 @@ export const readings = [
     "slug": "10-complexidade-e-big-o/leituras/clrs-3.2",
     "id": "10-complexidade-e-big-o/leituras/clrs-3.2@5593481c74bee6314350",
     "pages": 3
+  },
+  {
+    "slug": "11-set-map-e-hashing/leituras/clrs-11.1",
+    "id": "11-set-map-e-hashing/leituras/clrs-11.1@122a88fca53395afde44",
+    "pages": 3
+  },
+  {
+    "slug": "11-set-map-e-hashing/leituras/clrs-11.2-exercicios",
+    "id": "11-set-map-e-hashing/leituras/clrs-11.2-exercicios@4c5e553b6af2d9676158",
+    "pages": 1
+  },
+  {
+    "slug": "11-set-map-e-hashing/leituras/clrs-11.2",
+    "id": "11-set-map-e-hashing/leituras/clrs-11.2@8f3a2bdf949c074cf538",
+    "pages": 5
   }
 ] as const

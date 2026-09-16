@@ -9,7 +9,7 @@
 - **00–08:** nove capítulos formalmente concluídos; notas originais preservadas abaixo.
 - **09:** aula e exercícios concluídos, lista e bônus aprovados em 06/09/2026. Gabriel relata conclusão; há respostas de prova no repositório, mas não há `avaliacao/resultado.md` e a questão 08 está incompleta no arquivo salvo. Praticamente concluído, com fechamento formal pendente; nenhuma nota atribuída nesta reformulação.
 - **10 — Complexidade e Big O:** concluído em 16/09/2026 por avaliação qualitativa das respostas 1–8, códigos e análises, considerando também prática adicional relatada. [Correção](10-complexidade-e-big-o/pratica/correcoes.md), sem nota ou exigência de preencher todos os subitens; consolidações 9–10 e desafio 11 não exigidos.
-- **Próximo passo único:** preparar futuramente 11 — Set, Map e hashing, quando solicitado. Material ainda não criado. Tuples permanece 16.
+- **11 — Set, Map e hashing:** [guia e prática criados](11-set-map-e-hashing/README.md) em 16/09/2026; estudo ainda não confirmado e prática não avaliada. **Próximo passo único:** iniciar a etapa 1 do guia. Tuples permanece 16.
 - **Pendência de registro:** concluir/entregar a versão final da prova 09 e solicitar correção, sem alterar as respostas nesta tarefa. A expansão curricular não equivale a aprovação dessa prova.
 
 A ementa futura está em [EMENTA.md](EMENTA.md). Não usar o antigo denominador de 32 capítulos para calcular um percentual da formação ampliada; os blocos planejados ainda não são materiais criados nem competências avaliadas.

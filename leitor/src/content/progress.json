@@ -53,5 +53,10 @@
     "chapterId": "10-complexidade-e-big-o",
     "label": "Cap. 10 — Complexidade e Big O",
     "status": "concluido"
+  },
+  {
+    "chapterId": "11-set-map-e-hashing",
+    "label": "Cap. 11 — Set, Map e hashing (material disponível)",
+    "status": "pendente"
   }
 ]
