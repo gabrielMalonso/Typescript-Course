@@ -41,7 +41,7 @@ Atualização em 10/09/2026: piloto por curadoria e leitor PDF noturno publicado
 
 ## Progresso
 
-Atualize `src/content/progress.json` com base nas evidências de `PROGRESSO.md`: 00–08 e 10 concluídos; 09 em andamento para fechamento formal; próximo conteúdo 11, criado e pendente de estudo. Capítulo 11 com guia, notas, atividades e três recortes PDF publicado em 16/09/2026 na versão 52 (`succeeded`), com vídeo atualizado para CS50x 2026 (gravação 2025), com leituras completas de 253–260 e exercício na p. 261, ordenadas por página do livro, com acesso privado preservado. Cadastro das nove leituras sincronizado com o Convex existente. Fonte `538572fa6aee1b7fe2951ad01477aeac9454c1e2`; deployment `appgdep_6aaaa0c4ff4881919e56b0ff80db082b`. A contagem da home refere-se aos capítulos registrados, não à porcentagem do currículo futuro. Atualize também a indicação de próximo conteúdo na home quando houver avanço.
+Atualize `src/content/progress.json` com base nas evidências de `PROGRESSO.md`: 00–08 e 10 concluídos; 09 em andamento para fechamento formal; 11 em andamento, com fundamentos estudados conforme relato e prática ainda não avaliada. A home aponta para a etapa 3 do guia. Os três recortes do 11 mantêm páginas, caminhos e cadastro existentes; a reformulação muda o percurso, não os PDFs. Preserve o acesso privado. Reformulação do capítulo 11 publicada em 16/09/2026, versão 55, com status `succeeded` confirmado (deployment `appgdep_6aab08a5b1a881918ba24a4bebc2d7fa`). A contagem da home refere-se aos capítulos registrados, não à porcentagem do currículo futuro. Atualize também a indicação de próximo conteúdo na home quando houver avanço.
 
 ## Verificação
 

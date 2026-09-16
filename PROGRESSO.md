@@ -9,7 +9,7 @@
 - **00–08:** nove capítulos formalmente concluídos; notas originais preservadas abaixo.
 - **09:** aula e exercícios concluídos, lista e bônus aprovados em 06/09/2026. Gabriel relata conclusão; há respostas de prova no repositório, mas não há `avaliacao/resultado.md` e a questão 08 está incompleta no arquivo salvo. Praticamente concluído, com fechamento formal pendente; nenhuma nota atribuída nesta reformulação.
 - **10 — Complexidade e Big O:** concluído em 16/09/2026 por avaliação qualitativa das respostas 1–8, códigos e análises, considerando também prática adicional relatada. [Correção](10-complexidade-e-big-o/pratica/correcoes.md), sem nota ou exigência de preencher todos os subitens; consolidações 9–10 e desafio 11 não exigidos.
-- **11 — Set, Map e hashing:** [guia e prática criados](11-set-map-e-hashing/README.md) em 16/09/2026; estudo ainda não confirmado e prática não avaliada. **Próximo passo único:** iniciar a etapa 1 do guia. Tuples permanece 16.
+- **11 — Set, Map e hashing:** em andamento. Estudo de CS50 Dictionaries/Hashing e fundamentos de CLRS 11.1/11.2 concluído conforme relato em 16/09/2026; prática não entregue nem avaliada. **Próximo passo único:** [etapa 3 — Set e Map na prática](11-set-map-e-hashing/README.md#etapa-3). Formalismo opcional. Tuples permanece 16.
 - **Pendência de registro:** concluir/entregar a versão final da prova 09 e solicitar correção, sem alterar as respostas nesta tarefa. A expansão curricular não equivale a aprovação dessa prova.
 
 A ementa futura está em [EMENTA.md](EMENTA.md). Não usar o antigo denominador de 32 capítulos para calcular um percentual da formação ampliada; os blocos planejados ainda não são materiais criados nem competências avaliadas.
@@ -44,7 +44,7 @@ Desde 10/09/2026, os próximos capítulos usam curadoria de vídeo, leitura e pr
 
 | Bloco | Tema | Capítulos | Situação |
 |---|---|---|---|
-| 1 | Fundamentos algorítmicos | 10–15 | Em andamento; 10 concluído, próximo 11 |
+| 1 | Fundamentos algorítmicos | 10–15 | Em andamento; 10 concluído, 11 em andamento |
 | 2 | TypeScript para modelagem | 16–19 | Planejado; não iniciado |
 | 3 | Matemática discreta e estruturas de dados | 20–28 | Planejado; não iniciado |
 | 4 | Padrões de resolução de problemas | 29–34 | Planejado; não iniciado |

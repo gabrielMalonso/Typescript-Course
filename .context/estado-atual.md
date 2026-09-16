@@ -2,9 +2,9 @@
 
 Atualizado em 2026-09-16.
 
-**Capítulo 11 — Set, Map e hashing disponível no site privado**, com guia, três recortes PDF do exemplar autorizado (nove páginas na revisão atual), notas pontuais e oito atividades (seis essenciais, uma consolidação e um desafio). Estudo ainda não confirmado; não há entrega nem avaliação do 11. Recortes, ordem de leitura e videoaula atualizados no site em 16/09/2026, versão 52, com estado `succeeded` confirmado.
+**Capítulo 11 — Set, Map e hashing em andamento.** Estudo dos trechos CS50 e fundamentos de CLRS 11.1/11.2 concluído conforme relato de Gabriel; prática ainda não entregue nem avaliada. Guia reformulado para continuação com MDN, Set/Map e atividades essenciais 2–6. Formalismo probabilístico é opcional; não refazer conteúdos já estudados.
 
-**Próximo passo único:** iniciar a [etapa 1 do Guia de estudo](../11-set-map-e-hashing/README.md#etapa-1), com os trechos da CS50 sobre hashing.
+**Próximo passo único:** continuar na [etapa 3 do Guia de estudo](../11-set-map-e-hashing/README.md#etapa-3), com os recortes práticos de Set e Map.
 
 O capítulo 10 está concluído, sem complementação obrigatória. O 09 tem prática aprovada e fechamento formal da prova pendente; retomar somente se Gabriel solicitar. Situação geral em [PROGRESSO.md](../PROGRESSO.md).
 
