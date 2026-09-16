@@ -6,7 +6,7 @@ Currículo sequencial de Gabriel Alonso para aprender programação, algoritmos,
 
 Capítulos 00–08 formalmente concluídos. O 09 tem prática aprovada e está praticamente concluído, com fechamento formal da prova pendente: existem respostas, mas ainda não há resultado e a questão 08 está incompleta no arquivo salvo.
 
-**Próximo conteúdo: 10 — Complexidade e Big O**, reconstruído como piloto de curadoria: [comece pelo guia](10-complexidade-e-big-o/README.md), com CLRS 1.2 e a atividade 1. Em seguida: Set/Map/hashing → arrays/strings algorítmicos → Stack/Queue → busca/ordenação → recursão. Tuples passa a 16.
+**Capítulo 10 — Complexidade e Big O concluído em 16/09/2026**, por avaliação qualitativa da prática. **Próximo passo:** iniciar o [Guia de estudo do capítulo 11 — Set, Map e hashing](11-set-map-e-hashing/README.md), criado em 16/09/2026. Estudo e prática ainda não avaliados. Depois: arrays/strings algorítmicos → Stack/Queue → busca/ordenação → recursão. Tuples permanece 16.
 
 ## Mapa do curso
 
@@ -32,13 +32,13 @@ A prática é selecionada prioritariamente do livro, MIT e CS50; LeetCode e labs
 
 Há quatro capstones previstos e preservados, sem mini-projeto obrigatório a cada capítulo. Conteúdo é criado sob demanda e o próximo passo fica no contexto do professor. O MBA complementa a formação, sem ditar sua ordem. IA explica e oferece pistas graduais, preservando a tentativa própria; avaliações são corrigidas após a entrega.
 
-Em 10/09/2026, o capítulo 10 foi reconstruído localmente como guia, notas de apoio e prática selecionada. Gabriel já relata ter assistido ao CS50 Week 3; o próximo passo é a leitura orientada, sem domínio avaliado ou conclusão atribuída. O guia e a leitura PDF noturna da seção 1.2 foram publicados no site privado em 10/09/2026 (versão 32).
+Em 10/09/2026, o capítulo 10 foi reconstruído localmente como guia, notas de apoio e prática selecionada. Naquela data, o estudo ainda não havia sido avaliado; o fechamento posterior está registrado no PROGRESSO. O guia e a leitura PDF noturna da seção 1.2 foram publicados no site privado em 10/09/2026 (versão 32).
 
 ## Estrutura real e expansão
 
 ```text
 AGENTS.md / EMENTA.md / PROGRESSO.md / DIARIO.md
-.context/                  contexto e histórico do professor
+.context/                  contexto atual para orientar o ensino
 00-preparacao-do-ambiente/  início da base preservada
 …
 09-arrays-metodos-avancados/

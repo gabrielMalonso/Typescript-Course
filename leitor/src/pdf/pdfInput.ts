@@ -15,6 +15,11 @@ export class PdfTouchNavigation {
   get suppressTouchGestures() {
     return this.pens.size > 0 || this.palm
   }
+  reset() {
+    this.touches.clear()
+    this.pens.clear()
+    this.palm = false
+  }
   pointer(event: Input): Point | undefined {
     const down = event.type === 'pointerdown'
     const end = event.type === 'pointerup' || event.type === 'pointercancel'
@@ -90,6 +95,15 @@ export function restrictPdfInput(container: Element) {
       viewport.scrollTop += delta.y
     }
   }
+  // Releases can arrive over a toolbar or outside this shadow root.
+  const release = (event: PointerEvent) => { navigation.pointer(event) }
+  const reset = () => {
+    navigation.reset()
+    viewport = undefined
+  }
+  window.addEventListener('pointerup', release, true)
+  window.addEventListener('pointercancel', release, true)
+  window.addEventListener('blur', reset)
   const compatibility = (event: MouseEvent) => {
     const touch =
       ('pointerType' in event && event.pointerType === 'touch') ||
@@ -149,6 +163,9 @@ export function restrictPdfInput(container: Element) {
       passive: false,
     })
   return () => {
+    window.removeEventListener('pointerup', release, true)
+    window.removeEventListener('pointercancel', release, true)
+    window.removeEventListener('blur', reset)
     style.remove()
     for (const name of pointerEvents)
       root.removeEventListener(name, pointer as EventListener, true)

@@ -11,7 +11,8 @@ import { api } from '../../convex/_generated/api'
 import { AnnotationSync, type SyncStatus } from './sync'
 import { ImageAssets, payloadImageKey } from './imageAssets'
 import { useStudyToken } from '../auth/session'
-import { encodeAnnotation, decodeAnnotation } from './annotationPayload'
+import { encodeAnnotation } from './annotationPayload'
+import { restoreAnnotations } from './restoreAnnotations'
 
 /** Connect one viewer document to the owner's persistent annotation history. */
 export function useAnnotations(
@@ -151,65 +152,27 @@ export function useAnnotations(
     controller.receive(rows)
     let cancelled = false
     const restore = async () => {
-      try {
-        const apply = async (
-          id: string,
-          page: number,
-          payload: string | null,
-          draft = false,
-        ) => {
-          if (seen.current.get(id) === payload) return
-          const key = payloadImageKey(payload)
-          const data = key ? await images.load(key) : undefined
-          if (
-            cancelled ||
-            jobs.current.has(id) ||
-            (!draft && controller.hasPendingFor(id))
-          )
-            return
-          if (key) images.remember(id, key)
-          applying.current = true
-          const existing = scope.getAnnotationById(id)
-          if (payload === null) {
-            if (existing && existing.commitState !== 'deleted')
-              scope.deleteAnnotation(page, id)
-          } else {
-            const annotation = decodeAnnotation(payload)
-            if (existing && existing.commitState !== 'deleted')
-              scope.updateAnnotation(page, id, annotation)
-            else
-              scope.importAnnotations([
-                { annotation, ...(data ? { ctx: { data } } : {}) },
-              ])
-          }
-          // Undo must not restore a stale version over a change from another device.
-          registry
-            ?.getPlugin<HistoryPlugin>('history')
-            ?.provides()
-            .forDocument(documentId)
-            .purgeByMetadata<{ annotationIds?: string[] }>(
-              (metadata) => metadata?.annotationIds?.includes(id) ?? false,
-            )
-          seen.current.set(id, payload)
-          applying.current = false
-        }
-        for (const row of rows) {
-          if (
-            !controller.hasPendingFor(row.annotationId) &&
-            row.revision >= controller.revisionFor(row.annotationId)
-          )
-            await apply(row.annotationId, row.pageIndex, row.payload)
-        }
-        for (const draft of controller.drafts)
-          await apply(draft.annotationId, draft.pageIndex, draft.payload, true)
-      } catch {
-        if (!cancelled)
-          setImageError(
-            'Uma anotação não pôde ser restaurada. Seus dados continuam salvos.',
-          )
-      } finally {
-        applying.current = false
-      }
+      const failed = await restoreAnnotations({
+        rows,
+        controller,
+        scope,
+        images,
+        seen: seen.current,
+        cancelled: () => cancelled,
+        hasImageJob: (id) => jobs.current.has(id),
+        setApplying: (value) => { applying.current = value },
+        discardHistory: (id) => registry
+          ?.getPlugin<HistoryPlugin>('history')
+          ?.provides()
+          .forDocument(documentId)
+          .purgeByMetadata<{ annotationIds?: string[] }>(
+            (metadata) => metadata?.annotationIds?.includes(id) ?? false,
+          ),
+      })
+      if (failed && !cancelled)
+        setImageError(
+          'Uma anotação não pôde ser restaurada. Seus dados continuam salvos.',
+        )
       if (!cancelled) void controller.flush()
     }
     void restore()

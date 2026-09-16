@@ -443,6 +443,6 @@ Narrowing mínimo aparece no 17 para permitir estruturas com null; refinamento c
 
 O professor pode antecipar uma introdução curta necessária, aprofundar uma sobreposição ou transformar teoria do MBA em experimento, registrando a decisão sem abrir matérias simultâneas. Não eliminar fundamentos para acompanhar modismos nem insistir em repetir superficialmente conteúdo já demonstrado.
 
-Guias, recortes de referências, seleção de problemas, apoios personalizados, ferramentas dos labs e temas definitivos dos capstones serão definidos sob demanda. Na reformulação não foram criadas pastas futuras. **Atualização de 2026-09-09:** o [capítulo 10 — Complexidade e Big O](10-complexidade-e-big-o/README.md) foi criado sob demanda e está disponível para estudo; os demais materiais futuros continuam sob demanda.
+Guias, recortes de referências, seleção de problemas, apoios personalizados, ferramentas dos labs e temas definitivos dos capstones serão definidos sob demanda. Na reformulação não foram criadas pastas futuras. **Atualização de 2026-09-16:** o capítulo 10 foi concluído e o [capítulo 11 — Set, Map e hashing](11-set-map-e-hashing/README.md) foi criado sob demanda, sem estudo ou domínio ainda atribuídos. Os demais materiais futuros continuam sob demanda.
 
 *Atualização metodológica: 2026-09-10; sequência curricular aprovada preservada.*
