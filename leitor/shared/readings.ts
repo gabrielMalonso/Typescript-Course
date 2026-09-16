@@ -32,8 +32,8 @@ export const readings = [
   },
   {
     "slug": "11-set-map-e-hashing/leituras/clrs-11.1",
-    "id": "11-set-map-e-hashing/leituras/clrs-11.1@fc526539f976fe5cf16c",
-    "pages": 1
+    "id": "11-set-map-e-hashing/leituras/clrs-11.1@122a88fca53395afde44",
+    "pages": 3
   },
   {
     "slug": "11-set-map-e-hashing/leituras/clrs-11.2-exercicios",
@@ -42,7 +42,7 @@ export const readings = [
   },
   {
     "slug": "11-set-map-e-hashing/leituras/clrs-11.2",
-    "id": "11-set-map-e-hashing/leituras/clrs-11.2@fcd6cb1804bf0b35701d",
-    "pages": 3
+    "id": "11-set-map-e-hashing/leituras/clrs-11.2@8f3a2bdf949c074cf538",
+    "pages": 5
   }
 ] as const

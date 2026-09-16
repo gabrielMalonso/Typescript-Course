@@ -30,7 +30,7 @@ Configure os identificadores e segredos conforme o [guia do leitor PDF](src/pdf/
 Novos capítulos em pastas `NN-nome/` entram no índice via `import.meta.glob`, conforme as seções permitidas em `src/content/catalog.ts`:
 
 - Histórico: README, aula, extras, listas de exercícios e enunciado da prova.
-- Guias por curadoria: README, notas.md opcional e pratica/atividades.md. O capítulo 10 usa esses três documentos e seis recortes PDF; o 11 usa os três documentos e três recortes PDF (cinco páginas: 254, 256–258 e 261).
+- Guias por curadoria: README, notas.md opcional e pratica/atividades.md. O capítulo 10 usa esses três documentos e seis recortes PDF; o 11 usa os três documentos e três recortes PDF (nove páginas: 253–255, 256–260 e 261).
 - Formatos anteriores continuam reconhecidos: aula, prática numerada 01–03, debugging/LeetCode/lab, perguntas do checkpoint, resumo/erros comuns/revisitar e referências. Isso não torna essas etapas obrigatórias.
 
 Respostas, soluções, correções, resultados e gabaritos ficam fora do catálogo. Variações de nomes/seções precisam ser conferidas na geração de cada capítulo. Avaliações de bloco em `avaliacoes/` e capstones em `projetos/` deverão ser integrados quando seus primeiros enunciados forem criados; essas pastas ainda não têm materiais novos.
@@ -41,7 +41,7 @@ Atualização em 10/09/2026: piloto por curadoria e leitor PDF noturno publicado
 
 ## Progresso
 
-Atualize `src/content/progress.json` com base nas evidências de `PROGRESSO.md`: 00–08 e 10 concluídos; 09 em andamento para fechamento formal; próximo conteúdo 11, criado e pendente de estudo. Fechamento do 10 e criação do 11 registrados localmente em 16/09/2026, sem nova publicação nesta tarefa. A contagem da home refere-se aos capítulos registrados, não à porcentagem do currículo futuro. Atualize também a indicação de próximo conteúdo na home quando houver avanço.
+Atualize `src/content/progress.json` com base nas evidências de `PROGRESSO.md`: 00–08 e 10 concluídos; 09 em andamento para fechamento formal; próximo conteúdo 11, criado e pendente de estudo. Capítulo 11 com guia, notas, atividades e três recortes PDF publicado em 16/09/2026 na versão 50 (`succeeded`), com acesso privado preservado. Cadastro das nove leituras sincronizado com o Convex existente. Fonte `3fc936232b41a1d8c3c17d553a2e141d5a8dc0bf`; deployment `appgdep_6aaa93c9bdf0819198a20c204a865d13`. A contagem da home refere-se aos capítulos registrados, não à porcentagem do currículo futuro. Atualize também a indicação de próximo conteúdo na home quando houver avanço.
 
 ## Verificação
 

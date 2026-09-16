@@ -19,13 +19,15 @@ A posição calculada ajuda a localizar um valor. Ela não é uma identificaçã
 
 ## 2. Do índice conhecido à posição calculada
 
-[CLRS 11.1 · página 254](leituras/clrs-11.1.pdf)
+[CLRS · Introdução e seção 11.1 · páginas 253–255](leituras/clrs-11.1.pdf)
 
-Leia o primeiro parágrafo e observe a figura 11.1.
+Comece pela **abertura do capítulo, p. 253**. Ela apresenta o problema que a tabela hash resolve e sua relação com arrays. As menções às seções seguintes são um mapa do livro, não uma lista de pré-requisitos.
 
-[CLRS 11.2 · páginas 256–258](leituras/clrs-11.2.pdf)
+Depois leia **11.1 — Direct-address tables**, da p. 254 até o parágrafo anterior a *Exercises*, na p. 255. Acompanhe a figura 11.1 e a ideia das operações de buscar, inserir e remover. Nos pequenos pseudocódigos, `T[k]` é a posição de índice `k`; `x.key` é a chave do elemento `x`. Não precisa implementar ponteiros nem fazer os exercícios de 11.1.
 
-Leia as pp. **256–257**, até o parágrafo que abre *Collision resolution by chaining*. Deixe a p. 258 para a etapa 4.
+[CLRS 11.2 · páginas 256–260](leituras/clrs-11.2.pdf)
+
+Leia as pp. **256–257**, até o parágrafo que abre *Collision resolution by chaining*. Deixe as pp. 258–260 para a etapa 4.
 
 Procure a diferença entre usar a própria chave como índice e calcular uma posição para ela. Nas figuras, as setas apenas indicam onde encontrar os elementos; não implemente ponteiros. No agrupamento de colisões, basta entender que várias chaves continuam guardadas e precisam ser distinguidas.
 
@@ -43,7 +45,15 @@ Para consultar os métodos durante a prática, use as referências [Set](https:/
 
 ## 4. O que sustenta o custo esperado?
 
-Retorne à [seção 11.2 · página 258](leituras/clrs-11.2.pdf#page=3), somente ao trecho *Analysis of hashing with chaining*. Leia até o fim da página: ele relaciona quantidade de elementos, quantidade de posições e distribuição. Pule o pseudocódigo e a discussão de remoção que vêm antes desse subtítulo.
+Retorne à [seção 11.2 · página 258](leituras/clrs-11.2.pdf#page=3), a partir de *Analysis of hashing with chaining*. Pule o pseudocódigo e a discussão de remoção que vêm antes desse subtítulo.
+
+Siga até a conclusão da seção com estes limites:
+
+- **P. 258:** leia a introdução da análise e o pior caso. O fator de carga `α = n/m` é a quantidade de elementos dividida pela quantidade de posições.
+- **[P. 259](leituras/clrs-11.2.pdf#page=4):** leia a hipótese de distribuição uniforme, a explicação da busca e os enunciados dos teoremas 11.1 e 11.2. Pode pular os trechos intitulados *Proof* e as fórmulas de valor esperado; eles não são necessários para esta etapa.
+- **[P. 260](leituras/clrs-11.2.pdf#page=5):** retome no último parágrafo, iniciado por *What does this analysis mean?*. Ele conclui quando a busca tem custo médio constante. Deixe a demonstração acima e os detalhes de remoção com listas duplamente ligadas para depois.
+
+Procure a ligação: se a distribuição for adequada e a quantidade de posições acompanhar a de elementos, a quantidade média de candidatos por posição permanece limitada. É isso que sustenta a conclusão sobre a busca.
 
 Em seguida, leia [Custo das coleções no JavaScript](notas.md#custo-das-colecoes-no-javascript). A nota conecta o modelo do livro às operações que você vai usar.
 
