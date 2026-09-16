@@ -22,7 +22,7 @@ As faixas de atividades do AGENTS são referências flexíveis, não metas. Cont
 
 Usar `README.md`, apresentado como **Guia de estudo**, para conectar fontes, aula autoral, experimentação, prática e feedback, sem exigir todos os formatos. Intercalar conforme o assunto. Cada etapa explica brevemente a ligação com a anterior, aponta o material e indica a próxima ação.
 
-Informar livro/edição uma vez; delimitar seções, páginas e o foco de cada leitura. Posicionar as aulas e os complementos conforme a progressão escolhida. Usar PDFs com metadados conforme `leitor/README.md`; nos links, `#page=N` é a página dentro do recorte, a partir de 1. Só criar links para arquivos existentes.
+Informar livro/edição uma vez; delimitar seções, páginas e o foco de cada leitura. Usar a organização de referência do AGENTS: leituras do livro em `leituras/`, aulas por assunto em `aula/` e prática em `pratica/`, costuradas pelo guia. Usar PDFs com metadados conforme `leitor/README.md`; nos links, `#page=N` é a página dentro do recorte, a partir de 1. Só criar links para arquivos existentes.
 
 Planejar e escrever a aula conforme “Fontes, aula autoral e prática” do AGENTS: identificar as pontes e lacunas atuais, construir a progressão e concretizá-la em TypeScript. Registrar fontes/recortes e distinguir garantias de modelos e simplificações. A consulta à documentação pode fundamentar a aula sem se tornar leitura sequencial obrigatória.
 
@@ -55,7 +55,7 @@ Validar os exemplos executáveis pertinentes, os casos de borda e os links. Iden
 
 ## 6. Integrar e registrar
 
-Integrar guia, notas, enunciados e recortes ao catálogo do leitor. Conferir páginas, âncoras, retorno ao guia e exclusão de respostas/correções/gabaritos. Preservar rotas, tema e visualizador existentes. Se o leitor mudar, executar typecheck, lint e build e conferir home/rota pertinente.
+Integrar guia, aulas, complementos, enunciados e recortes ao catálogo do leitor. Conferir páginas, âncoras, retorno ao guia e exclusão de respostas/correções/gabaritos. Preservar rotas, tema e visualizador existentes. Se o leitor mudar, executar typecheck, lint e build e conferir home/rota pertinente.
 
 Atualizar estado e progresso quando houver avanço real. Nas notas, manter só decisões de curadoria e retomadas ainda úteis. Remover dificuldades superadas, pendências resolvidas e relatos sem uso atual; não criar arquivo histórico substituto. Atualizar no lugar, sem duplicar registros entre os documentos. Preservar materiais dos capítulos, diário, tentativas e resultados originais.
 

@@ -30,7 +30,7 @@ Configure os identificadores e segredos conforme o [guia do leitor PDF](src/pdf/
 Novos capítulos em pastas `NN-nome/` entram no índice via `import.meta.glob`, conforme as seções permitidas em `src/content/catalog.ts`:
 
 - Histórico: README, aula, extras, listas de exercícios e enunciado da prova.
-- Guias por curadoria: README, notas.md opcional e pratica/atividades.md. O capítulo 10 usa esses três documentos e seis recortes PDF; o 11 usa os três documentos e três recortes PDF (nove páginas: 253–255, 256–260 e 261).
+- Guias por curadoria: README, notas.md opcional e pratica/atividades.md. O capítulo 10 usa esses três documentos e seis recortes PDF; o 11 usa guia, três aulas por assunto em `aula/`, prática e três recortes PDF (nove páginas: 253–255, 256–260 e 261). O índice apresenta Leituras do livro, Aulas do curso e Prática. O caminho antigo de notas redireciona ao guia.
 - Formatos anteriores continuam reconhecidos: aula, prática numerada 01–03, debugging/LeetCode/lab, perguntas do checkpoint, resumo/erros comuns/revisitar e referências. Isso não torna essas etapas obrigatórias.
 
 Respostas, soluções, correções, resultados e gabaritos ficam fora do catálogo. Variações de nomes/seções precisam ser conferidas na geração de cada capítulo. Avaliações de bloco em `avaliacoes/` e capstones em `projetos/` deverão ser integrados quando seus primeiros enunciados forem criados; essas pastas ainda não têm materiais novos.

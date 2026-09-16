@@ -23,7 +23,7 @@ A explicação guiada consolidou a leitura densa de 11.2, reconstruindo a progre
 
 ## 3. Aula de Set — comece aqui
 
-No capítulo 10, você reconheceu o custo das buscas repetidas em arrays. Leia a [aula autoral de Set](notas.md#set-guardar-presenca), que parte da pergunta “este valor está presente?” e desenvolve criação, consulta, alteração, identidade e custo em TypeScript.
+No capítulo 10, você reconheceu o custo das buscas repetidas em arrays. Leia a [aula autoral de Set](aula/01-set.md), que parte da pergunta “este valor está presente?” e desenvolve criação, consulta, alteração, identidade e custo em TypeScript.
 
 Execute os exemplos separadamente, num arquivo de rascunho, com `ts-node arquivo.ts`, como nos exercícios do curso. Faça o [experimento de Set da atividade 2](pratica/atividades.md#experimento-de-set). Não precisa estudar Map para concluir esta etapa.
 
@@ -33,7 +33,7 @@ A MDN e a especificação fundamentam as aulas e estão ligadas ao fim de cada p
 
 ## 4. Aula de Map — da presença à associação
 
-Leia a [aula autoral de Map](notas.md#map-associar-uma-informacao). A ponte agora é: saber que um produto existe → recuperar seu preço → atualizar uma informação → representar uma quantidade ou índice de consulta.
+Leia a [aula autoral de Map](aula/02-map.md). A ponte agora é: saber que um produto existe → recuperar seu preço → atualizar uma informação → representar uma quantidade ou índice de consulta.
 
 Faça o [experimento de Map da atividade 2](pratica/atividades.md#experimento-de-map). Em seguida, passe à [atividade 4 — investigar uma consulta](pratica/atividades.md#atividade-4), [atividade 5 — Two Sum](pratica/atividades.md#atividade-5) e [atividade 6 — Valid Anagram](pratica/atividades.md#atividade-6), uma por vez, com feedback quando útil.
 
@@ -41,7 +41,7 @@ Comece com o que consegue construir. Depois de testar e entender o custo, procur
 
 ## 5. Escolher a representação num problema de software
 
-Leia [Array, Set, Map e Object](notas.md#escolher-entre-array-set-map-e-object). A aula acompanha mudanças no requisito de um sistema de empréstimos: campos de um registro, histórico, presença e informação associada. Execute o pequeno experimento de atualização; não há tabela para decorar.
+Leia [Array, Set, Map e Object](aula/03-escolher-representacoes.md). A aula acompanha mudanças no requisito de um sistema de empréstimos: campos de um registro, histórico, presença e informação associada. Execute o pequeno experimento de atualização; não há tabela para decorar.
 
 Aplique esse critério na [atividade 9 — empréstimos em memória](pratica/atividades.md#atividade-9). É um programa pequeno, sem interface ou banco. O objetivo é escolher representações e discutir uma decisão, não montar um projeto extenso.
 

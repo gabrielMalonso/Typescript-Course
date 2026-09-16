@@ -248,6 +248,7 @@ const replacedChapter10Slugs = new Set([
 ])
 
 export function resolveDocumentSlug(slug: string): string {
+  if (slug === '11-set-map-e-hashing/notas') return '11-set-map-e-hashing/README'
   return replacedChapter10Slugs.has(slug) ? '10-complexidade-e-big-o/README' : slug
 }
 
@@ -262,7 +263,9 @@ export function getNeighbors(slug: string): {
   slug = resolveDocumentSlug(slug)
   const chapterId = documentMap.get(slug)?.chapterId
   if (chapterId && documentMap.has(`${chapterId}/pratica/atividades`)) {
-    const ordered = [`${chapterId}/README`, `${chapterId}/notas`, `${chapterId}/pratica/atividades`]
+    const lessons = documents.filter((doc) => doc.chapterId === chapterId && doc.section === 'aula')
+      .map((doc) => doc.slug).sort()
+    const ordered = [`${chapterId}/README`, ...lessons, `${chapterId}/notas`, `${chapterId}/pratica/atividades`]
       .map((path) => documentMap.get(path))
       .filter((doc): doc is CatalogDocument => doc !== undefined)
     const position = ordered.findIndex((doc) => doc.slug === slug)

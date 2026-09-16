@@ -132,10 +132,12 @@ Padrão aprovado no piloto do 10 em 2026-09-10 e adotado nos próximos capítulo
 ```text
 XX-nome-do-capitulo/
 ├── README.md               # percurso do aluno
-├── notas.md                # aulas autorais e/ou complementos, conforme o percurso
 ├── leituras/               # somente recortes PDF disponíveis e autorizados
 │   ├── nome.pdf
 │   └── nome.json
+├── aula/                   # Aulas do curso: um assunto por arquivo
+│   ├── 01-primeiro-assunto.md
+│   └── 02-proximo-assunto.md
 └── pratica/
     └── atividades.md
 ```
@@ -144,7 +146,8 @@ Criar somente arquivos necessários, sem pastas vazias. Organizar o guia na orde
 
 - Apresentar objetivo e âncora brevemente. Informar livro/edição uma vez; seções e páginas nos links ou tabela. Não repetir apresentação, justificativas ou teoria.
 - Indicar videoaula já assistida pelo relato, sem obrigar repetição. Guardar nas notas do professor apenas justificativas de escolha e verificações ainda necessárias para usar ou revisar a referência; não manter um relato de todas as alternativas descartadas.
-- Aulas autorais podem ficar em `notas.md` ou em `aula/*.md`, conforme extensão e navegação. Ligar à seção exata no momento necessário e oferecer retorno ao guia; complementos opcionais não viram leitura obrigatória. Não duplicar a mesma aula em vários arquivos.
+- **Referência de organização para os próximos capítulos:** `leituras/` aparece como **Leituras do livro**; `aula/`, como **Aulas do curso**. Cada aula tem título por assunto e reúne progressão conceitual, TypeScript, exemplos e pequenos experimentos, com fontes ao final. Não impor a antiga separação teoria/sintaxe/exemplos nem uma quantidade fixa de aulas. O guia intercala livro → aula correspondente → experimentação → prática conforme a necessidade.
+- `notas.md` fica reservado a complementos pontuais, somente se necessários; conteúdo didático principal pertence a `aula/`. Preservar os capítulos antigos e oferecer redirecionamento de caminhos reorganizados. Não duplicar conteúdo entre arquivos.
 - Atividades citam fonte e questão, com link à página do enunciado quando houver PDF no leitor. Se não houver recorte autorizado, indicar a referência original e paginação verificável.
 - Critérios de domínio e revisão imediata entram brevemente no fechamento; planejamento detalhado de retomadas fica no contexto do professor. Evitar listas administrativas no percurso.
 

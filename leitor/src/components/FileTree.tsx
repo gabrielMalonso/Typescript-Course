@@ -76,7 +76,7 @@ function TreeItem({
       >
         <Chevron open={open} />
         <FolderIcon />
-        <span className="tree-label">{node.name}</span>
+        <span className="tree-label">{node.name === 'leituras' ? 'Leituras do livro' : node.name === 'aula' ? 'Aulas do curso' : node.name === 'pratica' ? 'Prática' : node.name}</span>
       </button>
       {open && (
         <ul className="tree-children">
