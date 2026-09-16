@@ -30,7 +30,7 @@ Configure os identificadores e segredos conforme o [guia do leitor PDF](src/pdf/
 Novos capítulos em pastas `NN-nome/` entram no índice via `import.meta.glob`, conforme as seções permitidas em `src/content/catalog.ts`:
 
 - Histórico: README, aula, extras, listas de exercícios e enunciado da prova.
-- Guias por curadoria: README, notas.md opcional e pratica/atividades.md. O capítulo 10 usa esses três documentos e seis recortes PDF; o 11 usa guia, três aulas por assunto em `aula/`, prática e três recortes PDF (nove páginas: 253–255, 256–260 e 261). O índice apresenta Leituras do livro, Aulas do curso e Prática. O caminho antigo de notas redireciona ao guia.
+- Guias por curadoria: README, notas.md opcional e pratica/atividades.md. O capítulo 10 usa esses três documentos e seis recortes PDF; o 11 usa guia, três aulas por assunto em `02-aulas-do-curso/`, prática e três recortes PDF (nove páginas: 253–255, 256–260 e 261). O índice apresenta 01. Leituras do livro, 02. Aulas do curso e 03. Prática. O caminho antigo de notas redireciona ao guia.
 - Formatos anteriores continuam reconhecidos: aula, prática numerada 01–03, debugging/LeetCode/lab, perguntas do checkpoint, resumo/erros comuns/revisitar e referências. Isso não torna essas etapas obrigatórias.
 
 Respostas, soluções, correções, resultados e gabaritos ficam fora do catálogo. Variações de nomes/seções precisam ser conferidas na geração de cada capítulo. Avaliações de bloco em `avaliacoes/` e capstones em `projetos/` deverão ser integrados quando seus primeiros enunciados forem criados; essas pastas ainda não têm materiais novos.
@@ -72,3 +72,5 @@ O leitor Markdown e o PDF compartilham `ReaderToolbar` e `ThemeToggle`. O PDF us
 
 
 Atualização em 10/09/2026, versão 35 publicada (`succeeded`): barra e tema compartilhados entre Markdown/PDF; cinco recortes CLRS do capítulo 10 disponíveis (20 páginas). Protótipo aprovado por Gabriel; estudo e domínio não concluídos.
+
+Pastas numeradas do capítulo 11 usam caminhos físicos novos; o catálogo normaliza os endereços para manter URLs e IDs de anotações dos PDFs. O registro de leituras aceita ambas as convenções, sem mudar o hash ou criar outro histórico. Livro vem primeiro como regra geral; o guia intercala aula e prática.

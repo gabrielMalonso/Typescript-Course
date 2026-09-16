@@ -91,7 +91,7 @@ Você já usa callbacks. Aqui o callback recebe **valor, depois chave**; o segun
 
 A regra já vista em Set também vale para as chaves do Map: objetos são comparados por identidade, e chaves numéricas não se confundem com strings. O valor associado não participa da identificação da entrada. Alterar campos de um objeto usado como chave não troca sua identidade; criar outro objeto com os mesmos campos cria outra chave.
 
-Faça o [experimento de Map da atividade 2](../pratica/atividades.md#experimento-de-map) e volte à [etapa 4](../README.md#etapa-4). Você já tem o necessário para investigar uma consulta e tentar Two Sum e Valid Anagram; o material não fornece os algoritmos desses problemas.
+Faça o [experimento de Map da atividade 2](../03-pratica/atividades.md#experimento-de-map) e volte à [etapa 4](../README.md#etapa-4). Você já tem o necessário para investigar uma consulta e tentar Two Sum e Valid Anagram; o material não fornece os algoritmos desses problemas.
 
 ## Fontes da aula de Map
 

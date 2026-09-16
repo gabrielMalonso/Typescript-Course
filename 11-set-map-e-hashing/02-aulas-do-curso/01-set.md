@@ -96,7 +96,7 @@ Percorrer a coleção toda continua custando O(u). Chaves de tamanho variável, 
 
 ## Experimentar e voltar ao problema
 
-Faça apenas o [experimento de Set da atividade 2](../pratica/atividades.md#experimento-de-set). Depois volte ao [guia, etapa 3](../README.md#etapa-3) e retome Contains Duplicate com uma nova tentativa sua. A versão quadrática do capítulo 10 permanece preservada; a escolha do novo algoritmo fica com você.
+Faça apenas o [experimento de Set da atividade 2](../03-pratica/atividades.md#experimento-de-set). Depois volte ao [guia, etapa 3](../README.md#etapa-3) e retome Contains Duplicate com uma nova tentativa sua. A versão quadrática do capítulo 10 permanece preservada; a escolha do novo algoritmo fica com você.
 
 ## Fontes da aula de Set
 
@@ -104,5 +104,5 @@ Verificadas em 16/09/2026. Os exemplos de permissões e a progressão são autor
 
 - [MDN Set — Description, Value equality e Performance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set#description): comportamento, igualdade e ordem. [add](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/add) e [delete](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/delete): efeitos e retornos; `clear` e `size` na referência da coleção.
 - [ECMAScript — Set Objects](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set-objects): contrato normativo de igualdade/acesso; métodos em Set.prototype. A linguagem não promete a implementação de chaining estudada.
-- [CLRS 11.1](../leituras/clrs-11.1.pdf) e [11.2](../leituras/clrs-11.2.pdf), 3ª edição, pp. 253–260, e [CS50, trechos já estudados](../README.md#etapa-1): modelo de endereçamento/hashing, colisões e carga. O recorte conceitual basta; provas das pp. 259–260 permanecem opcionais. O modelo O(1) usado acima supõe distribuição/carga adequadas e chaves de custo constante.
+- [CLRS 11.1](../01-leituras-do-livro/clrs-11.1.pdf) e [11.2](../01-leituras-do-livro/clrs-11.2.pdf), 3ª edição, pp. 253–260, e [CS50, trechos já estudados](../README.md#etapa-1): modelo de endereçamento/hashing, colisões e carga. O recorte conceitual basta; provas das pp. 259–260 permanecem opcionais. O modelo O(1) usado acima supõe distribuição/carga adequadas e chaves de custo constante.
 

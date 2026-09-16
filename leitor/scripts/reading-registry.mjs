@@ -6,7 +6,9 @@ const readings = []
 for (const chapter of (await readdir(root))
   .filter((x) => /^\d{2}-/.test(x))
   .sort()) {
-  const directory = path.join(root, chapter, 'leituras')
+  const chapterFolders = await readdir(path.join(root, chapter))
+  const folder = chapterFolders.includes('01-leituras-do-livro') ? '01-leituras-do-livro' : 'leituras'
+  const directory = path.join(root, chapter, folder)
   let files
   try {
     files = await readdir(directory)

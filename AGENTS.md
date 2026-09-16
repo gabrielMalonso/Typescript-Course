@@ -132,30 +132,30 @@ Padrão aprovado no piloto do 10 em 2026-09-10 e adotado nos próximos capítulo
 ```text
 XX-nome-do-capitulo/
 ├── README.md               # percurso do aluno
-├── leituras/               # somente recortes PDF disponíveis e autorizados
+├── 01-leituras-do-livro/               # somente recortes PDF disponíveis e autorizados
 │   ├── nome.pdf
 │   └── nome.json
-├── aula/                   # Aulas do curso: um assunto por arquivo
+├── 02-aulas-do-curso/                   # Aulas do curso: um assunto por arquivo
 │   ├── 01-primeiro-assunto.md
 │   └── 02-proximo-assunto.md
-└── pratica/
+└── 03-pratica/
     └── atividades.md
 ```
 
-Criar somente arquivos necessários, sem pastas vazias. Organizar o guia na ordem de uso escolhida pela curadoria, incluindo aulas autorais e experimentação quando úteis. Intercalar conforme o assunto, sem impor consumir toda a teoria antes de praticar. Cada etapa contém uma conexão curta com a anterior, link direto, foco e limite de leitura, e a próxima ação. O aluno deve conseguir abrir o material, voltar e continuar sem montar o roteiro sozinho.
+Criar somente arquivos necessários, sem pastas vazias. Via de regra, as leituras do livro vêm primeiro, seguidas da aula autoral correspondente e da prática. O guia pode intercalar esses momentos quando isso melhorar o aprendizado; a numeração organiza as categorias, sem exigir consumir todos os livros antes de praticar. Intercalar conforme o assunto, sem impor consumir toda a teoria antes de praticar. Cada etapa contém uma conexão curta com a anterior, link direto, foco e limite de leitura, e a próxima ação. O aluno deve conseguir abrir o material, voltar e continuar sem montar o roteiro sozinho.
 
 - Apresentar objetivo e âncora brevemente. Informar livro/edição uma vez; seções e páginas nos links ou tabela. Não repetir apresentação, justificativas ou teoria.
 - Indicar videoaula já assistida pelo relato, sem obrigar repetição. Guardar nas notas do professor apenas justificativas de escolha e verificações ainda necessárias para usar ou revisar a referência; não manter um relato de todas as alternativas descartadas.
-- **Referência de organização para os próximos capítulos:** `leituras/` aparece como **Leituras do livro**; `aula/`, como **Aulas do curso**. Cada aula tem título por assunto e reúne progressão conceitual, TypeScript, exemplos e pequenos experimentos, com fontes ao final. Não impor a antiga separação teoria/sintaxe/exemplos nem uma quantidade fixa de aulas. O guia intercala livro → aula correspondente → experimentação → prática conforme a necessidade.
-- `notas.md` fica reservado a complementos pontuais, somente se necessários; conteúdo didático principal pertence a `aula/`. Preservar os capítulos antigos e oferecer redirecionamento de caminhos reorganizados. Não duplicar conteúdo entre arquivos.
+- **Referência de organização para os próximos capítulos:** `01-leituras-do-livro/` aparece como **01. Leituras do livro**; `02-aulas-do-curso/`, como **02. Aulas do curso**; `03-pratica/`, como **03. Prática**. Usar esses nomes nos capítulos novos; preservar os capítulos anteriores e os endereços de leituras já cadastradas. Cada aula tem título por assunto e reúne progressão conceitual, TypeScript, exemplos e pequenos experimentos, com fontes ao final. Não impor a antiga separação teoria/sintaxe/exemplos nem uma quantidade fixa de aulas. O guia intercala livro → aula correspondente → experimentação → prática conforme a necessidade.
+- `notas.md` fica reservado a complementos pontuais, somente se necessários; conteúdo didático principal pertence a `02-aulas-do-curso/`. Preservar os capítulos antigos e oferecer redirecionamento de caminhos reorganizados. Não duplicar conteúdo entre arquivos.
 - Atividades citam fonte e questão, com link à página do enunciado quando houver PDF no leitor. Se não houver recorte autorizado, indicar a referência original e paginação verificável.
 - Critérios de domínio e revisão imediata entram brevemente no fechamento; planejamento detalhado de retomadas fica no contexto do professor. Evitar listas administrativas no percurso.
 
-Para PDF, usar `leituras/nome.pdf` e `nome.json` conforme `leitor/README.md`. Preservar original completo fora do repositório; conferir edição, páginas impressas, posições do PDF e conteúdo de cada recorte. Recortes mantêm páginas completas; o guia delimita os subtópicos a estudar. Um trecho anterior curto pode fornecer contexto ao próximo (como CLRS 2.1 antes de 2.2), sem antecipar a unidade futura de implementação/provas.
+Para PDF, usar `01-leituras-do-livro/nome.pdf` e `nome.json` conforme `leitor/README.md`. Preservar original completo fora do repositório; conferir edição, páginas impressas, posições do PDF e conteúdo de cada recorte. Recortes mantêm páginas completas; o guia delimita os subtópicos a estudar. Um trecho anterior curto pode fornecer contexto ao próximo (como CLRS 2.1 antes de 2.2), sem antecipar a unidade futura de implementação/provas.
 
 Links `nome.pdf#page=N` contam a página **dentro do recorte, a partir de 1**, não a página impressa nem a posição no livro completo. Exibir ao aluno a página impressa e conferir o destino. Manter barra/tema compartilhados, pinça restrita ao PDF, rolagem interna e interface mínima; não recriar um visualizador por capítulo.
 
-O aluno cria soluções em `pratica/solucoes/`; correções ficam em `pratica/correcoes.md` após entrega. Não criar respostas, resultados ou gabaritos antecipadamente. Preservar tentativas, caminhos e histórico 00–09. Integrar guias, notas, enunciados e recortes ao catálogo; conferir links, âncoras e exclusões. Só criar links para arquivos existentes; destinos futuros ficam em texto.
+O aluno cria soluções em `03-pratica/solucoes/`; correções ficam em `03-pratica/correcoes.md` após entrega. Não criar respostas, resultados ou gabaritos antecipadamente. Preservar tentativas, caminhos e histórico 00–09. Integrar guias, notas, enunciados e recortes ao catálogo; conferir links, âncoras e exclusões. Só criar links para arquivos existentes; destinos futuros ficam em texto.
 
 ## Metodologia por área
 

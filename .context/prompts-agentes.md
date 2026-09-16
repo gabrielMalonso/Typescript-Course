@@ -22,7 +22,7 @@ As faixas de atividades do AGENTS são referências flexíveis, não metas. Cont
 
 Usar `README.md`, apresentado como **Guia de estudo**, para conectar fontes, aula autoral, experimentação, prática e feedback, sem exigir todos os formatos. Intercalar conforme o assunto. Cada etapa explica brevemente a ligação com a anterior, aponta o material e indica a próxima ação.
 
-Informar livro/edição uma vez; delimitar seções, páginas e o foco de cada leitura. Usar a organização de referência do AGENTS: leituras do livro em `leituras/`, aulas por assunto em `aula/` e prática em `pratica/`, costuradas pelo guia. Usar PDFs com metadados conforme `leitor/README.md`; nos links, `#page=N` é a página dentro do recorte, a partir de 1. Só criar links para arquivos existentes.
+Informar livro/edição uma vez; delimitar seções, páginas e o foco de cada leitura. Usar a organização de referência do AGENTS: leituras do livro em `01-leituras-do-livro/`, aulas por assunto em `02-aulas-do-curso/` e prática em `03-pratica/`, costuradas pelo guia. Usar PDFs com metadados conforme `leitor/README.md`; nos links, `#page=N` é a página dentro do recorte, a partir de 1. Só criar links para arquivos existentes.
 
 Planejar e escrever a aula conforme “Fontes, aula autoral e prática” do AGENTS: identificar as pontes e lacunas atuais, construir a progressão e concretizá-la em TypeScript. Registrar fontes/recortes e distinguir garantias de modelos e simplificações. A consulta à documentação pode fundamentar a aula sem se tornar leitura sequencial obrigatória.
 

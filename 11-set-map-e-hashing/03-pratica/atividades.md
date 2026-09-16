@@ -1,6 +1,6 @@
 # Prática — Set, Map e hashing
 
-Resolva na ordem do [guia](../README.md). Crie suas entregas em `pratica/solucoes/` quando começar; preserve as tentativas anteriores do capítulo 10. Pode enviar entregas parciais. Não é necessário um relatório por exercício.
+Resolva na ordem do [guia](../README.md). Crie suas entregas em `03-pratica/solucoes/` quando começar; preserve as tentativas anteriores do capítulo 10. Pode enviar entregas parciais. Não é necessário um relatório por exercício.
 
 Nos problemas de implementação, teste exemplos e limites relevantes ao contrato. Explique brevemente a ideia e o custo de tempo e espaço; comentários no código ou conversa bastam. Quando usar o modelo de hashing, declare a hipótese de custo esperado. Consulta à documentação é permitida; tente antes de buscar pistas ou soluções prontas.
 
@@ -10,7 +10,7 @@ O exercício 1 já foi entregue e concluído. O enunciado original permanece par
 
 ### 1. Desenhar a distribuição
 
-**Fonte:** CLRS, 3ª edição em inglês, [**11.2-2, p. 261 — abrir enunciado**](../leituras/clrs-11.2-exercicios.pdf#page=1). Faça somente essa questão; os demais exercícios da página não integram esta atividade.
+**Fonte:** CLRS, 3ª edição em inglês, [**11.2-2, p. 261 — abrir enunciado**](../01-leituras-do-livro/clrs-11.2-exercicios.pdf#page=1). Faça somente essa questão; os demais exercícios da página não integram esta atividade.
 
 Represente a distribuição das chaves do exercício nas nove posições. No livro, `k mod 9` corresponde a `k % 9` em TypeScript para os inteiros positivos dessa questão.
 

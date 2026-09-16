@@ -1,3 +1,4 @@
+import { canonicalCoursePath } from './paths'
 import type { CatalogDocument, TreeNode, ReadingMetadata } from './types'
 
 const rawModules = import.meta.glob(
@@ -6,6 +7,8 @@ const rawModules = import.meta.glob(
     '@course/[0-9][0-9]-*/notas.md',
     '@course/[0-9][0-9]-*/pratica/atividades.md',
     '@course/[0-9][0-9]-*/aula/*.md',
+    '@course/[0-9][0-9]-*/02-aulas-do-curso/*.md',
+    '@course/[0-9][0-9]-*/03-pratica/atividades.md',
     '@course/[0-9][0-9]-*/extras/*.md',
     '@course/[0-9][0-9]-*/exercicios/lista*.md',
     '@course/[0-9][0-9]-*/avaliacao/prova.md',
@@ -45,7 +48,7 @@ const FOLDER_ORDER = [
 ]
 
 function shouldInclude(modulePath: string): boolean {
-  const normalized = modulePath.replace(/\\/g, '/')
+  const normalized = canonicalCoursePath(modulePath.replace(/\\/g, '/'))
 
   if (!normalized.endsWith('.md')) return false
   if (EXCLUDED_NAME_PATTERNS.some((re) => re.test(normalized))) return false
@@ -83,7 +86,7 @@ function extractTitle(content: string, fallback: string): string {
 }
 
 function toCourseRelative(modulePath: string): string | null {
-  const normalized = modulePath.replace(/\\/g, '/')
+  const normalized = canonicalCoursePath(modulePath.replace(/\\/g, '/'))
   const match = normalized.match(/\/(\d{2}-[^/]+\/.+)$/)
   return match ? match[1] : null
 }
@@ -122,8 +125,8 @@ function buildDocuments(): CatalogDocument[] {
     })
   }
 
-  const pdfs = import.meta.glob<string>('@course/[0-9][0-9]-*/leituras/*.pdf', { query: '?url', import: 'default', eager: true })
-  const metadata = import.meta.glob<unknown>('@course/[0-9][0-9]-*/leituras/*.json', { import: 'default', eager: true })
+  const pdfs = import.meta.glob<string>(['@course/[0-9][0-9]-*/leituras/*.pdf', '@course/[0-9][0-9]-*/01-leituras-do-livro/*.pdf'], { query: '?url', import: 'default', eager: true })
+  const metadata = import.meta.glob<unknown>(['@course/[0-9][0-9]-*/leituras/*.json', '@course/[0-9][0-9]-*/01-leituras-do-livro/*.json'], { import: 'default', eager: true })
   for (const [path, url] of Object.entries(pdfs)) {
     const relative = toCourseRelative(path)
     const reading = metadata[path.replace(/\.pdf$/, '.json')]
@@ -248,6 +251,7 @@ const replacedChapter10Slugs = new Set([
 ])
 
 export function resolveDocumentSlug(slug: string): string {
+  slug = canonicalCoursePath(slug)
   if (slug === '11-set-map-e-hashing/notas') return '11-set-map-e-hashing/README'
   return replacedChapter10Slugs.has(slug) ? '10-complexidade-e-big-o/README' : slug
 }
