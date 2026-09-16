@@ -3,6 +3,7 @@ import vinext from 'vinext'
 import { defineConfig } from 'vite'
 import hostingConfig from './.openai/hosting.json' with { type: 'json' }
 import { sites } from './build/sites-vite-plugin.ts'
+import { embedpdfHighlight } from './build/embedpdf-highlight.ts'
 
 const SITE_CREATOR_PLACEHOLDER_DATABASE_ID = '00000000-0000-4000-8000-000000000000'
 const { d1, r2 } = hostingConfig
@@ -37,6 +38,8 @@ export default defineConfig(async ({ command }) => {
   const { cloudflare } = await import('@cloudflare/vite-plugin')
 
   return {
+    // Keep the snippet out of dev prebundling so its compatibility fix also runs there.
+    optimizeDeps: { exclude: ['@embedpdf/snippet'] },
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),
@@ -50,6 +53,7 @@ export default defineConfig(async ({ command }) => {
       },
     },
     plugins: [
+      embedpdfHighlight(),
       vinext(),
       sites(),
       cloudflare({

@@ -35,6 +35,15 @@ rotação 0°. Espessuras usam unidades do documento e acompanham o zoom.
 O EmbedPDF 2.15 não expõe espessura configurável para sublinhado.
 Esses padrões não modificam anotações já salvas.
 
+`build/embedpdf-highlight.ts` corrige o comando nativo do EmbedPDF 2.15 que
+força Multiplicar quando o texto é selecionado antes de clicar em Realçar.
+A correção faz esse caminho respeitar a mesclagem da ferramenta, como ocorre
+ao ativar Realçar antes de selecionar o texto. Ao atualizar EmbedPDF, revisar
+essa compatibilidade; o build falha se o trecho esperado mudar.
+
+Padrões publicados em 16/09/2026 na versão 53, com acesso privado preservado
+e deployment `appgdep_6aaaf22614f48191b690b7112d8ac48b` confirmado como `succeeded`.
+
 `shared/readings.ts` registra slug, hash do PDF e quantidade de páginas. O build
 regenera esse arquivo. Ao acrescentar/substituir uma leitura, executar
 `npm run readings:sync` antes da publicação. `dev` e `build` regeneram o
