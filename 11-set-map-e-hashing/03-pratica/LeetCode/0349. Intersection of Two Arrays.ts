@@ -1,24 +1,19 @@
 function intersection(nums1: number[], nums2: number[]): number[] {
     const saida: number[] = [];
-    const menorArray: number[] = [];
+    const setNums1 = new Set<number>(nums1);
+    const setNums2 = new Set<number>(nums2);
 
-    if (nums1.length >= nums2.length) {
-        const mapNums1 = new Set<number>(nums1); // maior array → set
-        const menorArray = nums2;
-    } else {
-        const mapNums2 = new Set<number>(nums2); // maior array → set
-        const menorArray = nums1;
-    }
-
-    for (const num of menorArray) {
-
+    for (const one of setNums1) {
+        if(setNums2.has(one)){
+            saida.push(one);            
+        }
     }
     
 
-    return[0,0]; // só para satisfazer a função enquanto eu trabalho.
+    return saida;
 }
 
 const nums1 = [1,2,2,1];
 const nums2 = [2,2];
 
-intersection(nums1, nums2);
+console.log(intersection(nums1, nums2));
