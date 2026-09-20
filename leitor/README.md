@@ -41,7 +41,7 @@ Atualização em 10/09/2026: piloto por curadoria e leitor PDF noturno publicado
 
 ## Progresso
 
-Atualize `src/content/progress.json` com base nas evidências de `PROGRESSO.md`: 00–08 e 10 concluídos; 09 em andamento para fechamento formal; 11 em andamento, com fundamentos estudados conforme relato e prática ainda não avaliada. A home aponta para a etapa 3 do guia. Os três recortes do 11 mantêm páginas, caminhos e cadastro existentes; a reformulação muda o percurso, não os PDFs. Preserve o acesso privado. Reformulação do capítulo 11 publicada em 16/09/2026, versão 55, com status `succeeded` confirmado (deployment `appgdep_6aab08a5b1a881918ba24a4bebc2d7fa`). A contagem da home refere-se aos capítulos registrados, não à porcentagem do currículo futuro. Atualize também a indicação de próximo conteúdo na home quando houver avanço.
+O estado exibido na home fica em `src/content/progress.json`. Alterá-lo somente quando solicitado, com base nas entregas ou no relato correspondente; criar uma aula não significa concluir seu estudo. Não manter um registro documental paralelo de progresso.
 
 ## Verificação
 

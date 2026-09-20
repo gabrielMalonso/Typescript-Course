@@ -1,67 +1,81 @@
-# Roteiro de criação de capítulos por curadoria
+# Agentes de criação e revisão de aulas
 
-Atualizado em 2026-09-20. [AGENTS.md](../AGENTS.md) define a metodologia; [EMENTA.md](../EMENTA.md) define conteúdo e sequência. Este roteiro organiza o trabalho do professor. Não é uma lista de tarefas ou de perguntas para o aluno.
+Metodologia vigente em 2026-09-20. A [EMENTA](../EMENTA.md) define o assunto e sua posição no curso; este documento concentra as instruções pedagógicas dos agentes.
 
-## 1. Situar o capítulo
+## Responsabilidades
 
-Ler estado atual, perfil, notas pertinentes, base de conhecimentos disponível e o trecho correspondente da ementa. Consultar correções anteriores apenas quando necessárias à tarefa. Distinguir estudo relatado, código inspecionado e domínio avaliado.
+O agente principal define o capítulo solicitado e integra a entrega. Pode delegar curadoria e revisão a subagentes quando houver trabalho independente útil; antes de edições paralelas, definir arquivos de responsabilidade exclusiva. Todos recebem o mesmo trecho da ementa, objetivo e limites. Não é necessário abrir um agente para cada etapa.
 
-Definir o que o aluno precisa conseguir fazer ao final e qual experiência conhecida abre o assunto. Conferir os pré-requisitos. Aplicar os três níveis de profundidade do AGENTS: domínio prático, mecanismos que melhoram decisões e aprofundamento formal opcional. A fonte não determina a profundidade; delimitar ou interromper seções quando necessário. Não criar capítulos futuros nem ampliar a ementa para acomodar uma referência difícil.
+- **Curadoria:** buscar a videoaula adequada, consultar o mapa de leituras do MIT para o assunto, inspecionar as seções indicadas no livro canônico e selecionar o que precisa de leitura, explicação e experimentação.
+- **Escrita:** desenvolver a aula a partir das fontes selecionadas, construir a ponte para TypeScript e organizar o guia de estudo.
+- **Revisão:** conferir precisão, clareza, pré-requisitos, exemplos, custos das abstrações e necessidade das atividades; devolver correções concretas para integração.
 
-## 2. Selecionar fontes e prática
+Criar somente o capítulo solicitado. Usar a ementa, os materiais anteriores pertinentes e as orientações da conversa para situar o leitor; consultar trabalhos anteriores apenas quando necessários, sem presumir domínio nem exigir um cadastro permanente do aluno.
 
-Pesquisar primeiro CS50/Harvard para vídeo; sempre verificar a aula mais atualizada disponível, distinguindo edição do curso de ano da gravação, conforme AGENTS. Recorrer ao MIT OCW ou a outra fonte acadêmica quando mais adequada. Não exigir rever aula já assistida. Indicar link oficial, edição e trechos; usar timestamps somente quando conferidos.
+## Percurso de criação
 
-Em DSA, usar CLRS 3ª edição como livro-âncora e o mapa de leituras do MIT como apoio. Inspecionar o conteúdo dos recortes, verificar páginas e selecionar o que serve à competência atual. Se houver muitos pré-requisitos ausentes, recortar ou substituir a referência. Registrar justificativas da seleção nas notas do professor.
+**Assunto da ementa → videoaula CS50/Harvard → leitura do livro orientada pelo MIT → aula autoral prática em TypeScript → experimentação.**
 
-Selecionar exercícios do livro, MIT ou CS50 conforme adequação, com LeetCode/labs quando pertinentes. Conferir o enunciado completo, o esforço e os conhecimentos exigidos. Registrar fonte e adaptações para TypeScript, preservando o objetivo e as restrições. Não incluir soluções junto aos enunciados.
+Esse é o percurso preferencial, adaptável ao assunto. O vídeo oferece a primeira intuição; o livro desenvolve os fundamentos; a aula autoral reconstrói as conexões e mostra como usar o conhecimento ao programar. A ementa determina a sequência: não seguir a ordem do MIT nem terminar seções do livro apenas para cumprir a referência. Não exigir rever materiais já estudados. Se não houver vídeo ou recorte adequado, explicar brevemente a escolha no guia e usar uma alternativa pertinente.
 
-Dimensionar a prática sem quota, pelo objetivo e esforço, incluindo subitens, revisões e LeetCodes. Não gerar uma bateria própria para cobrir cada tópico: reservar exercícios próprios a experimentos específicos do conteúdo/TypeScript. A prática principal pode continuar posteriormente com problemas reais e externos. Essenciais atendem às competências centrais; consolidação atende dificuldades; desafio é opcional.
+## Livro e fontes
 
-## 3. Montar o percurso do aluno
+Para algoritmos e estruturas de dados, o livro canônico é **Introduction to Algorithms — Cormen, Leiserson, Rivest e Stein (CLRS), 3ª edição em inglês**. Exemplar local autorizado: `/Volumes/SSD1TB/Documents/Cormen Introduction to Algorithms.pdf`. Conferir esse arquivo antes de pedir outro; preservar o original completo fora do repositório. Se indisponível, informar antes de substituir o exemplar.
 
-Usar `README.md`, apresentado como **Guia de estudo**, para conectar fontes, aula autoral, experimentação, prática e feedback, sem exigir todos os formatos. Intercalar conforme o assunto. Cada etapa explica brevemente a ligação com a anterior, aponta o material e indica a próxima ação.
+Para selecionar leituras de algoritmos e estruturas de dados, consultar o [mapa oficial do MIT 6.006 — Fall 2011](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/pages/readings/), que relaciona assuntos a capítulos e seções do CLRS, 3ª edição. Localizar o tema correspondente à ementa; a indicação do MIT é o ponto de partida da seleção, não um recorte automaticamente aprovado.
 
-Informar livro/edição uma vez; delimitar seções, páginas e o foco de cada leitura. Usar a organização de referência do AGENTS: leituras do livro em `01-leituras-do-livro/`, aulas por assunto em `02-aulas-do-curso/` e prática em `03-pratica/`, costuradas pelo guia. Usar PDFs com metadados conforme `leitor/README.md`; nos links, `#page=N` é a página dentro do recorte, a partir de 1. Só criar links para arquivos existentes.
+Ler as seções candidatas no exemplar canônico antes de escolher as páginas. Conferir se desenvolvem o objetivo do capítulo, quais pré-requisitos exigem, o que merece contato direto e o que precisa de mediação. Delimitar fundamentos úteis, aplicação prática e aprofundamento formal opcional. Conferir edição, páginas impressas e posições do PDF; não escolher pelo título nem importar a lista inteira do MIT. Se não houver correspondência adequada, buscar uma fonte pertinente em vez de forçar um recorte. Nas demais áreas, usar a referência canônica correspondente quando definida.
 
-Planejar e escrever a aula conforme “Fontes, aula autoral e prática” do AGENTS: identificar as pontes e lacunas atuais e conectar conceito/mecanismo, modelo mental, abstração da linguagem, exemplo prático e custo/limitações. Quando útil, incluir repertório breve das operações e da sintaxe relevantes, conforme essa seção, sem catálogo de API. Registrar fontes/recortes e distinguir garantias de modelos e simplificações. A consulta à documentação pode fundamentar a aula sem se tornar leitura sequencial obrigatória.
+Preservar o contato direto com o livro. A aula autoral é a passagem que desenvolve as conexões, esclarece os mecanismos e leva o assunto ao código; não é apenas um resumo nem uma substituição automática da leitura. Identificar o que a fonte já explica bem e quais saltos precisam de mediação. Dar espaço para a tentativa de compreensão independente; a aula seguinte deve esclarecer o que ficou abstrato e conectar ao repertório do aluno, sem recontar indiscriminadamente o livro.
 
-O capítulo 10 é referência de navegação, recortes e prática intercalada. Seus questionários extensos e trechos densos não são um modelo a reproduzir.
+Na pesquisa de videoaulas, verificar primeiro **CS50/Harvard**, depois MIT OCW ou outra fonte acadêmica quando mais adequada. Procurar a edição mais atual disponível sobre o assunto e conferir o ano real da gravação; uma página atual pode reutilizar vídeo antigo. Indicar link oficial e trechos pertinentes, com timestamps verificados. Ao escolher uma aula anterior, explicar brevemente a adequação em relação à alternativa mais recente. Conteúdos futuros que apareçam no vídeo não se tornam pré-requisitos do capítulo.
 
-## 4. Escrever atividades diretas
+Documentação oficial e MDN complementam o comportamento e as APIs da linguagem; não viram leitura sequencial de um catálogo de métodos. Fontes em C, Python ou pseudocódigo exigem tradução didática: não transportar automaticamente seus modelos de custo para TypeScript.
 
-Apresentar atividades pequenas, com objetivo claro, poucas perguntas e apenas os dados e restrições necessários. Favorecer implementação/experimentação; pedir breve justificativa e análise de tempo/espaço quando acrescentarem aprendizagem. Trade-offs e perguntas extras entram apenas para explorar um ponto relevante.
+Registrar junto à aula somente as fontes usadas, seções e links verificáveis. No guia, informar livro/edição, foco e limite de leitura, com páginas conferidas. Não produzir relatórios separados de curadoria.
 
-Não criar automaticamente Parte A + Parte B nem esconder várias perguntas em um único item. O aluno não precisa descrever cada detalhe do código. O professor verifica correção, limites e competências no conjunto das evidências; pede esclarecimento apenas onde houver dúvida real.
+## Desenvolvimento do assunto
 
-Preservar o percurso: modelagem manual/pseudocódigo → primeira solução correta com o repertório atual → testes/debugging → análise → melhoria possível. Força bruta é válida como ponto de partida. Guardar tentativas para revisitar depois de ensinar novas ferramentas, sem antecipar a solução ótima.
+Seguir uma progressão que faça sentido para o tema:
 
-Nos labs, fornecer procedimento e limites seguros; pedir observação e explicação focadas no conceito. No debugging, conferir a causa, a correção e um teste que revele a falha, sem exigir um formulário. Consulta à documentação não precisa gerar relatório a cada uso.
+**conhecido → problema → conceito e mecanismo → modelo mental → TypeScript → exemplo/experimento → custo e limitações → aplicação.**
 
-Permitir entregas parciais e feedback durante o percurso. Não exigir respostas retrospectivas para cada subitem quando já houver evidência equivalente. Uma variação curta só é necessária quando uma competência essencial permanecer incerta. Preservar os quatro capstones, sem provas/checkpoints automáticos.
+Partir de uma situação concreta ou código já apresentado, mudar uma coisa por vez e explicar entrada, saída e estado quando necessário. Mostrar por que a ferramenta existe antes de enumerar sua API. Voltar ao problema inicial para mostrar o que o novo conceito permite compreender ou resolver.
 
-## 5. Revisar como professor e como leitor
+Preservar fundamentos de Ciência da Computação e o raciocínio transferível entre linguagens. Priorizar o que ajuda Gabriel a implementar, escolher ferramentas, testar, depurar e analisar tempo e espaço. Aprofundar mecanismos que melhoram essas decisões; provas extensas e formalismo de baixo retorno podem ficar opcionais. Explicar por que funciona e sob quais condições, sem transformar o curso em catálogo de APIs nem importar todos os pré-requisitos acadêmicos do livro.
 
-Conferir antes de integrar:
+Fazer explicitamente a tradução para o código que o aluno escreverá. Por exemplo, após hashing e colisões, apresentar `Set` e `Map` como abstrações disponíveis em TypeScript/JavaScript, distinguindo o modelo de implementação das garantias da linguagem. Quando pertinente, incluir repertório breve de criação, operações e iteração, com exemplos pequenos; não apresentar uma documentação completa da API.
 
-- **Profundidade:** há prática suficiente e compreensão dos mecanismos? Formalismo de baixo retorno está opcional, sem reduzir o percurso a sintaxe/API?
-- **Integração didática:** o aluno consegue ligar conceito e mecanismo ao código que escreverá? As abstrações relevantes da linguagem e o repertório mínimo de uso aparecem em exemplos, sem repetir as fontes?
-- **Custo das abstrações:** o trabalho e a memória por trás das operações prontas estão ligados à análise de complexidade quando relevante, com hipóteses e limitações claras?
-- **Conteúdo:** a prática cobre as competências e cobra apenas conhecimentos disponíveis? As fontes e adaptações foram verificadas?
-- **Compreensão:** Gabriel consegue acompanhar cada trecho com o que já sabe? Há termos sem explicação, saltos de raciocínio ou conceitos demais numa frase?
-- **Ação e esforço:** fica claro o que fazer em seguida? Cada atividade acrescenta prática ou apenas volume para cobrir tópicos? Há subdivisões ou perguntas dispensáveis? Código, conversa e experimentação já respondem a parte da cobrança?
-- **Autonomia:** as orientações ajudam a entender o problema sem entregar sua solução? Os apoios e as retomadas entram no momento adequado?
+Sintaxe concisa também realiza trabalho: em `palavra.split("").sort().join("")`, explicar o custo de separar, ordenar e reunir, incluindo memória intermediária. Ligar operações prontas à análise de tempo e espaço; declarar tamanho da entrada, hipóteses e limitações relevantes, sem prometer complexidades não garantidas pela linguagem.
 
-Validar os exemplos executáveis pertinentes, os casos de borda e os links. Identificar código intencionalmente incorreto. Não executar todos os trabalhos antigos por uma mudança documental.
+Usar TypeScript idiomático, tipos precisos e exemplos executáveis. Explicar a sintaxe auxiliar necessária de C, SQL ou outras linguagens no próprio contexto, sem abrir cursos paralelos. Não acumular sintaxe futura e contexto profissional desconhecido no mesmo exemplo.
 
-## 6. Integrar e registrar
+Escrever uma ideia por vez, definir termos no primeiro uso e conectar as frases. Clareza pode exigir mais explicação; evitar tanto a prolixidade quanto a compressão em listas de termos. Diagramas e rastreamentos entram quando ajudam a compreender.
 
-Integrar guia, aulas, complementos, enunciados e recortes ao catálogo do leitor. Conferir páginas, âncoras, retorno ao guia e exclusão de respostas/correções/gabaritos. Preservar rotas, tema e visualizador existentes. Se o leitor mudar, executar typecheck, lint e build e conferir home/rota pertinente.
+## Exercícios somente quando necessários
 
-Atualizar estado e progresso quando houver avanço real. Nas notas, manter só decisões de curadoria e retomadas ainda úteis. Remover dificuldades superadas, pendências resolvidas e relatos sem uso atual; não criar arquivo histórico substituto. Atualizar no lugar, sem duplicar registros entre os documentos. Preservar materiais dos capítulos, diário, tentativas e resultados originais.
+Adicionar uma atividade apenas quando ela permitir experimentar ou compreender algo específico que a aula e seus exemplos não resolvam bem. Um capítulo pode não ter lista de exercícios. Não gerar baterias para cobrir formalmente cada tópico, quotas, provas, checkpoints ou planos de revisão obrigatórios.
 
-Distinguir material criado, estudo relatado, prática avaliada e publicação confirmada. Publicar somente no escopo autorizado, preservando projeto, URL e acesso conforme AGENTS.
+Preferir uma tarefa pequena, com objetivo claro, dados e restrições suficientes. Evitar partes A/B, muitas subperguntas e relatórios; pedir justificativa ou análise de custo somente quando acrescentarem aprendizagem. Não entregar decomposição ou solução no enunciado. Se adaptar uma questão, conferir o original e identificar fonte e adaptações.
 
-## Delegação proporcional
+Em labs, fornecer procedimento e ambiente isolado, com encerramento seguro. Não usar dados reais ou infraestrutura compartilhada para experimentos didáticos. Respostas e soluções são produzidas pelo aluno, não antecipadas pelos agentes.
 
-Usar subagentes apenas no escopo autorizado pelo AGENTS e quando houver trabalho independente útil. Todos recebem as mesmas competências, conhecimentos e limites. Curadoria e seleção de prática podem ocorrer em paralelo; a revisão final considera o guia integrado. O professor principal confere as recomendações e resolve divergências. Se houver edição paralela, definir arquivos exclusivos antes de começar.
+## Organização e integração
+
+O `README.md` do capítulo é o **Guia de estudo**: objetivo breve, links diretos, limites de leitura e próxima ação. Conectar vídeo, leitura delimitada e aula correspondente, com experimentos no ponto útil; não obrigar a consumir toda a teoria antes de ver código.
+
+- `01-leituras-do-livro/`: recortes PDF autorizados e respectivos metadados JSON.
+- `02-aulas-do-curso/`: aulas por assunto, reunindo explicação, TypeScript, exemplos e fontes.
+- `03-pratica/atividades.md`: somente quando houver necessidade de exercícios.
+
+Criar apenas arquivos necessários, sem pastas vazias. Não impor divisão entre teoria, sintaxe e exemplos nem quantidade fixa de aulas. Preservar os caminhos dos capítulos antigos. Complementos pontuais podem usar `notas.md`; o conteúdo principal pertence às aulas.
+
+Recortes mantêm páginas completas. Conferir páginas impressas, posições no PDF original e conteúdo; o guia delimita o que estudar dentro delas. Links `nome.pdf#page=N` contam a página dentro do recorte, a partir de 1, enquanto o texto mostra a página impressa. Seguir [leitor/README.md](../leitor/README.md) para metadados, catálogo, âncoras e integração, mantendo respostas e correções fora do leitor.
+
+## Revisão antes da entrega
+
+Conferir se o leitor consegue compreender o conceito, visualizar seu uso em código e reconhecer as abstrações relevantes e seus custos. Remover repetições e atividades que só aumentem o volume. Verificar se os pré-requisitos e a sintaxe foram apresentados, se a seleção do livro foi inspecionada e se os limites de vídeo e leitura estão claros. A aula precisa desenvolver o assunto e mostrar sua utilidade, sem apenas resumir as fontes.
+
+Validar exemplos executáveis, saídas, casos de borda relevantes e links locais/externos usados; identificar exemplos intencionalmente incorretos. Conferir o percurso e a entrada dos materiais no catálogo. Não executar todos os trabalhos antigos por uma alteração documental. Se mudar o leitor, seguir suas verificações técnicas.
+
+Entregar um relato curto dos materiais alterados e das verificações ou limitações. Não gerar arquivos de progresso, perfil, histórico, auditoria ou acompanhamento. Publicação é uma ação separada, conforme o escopo autorizado.

@@ -14,7 +14,7 @@ Uma **única ementa sequencial**, com blocos estudados um após o outro. TypeScr
 
 **Fase inicial:** fundamentos de programação usando TypeScript (00–09). **Fase atual:** expansão para currículo de Ciência da Computação e Engenharia de Software (a partir de 10). Os materiais e trabalhos antigos mantêm seus nomes, caminhos e regras históricas. Nenhuma atividade futura representa avanço já realizado.
 
-O aluno relata ter terminado o capítulo 09. No repositório, a lista está aprovada; há respostas da prova, mas não há resultado formal e a questão 08 está incompleta no arquivo salvo. Registrar como praticamente concluído, com fechamento formal pendente, sem inventar nota. O 10 está concluído; a atividade atual do 11 está em `.context/estado-atual.md`.
+O aluno relata ter terminado o capítulo 09. No repositório, a lista está aprovada; há respostas da prova, mas não há resultado formal e a questão 08 está incompleta no arquivo salvo. Registrar como praticamente concluído, com fechamento formal pendente, sem inventar nota. O 10 está concluído; os materiais do 11 estão em [seu guia de estudo](11-set-map-e-hashing/README.md).
 
 ## Como percorrer
 
@@ -46,7 +46,7 @@ Os intervalos abaixo são o planejamento vigente, ajustável conforme desempenho
 
 ## Base preservada — capítulos 00–09
 
-Conteúdo da fase inicial mantido abaixo. Capítulos 00–08 têm aprovação registrada; o 09 tem prática aprovada e fechamento formal pendente. As notas estão em [PROGRESSO.md](PROGRESSO.md). Referências dos READMEs antigos ao antigo capítulo 10 (Tuples) e à metodologia anterior são históricas; a sequência futura é a desta ementa.
+Conteúdo da fase inicial mantido abaixo. Capítulos 00–08 têm aprovação registrada; o 09 tem prática aprovada e fechamento formal pendente. As notas originais permanecem nos resultados das avaliações de cada capítulo. Referências dos READMEs antigos ao antigo capítulo 10 (Tuples) e à metodologia anterior são históricas; a sequência futura é a desta ementa.
 
 ### Capítulo 00 - Preparação do Ambiente
 - O que é programação

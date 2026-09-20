@@ -5,7 +5,7 @@
 - Crie um arquivo separado para cada exercício: `ex01.ts`, `ex02.ts`, etc.
 - Salve os arquivos na pasta `exercicios/solucoes/`
 - Execute cada arquivo para verificar se funciona
-- Anote dúvidas que surgirem no DIARIO.md
+- Anote dúvidas que surgirem nas suas anotações pessoais
 
 ---
 
@@ -375,13 +375,13 @@ Antes de considerar o capítulo completo, verifique:
 - [x] Exercício 3.3 - Estrutura de pastas criada
 - [x] Todos os arquivos .ts compilam sem erros
 - [x] Todos os arquivos .js executam corretamente
-- [x] Dúvidas anotadas no DIARIO.md
+- [x] Dúvidas anotadas nas suas anotações pessoais
 
 ---
 
 ## Reflexão Final
 
-Depois de completar os exercícios, responda no seu DIARIO.md:
+Depois de completar os exercícios, responda nas suas anotações pessoais:
 
 1. **O que foi mais fácil?** (instalação, compilação, correção de erros?)
 2. **O que foi mais difícil?** (entender erros, lembrar comandos?)
