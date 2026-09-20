@@ -71,7 +71,7 @@ Consultar as evidências atuais para escolher uma âncora realmente conhecida; n
 
 Variar contextos (cotidiano, software, jogos, negócios, engenharia) conforme utilidade. Usar texto curto e diagramas quando ajudam. Não empilhar sintaxe futura e contexto profissional desconhecido em uma mesma explicação.
 
-## Fontes, aula autoral e prática — 2026-09-16
+## Fontes, aula autoral e prática — 2026-09-20
 
 **Fonte:** em qual conhecimento confiável este capítulo está baseado? **Aula:** qual é a melhor maneira de ensinar esse conhecimento para Gabriel neste momento? Uma fonte rigorosa pode exigir uma mediação didática que ela própria não oferece. O professor faz curadoria e trabalho pedagógico; não inventa fundamentos nem terceiriza todo o ensino às referências.
 
@@ -91,7 +91,11 @@ Antes de escrever, identificar conhecimentos e experiências disponíveis, o que
 
 A aula não resume todas as fontes. Desenvolve uma progressão: **conceito conhecido → pequena mudança → novo problema → nova ferramenta → consequência → próximo problema**. Explicar por que algo existe antes de enumerar sua API; não despejar definições simultâneas. Reconstruir extensamente só o que precisa de mediação, preservando o que já foi compreendido.
 
-Fazer explicitamente a ponte **conceito independente de linguagem → funcionamento → TypeScript → uso em software**. Fontes em C, pseudocódigo ou outras linguagens continuam válidas; não transferir repetidamente ao aluno toda a tradução. Ensinar a sintaxe mínima necessária no contexto, sem antecipar cursos de classes ou generics.
+Fazer explicitamente a ponte **conceito e mecanismo → modelo mental → abstração oferecida por TypeScript/JavaScript → exemplo e experimentação → custo/limitações → aplicação em software**. Preservar os fundamentos de Ciência da Computação e mostrar como aparecem no código que o aluno escreverá. Fontes em C, pseudocódigo ou outras linguagens continuam válidas; não transferir repetidamente ao aluno toda a tradução. Por exemplo, após hashing e colisões, mostrar como `Set` e `Map` abstraem esses mecanismos no uso cotidiano, distinguindo o modelo estudado das garantias da linguagem.
+
+Quando pertinente, incluir uma pequena seção ou leitura de repertório prático ligada ao assunto, integrada à aula ou indicada no guia. Apresentar apenas a sintaxe e as operações úteis, com exemplos pequenos que conectem uso e teoria, sem catálogo completo da API nem uma divisão obrigatória de arquivos. Para Set/Map, isso pode incluir criação, `add`, `has`, `get`, `set`, `delete` e iteração, conforme a coleção. Ensinar a sintaxe mínima necessária no contexto, sem antecipar cursos de classes ou generics.
+
+Explicitar o trabalho por trás das ferramentas prontas quando relevante: concisão sintática não elimina custo computacional. Em `palavra.split("").sort().join("")`, por exemplo, examinar o trabalho de separar, ordenar e reunir os elementos, além da memória intermediária. Conectar essas operações ao Big O já estudado, deixando claras as hipóteses de implementação e os limites pertinentes; não deduzir custo constante da ausência de loops visíveis nem atribuir à linguagem uma complexidade que ela não garante.
 
 Cada aula autoral registra fontes e recortes usados, com links e seções verificadas, sem aparato acadêmico excessivo. Distinguir, quando afetar decisões, modelo conceitual, implementação comum e garantia da especificação. Declarar simplificações pedagógicas e hipóteses de custo. Justificativas de curadoria ficam no contexto docente; a rastreabilidade do conteúdo fica junto da aula.
 
@@ -173,7 +177,7 @@ Linguagens/teoria combinam PROG e MATH; distribuídos combinam SYS, NET, DATA e 
 
 ## Prática, debugging e autonomia
 
-Atividades devem ser enxutas: resolver/implementar, explicar brevemente por que funciona, analisar tempo e espaço e registrar limitação/trade-off/melhoria somente quando pertinente. Esse roteiro é flexível, não um formulário obrigatório. Pedir menos perguntas de fato, não apenas condensar várias cobranças numa única frase. Uma entrega curta, comentários no código ou uma explicação na conversa podem fornecer evidência suficiente. Perguntas adicionais precisam explorar um conceito específico; não criar automaticamente Parte A + Parte B ou repetir a mesma análise de Big O em várias formulações. A dificuldade deve estar no conteúdo e na resolução, não no volume de documentação.
+Na criação dos próximos materiais, priorizar atividades pequenas, com objetivo claro e poucas perguntas. Evitar muitas subdivisões e questões conceituais acumuladas no mesmo exercício; não criar atividades apenas para cobrir formalmente cada tópico da aula. Resolver/implementar é o foco; justificativa, análise de tempo/espaço e discussão de limitações entram quando acrescentam aprendizagem. Esse roteiro é flexível, não um formulário obrigatório. Pedir menos perguntas de fato, não apenas condensar várias cobranças numa única frase. Uma entrega curta, comentários no código ou uma explicação na conversa podem fornecer evidência suficiente. Perguntas adicionais precisam explorar um conceito específico; não criar automaticamente Parte A + Parte B ou repetir a mesma análise de Big O em várias formulações. A dificuldade deve estar no conteúdo e na resolução, não no volume de documentação.
 
 Avaliar o conjunto de respostas, código, experimentação, debugging, análises e prática pertinente; distinguir evidência inspecionada de relato. Não exigir correspondência textual para cada subpergunta quando a competência já estiver demonstrada, nem reconstrução retrospectiva de tentativas ausentes. Consolidação e desafio não bloqueiam avanço sem lacuna essencial identificada.
 
@@ -181,11 +185,11 @@ Quando faltar a técnica otimizada, preservar o percurso: modelagem manual/pseud
 
 ### Seleção e acompanhamento
 
-Priorizar exercícios adequados do MIT, CS50 e livro-âncora; complementar com LeetCode e labs. A adequação aos conhecimentos atuais prevalece sobre a origem. Em sistemas, runtime, redes, bancos, ferramentas e distribuídos, labs podem ser a primeira escolha. Criar exercícios próprios apenas quando houver lacuna pedagógica identificável.
+Priorizar exercícios adequados do MIT, CS50 e livro-âncora; complementar com LeetCode e labs. A adequação aos conhecimentos atuais prevalece sobre a origem. Em sistemas, runtime, redes, bancos, ferramentas e distribuídos, labs podem ser a primeira escolha. Criar exercícios próprios principalmente para experimentar um aspecto específico do conteúdo ou do TypeScript que as referências não atendam bem. A prática principal de programação pode ocorrer posteriormente em problemas reais e exercícios externos, como LeetCode; o material do capítulo não precisa produzir uma bateria própria extensa nem esgotar essa prática.
 
 Inspecionar o enunciado completo e seus pré-requisitos antes de selecionar. Não importar listas inteiras nem assumir que uma atividade introdutória no MIT é inicial para Gabriel. Adaptações para TypeScript devem preservar o objetivo e as restrições essenciais; registrar fonte, identificação da questão e o que foi adaptado. Preferir apontar para o original, com orientações próprias; não copiar extensamente livros ou disponibilizar gabaritos junto aos enunciados.
 
-Usar **8–15 atividades como faixa inicial total, incluindo LeetCode, labs e revisões**, sem obrigação de atingir o número. Considerar esforço e subitens: um problem set extenso não equivale a uma tarefa curta. Organizar em:
+Dimensionar a prática pelo objetivo e pelo esforço real, sem faixa numérica inicial ou quota por capítulo. Considerar juntos exercícios próprios, externos, labs, revisões e seus subitens; um problem set extenso não equivale a uma tarefa curta. Organizar em:
 
 - **Essenciais:** percurso padrão que cobre as competências centrais; ajustar quando já houver evidência equivalente.
 - **Consolidação:** prática adicional acionada por insegurança, dificuldade ou solicitação.
@@ -201,7 +205,7 @@ Evolução transversal: **escrever → testar → debugar → ler → refatorar 
 
 ## LeetCode e laboratórios
 
-LeetCode integra oficialmente DSA quando a plataforma for adequada: arrays, strings, hashing, stacks, queues, busca binária, listas, árvores, heaps, grafos e padrões. Selecionar normalmente cerca de 3–6 problemas quando houver correspondência, dentro da faixa total de prática, sem quota fixa. Reanálises de tentativas anteriores contam; não acrescentar problemas apenas para preencher a faixa. Usar progressão de aquecimento, aplicação, problema menos óbvio, revisão e desafio quando útil, sem obrigar todas as etapas. Preferir poucos problemas explorados profundamente. `Accepted` sozinho não prova domínio. Avaliar o código e a análise disponíveis; pedir esclarecimento ou uma variação curta sem solução pronta somente se uma competência essencial continuar incerta.
+LeetCode integra oficialmente DSA quando a plataforma for adequada: arrays, strings, hashing, stacks, queues, busca binária, listas, árvores, heaps, grafos e padrões. Selecionar poucos problemas conforme a competência e a necessidade atual, podendo ampliar a prática posteriormente. Reanálises de tentativas anteriores contam; não acrescentar problemas apenas para preencher uma lista. Usar progressão de aquecimento, aplicação, problema menos óbvio, revisão e desafio quando útil, sem obrigar todas as etapas. Preferir poucos problemas explorados profundamente. `Accepted` sozinho não prova domínio. Avaliar o código e a análise disponíveis; pedir esclarecimento ou uma variação curta sem solução pronta somente se uma competência essencial continuar incerta.
 
 Para problemas com evolução de tentativas, usar como roteiro flexível: primeira ideia → solução inicial → complexidade → problema encontrado → conhecimento novo → solução revisada → complexidade final → aprendizado. Guardar tentativas do aluno em `pratica/solucoes/`, sem substituí-las pela resposta do professor. Reapresentar Two Sum e Contains Duplicate após Big O/Set/Map e mais tarde sem anunciar a estrutura útil; Best Time to Buy and Sell Stock também pode ser retomado. Ajustar a extensão do registro ao trabalho: uma questão curta pode pedir apenas resposta e justificativa, sem oito campos obrigatórios.
 
@@ -301,7 +305,7 @@ Frontend/backend, cloud, DevOps, segurança, DDD, design patterns e IA/RAG/agent
 1. Ler contexto e identificar capítulo, área, âncora, pré-requisitos e competências esperadas, preservando a sequência.
 2. Curar vídeo, leitura e atividades do capítulo; conferir fontes, recortes e adequação antes de apresentá-los como seleção final.
 3. Montar o README com um percurso essencial claro, prática selecionada, revisão integrada e aulas autorais fundamentadas e personalizadas conforme a seção metodológica, sem reescrever indiscriminadamente as fontes.
-4. Conferir cobertura das competências, esforço total, autonomia e ajuda gradual. Aplicar a revisão de linguagem acima e remover cobranças redundantes, inclusive perguntas embutidas na mesma frase. Não exigir conteúdo ausente nas fontes ou nos apoios; distinguir revisão de duplicação e prévia de pré-requisito.
+4. Conferir se o material permite compreender o conceito, visualizar seu uso em código e reconhecer as abstrações relevantes do TypeScript/JavaScript e seus custos. Conferir competências, esforço total, autonomia e ajuda gradual: cada atividade acrescenta prática ou apenas volume? Aplicar a revisão de linguagem acima e remover cobranças redundantes, inclusive perguntas embutidas na mesma frase. Não exigir conteúdo ausente nas fontes ou nos apoios; distinguir revisão de duplicação e prévia de pré-requisito.
 5. Validar exemplos executáveis, entradas/saídas, casos de borda e links; exemplos intencionalmente incorretos devem estar identificados. Não rodar todos os trabalhos antigos para validar documentação nova.
 6. Integrar os enunciados no catálogo do `leitor/`, preservando rotas antigas e exclusões de respostas/correções/gabaritos. Conferir também avaliações de bloco e capstones quando criados.
 7. Se o leitor mudar, executar `npm run typecheck`, `npm run lint` e `npm run build` em `leitor/`; conferir home e rota relevante. Não alterar dependências nem hospedagem para uma mudança curricular sem necessidade.
@@ -309,4 +313,4 @@ Frontend/backend, cloud, DevOps, segurança, DDD, design patterns e IA/RAG/agent
 
 Ao gerar e publicar um novo capítulo, reutilizar o projeto indicado por `leitor/.openai/hosting.json`, preservar URL e acesso e confirmar publicação antes de registrá-la. Para alterações documentais, publicar somente dentro do escopo autorizado; respeitar confirmações exigidas para sistemas compartilhados e escritas externas.
 
-*Diretrizes vigentes desde 2026-09-09; curadoria adotada em 2026-09-10; fontes + aula autoral + prática adotadas em 2026-09-16.*
+*Diretrizes vigentes desde 2026-09-09; curadoria adotada em 2026-09-10; fontes + aula autoral + prática adotadas em 2026-09-16; prática enxuta e ponte teoria–TypeScript reforçadas em 2026-09-20 para os próximos materiais.*

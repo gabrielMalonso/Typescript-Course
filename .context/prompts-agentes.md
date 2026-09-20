@@ -1,6 +1,6 @@
 # Roteiro de criação de capítulos por curadoria
 
-Atualizado em 2026-09-16. [AGENTS.md](../AGENTS.md) define a metodologia; [EMENTA.md](../EMENTA.md) define conteúdo e sequência. Este roteiro organiza o trabalho do professor. Não é uma lista de tarefas ou de perguntas para o aluno.
+Atualizado em 2026-09-20. [AGENTS.md](../AGENTS.md) define a metodologia; [EMENTA.md](../EMENTA.md) define conteúdo e sequência. Este roteiro organiza o trabalho do professor. Não é uma lista de tarefas ou de perguntas para o aluno.
 
 ## 1. Situar o capítulo
 
@@ -16,7 +16,7 @@ Em DSA, usar CLRS 3ª edição como livro-âncora e o mapa de leituras do MIT co
 
 Selecionar exercícios do livro, MIT ou CS50 conforme adequação, com LeetCode/labs quando pertinentes. Conferir o enunciado completo, o esforço e os conhecimentos exigidos. Registrar fonte e adaptações para TypeScript, preservando o objetivo e as restrições. Não incluir soluções junto aos enunciados.
 
-As faixas de atividades do AGENTS são referências flexíveis, não metas. Contar o esforço dos subitens e incluir revisões e LeetCodes no total. Essenciais cobrem as competências; consolidação atende dificuldades; desafio é opcional.
+Dimensionar a prática sem quota, pelo objetivo e esforço, incluindo subitens, revisões e LeetCodes. Não gerar uma bateria própria para cobrir cada tópico: reservar exercícios próprios a experimentos específicos do conteúdo/TypeScript. A prática principal pode continuar posteriormente com problemas reais e externos. Essenciais atendem às competências centrais; consolidação atende dificuldades; desafio é opcional.
 
 ## 3. Montar o percurso do aluno
 
@@ -24,13 +24,13 @@ Usar `README.md`, apresentado como **Guia de estudo**, para conectar fontes, aul
 
 Informar livro/edição uma vez; delimitar seções, páginas e o foco de cada leitura. Usar a organização de referência do AGENTS: leituras do livro em `01-leituras-do-livro/`, aulas por assunto em `02-aulas-do-curso/` e prática em `03-pratica/`, costuradas pelo guia. Usar PDFs com metadados conforme `leitor/README.md`; nos links, `#page=N` é a página dentro do recorte, a partir de 1. Só criar links para arquivos existentes.
 
-Planejar e escrever a aula conforme “Fontes, aula autoral e prática” do AGENTS: identificar as pontes e lacunas atuais, construir a progressão e concretizá-la em TypeScript. Registrar fontes/recortes e distinguir garantias de modelos e simplificações. A consulta à documentação pode fundamentar a aula sem se tornar leitura sequencial obrigatória.
+Planejar e escrever a aula conforme “Fontes, aula autoral e prática” do AGENTS: identificar as pontes e lacunas atuais e conectar conceito/mecanismo, modelo mental, abstração da linguagem, exemplo prático e custo/limitações. Quando útil, incluir repertório breve das operações e da sintaxe relevantes, conforme essa seção, sem catálogo de API. Registrar fontes/recortes e distinguir garantias de modelos e simplificações. A consulta à documentação pode fundamentar a aula sem se tornar leitura sequencial obrigatória.
 
 O capítulo 10 é referência de navegação, recortes e prática intercalada. Seus questionários extensos e trechos densos não são um modelo a reproduzir.
 
 ## 4. Escrever atividades diretas
 
-Apresentar o problema com os dados e as restrições necessários. Favorecer implementação/experimentação, breve justificativa e análise de tempo/espaço quando pertinente. Trade-offs e perguntas extras entram apenas para explorar um ponto relevante.
+Apresentar atividades pequenas, com objetivo claro, poucas perguntas e apenas os dados e restrições necessários. Favorecer implementação/experimentação; pedir breve justificativa e análise de tempo/espaço quando acrescentarem aprendizagem. Trade-offs e perguntas extras entram apenas para explorar um ponto relevante.
 
 Não criar automaticamente Parte A + Parte B nem esconder várias perguntas em um único item. O aluno não precisa descrever cada detalhe do código. O professor verifica correção, limites e competências no conjunto das evidências; pede esclarecimento apenas onde houver dúvida real.
 
@@ -45,10 +45,11 @@ Permitir entregas parciais e feedback durante o percurso. Não exigir respostas 
 Conferir antes de integrar:
 
 - **Profundidade:** há prática suficiente e compreensão dos mecanismos? Formalismo de baixo retorno está opcional, sem reduzir o percurso a sintaxe/API?
-- **Integração didática:** o contato com fontes, a reconstrução personalizada e a ponte explícita para TypeScript se complementam sem repetição desnecessária?
+- **Integração didática:** o aluno consegue ligar conceito e mecanismo ao código que escreverá? As abstrações relevantes da linguagem e o repertório mínimo de uso aparecem em exemplos, sem repetir as fontes?
+- **Custo das abstrações:** o trabalho e a memória por trás das operações prontas estão ligados à análise de complexidade quando relevante, com hipóteses e limitações claras?
 - **Conteúdo:** a prática cobre as competências e cobra apenas conhecimentos disponíveis? As fontes e adaptações foram verificadas?
 - **Compreensão:** Gabriel consegue acompanhar cada trecho com o que já sabe? Há termos sem explicação, saltos de raciocínio ou conceitos demais numa frase?
-- **Ação e esforço:** fica claro o que fazer em seguida? Cada pergunta acrescenta algo necessário? Código, conversa e experimentação já respondem a parte da cobrança?
+- **Ação e esforço:** fica claro o que fazer em seguida? Cada atividade acrescenta prática ou apenas volume para cobrir tópicos? Há subdivisões ou perguntas dispensáveis? Código, conversa e experimentação já respondem a parte da cobrança?
 - **Autonomia:** as orientações ajudam a entender o problema sem entregar sua solução? Os apoios e as retomadas entram no momento adequado?
 
 Validar os exemplos executáveis pertinentes, os casos de borda e os links. Identificar código intencionalmente incorreto. Não executar todos os trabalhos antigos por uma mudança documental.
