@@ -44,5 +44,10 @@ export const readings = [
     "slug": "11-set-map-e-hashing/leituras/clrs-11.2",
     "id": "11-set-map-e-hashing/leituras/clrs-11.2@8f3a2bdf949c074cf538",
     "pages": 5
+  },
+  {
+    "slug": "12-arrays-e-strings-como-problemas/leituras/clrs-17.4-expansao",
+    "id": "12-arrays-e-strings-como-problemas/leituras/clrs-17.4-expansao@65683d517d48d5188f9f",
+    "pages": 3
   }
 ] as const
