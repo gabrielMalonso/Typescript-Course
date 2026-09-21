@@ -54,6 +54,10 @@ Apresentar apenas o repertório de sintaxe necessário ou imediatamente útil. N
 
 Usar TypeScript idiomático, tipos precisos, exemplos executáveis e explicações progressivas. Diagramas e rastreamentos entram quando melhorarem a compreensão.
 
+Preste atenção na didática. Entenda que está falando com um aluno, que está no nível dessa aula. Portanto, atentar-se à linguagem, evitando frases demasiadamente complexas carregadas de muito contexto acumulado.
+
+Ao explicar algo novo, pode ser interessante partir de um conhecimento prévio, adicionando a parte nova, ao invés de só despejar o novo conteúdo no aluno.
+
 ## 4. Prática
 
 Atividades próprias são opcionais.
