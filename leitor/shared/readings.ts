@@ -49,5 +49,10 @@ export const readings = [
     "slug": "12-arrays-e-strings-como-problemas/leituras/clrs-17.4-expansao",
     "id": "12-arrays-e-strings-como-problemas/leituras/clrs-17.4-expansao@65683d517d48d5188f9f",
     "pages": 3
+  },
+  {
+    "slug": "13-stack-e-queue/leituras/clrs-10.1",
+    "id": "13-stack-e-queue/leituras/clrs-10.1@fd754761673c027697b2",
+    "pages": 4
   }
 ] as const
