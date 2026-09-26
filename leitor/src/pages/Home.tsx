@@ -22,6 +22,7 @@ export function Home() {
           O capítulo 09 está praticamente concluído, com fechamento formal pendente.
         </p>
         <div className="home-actions">
+          <a className="btn ghost" href="/pad/">Abrir TypeScript Pad</a>
           {firstDoc ? (
             <Link className="btn primary" to={`/ler/${firstDoc.slug}#etapa-3`}>
               Continuar capítulo 11

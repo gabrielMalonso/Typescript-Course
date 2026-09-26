@@ -29,6 +29,11 @@ const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     return withStudyAccess(request, env, async () => {
       const url = new URL(request.url)
+      if (url.pathname === '/pad') return Response.redirect(url.origin + '/pad/' + url.search, 308)
+      if (url.pathname === '/pad/') {
+        const response = await env.ASSETS.fetch(new Request(new URL('/pad/index.html', request.url), request))
+        return new Response(response.body, { status: response.status, headers: { ...Object.fromEntries(response.headers), 'Cache-Control': 'no-cache' } })
+      }
 
       if (url.pathname === '/_vinext/image') {
         const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES]

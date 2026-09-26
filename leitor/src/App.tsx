@@ -3,6 +3,7 @@ import { ThemeProvider } from './theme/ThemeProvider'
 import { Home } from './pages/Home'
 import { Reader } from './pages/Reader'
 import { StudySession } from './auth/StudySession'
+import { PadConnect, PadDevices } from './pages/PadAccount'
 
 export default function App() {
   return (
@@ -17,6 +18,8 @@ export default function App() {
               />
 
               <Route path="/" element={<Home />} />
+              <Route path="/pad/connect" element={<PadConnect />} />
+              <Route path="/pad/dispositivos" element={<PadDevices />} />
               <Route path="/ler/*" element={<Reader />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>

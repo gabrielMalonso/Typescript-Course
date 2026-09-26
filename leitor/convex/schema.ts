@@ -2,6 +2,20 @@ import { defineSchema, defineTable } from 'convex/server'
 import { v } from 'convex/values'
 
 export default defineSchema({
+  padDrafts: defineTable({
+    owner: v.string(),
+    source: v.string(),
+    revision: v.number(),
+    operationId: v.string(),
+    updatedAt: v.number(),
+  }).index('by_owner', ['owner']),
+  padDevices: defineTable({
+    owner: v.string(),
+    tokenHash: v.string(),
+    name: v.string(),
+    expiresAt: v.number(),
+    revoked: v.boolean(),
+  }).index('by_token', ['tokenHash']).index('by_owner', ['owner']),
   images: defineTable({
     owner: v.string(),
     document: v.string(),

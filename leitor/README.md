@@ -23,6 +23,9 @@ Configure os identificadores e segredos conforme o [guia do leitor PDF](src/pdf/
 ## Rotas
 
 - `/` — home, progresso e índice
+- `/pad/` — TypeScript Pad com login opcional
+- `/pad/connect` — conectar o aplicativo Android
+- `/pad/dispositivos` — revogar aparelhos conectados
 - `/ler/:caminho` — leitura (ex.: `/ler/00-preparacao-do-ambiente/aula/01-teoria`)
 
 ## Escalabilidade
@@ -74,3 +77,27 @@ O leitor Markdown e o PDF compartilham `ReaderToolbar` e `ThemeToggle`. O PDF us
 Atualização em 10/09/2026, versão 35 publicada (`succeeded`): barra e tema compartilhados entre Markdown/PDF; cinco recortes CLRS do capítulo 10 disponíveis (20 páginas). Protótipo aprovado por Gabriel; estudo e domínio não concluídos.
 
 Pastas numeradas do capítulo 11 usam caminhos físicos novos; o catálogo normaliza os endereços para manter URLs e IDs de anotações dos PDFs. O registro de leituras aceita ambas as convenções, sem mudar o hash ou criar outro histórico. Livro vem primeiro como regra geral; o guia intercala aula e prática.
+
+
+## TypeScript Pad
+
+Home e sidebar abrem o Pad como aplicação independente no mesmo domínio. O código-fonte
+vem do pacote `vendor/typescript-pad-0.2.0.tgz`, gerado pelo projeto `typescript-pad`;
+`npm run pad:build` compila esse pacote em `public/pad/` antes de `dev` e `build`.
+Não editar o pacote instalado nem manter uma segunda implementação do editor.
+Para atualizar: no projeto Pad, executar `npm pack --pack-destination ../Typescript-Course/leitor/vendor`;
+no leitor, executar `npm install ./vendor/typescript-pad-VERSAO.tgz` e verificar o build.
+
+O editor salva localmente sem login. Com WorkOS, `convex/pad.ts` sincroniza um rascunho
+por proprietário, com revisões e resolução explícita de conflitos. No Android, uma
+credencial aleatória é aprovada em `/pad/connect`, guardada com Android Keystore e
+limitada ao Pad por 30 dias. Somente seu hash fica no banco; contas diferentes não
+podem aprovar aparelhos. A tela de dispositivos permite revogação imediata.
+
+O Worker libera somente o HTML e assets do Pad sem WorkOS; páginas de conta e todo o
+curso continuam protegidos. A barreira privada do Sites permanece e pode exigir a
+entrada na hospedagem antes de abrir a versão web. O APK funciona sem essa barreira
+e sem conexão; usa o navegador somente para aprovar a sincronização.
+
+O código dos exercícios executa em Worker dentro de iframe com origem opaca e rede
+bloqueada, separado do login. Não enviar tokens de conta ao executor.

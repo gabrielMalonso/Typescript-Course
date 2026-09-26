@@ -31,6 +31,11 @@ function loginPage(returnTo: string, failed: boolean) {
 /** Protect requests reaching the Worker. Sites serves static assets behind its own owner-only policy. */
 export async function withStudyAccess(request: Request, env: AuthEnv, next: () => Promise<Response>): Promise<Response> {
   const url = new URL(request.url), headers = new Headers(noStore)
+  // Only the standalone Pad shell is anonymous. Account/device pages and course assets stay private.
+  if ((request.method === 'GET' || request.method === 'HEAD') && (
+    url.pathname === '/pad' || url.pathname === '/pad/' || url.pathname === '/pad/index.html' ||
+    url.pathname === '/pad/icon.svg' || /^\/pad\/assets\/[a-zA-Z0-9_.-]+$/.test(url.pathname)
+  )) return next()
   if (!env.WORKOS_API_KEY || !env.WORKOS_CLIENT_ID || !env.OWNER_WORKOS_USER_ID || !env.STUDY_COOKIE_PASSWORD || env.STUDY_COOKIE_PASSWORD.length < 32) return new Response('Acesso temporariamente indisponível.', { status: 503, headers })
   let workos = clients.get(env.WORKOS_CLIENT_ID)
   if (!workos) { workos = new WorkOS(env.WORKOS_API_KEY, { clientId: env.WORKOS_CLIENT_ID }); clients.set(env.WORKOS_CLIENT_ID, workos) }
@@ -73,6 +78,11 @@ export async function withStudyAccess(request: Request, env: AuthEnv, next: () =
     return redirect('/auth/entrar?returnTo=' + encodeURIComponent(safeReturnTo(url.pathname + url.search)), headers)
   }
   if (url.pathname === '/auth/sessao') return Response.json({ user: { id: auth.user.id }, accessToken: auth.accessToken }, { headers })
+  if (url.pathname === '/auth/pad/sair') {
+    if (request.method !== 'POST') return new Response('Method not allowed', { status: 405, headers })
+    headers.append('Set-Cookie', cookie(request, name, '', 0))
+    return new Response(null, { status: 204, headers })
+  }
   if (url.pathname === '/auth/sair') {
     if (request.method !== 'POST') return new Response('Method not allowed', { status: 405, headers })
     headers.append('Set-Cookie', cookie(request, name, '', 0))

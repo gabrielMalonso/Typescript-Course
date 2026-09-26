@@ -9,10 +9,11 @@
     "lint": "oxlint",
     "preview": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
     "typecheck": "tsc -b",
-    "prebuild": "node scripts/reading-registry.mjs",
-    "predev": "node scripts/reading-registry.mjs",
+    "prebuild": "npm run pad:build && node scripts/reading-registry.mjs",
+    "predev": "npm run pad:build && node scripts/reading-registry.mjs",
     "test": "vitest run",
-    "readings:sync": "node scripts/reading-registry.mjs && convex dev --once"
+    "readings:sync": "node scripts/reading-registry.mjs && convex dev --once",
+    "pad:build": "node scripts/build-pad.mjs"
   },
   "dependencies": {
     "@embedpdf/react-pdf-viewer": "^2.15.0",
@@ -26,7 +27,8 @@
     "react-markdown": "^10.1.0",
     "react-router-dom": "^7.18.1",
     "rehype-highlight": "^7.0.2",
-    "remark-gfm": "^4.0.1"
+    "remark-gfm": "^4.0.1",
+    "typescript-pad": "file:vendor/typescript-pad-0.2.0.tgz"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.37.1",
