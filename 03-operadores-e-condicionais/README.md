@@ -64,7 +64,7 @@ AULA → MINI-PROJETO → 14 EXERCÍCIOS → CORREÇÃO → PROVA
 
 1. Leia os quatro arquivos da aula na ordem.
 2. Faça o mini-projeto sem consultar o código final na primeira tentativa.
-3. Registre seus aprendizados no `DIARIO.md`.
+3. Registre seus aprendizados nas suas anotações pessoais.
 4. Resolva os exercícios em `exercicios/solucoes/`.
 5. Peça a correção antes da prova.
 

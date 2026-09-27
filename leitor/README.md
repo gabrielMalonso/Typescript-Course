@@ -23,9 +23,9 @@ Configure os identificadores e segredos conforme o [guia do leitor PDF](src/pdf/
 ## Rotas
 
 - `/` — home, progresso e índice
-- `/pad/` — TypeScript Pad com login opcional
-- `/pad/connect` — conectar o aplicativo Android
-- `/pad/dispositivos` — revogar aparelhos conectados
+- `/pad/` — TypeScript Pad, com login opcional e rascunho sincronizado
+- `/pad/connect` — confirmação autenticada de um aparelho Android
+- `/pad/dispositivos` — revogação dos aparelhos conectados ao Pad
 - `/ler/:caminho` — leitura (ex.: `/ler/00-preparacao-do-ambiente/aula/01-teoria`)
 
 ## Escalabilidade
@@ -42,9 +42,32 @@ Arquivos sensíveis (`.context/`, `correcoes.md`, `resultado.md`, gabaritos) fic
 
 Atualização em 10/09/2026: piloto por curadoria e leitor PDF noturno publicados na versão 32, com acesso privado e publicação confirmada. A versão 31 acima descreve o histórico anterior.
 
+## TypeScript Pad
+
+Home e sidebar abrem o Pad como aplicação independente no mesmo domínio. O código-fonte
+vem do pacote `vendor/typescript-pad-0.2.0.tgz`, gerado pelo projeto `typescript-pad`;
+`npm run pad:build` compila esse pacote em `public/pad/` antes de `dev` e `build`.
+Não editar o pacote instalado nem manter uma segunda implementação do editor.
+Para atualizar: no projeto Pad, executar `npm pack --pack-destination ../Typescript-Course/leitor/vendor`;
+no leitor, executar `npm install ./vendor/typescript-pad-VERSAO.tgz` e verificar o build.
+
+O editor salva localmente sem login. Com WorkOS, `convex/pad.ts` sincroniza um rascunho
+por proprietário, com revisões e resolução explícita de conflitos. No Android, uma
+credencial aleatória é aprovada em `/pad/connect`, guardada com Android Keystore e
+limitada ao Pad por 30 dias. Somente seu hash fica no banco; contas diferentes não
+podem aprovar aparelhos. A tela de dispositivos permite revogação imediata.
+
+O Worker libera somente o HTML e assets do Pad sem WorkOS; páginas de conta e todo o
+curso continuam protegidos. A barreira privada do Sites permanece e pode exigir a
+entrada na hospedagem antes de abrir a versão web. O APK funciona sem essa barreira
+e sem conexão; usa o navegador somente para aprovar a sincronização.
+
+O código dos exercícios executa em Worker dentro de iframe com origem opaca e rede
+bloqueada, separado do login. Não enviar tokens de conta ao executor.
+
 ## Progresso
 
-Atualize `src/content/progress.json` com base nas evidências de `PROGRESSO.md`: 00–08 e 10 concluídos; 09 em andamento para fechamento formal; 11 em andamento, com fundamentos estudados conforme relato e prática ainda não avaliada. A home aponta para a etapa 3 do guia. Os três recortes do 11 mantêm páginas, caminhos e cadastro existentes; a reformulação muda o percurso, não os PDFs. Preserve o acesso privado. Reformulação do capítulo 11 publicada em 16/09/2026, versão 55, com status `succeeded` confirmado (deployment `appgdep_6aab08a5b1a881918ba24a4bebc2d7fa`). A contagem da home refere-se aos capítulos registrados, não à porcentagem do currículo futuro. Atualize também a indicação de próximo conteúdo na home quando houver avanço.
+O estado exibido na home fica em `src/content/progress.json`. Alterá-lo somente quando solicitado, com base nas entregas ou no relato correspondente; criar uma aula não significa concluir seu estudo. Não manter um registro documental paralelo de progresso.
 
 ## Verificação
 
@@ -77,27 +100,3 @@ O leitor Markdown e o PDF compartilham `ReaderToolbar` e `ThemeToggle`. O PDF us
 Atualização em 10/09/2026, versão 35 publicada (`succeeded`): barra e tema compartilhados entre Markdown/PDF; cinco recortes CLRS do capítulo 10 disponíveis (20 páginas). Protótipo aprovado por Gabriel; estudo e domínio não concluídos.
 
 Pastas numeradas do capítulo 11 usam caminhos físicos novos; o catálogo normaliza os endereços para manter URLs e IDs de anotações dos PDFs. O registro de leituras aceita ambas as convenções, sem mudar o hash ou criar outro histórico. Livro vem primeiro como regra geral; o guia intercala aula e prática.
-
-
-## TypeScript Pad
-
-Home e sidebar abrem o Pad como aplicação independente no mesmo domínio. O código-fonte
-vem do pacote `vendor/typescript-pad-0.2.0.tgz`, gerado pelo projeto `typescript-pad`;
-`npm run pad:build` compila esse pacote em `public/pad/` antes de `dev` e `build`.
-Não editar o pacote instalado nem manter uma segunda implementação do editor.
-Para atualizar: no projeto Pad, executar `npm pack --pack-destination ../Typescript-Course/leitor/vendor`;
-no leitor, executar `npm install ./vendor/typescript-pad-VERSAO.tgz` e verificar o build.
-
-O editor salva localmente sem login. Com WorkOS, `convex/pad.ts` sincroniza um rascunho
-por proprietário, com revisões e resolução explícita de conflitos. No Android, uma
-credencial aleatória é aprovada em `/pad/connect`, guardada com Android Keystore e
-limitada ao Pad por 30 dias. Somente seu hash fica no banco; contas diferentes não
-podem aprovar aparelhos. A tela de dispositivos permite revogação imediata.
-
-O Worker libera somente o HTML e assets do Pad sem WorkOS; páginas de conta e todo o
-curso continuam protegidos. A barreira privada do Sites permanece e pode exigir a
-entrada na hospedagem antes de abrir a versão web. O APK funciona sem essa barreira
-e sem conexão; usa o navegador somente para aprovar a sincronização.
-
-O código dos exercícios executa em Worker dentro de iframe com origem opaca e rede
-bloqueada, separado do login. Não enviar tokens de conta ao executor.

@@ -54,7 +54,7 @@ AULA → MINI-PROJETO → EXERCÍCIOS → CORREÇÃO → PROVA
 
 1. Leia os quatro arquivos da aula na ordem.
 2. Faça o mini-projeto e compare a saída com o modelo.
-3. Registre suas observações no `DIARIO.md`.
+3. Registre suas observações nas suas anotações pessoais.
 4. Resolva `ex01.ts` até `ex10.ts` dentro de `exercicios/solucoes/`.
 5. Peça a correção antes de iniciar a prova.
 
