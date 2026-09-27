@@ -960,3 +960,12 @@ html[data-theme='dark'] .syntax-bracket-4 {
 .markdown-body h2[id], .markdown-body h3[id] { scroll-margin-top: 6rem; }
 
 .session-error { padding:40px; }
+/* Account screens share the course's typography and theme. */
+.pad-account-page { max-width: 720px; margin: 8vh auto; padding: 24px; }
+.pad-account-page h1 { font-size: clamp(28px, 5vw, 42px); }
+.pad-account-page p { line-height: 1.7; }
+.pad-account-page .home-eyebrow { margin-top: 48px; }
+.pad-pair-code { font: 32px monospace; letter-spacing: .15em; }
+.pad-device-list { padding: 0; list-style: none; }
+.pad-device-list li { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 0; border-bottom: 1px solid currentColor; }
+.pad-device-list p { margin: 4px 0 0; font-size: 13px; }

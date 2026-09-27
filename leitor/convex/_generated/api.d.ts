@@ -12,6 +12,7 @@ import type * as access from "../access.js";
 import type * as annotations from "../annotations.js";
 import type * as http from "../http.js";
 import type * as images from "../images.js";
+import type * as pad from "../pad.js";
 
 import type {
   ApiFromModules,
@@ -24,6 +25,7 @@ declare const fullApi: ApiFromModules<{
   annotations: typeof annotations;
   http: typeof http;
   images: typeof images;
+  pad: typeof pad;
 }>;
 
 /**

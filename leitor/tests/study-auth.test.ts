@@ -17,6 +17,22 @@ const origin = 'https://study.example'
 const next = vi.fn(async () => new Response('private content'))
 beforeEach(() => { mocks.identity = 'owner'; mocks.exchange.mockReset(); mocks.authorize.mockClear(); next.mockClear() })
 describe('whole-site authorization', () => {
+  it('serves only the Pad shell anonymously, even without login configuration', async () => {
+    for (const path of ['/pad', '/pad/', '/pad/index.html', '/pad/icon.svg', '/pad/assets/index-ABC.js']) {
+      expect((await withStudyAccess(new Request(origin + path), { ...env, WORKOS_API_KEY: '' }, next)).status).toBe(200)
+    }
+    for (const path of ['/pad/connect?key=abc', '/pad/dispositivos', '/pad/assets/private/book.pdf', '/assets/book.pdf']) {
+      expect((await withStudyAccess(new Request(origin + path), env, next)).status).toBe(401)
+    }
+  })
+  it('logs out of the Pad locally without forcing another login', async () => {
+    const headers = { cookie: '__Host-study-session=valid', 'sec-fetch-site': 'same-origin' }
+    expect((await withStudyAccess(new Request(origin + '/auth/pad/sair', { headers }), env, next)).status).toBe(405)
+    const result = await withStudyAccess(new Request(origin + '/auth/pad/sair', { method: 'POST', headers }), env, next)
+    expect(result.status).toBe(204)
+    expect(result.headers.get('set-cookie')).toContain('Max-Age=0')
+    expect((await withStudyAccess(new Request(origin + '/auth/pad/sair', { method: 'POST', headers: { ...headers, 'sec-fetch-site': 'cross-site' } }), env, next)).status).toBe(403)
+  })
   it('automatically starts AuthKit while preserving the reading destination and avoiding error loops', async () => {
     const response = await withStudyAccess(new Request(origin + '/ler/book?mode=read', { headers: { accept: 'text/html' } }), env, next)
     expect(response.headers.get('location')).toBe('/auth/entrar?returnTo=%2Fler%2Fbook%3Fmode%3Dread')
