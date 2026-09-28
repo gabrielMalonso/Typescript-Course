@@ -54,5 +54,10 @@ export const readings = [
     "slug": "13-stack-e-queue/leituras/clrs-10.1",
     "id": "13-stack-e-queue/leituras/clrs-10.1@fd754761673c027697b2",
     "pages": 4
+  },
+  {
+    "slug": "14-busca-e-ordenacao/leituras/clrs-2.1-insertion-sort",
+    "id": "14-busca-e-ordenacao/leituras/clrs-2.1-insertion-sort@de62042beb97f73a6fa6",
+    "pages": 3
   }
 ] as const

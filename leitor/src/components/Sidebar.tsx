@@ -25,8 +25,15 @@ export function Sidebar({ open, onClose, activeSlug }: SidebarProps) {
             ✕
           </button>
         </div>
-        <TreeShell title="Explorador">
-          <a className="sidebar-home" href="/pad/">↗ TypeScript Pad</a>
+        <TreeShell
+          title="Explorador"
+          footer={(
+            <a className="sidebar-pad-link" href="/pad/">
+              <span>TypeScript Pad</span>
+              <span aria-hidden>↗</span>
+            </a>
+          )}
+        >
           <FileTree nodes={fileTree} activeSlug={activeSlug} onNavigate={onClose} />
         </TreeShell>
       </aside>
