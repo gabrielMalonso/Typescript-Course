@@ -71,7 +71,9 @@ O estado exibido na home fica em `src/content/progress.json`. Alterá-lo somente
 
 ## Verificação
 
-Testes: `npm test` (autorização, sincronização e links de páginas). Após mudanças no leitor, executar `npm run typecheck`, `npm run lint` e `npm run build`. Conferir home e rota pertinente, mantendo as rotas existentes. Publicação requer escopo autorizado e deve reutilizar `leitor/.openai/hosting.json`, URL e acesso existentes.
+Testes: `npm test` (autorização, sincronização e links de páginas). Após mudanças no leitor, executar `npm run typecheck`, `npm run lint` e `npm run build`. Conferir home e rota pertinente, mantendo as rotas existentes.
+
+Antes de publicar, executar `npm run deploy:prepare`. O comando valida e compila o leitor e, por último, sincroniza no Convex o cadastro de PDFs usado para autorizar anotações. Só então publicar o build, reutilizando `leitor/.openai/hosting.json`, a URL e o acesso existentes. Não substituir essa etapa por apenas `npm run build`: o build atualiza o cadastro local, mas não publica as funções do Convex.
 
 ## Leituras PDF
 

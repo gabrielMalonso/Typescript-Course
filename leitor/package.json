@@ -9,6 +9,7 @@
     "lint": "oxlint",
     "preview": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
     "typecheck": "tsc -b",
+    "deploy:prepare": "npm run typecheck && npm run lint && npm run build && npm run readings:sync",
     "prebuild": "npm run pad:build && node scripts/reading-registry.mjs",
     "predev": "npm run pad:build && node scripts/reading-registry.mjs",
     "test": "vitest run",
