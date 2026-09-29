@@ -59,5 +59,10 @@ export const readings = [
     "slug": "14-busca-e-ordenacao/leituras/clrs-2.1-insertion-sort",
     "id": "14-busca-e-ordenacao/leituras/clrs-2.1-insertion-sort@de62042beb97f73a6fa6",
     "pages": 3
+  },
+  {
+    "slug": "15-recursao/leituras/clrs-2.3-merge-sort",
+    "id": "15-recursao/leituras/clrs-2.3-merge-sort@cbe490f38e6da4cb7c50",
+    "pages": 6
   }
 ] as const
