@@ -23,7 +23,7 @@ Configure os identificadores e segredos conforme o [guia do leitor PDF](src/pdf/
 ## Rotas
 
 - `/` — home, progresso e índice
-- `/pad/` — TypeScript Pad, com login opcional e rascunho sincronizado
+- `/pad/` — TypeScript Pad, com login opcional, biblioteca de códigos e rascunho sincronizados
 - `/pad/connect` — confirmação autenticada de um aparelho Android
 - `/pad/dispositivos` — revogação dos aparelhos conectados ao Pad
 - `/ler/:caminho` — leitura (ex.: `/ler/00-preparacao-do-ambiente/aula/01-teoria`)
@@ -51,8 +51,13 @@ Não editar o pacote instalado nem manter uma segunda implementação do editor.
 Para atualizar: no projeto Pad, executar `npm pack --pack-destination ../Typescript-Course/leitor/vendor`;
 no leitor, executar `npm install ./vendor/typescript-pad-VERSAO.tgz` e verificar o build.
 
-O editor salva localmente sem login. Com WorkOS, `convex/pad.ts` sincroniza um rascunho
-por proprietário, com revisões e resolução explícita de conflitos. No Android, uma
+O editor salva localmente sem login. Com WorkOS, `convex/pad.ts` sincroniza a biblioteca
+na tabela `padFiles`, com nome, código, datas e revisão independente por arquivo. A
+assinatura retorna IDs e versões; o conteúdo é buscado apenas quando muda. Alterações
+concorrentes preservam ambas as versões, criando uma cópia de conflito no cliente.
+O rascunho sem nome continua usando `padDrafts` e a resolução explícita de conflitos,
+preservando compatibilidade com versões anteriores. Cada arquivo aceita até 200 mil
+caracteres; a autenticação e a autorização são as mesmas do rascunho. No Android, uma
 credencial aleatória é aprovada em `/pad/connect`, guardada com Android Keystore e
 limitada ao Pad por 30 dias. Somente seu hash fica no banco; contas diferentes não
 podem aprovar aparelhos. A tela de dispositivos permite revogação imediata.

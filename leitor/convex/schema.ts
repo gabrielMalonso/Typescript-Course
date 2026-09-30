@@ -2,6 +2,16 @@ import { defineSchema, defineTable } from 'convex/server'
 import { v } from 'convex/values'
 
 export default defineSchema({
+  padFiles: defineTable({
+    owner: v.string(),
+    fileId: v.string(),
+    name: v.string(),
+    source: v.string(),
+    createdAt: v.number(),
+    updatedAt: v.number(),
+    revision: v.string(),
+    version: v.number(),
+  }).index('by_owner_file', ['owner', 'fileId']),
   padDrafts: defineTable({
     owner: v.string(),
     source: v.string(),

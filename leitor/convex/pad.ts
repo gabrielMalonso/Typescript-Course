@@ -1,6 +1,7 @@
 import { ConvexError, v } from 'convex/values'
 import { mutation, query, type QueryCtx } from './_generated/server'
 import { owner } from './access'
+import type { Doc } from './_generated/dataModel'
 
 const credentials = { deviceToken: v.optional(v.string()) }
 const MAX_SOURCE = 200_000
@@ -60,6 +61,65 @@ export const save = mutation({
     if (existing) await ctx.db.patch(existing._id, record)
     else await ctx.db.insert('padDrafts', record)
     return { status: 'saved' as const, revision }
+  },
+})
+
+const studyFields = {
+  id: v.string(), name: v.string(), source: v.string(),
+  createdAt: v.number(), updatedAt: v.number(), revision: v.string(),
+}
+const publicFile = (file: Doc<'padFiles'>) => ({
+  id: file.fileId, name: file.name, source: file.source,
+  createdAt: file.createdAt, updatedAt: file.updatedAt,
+  revision: file.revision, version: file.version,
+})
+
+// Subscribe to small revision records; download source only for files that changed.
+export const files = query({
+  args: credentials,
+  handler: async (ctx, { deviceToken }) => {
+    const user = await padOwner(ctx, deviceToken)
+    const files = await ctx.db.query('padFiles').withIndex('by_owner_file', q => q.eq('owner', user)).collect()
+    return files.map(file => ({ id: file.fileId, version: file.version }))
+  },
+})
+
+export const file = query({
+  args: { ...credentials, id: v.string() },
+  handler: async (ctx, { deviceToken, id }) => {
+    const user = await padOwner(ctx, deviceToken)
+    const file = await ctx.db.query('padFiles').withIndex('by_owner_file', q => q.eq('owner', user).eq('fileId', id)).unique()
+    return file ? publicFile(file) : null
+  },
+})
+
+export const saveFile = mutation({
+  args: { ...credentials, file: v.object(studyFields), baseVersion: v.number() },
+  handler: async (ctx, { deviceToken, file, baseVersion }) => {
+    const user = await padOwner(ctx, deviceToken)
+    const validId = (value: string) => /^[a-zA-Z0-9-]{1,80}$/.test(value)
+    const validDate = (value: number) => Number.isSafeInteger(value) && value >= 0 && value <= 8.64e15
+    if (!validId(file.id) || !validId(file.revision) || !file.name.trim() || file.name.length > 120
+      || file.source.length > MAX_SOURCE || !validDate(file.createdAt) || !validDate(file.updatedAt)
+      || !Number.isSafeInteger(baseVersion) || baseVersion < 0)
+      throw new ConvexError('Arquivo inválido ou maior que 200 mil caracteres.')
+    const existing = await ctx.db.query('padFiles').withIndex('by_owner_file', q => q.eq('owner', user).eq('fileId', file.id)).unique()
+    if (existing?.revision === file.revision) {
+      if (existing.source !== file.source || existing.name !== file.name)
+        throw new ConvexError('Uma revisão não pode representar conteúdos diferentes.')
+      return { status: 'saved' as const, file: publicFile(existing) }
+    }
+    if ((existing?.version ?? 0) !== baseVersion)
+      return { status: 'conflict' as const, file: existing ? publicFile(existing) : null }
+    const version = (existing?.version ?? 0) + 1
+    const record = {
+      owner: user, fileId: file.id, name: file.name, source: file.source,
+      createdAt: existing?.createdAt ?? file.createdAt, updatedAt: file.updatedAt,
+      revision: file.revision, version,
+    }
+    if (existing) await ctx.db.patch(existing._id, record)
+    else await ctx.db.insert('padFiles', record)
+    return { status: 'saved' as const, file: { ...file, createdAt: record.createdAt, version } }
   },
 })
 
