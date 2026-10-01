@@ -67,11 +67,13 @@ export const save = mutation({
 const studyFields = {
   id: v.string(), name: v.string(), source: v.string(),
   createdAt: v.number(), updatedAt: v.number(), revision: v.string(),
+  deletedAt: v.optional(v.number()),
 }
 const publicFile = (file: Doc<'padFiles'>) => ({
   id: file.fileId, name: file.name, source: file.source,
   createdAt: file.createdAt, updatedAt: file.updatedAt,
   revision: file.revision, version: file.version,
+  ...(file.deletedAt === undefined ? {} : { deletedAt: file.deletedAt }),
 })
 
 // Subscribe to small revision records; download source only for files that changed.
@@ -101,14 +103,18 @@ export const saveFile = mutation({
     const validDate = (value: number) => Number.isSafeInteger(value) && value >= 0 && value <= 8.64e15
     if (!validId(file.id) || !validId(file.revision) || !file.name.trim() || file.name.length > 120
       || file.source.length > MAX_SOURCE || !validDate(file.createdAt) || !validDate(file.updatedAt)
+      || (file.deletedAt !== undefined && (!validDate(file.deletedAt) || file.source !== ''))
       || !Number.isSafeInteger(baseVersion) || baseVersion < 0)
       throw new ConvexError('Arquivo inválido ou maior que 200 mil caracteres.')
     const existing = await ctx.db.query('padFiles').withIndex('by_owner_file', q => q.eq('owner', user).eq('fileId', file.id)).unique()
     if (existing?.revision === file.revision) {
-      if (existing.source !== file.source || existing.name !== file.name)
+      if (existing.source !== file.source || existing.name !== file.name || existing.deletedAt !== file.deletedAt)
         throw new ConvexError('Uma revisão não pode representar conteúdos diferentes.')
       return { status: 'saved' as const, file: publicFile(existing) }
     }
+    // Deleted IDs stay terminal, including writes from older/offline app versions.
+    if (existing?.deletedAt !== undefined)
+      return { status: file.deletedAt === undefined ? 'conflict' as const : 'saved' as const, file: publicFile(existing) }
     if ((existing?.version ?? 0) !== baseVersion)
       return { status: 'conflict' as const, file: existing ? publicFile(existing) : null }
     const version = (existing?.version ?? 0) + 1
@@ -116,6 +122,7 @@ export const saveFile = mutation({
       owner: user, fileId: file.id, name: file.name, source: file.source,
       createdAt: existing?.createdAt ?? file.createdAt, updatedAt: file.updatedAt,
       revision: file.revision, version,
+      ...(file.deletedAt === undefined ? {} : { deletedAt: file.deletedAt }),
     }
     if (existing) await ctx.db.patch(existing._id, record)
     else await ctx.db.insert('padFiles', record)

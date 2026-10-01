@@ -89,6 +89,20 @@ describe('Pad authorization and revisions', () => {
     expect(await t.query(api.pad.file, { id: study.id })).toMatchObject(study)
   })
 
+  it('propagates deletions and prevents stale clients from reviving a deleted ID', async () => {
+    const t = convexTest(schema, modules).withIdentity({ subject: 'owner' })
+    await t.mutation(api.pad.saveFile, { file: study, baseVersion: 0 })
+    const deleted = { ...study, source: '', deletedAt: 200, updatedAt: 200, revision: 'delete-1' }
+    expect(await t.mutation(api.pad.saveFile, { file: deleted, baseVersion: 1 })).toMatchObject({ status: 'saved', file: { deletedAt: 200, source: '', version: 2 } })
+    expect(await t.mutation(api.pad.saveFile, { file: deleted, baseVersion: 1 })).toMatchObject({ status: 'saved' })
+    expect(await t.query(api.pad.files, {})).toEqual([{ id: study.id, version: 2 }])
+    expect(await t.query(api.pad.file, { id: study.id })).toMatchObject({ deletedAt: 200, source: '' })
+    for (const baseVersion of [1, 2]) {
+      expect(await t.mutation(api.pad.saveFile, { file: { ...study, revision: 'stale-edit' }, baseVersion })).toMatchObject({ status: 'conflict', file: { deletedAt: 200 } })
+    }
+    await expect(t.mutation(api.pad.saveFile, { file: { ...study, deletedAt: 200 }, baseVersion: 2 })).rejects.toThrow()
+  })
+
   it('never reads or overwrites records belonging to another owner', async () => {
     const t = convexTest(schema, modules)
     await t.run(ctx => ctx.db.insert('padFiles', { owner: 'other', fileId: study.id, name: 'Private', source: 'private', revision: 'private', version: 1, createdAt: 100, updatedAt: 100 }))

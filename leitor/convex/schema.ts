@@ -11,6 +11,7 @@ export default defineSchema({
     updatedAt: v.number(),
     revision: v.string(),
     version: v.number(),
+    deletedAt: v.optional(v.number()),
   }).index('by_owner_file', ['owner', 'fileId']),
   padDrafts: defineTable({
     owner: v.string(),
