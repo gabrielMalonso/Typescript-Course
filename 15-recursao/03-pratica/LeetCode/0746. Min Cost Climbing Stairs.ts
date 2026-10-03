@@ -2,24 +2,21 @@ function minCostClimbingStairs(cost: number[]): number {
     const memo = new Map<number, number>();
 
     function calculos(i: number): number {
-        // base case
         if (i === 0) return cost[0];
         if (i === 1) return cost[1];
 
-        // recursion
-        const resultadoSalvo = memo.get(i);
+        const memory = memo.get(i);
+        if (memory !== undefined) return memory;
 
-        if (resultadoSalvo !== undefined) {
-            return resultadoSalvo;
-        } else {
-            const resultado =
-                cost[i] + Math.min(calculos(i - 1), calculos(i - 2));
-            memo.set(i, resultado);
-            return resultado;
-        }
+        const vindoDoAnterior = cost[i] + calculos(i - 1);
+        const vindoDeDoisAntes = cost[i] + calculos(i - 2);
+
+        const menorCusto = Math.min(vindoDoAnterior, vindoDeDoisAntes);
+        memo.set(i, menorCusto);
+        return menorCusto;
     }
+
     return Math.min(calculos(cost.length - 1), calculos(cost.length - 2));
-    // “Qual é o menor custo entre chegar ao último degrau e chegar ao penúltimo?”
 }
 
 // Example 1:
