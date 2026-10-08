@@ -2,6 +2,8 @@
 
 **Objetivo:** usar enums de texto e numéricos, compará-los com unions de literais e escolher uma representação pelo que o programa precisa. Reconhecer também reverse mapping, enums heterogêneos e `const enum`.
 
+**Prioridade do estudo:** pratique a escolha e o uso de unions de literais e enums comuns. Reverse mapping, enums heterogêneos e `const enum` são assuntos secundários: entenda o mecanismo e seus limites para reconhecer código existente, sem precisar adotá-los nas suas soluções.
+
 No capítulo 17, você descreveu escolhas como `"pendente" | "pronto"`. Agora vamos dar nomes aos valores dessas escolhas e observar uma diferença importante: um `type` desaparece na compilação; um enum comum também produz um objeto JavaScript.
 
 O percurso é **aula com experimentos → leitura curta → próxima aula → prática**. As aulas apresentam o assunto antes dos trechos da documentação, que estão em inglês. Execute cada bloco TypeScript separadamente no Pad ou em um arquivo com modo estrito. As linhas que devem produzir erros estão comentadas: descomente uma por vez, observe a mensagem e comente novamente.
@@ -32,9 +34,11 @@ O exemplo de `const enum` também pode ser executado no Pad. Para observar o Jav
 
 ## 4. Prática — um código e um estado têm papéis diferentes
 
-Faça a [atividade 1 — Etiquetas de uma encomenda](03-pratica/atividades.md#atividade-1). Você vai usar números definidos por uma tabela e textos que descrevem estados, escolhendo a representação de cada informação.
+Faça a [atividade 1 — Etiquetas de uma encomenda](03-pratica/atividades.md#atividade-1). Você vai usar números definidos por uma tabela e textos que descrevem estados, observando o papel de cada representação.
 
-Envie sua tentativa com os testes indicados e uma frase explicando a escolha dos tipos. Não há prova nem relatório obrigatório. No capítulo 19, o foco será representar contratos de objetos com interfaces.
+A atividade 1 já indica as representações para você praticar seu uso. Depois faça a [atividade 2 — Escolher o formato de uma preferência](03-pratica/atividades.md#atividade-2): nesse caso, você escolhe entre enum e union de literais e justifica a decisão, sem precisar implementar o programa.
+
+Envie a tentativa da atividade 1 com os testes indicados e uma frase explicando o papel dos tipos; para a atividade 2, bastam duas ou três frases. Não há prova nem relatório obrigatório. No capítulo 19, o foco será representar contratos de objetos com interfaces.
 
 ## Fontes e limites da seleção
 

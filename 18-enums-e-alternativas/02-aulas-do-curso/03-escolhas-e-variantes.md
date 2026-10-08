@@ -27,6 +27,18 @@ Para códigos numéricos definidos por uma tabela, o enum numérico permite escr
 
 Não é preciso trocar uma solução que está clara apenas para usar a sintaxe nova. A pergunta é: **de que informação o programa precisa, e qual representação torna seu uso mais fácil de entender?**
 
+Use esta tabela como ponto de partida para recuperar a decisão:
+
+| Situação | Escolha inicial |
+|---|---|
+| Poucos estados textuais | Union de literais |
+| O projeto já usa enum para essa informação | Manter o enum, salvo motivo para mudar |
+| Códigos numéricos com nomes e valores fixos | Enum numérico pode ser útil |
+| Estados com dados obrigatórios diferentes | Union discriminada (*discriminated union*) |
+| Apenas verdadeiro ou falso | `boolean` geralmente basta |
+
+A union discriminada descreve a relação entre estados e dados. Ela pode usar literais ou membros de um enum para identificar cada estado, como veremos adiante.
+
 ## Uma union não cria uma lista em execução
 
 Imagine que precisamos mostrar os estados disponíveis. Um alias não pode ser percorrido, porque é apenas um tipo. Podemos criar um array separado, usando recursos conhecidos:
@@ -91,6 +103,8 @@ A union continua reunindo os dois formatos, e o `if` continua identificando qual
 
 ## Reconhecer um enum heterogêneo
 
+**Assuntos secundários:** enums heterogêneos e `const enum`, apresentado na próxima seção, entram para você reconhecer a sintaxe e entender seus limites. O foco prático continua sendo escolher entre unions de literais e enums comuns; não é necessário usar essas variantes nas atividades.
+
 Um enum **heterogêneo** mistura membros numéricos e de texto:
 
 ```ts
@@ -151,5 +165,7 @@ Já percorrer uma lista continua tendo seu custo. No array de estados, percorrer
 As referências destas variantes são [Heterogeneous enums](https://www.typescriptlang.org/docs/handbook/enums.html#heterogeneous-enums), [const enums](https://www.typescriptlang.org/docs/handbook/enums.html#const-enums) e [preserveConstEnums](https://www.typescriptlang.org/tsconfig/preserveConstEnums.html). O uso de membros como tipos também está em [All enums Are Union enums](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-0.html#all-enums-are-union-enums).
 
 Faça a [atividade 1 — Etiquetas de uma encomenda](../03-pratica/atividades.md#atividade-1).
+
+Depois faça a [atividade 2 — Escolher o formato de uma preferência](../03-pratica/atividades.md#atividade-2), justificando a representação sem implementar uma aplicação.
 
 [Voltar ao guia — etapa 3](../README.md#etapa-3)

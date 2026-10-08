@@ -1,6 +1,6 @@
 # Prática — Escolher e conferir uma representação
 
-Use o Pad ou um arquivo TypeScript em modo estrito. Resolva com os recursos já estudados, sem casts. Não use `const enum` nesta atividade.
+Na atividade 1, use o Pad ou um arquivo TypeScript em modo estrito. Resolva com os recursos já estudados, sem casts. A atividade 2 pede apenas uma escolha justificada. Não é necessário usar reverse mapping, enums heterogêneos ou `const enum`.
 
 ### 1. Etiquetas de uma encomenda
 
@@ -40,5 +40,11 @@ Teste estas chamadas e compare os resultados:
 Ao mostrar um resultado, diferencie `null` de um estado com uma verificação explícita. Confira também no editor que `"em transporte"`, com espaço, não pode ser atribuído a `EstadoEncomenda`.
 
 Envie a implementação, as chamadas de teste e uma frase explicando por que o enum numérico e a union de textos têm papéis diferentes aqui. O objetivo é conferir um código e escolher sua representação; não é necessário criar uma aplicação ou implementar mudanças de estado.
+
+### 2. Escolher o formato de uma preferência
+
+Você está criando um programa pequeno no qual a preferência de tema pode ser `"claro"`, `"escuro"` ou `"sistema"`. A opção `"sistema"` significa acompanhar o tema do aparelho. O projeto ainda não usa enums, e cada opção precisa apenas desse texto, sem campos adicionais.
+
+Você começaria com um enum de texto ou uma union de literais? Responda em duas ou três frases: diga sua escolha, por que ela atende a esse caso e que mudança no contexto poderia tornar a outra opção razoável. Não há obrigação de escrever código; o objetivo é justificar a decisão.
 
 [Voltar ao guia — etapa 4](../README.md#etapa-4)

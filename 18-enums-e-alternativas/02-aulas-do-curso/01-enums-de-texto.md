@@ -130,6 +130,24 @@ console.log(estado); // pronto
 
 O modelo mental é: **o alias descreve valores; o enum comum descreve o tipo e fornece valores nomeados ao programa**. Essa diferença vai ajudar a escolher entre os dois.
 
+Para revisar, compare as duas declarações neste quadro:
+
+```text
+type Estado = "pronto" | "pendente"
+  → descreve os valores permitidos no TypeScript
+  → a declaração não existe no JavaScript gerado
+
+enum Estado {
+  Pronto = "pronto",
+  Pendente = "pendente"
+}
+  → funciona como tipo no TypeScript
+  → também gera um objeto com valores em JavaScript
+  → Estado.Pronto permite acessar o valor "pronto"
+```
+
+Quem desaparece no primeiro caso é a declaração do tipo. Se o programa usa o texto `"pronto"`, esse valor continua existindo em JavaScript.
+
 ## O enum não controla a sequência dos acontecimentos
 
 O tipo restringe a representação do estado, mas não implementa o fluxo de um pedido:

@@ -110,6 +110,8 @@ A verificação `=== null` separa a ausência de todos os membros, inclusive o d
 
 ## Consultar pelo nome ou pelo número
 
+**Assunto de reconhecimento:** entenda o que é reverse mapping e seus limites ao ler um enum numérico. Você não precisa passar a usá-lo nas soluções; a prática deste capítulo usa comparações explícitas com os membros.
+
 Um enum numérico comum cria duas direções de consulta. O **reverse mapping**, ou mapeamento reverso, é o caminho do número de volta ao nome:
 
 ```ts
