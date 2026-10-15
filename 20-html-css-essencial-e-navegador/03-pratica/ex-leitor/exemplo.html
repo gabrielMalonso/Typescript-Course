@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biblioteca em grade</title>
+    <style>
+      .livros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        max-width: 640px;
+      }
+      .livros article {
+        padding: 16px;
+        border: 2px solid navy;
+        background-color: lightyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pequena biblioteca</h1>
+    <div class="livros">
+      <article><h2>Atlas</h2><p>Mapas para explorar.</p></article>
+      <article><h2>Contos</h2><p>Histórias para imaginar.</p></article>
+      <article><h2>Desenho</h2><p>Formas para observar.</p></article>
+    </div>
+  </body>
+</html>

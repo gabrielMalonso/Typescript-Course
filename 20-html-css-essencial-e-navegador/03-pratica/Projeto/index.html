@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minhas tarefas</title>
+    <link rel="stylesheet" href="style-grid.css" />
+    <script src="interacao.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Minhas Tarefas</h1>
+        <p>Organize suas atividades do dia.</p>
+    </header>
+
+    <main>
+        <section class="nova-tarefa">
+            <h2>Nova tarefa</h2>
+
+            <form>
+                <label class="new-task-label" for="create-new-task">Título da tarefa</label>
+                <input class="new-task-input" type="text" 
+                id="create-new-task" 
+                name="titulo" 
+                placeholder="Digite sua tarefa"
+                required
+                >
+                <button class="new-task-button" type="submit">Adicionar Tarefa</button>
+            </form>
+            <p class="aviso" role="status"></p>
+        </section>
+        <section class="lista-tarefas">
+            <h2>Lista de tarefas</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="tarefa-1">
+                    <label for="tarefa-1">Ler dez páginas</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="tarefa-2">
+                    <label for="tarefa-2">Organizar mesa</label>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

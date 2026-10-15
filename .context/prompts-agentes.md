@@ -10,11 +10,17 @@ Percurso preferencial:
 
 Adaptar quando alguma etapa não fizer sentido para o assunto.
 
+**No Bloco 3 (20–28), priorizar: ementa → materiais externos selecionados e ordenados → complementos próprios quando necessários → prática.** As explicações próprias devem conectar conceitos, preencher lacunas ou apoiar a aplicação, sem exigir uma aula integralmente autoral para cada assunto.
+
+Aplicar essa prioridade aos próximos materiais do bloco, preservando a organização e o conteúdo já produzido. Avaliar a metodologia dos demais blocos quando chegarmos a eles, conforme a natureza do conteúdo.
+
 O agente principal integra o capítulo. Curadoria e revisão podem ser delegadas quando houver trabalho independente útil.
 
 Criar somente o capítulo solicitado e consultar capítulos anteriores apenas quando necessário para continuidade.
 
 ## 2. Curadoria
+
+Para o Bloco 3, priorizar MDN, documentação oficial do React e outras referências confiáveis. Inspecionar os materiais e organizá-los pelos pré-requisitos e objetivos da ementa, indicando as seções a estudar, o ponto de parada e os trechos a pular. Evitar leituras integrais quando um recorte atende ao objetivo.
 
 Para algoritmos e estruturas de dados:
 
@@ -68,6 +74,8 @@ Preferir tarefas pequenas e focadas. Evitar baterias extensas, partes A/B, muita
 
 Problemas reais e exercícios externos podem assumir grande parte da prática posterior; o capítulo não precisa reproduzir essa bateria internamente.
 
+No Bloco 3, manter exercícios e projetos com entradas, resultados esperados e critérios de aceitação claros. A implementação cabe ao aluno com acompanhamento do professor; não entregar o projeto pronto nem soluções completas. Exemplos didáticos pequenos e independentes do projeto podem conter código completo.
+
 ## 5. Organização
 
 O `README.md` do capítulo funciona como guia de estudo: objetivo, materiais, limites de leitura e próxima ação.
@@ -75,7 +83,7 @@ O `README.md` do capítulo funciona como guia de estudo: objetivo, materiais, li
 Estrutura disponível:
 
 - `01-leituras-do-livro/`: recortes e metadados;
-- `02-aulas-do-curso/`: aulas autorais;
+- `02-aulas-do-curso/`: aulas autorais ou complementos pontuais, quando necessários;
 - `03-pratica/`: somente quando necessária.
 
 Não criar arquivos ou pastas apenas para satisfazer uma estrutura fixa.
@@ -88,7 +96,7 @@ Antes da entrega, verificar:
 
 - o capítulo atende à ementa;
 - vídeo e leitura foram realmente inspecionados e delimitados;
-- a aula desenvolve o conceito em vez de apenas resumir fontes;
+- o percurso desenvolve os conceitos; complementos próprios acrescentam conexão ou esclarecimento, sem apenas repetir as fontes;
 - existe uma ponte clara entre teoria e código quando pertinente;
 - abstrações prontas têm seus custos e limitações explicados;
 - exemplos e links utilizados funcionam;

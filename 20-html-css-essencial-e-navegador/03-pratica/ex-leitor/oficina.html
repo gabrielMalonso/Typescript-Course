@@ -1,0 +1,18 @@
+<body>
+  <main>
+    <h1>Um clique</h1>
+    <button id="botao" type="button">Mostrar aviso</button>
+    <p id="aviso" role="status"></p>
+  </main>
+  <script>
+    const botao = document.querySelector("#botao");
+    const aviso = document.querySelector("#aviso");
+    if (botao !== null && aviso !== null) {
+      botao.addEventListener("click", () => {
+        aviso.textContent = "O botão foi ativado.";
+      });
+    } else {
+      console.error("Não foi possível encontrar o botão ou o aviso.");
+    }
+  </script>
+</body>
