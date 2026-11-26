@@ -475,7 +475,7 @@ Ajuste `package.json` para usar ES Modules (`"type": "module"`) e scripts reprod
 }
 ```
 
-Crie `tsconfig.json` alinhado ao *type stripping* nativo do Node (com checagem estrita via `npm run typecheck`):
+Crie `tsconfig.json` alinhado ao *type stripping* nativo do Node (com checagem estrita via `npm run typecheck`). A opção `"types": ["node"]` é necessária a partir do TypeScript 6: sem ela, o compilador não carrega os tipos de `@types/node` e acusa `Cannot find name 'node:path'`:
 
 ```json
 {
@@ -488,6 +488,7 @@ Crie `tsconfig.json` alinhado ao *type stripping* nativo do Node (com checagem e
     "allowImportingTsExtensions": true,
     "erasableSyntaxOnly": true,
     "verbatimModuleSyntax": true,
+    "types": ["node"],
     "skipLibCheck": true
   },
   "include": ["src"]
